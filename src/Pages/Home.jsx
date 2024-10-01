@@ -13,6 +13,7 @@ const Home = () => {
    "./LandingVIdeos/Video-1.mp4",
    "./LandingVIdeos/Video-2.mp4",
    "./LandingVIdeos/Video-3.mp4",
+   "./LandingVIdeos/Video-4.mp4",
    "./LandingVIdeos/Video-5.mp4",
    "./LandingVIdeos/Video-6.mp4"
   ];
