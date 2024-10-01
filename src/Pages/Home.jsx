@@ -10,12 +10,12 @@ import CarousalImgBlogs from '../Components/CarousalImgBlogs'
 
 const Home = () => {
   const randomVideos = [
-   "./LandingVIdeos/Video-1.mp4",
-   "./LandingVIdeos/Video-2.mp4",
+   "https://videos.pexels.com/video-files/13710678/13710678-hd_1920_1080_60fps.mp4",
+   "https://videos.pexels.com/video-files/6689587/6689587-uhd_2560_1440_25fps.mp4",
    "./LandingVIdeos/Video-3.mp4",
-   "./LandingVIdeos/Video-4.mp4",
-   "./LandingVIdeos/Video-5.mp4",
-   "./LandingVIdeos/Video-6.mp4"
+   "https://videos.pexels.com/video-files/9558221/9558221-uhd_2732_1440_25fps.mp4",
+   "https://videos.pexels.com/video-files/6634798/6634798-hd_1920_1080_25fps.mp4",
+   "https://videos.pexels.com/video-files/6470618/6470618-uhd_2560_1440_24fps.mp4"
   ];
 
   const [currentVideo, setCurrentVideo] = useState(randomVideos[0]);
