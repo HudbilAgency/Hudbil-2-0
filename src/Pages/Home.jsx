@@ -33,8 +33,9 @@ const Home = () => {
 
   useEffect(() => {
     pickRandomVideo();
+    console.error();
   }, []);
-  console.log(currentVideo)
+
 
   const [loading, setLoading] = useState(true);
 
