@@ -33,6 +33,7 @@ const Home = () => {
 
   useEffect(() => {
     pickRandomVideo();
+    console.error();
   }, []);
 
 
