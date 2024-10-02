@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Navbar from '../Components/Navbar';
+import Footer from '../Components/Footer';
 
 const ContactForm = () => {
 
@@ -70,7 +71,6 @@ const ContactForm = () => {
   return (
 
    <>
-   < Navbar />
        <div className="flex overflow-hidden mx-[3vw] flex-col items-center pt-16 bg-white">
       <div className="flex flex-wrap gap-5 justify-between w-full max-w-[1600px] max-md:max-w-full" />
       <div className="flex px-10 mt-16 w-full bg-neutral-400 max-w-[1600px] max-md:px-5 max-md:mt-10 max-md:max-w-full">
@@ -263,7 +263,7 @@ const ContactForm = () => {
         </div>
       </div>
     </div>
-
+    < Footer />
    </>
   );
 };

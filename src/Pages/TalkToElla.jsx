@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Navbar from '../Components/Navbar';
 
 const TalkToElla = () => {
 
@@ -24,12 +23,26 @@ const TalkToElla = () => {
 
   return (
     <>
-    <Navbar />
+
       
     <div className="bg-white">
     <div className="flex flex-col lg:flex-row overflow-hidden  max-md:flex-col">
       <section className="flex flex-col lg:w-[50vw] w-full max-md:ml-0 max-md:w-full">
-        
+      
+
+        <video
+          src="./EllaPage/EllaPageVid-1.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="object-cover w-[50vw] h-[100vh]"
+        >
+          <source src="./EllaPage/EllaPageVid-1.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+
       </section>
       <main className="flex flex-col lg:w-[50vw] w-full max-md:ml-0 max-md:w-full">
         <div className="flex overflow-hidden flex-col grow px-10 py-10 w-full text-white bg-neutral-950 max-md:px-5 max-md:max-w-full">
