@@ -10,13 +10,14 @@ import CarousalImgBlogs from '../Components/CarousalImgBlogs'
 
 const Home = () => {
   const randomVideos = [
-   "https://videos.pexels.com/video-files/13710678/13710678-hd_1920_1080_60fps.mp4",
-   "https://videos.pexels.com/video-files/6689587/6689587-uhd_2560_1440_25fps.mp4",
-   "./LandingVIdeos/Video-3.mp4",
-   "https://videos.pexels.com/video-files/9558221/9558221-uhd_2732_1440_25fps.mp4",
-   "https://videos.pexels.com/video-files/6634798/6634798-hd_1920_1080_25fps.mp4",
-   "https://videos.pexels.com/video-files/6470618/6470618-uhd_2560_1440_24fps.mp4"
+    "/LandingVideos/video1.mp4",
+    "/LandingVideos/video2.mp4",
+    "/LandingVideos/video3.mp4",
+    "/LandingVideos/video4.mp4",
+    "/LandingVideos/video5.mp4",
+    "/LandingVideos/video6.mp4",
   ];
+  
 
   const [currentVideo, setCurrentVideo] = useState(randomVideos[0]);
   const [previousIndex, setPreviousIndex] = useState(null);
@@ -208,6 +209,10 @@ const Home = () => {
 
   useEffect(() => {
 
+    const mediaQuery = window.matchMedia('(min-width: 1024px)');
+
+    if (mediaQuery.matches) {
+
     gsap.fromTo(sectionRef.current,
       { backgroundColor: 'black' },
       {
@@ -223,7 +228,7 @@ const Home = () => {
       }
     );
   }
-    , []);
+  }, []);
 
   {
     useEffect(() => {
@@ -471,7 +476,7 @@ const Home = () => {
 
 
 
-      <div className="flex bg-black">
+      <div className="flex flex-col lg:flex-row bg-black">
         <div className="w-[50vw] h-[100%] hidden lg:block box2 -mt-[100vh] bg-no-repeat bg-cover bg-center sticky top-0 z-[999]">
 
           <video
@@ -488,22 +493,24 @@ const Home = () => {
 
         </div>
 
+        <div className="w-full block lg:hidden box2 -mt-[100vh] bg-no-repeat bg-cover bg-center sticky top-0">
 
-        <section className='-mt-[100vh] box3 justify-end items-end overflow-hidden w-full lg:w-[50vw] flex-col '>
-          <div className='block lg:hidden'>
-            <video
-              src={currentVideo}
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="object-cover w-full h-[30vh] bg-cover"
-            >
-              <source src={currentVideo} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <div className="w-full h-screen">
+          <video
+            src={currentVideo}
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="object-cover w-full h-[100vh]"
+          >
+            <source src={currentVideo} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+        </div>
+
+        <section className='-mt-[30vh] lg:-mt-[100vh] box3 justify-end items-end overflow-hidden w-full lg:w-[50vw] flex-col '>
+          <div className="w-full h-screen hidden lg:block">
             <div className="flex flex-col relative h-full justify-center items-center w-full bg-neutral-950">
               <div className='px-6'>
                 <img loading="lazy" src="./LandingVIdeos/LandingPageHudbilLogo.png" alt="" className="" />
