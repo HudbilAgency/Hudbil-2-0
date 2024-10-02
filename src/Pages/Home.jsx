@@ -10,13 +10,14 @@ import CarousalImgBlogs from '../Components/CarousalImgBlogs'
 
 const Home = () => {
   const randomVideos = [
-   "https://videos.pexels.com/video-files/13710678/13710678-hd_1920_1080_60fps.mp4",
-   "https://videos.pexels.com/video-files/6689587/6689587-uhd_2560_1440_25fps.mp4",
-   "./LandingVIdeos/Video-3.mp4",
-   "https://videos.pexels.com/video-files/9558221/9558221-uhd_2732_1440_25fps.mp4",
-   "https://videos.pexels.com/video-files/6634798/6634798-hd_1920_1080_25fps.mp4",
-   "https://videos.pexels.com/video-files/6470618/6470618-uhd_2560_1440_24fps.mp4"
+    "/LandingVideos/video1.mp4",
+    "/LandingVideos/video2.mp4",
+    "/LandingVideos/video3.mp4",
+    "/LandingVideos/video4.mp4",
+    "/LandingVideos/video5.mp4",
+    "/LandingVideos/video6.mp4",
   ];
+  
 
   const [currentVideo, setCurrentVideo] = useState(randomVideos[0]);
   const [previousIndex, setPreviousIndex] = useState(null);
@@ -208,6 +209,10 @@ const Home = () => {
 
   useEffect(() => {
 
+    const mediaQuery = window.matchMedia('(min-width: 1024px)');
+
+    if (mediaQuery.matches) {
+
     gsap.fromTo(sectionRef.current,
       { backgroundColor: 'black' },
       {
@@ -223,7 +228,7 @@ const Home = () => {
       }
     );
   }
-    , []);
+  }, []);
 
   {
     useEffect(() => {
@@ -393,83 +398,8 @@ const Home = () => {
   return (
     <div className="bg-black">
       <Loader onLoadingComplete={handleLoadingComplete} />
-{/* 
-      <nav>
-        <section className="absolute z-[1000] bg-transparent w-full">
-          <div className='flex justify-between items-center  mx-4 lg:mx-20'>
-            <button>
-              {menuIcon ? <img
-                onClick={handleMenuslide}
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/d6bbf331-ab16-4fef-8064-4b072c7d5894?placeholderIfAbsent=true&apiKey=7904fd7afaaf4ee2b0837ab86d91b244"
-                alt="Decorative circular image"
-                className="object-contain mb-0 max-w-full -mt-4 fixed aspect-[2.34] bg-zinc-400 bg-opacity-50 rounded-[1000px] w-[7rem] lg:w-[8rem] max-md:mb-2.5"
-                loading="lazy"
-              /> : <img
-                onClick={handleCloseslide}
-                loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/87266ae9-db86-4982-a442-a5fb555776bf?placeholderIfAbsent=true&apiKey=7904fd7afaaf4ee2b0837ab86d91b244"
-                alt="Circular logo"
-                className="object-contain mb-0 max-w-full -mt-4 fixed aspect-[2.34] bg-zinc-400 bg-opacity-50 rounded-[1000px] w-[7rem] lg:w-[8rem] max-md:mb-2.5" />
-              }
-            </button>
-            <div className="flex items-center">
-            </div>
-            
-            <img
-              ref={birdRef}
-              loading="lazy"
-              src="./MainBirdImg.png"
-              alt=""
-              className="object-contain max-w-full mt-4 aspect-[0.95] w-[5rem] lg:w-[7rem]"
-            />
-          </div>
-        </section>
-      </nav>
-      <div
-        className={`w-[50vw] h-[100vh] slider bg-black sticky top-0 transition-transform duration-1000 ease-in-out ${menuIcon ? '-translate-x-full' : 'translate-x-0'}`}
-        onTransitionEnd={() => {
-          document.body.style.overflow = menuIcon ? 'auto' : 'hidden';
-        }}
-      >
-        <div className="flex flex-col w-[50vw] max-md:ml-0 max-md:w-full">
-          <nav className="flex overflow-hidden flex-col items-start px-16 h-screen mx-auto w-full font-bold tracking-widest text-white bg-black max-md:px-5 max-md:max-w-full">
-          <ul className="mt-40 max-md:mt-10 ml-4">
-            <li className="mt-8 first:mt-0">
-              <a href="#home" className="text-[60px] text-purple-700 font-arial font-extralight leading-none max-md:text-4xl">
-                Home
-              </a>
-            </li>
-            {menuItems.map((item, index) => (
-              <li key={index} className="mt-6 first:mt-0">
-                <a
-                  href={item.link} // Dynamically adding the link
-                  className="text-[60px] hover:text-purple-700 font-arial font-extralight leading-none max-md:text-4xl"
-                >
-                  {item.name}
-                </a>
-              </li>
-            ))}
-          </ul>
 
-
-            <footer className="flex gap-5 justify-between mt-16 max-w-full tracking-wider max-md:mt-10">
-              {footerLinks.map((column, index) => (
-                <div key={index} className="flex ml-5 flex-col items-start text-base font-arial font-medium leading-none">
-                  <h3>{column.title}</h3>
-                  <ul className="mt-6">
-                    {column.items.map((item, itemIndex) => (
-                      <li key={itemIndex} className={itemIndex > 0 ? "mt-6" : ""}>
-                        <a href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}>{item}</a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </footer>
-          </nav>
-        </div>
-      </div> */}
-
-       <Navbar 
+      <Navbar 
         menuIcon={menuIcon} 
         handleMenuslide={handleMenuslide} 
         handleCloseslide={handleCloseslide} 
@@ -479,8 +409,7 @@ const Home = () => {
       />
 
 
-
-      <div className="flex bg-black">
+      <div className="flex flex-col lg:flex-row bg-black">
         <div className="w-[50vw] h-[100%] hidden lg:block box2 -mt-[100vh] bg-no-repeat bg-cover bg-center sticky top-0 z-[999]">
 
           <video
@@ -497,22 +426,24 @@ const Home = () => {
 
         </div>
 
+        <div className="w-full block lg:hidden box2 -mt-[100vh] bg-no-repeat bg-cover bg-center sticky top-0">
 
-        <section className='-mt-[100vh] box3 justify-end items-end overflow-hidden w-full lg:w-[50vw] flex-col '>
-          <div className='block lg:hidden'>
-            <video
-              src={currentVideo}
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="object-cover w-full h-[30vh] bg-cover"
-            >
-              <source src={currentVideo} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <div className="w-full h-screen">
+          <video
+            src={currentVideo}
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="object-cover w-full h-[100vh]"
+          >
+            <source src={currentVideo} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+        </div>
+
+        <section className='-mt-[30vh] lg:-mt-[100vh] box3 justify-end items-end overflow-hidden w-full lg:w-[50vw] flex-col '>
+          <div className="w-full h-screen hidden lg:block">
             <div className="flex flex-col relative h-full justify-center items-center w-full bg-neutral-950">
               <div className='px-6'>
                 <img loading="lazy" src="./LandingVIdeos/LandingPageHudbilLogo.png" alt="" className="" />
@@ -554,10 +485,10 @@ const Home = () => {
                 <hr className="w-full h-px border border-gray-400 border-solid" />
                 <div className="my-16 w-full">
                   <div className="flex flex-col xl:flex-row w-full items-start justify-between">
-                    <div className="flex">
+                    <div className="flex w-fit">
                       <div className="flex gap-3 items-center text-base tracking-wider leading-none text-neutral-950 max-md:mt-10">
                         <div className="flex shrink-0 self-stretch my-auto w-3 h-3 bg-purple-800 rounded-[1000px]" />
-                        <div className="my-auto font-arial text-purple-800 text-2xl">We work with people like</div>
+                        <div className="my-auto font-arial w-fit text-purple-800 text-2xl xl:text-xl 2xl:text-2xl">We work with people like</div>
                       </div>
                     </div>
                     <div className="w-full md:w-fit">
