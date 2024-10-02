@@ -24,14 +24,7 @@ const TalkToElla = () => {
 
   return (
     <>
-    <Navbar 
-        menuIcon={menuIcon} 
-        handleMenuslide={handleMenuslide} 
-        handleCloseslide={handleCloseslide} 
-        menuItems={menuItems} 
-        footerLinks={footerLinks} 
-        birdRef={birdRef} 
-      />
+    <Navbar />
       
     <div className="bg-white">
     <div className="flex flex-col lg:flex-row overflow-hidden  max-md:flex-col">
