@@ -552,10 +552,10 @@ const Home = () => {
                 <hr className="w-full h-px border border-gray-400 border-solid" />
                 <div className="my-16 w-full">
                   <div className="flex flex-col xl:flex-row w-full items-start justify-between">
-                    <div className="flex">
+                    <div className="flex w-fit">
                       <div className="flex gap-3 items-center text-base tracking-wider leading-none text-neutral-950 max-md:mt-10">
                         <div className="flex shrink-0 self-stretch my-auto w-3 h-3 bg-purple-800 rounded-[1000px]" />
-                        <div className="my-auto font-arial text-purple-800 text-2xl">We work with people like</div>
+                        <div className="my-auto font-arial w-fit text-purple-800 text-2xl xl:text-xl 2xl:text-2xl">We work with people like</div>
                       </div>
                     </div>
                     <div className="w-full md:w-fit">
