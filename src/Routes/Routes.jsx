@@ -7,6 +7,8 @@ import Animation from '../Animation/Animation'
 import Test from '../Pages/Test'
 import CarousalImgBlogs from '../Components/CarousalImgBlogs'
 import CarousalImgBrands from '../Components/CarousalImgBrands';
+import TalkToElla from '../Pages/TalkToElla';
+import ContactForm from '../Pages/ContactForm';
 
 const Routers = () => {
   return (
@@ -20,6 +22,8 @@ const Routers = () => {
               <Route path="/Test" element={<Test/>} />
               <Route path="/CarousalImgBlogs" element={<CarousalImgBlogs/>} />
               <Route path="/CarousalImgBrands" element={<CarousalImgBrands/>} />
+              <Route path="/TalkToElla" element={<TalkToElla/>} />
+              <Route path="/ContactForm" element={<ContactForm/>} />
             </Routes> 
         </Router>
     </>

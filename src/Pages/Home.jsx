@@ -91,12 +91,12 @@ const Home = () => {
 
 
   const menuItems = [
-    'About us',
-    'Our Work',
-    'Services',
-    'Products',
-    'Insights',
-    'Talk to Ella'
+    { name: 'About us', link: '/about-us' },
+    { name: 'Our Work', link: '/our-work' },
+    { name: 'Services', link: '/services' },
+    { name: 'Products', link: '/products' },
+    { name: 'Insights', link: '/insights' },
+    { name: 'Talk to Ella', link: '/TalkToElla' }
   ];
 
   const footerLinks = [
@@ -393,7 +393,7 @@ const Home = () => {
   return (
     <div className="bg-black">
       <Loader onLoadingComplete={handleLoadingComplete} />
-
+{/* 
       <nav>
         <section className="absolute z-[1000] bg-transparent w-full">
           <div className='flex justify-between items-center  mx-4 lg:mx-20'>
@@ -413,12 +413,7 @@ const Home = () => {
             </button>
             <div className="flex items-center">
             </div>
-            {/* <img 
-            loading="lazy" 
-            src="./MainBirdImg.png" 
-            alt="" 
-            className="object-contain max-w-full mt-4 aspect-[0.95] w-[5rem] lg:w-[7rem]" 
-          /> */}
+            
             <img
               ref={birdRef}
               loading="lazy"
@@ -437,20 +432,25 @@ const Home = () => {
       >
         <div className="flex flex-col w-[50vw] max-md:ml-0 max-md:w-full">
           <nav className="flex overflow-hidden flex-col items-start px-16 h-screen mx-auto w-full font-bold tracking-widest text-white bg-black max-md:px-5 max-md:max-w-full">
-            <ul className="mt-40 max-md:mt-10 ml-4">
-              <li className="mt-8 first:mt-0">
-                <a className="text-[60px] text-purple-700 font-arial font-extralight leading-none max-md:text-4xl">
-                  Home
+          <ul className="mt-40 max-md:mt-10 ml-4">
+            <li className="mt-8 first:mt-0">
+              <a href="#home" className="text-[60px] text-purple-700 font-arial font-extralight leading-none max-md:text-4xl">
+                Home
+              </a>
+            </li>
+            {menuItems.map((item, index) => (
+              <li key={index} className="mt-6 first:mt-0">
+                <a
+                  href={item.link} // Dynamically adding the link
+                  className="text-[60px] hover:text-purple-700 font-arial font-extralight leading-none max-md:text-4xl"
+                >
+                  {item.name}
                 </a>
               </li>
-              {menuItems.map((item, index) => (
-                <li key={index} className="mt-6 first:mt-0">
-                  <a href={`#${item.toLowerCase().replace(/\s+/g, '-')}`} className="text-[60px] hover:text-purple-700 font-arial font-extralight leading-none max-md:text-4xl">
-                    {item}
-                  </a>
-                </li>
-              ))}
-            </ul>
+            ))}
+          </ul>
+
+
             <footer className="flex gap-5 justify-between mt-16 max-w-full tracking-wider max-md:mt-10">
               {footerLinks.map((column, index) => (
                 <div key={index} className="flex ml-5 flex-col items-start text-base font-arial font-medium leading-none">
@@ -467,7 +467,16 @@ const Home = () => {
             </footer>
           </nav>
         </div>
-      </div>
+      </div> */}
+
+       <Navbar 
+        menuIcon={menuIcon} 
+        handleMenuslide={handleMenuslide} 
+        handleCloseslide={handleCloseslide} 
+        menuItems={menuItems} 
+        footerLinks={footerLinks} 
+        birdRef={birdRef} 
+      />
 
 
 
