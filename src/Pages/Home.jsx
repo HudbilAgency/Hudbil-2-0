@@ -17,6 +17,7 @@ const Home = () => {
     "/LandingVideos/video5.mp4",
     "/LandingVideos/video6.mp4",
   ];
+  
 
   const [currentVideo, setCurrentVideo] = useState(randomVideos[0]);
   const [previousIndex, setPreviousIndex] = useState(null);
@@ -91,12 +92,12 @@ const Home = () => {
 
 
   const menuItems = [
-    'About us',
-    'Our Work',
-    'Services',
-    'Products',
-    'Insights',
-    'Talk to Ella'
+    { name: 'About us', link: '/about-us' },
+    { name: 'Our Work', link: '/our-work' },
+    { name: 'Services', link: '/services' },
+    { name: 'Products', link: '/products' },
+    { name: 'Insights', link: '/insights' },
+    { name: 'Talk to Ella', link: '/TalkToElla' }
   ];
 
   const footerLinks = [
@@ -398,80 +399,14 @@ const Home = () => {
     <div className="bg-black">
       <Loader onLoadingComplete={handleLoadingComplete} />
 
-      <nav>
-        <section className="absolute z-[1000] bg-transparent w-full">
-          <div className='flex justify-between items-center  mx-4 lg:mx-20'>
-            <button>
-              {menuIcon ? <img
-                onClick={handleMenuslide}
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/d6bbf331-ab16-4fef-8064-4b072c7d5894?placeholderIfAbsent=true&apiKey=7904fd7afaaf4ee2b0837ab86d91b244"
-                alt="Decorative circular image"
-                className="object-contain mb-0 max-w-full -mt-4 fixed aspect-[2.34] bg-zinc-400 bg-opacity-50 rounded-[1000px] w-[7rem] lg:w-[8rem] max-md:mb-2.5"
-                loading="lazy"
-              /> : <img
-                onClick={handleCloseslide}
-                loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/87266ae9-db86-4982-a442-a5fb555776bf?placeholderIfAbsent=true&apiKey=7904fd7afaaf4ee2b0837ab86d91b244"
-                alt="Circular logo"
-                className="object-contain mb-0 max-w-full -mt-4 fixed aspect-[2.34] bg-zinc-400 bg-opacity-50 rounded-[1000px] w-[7rem] lg:w-[8rem] max-md:mb-2.5" />
-              }
-            </button>
-            <div className="flex items-center">
-            </div>
-            {/* <img 
-            loading="lazy" 
-            src="./MainBirdImg.png" 
-            alt="" 
-            className="object-contain max-w-full mt-4 aspect-[0.95] w-[5rem] lg:w-[7rem]" 
-          /> */}
-            <img
-              ref={birdRef}
-              loading="lazy"
-              src="./MainBirdImg.png"
-              alt=""
-              className="object-contain max-w-full mt-4 aspect-[0.95] w-[5rem] lg:w-[7rem]"
-            />
-          </div>
-        </section>
-      </nav>
-      <div
-        className={`w-[50vw] h-[100vh] slider bg-black sticky top-0 transition-transform duration-1000 ease-in-out ${menuIcon ? '-translate-x-full' : 'translate-x-0'}`}
-        onTransitionEnd={() => {
-          document.body.style.overflow = menuIcon ? 'auto' : 'hidden';
-        }}
-      >
-        <div className="flex flex-col w-[50vw] max-md:ml-0 max-md:w-full">
-          <nav className="flex overflow-hidden flex-col items-start px-16 h-screen mx-auto w-full font-bold tracking-widest text-white bg-black max-md:px-5 max-md:max-w-full">
-            <ul className="mt-40 max-md:mt-10 ml-4">
-              <li className="mt-8 first:mt-0">
-                <a className="text-[60px] text-purple-700 font-arial font-extralight leading-none max-md:text-4xl">
-                  Home
-                </a>
-              </li>
-              {menuItems.map((item, index) => (
-                <li key={index} className="mt-6 first:mt-0">
-                  <a href={`#${item.toLowerCase().replace(/\s+/g, '-')}`} className="text-[60px] hover:text-purple-700 font-arial font-extralight leading-none max-md:text-4xl">
-                    {item}
-                  </a>
-                </li>
-              ))}
-            </ul>
-            <footer className="flex gap-5 justify-between mt-16 max-w-full tracking-wider max-md:mt-10">
-              {footerLinks.map((column, index) => (
-                <div key={index} className="flex ml-5 flex-col items-start text-base font-arial font-medium leading-none">
-                  <h3>{column.title}</h3>
-                  <ul className="mt-6">
-                    {column.items.map((item, itemIndex) => (
-                      <li key={itemIndex} className={itemIndex > 0 ? "mt-6" : ""}>
-                        <a href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}>{item}</a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </footer>
-          </nav>
-        </div>
-      </div>
+      <Navbar 
+        menuIcon={menuIcon} 
+        handleMenuslide={handleMenuslide} 
+        handleCloseslide={handleCloseslide} 
+        menuItems={menuItems} 
+        footerLinks={footerLinks} 
+        birdRef={birdRef} 
+      />
 
 
 

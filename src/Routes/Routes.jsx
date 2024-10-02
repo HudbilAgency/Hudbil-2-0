@@ -8,6 +8,8 @@ import CarousalImgBlogs from '../Components/CarousalImgBlogs'
 import CarousalImgBrands from '../Components/CarousalImgBrands';
 import Accessibilities from '../Pages/Accessibilities';
 import PrivacyPolicy from '../Pages/PrivacyPolicy';
+import TalkToElla from '../Pages/TalkToElla';
+import ContactForm from '../Pages/ContactForm';
 
 const Routers = () => {
   return (
@@ -17,10 +19,11 @@ const Routers = () => {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/accessibilities" element={<Accessibilities />} />
-              <Route path="/accessibilities" element={<Accessibilities />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               <Route path="/Animation" element={<Animation/>} />
               <Route path="/Test" element={<Test/>} />
+              <Route path="/TalkToElla" element={<TalkToElla/>} />
+              <Route path="/ContactForm" element={<ContactForm/>} />
             </Routes> 
         </Router>
     </>
