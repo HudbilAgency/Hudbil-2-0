@@ -184,23 +184,22 @@ const BlogPage2 = () => {
                             </div>
                         </div>
                     </div>
-
                 </section>
 
                 <section className='bg-[#2D2D2E] md:mt-8 2xl:mt-4 pt-28 pb-20 px-6 lg:px-16'>
-                <div className='w-full flex flex-col md:flex-row gap-12 md:gap-0 items-start justify-between text-white'>
-                <div className='w-full md:w-1/2 text-3xl leading-6 font-normal'>ABOUT THE AUTHOR</div>
-                <div className='flex flex-col gap-5 w-full md:w-2/5 lg:w-1/3'>
-                <div className='flex items-start gap-5'>
-                    <div><img src="./malakhlogo.png" alt="malakh jibril" /></div>
-                    <div className='flex flex-col items-start text-lg font-normal leading-7'>
-                        <div>Malakh Jibril</div>
-                        <div className='text-[#838383] text-sm'>Brand Consultant</div>
+                    <div className='w-full flex flex-col md:flex-row gap-12 md:gap-0 items-start justify-between text-white'>
+                        <div className='w-full md:w-1/2 text-3xl leading-6 font-normal'>ABOUT THE AUTHOR</div>
+                        <div className='flex flex-col gap-5 w-full md:w-2/5 lg:w-1/3'>
+                            <div className='flex items-start gap-5'>
+                                <div><img src="./malakhlogo.png" alt="malakh jibril" /></div>
+                                <div className='flex flex-col items-start text-lg font-normal leading-7'>
+                                    <div>Malakh Jibril</div>
+                                    <div className='text-[#838383] text-sm'>Brand Consultant</div>
+                                </div>
+                            </div>
+                            <div className='leading-6'>I work with small companies, helping start-ups to launch and get off the ground. I have also worked with well-established SME's helping them to develop brand and or move into new markets and overseas. I have built, trained and monetised digital departments within agencies. I have also re-organised the marketing functions within a business building in-house agency style communications teams.</div>
+                        </div>
                     </div>
-                </div>
-                <div className='leading-6'>I work with small companies, helping start-ups to launch and get off the ground. I have also worked with well-established SME's helping them to develop brand and or move into new markets and overseas. I have built, trained and monetised digital departments within agencies. I have also re-organised the marketing functions within a business building in-house agency style communications teams.</div>
-                </div>
-                </div>
                     <ReachUsBlog />
                     <div className='text-white text-3xl mb-16 md:mb-24 leading-snug'>
                         More on BEHAVIOUR CHANGE

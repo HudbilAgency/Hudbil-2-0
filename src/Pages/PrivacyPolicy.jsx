@@ -395,7 +395,7 @@ const PrivacyPolicy = () => {
 
                     <div className='w-full lg:w-1/3 2xl:w-1/4 border border-[#B0B0B0] border-opacity-75 rounded-lg'>
                         <div className='font-normal text-2xl leading-9 py-6 px-6'>Contents</div>
-                        <div className='flex flex-col gap-4 pb-6'>
+                        <div className='flex flex-col gap-4 pb-6 text-[#454343]'>
                             <div className='flex gap-8 items-start px-6 font-normal text-base leading-7'>
                                 <div>1.</div>
                                 <div>WHAT INFORMATION DO WE COLLECT?</div>
