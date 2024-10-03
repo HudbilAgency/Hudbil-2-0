@@ -21,8 +21,8 @@ const Routers = () => {
               <Route path="/terms&conditions" element={<TandC />} />
               <Route path="/Animation" element={<Animation/>} />
               <Route path="/Test" element={<Test/>} />
-              <Route path="/TalkToElla" element={<TalkToElla/>} />
-              <Route path="/ContactForm" element={<ContactForm/>} />
+              <Route path="/talk-to-ella" element={<TalkToElla/>} />
+              <Route path="/contact-us" element={<ContactForm/>} />
             </Routes> 
     </>
   )
