@@ -132,7 +132,7 @@ const BlogPage2 = () => {
                                 <div className='leading-7 font-normal text-base text-[#454343]'>
                                     <div>Published</div>
                                 </div>
-                                <div className='font-normal text-[1.4rem] leading-9'>
+                                <div className='font-normal text-[1.3rem] leading-9'>
                                     <div>August 13, 2024</div>
                                 </div>
                             </div>
@@ -140,7 +140,7 @@ const BlogPage2 = () => {
                                 <div className='leading-7 font-normal text-base text-[#454343]'>
                                     <div>Written By</div>
                                 </div>
-                                <div className='font-normal text-[1.4rem] leading-9'>
+                                <div className='font-normal text-[1.3rem] leading-9'>
                                     <div>Malakh Jibril</div>
                                 </div>
                             </div>
@@ -148,7 +148,7 @@ const BlogPage2 = () => {
                                 <div className='leading-7 font-normal text-base text-[#454343]'>
                                     <div>Reading Time</div>
                                 </div>
-                                <div className='font-normal text-[1.4rem] leading-9'>
+                                <div className='font-normal text-[1.3rem] leading-9'>
                                     <div>8 Min</div>
                                 </div>
                             </div>
