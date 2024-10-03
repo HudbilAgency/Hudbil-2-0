@@ -317,14 +317,14 @@ const PrivacyPolicy = () => {
                                         <div className='text-2xl'>What categories of personal information do we collect?</div>
                                         <div>We have collected the following categories of personal information in the past twelve (12) months:</div>
                                         <div>
-                                            <div className="border border-black">
-                                                <div className="flex border-b border-black">
-                                                    <div className="py-2 px-4 md:px-6 text-left border-r border-black w-1/2 font-normal text-xl">Category</div>
+                                            <div className="border border-black border-opacity-50">
+                                                <div className="flex border-b border-black border-opacity-50">
+                                                    <div className="py-2 px-4 md:px-6 text-left border-r border-opacity-50 border-black w-1/2 font-normal text-xl">Category</div>
                                                     <div className="py-2 px-4 md:px-12 text-left w-1/2 font-normal text-xl">Examples</div>
                                                 </div>
                                                 {tableRows.map((row, index) => (
-                                                    <div key={index} className="flex border-b border-black">
-                                                        <div className="py-2 px-4 md:px-6 text-left border-r border-black w-1/2 flex items-center justify-between"><div>{row.category}</div></div>
+                                                    <div key={index} className="flex border-b border-black border-opacity-50">
+                                                        <div className="py-2 px-4 md:px-6 text-left border-r border-opacity-50 border-black w-1/2 flex items-center justify-between"><div>{row.category}</div></div>
                                                         <div className="py-2 px-4 md:px-12 text-left w-1/2 flex items-center justify-between"><div>{row.examples}</div></div>
                                                     </div>
                                                 ))}
@@ -389,7 +389,7 @@ const PrivacyPolicy = () => {
                             </div>
                         </div>
                         <div>
-                            <div className='hidden lg:block w-[1px] absolute bg-[#B0B0B0] opacity-75 h-full'></div>
+                            <div className='hidden lg:block w-[1px] absolute bg-[#7e7676] opacity-50 h-full'></div>
                         </div>
                     </div>
 

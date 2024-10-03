@@ -20,8 +20,8 @@ const ReachUs = () => {
       <div className="w-full max-md:max-w-full">
         <div className="flex max-md:flex-col">
           <div className="flex flex-col w-full md:w-[50vw] max-md:ml-0 max-md:w-full">
-            <div className="flex flex-col w-full md:w-2/3 items-start mt-1 text-2xl sm:text-3xl text-white max-md:mt-10 max-md:max-w-full">
-              <h2 className="font-arial leading-8 uppercase">
+            <div className="flex flex-col w-full md:w-3/4 lg:w-2/3 items-start mt-1 text-2xl sm:text-3xl text-white max-md:mt-10 max-md:max-w-full">
+              <h2 className="font-arial leading-tight uppercase">
                 Hudbil private limited
               </h2>
               <p className="self-stretch my-6 text-2xl font-arial font-light leading-8 max-md:max-w-full">
@@ -77,7 +77,7 @@ const ReachUs = () => {
               </div>
               <button
                 type="submit"
-                className="px-16 py-5 mt-20 font-arial w-80 max-w-full text-lg font-medium tracking-wider leading-none bg-white rounded-[1000px] text-neutral-950 hover:bg-black hover:text-white max-md:px-5 max-md:mt-10 "
+                className="px-16 py-5 mt-20 font-arial transition-all duration-500 w-80 max-w-full text-lg font-medium tracking-wider leading-none bg-white rounded-[1000px] text-neutral-950 hover:bg-black hover:text-white max-md:px-5 max-md:mt-10 "
               >
                 Send to reach us
               </button>
