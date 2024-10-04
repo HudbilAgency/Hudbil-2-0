@@ -17,7 +17,7 @@ const Home = () => {
     "/LandingVideos/video5.mp4",
     "/LandingVideos/video6.mp4",
   ];
-  
+
 
   const [currentVideo, setCurrentVideo] = useState(randomVideos[0]);
   const [previousIndex, setPreviousIndex] = useState(null);
@@ -213,21 +213,21 @@ const Home = () => {
 
     if (mediaQuery.matches) {
 
-    gsap.fromTo(sectionRef.current,
-      { backgroundColor: 'black' },
-      {
-        backgroundColor: 'white',
-        opacity: 1,
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: 'top 40%',
-          end: '5% top',
-          scrub: true
+      gsap.fromTo(sectionRef.current,
+        { backgroundColor: 'black' },
+        {
+          backgroundColor: 'white',
+          opacity: 1,
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: 'top 40%',
+            end: '5% top',
+            scrub: true
 
+          }
         }
-      }
-    );
-  }
+      );
+    }
   }, []);
 
   {
@@ -399,13 +399,13 @@ const Home = () => {
     <div className="bg-black">
       <Loader onLoadingComplete={handleLoadingComplete} />
 
-      <Navbar 
-        menuIcon={menuIcon} 
-        handleMenuslide={handleMenuslide} 
-        handleCloseslide={handleCloseslide} 
-        menuItems={menuItems} 
-        footerLinks={footerLinks} 
-        birdRef={birdRef} 
+      <Navbar
+        menuIcon={menuIcon}
+        handleMenuslide={handleMenuslide}
+        handleCloseslide={handleCloseslide}
+        menuItems={menuItems}
+        footerLinks={footerLinks}
+        birdRef={birdRef}
       />
 
 
@@ -478,13 +478,13 @@ const Home = () => {
           <section className="w-full lg:w-[50vw] bg-white" ref={sectionRef} >
             <div className="w-full">
               <div className='mx-6 md:mx-8'>
-                <div className='py-28'>
+                <div className='pt-28 pb-12'>
                   <h1 ref={secondsectionRef} className="text-[48px] font-arial w-full lg:w-[83%] leading-tight text-neutral-950  max-md:text-4xl">
                     We are a DESIGN + BUILD creative agency intent on solving the toughest problems for Brands & organisations face in today's world.
                   </h1>
                 </div>
                 <hr className="w-full h-px border border-gray-400 border-solid" />
-                <div className="my-16 w-full">
+                <div className="mt-16 mb-12 w-full">
                   <div className="flex flex-col xl:flex-row w-full items-start justify-between">
                     <div className="flex w-fit">
                       <div className="flex gap-3 items-center text-base tracking-wider leading-none text-neutral-950 max-md:mt-10">
@@ -497,9 +497,9 @@ const Home = () => {
                         {clients.map((client, index) => (
                           <div key={index} className={index > 0 ? "mt-4" : ""}>{client}</div>
                         ))}
-                        <button className="flex flex-row items-center gap-4 px-12 py-3 mt-12 text-base leading-none text-white bg-black rounded-[1000px] max-md:px-5 max-md:mt-10 hover:bg-[#7811A5] transition-colors duration-300">
+                        <button className="button flex flex-row items-center gap-4 px-12 py-3 mt-12 text-base leading-none text-white bg-black rounded-[1000px] max-md:px-5 max-md:mt-10 hover:bg-[#7811A5] transition-colors duration-300">
                           <h1 className='text-base font-arial'>Learn more about us</h1>
-                          <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                          <img ref={buttonImgRef} src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                         </button>
                       </div>
                     </div>
@@ -554,7 +554,7 @@ const Home = () => {
             </div>
 
 
-            <div className="flex justify-between items-center w-[200vw] lg:w-[100vw] py-24 bg-black" ref={animationRef} >
+            <div className="flex justify-between items-center w-[200vw] lg:w-[100vw] py-12 bg-black" ref={animationRef} >
 
               <div className="flex flex-col items-center w-1/2" ref={carouselItem1}>
                 <h2 className="text-6xl font-arial leading-none text-center text-purple-700 max-md:text-4xl">Our Brands</h2>
@@ -607,15 +607,15 @@ const Home = () => {
             <section className='mx-6 md:mx-8'>
 
               <h2 className="self-start font-arial mt-20 text-[25px]  tracking-wide text-purple-700">What we do</h2>
-              <div className='flex flex-col md:flex-row mt-12 md:items-end justify-between'>
+              <div className='flex flex-col md:flex-row mt-12 md:items-end justify-between max-w-full w-[780px]'>
                 <p className="w-full md:w-2/3 font-arial text-[24px] tracking-wider leading-8 text-neutral-950 max-md:mt-10  max-md:max-w-full">
                   We engages brands with immersive digital experiences that bring you a return on creativity.We love solving thorny problems with smart, custom software design and development in one place.
                 </p>
-                <p className="w-1/3 mt-auto md:text-end pr-[1%] font-arial text-xl tracking-wider text-purple-700 max-md:mt-10  max-md:max-w-full">
+                <p className="w-1/3 mt-auto md:text-end font-arial text-xl tracking-wider text-purple-700 max-md:mt-10  max-md:max-w-full">
                   Read Now
                 </p>
               </div>
-              <div className="mt-16  max-w-full h-px border border-solid border-gray-400 w-full max-md:mt-10" />
+              <div className="mt-12 max-w-full h-px border border-solid border-gray-400 w-full" />
               <div className="flex gap-5 items-start self-start mt-10  leading-loose text-neutral-950">
                 <div className="flex shrink-0 self-stretch my-auto w-3 h-3 bg-purple-700 rounded-[1000px]" />
                 <div className="self-stretch text-[25px] text-purple-700 my-auto">Our Services</div>
@@ -628,7 +628,7 @@ const Home = () => {
                         <div className="flex overflow-hidden flex-col items-center bg-white aspect-square">
                           <img loading="lazy" src={service.image} alt={service.title} className=" object-cover w-full aspect-[0.97] filter grayscale hover:grayscale-0 transition-all duration-300" />
                         </div>
-                        <h3 className="self-start mt-6 text-2xl font-arial tracking-wider leading-none text-neutral-950">{service.title}</h3>
+                        <h3 className="self-start mt-6 text-2xl font-arial tracking-wider leading-8 text-neutral-950">{service.title}</h3>
                         <p className="mt-7 font-arial text-lg tracking-wide leading-8 text-neutral-950 ">{service.description}</p>
                       </div>
                       <button className='mt-5 text-purple-700 text-xl self-start'>Read now</button>
@@ -636,10 +636,10 @@ const Home = () => {
                   ))}
                 </div>
               </div>
-              <div className="shrink-0 mt-16  max-w-full h-px border border-solid border-gray-400 w-full max-md:mt-10" />
+              <div className="shrink-0 mt-12 max-w-full h-px border border-solid border-gray-400 w-full" />
               <div className="flex gap-2 items-start self-start mt-10 leading-none text-neutral-950">
-              <div className="flex shrink-0 self-stretch my-auto w-3 h-3 bg-purple-700 rounded-[1000px]" />
-              <div className="self-stretch ml-[1.5%] text-[25px] text-purple-700 my-auto">Our Blogs</div>
+                <div className="flex shrink-0 self-stretch my-auto w-3 h-3 bg-purple-700 rounded-[1000px]" />
+                <div className="self-stretch ml-[1.5%] text-[25px] text-purple-700 my-auto">Our Blogs</div>
               </div>
               {/* <div className="mt-14  max-w-full w-[696px] max-md:mt-10 ">
                         <div className="flex gap-12 max-md:flex-col">
@@ -674,20 +674,18 @@ const Home = () => {
             </section>
             <CarousalImgBlogs />
             <button className="button self-end flex flex-row justify-between px-12 py-3 my-12 mx-auto lg:mr-8 leading-none bg-black text-white gap-8 rounded-[1000px] max-md:px-5 max-md:mt-10  hover:bg-[#7811A5] transition-colors duration-300">
-                <h1 className='text-base mt-1 font-arial'>View all insight</h1>
-                <img ref={buttonImgRef} src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
-              </button>
+              <h1 className='text-base mt-1 font-arial'>View all insight</h1>
+              <img ref={buttonImgRef} src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+            </button>
 
-
-
-            <div ref={tabloidRef} className="flex overflow-hidden flex-col bg-black items-center px-6 md:px-20 py-24 mt-24 max-w-full w-full max-md:mt-10">
+            <div ref={tabloidRef} className="flex overflow-hidden flex-col bg-black items-center px-6 md:px-20 py-12 mt-12 max-w-full w-full max-md:mt-10">
               <div className="flex flex-col items-center max-w-full w-[534px]">
                 <h2 className="text-5xl font-arial leading-none text-center text-white max-md:text-4xl">hudbil Tabloids</h2>
                 <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/febb23b80aaedca3ecd1e75ad17e8156c707e8212bf67654390601ebe28c8047?placeholderIfAbsent=true&apiKey=7904fd7afaaf4ee2b0837ab86d91b244" alt="Hudbil Tabloids" className="filter grayscale hover:grayscale-0 transition-all duration-300 object-contain mt-16 max-w-full aspect-[0.88] w-[379px] max-md:mt-10 " />
                 <h3 className="self-stretch mt-16 text-4xl font-arial text-center text-white leading-[50px] max-md:mt-10 max-md:max-w-full max-md:text-4xl max-md:leading-[54px]" ref={fadeInRef2}>
                   Big idea, Kalacode is <br /> beating heart of <br /> Hudbil's, a new venture <br /> agency like no other in India.
                 </h3>
-                <button className="button flex flex-row justify-between px-20 py-4 my-20  mr-6 md:mr-8 leading-none bg-white text-black self-center items-center gap-8 rounded-[1000px] max-md:px-5   hover:bg-[#7811A5] transition-colors duration-300">
+                <button className="button flex flex-row justify-between px-20 py-4 mt-20  mr-6 md:mr-8 leading-none bg-white text-black self-center items-center gap-8 rounded-[1000px] max-md:px-5   hover:bg-[#7811A5] transition-colors duration-300">
                   <h1 className='text-xl mt-1 font-arial'>Learn More</h1>
                   <img ref={buttonImgRef} src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                 </button>
