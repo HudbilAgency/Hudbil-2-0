@@ -1,4 +1,5 @@
 import React from 'react'
+import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer'
 
 const PrivacyPolicy = () => {
@@ -19,6 +20,7 @@ const PrivacyPolicy = () => {
 
     return (
         <>
+        <Navbar />
             <main>
                 <div className='font-normal text-4xl pt-20 px-6 lg:px-16 lg:hidden'>
                     Privacy Policy

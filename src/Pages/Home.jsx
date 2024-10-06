@@ -18,7 +18,6 @@ const Home = () => {
     "/LandingVideos/video6.mp4",
   ];
 
-
   const [currentVideo, setCurrentVideo] = useState(randomVideos[0]);
   const [previousIndex, setPreviousIndex] = useState(null);
 
