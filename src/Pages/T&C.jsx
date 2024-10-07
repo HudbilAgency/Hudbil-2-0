@@ -1,11 +1,13 @@
 import React from 'react'
+import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 
 const TandC = () => {
 
     return (
         <>
-            <main>
+            <Navbar />
+            <main className='-mt-[100vh] pt-[40px]'>
                 <div className='font-normal text-4xl pt-20 px-6 lg:px-16 lg:hidden leading-snug'>
                     Terms and Conditions
                 </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import CarouselBlogPage from '../Components/CarouselBlogPage';
 import ReachUsBlog from '../Components/ReachUsBlog';
+import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer'
 
 const BlogPage2 = () => {
@@ -52,11 +53,25 @@ const BlogPage2 = () => {
 
     return (
         <>
-            <main>
-                <div className='font-normal text-4xl pt-20 px-6 lg:px-16 lg:hidden leading-snug'>
+            <Navbar />
+            <main className='-mt-[100vh] pt-[40px]'>
+                <div className='flex items-center gap-3 pt-20 px-6 lg:px-16'>
+                    <div>
+                        <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.6 1L1.5 6L6.6 11" stroke="#838383" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M20.4998 6H3.7998" stroke="#838383" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div className='font-normal text-sm text-[#838383]'>
+                    <a href='/insights'>Return to Insights</a>
+                        
+                    </div>
+
+                </div>
+                <div className='font-normal text-3xl md:text-4xl pt-10 px-6 lg:px-16 lg:hidden leading-snug'>
                     The Evolution Of The Graphic Design
                 </div>
-                <section className='flex flex-col-reverse lg:flex-row items-start justify-between gap-20 lg:gap-10 py-10 lg:py-20 2xl:pb-28 px-6 lg:px-16'>
+                <section className='flex flex-col-reverse lg:flex-row items-start justify-between gap-20 lg:gap-10 py-10 lg:pt-10 lg:pb-20 2xl:pb-28 px-6 lg:px-16'>
                     <div className='w-full relative lg:w-2/3 flex items-start h-full gap-0 lg:gap-10 pb-16 lg:pb-0'>
                         <div className='w-full'>
                             <div className='font-normal text-4xl pb-12 hidden lg:block leading-snug'>

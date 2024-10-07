@@ -407,8 +407,6 @@ const Home = () => {
         birdRef={birdRef}
       />
 
-
-
       <div className="flex flex-col lg:flex-row bg-black">
         <div className="w-[50vw] h-[100%] hidden lg:block box2 -mt-[100vh] bg-no-repeat bg-cover bg-center sticky top-0 z-[999]">
 

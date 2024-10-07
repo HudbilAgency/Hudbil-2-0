@@ -68,7 +68,7 @@ const Loader = ({ onLoadingComplete }) => {
         className="mb-8 w-48 h-48"
       />
       <div className="text-center">
-        <h1 ref={textRef} className="text-white font-arial text-[60px]">Innovation At Your fingertips</h1>
+        <h1 ref={textRef} className="text-white font-arial text-2xl md:text-[60px]">Innovation At Your fingertips</h1>
       </div>
     </div>
   );

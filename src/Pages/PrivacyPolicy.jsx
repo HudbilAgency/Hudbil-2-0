@@ -21,7 +21,7 @@ const PrivacyPolicy = () => {
     return (
         <>
         <Navbar />
-            <main>
+            <main className='-mt-[100vh] pt-[40px]'>
                 <div className='font-normal text-4xl pt-20 px-6 lg:px-16 lg:hidden'>
                     Privacy Policy
                 </div>

@@ -7,7 +7,6 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'Glory': ['Glory', 'sans-serif'],
         'arial': ['Arial', 'sans-serif'],
       },
     },

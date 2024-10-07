@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState, useEffect, useRef } from "react";
+import { useLocation } from 'react-router-dom';
 import { gsap } from "gsap";
 import ScrollTrigger from 'gsap/ScrollTrigger';
 
@@ -379,6 +380,35 @@ const Navbar = () => {
     });
   }, []);
 
+  const location = useLocation();
+  const [activeItem, setActiveItem] = useState("Home");
+
+  useEffect(() => {
+    const pathname = location.pathname;
+    if (pathname === "/") {
+      setActiveItem("Home");
+    } else if (pathname === "/about-us") {
+      setActiveItem("About");
+    }
+    else if (pathname === "/our-work") {
+      setActiveItem("Work");
+    }
+    else if (pathname === "/services") {
+      setActiveItem("Services");
+    }
+    else if (pathname === "/products") {
+      setActiveItem("Products");
+    }
+    else if (pathname === "/insights") {
+      setActiveItem("Insights");
+    }
+    else if (pathname === "/talk-to-ella") {
+      setActiveItem("Ella");
+    }
+  }, [location.pathname]);
+
+  const pathnameimg = location.pathname;
+
   return (
     <nav>
       <section className="absolute z-[1000] bg-transparent w-full h-[100px]">
@@ -387,7 +417,7 @@ const Navbar = () => {
             {menuIcon ? (
               <div onClick={handleMenuslide} className='flex fixed items-center mt-5 gap-4 border-[#B9B9B97D] rounded-full bg-[#B9B9B97D] bg-opacity-50 py-2 pl-3 pr-6'>
                 <div
-                  className="p-2 rounded-full flex justify-center items-center cursor-pointer"
+                  className="p-1 md:p-2 rounded-full flex justify-center items-center cursor-pointer"
                   style={{
                     background: 'linear-gradient(135deg, #7811A5, #2E16BB)',
                   }}
@@ -418,7 +448,7 @@ const Navbar = () => {
             ) : (
               <div onClick={handleCloseslide} className='flex fixed mt-5 items-center gap-4 border-[#B9B9B97D] rounded-full bg-[#B9B9B97D] bg-opacity-50 py-2 pl-3 pr-6'>
                 <div
-                  className="p-2 rounded-full flex justify-center items-center cursor-pointer"
+                  className="p-1 md:p-2 rounded-full flex justify-center items-center cursor-pointer"
                   style={{
                     background: 'linear-gradient(135deg, #7811A5, #2E16BB)',
                   }}
@@ -450,16 +480,32 @@ const Navbar = () => {
             )}
           </button>
           <div>
-            <img
-            ref={birdRef}
-            loading="lazy"
-            src="./MainBirdImg.png"
-            alt="hudbil-logo"
-            className="w-[5rem] lg:w-[7rem]"
-          />
-          </div>    
+            {pathnameimg === '/' || pathnameimg === "/talk-to-ella" ? (
+              <img
+                ref={birdRef}
+                loading="lazy"
+                src="./MainBirdImg.png"
+                alt="hudbil-logo"
+                className="w-[5rem] lg:w-[7rem]"
+              />
+            ) : (
+              <img className="w-[5rem] md:w-[8rem] mt-6 md:mt-5" src="./hudbil-logo.png" alt="logo" />
+            )}
+          </div>
+
+
         </div>
       </section>
+
+      {pathnameimg !== '/' && (
+        <div
+          className={`fixed w-[100vw] inset-0 bg-black z-[900] duration-1000 transition-all ease-in-out ${menuIcon ? "opacity-0 hidden" : "opacity-50"
+            }`}
+            onTransitionEnd={() => {
+          document.body.style.overflow = menuIcon ? 'auto' : 'hidden';
+        }}
+        />
+      )}
 
       <div
         className={`w-[100vw] lg:w-[50vw] h-[100vh] overflow-hidden z-[999] slider bg-black sticky top-0 transition-transform duration-1000 ease-in-out ${menuIcon ? '-translate-x-full' : 'translate-x-0'}`}
@@ -467,7 +513,7 @@ const Navbar = () => {
           document.body.style.overflow = menuIcon ? 'auto' : 'hidden';
         }}
       >
-        <div className="flex flex-col h-screen w-[100vw] lg:w-[50vw]">
+        <div className={`flex flex-col h-screen w-[100vw] lg:w-[50vw] `}>
           <nav className="h-screen flex flex-col items-start justify-between w-full font-bold text-white bg-black pt-[110px] pb-[30px] xl:pb-[20px] ">
             <ul className="mx-6 lg:mx-16 flex flex-col items-start gap-4 md:gap-6 lg:gap-2 2xl:gap-6">
               {menuItems.map((item, index) => (

@@ -210,12 +210,12 @@ const Footer = () => {
             ))}
           </div>
       </nav>
-      <div className="flex flex-row items-start justify-between mt-28 xl:mt-40 text-sm tracking-wider leading-5 text-zinc-500 w-full">
-       <div className='w-1/3 md:w-1/3'>
+      <div className="flex flex-col md:flex-row gap-12 md:gap-0 items-start justify-between mt-20 xl:mt-40 text-sm tracking-wider leading-5 text-zinc-500 w-full">
+       <div className='w-full md:w-1/3 flex flex-col items-center md:items-start'>
        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/f4951f80ca1e5237f96f1e87cfd278a72a3d04d15a73cc33588885369364b3ee?placeholderIfAbsent=true&apiKey=7904fd7afaaf4ee2b0837ab86d91b244" className="flex object-contain shrink-0 max-w-full aspect-[1.21] w-[250px]" alt="Hudbil logo" />
-       <h1 className='tracking-tighter w-full text-start self-start text-white mx-auto font-arial text-[10px] sm:text-sm md:text-2xl'>Innovation at your fingertips</h1>
+       <h1 className='tracking-tighter text-center w-full md:text-start self-start text-white mx-auto font-arial text-[10px] sm:text-sm md:text-2xl'>Innovation at your fingertips</h1>
        </div>
-        <div className="flex flex-col w-1/2">
+        <div className="flex flex-col w-full md:w-1/2">
           <p className="max-md:max-w-full text-base text-gray-300 font-arial">
             Hudbil Private Limited is a reliable company, with multiple brands under the one umbrella. We are here to enable you with top-notch digital solutions & products through a proven cost-saving model. This allows you to scale, optimise, expand, and enhance your business with an individual approach. This is our game style. From turning spreadsheets into custom solutions, integrating multiple platforms or automating manual processes, we can tackle any challenge.
           </p>
@@ -224,7 +224,7 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row items-center justify-between flex-wrap gap-6 self-center mt-40 md:mt-20 max-w-full text-sm tracking-wider leading-none text-zinc-400 max-md:mt-10">
+      <div className="flex flex-col md:flex-row items-center justify-between flex-wrap gap-6 self-center mt-48 md:mt-20 max-w-full text-sm tracking-wider leading-none text-zinc-400 max-md:mt-10">
         <div className="grow font-arial">© hudbil 2024</div>
         <div className="grow shrink font-arial">Quick Links</div>
         <div className="grow shrink font-arial"><a href="/cookies-policy">Cookies Policy</a></div>
