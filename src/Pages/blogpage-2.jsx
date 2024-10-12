@@ -54,7 +54,7 @@ const BlogPage2 = () => {
     return (
         <>
             <Navbar />
-            <main className='-mt-[100vh] pt-[40px]'>
+            <main className='pt-[40px]'>
                 <div className='flex items-center gap-3 pt-20 px-6 lg:px-16'>
                     <div>
                         <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">

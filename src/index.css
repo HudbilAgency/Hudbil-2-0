@@ -10,11 +10,27 @@ body {
   font-family: "Arial Th", Arial, sans-serif;
 }
 
-#root.noscroll {
+/* #root.noscroll {
   overflow: hidden;
-}
+} */
 
 ::-webkit-scrollbar {
   width: 0px;
   height: 0px;
+}
+
+.marquee-text-container {
+  display: flex;
+  gap: 60px; 
+  animation: marquee 15s linear infinite;
+  white-space: nowrap;
+}
+
+.marquee-text {
+  display: inline-block;
+}
+
+@keyframes marquee {
+  0% {transform: translateX(0%);}
+  100% {transform: translateX(-30%);}
 }

@@ -159,7 +159,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="flex overflow-hidden flex-col px-6 md:px-16 pt-20 pb-6 bg-neutral-950">
+    <footer className="flex overflow-hidden flex-col px-6 md:px-16 pt-20 pb-6 bg-neutral-950 relative z-20">
       <nav className="flex flex-col md:flex-row items-start justify-between gap-16 lg:gap-20">
           <div className="flex w-full h-full flex-col xl:flex-row gap-16 md:gap-[84px] lg:gap-[70px] xl:gap-0 md:w-1/3 items-start justify-between">
             <div className="flex flex-col">

@@ -6,7 +6,7 @@ const Tabloids = () => {
     return (
         <>
             <Navbar />
-            <main className='-mt-[100vh] pt-[60px]'>
+            <main className='pt-[60px]'>
                 <div className='font-normal text-4xl py-16 px-6 md:px-16'>
                     Hudbil Tabloids
                 </div>

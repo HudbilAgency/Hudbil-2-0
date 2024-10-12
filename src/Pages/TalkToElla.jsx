@@ -25,7 +25,7 @@ const TalkToElla = () => {
   return (
     <>
       <Navbar />
-      <main className='-mt-[100vh]'>
+      <main className=''>
         <div className="bg-white">
           <div className="flex flex-col lg:flex-row overflow-hidden  max-md:flex-col">
             <section className="flex flex-col lg:w-[50vw] w-full max-md:ml-0 max-md:w-full">

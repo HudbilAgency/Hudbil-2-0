@@ -424,7 +424,7 @@ const Home = () => {
 
         </div>
 
-        <div className="w-full block lg:hidden box2 -mt-[100vh] bg-no-repeat bg-cover bg-center sticky top-0">
+        <div className="w-full block lg:hidden box2 -mt-[0vh] bg-no-repeat bg-cover bg-center sticky top-0">
 
           <video
             src={currentVideo}
@@ -440,7 +440,7 @@ const Home = () => {
 
         </div>
 
-        <section className='-mt-[30vh] lg:-mt-[100vh] box3 justify-end items-end overflow-hidden w-full lg:w-[50vw] flex-col '>
+        <section className='-mt-[30vh] lg:-mt-[0vh] box3 justify-end items-end overflow-hidden w-full lg:w-[50vw] flex-col '>
           <div className="w-full h-screen hidden lg:block">
             <div className="flex flex-col relative h-full justify-center items-center w-full bg-neutral-950">
               <div className='px-6'>

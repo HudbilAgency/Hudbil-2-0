@@ -6,7 +6,7 @@ const Accessibilities = () => {
   return (
     <>
       <Navbar />
-      <main className='-mt-[100vh] pt-[40px]'>
+      <main className='pt-[40px]'>
         <div className='font-normal text-4xl py-20 px-6 md:px-16'>
           Accessibilities
         </div>

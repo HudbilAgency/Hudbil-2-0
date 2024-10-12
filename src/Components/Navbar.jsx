@@ -499,50 +499,50 @@ const Navbar = () => {
         <div
           className={`fixed w-[100vw] inset-0 bg-black pointer-events-none z-[900] duration-1000 hidden lg:block transition-all ease-in-out ${menuIcon ? "opacity-0 hidden" : "opacity-50"
             }`}
-            onTransitionEnd={() => {
-          document.body.style.overflow = menuIcon ? 'auto' : 'hidden';
-        }}
+          onTransitionEnd={() => {
+            document.body.style.overflow = menuIcon ? 'auto' : 'hidden';
+          }}
         />
       )}
 
       <div
-        className={`w-[100vw] lg:w-[50vw] h-[100vh] overflow-hidden z-[999] slider bg-black sticky top-0 transition-transform duration-1000 ease-in-out ${menuIcon ? '-translate-x-full' : 'translate-x-0'}`}
-        onTransitionEnd={() => {
-          document.body.style.overflow = menuIcon ? 'auto' : 'hidden';
-        }}
-      >
-        <div className={`flex flex-col h-screen w-[100vw] lg:w-[50vw] `}>
-          <nav className="h-screen flex flex-col items-start justify-between w-full font-bold text-white bg-black pt-[100px] md:pt-[110px] pb-[60px] md:pb-[30px] xl:pb-[20px] ">
-            <ul className="mx-6 lg:mx-16 flex flex-col items-start gap-4 md:gap-6 lg:gap-2 2xl:gap-6">
-              {menuItems.map((item, index) => (
-                <li key={index} className="">
-                  <a
-                    href={item.link}
-                    className="text-4xl hover:text-purple-700 font-arial font-extrabold"
-                  >
-                    {item.name}
-                  </a>
+  className={`fixed top-0 left-0 h-[100vh] z-[999] bg-black transition-transform duration-1000 ease-in-out 
+    ${menuIcon ? 'translate-x-[-100%]' : 'translate-x-0'} w-[100vw] lg:w-[50vw]`}
+  onTransitionEnd={() => {
+    document.body.style.overflow = menuIcon ? 'auto' : 'hidden';
+  }}
+>
+  <div className={`flex flex-col h-screen w-[100vw] lg:w-[50vw]`}>
+    <nav className="h-screen flex flex-col items-start justify-between w-full font-bold text-white bg-black pt-[100px] md:pt-[110px] pb-[60px] md:pb-[30px] xl:pb-[20px]">
+      <ul className="mx-6 lg:mx-16 flex flex-col items-start gap-4 md:gap-6 lg:gap-2 2xl:gap-6">
+        {menuItems.map((item, index) => (
+          <li key={index}>
+            <a href={item.link} className="text-4xl hover:text-purple-700 transition-all duration-300 font-arial font-extrabold">
+              {item.name}
+            </a>
+          </li>
+        ))}
+      </ul>
+      <footer className="w-5/6 md:w-3/5 lg:w-full lg:gap-20 lg:justify-normal flex items-center justify-between px-6 lg:px-16">
+        {footerLinks.map((column, index) => (
+          <div key={index} className="flex flex-col items-start text-sm font-arial font-medium leading-none">
+            <h3>{column.title}</h3>
+            <ul className="mt-4">
+              {column.items.map((item, itemIndex) => (
+                <li key={itemIndex} className={itemIndex > 0 ? 'mt-4' : ''}>
+                  <a href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}>{item}</a>
                 </li>
               ))}
             </ul>
+          </div>
+        ))}
+      </footer>
+    </nav>
+  </div>
+</div>
 
-            <footer className="w-5/6 md:w-3/5 lg:w-full lg:gap-20 lg:justify-normal flex items-center justify-between px-6 lg:px-16">
-              {footerLinks.map((column, index) => (
-                <div key={index} className="flex flex-col items-start text-sm font-arial font-medium leading-none">
-                  <h3>{column.title}</h3>
-                  <ul className="mt-4">
-                    {column.items.map((item, itemIndex) => (
-                      <li key={itemIndex} className={itemIndex > 0 ? "mt-4" : ""}>
-                        <a href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}>{item}</a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </footer>
-          </nav>
-        </div>
-      </div>
+
+
 
     </nav>
   );
