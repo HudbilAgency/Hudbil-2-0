@@ -15,14 +15,19 @@ const AboutUs = () => {
     return (
         <>
             <Navbar />
-            <div className='w-full h-screen bg-no-repeat bg-cover bg-center'>
-                <img
-                    className="w-full h-full object-cover fixed top-0 left-0 z-0"
-                    src="./about-us-main.png"
-                    alt="About us main"
-                />
+            <div className="w-full h-[80vh] bg-no-repeat bg-cover bg-center">
+                <video
+                    src="/LandingVideos/video2.mp4"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="object-cover h-[80vh] w-full fixed z-0"
+                >
+                    <source src="/LandingVideos/video2.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
             </div>
-
             <main className='relative z-20'>
                 <section className='bg-black py-20'>
                     <div className='md:w-3/5 font-normal text-[2rem] leading-tight text-white px-6 md:px-16'>
@@ -49,7 +54,7 @@ const AboutUs = () => {
                             <img className='mx-auto' src="./about-us2.png" alt="About Us" />
                             {/* Marquee Text */}
                             <div className="absolute w-full inset-0 flex justify-center items-center overflow-hidden">
-                                <div className="marquee-text-container font-normal text-2xl">
+                                <div className="marquee-text-container font-normal text-2xl uppercase">
                                     <div className="marquee-text text-white">Innovation at your fingertips</div>
                                     <div className="marquee-text text-white">SPARK IGNITING</div>
                                     <div className="marquee-text text-white">BETWEEN AUDIENCES</div>
@@ -254,7 +259,7 @@ const AboutUs = () => {
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
-                            <div className='text-[#917D7D] font-normal text-sm py-12 w-5/6'>
+                            <div className='text-[#917D7D] font-normal text-sm py-12 w-full md:w-5/6'>
                                 Get in touch to find out how our team enjoys tinkering, most importantly empower your organisation.
                             </div>
                             <button className="button self-end flex flex-row justify-between px-12 py-3 mb-4 leading-none hover:bg-white hover:text-black text-white gap-8 rounded-[1000px] max-md:px-5 bg-[#7811A5] transition-colors duration-300">
