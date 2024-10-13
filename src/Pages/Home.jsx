@@ -444,7 +444,7 @@ const Home = () => {
           <div className="w-full h-screen hidden lg:block">
             <div className="flex flex-col relative h-full justify-center items-center w-full bg-neutral-950">
               <div className='px-6'>
-                <img loading="lazy" src="./LandingVIdeos/LandingPageHudbilLogo.png" alt="" className="" />
+                <img loading="lazy" src="./LandingVideos/LandingPageHudbilLogo.png" alt="" className="" />
                 <h1 className='tracking-tighter text-center text-white mx-auto font-arial text-2xl md:text-4xl mt-2'>Innovation at your fingertips</h1></div>
               <button onClick={handleScroll} className='absolute bottom-8'>
                 <img
