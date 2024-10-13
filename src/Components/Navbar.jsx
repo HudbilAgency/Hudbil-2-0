@@ -6,8 +6,6 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 
 const Navbar = () => {
 
-  //navbar
-
   const randomVideos = [
     "/LandingVideos/video1.mp4",
     "/LandingVideos/video2.mp4",
@@ -508,14 +506,14 @@ const Navbar = () => {
       )}
 
       <div
-        className={`fixed top-0 left-0 h-[100vh] z-[999] bg-black transition-transform duration-1000 ease-in-out 
+        className={`fixed top-0 left-0 h-dvh z-[999] bg-black transition-transform duration-1000 ease-in-out 
     ${menuIcon ? 'translate-x-[-100%]' : 'translate-x-0'} w-[100vw] lg:w-[50vw]`}
         onTransitionEnd={() => {
           document.body.style.overflow = menuIcon ? 'auto' : 'hidden';
         }}
       >
-        <div className={`flex flex-col h-screen w-[100vw] lg:w-[50vw]`}>
-          <nav className="h-screen flex flex-col items-start justify-between w-full font-bold text-white bg-black pt-[100px] md:pt-[110px] pb-[60px] md:pb-[30px] xl:pb-[20px]">
+        <div className={`flex flex-col h-dvh w-[100vw] lg:w-[50vw]`}>
+          <nav className="h-dvh flex flex-col items-start justify-between w-full font-bold text-white bg-black pt-[100px] md:pt-[110px] pb-[60px] md:pb-[30px] xl:pb-[20px]">
             <ul className="mx-6 lg:mx-16 flex flex-col items-start gap-4 md:gap-6 lg:gap-2 2xl:gap-6">
               {menuItems.map((item, index) => (
                 <li key={index}>
