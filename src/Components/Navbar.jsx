@@ -6,6 +6,8 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 
 const Navbar = () => {
 
+  //navbar
+
   const randomVideos = [
     "/LandingVideos/video1.mp4",
     "/LandingVideos/video2.mp4",
