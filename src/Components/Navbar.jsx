@@ -517,15 +517,15 @@ const Navbar = () => {
             <ul className="mx-6 lg:mx-16 flex flex-col items-start gap-4 md:gap-6 lg:gap-2 2xl:gap-6">
               {menuItems.map((item, index) => (
                 <li key={index}>
-                  <a href={item.link} className="text-4xl hover:text-purple-700 transition-all duration-300 font-arial font-extrabold">
+                  <a href={item.link} className="text-4xl 2xl:text-7xl hover:text-purple-700 transition-all duration-300 font-arial font-extrabold">
                     {item.name}
                   </a>
                 </li>
               ))}
             </ul>
-            <footer className="w-5/6 md:w-3/5 lg:w-full lg:gap-20 lg:justify-normal flex items-center justify-between px-6 lg:px-16">
+            <footer className="w-5/6 md:w-3/5 lg:w-full lg:gap-20 2xl:gap-28 lg:justify-normal flex items-center justify-between px-6 lg:px-16">
               {footerLinks.map((column, index) => (
-                <div key={index} className="flex flex-col items-start text-sm font-arial font-medium leading-none">
+                <div key={index} className="flex flex-col items-start text-sm 2xl:text-base font-arial font-medium leading-none">
                   <h3>{column.title}</h3>
                   <ul className="mt-4">
                     {column.items.map((item, itemIndex) => (

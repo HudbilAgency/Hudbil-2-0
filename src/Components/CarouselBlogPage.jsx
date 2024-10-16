@@ -158,8 +158,8 @@ function CarouselBlogPage(props) {
                     }
                   )}
                 >
-                  <Link to={`${image.routepath}`}>
-                    <img src={image.src} alt={image.alt} className="w-full" />
+                  <Link to={`${image.routepath}`} className="overflow-hidden">
+                    <img src={image.src} alt={image.alt} className="w-full overflow-hidden" />
                   </Link>
                   <div className="mt-6 w-full flex flex-col items-start justify-between gap-4">
                     {image.content && (

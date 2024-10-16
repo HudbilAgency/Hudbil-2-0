@@ -11,8 +11,11 @@ const Tabloids = () => {
                     Hudbil Tabloids
                 </div>
                 <section className='flex flex-col lg:flex-row items-start gap-16 pl-6 md:pl-16 lg:pl-0 pr-6 md:pr-16 w-full pb-20'>
-                    <div className='flex items-center justify-center w-full lg:w-1/2'>
-                        <img className='w-full' src="./tabloids.png" />
+                    <div className='flex items-center justify-center w-full lg:w-1/2 lg:hidden'>
+                        <img className='w-full ' src="./tabloids.png" />
+                    </div>
+                    <div className='lg:flex hidden items-center justify-center w-full lg:w-1/2 bg-no-repeat bg-cover bg-center sticky top-0'>
+                        <img className='w-full h-screen object-cover' src="./tabloids.png" />
                     </div>
                     <div className='w-full lg:w-1/2'>
                         <div className='w-full bg-[#BDBBBB] h-[1px]'></div>
