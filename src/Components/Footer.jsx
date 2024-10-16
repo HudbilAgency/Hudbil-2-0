@@ -118,15 +118,15 @@ import React from 'react';
 
 const Footer = () => {
   const navigationLinks = [
-    { title: 'Home', url: '#' },
-    { title: 'About Us', url: '#' },
+    { title: 'Home', url: '/' },
+    { title: 'About Us', url: '/about-us' },
     { title: 'Services', url: '#' },
     { title: 'Products', url: '#' },
     { title: 'Insights', url: '#' },
     { title: 'Talk to Ella', url: '/talk-to-ella' },
     { title: 'Careers & Culture', url: '#' },
     { title: 'Contact Us', url: '/contact-us' },
-    { title: 'Hudbil Tabloids', url: '#' },
+    { title: 'Hudbil Tabloids', url: '/hudbil-tabloids' },
     { title: 'Privacy Policy', url: '/privacy-policy' },
     { title: 'Terms & Conditions', url: '/terms&conditions' },
     { title: 'Accessibilities', url: '/accessibilities' }
