@@ -12,6 +12,42 @@ const AboutUs = () => {
         setDropdownStates(updatedStates);
     };
 
+
+const teamMembers = [
+  { name: "Ms. Husna Zar", role: "Co-Founder and Managing Director", image: "https://cdn.builder.io/api/v1/image/assets/TEMP/0400ef3defb4412846f96cdbcc6dfad916ad863f212c8bd073c33a6840521557?placeholderIfAbsent=true&apiKey=ec02862acd164f0aad3ceef0d2a999c3" },
+  { name: "Mr. Mohammed Shujjath", role: "Co-Founder", image: "https://cdn.builder.io/api/v1/image/assets/TEMP/afeb8f0d64d97a95e78443f5c5078e2a506912e583550bd7f67b1a73cd098b81?placeholderIfAbsent=true&apiKey=ec02862acd164f0aad3ceef0d2a999c3" },
+  { name: "Mr. Satvik Mahajan", role: "Partner", image: "https://cdn.builder.io/api/v1/image/assets/TEMP/849b5ef3d218c3b2505c1d528d6457da4feddbdc62b8131fdb4232e322fb913f?placeholderIfAbsent=true&apiKey=ec02862acd164f0aad3ceef0d2a999c3" },
+  { name: "Mr. Manu Panuramine", role: "Partner", image: "https://cdn.builder.io/api/v1/image/assets/TEMP/0a09d07c1cea7127b2cdd7e3642a6998f8c91d94da42198cc96b43030b8c087f?placeholderIfAbsent=true&apiKey=ec02862acd164f0aad3ceef0d2a999c3" },
+  { name: "Mr. Malakh Jibril", role: "Managing Partner", image: "https://cdn.builder.io/api/v1/image/assets/TEMP/4182ac2612d9681f48d1063ea5a103579bf403abb016e74c8ff09bd247a66f7a?placeholderIfAbsent=true&apiKey=ec02862acd164f0aad3ceef0d2a999c3" },
+  { name: "Mr. Nikhil Pathak", role: "Designing Partner", image: "https://cdn.builder.io/api/v1/image/assets/TEMP/5e81a7e4937fb1e7a5d34ed1c874755c6ba6cc0f87f8a919356319e77f95982a?placeholderIfAbsent=true&apiKey=ec02862acd164f0aad3ceef0d2a999c3" },
+  { name: "Mr. Lalit Kumar", role: "Developer Partner", image: "https://cdn.builder.io/api/v1/image/assets/TEMP/881214917571dc7f1d318f1a0183f7a7547abb44a6b9262d9a894e6a05580f77?placeholderIfAbsent=true&apiKey=ec02862acd164f0aad3ceef0d2a999c3" },
+  { name: "Mr. Ankit Chauhan", role: "Developer Partner", image: "https://cdn.builder.io/api/v1/image/assets/TEMP/d6d0d340e4b44cb770be9454d7915cd1726de205f8d2ab9dcee408044cc358d3?placeholderIfAbsent=true&apiKey=ec02862acd164f0aad3ceef0d2a999c3" },
+  { name: "Mr. Pratik Panchal", role: "Content Partner", image: "https://cdn.builder.io/api/v1/image/assets/TEMP/4182ac2612d9681f48d1063ea5a103579bf403abb016e74c8ff09bd247a66f7a?placeholderIfAbsent=true&apiKey=ec02862acd164f0aad3ceef0d2a999c3" },
+  { name: "Mr. Kumar Sigh", role: "UI Partner", image: "https://cdn.builder.io/api/v1/image/assets/TEMP/5182d04697ebd8f3f443349070996511f55b9c508d1214ed888554f251838c9b?placeholderIfAbsent=true&apiKey=ec02862acd164f0aad3ceef0d2a999c3" },
+  { name: "Mr. Naveen Kumar", role: "Account Partner", image: "https://cdn.builder.io/api/v1/image/assets/TEMP/edf647bd6e1d2482c1a9ec9aa621850d2f17b44165d5508345ac506f34db7870?placeholderIfAbsent=true&apiKey=ec02862acd164f0aad3ceef0d2a999c3" },
+  { name: "Mr. Ajay Singh", role: "Digital Partner", image: "https://cdn.builder.io/api/v1/image/assets/TEMP/b24967caa05ea84ca4c7b1cf8330d90adb4f9f02e45cc5699edfe3b138b7cdbc?placeholderIfAbsent=true&apiKey=ec02862acd164f0aad3ceef0d2a999c3" },
+  { name: "Mr. Ramesh Sash", role: "Marketing Partner", image: "https://cdn.builder.io/api/v1/image/assets/TEMP/1bca4720dffaed665fded616f7e5e892311b628470499277a8bf6c8d84c3079a?placeholderIfAbsent=true&apiKey=ec02862acd164f0aad3ceef0d2a999c3" },
+  { name: "Mr. Bishop Das", role: "Quality Partner", image: "https://cdn.builder.io/api/v1/image/assets/TEMP/0276278b04a3aa5b03dafc5ce760fefd7d2258a71726f98184f3b49653488435?placeholderIfAbsent=true&apiKey=ec02862acd164f0aad3ceef0d2a999c3" },
+  { name: "Mr. Ms. Nisha Jain", role: "Business Partner", image: "https://cdn.builder.io/api/v1/image/assets/TEMP/e6b98e1b98875eb5ac00ee4ec148961529521fcd86ef5118134c4c3b23959cde?placeholderIfAbsent=true&apiKey=ec02862acd164f0aad3ceef0d2a999c3" },
+  { name: "Ms. Anjali Saren", role: "Qualitative Partner", image: "https://cdn.builder.io/api/v1/image/assets/TEMP/8f9ad317652b9ce7674e2f83f413df0a13cf715db602748cef1f2c67036384ca?placeholderIfAbsent=true&apiKey=ec02862acd164f0aad3ceef0d2a999c3" },
+  { name: "Mr. Daniel Share", role: "AR Partner", image: "https://cdn.builder.io/api/v1/image/assets/TEMP/201bd41b9c633e7b38d3e6e127b5c21858b0edc9010c82bd6e0ed7160b6b9298?placeholderIfAbsent=true&apiKey=ec02862acd164f0aad3ceef0d2a999c3" },
+  { name: "Mr. Manu Boose", role: "Strategy Partner", image: "https://cdn.builder.io/api/v1/image/assets/TEMP/06678d4e26ca352874cd211ef7977cc12f260017b984490d6d1eb1b78f4e35a5?placeholderIfAbsent=true&apiKey=ec02862acd164f0aad3ceef0d2a999c3" },
+  { name: "Ms. Lucia Philip", role: "VR Partner", image: "https://cdn.builder.io/api/v1/image/assets/TEMP/6275f9b33ca42705b37d30c5b3bdca3bb298afd795c53be4233624c560d17bab?placeholderIfAbsent=true&apiKey=ec02862acd164f0aad3ceef0d2a999c3" },
+  { name: "Mr. Thomson Jack", role: "Acquisitions Partner", image: "https://cdn.builder.io/api/v1/image/assets/TEMP/39b418e91277b65c374abe99e428cebbecbf208f8a30658b9c757d2c23649da0?placeholderIfAbsent=true&apiKey=ec02862acd164f0aad3ceef0d2a999c3" },
+  { name: "Mr. Thoi John", role: "Project Partner", image: "https://cdn.builder.io/api/v1/image/assets/TEMP/22e65d0742d47bc30c523ccdcf64c856f5d7de5d296d204e60b52c9ae0e4d705?placeholderIfAbsent=true&apiKey=ec02862acd164f0aad3ceef0d2a999c3" },
+  { name: "Mr. Bruce Mil", role: "Design Partner", image: "https://cdn.builder.io/api/v1/image/assets/TEMP/0ad19721216927cf61b0c2196fedad32739a28db831a702318cf851996dfc07c?placeholderIfAbsent=true&apiKey=ec02862acd164f0aad3ceef0d2a999c3" },
+  { name: "Mr. Moses Rose", role: "Lead Partner", image: "https://cdn.builder.io/api/v1/image/assets/TEMP/6757a3765858c6cca6c4eee81586bfb131b2d0135977050d201e73531b2cac3c?placeholderIfAbsent=true&apiKey=ec02862acd164f0aad3ceef0d2a999c3" },
+  { name: "Mr. Ravichandran Singh", role: "Report Partner", image: "https://cdn.builder.io/api/v1/image/assets/TEMP/11b5a1cce33d897f3da6aa69cc4ecc1cff51457d1533e86f115d1e0b9ef4298e?placeholderIfAbsent=true&apiKey=ec02862acd164f0aad3ceef0d2a999c3" },
+  { name: "Mr. Jay Singh", role: "Client Partner", image: "https://cdn.builder.io/api/v1/image/assets/TEMP/492063c5c7b0a3d034b1c2c9f09e90ee232cbb428097171f29c4303a98857d48?placeholderIfAbsent=true&apiKey=ec02862acd164f0aad3ceef0d2a999c3" },
+  { name: "Mr. Mohan Das", role: "IT Partner", image: "https://cdn.builder.io/api/v1/image/assets/TEMP/0ad19721216927cf61b0c2196fedad32739a28db831a702318cf851996dfc07c?placeholderIfAbsent=true&apiKey=ec02862acd164f0aad3ceef0d2a999c3" },
+  { name: "Ms. George Rose", role: "Brand Partner", image: "https://cdn.builder.io/api/v1/image/assets/TEMP/6bba8cd3c515827b32ef3f51d6644280ac6698de19289785a187d9d1ad63b8fa?placeholderIfAbsent=true&apiKey=ec02862acd164f0aad3ceef0d2a999c3" },
+  { name: "Mr. Mohammed Akbar", role: "Marketing Partner", image: "https://cdn.builder.io/api/v1/image/assets/TEMP/015f13e1c50d089a1462114653b7721aee413845327a7dcb59dceb7cfd47b528?placeholderIfAbsent=true&apiKey=ec02862acd164f0aad3ceef0d2a999c3" },
+  { name: "Mr. Syed Basheer", role: "Content Partner", image: "https://cdn.builder.io/api/v1/image/assets/TEMP/178e7a20e7cabe329cf3b365d9a5b25ae1e628a3d988e3e73294f3c24a2e9d19?placeholderIfAbsent=true&apiKey=ec02862acd164f0aad3ceef0d2a999c3" },
+  { name: "Mr. Arjun Das", role: "Design Intern", image: "https://cdn.builder.io/api/v1/image/assets/TEMP/ba1e2fd7c68a50d9a054f2c5f024aeae83637f4a36363e7b6dbfedbd6b8728e8?placeholderIfAbsent=true&apiKey=ec02862acd164f0aad3ceef0d2a999c3" },
+  { name: "Mr. Basker Gokul", role: "Design Intern", image: "https://cdn.builder.io/api/v1/image/assets/TEMP/dd818468e135158b979ca107e3945116848c4e910590fa401404df5ff077fdb2?placeholderIfAbsent=true&apiKey=ec02862acd164f0aad3ceef0d2a999c3" },
+  { name: "Mr. Tejas Das", role: "Legal Partner", image: "https://cdn.builder.io/api/v1/image/assets/TEMP/11b5a1cce33d897f3da6aa69cc4ecc1cff51457d1533e86f115d1e0b9ef4298e?placeholderIfAbsent=true&apiKey=ec02862acd164f0aad3ceef0d2a999c3" }
+];
+
     return (
         <>
             <Navbar />
@@ -284,30 +320,22 @@ const AboutUs = () => {
                     <div className="w-full flex flex-col lg:flex-row gap-12 lg:gap-0 items-start justify-between px-6 md:px-16 mt-20">
                         <div className='text-white font-normal text-2xl'>Our senior team</div>
                         <div className='w-full lg:w-2/3'>
-                            <div className='flex items-center gap-7 w-full'>
-                                <div className="w-14 h-12">
-                                    <img src="./st-1.png" alt="Circular Image" className="w-full h-full rounded-full object-cover" />
-                                </div>
-                                <div className='w-full'>
-                                    <div className='w-full h-[1px] bg-[#6C6C6C]'></div>
-                                    <div className='flex items-center gap-8 md:gap-28 text-white py-6'>
-                                        <div>Ms. Husna Zar</div>
-                                        <div>Co-Founder and Managing Director</div>
+                        <div>
+                           {teamMembers.map((member, index) => (
+                                    <div key={index} className='flex items-center gap-7 w-full'>
+                                        <div className="w-14 h-12">
+                                            <img src={member.image} alt={member.name} className="w-full h-full rounded-full object-cover" />
+                                        </div>
+                                        <div className='w-full'>
+                                            <div className='w-full h-[1px] bg-[#6C6C6C]'></div>
+                                            <div className='flex items-start gap-8 md:gap-28 tracking-wider  text-white py-6'>
+                                                <div className='w-[15%]'>{member.name}</div>
+                                                <div>{member.role}</div>
+                                            </div>
+                                            <div className='w-full h-[1px] bg-[#6C6C6C]'></div>
+                                        </div>
                                     </div>
-                                    <div className='w-full h-[1px] bg-[#6C6C6C]'></div>
-                                </div>
-                            </div>
-                            <div className='flex items-center gap-7 w-full'>
-                                <div className="w-14 h-12">
-                                    <img src="./st-1.png" alt="Circular Image" className="w-full h-full rounded-full object-cover" />
-                                </div>
-                                <div className='w-full'>
-                                    <div className='flex items-center gap-8 md:gap-28 text-white py-6'>
-                                        <div>Ms. Husna Zar</div>
-                                        <div>Co-Founder and Managing Director</div>
-                                    </div>
-                                    <div className='w-full h-[1px] bg-[#6C6C6C]'></div>
-                                </div>
+                                ))}
                             </div>
                         </div>
                     </div>
