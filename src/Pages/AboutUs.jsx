@@ -28,7 +28,7 @@ const teamMembers = [
   { name: "Mr. Ajay Singh", role: "Digital Partner", image: "https://cdn.builder.io/api/v1/image/assets/TEMP/b24967caa05ea84ca4c7b1cf8330d90adb4f9f02e45cc5699edfe3b138b7cdbc?placeholderIfAbsent=true&apiKey=ec02862acd164f0aad3ceef0d2a999c3" },
   { name: "Mr. Ramesh Sash", role: "Marketing Partner", image: "https://cdn.builder.io/api/v1/image/assets/TEMP/1bca4720dffaed665fded616f7e5e892311b628470499277a8bf6c8d84c3079a?placeholderIfAbsent=true&apiKey=ec02862acd164f0aad3ceef0d2a999c3" },
   { name: "Mr. Bishop Das", role: "Quality Partner", image: "https://cdn.builder.io/api/v1/image/assets/TEMP/0276278b04a3aa5b03dafc5ce760fefd7d2258a71726f98184f3b49653488435?placeholderIfAbsent=true&apiKey=ec02862acd164f0aad3ceef0d2a999c3" },
-  { name: "Mr. Ms. Nisha Jain", role: "Business Partner", image: "https://cdn.builder.io/api/v1/image/assets/TEMP/e6b98e1b98875eb5ac00ee4ec148961529521fcd86ef5118134c4c3b23959cde?placeholderIfAbsent=true&apiKey=ec02862acd164f0aad3ceef0d2a999c3" },
+  { name: "Ms. Nisha Jain", role: "Business Partner", image: "https://cdn.builder.io/api/v1/image/assets/TEMP/e6b98e1b98875eb5ac00ee4ec148961529521fcd86ef5118134c4c3b23959cde?placeholderIfAbsent=true&apiKey=ec02862acd164f0aad3ceef0d2a999c3" },
   { name: "Ms. Anjali Saren", role: "Qualitative Partner", image: "https://cdn.builder.io/api/v1/image/assets/TEMP/8f9ad317652b9ce7674e2f83f413df0a13cf715db602748cef1f2c67036384ca?placeholderIfAbsent=true&apiKey=ec02862acd164f0aad3ceef0d2a999c3" },
   { name: "Mr. Daniel Share", role: "AR Partner", image: "https://cdn.builder.io/api/v1/image/assets/TEMP/201bd41b9c633e7b38d3e6e127b5c21858b0edc9010c82bd6e0ed7160b6b9298?placeholderIfAbsent=true&apiKey=ec02862acd164f0aad3ceef0d2a999c3" },
   { name: "Mr. Manu Boose", role: "Strategy Partner", image: "https://cdn.builder.io/api/v1/image/assets/TEMP/06678d4e26ca352874cd211ef7977cc12f260017b984490d6d1eb1b78f4e35a5?placeholderIfAbsent=true&apiKey=ec02862acd164f0aad3ceef0d2a999c3" },
@@ -328,8 +328,8 @@ const teamMembers = [
                                         </div>
                                         <div className='w-full'>
                                             <div className='w-full h-[1px] bg-[#6C6C6C]'></div>
-                                            <div className='flex items-start gap-8 md:gap-28 tracking-wider  text-white py-6'>
-                                                <div className='w-[15%]'>{member.name}</div>
+                                            <div className='flex items-start gap-5 sm:gap-8 md:gap-28 tracking-wider  text-white py-6'>
+                                                <div className='w-[27vw] lg:w-[15vw]'>{member.name}</div>
                                                 <div>{member.role}</div>
                                             </div>
                                             <div className='w-full h-[1px] bg-[#6C6C6C]'></div>
