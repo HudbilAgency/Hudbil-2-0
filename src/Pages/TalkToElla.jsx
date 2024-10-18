@@ -30,7 +30,7 @@ const TalkToElla = () => {
           <main className="flex flex-col lg:flex-row">
 
 
-          <div className="w-[50vw] h-[100%] hidden lg:block box2 bg-no-repeat bg-cover bg-center sticky top-0 z-[999]">
+            <div className="w-[50vw] h-[100%] hidden lg:block box2 bg-no-repeat bg-cover bg-center sticky top-0 z-[999]">
 
               <video
                 src="./ella-video.mp4"
@@ -46,9 +46,25 @@ const TalkToElla = () => {
 
             </div>
 
-            <div className="w-full lg:w-[50vw] px-6 md:px-8 flex flex-col items-center">
+            <div className="w-full block lg:hidden box2 -mt-[0vh] bg-no-repeat bg-cover bg-center sticky top-0">
 
-              <div className='w-full flex flex-col items-center mt-[25vh]'>
+              <video
+                src="./ella-video.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="object-cover w-full h-[100vh]"
+              >
+                <source src="./ella-video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+
+            </div>
+
+            <div className="-mt-[30vh] lg:-mt-[0vh] min-h-screen box3 bg-black z-20 w-full lg:w-[50vw] px-6 md:px-8 flex flex-col items-center">
+
+              <div className='w-full flex flex-col items-center mt-[6vh] lg:mt-[25vh]'>
                 <svg
                   className="w-1/2 md:w-2/5 svg-anm"
                   width="340"
@@ -151,9 +167,9 @@ const TalkToElla = () => {
                 />
 
                 <div className='flex lg:flex-col md:flex-row flex-col xl:flex-row items-center gap-4 md:gap-16 lg:gap-4 xl:gap-16 mb-6 text-[#838383] font-normal'>
-                <div>© hudbil 2024</div>
-                <div>© Quick Links</div>
-                <div>© Copyrights Reserved</div>
+                  <div>© hudbil 2024</div>
+                  <div>© Quick Links</div>
+                  <div>© Copyrights Reserved</div>
                 </div>
 
               </div>

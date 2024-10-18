@@ -495,7 +495,7 @@ const Navbar = () => {
         </div>
       </section>
 
-      {pathnameimg !== '/' && pathnameimg !== '/talk-to-ella' && (
+      {pathnameimg !== '/' && (
         <div
           className={`fixed w-[100vw] inset-0 bg-black pointer-events-none z-[900] duration-1000 hidden lg:block transition-all ease-in-out ${menuIcon ? "opacity-0 hidden" : "opacity-50"
             }`}
@@ -504,7 +504,6 @@ const Navbar = () => {
           }}
         />
       )}
-
 
       <div
         className={`fixed top-0 left-0 h-dvh z-[999] bg-black transition-transform duration-1000 ease-in-out 
