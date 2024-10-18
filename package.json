@@ -1,5 +1,6 @@
 {
-  "name": "newhudbil",
+  "name": "hudbil",
+  "homepage": "https://hudbil.com/",
   "private": true,
   "version": "0.0.0",
   "type": "module",

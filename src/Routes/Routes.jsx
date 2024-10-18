@@ -13,6 +13,7 @@ import Tabloids from '../Pages/tabloids';
 import AboutUs from '../Pages/AboutUs';
 import Services1 from '../Pages/Services1';
 import Services2 from '../Pages/services2';
+import BlogPage1 from '../Pages/blogpage-1';
 
 const Routers = () => {
   return (
@@ -21,6 +22,7 @@ const Routers = () => {
               <Route path="/" element={<Home />} />
               <Route path="/accessibilities" element={<Accessibilities />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/blogpage-1" element={<BlogPage1 />} />
               <Route path="/blogpage-2" element={<BlogPage2 />} />
               <Route path="/terms&conditions" element={<TandC />} />
               <Route path="/hudbil-tabloids" element={<Tabloids />} />
