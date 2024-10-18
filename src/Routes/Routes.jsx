@@ -10,6 +10,7 @@ import ContactForm from '../Pages/ContactForm';
 import BlogPage2 from '../Pages/blogpage-2';
 import TandC from '../Pages/T&C';
 import Tabloids from '../Pages/tabloids';
+import Hudbil_ai_chatbot from '../Pages/hudbil-ai-chatbot'
 import AboutUs from '../Pages/AboutUs';
 import Services1 from '../Pages/Services1';
 import Services2 from '../Pages/services2';
@@ -17,6 +18,10 @@ import BlogPage1 from '../Pages/blogpage-1';
 import BlogPage3 from '../Pages/blogpage-3';
 import BlogPage5 from '../Pages/blogpage-5';
 import BlogPage4 from '../Pages/blogpage-4';
+import Kalacode_investment from '../Pages/kalacode_investment';
+import Coltfox_digital_marketing_agency from '../Pages/coltfox_digital_marketing_agency';
+import Hudbil_startup_india_awards from '../Pages/hudbil_start-up_india_awards';
+import Website_design_agency from '../Pages/website-design-agency';
 
 const Routers = () => {
   return (
@@ -32,6 +37,11 @@ const Routers = () => {
               <Route path="/blogpage-5" element={<BlogPage5 />} />
               <Route path="/terms&conditions" element={<TandC />} />
               <Route path="/hudbil-tabloids" element={<Tabloids />} />
+              <Route path="/hudbil-ai-chatbot" element={< Hudbil_ai_chatbot />} />
+              <Route path="/kalacode-investment" element={< Kalacode_investment />} />
+              <Route path="/coltfox-digital-marketing-agency" element={< Coltfox_digital_marketing_agency />} />
+              <Route path="/hudbil-start-up-india-awards" element={< Hudbil_startup_india_awards />} />
+              <Route path="/website-design-agency" element={< Website_design_agency />} />
               <Route path="/about-us" element={<AboutUs />} />
               <Route path='/services1' element={<Services1 />} />
               <Route path='/services2' element={<Services2 />} />

@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
+import ReachUs from '../Components/ReachUs'
 
 const Tabloids = () => {
     return (
@@ -67,6 +68,7 @@ const Tabloids = () => {
                     </div>
                 </section>
             </main>
+            < ReachUs />
             <Footer />
         </>
     )
