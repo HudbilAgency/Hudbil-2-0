@@ -14,6 +14,9 @@ import AboutUs from '../Pages/AboutUs';
 import Services1 from '../Pages/Services1';
 import Services2 from '../Pages/services2';
 import BlogPage1 from '../Pages/blogpage-1';
+import BlogPage3 from '../Pages/blogpage-3';
+import BlogPage5 from '../Pages/blogpage-5';
+import BlogPage4 from '../Pages/blogpage-4';
 
 const Routers = () => {
   return (
@@ -24,6 +27,9 @@ const Routers = () => {
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               <Route path="/blogpage-1" element={<BlogPage1 />} />
               <Route path="/blogpage-2" element={<BlogPage2 />} />
+              <Route path="/blogpage-3" element={<BlogPage3 />} />
+              <Route path="/blogpage-4" element={<BlogPage4 />} />
+              <Route path="/blogpage-5" element={<BlogPage5 />} />
               <Route path="/terms&conditions" element={<TandC />} />
               <Route path="/hudbil-tabloids" element={<Tabloids />} />
               <Route path="/about-us" element={<AboutUs />} />
