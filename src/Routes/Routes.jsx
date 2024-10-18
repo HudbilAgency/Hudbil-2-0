@@ -22,6 +22,7 @@ import Kalacode_investment from '../Pages/kalacode_investment';
 import Coltfox_digital_marketing_agency from '../Pages/coltfox_digital_marketing_agency';
 import Hudbil_startup_india_awards from '../Pages/hudbil_start-up_india_awards';
 import Website_design_agency from '../Pages/website-design-agency';
+import Evolution_of_web_development from '../Pages/evolution-of-web-development';
 
 const Routers = () => {
   return (
@@ -42,6 +43,7 @@ const Routers = () => {
               <Route path="/coltfox-digital-marketing-agency" element={< Coltfox_digital_marketing_agency />} />
               <Route path="/hudbil-start-up-india-awards" element={< Hudbil_startup_india_awards />} />
               <Route path="/website-design-agency" element={< Website_design_agency />} />
+              <Route path="/evolution-of-web-development" element={< Evolution_of_web_development />} />
               <Route path="/about-us" element={<AboutUs />} />
               <Route path='/services1' element={<Services1 />} />
               <Route path='/services2' element={<Services2 />} />
