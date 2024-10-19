@@ -83,8 +83,8 @@ const DropdownComponent = () => {
         <div>
             {dropdownTitles.map((title, index) => (
                 <div key={index}>
-                    <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
-                    <div className="py-8 flex flex-col">
+                    
+                    <div className="py-4 flex flex-col">
                         <div className="flex items-center justify-between">
                             <div className="flex items-center text-center justify-between gap-8">
                                 <div className='border rounded-full p-1 px-3 border-gray-400'>{index + 1}</div>
@@ -118,7 +118,7 @@ const DropdownComponent = () => {
                             }
                         </div>
                     </div>
-
+                    <div className="bg-[#6C6C6C] h-[0.5px] w-full mt-6"></div>
                     </div>
                 </div>
             ))}
