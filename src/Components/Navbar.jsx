@@ -89,7 +89,7 @@ const Navbar = () => {
     { name: 'Home', link: '/' },
     { name: 'About us', link: '/about-us' },
     { name: 'Our Work', link: '/our-work' },
-    { name: 'Services', link: '/services' },
+    { name: 'Services', link: '/our-services' },
     { name: 'Products', link: '/products' },
     { name: 'Insights', link: '/insights' },
     { name: 'Talk to Ella', link: '/talk-to-ella' }
@@ -106,6 +106,14 @@ const Navbar = () => {
     }
   ];
 
+  const customPaths = {
+    'Hudbil Tabloids': 'hudbil-tabloids',
+    'Careers & Culture': 'careers-culture',
+    'Clients Support': 'clients-support',
+    'Facebook': 'https://www.facebook.com',
+    'Linkedin': 'https://www.linkedin.com',
+    'Instagram': 'https://www.instagram.com'
+  };
 
   gsap.registerPlugin(ScrollTrigger);
 
@@ -530,7 +538,14 @@ const Navbar = () => {
                   <ul className="mt-4">
                     {column.items.map((item, itemIndex) => (
                       <li key={itemIndex} className={itemIndex > 0 ? 'mt-4' : ''}>
-                        <a href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}>{item}</a>
+                        {/* Check if custom path exists, else create a dynamic path */}
+                        <a
+                          href={customPaths[item] || `/${item.toLowerCase().replace(/\s+/g, '-')}`}
+                          target={customPaths[item]?.startsWith('http') ? '_blank' : '_self'}
+                          rel={customPaths[item]?.startsWith('http') ? 'noopener noreferrer' : ''}
+                        >
+                          {item}
+                        </a>
                       </li>
                     ))}
                   </ul>

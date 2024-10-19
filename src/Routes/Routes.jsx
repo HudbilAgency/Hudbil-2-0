@@ -14,6 +14,8 @@ import AboutUs from '../Pages/AboutUs';
 import Services1 from '../Pages/Services1';
 import Services2 from '../Pages/services2';
 import BlogPage1 from '../Pages/blogpage-1';
+import Services from '../Pages/Services';
+import Work from '../Pages/Work';
 
 const Routers = () => {
   return (
@@ -27,6 +29,8 @@ const Routers = () => {
               <Route path="/terms&conditions" element={<TandC />} />
               <Route path="/hudbil-tabloids" element={<Tabloids />} />
               <Route path="/about-us" element={<AboutUs />} />
+              <Route path='/our-work' element={<Work />} />
+              <Route path='/our-services' element={<Services />} />
               <Route path='/services1' element={<Services1 />} />
               <Route path='/services2' element={<Services2 />} />
               <Route path="/Animation" element={<Animation/>} />
