@@ -78,7 +78,7 @@ const Kalacode_investment = () => {
                 <section className='flex flex-col-reverse lg:flex-row items-start justify-between gap-20 lg:gap-10 py-10 lg:pt-10 lg:pb-20 2xl:pb-28 px-6 lg:px-10'>
                     <div className='w-full relative lg:w-2/3 flex items-start h-full gap-0 lg:gap-10 pb-16 lg:pb-0'>
                         <div className='w-full'>
-                            <div className='font-normal xl:text-7xl w-[80%] text-4xl hidden lg:block leading-snug'>
+                            <div className='font-normal xl:text-6xl w-[80%] text-4xl hidden lg:block leading-snug'>
                             Kalacode Nears deal to raise <br />
                             20 Millions By Pinenest Solutions 
                             India. 
