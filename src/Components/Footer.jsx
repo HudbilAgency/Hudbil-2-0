@@ -200,9 +200,9 @@ const Footer = () => {
                   <h3 className=" tracking-wider leading-none uppercase text-base">
                     {office.city} office
                   </h3>
-                  <p className="mt-6 font-arial md:h-20 lg:h-auto xl:h-20 leading-6 text-sm">{office.address}</p>
-                  <p className="self-start mt-7 font-arial tracking-wider leading-loose text-sm">{office.phone}</p>
-                  <a href="mailto:contact@hudbil.com" className="self-start text-purple-700 font-arial mt-5 text-lg">
+                  <p className="mt-6 font-arial md:h-20 lg:h-auto xl:h-20 hover:text-gray-500 leading-6 text-sm">{office.address}</p>
+                  <p className="self-start mt-7 font-arial tracking-wider hover:text-gray-500 leading-loose text-sm">{office.phone}</p>
+                  <a href="mailto:contact@hudbil.com" className="self-start text-purple-700 hover:text-gray-500 font-arial mt-5 text-lg">
                     Email us here
                   </a>
                 </div>

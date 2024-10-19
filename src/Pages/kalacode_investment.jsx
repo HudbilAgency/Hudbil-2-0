@@ -112,7 +112,7 @@ const Kalacode_investment = () => {
                                     <div className='font-normal text-2xl leading-9'>
                                         <div>Market Size</div>
                                     </div>
-                                    <div className='font-normal flex gap-2'>
+                                    <div className='font-normal lg:flex space-y-5 lg:space-y-0 gap-2'>
                                         <div className='bg-gray-200 text-sm p-4'>
                                             <h1>TAM (Total Addressable Market):</h1>
                                             <p className='mt-4'>2025: $378 Billion</p>
