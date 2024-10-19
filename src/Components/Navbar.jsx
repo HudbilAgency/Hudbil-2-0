@@ -498,7 +498,7 @@ const Navbar = () => {
                 className="w-[5rem] lg:w-[7rem]"
               />
             ) : (
-              <img className="w-[5rem] md:w-[8rem] mt-6 md:mt-5" src="./hudbil-logo.png" alt="logo" />
+              <img className="w-[5rem] md:w-[8rem] mt-6 md:mt-5" src="../hudbil-logo.png" alt="logo" /> 
             )}
           </div>
         </div>

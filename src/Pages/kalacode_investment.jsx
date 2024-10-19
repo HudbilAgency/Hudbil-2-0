@@ -65,7 +65,7 @@ const Kalacode_investment = () => {
                         </svg>
                     </div>
                     <div className='font-normal text-sm text-[#838383]'>
-                    <a href='/insights'>Return to Insights</a>
+                    <a href='/hudbil-tabloids'>Return to Tabloids</a>
                         
                     </div>
 
@@ -113,19 +113,19 @@ const Kalacode_investment = () => {
                                         <div>Market Size</div>
                                     </div>
                                     <div className='font-normal lg:flex space-y-5 lg:space-y-0 gap-2'>
-                                        <div className='bg-gray-200 xl:text-xl text-sm p-4'>
+                                        <div className='bg-gray-200 2xl:text-xl text-sm p-4'>
                                             <h1>TAM (Total Addressable Market):</h1>
                                             <p className='mt-4'>2025: $378 Billion</p>
                                             <p>2026: $510 Billion</p>
                                             <p>2027: $688 Billion</p>
                                         </div>
-                                        <div className='bg-gray-200 xl:text-xl  text-sm p-4'>
+                                        <div className='bg-gray-200 2xl:text-xl  text-sm p-4'>
                                             <h1>SAM (Serviceable Available Market):</h1>
                                             <p className='mt-4'>2025: $28 Billion (India) + $42 Billion (Exports) = $70 Billion</p>
                                             <p>2026: $39 Billion (India) + $58 Billion (Exports) = $97 Billion</p>
                                             <p>2027: $55 Billion (India) + $82 Billion (Exports) = $137 Billion</p>
                                         </div>
-                                        <div className='bg-gray-200 xl:text-xl text-sm p-4'>
+                                        <div className='bg-gray-200 2xl:text-xl text-sm p-4'>
                                             <h1>SAM (Serviceable Available Market):</h1>
                                             <p className='mt-4'>2025: $28 Billion (India) + $42 Billion (Exports) = $70 Billion</p>
                                             <p>2026: $39 Billion (India) + $58 Billion (Exports) = $97 Billion</p>

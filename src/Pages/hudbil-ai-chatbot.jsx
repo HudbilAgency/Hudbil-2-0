@@ -66,7 +66,7 @@ const Hudbil_ai_chatbot = () => {
                         </svg>
                     </div>
                     <div className='font-normal text-sm text-[#838383]'>
-                    <a href='/insights'>Return to Insights</a>
+                    <a href='/hudbil-tabloids'>Return to Tabloids</a>
                         
                     </div>
 
@@ -77,7 +77,7 @@ const Hudbil_ai_chatbot = () => {
                 <section className='flex flex-col-reverse lg:flex-row items-start justify-between gap-20 lg:gap-10 py-10 lg:pt-10 lg:pb-20 2xl:pb-28 px-6 lg:px-10'>
                     <div className='w-full relative lg:w-2/3 flex items-start h-full gap-0 lg:gap-10 pb-16 lg:pb-0'>
                         <div className='w-full'>
-                            <div className='font-normal text-4xl hidden lg:block leading-snug'>
+                            <div className='font-normal xl:text-6xl w-[80%] text-4xl hidden lg:block leading-snug'>
                             Hudbil has introduced a AI Chatbot
                             </div>
                             <div className='flex flex-col gap-8 pt-6 px-2 lg:px-7'>

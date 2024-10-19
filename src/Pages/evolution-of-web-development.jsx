@@ -66,7 +66,7 @@ const Evolution_of_web_development = () => {
                         </svg>
                     </div>
                     <div className='font-normal text-sm text-[#838383]'>
-                    <a href='/insights'>Return to Insights</a>
+                    <a href='/hudbil-tabloids'>Return to Tabloids</a>
                         
                     </div>
 
@@ -78,7 +78,7 @@ const Evolution_of_web_development = () => {
                 <section className='flex flex-col-reverse lg:flex-row items-start justify-between gap-20 lg:gap-10 py-10 lg:pt-10 lg:pb-20 2xl:pb-28 px-6 lg:px-10'>
                     <div className='w-full relative lg:w-2/3 flex items-start h-full gap-0 lg:gap-10 pb-16 lg:pb-0'>
                         <div className='w-full'>
-                            <div className='font-normal text-4xl hidden lg:block leading-snug'>
+                            <div className='font-normal xl:text-5xl w-[80%] text-4xl hidden lg:block leading-snug'>
                             The Evolution of Web Development
                             (1995-2000)
                             </div>
@@ -141,9 +141,9 @@ const Evolution_of_web_development = () => {
                                         </div>
                                         <div>Online shopping anyone?</div>
                                         <div className='flex gap-5 sm:gap-10 lg:gap-28'>
-                                            <img src="./HudbilTabloidsImg/htmlImg.png" alt="htmlImg" className='h-9 sm:h-10 md:h-14'/>
-                                            <img src="./HudbilTabloidsImg/CssImg.png" alt="CssImg" className='h-9 sm:h-10 md:h-14'/>
-                                            <img src="./HudbilTabloidsImg/FImg.png" alt="Fimg" className='h-9 sm:h-10 md:h-14'/>
+                                            <img src="../HudbilTabloidsImg/htmlImg.png" alt="htmlImg" className='h-9 sm:h-10 md:h-14'/>
+                                            <img src="../HudbilTabloidsImg/CssImg.png" alt="CssImg" className='h-9 sm:h-10 md:h-14'/>
+                                            <img src="../HudbilTabloidsImg/FImg.png" alt="Fimg" className='h-9 sm:h-10 md:h-14'/>
                                         </div>
                                         <div className='font-normal mt-2 text-2xl leading-9'>
                                         <div>(2000 – 2006)</div>

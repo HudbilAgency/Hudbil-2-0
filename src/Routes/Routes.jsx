@@ -40,12 +40,12 @@ const Routers = () => {
               <Route path="/blogpage-5" element={<BlogPage5 />} />
               <Route path="/terms&conditions" element={<TandC />} />
               <Route path="/hudbil-tabloids" element={<Tabloids />} />
-              <Route path="/hudbil-ai-chatbot" element={< Hudbil_ai_chatbot />} />
+              <Route path="/tabloids/hudbil-ai-chatbot" element={< Hudbil_ai_chatbot />} />
               <Route path="/tabloids/kalacode-investment" element={< Kalacode_investment />} />
-              <Route path="/coltfox-digital-marketing-agency" element={< Coltfox_digital_marketing_agency />} />
-              <Route path="/hudbil-start-up-india-awards" element={< Hudbil_startup_india_awards />} />
-              <Route path="/website-design-agency" element={< Website_design_agency />} />
-              <Route path="/evolution-of-web-development" element={< Evolution_of_web_development />} />
+              <Route path="/tabloids/coltfox-digital-marketing-agency" element={< Coltfox_digital_marketing_agency />} />
+              <Route path="/tabloids/hudbil-start-up-india-awards" element={< Hudbil_startup_india_awards />} />
+              <Route path="/tabloids/website-design-agency" element={< Website_design_agency />} />
+              <Route path="/tabloids/evolution-of-web-development" element={< Evolution_of_web_development />} />
               <Route path="/about-us" element={<AboutUs />} />
               <Route path='/services1' element={<Services1 />} />
               <Route path='/services2' element={<Services2 />} />
