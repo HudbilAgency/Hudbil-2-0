@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import { useLocation } from 'react-router-dom';
 import { gsap } from "gsap";
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -97,12 +98,20 @@ const Navbar = () => {
 
   const footerLinks = [
     {
-      title: 'Portfolio',
-      items: ['Hudbil Tabloids', 'Careers & Culture', 'Clients Support']
+      title: { name:'Portfolio', url:''},
+      items: [
+        { name: 'Hudbil Tabloids', url: '/hudbil-tabloids' },
+        { name: 'Careers & Culture', url: '/portfolio/careers-culture' },
+        { name: 'Clients Support', url: '/portfolio/clients-support' }
+      ]
     },
     {
-      title: 'Contact Us',
-      items: ['Facebook', 'Linkedin', 'Instagram']
+      title:{ name:'Contact Us', url:''},
+      items: [
+        { name: 'Facebook', url: '' },
+        { name: 'Linkedin', url: '' },
+        { name: 'Instagram', url: '' }
+      ]
     }
   ];
 
@@ -526,11 +535,11 @@ const Navbar = () => {
             <footer className="w-5/6 md:w-3/5 lg:w-full lg:gap-20 2xl:gap-28 lg:justify-normal flex items-center justify-between px-6 lg:px-16">
               {footerLinks.map((column, index) => (
                 <div key={index} className="flex flex-col items-start text-sm 2xl:text-base font-arial font-medium leading-none">
-                  <h3>{column.title}</h3>
+                  <Link to={column.title.path}><h3>{column.title.name}</h3></Link>
                   <ul className="mt-4">
-                    {column.items.map((item, itemIndex) => (
+                  {column.items.map((item, itemIndex) => (
                       <li key={itemIndex} className={itemIndex > 0 ? 'mt-4' : ''}>
-                        <a href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}>{item}</a>
+                        <a href={item.url}>{item.name}</a>
                       </li>
                     ))}
                   </ul>

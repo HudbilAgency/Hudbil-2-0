@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import ReachUs from '../Components/ReachUs'
+import { Link } from 'react-router-dom';
 
 const Tabloids = () => {
     return (
@@ -25,7 +26,7 @@ const Tabloids = () => {
                                 <div className='bg-black rounded-full p-1'></div>
                                 <div className='text-sm'>June 24, 2024</div>
                             </div>
-                            <div className='text-4xl font-normal leading-10 xl:w-2/3'>Kalacode Nears deal to raise 20 Millions By Pinenest Solutions India.</div>
+                           <Link to={'/tabloids/kalacode-investment'}> <div className='text-4xl font-normal leading-10 xl:w-2/3'>Kalacode Nears deal to raise 20 Millions By Pinenest Solutions India.</div></Link>
                         </div>
                         <div className='w-full bg-[#BDBBBB] h-[1px]'></div>
                         <div className='flex flex-col items-start gap-4 py-16'>

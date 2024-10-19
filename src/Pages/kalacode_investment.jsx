@@ -70,7 +70,7 @@ const Kalacode_investment = () => {
                     </div>
 
                 </div>
-                <div className='font-normal text-3xl md:text-4xl pt-10 px-6 lg:px-10 lg:hidden leading-snug'>
+                <div className='font-normal text-3xl md:text-4xl  pt-10 px-6 lg:px-10 lg:hidden leading-snug'>
                 Kalacode Nears deal to raise 
                 20 Millions By Pinenest Solutions 
                 India. 
@@ -78,8 +78,8 @@ const Kalacode_investment = () => {
                 <section className='flex flex-col-reverse lg:flex-row items-start justify-between gap-20 lg:gap-10 py-10 lg:pt-10 lg:pb-20 2xl:pb-28 px-6 lg:px-10'>
                     <div className='w-full relative lg:w-2/3 flex items-start h-full gap-0 lg:gap-10 pb-16 lg:pb-0'>
                         <div className='w-full'>
-                            <div className='font-normal text-4xl hidden lg:block leading-snug'>
-                            Kalacode Nears deal to raise 
+                            <div className='font-normal xl:text-7xl w-[80%] text-4xl hidden lg:block leading-snug'>
+                            Kalacode Nears deal to raise <br />
                             20 Millions By Pinenest Solutions 
                             India. 
                             </div>
@@ -113,19 +113,19 @@ const Kalacode_investment = () => {
                                         <div>Market Size</div>
                                     </div>
                                     <div className='font-normal lg:flex space-y-5 lg:space-y-0 gap-2'>
-                                        <div className='bg-gray-200 text-sm p-4'>
+                                        <div className='bg-gray-200 xl:text-xl text-sm p-4'>
                                             <h1>TAM (Total Addressable Market):</h1>
                                             <p className='mt-4'>2025: $378 Billion</p>
                                             <p>2026: $510 Billion</p>
                                             <p>2027: $688 Billion</p>
                                         </div>
-                                        <div className='bg-gray-200 text-sm p-4'>
+                                        <div className='bg-gray-200 xl:text-xl  text-sm p-4'>
                                             <h1>SAM (Serviceable Available Market):</h1>
                                             <p className='mt-4'>2025: $28 Billion (India) + $42 Billion (Exports) = $70 Billion</p>
                                             <p>2026: $39 Billion (India) + $58 Billion (Exports) = $97 Billion</p>
                                             <p>2027: $55 Billion (India) + $82 Billion (Exports) = $137 Billion</p>
                                         </div>
-                                        <div className='bg-gray-200 text-sm p-4'>
+                                        <div className='bg-gray-200 xl:text-xl text-sm p-4'>
                                             <h1>SAM (Serviceable Available Market):</h1>
                                             <p className='mt-4'>2025: $28 Billion (India) + $42 Billion (Exports) = $70 Billion</p>
                                             <p>2026: $39 Billion (India) + $58 Billion (Exports) = $97 Billion</p>
