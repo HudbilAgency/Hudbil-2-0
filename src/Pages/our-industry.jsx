@@ -87,7 +87,7 @@ const DropdownComponent = () => {
                     <div className="py-4 flex flex-col">
                         <div className="flex items-center justify-between">
                             <div className="flex items-center text-center justify-between gap-8">
-                                <div className='border rounded-full p-1 px-3 border-gray-400'>{index + 1}</div>
+                                <div className='border rounded-full p-1 px-3 w-9 border-gray-400'>{index + 1}</div>
                                 <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">{title}</div>
                             </div>
                             <div onClick={() => toggleDropdown2(index)} className="cursor-pointer">
