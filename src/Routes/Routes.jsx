@@ -24,6 +24,7 @@ import Hudbil_startup_india_awards from '../Pages/hudbil_start-up_india_awards';
 import Website_design_agency from '../Pages/website-design-agency';
 import Evolution_of_web_development from '../Pages/evolution-of-web-development';
 import Our_industry from '../Pages/our-industry';
+import Our_products from '../Pages/our-products';
 
 const Routers = () => {
   return (
@@ -49,6 +50,7 @@ const Routers = () => {
               <Route path='/services1' element={<Services1 />} />
               <Route path='/services2' element={<Services2 />} />
               <Route path='/our-industry' element={<Our_industry />} />
+              <Route path='/our-products' element={<Our_products />} />
               <Route path="/Animation" element={<Animation/>} />
               <Route path="/Test" element={<Test/>} />
               <Route path="/talk-to-ella" element={<TalkToElla/>} />

@@ -31,7 +31,7 @@ const Our_industry = () => {
         <h2 className='text-lg sm:text-xl md:text-2xl lg:text-3xl md:w-[60%]'>Our capability and expertise to deliver a range of software design & development solutions is what make us the top software development Agency.</h2>
     </section>
 
-    <section className='w-[90%] mx-auto '>
+    <section className='w-[90%] mx-auto mb-20'>
          < DropdownComponent/>
     </section>
    
@@ -85,7 +85,7 @@ const DropdownComponent = () => {
                 <div key={index}>
                     
                     <div className="py-4 flex flex-col">
-                        <div className="flex items-center justify-between">
+                        <div className="flex items-center  justify-between">
                             <div className="flex items-center text-center justify-between gap-8">
                                 <div className='border rounded-full p-1 px-3 w-9 border-gray-400'>{index + 1}</div>
                                 <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">{title}</div>
