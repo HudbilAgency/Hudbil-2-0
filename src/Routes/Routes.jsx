@@ -28,6 +28,7 @@ import Evolution_of_web_development from '../Pages/evolution-of-web-development'
 import Our_industry from '../Pages/our-industry';
 import Our_products from '../Pages/our-products';
 import ComingSoon from '../Pages/coming-soon';
+import ClientSupport from '../Pages/client-support';
 
 const Routers = () => {
   return (
@@ -61,6 +62,7 @@ const Routers = () => {
               <Route path="/talk-to-ella" element={<TalkToElla/>} />
               <Route path="/contact-us" element={<ContactForm/>} /> 
               <Route path="/coming-soon" element={<ComingSoon/>} />
+              <Route path="/client-support" element={<ClientSupport/>} />
             </Routes> 
     </>
   )
