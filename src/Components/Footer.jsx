@@ -124,7 +124,7 @@ const Footer = () => {
     { title: 'Products', url: '/products' },
     { title: 'Insights', url: '/blogs' },
     { title: 'Talk to Ella', url: '/talk-to-ella' },
-    { title: 'Careers & Culture', url: '/careers&culture' },
+    { title: 'Careers & Culture', url: '/careers-culture' },
     { title: 'Contact Us', url: '/contact-us' },
     { title: 'Hudbil Tabloids', url: '/hudbil-tabloids' },
     { title: 'Privacy Policy', url: '/privacy-policy' },

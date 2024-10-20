@@ -5,7 +5,7 @@ import { useRef } from "react";
 const blogData = [
   { id: 1, image: './OurBlogsImg/UX-Research-Blog 2.png', title: 'The Ultimate Guide for UX Research' },
   { id: 2, image: './OurBlogsImg/The-Evolution-Of-The Graphic-Design-home 1.png', title: 'The Evolution Of The Graphic Design' },
-  { id: 3, image: './OurBlogsImg/BrandΓÇÖs-identity-design aspects-in-Brief  1.png', title: 'Brand’s identity design ascepts in brief' },
+  { id: 3, image: './OurBlogsImg/Brands-identity-design aspects-in-Brief  1.png', title: 'Brand’s identity design ascepts in brief' },
   { id: 4, image: './OurBlogsImg/Business-firms-suffer-today 1.png', title: 'Business firm suffer because of not finding right B2B Design' },
   // { id: 5, image: './OurBlogsImg/User-Experience-Design-and-its-Importance-for Businesses 1.png', title: 'User Experience Design and its Importance for Businesses' },
 ];

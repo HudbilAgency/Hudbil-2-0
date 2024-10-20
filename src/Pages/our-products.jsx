@@ -1,7 +1,7 @@
 import React , { useState } from 'react'
 import Navbar from '../Components/Navbar'
-import ReachUs from '../Components/ReachUs'
 import Footer from '../Components/Footer'
+import { Link } from 'react-router-dom';
 
 const Our_products = () => {
 
@@ -58,13 +58,13 @@ const Our_products = () => {
 }
 
 
-const ProductCard = ({ imgSrc, title, description }) => {
+const ProductCard = ({ imgSrc, title, description , path }) => {
   return (
     <div className='size-[95%] space-y-5 my-10'>
       <img src={imgSrc} alt={title} className='grayscale hover:grayscale-0'/>
       <h1 className='text-5xl'>{title}</h1>
       <h2 className='text-3xl'>{description}</h2>
-      <button className='bg-purple-800 text-2xl text-white px-20 py-2 self-center rounded-full hover:bg-black'>Download</button>
+      <Link to={path}><button className='bg-purple-800 text-2xl text-white px-20 mt-5 py-2 self-center rounded-full hover:bg-black'>Download</button></Link>
     </div>
   );
 };
@@ -76,43 +76,50 @@ const ProductSection = () => {
       imgSrc: './ProductsImg.jpg',
       title: 'We are developings',
       description: 'We are in process of developing a software solution soon.',
+      path: '/coming-soon'
     },
     {
       imgSrc: './ProductsImg.jpg',
       title: 'We are developings',
       description: 'We are in process of developing a software solution soon.',
+      path: '/coming-soon'
     },
     {
       imgSrc: './ProductsImg.jpg',
       title: 'We are developings',
       description: 'We are in process of developing a software solution soon.',
+      path: '/coming-soon'
     },
     {
       imgSrc: './ProductsImg.jpg',
       title: 'We are developings',
       description: 'We are in process of developing a software solution soon.',
+      path: '/coming-soon'
     },
     {
       imgSrc: './ProductsImg.jpg',
       title: 'We are developings',
       description: 'We are in process of developing a software solution soon.',
+      path: '/coming-soon'
     },
     {
       imgSrc: './ProductsImg.jpg',
       title: 'We are developings',
       description: 'We are in process of developing a software solution soon.',
+      path: '/coming-soon'
     },
     {
       imgSrc: './ProductsImg.jpg',
       title: 'We are developings',
       description: 'We are in process of developing a software solution soon.',
+      path: '/coming-soon'
     },
     {
       imgSrc: './ProductsImg.jpg',
       title: 'We are developings',
       description: 'We are in process of developing a software solution soon.',
+      path: '/coming-soon'
     },
-    // Add more products here
   ];
 
   return (
@@ -123,6 +130,7 @@ const ProductSection = () => {
           imgSrc={product.imgSrc}
           title={product.title}
           description={product.description}
+          path={product.path}
         />
       ))}
     </div>

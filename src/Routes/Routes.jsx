@@ -28,6 +28,9 @@ import Website_design_agency from '../Pages/website-design-agency';
 import Evolution_of_web_development from '../Pages/evolution-of-web-development';
 import Our_industry from '../Pages/our-industry';
 import Our_products from '../Pages/our-products';
+import ComingSoon from '../Pages/coming-soon';
+import ClientSupport from '../Pages/client-support';
+import Careersculture from '../Pages/careers&culture';
 
 const Routers = () => {
   return (
@@ -53,6 +56,7 @@ const Routers = () => {
               <Route path='/our-work' element={<Work />} />
               <Route path='/blogs' element={<Insights />} />
               <Route path='/our-services' element={<Services />} />
+              <Route path='/careers-culture' element={<Careersculture />} />
               <Route path='/services1' element={<Services1 />} />
               <Route path='/services2' element={<Services2 />} />
               <Route path='/our-industry' element={<Our_industry />} />
@@ -60,7 +64,9 @@ const Routers = () => {
               <Route path="/Animation" element={<Animation/>} />
               <Route path="/Test" element={<Test/>} />
               <Route path="/talk-to-ella" element={<TalkToElla/>} />
-              <Route path="/contact-us" element={<ContactForm/>} />
+              <Route path="/contact-us" element={<ContactForm/>} /> 
+              <Route path="/coming-soon" element={<ComingSoon/>} />
+              <Route path="/client-support" element={<ClientSupport/>} />
             </Routes> 
     </>
   )

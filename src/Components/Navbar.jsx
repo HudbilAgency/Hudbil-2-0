@@ -91,7 +91,7 @@ const Navbar = () => {
     { name: 'About us', link: '/about-us' },
     { name: 'Our Work', link: '/our-work' },
     { name: 'Services', link: '/our-services' },
-    { name: 'Products', link: '/products' },
+    { name: 'Products', link: '/our-products' },
     { name: 'Insights', link: '/blogs' },
     { name: 'Talk to Ella', link: '/talk-to-ella' }
   ];
@@ -101,8 +101,8 @@ const Navbar = () => {
       title: { name:'Portfolio', url:''},
       items: [
         { name: 'Hudbil Tabloids', url: '/hudbil-tabloids' },
-        { name: 'Careers & Culture', url: '/careers&culture' },
-        { name: 'Clients Support', url: '/clients-support' }
+        { name: 'Careers & Culture', url: '/careers-culture' },
+        { name: 'Clients Support', url: '/client-support' }
       ]
     },
     {
