@@ -58,7 +58,7 @@ const Hudbil_startup_india_awards = () => {
         <>
             <Navbar />
             <main className='pt-[40px]'>
-                <div className='flex items-center gap-3 pt-20 px-6 lg:px-10'>
+                <div className='flex items-center gap-3 pt-20 px-6 lg:px-16'>
                     <div>
                         <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.6 1L1.5 6L6.6 11" stroke="#838383" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -76,7 +76,7 @@ const Hudbil_startup_india_awards = () => {
                     Award Asia-Pacific
                     Start-up India Awards 2017
                 </div>
-                <section className='flex flex-col-reverse lg:flex-row items-start justify-between gap-20 lg:gap-10 py-10 lg:pt-10 lg:pb-20 2xl:pb-28 px-6 lg:px-10'>
+                <section className='flex flex-col-reverse lg:flex-row items-start justify-between gap-20 lg:gap-10 py-10 lg:pt-10 lg:pb-20 2xl:pb-28 px-6 lg:px-16'>
                     <div className='w-full relative lg:w-2/3 flex items-start h-full gap-0 lg:gap-10 pb-16 lg:pb-0'>
                         <div className='w-full'>
                             <div className='font-normal xl:text-5xl w-[80%] text-4xl hidden lg:block leading-snug'>

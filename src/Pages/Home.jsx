@@ -7,6 +7,7 @@ import ReachUs from '../Components/ReachUs';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import Loader from './Loader';
 import CarousalImgBlogs from '../Components/CarousalImgBlogs'
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   const randomVideos = [
@@ -682,10 +683,12 @@ const Home = () => {
                 <h3 className="self-stretch mt-16 text-4xl font-arial text-center text-white leading-[50px] max-md:mt-10 max-md:max-w-full max-md:text-4xl max-md:leading-[54px]" ref={fadeInRef2}>
                   Big idea, Kalacode is <br /> beating heart of <br /> Hudbil's, a new venture <br /> agency like no other in India.
                 </h3>
+                <Link to={'/hudbil-tabloids'}>
                 <button className="button flex flex-row justify-between px-20 py-4 mt-20  mr-6 md:mr-8 leading-none bg-white text-black self-center items-center gap-8 rounded-[1000px] max-md:px-5   hover:bg-[#7811A5] transition-colors duration-300">
                   <h1 className='text-xl mt-1 font-arial'>Learn More</h1>
                   <img ref={buttonImgRef} src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                 </button>
+                </Link>
 
               </div>
             </div>

@@ -44,7 +44,6 @@ const Our_industry = () => {
 
 
 const DropdownComponent = () => {
-    // Manage state for 15 dropdowns
     const [dropdownStates2, setDropdownStates2] = useState(Array(15).fill(false));
 
     const toggleDropdown2 = (index) => {
@@ -52,7 +51,6 @@ const DropdownComponent = () => {
         setDropdownStates2(updatedStates);
     };
 
-    // Dynamic titles for each dropdown
     const dropdownTitles = [
         "Automotive", "BFSI", "Edu Tech", "Energy and Mining", "Fintech",
         "Food & Beverage", "Health Tech", "Insurance", "Manufacturing", "Media and Entertainment",
@@ -60,7 +58,6 @@ const DropdownComponent = () => {
     ];
     
 
-    // Simulate content for each dropdown
     const dropdownContent = [
         "Advanced Automotive Software Solutions, Website Designing & Development, Mobile App. |The automotive industry is witnessing a sea change. One after the other, technological breakthroughs are causing disruption in the industry. To be the frontrunner, you need to adopt these before your competitors.",
         "Advanced Banking Software Solutions, Website Designing & Development, Mobile App.|Banking and financial software solutions play a major role in streamlining financial services. It personalises to create smart user-centric solutions. And manages to assist in reducing costs, boosting loyalty, finances, business image, and more. So, integrating the BFSI solutions can help to enhance transparency among users which increases satisfaction.",
@@ -94,7 +91,7 @@ const DropdownComponent = () => {
                                 <svg className={`transition-transform duration-300 ${dropdownStates2[index] ? 'rotate-[-180deg]' : 'rotate-[0deg]'}`} width="30" height="25" viewBox="0 0 46 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clipPath="url(#clip0_7690_1453)">
                                         <g clipPath="url(#clip1_7690_1453)">
-                                            <path d="M45.2769 1.46875L22.9998 23.7459L0.722656 1.46875" stroke="#C0C2C4" strokeWidth="0.657143" />
+                                            <path d="M45.2769 1.46875L22.9998 23.7459L0.722656 1.46875" stroke="#4A4A4A" strokeWidth="0.657143" />
                                         </g>
                                     </g>
                                     <defs>
