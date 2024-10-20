@@ -97,7 +97,7 @@ const ClientSupport = () => {
                   />
                   <label
                     htmlFor="file-upload"
-                    className="overflow-hidden px-11 py-3 text-center border border-solid border-zinc-300 rounded-[2000px] max-md:px-5 cursor-pointer"
+                    className="overflow-hidden px-11 py-2 text-center border border-solid border-zinc-300 rounded-[2000px] max-md:px-5 cursor-pointer"
                   >
                     Choose File
                   </label>

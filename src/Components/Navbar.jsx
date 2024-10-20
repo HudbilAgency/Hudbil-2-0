@@ -102,7 +102,7 @@ const Navbar = () => {
       items: [
         { name: 'Hudbil Tabloids', url: '/hudbil-tabloids' },
         { name: 'Careers & Culture', url: '/portfolio/careers-culture' },
-        { name: 'Clients Support', url: '/portfolio/clients-support' }
+        { name: 'Clients Support', url: '/client-support' }
       ]
     },
     {
