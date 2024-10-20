@@ -242,7 +242,7 @@ const Services = () => {
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
-                            <button className="button self-end flex flex-row justify-between px-12 py-3 mt-20 mx-auto leading-none bg-white hover:text-white text-black gap-8 rounded-[1000px] max-md:px-5 hover:bg-[#7811A5] transition-colors duration-300">
+                            <button className="button self-end flex flex-row justify-between px-12 py-3 mt-20 mx-auto leading-none bg-white hover:text-white text-black gap-8 rounded-[1000px] max-md:px-5 hover:bg-[#7811A5] transition-all duration-300">
                                 <h1 className='text-base mt-1 font-arial'>Our Industries</h1>
                                 <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                             </button>

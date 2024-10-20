@@ -51,14 +51,14 @@ const AboutUs = () => {
     return (
         <>
             <Navbar />
-            <div className="w-full h-[80vh] bg-no-repeat bg-cover bg-center">
+            <div className="w-full h-[70vh] lg:h-[80vh] bg-no-repeat bg-cover bg-center">
                 <video
                     src="/LandingVideos/video2.mp4"
                     autoPlay
                     loop
                     muted
                     playsInline
-                    className="object-cover h-[80vh] w-full fixed z-0"
+                    className="object-cover h-[70vh] lg:h-[80vh] w-full fixed z-0"
                 >
                     <source src="/LandingVideos/video2.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
@@ -78,7 +78,7 @@ const AboutUs = () => {
                                 business; meaning every client succeeds from the testing, ideas and developments of our
                                 total client pool.</div>
                             <div>
-                                <button className="button self-end flex flex-row justify-between px-12 py-3 mx-auto leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-colors duration-300">
+                                <button className="button self-end flex flex-row justify-between px-12 py-3 mx-auto leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-all duration-300">
                                     <h1 className='text-base mt-1 font-arial'>Get In Touch</h1>
                                     <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                                 </button>
@@ -298,7 +298,7 @@ const AboutUs = () => {
                             <div className='text-[#917D7D] font-normal text-sm py-12 w-full md:w-5/6'>
                                 Get in touch to find out how our team enjoys tinkering, most importantly empower your organisation.
                             </div>
-                            <button className="button self-end flex flex-row justify-between px-12 py-3 mb-4 leading-none hover:bg-white hover:text-black text-white gap-8 rounded-[1000px] max-md:px-5 bg-[#7811A5] transition-colors duration-300">
+                            <button className="button self-end flex flex-row justify-between px-12 py-3 mb-4 leading-none hover:bg-white hover:text-black text-white gap-8 rounded-[1000px] max-md:px-5 bg-[#7811A5] transition-all duration-300">
                                 <h1 className='text-base mt-1 font-arial'>Work With Us</h1>
                                 <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                             </button>
@@ -340,7 +340,7 @@ const AboutUs = () => {
                         </div>
                     </div>
 
-                    <button className="button self-end flex flex-row justify-between px-12 py-3 mt-20 leading-none hover:bg-white hover:text-black ml-auto mr-6 md:mr-16 text-white gap-8 rounded-[1000px] max-md:px-5 bg-[#7811A5] transition-colors duration-300">
+                    <button className="button self-end flex flex-row justify-between px-12 py-3 mt-20 leading-none hover:bg-white hover:text-black ml-auto mr-6 md:mr-16 text-white gap-8 rounded-[1000px] max-md:px-5 bg-[#7811A5] transition-all duration-300">
                         <h1 className='text-base mt-1 font-arial'>Get In Touch</h1>
                         <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                     </button>

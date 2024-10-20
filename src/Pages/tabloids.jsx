@@ -72,7 +72,7 @@ const Tabloids = () => {
                             (1995-2000)</div></Link>
                         </div>
                         <div className='w-full bg-[#BDBBBB] h-[1px]'></div>
-                        <button className="button self-end flex flex-row justify-between px-12 py-3 mt-24 mb-2 mx-auto leading-none bg-black text-white gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-colors duration-300">
+                        <button className="button self-end flex flex-row justify-between px-12 py-3 mt-24 mb-2 mx-auto leading-none bg-black text-white gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-all duration-300">
                             <h1 className='text-base mt-1 font-arial'>Load More</h1>
                             <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                         </button>

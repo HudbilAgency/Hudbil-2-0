@@ -122,9 +122,9 @@ const Footer = () => {
     { title: 'About Us', url: '/about-us' },
     { title: 'Services', url: '/our-services' },
     { title: 'Products', url: '/products' },
-    { title: 'Insights', url: '/insights' },
+    { title: 'Insights', url: '/blogs' },
     { title: 'Talk to Ella', url: '/talk-to-ella' },
-    { title: 'Careers & Culture', url: '/careers-culture' },
+    { title: 'Careers & Culture', url: '/careers&culture' },
     { title: 'Contact Us', url: '/contact-us' },
     { title: 'Hudbil Tabloids', url: '/hudbil-tabloids' },
     { title: 'Privacy Policy', url: '/privacy-policy' },
@@ -224,7 +224,7 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row items-center justify-between flex-wrap gap-6 self-center mt-48 md:mt-20 max-w-full text-sm tracking-wider leading-none text-zinc-400 max-md:mt-10">
+      <div className="flex flex-col md:flex-row items-center justify-between flex-wrap gap-6 self-center md:mt-20 max-w-full text-sm tracking-wider leading-none text-zinc-400 max-md:mt-16">
         <div className="grow font-arial">© hudbil 2024</div>
         <div className="grow shrink font-arial">Quick Links</div>
         <div className="grow shrink font-arial"><a href="/cookies-policy">Cookies Policy</a></div>

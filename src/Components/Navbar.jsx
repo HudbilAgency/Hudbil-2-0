@@ -92,7 +92,7 @@ const Navbar = () => {
     { name: 'Our Work', link: '/our-work' },
     { name: 'Services', link: '/our-services' },
     { name: 'Products', link: '/products' },
-    { name: 'Insights', link: '/insights' },
+    { name: 'Insights', link: '/blogs' },
     { name: 'Talk to Ella', link: '/talk-to-ella' }
   ];
 
@@ -101,8 +101,8 @@ const Navbar = () => {
       title: { name:'Portfolio', url:''},
       items: [
         { name: 'Hudbil Tabloids', url: '/hudbil-tabloids' },
-        { name: 'Careers & Culture', url: '/portfolio/careers-culture' },
-        { name: 'Clients Support', url: '/portfolio/clients-support' }
+        { name: 'Careers & Culture', url: '/careers&culture' },
+        { name: 'Clients Support', url: '/clients-support' }
       ]
     },
     {
@@ -416,7 +416,7 @@ const Navbar = () => {
     else if (pathname === "/products") {
       setActiveItem("Products");
     }
-    else if (pathname === "/insights") {
+    else if (pathname === "/blogs") {
       setActiveItem("Insights");
     }
     else if (pathname === "/talk-to-ella") {

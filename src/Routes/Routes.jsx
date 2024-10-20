@@ -14,6 +14,7 @@ import Hudbil_ai_chatbot from '../Pages/hudbil-ai-chatbot'
 import AboutUs from '../Pages/AboutUs';
 import Services1 from '../Pages/Services1';
 import Services2 from '../Pages/services2';
+import Insights from '../Pages/Insights';
 import BlogPage1 from '../Pages/blogpage-1';
 import Services from '../Pages/Services';
 import Work from '../Pages/Work';
@@ -50,6 +51,7 @@ const Routers = () => {
               <Route path="/hudbil-tabloids/evolution-of-web-development" element={< Evolution_of_web_development />} />
               <Route path="/about-us" element={<AboutUs />} />
               <Route path='/our-work' element={<Work />} />
+              <Route path='/blogs' element={<Insights />} />
               <Route path='/our-services' element={<Services />} />
               <Route path='/services1' element={<Services1 />} />
               <Route path='/services2' element={<Services2 />} />

@@ -10,9 +10,11 @@ body {
   font-family: "Arial Th", Arial, sans-serif;
 }
 
-/* #root.noscroll {
-  overflow-x: hidden;
-} */
+@media (max-width: 1023px) {
+  #root.noscroll {
+    overflow-x: hidden;
+  }
+}
 
 ::-webkit-scrollbar {
   width: 0px;

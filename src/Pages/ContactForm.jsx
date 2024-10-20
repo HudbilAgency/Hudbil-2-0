@@ -253,7 +253,7 @@ const ContactForm = () => {
                         </div>
                       </div>
                       <div className="flex self-center flex-col  pt-14 w-full text-lg tracking-wider leading-none text-center text-white max-md:max-w-full">
-                        <button type="submit" className="overflow-hidden lg:w-[20vw] w-[60vw] self-center py-4 rounded-[2000px] max-md:px-5 bg-purple-700 hover:bg-black transition-colors">
+                        <button type="submit" className="overflow-hidden lg:w-[20vw] w-[60vw] self-center py-4 rounded-[2000px] max-md:px-5 bg-purple-700 hover:bg-black transition-all">
                           Submit
                         </button>
                       </div>

@@ -95,7 +95,7 @@ const Home = () => {
     { name: 'Our Work', link: '/our-work' },
     { name: 'Services', link: '/services' },
     { name: 'Products', link: '/products' },
-    { name: 'Insights', link: '/insights' },
+    { name: 'Insights', link: '/blogs' },
     { name: 'Talk to Ella', link: '/TalkToElla' }
   ];
 
@@ -494,7 +494,7 @@ const Home = () => {
                         {clients.map((client, index) => (
                           <div key={index} className={index > 0 ? "mt-4" : ""}>{client}</div>
                         ))}
-                        <button className="button flex flex-row items-center gap-4 px-12 py-3 mt-12 text-base leading-none text-white bg-black rounded-[1000px] max-md:px-5 max-md:mt-10 hover:bg-[#7811A5] transition-colors duration-300">
+                        <button className="button flex flex-row items-center gap-4 px-12 py-3 mt-12 text-base leading-none text-white bg-black rounded-[1000px] max-md:px-5 max-md:mt-10 hover:bg-[#7811A5] transition-all duration-300">
                           <h1 className='text-base font-arial'>Learn more about us</h1>
                           <img ref={buttonImgRef} src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                         </button>
@@ -543,7 +543,7 @@ const Home = () => {
                     ))}
                   </div></div>
               </div>
-              <button className="button self-end flex flex-row justify-between px-12 py-3 my-12 mx-auto lg:mr-8 leading-none bg-black text-white gap-8 rounded-[1000px] max-md:px-5 max-md:mt-10  hover:bg-[#7811A5] transition-colors duration-300">
+              <button className="button self-end flex flex-row justify-between px-12 py-3 my-12 mx-auto lg:mr-8 leading-none bg-black text-white gap-8 rounded-[1000px] max-md:px-5 max-md:mt-10  hover:bg-[#7811A5] transition-all duration-300">
                 <h1 className='text-base mt-1 font-arial'>Why work with us</h1>
                 <img ref={buttonImgRef} src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
               </button>
@@ -568,7 +568,7 @@ const Home = () => {
                   We drive your business success value through tailor-made digital marketing solutions.
                 </h3>
 
-                <button className="button self-end flex flex-row justify-between px-16 py-4 mt-24 mx-auto leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-colors duration-300">
+                <button className="button self-end flex flex-row justify-between px-16 py-4 mt-24 mx-auto leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-all duration-300">
                   <h1 className='text-xl mt-1 font-arial'>Visit Coltfox</h1>
                   <img ref={buttonImgRef} src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                 </button>
@@ -589,7 +589,7 @@ const Home = () => {
                   We drive your product success in the future with our AI, AR & VR development solutions.
                 </h3>
 
-                <button className="button flex flex-row justify-between px-16 py-4 mt-24 mx-auto  leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-colors duration-300">
+                <button className="button flex flex-row justify-between px-16 py-4 mt-24 mx-auto  leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-all duration-300">
                   <h1 className='text-xl mt-1 font-arial'>Visit Kalacode</h1>
                   <img ref={buttonImgRef} src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                 </button>
@@ -664,13 +664,13 @@ const Home = () => {
                         ))}
                       </div>
                       */}
-              {/* <button className="px-16 ml-52 py-4 mt-10 w-80 max-w-full text-base tracking-wider  bg-black leading-none text-white rounded-[1000px]  hover:bg-[#7811A5]  transition-colors duration-300">
+              {/* <button className="px-16 ml-52 py-4 mt-10 w-80 max-w-full text-base tracking-wider  bg-black leading-none text-white rounded-[1000px]  hover:bg-[#7811A5]  transition-all duration-300">
                         View all insight →
                       </button> */}
 
             </section>
             <CarousalImgBlogs />
-            <button className="button self-end flex flex-row justify-between px-12 py-3 my-12 mx-auto lg:mr-8 leading-none bg-black text-white gap-8 rounded-[1000px] max-md:px-5 max-md:mt-10  hover:bg-[#7811A5] transition-colors duration-300">
+            <button className="button self-end flex flex-row justify-between px-12 py-3 my-12 mx-auto lg:mr-8 leading-none bg-black text-white gap-8 rounded-[1000px] max-md:px-5 max-md:mt-10  hover:bg-[#7811A5] transition-all duration-300">
               <h1 className='text-base mt-1 font-arial'>View all insight</h1>
               <img ref={buttonImgRef} src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
             </button>
@@ -682,7 +682,7 @@ const Home = () => {
                 <h3 className="self-stretch mt-16 text-4xl font-arial text-center text-white leading-[50px] max-md:mt-10 max-md:max-w-full max-md:text-4xl max-md:leading-[54px]" ref={fadeInRef2}>
                   Big idea, Kalacode is <br /> beating heart of <br /> Hudbil's, a new venture <br /> agency like no other in India.
                 </h3>
-                <button className="button flex flex-row justify-between px-20 py-4 mt-20  mr-6 md:mr-8 leading-none bg-white text-black self-center items-center gap-8 rounded-[1000px] max-md:px-5   hover:bg-[#7811A5] transition-colors duration-300">
+                <button className="button flex flex-row justify-between px-20 py-4 mt-20  mr-6 md:mr-8 leading-none bg-white text-black self-center items-center gap-8 rounded-[1000px] max-md:px-5   hover:bg-[#7811A5] transition-all duration-300">
                   <h1 className='text-xl mt-1 font-arial'>Learn More</h1>
                   <img ref={buttonImgRef} src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                 </button>

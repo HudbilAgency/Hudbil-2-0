@@ -63,7 +63,7 @@ const BlogPage3 = () => {
                         </svg>
                     </div>
                     <div className='font-normal text-sm text-[#838383]'>
-                    <a href='/insights'>Return to Insights</a>
+                    <a href='/blogs'>Return to Insights</a>
                         
                     </div>
 

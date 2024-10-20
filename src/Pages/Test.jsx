@@ -18,7 +18,7 @@ const OurBrandsSection = () => {
         <h2 className="self-stretch mt-20 text-4xl font-bold tracking-normal text-center text-white leading-[50px] max-md:mt-10 max-md:max-w-full">
           We drive your product success <br /> in the future with our AI, AR & VR development solutions.
         </h2>
-            <button className="px-14 py-5  hover:bg-[#7811A5] hover:text-white bg-white text-black transition-colors duration-300  mt-14 w-80 max-w-full text-base tracking-wider leading-none  rounded-[1000px] max-md:px-5 max-md:mt-10">
+            <button className="px-14 py-5  hover:bg-[#7811A5] hover:text-white bg-white text-black transition-all duration-300  mt-14 w-80 max-w-full text-base tracking-wider leading-none  rounded-[1000px] max-md:px-5 max-md:mt-10">
                       Learn about Kalacode →
                 </button>
         <div className="flex gap-5 items-center mt-16 ml-6 max-md:mt-10">
