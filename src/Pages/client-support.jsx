@@ -1,4 +1,6 @@
 import React from 'react';
+import Navbar from '../Components/Navbar'
+import Footer from '../Components/Footer'
 
 const FormInput = ({ label, type = 'text', placeholder = '' }) => (
   <div className="flex overflow-hidden justify-center items-start py-2 tracking-wider">
@@ -23,6 +25,8 @@ const ClientSupport = () => {
   ];
 
   return (
+    <>
+    < Navbar />
     <main className="flex overflow-hidden flex-col px-16 py-16 bg-white max-md:px-5 max-md:pb-24">
       <div className="flex px-10 mt-20 bg-neutral-400 max-md:px-5 max-md:mt-10">
         <div className="flex flex-1 shrink w-full basis-0 min-h-[1px] min-w-[240px] max-md:max-w-full" />
@@ -111,6 +115,8 @@ const ClientSupport = () => {
         </div>
       </section>
     </main>
+    < Footer />
+    </>
   );
 };
 
