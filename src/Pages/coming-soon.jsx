@@ -96,7 +96,7 @@ const ComingSoon = () => {
                         </div>
                         
                         <div className="flex flex-col items-start pt-14 w-full xl:text-xl text-lg tracking-wider leading-none text-center text-white whitespace-nowrap">
-                            <button type="submit" className="overflow-hidden px-16 py-3.5 max-w-full rounded-[2000px] w-[267px] bg-blue-500">
+                            <button type="submit" className="overflow-hidden px-16 py-3.5 max-w-full rounded-[2000px] w-[267px] bg-purple-800 hover:bg-black">
                             Submit
                             </button>
                         </div>
