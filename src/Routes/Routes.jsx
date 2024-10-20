@@ -27,6 +27,7 @@ import Website_design_agency from '../Pages/website-design-agency';
 import Evolution_of_web_development from '../Pages/evolution-of-web-development';
 import Our_industry from '../Pages/our-industry';
 import Our_products from '../Pages/our-products';
+import ComingSoon from '../Pages/coming-soon';
 
 const Routers = () => {
   return (
@@ -58,7 +59,8 @@ const Routers = () => {
               <Route path="/Animation" element={<Animation/>} />
               <Route path="/Test" element={<Test/>} />
               <Route path="/talk-to-ella" element={<TalkToElla/>} />
-              <Route path="/contact-us" element={<ContactForm/>} />
+              <Route path="/contact-us" element={<ContactForm/>} /> 
+              <Route path="/coming-soon" element={<ComingSoon/>} />
             </Routes> 
     </>
   )

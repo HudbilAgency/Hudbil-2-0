@@ -91,7 +91,7 @@ const Navbar = () => {
     { name: 'About us', link: '/about-us' },
     { name: 'Our Work', link: '/our-work' },
     { name: 'Services', link: '/our-services' },
-    { name: 'Products', link: '/products' },
+    { name: 'Products', link: '/our-products' },
     { name: 'Insights', link: '/insights' },
     { name: 'Talk to Ella', link: '/talk-to-ella' }
   ];
