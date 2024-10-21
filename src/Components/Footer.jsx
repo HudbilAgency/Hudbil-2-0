@@ -226,7 +226,7 @@ const Footer = () => {
       </div>
       <div className="flex flex-col md:flex-row items-center justify-between flex-wrap gap-6 self-center md:mt-20 max-w-full text-sm tracking-wider leading-none text-zinc-400 max-md:mt-16">
         <div className="grow font-arial">© hudbil 2024</div>
-        <div className="grow shrink font-arial">Quick Links</div>
+        <div className="grow shrink font-arial"><a href="/quick-links">Quick Links</a></div>
         <div className="grow shrink font-arial"><a href="/cookies-policy">Cookies Policy</a></div>
         <div className="grow shrink font-arial">© Copyrights Reserved</div>
       </div>

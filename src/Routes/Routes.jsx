@@ -31,6 +31,7 @@ import Our_products from '../Pages/our-products';
 import ComingSoon from '../Pages/coming-soon';
 import ClientSupport from '../Pages/client-support';
 import Careersculture from '../Pages/careers&culture';
+import QuickLinks from '../Pages/quick-links';
 
 const Routers = () => {
   return (
@@ -67,6 +68,7 @@ const Routers = () => {
               <Route path="/contact-us" element={<ContactForm/>} /> 
               <Route path="/coming-soon" element={<ComingSoon/>} />
               <Route path="/client-support" element={<ClientSupport/>} />
+              <Route path="/quick-links" element={<QuickLinks/>} />
             </Routes> 
     </>
   )
