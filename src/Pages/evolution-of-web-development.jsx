@@ -207,7 +207,7 @@ const Evolution_of_web_development = () => {
                             </div>
                         </div>
 
-                        <div className='w-full border border-[#B0B0B0] border-opacity-75 rounded-lg'>
+                        <div className='w-full border border-[#B0B0B0] border-opacity-75 rounded-lg hidden'>
                             <div className='font-normal text-2xl leading-9 py-6 px-6'>Contents</div>
                             <div className='flex flex-col gap-4 pb-6 text-[#454343]'>
                                 <div className='flex gap-8 items-start px-6 font-normal text-base leading-7'>

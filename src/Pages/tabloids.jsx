@@ -9,7 +9,7 @@ const Tabloids = () => {
         <>
             <Navbar />
             <main className='pt-[60px]'>
-                <div className='font-normal text-4xl py-16 px-6 md:px-16'>
+                <div className='font-normal text-4xl xl:text-[50px] py-16 px-6 md:px-16'>
                     Hudbil Tabloids
                 </div>
                 <section className='flex flex-col lg:flex-row items-start gap-16 pl-6 md:pl-16 lg:pl-0 pr-6 md:pr-16 w-full pb-20'>

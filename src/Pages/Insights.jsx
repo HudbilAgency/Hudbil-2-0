@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
+import { Link } from 'react-router-dom';
 
 const Insights = () => {
 
@@ -63,8 +64,8 @@ const Insights = () => {
 
                 <section>
                     <div className='flex flex-col md:flex-row gap-10 items-start justify-between font-normal'>
-                        <div className='text-4xl leading-10'>INSIGHTS</div>
-                        <div className='text-2xl md:text-3xl leading-tight md:w-1/2'>Latest thinking from across the world of insights informed by behaviour change, brand, development, customer experience to innovation.</div>
+                        <div className='text-4xl xl:text-[50px] leading-10'>INSIGHTS</div>
+                        <div className='text-2xl md:text-3xl xl:text-[32px] leading-tight md:w-1/2'>Latest thinking from across the world of insights informed by behaviour change, brand, development, customer experience to innovation.</div>
                     </div>
 
                     <div className='flex flex-col md:flex-row md:items-start xl:items-end justify-between my-16 gap-12'>
@@ -79,7 +80,7 @@ const Insights = () => {
                                 <img
                                     src="./search-glass.png"
                                     alt="Search"
-                                    className='w-6 h-6'
+                                    className='w-5 h-5'
                                 />
                             </button>
                         </div>
@@ -237,39 +238,39 @@ const Insights = () => {
                                     <div className='w-full text-center border rounded-full py-2 mb-3 border-white'>Coming Soon</div>
                                 </div>
 
-                                <div className='flex flex-col items-start gap-2 w-full xl:w-1/2'>
+                                <Link to="/blogpage-1" className='flex flex-col items-start gap-2 w-full xl:w-1/2'>
                                     <div className='w-full'><img className='w-full' src="./mainblogimg5.png" alt="Blog5" /></div>
                                     <div className='text-3xl leading-10 mt-3'>The Ultimate Guide for UX Research.</div>
                                     <div className='text-[#6A13AA] text-sm'>August 13, 2024</div>
-                                </div>
+                                </Link>
                             </div>
 
                             <div className='flex flex-col xl:flex-row items-start gap-20 xl:gap-12 justify-between w-full'>
-                                <div className='flex flex-col items-start gap-2 w-full xl:w-1/2'>
+                                <Link to="/blogpage-2" className='flex flex-col items-start gap-2 w-full xl:w-1/2'>
                                     <div className='w-full'><img className='w-full' src="./mainblogimg6.png" alt="Blog6" /></div>
                                     <div className='text-3xl leading-10 mt-3'>The Evolution Of The Graphic Design.</div>
                                     <div className='text-[#6A13AA] text-sm'>August 13, 2024</div>
-                                </div>
+                                </Link>
 
-                                <div className='flex flex-col items-start gap-2 w-full xl:w-1/2'>
+                                <Link to="/blogpage-3" className='flex flex-col items-start gap-2 w-full xl:w-1/2'>
                                     <div className='w-full'><img className='w-full' src="./mainblogimg7.png" alt="Blog7" /></div>
                                     <div className='text-3xl leading-10 mt-3'>Brand’s identity design aspects in Brief.</div>
                                     <div className='text-[#6A13AA] text-sm'>August 6, 2024</div>
-                                </div>
+                                </Link>
                             </div>
 
                             <div className='flex flex-col xl:flex-row items-start gap-20 xl:gap-12 justify-between'>
-                                <div className='flex flex-col items-start gap-2 w-full xl:w-1/2'>
+                                <Link to="/blogpage-4" className='flex flex-col items-start gap-2 w-full xl:w-1/2'>
                                     <div className='w-full'><img className='w-full' src="./mainblogimg8.png" alt="Blog8" /></div>
                                     <div className='text-3xl leading-10 mt-3'>Business Firms Suffer Because of Not Finding right B2B design Agency.</div>
                                     <div className='text-[#6A13AA] text-sm'>July 4, 2024</div>
-                                </div>
+                                </Link>
 
-                                <div className='flex flex-col items-start gap-2 w-full xl:w-1/2'>
+                                <Link to="/blogpage-5" className='flex flex-col items-start gap-2 w-full xl:w-1/2'>
                                     <div className='w-full'><img className='w-full' src="./mainblogimg9.png" alt="Blog9" /></div>
                                     <div className='text-3xl leading-10 mt-3'>User Experience Design and its Importance for Businesses.</div>
                                     <div className='text-[#6A13AA] text-sm'>June 24, 2024</div>
-                                </div>
+                                </Link>
                             </div>
 
                             <button className="button self-end mx-auto flex flex-row justify-between px-12 py-2 bg-black leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px] hover:bg-[#7811A5] transition-all duration-300">

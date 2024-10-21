@@ -98,7 +98,7 @@ const Navbar = () => {
 
   const footerLinks = [
     {
-      title: { name:'Portfolio', url:''},
+      title: { name:'Portfolio', url:'/our-work'},
       items: [
         { name: 'Hudbil Tabloids', url: '/hudbil-tabloids' },
         { name: 'Careers & Culture', url: '/careers-culture' },
@@ -106,11 +106,11 @@ const Navbar = () => {
       ]
     },
     {
-      title:{ name:'Contact Us', url:''},
+      title:{ name:'Contact Us', url:'/contact-us'},
       items: [
-        { name: 'Facebook', url: '' },
-        { name: 'Linkedin', url: '' },
-        { name: 'Instagram', url: '' }
+        { name: 'Facebook', url: 'https://www.facebook.com/people/Hudbil/61550971184539/?mibextid=LQQJ4d' },
+        { name: 'Linkedin', url: 'https://www.linkedin.com/company/hudbil-private-limited/posts/?feedView=all' },
+        { name: 'Instagram', url: 'https://www.instagram.com/hudbil_com?igsh=aTV3bnMxY3piOHlm' }
       ]
     }
   ];
@@ -514,7 +514,7 @@ const Navbar = () => {
 
       {pathnameimg !== '/' && (
         <div
-          className={`fixed w-[100vw] inset-0 bg-black pointer-events-none z-[900] duration-1000 hidden lg:block transition-all ease-in-out ${menuIcon ? "opacity-0 hidden" : "opacity-50"
+          className={`fixed w-[100vw] inset-0 bg-black z-[900] duration-1000 hidden lg:block transition-all ease-in-out ${menuIcon ? "opacity-0 hidden pointer-events-none" : "opacity-50"
             }`}
           onTransitionEnd={() => {
             document.body.style.overflow = menuIcon ? 'auto' : 'hidden';
@@ -534,7 +534,7 @@ const Navbar = () => {
             <ul className="mx-6 lg:mx-16 flex flex-col items-start gap-4 md:gap-6 lg:gap-2 2xl:gap-6">
               {menuItems.map((item, index) => (
                 <li key={index}>
-                  <a href={item.link} className="text-4xl 2xl:text-7xl hover:text-purple-700 transition-all duration-300 font-arial font-extrabold">
+                  <a href={item.link} className="text-4xl 2xl:text-7xl hover:text-purple-700 transition-all duration-300 font-normal">
                     {item.name}
                   </a>
                 </li>
@@ -542,11 +542,11 @@ const Navbar = () => {
             </ul>
             <footer className="w-5/6 md:w-3/5 lg:w-full lg:gap-20 2xl:gap-28 lg:justify-normal flex items-center justify-between px-6 lg:px-16">
               {footerLinks.map((column, index) => (
-                <div key={index} className="flex flex-col items-start text-sm 2xl:text-base font-arial font-medium leading-none">
-                  <Link to={column.title.path}><h3>{column.title.name}</h3></Link>
+                <div key={index} className="flex flex-col items-start text-sm 2xl:text-base font-medium leading-none">
+                  <Link className='hover:text-gray-500 transition-all duration-300' to={column.title.url}><h3>{column.title.name}</h3></Link>
                   <ul className="mt-4">
                   {column.items.map((item, itemIndex) => (
-                      <li key={itemIndex} className={itemIndex > 0 ? 'mt-4' : ''}>
+                      <li key={itemIndex} className={itemIndex > 0 ? 'mt-4 hover:text-gray-500 transition-all duration-300' : 'hover:text-gray-500 transition-all duration-300'}>
                         <a href={item.url}>{item.name}</a>
                       </li>
                     ))}

@@ -29,7 +29,7 @@ const Services = () => {
             <Navbar />
             <main className='pt-[80px] bg-black'>
                 <section className='py-20'>
-                    <div className='w-full lg:w-3/5 font-normal text-[2rem] leading-tight text-white px-6 md:px-16'>
+                    <div className='w-full lg:w-3/5 font-normal text-[2rem] xl:text-[50px] xl:w-5/6 leading-tight text-white px-6 md:px-16'>
                         Whether you need to design your first MVP to get development, redesign your product to improve business metrics - our designer’s and developer’s are here to help.
                     </div>
 

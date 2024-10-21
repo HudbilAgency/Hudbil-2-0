@@ -38,7 +38,7 @@ const ClientSupport = () => {
               <h1 className="self-start text-6xl tracking-wide leading-none max-md:text-4xl">
                 Our Teams
               </h1>
-              <p className="mt-9 text-3xl leading-10 max-md:max-w-full">
+              <p className="mt-9 text-xl leading-10 max-md:max-w-full">
                 If you are dealing with any issue's in your on going project, request a call we are available to help 24/7
               </p>
             </div>
@@ -105,7 +105,7 @@ const ClientSupport = () => {
                 </div>
                 <button
                   type="submit"
-                  className="overflow-hidden px-16 py-3.5 mt-14 max-w-full text-lg tracking-wider leading-none text-center text-white whitespace-nowrap rounded-[2000px] w-[267px] max-md:px-5 max-md:mt-10"
+                  className="bg-[#7811A5] px-12 py-4 mt-14 max-w-full text-lg tracking-wider leading-none text-center text-white whitespace-nowrap rounded-[2000px] w-[267px] max-md:px-5 max-md:mt-10"
                 >
                   Submit
                 </button>

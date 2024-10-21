@@ -133,11 +133,11 @@ const Footer = () => {
   ];
 
   const socialMediaLinks = [
-    { title: 'Linkedin', url: '#' },
+    { title: 'Linkedin', url: 'https://www.linkedin.com/company/hudbil-private-limited/posts/?feedView=all' },
     { title: 'Twitter', url: '#' },
-    { title: 'Facebook', url: '#' },
-    { title: 'Instagram', url: '#' },
-    { title: 'Youtube', url: '#' }
+    { title: 'Facebook', url: 'https://www.facebook.com/people/Hudbil/61550971184539/?mibextid=LQQJ4d' },
+    { title: 'Instagram', url: "https://www.instagram.com/hudbil_com?igsh=aTV3bnMxY3piOHlm" },
+    { title: 'Youtube', url: 'https://www.youtube.com/@hudbilagency' }
   ];
 
   const officeLocations = [
@@ -165,7 +165,7 @@ const Footer = () => {
             <div className="flex flex-col">
               <ul className="flex font-arial flex-col text-sm items-start tracking-wider leading-none text-white">
                 {navigationLinks.slice(0, 6).map((link, index) => (
-                  <li key={index} className={index !== 0 ? "mt-6" : ""}>
+                  <li key={index} className={index !== 0 ? "mt-6 hover:text-gray-500 transition-all duration-300" : "hover:text-gray-500 transition-all duration-300"}>
                     <a href={link.url}>{link.title}</a>
                   </li>
                 ))}
@@ -174,7 +174,7 @@ const Footer = () => {
             <div className="flex flex-col">
               <ul className="flex font-arial flex-col items-start text-sm tracking-wider leading-none text-white">
                 {navigationLinks.slice(6).map((link, index) => (
-                  <li key={index} className={index !== 0 ? "mt-6" : ""}>
+                  <li key={index} className={index !== 0 ? "mt-6 hover:text-gray-500 transition-all duration-300" : "hover:text-gray-500 transition-all duration-300"}>
                     <a href={link.url}>{link.title}</a>
                   </li>
                 ))}
@@ -185,8 +185,8 @@ const Footer = () => {
                 <h3 className="self-stretch font-arial">Social Media</h3>
                 <ul>
                   {socialMediaLinks.map((link, index) => (
-                    <li key={index} className="font-arial mt-6">
-                      <a href={link.url}>{link.title}</a>
+                    <li key={index} className="font-arial mt-6 hover:text-gray-500 transition-all duration-300">
+                      <a target='blank' href={link.url}>{link.title}</a>
                     </li>
                   ))}
                 </ul>
@@ -200,9 +200,9 @@ const Footer = () => {
                   <h3 className=" tracking-wider leading-none uppercase text-base">
                     {office.city} office
                   </h3>
-                  <p className="mt-6 font-arial md:h-20 lg:h-auto xl:h-20 hover:text-gray-500 leading-6 text-sm">{office.address}</p>
-                  <p className="self-start mt-7 font-arial tracking-wider hover:text-gray-500 leading-loose text-sm">{office.phone}</p>
-                  <a href="mailto:contact@hudbil.com" className="self-start text-purple-700 hover:text-gray-500 font-arial mt-5 text-lg">
+                  <p className="mt-6 font-arial md:h-20 lg:h-auto xl:h-20 hover:text-gray-500 transition-all duration-300 leading-6 text-sm">{office.address}</p>
+                  <p className="self-start mt-7 font-arial tracking-wider hover:text-gray-500 transition-all duration-300 leading-loose text-sm">{office.phone}</p>
+                  <a href="mailto:info@hudbil.com" className="self-start text-purple-700 hover:text-gray-500 transition-all duration-300 font-arial mt-5 text-lg">
                     Email us here
                   </a>
                 </div>

@@ -37,17 +37,13 @@ const Services1 = () => {
             </div>
             <main className='relative z-20'>
                 <section className='bg-black py-20'>
-                    <div className='md:w-3/5 font-normal text-[2rem] leading-tight text-white px-6 md:px-16'>
-                        Hudbil is an insights creative design and development agency in India and London, we practice creative ideas that turn heads, draw eyes, distract, disrupt and engage – in short, strategic communication solutions that get attention.
+                <div className='md:w-3/5 xl:w-4/5 font-normal text-[2rem] xl:text-[50px] leading-tight text-white px-6 md:px-16'>
+                We see design as a collaborative endeavour, requiring inputs from all stakeholders in order to create successful and scalable solutions in our UI & UX design and consulting services.
                     </div>
                     <div className="w-full flex items-start justify-end my-16 px-6 md:px-16">
-                        <div className='md:w-1/2 flex flex-col items-start gap-8 text-white'>
-                            <div>We’re not your typical agency guys — and we don’t want to be. We’re here to get the job done: no politics, no suits, no ego. Just results. That said, we’re not robots — we’re a close
-                                knit team of friends and family that love what we do.</div>
-                            <div>We work hard, but we value balance. We’re out the door (or the home office!) at 5.30.We
-                                use knowledge sharing, coaching and work-shopping to drive collective value across our
-                                business; meaning every client succeeds from the testing, ideas and developments of our
-                                total client pool.</div>
+                        <div className='md:w-1/2 flex flex-col items-start gap-8 text-white text-base xl:text-[20px] leading-tight'>
+                            <div>We are Hudbil – A creative design agency A hardworking collective with 10 years under our belt, specialising in brand identity and packaging.</div>
+                            <div>We’re living in a time when every brand is rethinking who they are and what they stand for; fancy features will only get you so far. We create belief  in the seen and unseen, in the said and unsaid.</div>
                             <div>
                                 <button className="button self-end flex flex-row justify-between px-12 py-3 mx-auto leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-all duration-300">
                                     <h1 className='text-base mt-1 font-arial'>Get In Touch</h1>
@@ -59,7 +55,6 @@ const Services1 = () => {
                     <div className="relative my-24 ">
                         <div className="relative">
                             <img className='mx-auto' src="./sp11.png" alt="About Us" />
-                            {/* Marquee Text */}
                             <div className="absolute w-full inset-0 flex justify-center items-center overflow-hidden">
                                 <div className="marquee-text-container font-normal text-2xl uppercase">
                                     <div className="marquee-text text-white">Together we create belief</div>
@@ -305,13 +300,13 @@ const Services1 = () => {
                     <img className="w-full" src="./sp12.png" />
                 </div>
                 <section className='bg-black py-20'>
-                    <div className='md:w-1/2 font-normal text-[2rem] leading-tight text-white px-6 md:px-16'>
+                <div className='md:w-1/2 xl:w-3/4 font-normal text-[2rem] xl:text-[50px] leading-tight text-white px-6 md:px-16'>
                         Our Secret Ingredient?
                         We’d be lying if we said we weren’t playful, imaginative, and offbeat. (wink) Fun fact? The
                         best designs come from that same spark of creativity.
                     </div>
                     <div className="w-full flex items-start justify-end my-16 px-6 md:px-16">
-                        <div className='md:w-1/2 flex flex-col items-start gap-8 text-white'>
+                        <div className='md:w-1/2 flex flex-col items-start gap-8 text-white text-base xl:text-[20px] leading-tight'>
                             <div>Within the creative process, it is essential not to lose sight of the end goal. By keeping the
                                 bigger picture in mind, we can question the purpose and meaning of an idea, asking the
                                 right questions to define a clearer and better vision for the brand.</div>

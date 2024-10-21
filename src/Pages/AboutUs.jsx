@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import ReachUs from '../Components/ReachUs';
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
+import { Link } from 'react-router-dom';
 
 const AboutUs = () => {
 
@@ -66,11 +67,11 @@ const AboutUs = () => {
             </div>
             <main className='relative z-20'>
                 <section className='bg-black py-20'>
-                    <div className='md:w-3/5 font-normal text-[2rem] leading-tight text-white px-6 md:px-16'>
+                    <div className='md:w-3/5 xl:w-4/5 font-normal text-[2rem] xl:text-[50px] leading-tight text-white px-6 md:px-16'>
                         Hudbil is an insights creative design and development agency in India and London, we practice creative ideas that turn heads, draw eyes, distract, disrupt and engage – in short, strategic communication solutions that get attention.
                     </div>
                     <div className="w-full flex items-start justify-end my-16 px-6 md:px-16">
-                        <div className='md:w-1/2 flex flex-col items-start gap-8 text-white'>
+                        <div className='md:w-1/2 flex flex-col items-start gap-8 text-white text-base xl:text-[20px] leading-tight'>
                             <div>We’re not your typical agency guys — and we don’t want to be. We’re here to get the job done: no politics, no suits, no ego. Just results. That said, we’re not robots — we’re a close
                                 knit team of friends and family that love what we do.</div>
                             <div>We work hard, but we value balance. We’re out the door (or the home office!) at 5.30.We
@@ -78,17 +79,18 @@ const AboutUs = () => {
                                 business; meaning every client succeeds from the testing, ideas and developments of our
                                 total client pool.</div>
                             <div>
-                                <button className="button self-end flex flex-row justify-between px-12 py-3 mx-auto leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-all duration-300">
-                                    <h1 className='text-base mt-1 font-arial'>Get In Touch</h1>
-                                    <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
-                                </button>
+                                <Link to="/contact-us">
+                                    <button className="button self-end flex flex-row justify-between px-12 py-3 mx-auto leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-all duration-300">
+                                        <h1 className='text-base mt-1 font-arial'>Get In Touch</h1>
+                                        <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
                     <div className="relative my-24 ">
                         <div className="relative">
                             <img className='mx-auto' src="./about-us2.png" alt="About Us" />
-                            {/* Marquee Text */}
                             <div className="absolute w-full inset-0 flex justify-center items-center overflow-hidden">
                                 <div className="marquee-text-container font-normal text-2xl uppercase">
                                     <div className="marquee-text text-white">Innovation at your fingertips</div>
@@ -298,10 +300,12 @@ const AboutUs = () => {
                             <div className='text-[#917D7D] font-normal text-sm py-12 w-full md:w-5/6'>
                                 Get in touch to find out how our team enjoys tinkering, most importantly empower your organisation.
                             </div>
-                            <button className="button self-end flex flex-row justify-between px-12 py-3 mb-4 leading-none hover:bg-white hover:text-black text-white gap-8 rounded-[1000px] max-md:px-5 bg-[#7811A5] transition-all duration-300">
-                                <h1 className='text-base mt-1 font-arial'>Work With Us</h1>
-                                <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
-                            </button>
+                            <Link to="/contact-us">
+                                <button className="button self-end flex flex-row justify-between px-12 py-3 mb-4 leading-none hover:bg-white hover:text-black text-white gap-8 rounded-[1000px] max-md:px-5 bg-[#7811A5] transition-all duration-300">
+                                    <h1 className='text-base mt-1 font-arial'>Work With Us</h1>
+                                    <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                                </button>
+                            </Link>
                         </div>
                     </div>
                 </section>
@@ -309,11 +313,11 @@ const AboutUs = () => {
                     <img className="w-full" src="./about-us-main2.png" />
                 </div>
                 <section className='bg-black py-20'>
-                    <div className='md:w-1/2 font-normal text-[2rem] leading-tight text-white px-6 md:px-16'>
+                    <div className='md:w-1/2 xl:w-3/4 font-normal text-[2rem] xl:text-[50px] leading-tight text-white px-6 md:px-16'>
                         A International team of curious represents a mix of experiences, talents, and skills that enrich our collective creativity.
                     </div>
                     <div className="w-full flex items-start justify-end my-16 px-6 md:px-16">
-                        <div className='md:w-1/2 flex flex-col items-start gap-8 text-white'>
+                        <div className='md:w-1/2 flex flex-col items-start gap-8 text-white text-base xl:text-[20px] leading-tight'>
                             <div>Working hand in hand with our clients, our project are consistently awarded and we are proud of that. This means that we are moving in the right direction Founded in 2012, we have quietly scaled from a one-man band to a powerhouse of exceptional developers and designers, growing solely through the power of word of mouth.</div>
                         </div>
                     </div>
@@ -340,11 +344,12 @@ const AboutUs = () => {
                         </div>
                     </div>
 
-                    <button className="button self-end flex flex-row justify-between px-12 py-3 mt-20 leading-none hover:bg-white hover:text-black ml-auto mr-6 md:mr-16 text-white gap-8 rounded-[1000px] max-md:px-5 bg-[#7811A5] transition-all duration-300">
-                        <h1 className='text-base mt-1 font-arial'>Get In Touch</h1>
-                        <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
-                    </button>
-
+                    <Link to="/contact-us">
+                        <button className="button self-end flex flex-row justify-between px-12 py-3 mt-20 leading-none hover:bg-white hover:text-black ml-auto mr-6 md:mr-16 text-white gap-8 rounded-[1000px] max-md:px-5 bg-[#7811A5] transition-all duration-300">
+                            <h1 className='text-base mt-1 font-arial'>Get In Touch</h1>
+                            <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                        </button>
+                    </Link>
                 </section>
             </main>
             <ReachUs />

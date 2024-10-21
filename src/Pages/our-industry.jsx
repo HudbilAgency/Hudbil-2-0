@@ -27,8 +27,8 @@ const Our_industry = () => {
     < Navbar />
     {/* Header */}
     <section className='w-[90%] mx-auto  py-24 space-y-5 lg:py-32 md:flex'>
-        <h1 className='text-xl sm:text-2xl md:text-4xl uppercase w-full tracking-wide'>Our industry</h1>
-        <h2 className='text-lg sm:text-xl md:text-2xl lg:text-3xl md:w-[60%]'>Our capability and expertise to deliver a range of software design & development solutions is what make us the top software development Agency.</h2>
+        <h1 className='text-3xl md:text-4xl xl:text-[50px] uppercase w-full tracking-wide'>Our industry</h1>
+        <h2 className='text-2xl md:text-3xl xl:text-[32px] leading-tight md:w-3/5'>Our capability and expertise to deliver a range of software design & development solutions is what make us the top software development Agency.</h2>
     </section>
 
     <section className='w-[90%] mx-auto mb-20'>
@@ -84,7 +84,7 @@ const DropdownComponent = () => {
                     <div className="py-4 flex flex-col">
                         <div className="flex items-center  justify-between">
                             <div className="flex items-center text-center justify-between gap-8">
-                                <div className='border rounded-full p-1 px-3 w-9 border-gray-400'>{index + 1}</div>
+                                <div className='border rounded-full p-1 w-9 border-gray-400'>{index + 1}</div>
                                 <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">{title}</div>
                             </div>
                             <div onClick={() => toggleDropdown2(index)} className="cursor-pointer">

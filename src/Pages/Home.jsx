@@ -70,12 +70,14 @@ const Home = () => {
     {
       image: "./OurServicesImg/Creative Designing-inside.jpg",
       title: "Creative Designing",
-      description: "Our scientifically proven UX design process means you can simultaneously release products users love and check off business goals."
+      description: "Our scientifically proven UX design process means you can simultaneously release products users love and check off business goals.",
+      url: "/services1"
     },
     {
       image: "./OurServicesImg/Development-inside.jpg",
       title: "Be-Spoken Development",
-      description: "We understanding your unique business challenge, creating flexible software roadmaps, and developing secure, scalable solutions that deliver ROI."
+      description: "We understanding your unique business challenge, creating flexible software roadmaps, and developing secure, scalable solutions that deliver ROI.",
+      url: "/services2"
     }
   ];
 
@@ -629,7 +631,9 @@ const Home = () => {
                         <h3 className="self-start mt-6 text-2xl font-arial tracking-wider leading-8 text-neutral-950">{service.title}</h3>
                         <p className="mt-7 font-arial text-lg tracking-wide leading-8 text-neutral-950 ">{service.description}</p>
                       </div>
-                      <button className='mt-5 text-purple-700 text-xl self-start'>Read now</button>
+                      <Link to={service.url}>
+                        <button className='mt-5 text-purple-700 text-xl self-start'>Read now</button>
+                      </Link>
                     </div>
                   ))}
                 </div>
@@ -671,10 +675,12 @@ const Home = () => {
 
             </section>
             <CarousalImgBlogs />
-            <button className="button self-end flex flex-row justify-between px-12 py-3 my-12 mx-auto lg:mr-8 leading-none bg-black text-white gap-8 rounded-[1000px] max-md:px-5 max-md:mt-10  hover:bg-[#7811A5] transition-all duration-300">
-              <h1 className='text-base mt-1 font-arial'>View all insight</h1>
-              <img ref={buttonImgRef} src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
-            </button>
+            <Link to="/blogs">
+              <button className="button self-end flex flex-row justify-between px-12 py-3 my-12 mx-auto lg:mr-8 leading-none bg-black text-white gap-8 rounded-[1000px] max-md:px-5 max-md:mt-10  hover:bg-[#7811A5] transition-all duration-300">
+                <h1 className='text-base mt-1 font-arial'>View all insight</h1>
+                <img ref={buttonImgRef} src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+              </button>
+            </Link>
 
             <div ref={tabloidRef} className="flex overflow-hidden flex-col bg-black items-center px-6 md:px-20 py-12 mt-12 max-w-full w-full max-md:mt-10">
               <div className="flex flex-col items-center max-w-full w-[534px]">
@@ -684,10 +690,10 @@ const Home = () => {
                   Big idea, Kalacode is <br /> beating heart of <br /> Hudbil's, a new venture <br /> agency like no other in India.
                 </h3>
                 <Link to={'/hudbil-tabloids'}>
-                <button className="button flex flex-row justify-between px-20 py-4 mt-20  mr-6 md:mr-8 leading-none bg-white text-black self-center items-center gap-8 rounded-[1000px] max-md:px-5   hover:bg-[#7811A5] transition-colors duration-300">
-                  <h1 className='text-xl mt-1 font-arial'>Learn More</h1>
-                  <img ref={buttonImgRef} src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
-                </button>
+                  <button className="button flex flex-row justify-between px-20 py-4 mt-20  mr-6 md:mr-8 leading-none bg-white text-black self-center items-center gap-8 rounded-[1000px] max-md:px-5   hover:bg-[#7811A5] transition-colors duration-300">
+                    <h1 className='text-xl mt-1 font-arial'>Learn More</h1>
+                    <img ref={buttonImgRef} src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                  </button>
                 </Link>
 
               </div>
