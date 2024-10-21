@@ -70,3 +70,12 @@ body {
     stroke-width: 0;
   }
 }
+
+.submit-btn {
+  background: linear-gradient(135deg, #7811A5, #2E16BB);
+}
+
+.submit-btn:hover {
+  background: black;
+}
+

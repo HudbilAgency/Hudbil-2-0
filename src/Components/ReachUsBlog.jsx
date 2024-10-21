@@ -293,7 +293,7 @@ const ReachUsBlog = () => {
               <select
                 id="country"
                 name="country"
-                className="pt-1.5 pb-5 mt-7 text-base tracking-wider leading-loose border-b border-zinc-300 max-md:pr-5 max-md:max-w-full bg-transparent text-white"
+                className="pt-1.5 pb-5 mt-7 focus:outline-none text-base tracking-wider leading-loose border-b border-zinc-300 max-md:pr-5 max-md:max-w-full bg-transparent text-white"
                 required
               >
                 <option value="" className="text-black">Please Select</option>

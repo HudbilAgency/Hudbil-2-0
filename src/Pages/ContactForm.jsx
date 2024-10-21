@@ -1,271 +1,453 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 
 const ContactForm = () => {
 
+  const fileInputRef = useRef(null);
+  const [fileName, setFileName] = useState("");
+  const [file, setFile] = useState(null);
 
-  const offices = [
-    {
-      name: "Bangalore office",
-      address: "No 235, 2nd & 3rd Floor, 13th Cross Road 2nd Stage, Indiranagar Hoysala Nagar, Bangalore - 560038",
-      phone: "+91 88-84-40-9369",
-      email: "Email us here",
-    },
-    {
-      name: "Mumbai office",
-      address: "74/II, 'C' Cross Road, Opp Gate No 2, MIDC - 400093, Seepz, Andheri East, Mumbai, Maharashtra.",
-      phone: "+91 88-84-40-9369",
-      email: "Email us here",
-    },
-    {
-      name: "Delhi office",
-      address: "90B, Delhi - Jaipur Expy, Udyog Vihar, Sector 18, Gurugram, Sarhol, Haryana - 122008.",
-      phone: "+91 88-84-40-9369",
-      email: "Email us here",
-    },
-    {
-      name: "Dubai office",
-      address: "Boulevard Plaza Level 23, Boulevard Plaza Tower 2, Dubai, UAE.",
-      phone: "+91 88-84-40-9369",
-      email: "Email us here",
-    },
-    {
-      name: "London office",
-      address: "Level 30, The Leaden hall Building Z2 Lacunal Street, City of London, EC3V 4AB, UK.",
-      phone: "+91 88-84-40-9369",
-      email: "Email us here",
-    },
+  const handleFileInputClick = () => {
+    fileInputRef.current.click();
+  };
+
+  const handleFileChange = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      setFileName(file.name);
+      setFile(file);
+    }
+  };
+
+  const countries = [
+    { name: 'Afghanistan', code: 'AF' },
+    { name: 'Åland Islands', code: 'AX' },
+    { name: 'Albania', code: 'AL' },
+    { name: 'Algeria', code: 'DZ' },
+    { name: 'American Samoa', code: 'AS' },
+    { name: 'AndorrA', code: 'AD' },
+    { name: 'Angola', code: 'AO' },
+    { name: 'Anguilla', code: 'AI' },
+    { name: 'Antarctica', code: 'AQ' },
+    { name: 'Antigua and Barbuda', code: 'AG' },
+    { name: 'Argentina', code: 'AR' },
+    { name: 'Armenia', code: 'AM' },
+    { name: 'Aruba', code: 'AW' },
+    { name: 'Australia', code: 'AU' },
+    { name: 'Austria', code: 'AT' },
+    { name: 'Azerbaijan', code: 'AZ' },
+    { name: 'Bahamas', code: 'BS' },
+    { name: 'Bahrain', code: 'BH' },
+    { name: 'Bangladesh', code: 'BD' },
+    { name: 'Barbados', code: 'BB' },
+    { name: 'Belarus', code: 'BY' },
+    { name: 'Belgium', code: 'BE' },
+    { name: 'Belize', code: 'BZ' },
+    { name: 'Benin', code: 'BJ' },
+    { name: 'Bermuda', code: 'BM' },
+    { name: 'Bhutan', code: 'BT' },
+    { name: 'Bolivia', code: 'BO' },
+    { name: 'Bosnia and Herzegovina', code: 'BA' },
+    { name: 'Botswana', code: 'BW' },
+    { name: 'Bouvet Island', code: 'BV' },
+    { name: 'Brazil', code: 'BR' },
+    { name: 'British Indian Ocean Territory', code: 'IO' },
+    { name: 'Brunei Darussalam', code: 'BN' },
+    { name: 'Bulgaria', code: 'BG' },
+    { name: 'Burkina Faso', code: 'BF' },
+    { name: 'Burundi', code: 'BI' },
+    { name: 'Cambodia', code: 'KH' },
+    { name: 'Cameroon', code: 'CM' },
+    { name: 'Canada', code: 'CA' },
+    { name: 'Cape Verde', code: 'CV' },
+    { name: 'Cayman Islands', code: 'KY' },
+    { name: 'Central African Republic', code: 'CF' },
+    { name: 'Chad', code: 'TD' },
+    { name: 'Chile', code: 'CL' },
+    { name: 'China', code: 'CN' },
+    { name: 'Christmas Island', code: 'CX' },
+    { name: 'Cocos (Keeling) Islands', code: 'CC' },
+    { name: 'Colombia', code: 'CO' },
+    { name: 'Comoros', code: 'KM' },
+    { name: 'Congo', code: 'CG' },
+    { name: 'Congo, The Democratic Republic of the', code: 'CD' },
+    { name: 'Cook Islands', code: 'CK' },
+    { name: 'Costa Rica', code: 'CR' },
+    { name: 'Cote D\'Ivoire', code: 'CI' },
+    { name: 'Croatia', code: 'HR' },
+    { name: 'Cuba', code: 'CU' },
+    { name: 'Cyprus', code: 'CY' },
+    { name: 'Czech Republic', code: 'CZ' },
+    { name: 'Denmark', code: 'DK' },
+    { name: 'Djibouti', code: 'DJ' },
+    { name: 'Dominica', code: 'DM' },
+    { name: 'Dominican Republic', code: 'DO' },
+    { name: 'Ecuador', code: 'EC' },
+    { name: 'Egypt', code: 'EG' },
+    { name: 'El Salvador', code: 'SV' },
+    { name: 'Equatorial Guinea', code: 'GQ' },
+    { name: 'Eritrea', code: 'ER' },
+    { name: 'Estonia', code: 'EE' },
+    { name: 'Ethiopia', code: 'ET' },
+    { name: 'Falkland Islands (Malvinas)', code: 'FK' },
+    { name: 'Faroe Islands', code: 'FO' },
+    { name: 'Fiji', code: 'FJ' },
+    { name: 'Finland', code: 'FI' },
+    { name: 'France', code: 'FR' },
+    { name: 'French Guiana', code: 'GF' },
+    { name: 'French Polynesia', code: 'PF' },
+    { name: 'French Southern Territories', code: 'TF' },
+    { name: 'Gabon', code: 'GA' },
+    { name: 'Gambia', code: 'GM' },
+    { name: 'Georgia', code: 'GE' },
+    { name: 'Germany', code: 'DE' },
+    { name: 'Ghana', code: 'GH' },
+    { name: 'Gibraltar', code: 'GI' },
+    { name: 'Greece', code: 'GR' },
+    { name: 'Greenland', code: 'GL' },
+    { name: 'Grenada', code: 'GD' },
+    { name: 'Guadeloupe', code: 'GP' },
+    { name: 'Guam', code: 'GU' },
+    { name: 'Guatemala', code: 'GT' },
+    { name: 'Guernsey', code: 'GG' },
+    { name: 'Guinea', code: 'GN' },
+    { name: 'Guinea-Bissau', code: 'GW' },
+    { name: 'Guyana', code: 'GY' },
+    { name: 'Haiti', code: 'HT' },
+    { name: 'Heard Island and Mcdonald Islands', code: 'HM' },
+    { name: 'Holy See (Vatican City State)', code: 'VA' },
+    { name: 'Honduras', code: 'HN' },
+    { name: 'Hong Kong', code: 'HK' },
+    { name: 'Hungary', code: 'HU' },
+    { name: 'Iceland', code: 'IS' },
+    { name: 'India', code: 'IN' },
+    { name: 'Indonesia', code: 'ID' },
+    { name: 'Iran, Islamic Republic Of', code: 'IR' },
+    { name: 'Iraq', code: 'IQ' },
+    { name: 'Ireland', code: 'IE' },
+    { name: 'Isle of Man', code: 'IM' },
+    { name: 'Israel', code: 'IL' },
+    { name: 'Italy', code: 'IT' },
+    { name: 'Jamaica', code: 'JM' },
+    { name: 'Japan', code: 'JP' },
+    { name: 'Jersey', code: 'JE' },
+    { name: 'Jordan', code: 'JO' },
+    { name: 'Kazakhstan', code: 'KZ' },
+    { name: 'Kenya', code: 'KE' },
+    { name: 'Kiribati', code: 'KI' },
+    { name: 'Korea, Democratic People\'S Republic of', code: 'KP' },
+    { name: 'Korea, Republic of', code: 'KR' },
+    { name: 'Kuwait', code: 'KW' },
+    { name: 'Kyrgyzstan', code: 'KG' },
+    { name: 'Lao People\'S Democratic Republic', code: 'LA' },
+    { name: 'Latvia', code: 'LV' },
+    { name: 'Lebanon', code: 'LB' },
+    { name: 'Lesotho', code: 'LS' },
+    { name: 'Liberia', code: 'LR' },
+    { name: 'Libyan Arab Jamahiriya', code: 'LY' },
+    { name: 'Liechtenstein', code: 'LI' },
+    { name: 'Lithuania', code: 'LT' },
+    { name: 'Luxembourg', code: 'LU' },
+    { name: 'Macao', code: 'MO' },
+    { name: 'Macedonia, The Former Yugoslav Republic of', code: 'MK' },
+    { name: 'Madagascar', code: 'MG' },
+    { name: 'Malawi', code: 'MW' },
+    { name: 'Malaysia', code: 'MY' },
+    { name: 'Maldives', code: 'MV' },
+    { name: 'Mali', code: 'ML' },
+    { name: 'Malta', code: 'MT' },
+    { name: 'Marshall Islands', code: 'MH' },
+    { name: 'Martinique', code: 'MQ' },
+    { name: 'Mauritania', code: 'MR' },
+    { name: 'Mauritius', code: 'MU' },
+    { name: 'Mayotte', code: 'YT' },
+    { name: 'Mexico', code: 'MX' },
+    { name: 'Micronesia, Federated States of', code: 'FM' },
+    { name: 'Moldova, Republic of', code: 'MD' },
+    { name: 'Monaco', code: 'MC' },
+    { name: 'Mongolia', code: 'MN' },
+    { name: 'Montserrat', code: 'MS' },
+    { name: 'Morocco', code: 'MA' },
+    { name: 'Mozambique', code: 'MZ' },
+    { name: 'Myanmar', code: 'MM' },
+    { name: 'Namibia', code: 'NA' },
+    { name: 'Nauru', code: 'NR' },
+    { name: 'Nepal', code: 'NP' },
+    { name: 'Netherlands', code: 'NL' },
+    { name: 'Netherlands Antilles', code: 'AN' },
+    { name: 'New Caledonia', code: 'NC' },
+    { name: 'New Zealand', code: 'NZ' },
+    { name: 'Nicaragua', code: 'NI' },
+    { name: 'Niger', code: 'NE' },
+    { name: 'Nigeria', code: 'NG' },
+    { name: 'Niue', code: 'NU' },
+    { name: 'Norfolk Island', code: 'NF' },
+    { name: 'Northern Mariana Islands', code: 'MP' },
+    { name: 'Norway', code: 'NO' },
+    { name: 'Oman', code: 'OM' },
+    { name: 'Pakistan', code: 'PK' },
+    { name: 'Palau', code: 'PW' },
+    { name: 'Palestinian Territory, Occupied', code: 'PS' },
+    { name: 'Panama', code: 'PA' },
+    { name: 'Papua New Guinea', code: 'PG' },
+    { name: 'Paraguay', code: 'PY' },
+    { name: 'Peru', code: 'PE' },
+    { name: 'Philippines', code: 'PH' },
+    { name: 'Pitcairn', code: 'PN' },
+    { name: 'Poland', code: 'PL' },
+    { name: 'Portugal', code: 'PT' },
+    { name: 'Puerto Rico', code: 'PR' },
+    { name: 'Qatar', code: 'QA' },
+    { name: 'Reunion', code: 'RE' },
+    { name: 'Romania', code: 'RO' },
+    { name: 'Russian Federation', code: 'RU' },
+    { name: 'RWANDA', code: 'RW' },
+    { name: 'Saint Helena', code: 'SH' },
+    { name: 'Saint Kitts and Nevis', code: 'KN' },
+    { name: 'Saint Lucia', code: 'LC' },
+    { name: 'Saint Pierre and Miquelon', code: 'PM' },
+    { name: 'Saint Vincent and the Grenadines', code: 'VC' },
+    { name: 'Samoa', code: 'WS' },
+    { name: 'San Marino', code: 'SM' },
+    { name: 'Sao Tome and Principe', code: 'ST' },
+    { name: 'Saudi Arabia', code: 'SA' },
+    { name: 'Senegal', code: 'SN' },
+    { name: 'Serbia and Montenegro', code: 'CS' },
+    { name: 'Seychelles', code: 'SC' },
+    { name: 'Sierra Leone', code: 'SL' },
+    { name: 'Singapore', code: 'SG' },
+    { name: 'Slovakia', code: 'SK' },
+    { name: 'Slovenia', code: 'SI' },
+    { name: 'Solomon Islands', code: 'SB' },
+    { name: 'Somalia', code: 'SO' },
+    { name: 'South Africa', code: 'ZA' },
+    { name: 'South Georgia and the South Sandwich Islands', code: 'GS' },
+    { name: 'Spain', code: 'ES' },
+    { name: 'Sri Lanka', code: 'LK' },
+    { name: 'Sudan', code: 'SD' },
+    { name: 'Suriname', code: 'SR' },
+    { name: 'Svalbard and Jan Mayen', code: 'SJ' },
+    { name: 'Swaziland', code: 'SZ' },
+    { name: 'Sweden', code: 'SE' },
+    { name: 'Switzerland', code: 'CH' },
+    { name: 'Syrian Arab Republic', code: 'SY' },
+    { name: 'Taiwan, Province of China', code: 'TW' },
+    { name: 'Tajikistan', code: 'TJ' },
+    { name: 'Tanzania, United Republic of', code: 'TZ' },
+    { name: 'Thailand', code: 'TH' },
+    { name: 'Timor-Leste', code: 'TL' },
+    { name: 'Togo', code: 'TG' },
+    { name: 'Tokelau', code: 'TK' },
+    { name: 'Tonga', code: 'TO' },
+    { name: 'Trinidad and Tobago', code: 'TT' },
+    { name: 'Tunisia', code: 'TN' },
+    { name: 'Turkey', code: 'TR' },
+    { name: 'Turkmenistan', code: 'TM' },
+    { name: 'Turks and Caicos Islands', code: 'TC' },
+    { name: 'Tuvalu', code: 'TV' },
+    { name: 'Uganda', code: 'UG' },
+    { name: 'Ukraine', code: 'UA' },
+    { name: 'United Arab Emirates', code: 'AE' },
+    { name: 'United Kingdom', code: 'GB' },
+    { name: 'United States', code: 'US' },
+    { name: 'United States Minor Outlying Islands', code: 'UM' },
+    { name: 'Uruguay', code: 'UY' },
+    { name: 'Uzbekistan', code: 'UZ' },
+    { name: 'Vanuatu', code: 'VU' },
+    { name: 'Venezuela', code: 'VE' },
+    { name: 'Viet Nam', code: 'VN' },
+    { name: 'Virgin Islands (British)', code: 'VG' },
+    { name: 'Virgin Islands (U.S.)', code: 'VI' },
+    { name: 'Wallis and Futuna', code: 'WF' },
+    { name: 'Western Sahara', code: 'EH' },
+    { name: 'Yemen', code: 'YE' },
+    { name: 'Zambia', code: 'ZM' },
+    { name: 'Zimbabwe', code: 'ZW' }
   ];
 
-  const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    jobTitle: '',
-    companyName: '',
-    country: '',
-    message: '',
-    file: null,
-  });
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-  };
-
-  const handleFileChange = (e) => {
-    setFormData((prevData) => ({
-      ...prevData,
-      file: e.target.files[0],
-    }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
   return (
 
     <>
       <Navbar />
-      <main className='pt-[40px]'>
-        <div className="flex overflow-hidden mx-[3vw] flex-col items-center pt-16 bg-white">
-          <div className="flex flex-wrap gap-5 justify-between w-full max-w-[1600px] max-md:max-w-full" />
-          <div className="flex px-10 mt-16 w-full bg-neutral-400 max-w-[1600px] max-md:px-5 max-md:mt-10 max-md:max-w-full">
-            <div className="flex flex-1 shrink w-full basis-0 min-h-[1px] min-w-[240px] max-md:max-w-full" />
-          </div>
-          <div className="mt-11 w-full max-md:mt-10 max-md:max-w-full">
-            <div className="flex gap-5 max-md:flex-col">
-              <div className="flex flex-col w-[50vw] max-md:ml-0 max-md:w-full">
-                <div className="flex flex-col mt-5 w-full max-md:mt-10 max-md:max-w-full">
-                  <div className="mr-7 lg:w-[40vw] w-full font-arial text-6xl tracking-wide leading-[60px] text-neutral-950 max-md:mr-2.5 max-md:max-w-full max-md:text-4xl max-md:leading-10">
-                    Get in touch with our teams in India, London or Dubai. We look forward to hearing from you.
+      <main className='pt-40 pb-20 lg:pb-40 px-6 md:px-16'>
+
+        <div className="bg-[#6C6C6C] h-[1px] w-full opacity-50 mb-20"></div>
+
+        <section>
+          <div className='flex flex-col lg:flex-row items-stretch justify-between h-full gap-16 lg:gap-20 xl:gap-24 2xl:gap-36'>
+
+            <div className='w-full lg:w-1/2'>
+              <div className='text-4xl md:text-[3rem] text-[#0B0B0B] leading-tight xl:w-5/6 2xl:w-4/5'>Get in touch with our teams in India, London or Dubai. We look forward to hearing from you.</div>
+
+              <div className='mt-20 flex flex-col items-start gap-14'>
+
+                <div className='flex flex-col xl:flex-row items-start justify-between gap-5'>
+                  <div className='w-full xl:w-[31%] 2xl:w-[28%]'>BANGALORE OFFICE</div>
+                  <div className='w-full xl:w-1/3 leading-7'>No 235, 2nd & 3rd Floor, 13th Cross Road 2nd Stage, Indiranagar Hoysala Nagar, Bangalore - 560038,</div>
+                  <div className='flex flex-col items-start gap-[6px] w-full xl:w-[26%] 2xl:w-[22%]'>
+                    <div>+91 88-84-40-9369</div>
+                    <div><a href="mailto:info@hudbil.com" className="hover:text-purple-700 transition-all duration-300 mt-5">
+                      Email us here
+                    </a></div>
                   </div>
-                  <div className="mt-10 max-md:max-w-full">
-                    <div className="flex flex-row gap-5 max-md:flex-col">
-                      <div className="flex flex-col lg:w-[28%] max-md:ml-0 max-md:w-full">
-                        <div className="flex flex-col lg:w-full w-[10%] font-arial items-start mt-2.5 text-base tracking-wider leading-none uppercase text-neutral-950 max-md:mt-10">
-                          <div className="self-stretch">Bangalore office</div>
-                          <div className="mt-24 max-md:mt-10">Mumbai office</div>
-                          <div className="mt-24 max-md:mt-10">delhi office</div>
-                          <div className="mt-20 max-md:mt-10">DuBAI office</div>
-                          <div className="mt-24 max-md:mt-10">LONDON office</div>
-                        </div>
-                      </div>
-                      <div className="flex flex-col ml-5 w-[46%] max-md:ml-0 max-md:w-full">
-                        <div className="flex flex-col font-arial grow items-start text-lg leading-7 text-neutral-950 max-md:mt-10">
-                          <div className="self-stretch">
-                            No 235, 2nd & 3rd Floor, 13th Cross Road 2nd Stage, Indiranagar Hoysala Nagar, Bangalore - 560038,{" "}
-                          </div>
-                          <div className="self-stretch mt-6">
-                            74/II, "C" Cross Road, Opp Gate No 2, MIDC - 400093, Seepz, Andheri East, Mumbai, Maharashtra.{" "}
-                          </div>
-                          <div className="mt-7">
-                            90B, Delhi - Jaipur Expy, Udyog Vihar, Sector 18, Gurugram, Sarhol, Haryana - 122008.{" "}
-                          </div>
-                          <div className="mt-6">
-                            Boulevard Plaza Level 23, <br /> Boulevard Plaza Tower 2, <br /> Dubai. UAE{" "}
-                          </div>
-                          <div className="mt-6">
-                            Level 30, The Leaden hall Building Z2 Lacunal Street <br /> City of London, EC3V 4AB, UK.{" "}
-                          </div>
-                        </div>
-                      </div>
-                      <div className="flex flex-col ml-5 w-[26%] max-md:ml-0 max-md:w-full">
-                        <div className="flex flex-col text-lg tracking-wider font-arial text-neutral-950 max-md:mt-10">
-                          <div className='h-[12vh]'>
-                            <div className="leading-none max-md:mr-0.5">+91 88-84-40-9369</div>
-                            <div className="self-start mt-4 tracking-wider">Email us here</div>
-                          </div>
-                          <div className='h-[12vh]'>
-                            <div className="leading-none max-md:mt-6">+91 88-84-40-9369</div>
-                            <div className="self-start mt-4 tracking-wider">Email us here</div>
-                          </div>
-                          <div className='h-[12vh]'>
-                            <div className="leading-none max-md:mt-6 max-md:mr-0.5">+91 88-84-40-9369</div>
-                            <div className="self-start mt-4 tracking-wider">Email us here</div>
-                          </div>
-                          <div className='h-[12vh]'>
-                            <div className="leading-none max-md:mt-6 max-md:mr-0.5">+91 88-84-40-9369</div>
-                            <div className="self-start mt-4 tracking-wider">Email us here</div>
-                          </div>
-                          <div className='h-[12vh]'>
-                            <div className="leading-none max-md:mt-6">+91 88-84-40-9369</div>
-                            <div className="self-start mt-4 tracking-wider">Email us here</div>
-                          </div>
-                        </div>
-                      </div>
+                </div>
+
+                <div className='flex flex-col xl:flex-row items-start justify-between gap-5'>
+                  <div className='w-full xl:w-[31%] 2xl:w-[28%]'>MUMBAI OFFICE</div>
+                  <div className='w-full xl:w-1/3 leading-7'>74/II, “C” Cross Road, Opp Gate No 2, MIDC - 400093, Seepz, Andheri East, Mumbai, Maharashtra.</div>
+                  <div className='flex flex-col items-start gap-[6px] w-full xl:w-[26%] 2xl:w-[22%]'>
+                    <div>+91 88-84-40-9369</div>
+                    <div><a href="mailto:info@hudbil.com" className="hover:text-purple-700 transition-all duration-300 mt-5">
+                      Email us here
+                    </a></div>
+                  </div>
+                </div>
+
+                <div className='flex flex-col xl:flex-row items-start justify-between gap-5'>
+                  <div className='w-full xl:w-[31%] 2xl:w-[28%]'>DELHI OFFICE</div>
+                  <div className='w-full xl:w-1/3 leading-7'>90B, Delhi - Jaipur Expy, Udyog Vihar, Sector 18, Gurugram, Sarhol, Haryana - 122008.</div>
+                  <div className='flex flex-col items-start gap-[6px] w-full xl:w-[26%] 2xl:w-[22%]'>
+                    <div>+91 88-84-40-9369</div>
+                    <div><a href="mailto:info@hudbil.com" className="hover:text-purple-700 transition-all duration-300 mt-5">
+                      Email us here
+                    </a></div>
+                  </div>
+                </div>
+
+                <div className='flex flex-col xl:flex-row items-start justify-between gap-5'>
+                  <div className='w-full xl:w-[31%] 2xl:w-[28%]'>DUBAI OFFICE</div>
+                  <div className='w-full xl:w-1/3 leading-7'>Boulevard Plaza Level 23, Boulevard Plaza Tower 2, Dubai. UAE</div>
+                  <div className='flex flex-col items-start gap-[6px] w-full xl:w-[26%] 2xl:w-[22%]'>
+                    <div>+91 88-84-40-9369</div>
+                    <div><a href="mailto:info@hudbil.com" className="hover:text-purple-700 transition-all duration-300 mt-5">
+                      Email us here
+                    </a></div>
+                  </div>
+                </div>
+
+                <div className='flex flex-col xl:flex-row items-start justify-between gap-5'>
+                  <div className='w-full xl:w-[31%] 2xl:w-[28%]'>LONDON OFFICE</div>
+                  <div className='w-full xl:w-1/3 leading-7'>Level 30, The Leaden hall Building Z2 Lacunal Street City of London, EC3V 4AB, UK.</div>
+                  <div className='flex flex-col items-start gap-[6px] w-full xl:w-[26%] 2xl:w-[22%]'>
+                    <div>+91 88-84-40-9369</div>
+                    <div><a href="mailto:info@hudbil.com" className="hover:text-purple-700 transition-all duration-300 mt-5">
+                      Email us here
+                    </a></div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div className='w-full lg:w-1/2 min-h-full flex flex-col lg:flex-row items-start gap-12 xl:gap-16'>
+              <div className="bg-[#D8D8D8] h-[1px] w-full lg:hidden block"></div>
+              <div className="bg-[#D8D8D8] w-[1px] h-full hidden lg:block"></div>
+              <div className='w-full'>
+                <div className='w-full'>
+                  <input
+                    type="text"
+                    name="firstName"
+                    placeholder="First name*"
+                    className="outline-none text-black placeholder:text-[#C4C4C4] w-full py-4"
+                    required
+                  />
+                  <div className="bg-[#D8D8D8] h-[1px] w-full "></div>
+                  <input
+                    type="text"
+                    name="lastName"
+                    placeholder="Last name*"
+                    className="outline-none text-black placeholder:text-[#C4C4C4] w-full py-4"
+                    required
+                  />
+                  <div className="bg-[#D8D8D8] h-[1px] w-full "></div>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email*"
+                    className="outline-none text-black placeholder:text-[#C4C4C4] w-full py-4"
+                    required
+                  />
+                  <div className="bg-[#D8D8D8] h-[1px] w-full "></div>
+                  <input
+                    type="text"
+                    name="jobTitle"
+                    placeholder="Job title"
+                    className="outline-none text-black placeholder:text-[#C4C4C4] w-full py-4"
+                  />
+                  <div className="bg-[#D8D8D8] h-[1px] w-full "></div>
+                  <input
+                    type="text"
+                    name="companyName"
+                    placeholder="Company name*"
+                    className="outline-none text-black placeholder:text-[#C4C4C4] w-full py-4"
+                    required
+                  />
+                  <div className="bg-[#D8D8D8] h-[1px] w-full "></div>
+                </div>
+                <div className='mt-10 flex flex-col gap-2'>
+                  <label htmlFor="country">Country*</label>
+                  <select
+                    id="country"
+                    name="country"
+                    className="py-5 border-b border-[#D8D8D8] focus:outline-none"
+                    required
+                  >
+                    <option value="" className="text-[#C4C4C4]">Please Select</option>
+                    {countries.map((country) => (
+                      <option key={country.code} value={country.code} className="">
+                        {country.name.split(',')[0]}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+                <div className='mt-12 flex flex-col gap-2'>
+                  <label htmlFor="country">Message*</label>
+                  <textarea
+                    name="message"
+                    className="flex mt-6 p-4 w-full border border-[#D8D8D8]"
+                    required
+                  />
+                </div>
+                <div className='mt-12 flex flex-col gap-12'>
+                  <div>Please attach a file if it will support your query</div>
+                  <div className="flex gap-5 items-center">
+                    <div onClick={handleFileInputClick} className="px-12 cursor-pointer py-3 my-auto text-center border border-solid border-[#D8D8D8] rounded-full ">
+                      Choose File
                     </div>
+                    <input
+                      type="file"
+                      ref={fileInputRef}
+                      onChange={handleFileChange}
+                      style={{ display: "none" }}
+                      accept=".jpg, .jpeg, .png, .pdf, .doc, .svg, .docx, .zip, .rar"
+                    />
+                    <div>
+                      {fileName ? (
+                        <span className="text-base font-normal text-black">
+                          {fileName}
+                        </span>
+                      ) : (
+                        <span className="text-base font-normal text-black">
+                          No file chosen
+                        </span>
+                      )
+                      }
+                    </div>
+                  </div>
+                  <div>
+                    <button className='border rounded-full py-4 px-28 text-white submit-btn mt-4'>
+                      Submit
+                    </button>
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col ml-5 w-[57%] max-md:ml-0 max-md:w-full">
-                <form onSubmit={handleSubmit} className="flex flex-col px-14 pb-14 text-base text-stone-300 max-md:mt-10 max-md:max-w-full">
-                  <div className="flex flex-col max-md:max-w-full">
-                    <div className="flex flex-col w-full max-md:max-w-full">
-                      <div className="flex flex-col overflow-hidden justify-center items-start py-4 w-full tracking-wider max-md:max-w-full">
-                        <input
-                          type="text"
-                          name="firstName"
-                          value={formData.firstName}
-                          onChange={handleInputChange}
-                          placeholder="First name*"
-                          className="overflow-hidden flex-1 outline-none text-black shrink w-full min-w-[240px] max-md:max-w-full"
-                          required
-                        />
-                        <hr className=" w-full mt-4 h-px border border-gray-300 border-solid" />
-                      </div>
-                      <div className="flex flex-col overflow-hidden justify-center items-start py-4 w-full tracking-wider max-md:max-w-full">
-                        <input
-                          type="text"
-                          name="lastName"
-                          value={formData.lastName}
-                          onChange={handleInputChange}
-                          placeholder="Last name*"
-                          className="overflow-hidden flex-1 outline-none text-black shrink w-full min-w-[240px] max-md:max-w-full"
-                          required
-                        />
-                        <hr className=" w-full mt-4 h-px border border-gray-300 border-solid" />
-                      </div>
-                      <div className="flex flex-col overflow-hidden justify-center items-start py-4 w-full tracking-wider whitespace-nowrap max-md:max-w-full">
-                        <input
-                          type="email"
-                          name="email"
-                          value={formData.email}
-                          onChange={handleInputChange}
-                          placeholder="Email*"
-                          className="overflow-hidden flex-1 outline-none text-black shrink w-full min-w-[240px] max-md:max-w-full"
-                          required
-                        />
-                        <hr className=" w-full mt-4 h-px border border-gray-300 border-solid" />
-                      </div>
-                      <div className="flex flex-col overflow-hidden justify-center items-start py-4 w-full tracking-wider max-md:max-w-full">
-                        <input
-                          type="text"
-                          name="jobTitle"
-                          value={formData.jobTitle}
-                          onChange={handleInputChange}
-                          placeholder="Job title"
-                          className="overflow-hidden flex-1 outline-none text-black shrink w-full min-w-[240px] max-md:max-w-full"
-                        />
-                        <hr className=" w-full mt-4 h-px border border-gray-300 border-solid" />
-                      </div>
-                      <div className="flex flex-col overflow-hidden justify-center items-start py-4 w-full tracking-wider max-md:max-w-full">
-                        <input
-                          type="text"
-                          name="companyName"
-                          value={formData.companyName}
-                          onChange={handleInputChange}
-                          placeholder="Company name*"
-                          className="overflow-hidden flex-1 outline-none text-black shrink w-full min-w-[240px] max-md:max-w-full"
-                          required
-                        />
-                        <hr className=" w-full mt-4 h-px border border-gray-300 border-solid" />
-                      </div>
-                      <div className="flex flex-col pt-8 w-full tracking-wider leading-none text-neutral-950 max-md:max-w-full">
-                        <div className="pb-px w-full whitespace-nowrap max-md:max-w-full">Country*</div>
-                        <div className="flex justify-center items-center pb-3.5 mt-5 w-full max-md:max-w-full">
-                          <select
-                            name="country"
-                            value={formData.country}
-                            onChange={handleInputChange}
-                            className="overflow-hidden flex-1 bg-transparent outline-none shrink self-stretch py-1.5 my-auto w-full min-w-[240px] max-md:max-w-full"
-                            required
-                          >
-                            <hr className=" w-full mt-4 h-px border border-gray-300 border-solid" />
-                            <option value="">Please Select</option>
-                            {/* Add country options here */}
-                          </select>
-                        </div>
-                      </div>
-                      <div className="flex flex-col pt-8 w-full tracking-wider leading-none whitespace-nowrap min-h-[148px] text-neutral-950 max-md:max-w-full">
-                        <div className="pb-px w-full max-md:max-w-full">Message*</div>
-                        <textarea
-                          name="message"
-                          value={formData.message}
-                          onChange={handleInputChange}
-                          className="flex mt-5 p-4 w-full border border-solid border-zinc-300 min-h-[72px] max-md:max-w-full"
-                          required
-                        />
-                      </div>
-                      <div className="flex flex-col pt-8 w-full text-neutral-950 max-md:max-w-full">
-                        <div className="pb-px w-full tracking-wider leading-none max-md:max-w-full">
-                          Please attach a file if it will support your query
-                        </div>
-                        <div className="flex flex-col self-center  pt-5 mt-5 w-full max-md:max-w-full">
-                          <div className="flex flex-col lg:flex-row text-center overflow-hidden gap-1 items-center">
-                            <label htmlFor="file-upload" className="overflow-hidden self-stretch px-24 py-3 my-auto text-center border border-solid border-zinc-300 min-w-[320px] rounded-[2000px] max-md:px-5 cursor-pointer">
-                              Choose File
-                            </label>
-                            <input
-                              id="file-upload"
-                              type="file"
-                              onChange={handleFileChange}
-                              className="hidden"
-                            />
-                            <div className="self-stretch my-auto tracking-wider leading-none">
-                              {formData.file ? formData.file.name : 'No file chosen'}
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="flex self-center flex-col  pt-14 w-full text-lg tracking-wider leading-none text-center text-white max-md:max-w-full">
-                        <button type="submit" className="overflow-hidden lg:w-[20vw] w-[60vw] self-center py-4 rounded-[2000px] max-md:px-5 bg-purple-700 hover:bg-black transition-all">
-                          Submit
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
             </div>
+
           </div>
-        </div>
-        <Footer />
+        </section>
       </main>
+      <Footer />
     </>
   );
 };
