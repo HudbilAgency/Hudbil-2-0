@@ -200,7 +200,7 @@ const Footer = () => {
                   <h3 className=" tracking-wider leading-none uppercase text-base">
                     {office.city} office
                   </h3>
-                  <p className="mt-6 font-arial md:h-20 lg:h-auto xl:h-20 hover:text-gray-500 transition-all duration-300 leading-6 text-sm">{office.address}</p>
+                  <p className="mt-6 font-arial md:h-20 lg:h-auto xl:h-20 leading-6 text-sm">{office.address}</p>
                   <p className="self-start mt-7 font-arial tracking-wider hover:text-gray-500 transition-all duration-300 leading-loose text-sm">{office.phone}</p>
                   <a href="mailto:info@hudbil.com" className="self-start text-purple-700 hover:text-gray-500 transition-all duration-300 font-arial mt-5 text-lg">
                     Email us here
@@ -226,8 +226,8 @@ const Footer = () => {
       </div>
       <div className="flex flex-col md:flex-row items-center justify-between flex-wrap gap-6 self-center md:mt-20 max-w-full text-sm tracking-wider leading-none text-zinc-400 max-md:mt-16">
         <div className="grow font-arial">© hudbil 2024</div>
-        <div className="grow shrink font-arial"><a href="/quick-links">Quick Links</a></div>
-        <div className="grow shrink font-arial"><a href="/cookies-policy">Cookies Policy</a></div>
+        <div className="grow shrink font-arial hover:text-gray-500"><a href="/quick-links">Quick Links</a></div>
+        <div className="grow shrink font-arial hover:text-gray-500"><a href="/cookies-policy">Cookies Policy</a></div>
         <div className="grow shrink font-arial">© Copyrights Reserved</div>
       </div>
     </footer>

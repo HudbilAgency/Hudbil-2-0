@@ -98,7 +98,7 @@ const Navbar = () => {
 
   const footerLinks = [
     {
-      title: { name:'Portfolio', url:'/our-work'},
+      title: { name: 'Portfolio', url: '/our-work' },
       items: [
         { name: 'Hudbil Tabloids', url: '/hudbil-tabloids' },
         { name: 'Careers & Culture', url: '/careers-culture' },
@@ -106,7 +106,7 @@ const Navbar = () => {
       ]
     },
     {
-      title:{ name:'Contact Us', url:'/contact-us'},
+      title: { name: 'Contact Us', url: '/contact-us' },
       items: [
         { name: 'Facebook', url: 'https://www.facebook.com/people/Hudbil/61550971184539/?mibextid=LQQJ4d' },
         { name: 'Linkedin', url: 'https://www.linkedin.com/company/hudbil-private-limited/posts/?feedView=all' },
@@ -506,7 +506,7 @@ const Navbar = () => {
                 className="w-[5rem] lg:w-[7rem]"
               />
             ) : (
-              <img className="w-[5rem] md:w-[8rem] mt-6 md:mt-5" src="../hudbil-logo.png" alt="logo" /> 
+              <img className="w-[5rem] md:w-[8rem] mt-6 md:mt-5" src="../hudbil-logo.png" alt="logo" />
             )}
           </div>
         </div>
@@ -543,16 +543,25 @@ const Navbar = () => {
             <footer className="w-5/6 md:w-3/5 lg:w-full lg:gap-20 2xl:gap-28 lg:justify-normal flex items-center justify-between px-6 lg:px-16">
               {footerLinks.map((column, index) => (
                 <div key={index} className="flex flex-col items-start text-sm 2xl:text-base font-medium leading-none">
-                  <Link className='hover:text-gray-500 transition-all duration-300' to={column.title.url}><h3>{column.title.name}</h3></Link>
+                  <Link className="hover:text-gray-500 transition-all duration-300" to={column.title.url}>
+                    <h3>{column.title.name}</h3>
+                  </Link>
                   <ul className="mt-4">
-                  {column.items.map((item, itemIndex) => (
+                    {column.items.map((item, itemIndex) => (
                       <li key={itemIndex} className={itemIndex > 0 ? 'mt-4 hover:text-gray-500 transition-all duration-300' : 'hover:text-gray-500 transition-all duration-300'}>
-                        <a href={item.url}>{item.name}</a>
+                        <a
+                          href={item.url}
+                          target={['Facebook', 'Linkedin', 'Instagram'].includes(item.name) ? '_blank' : '_self'}
+                          rel={['Facebook', 'Linkedin', 'Instagram'].includes(item.name) ? 'noopener noreferrer' : undefined}
+                        >
+                          {item.name}
+                        </a>
                       </li>
                     ))}
                   </ul>
                 </div>
               ))}
+
             </footer>
           </nav>
         </div>
