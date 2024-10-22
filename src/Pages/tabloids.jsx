@@ -16,7 +16,7 @@ const Tabloids = () => {
                     <div className='flex items-center justify-center w-full lg:w-1/2 lg:hidden'>
                         <img className='w-full ' src="./tabloids.png" />
                     </div>
-                    <div className='lg:flex hidden items-center justify-center w-full lg:w-1/2 bg-no-repeat bg-cover bg-center sticky top-0'>
+                    <div className='lg:flex hidden items-center justify-center w-full lg:w-1/2 bg-no-repeat bg-cover bg-bottom sticky top-0'>
                         <img className='w-full h-screen object-cover' src="./tabloids.png" />
                     </div>
                     <div className='w-full lg:w-1/2'>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import CarouselBlogPage from '../Components/CarouselBlogPage';
 import ReachUsBlog from '../Components/ReachUsBlog';
 import Navbar from '../Components/Navbar';
@@ -13,43 +13,13 @@ const BlogPage5 = () => {
         });
     };
 
-    const images = [
-        {
-            src: "/BlogPageImg/bp-21.png",
-            alt: "Blog-1",
-            content: "One-time actions to regular routines: A guide to strengthening habits",
-            date: "August 13, 2024",
-            routepath: "#",
-        },
-        {
-            src: "/BlogPageImg/bp-22.png",
-            alt: "Blog-2",
-            content: "Ripple effect: Connecting with the connected",
-            date: "June 19, 2024",
-            routepath: "#",
-        },
-        {
-            src: "/BlogPageImg/bp-23.png",
-            alt: "Blog-3",
-            content: "Podcast: In or out? How brands can look like insiders",
-            date: "June 10, 2024",
-            routepath: "#",
-        },
-        {
-            src: "/BlogPageImg/bp-24.png",
-            alt: "Blog-4",
-            content: "Sustainability - who cares?",
-            date: "November 29, 2023",
-            routepath: "#",
-        },
-        {
-            src: "/BlogPageImg/bp-24.png",
-            alt: "Blog-5",
-            content: "Sustainability - who cares?",
-            date: "November 29, 2023",
-            routepath: "#",
+    const pointsRefs = useRef([]);
+
+    const handleScroll = (index) => {
+        if (pointsRefs.current[index]) {
+            pointsRefs.current[index].scrollIntoView({ behavior: 'smooth' });
         }
-    ];
+    };
 
     return (
         <>
@@ -62,20 +32,20 @@ const BlogPage5 = () => {
                             <path d="M20.4998 6H3.7998" stroke="#838383" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </div>
-                    <div className='font-normal text-sm text-[#838383]'>
-                    <a href='/blogs'>Return to Insights</a>
-                        
+                    <div className='font-normal transition-all hover:text-gray-400 duration-300 text-sm text-[#838383]'>
+                        <a href='/blogs'>Return to Insights</a>
+
                     </div>
 
                 </div>
                 <div className='font-normal text-3xl md:text-4xl pt-10 px-6 lg:px-16 lg:hidden leading-snug'>
-                User Experience Design and its Importance for Businesses
+                    User Experience Design and its Importance for Businesses
                 </div>
                 <section className='flex flex-col-reverse lg:flex-row items-start justify-between gap-20 lg:gap-10 py-10 lg:pt-10 lg:pb-20 2xl:pb-28 px-6 lg:px-16'>
                     <div className='w-full relative lg:w-2/3 flex items-start h-full gap-0 lg:gap-10 pb-16 lg:pb-0'>
                         <div className='w-full'>
                             <div className='font-normal text-4xl pb-12 hidden lg:block leading-snug'>
-                            User Experience Design and its Importance for Businesses
+                                User Experience Design and its Importance for Businesses
                             </div>
                             <div>
                                 <img className='w-full' src="./Blogpage-5.png" />
@@ -86,7 +56,7 @@ const BlogPage5 = () => {
                                 <div className='leading-7 font-normal text-base'>So, to win customers and stay ahead of competitors, businesses have to innovate and improve their user experience. UX (user experience) design is a trendy jargon in the Information Industry. It’s completely fine if you are being introduced to UX design for the first time.</div>
                                 <div className='leading-7 font-normal text-base'>It’s a straightforward concept of user experience, implementation of which helps businesses increase their customer base. Let’s understand what UX design is and how it can help your business beat competition and win customers.</div>
 
-                                <div className='flex flex-col items-start gap-4'>
+                                <div ref={(el) => (pointsRefs.current[0] = el)} className='flex flex-col items-start gap-4'>
                                     <div className='font-normal text-2xl leading-9'>
                                         <div>Defining UX</div>
                                     </div>
@@ -96,7 +66,7 @@ const BlogPage5 = () => {
                                         <div>Thus, to create a great product, a business must consider the end-user. Some intrinsic factors to UX design are usability, usefulness, desirability, accessibility, and credibility.</div>
                                     </div>
                                 </div>
-                                <div className='flex flex-col items-start gap-4'>
+                                <div ref={(el) => (pointsRefs.current[1] = el)} className='flex flex-col items-start gap-4'>
                                     <div className='font-normal text-2xl leading-9'>
                                         <div>Why is UX design important?</div>
                                     </div>
@@ -124,18 +94,18 @@ const BlogPage5 = () => {
                                         <div className='flex mt-2 gap-4'>
                                             <p>1.</p>
                                             <div className='space-y-3'>
-                                            <p>Optimize the number of steps - A user should be able to interact with your app or website without any hassles. If they are unable to find the information they are looking for, then the current design is useless.</p>
-                                            <p>The customers will immediately switch to another website or app. Thus, you must keep the design institute so that users are automatically guided to the correct information in minimal steps.</p>
+                                                <p>Optimize the number of steps - A user should be able to interact with your app or website without any hassles. If they are unable to find the information they are looking for, then the current design is useless.</p>
+                                                <p>The customers will immediately switch to another website or app. Thus, you must keep the design institute so that users are automatically guided to the correct information in minimal steps.</p>
                                             </div>
                                         </div>
                                         <div className='flex gap-4'>
                                             <p>2.</p>
                                             <div className='space-y-3'>
-                                            <p>Create clear CTAs - Call to action buttons increase customer interaction and communication on the website or an app.</p>
-                                            <p>Buttons that read “Book Now,” or “subscribe here,” etc., are some excellent examples of this.</p>
+                                                <p>Create clear CTAs - Call to action buttons increase customer interaction and communication on the website or an app.</p>
+                                                <p>Buttons that read “Book Now,” or “subscribe here,” etc., are some excellent examples of this.</p>
                                             </div>
                                         </div>
-                                        <div className='my-2'>Reason 3 – SEO optimization</div>
+                                        <div ref={(el) => (pointsRefs.current[2] = el)} className='my-2'>Reason 3 – SEO optimization</div>
                                         <div>A UX-optimised website or app can improve SEO rankings. Google advocates a good user experience. Thus, the landing page experience is scored while creating SEO rankings by Google.</div>
                                         <div>The search algorithm gives more weightage to the user experience. This is done so that Google search can provide the best options to the end-users. It impacts both SEO ranking and paid media marketing.</div>
                                         <div>A website with bad usability will have poor SEO ranking and be less likely to get search hits.</div>
@@ -148,9 +118,9 @@ const BlogPage5 = () => {
                                         <div>People believe the reviews shared by other people. So, if your product, website, or app provides a good user experience, then your customers will share it with others.</div>
                                         <div>They can share it through personal interactions or various social media forums. Good word of mouth coming from personal experience is one of the best ways of promotion as people trust people.</div>
                                         <div>The seamless interactions that customers have with your product will go a long way in establishing your business as a brand. Your brand will get more 5-star ratings, and hence more customers will get attracted to use your products and services.</div>
-                                        
+
                                     </div>
-                                    
+
                                 </div>
                                 <div className='flex flex-col items-start gap-4'>
                                     <div className='font-normal text-2xl leading-9'>
@@ -205,17 +175,17 @@ const BlogPage5 = () => {
                         <div className='w-full border border-[#B0B0B0] border-opacity-75 rounded-lg'>
                             <div className='font-normal text-2xl leading-9 py-6 px-6'>Contents</div>
                             <div className='flex flex-col gap-4 pb-6 text-[#454343]'>
-                                <div className='flex gap-8 items-start px-6 font-normal text-base leading-7'>
+                                <div onClick={() => handleScroll(0)} className='flex gap-8 cursor-pointer transition-all hover:text-gray-500 duration-300 items-start px-6 font-normal text-base leading-7'>
                                     <div>1.</div>
                                     <div>Defining UX</div>
                                 </div>
-                                <div className='flex gap-8 items-start px-6 font-normal text-base leading-7'>
+                                <div onClick={() => handleScroll(1)} className='flex gap-8 cursor-pointer transition-all hover:text-gray-500 duration-300 items-start px-6 font-normal text-base leading-7'>
                                     <div>2.</div>
                                     <div>Why is UX Design important</div>
                                 </div>
-                                <div className='flex gap-8 items-start px-6 font-normal text-base leading-7'>
+                                <div onClick={() => handleScroll(2)} className='flex gap-8 cursor-pointer transition-all hover:text-gray-500 duration-300 items-start px-6 font-normal text-base leading-7'>
                                     <div>3.</div>
-                                    <div>SEO Optimiztion</div>
+                                    <div>SEO Optimization</div>
                                 </div>
                             </div>
                         </div>
@@ -241,7 +211,7 @@ const BlogPage5 = () => {
                         More on BEHAVIOUR CHANGE
                     </div>
                     <div className='-mx-6 lg:-mx-16'>
-                        <CarouselBlogPage images={images} />
+                        <CarouselBlogPage />
                     </div>
                 </section>
 

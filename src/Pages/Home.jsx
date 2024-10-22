@@ -497,10 +497,12 @@ const Home = () => {
                         {clients.map((client, index) => (
                           <div key={index} className={index > 0 ? "mt-4" : ""}>{client}</div>
                         ))}
-                        <button className="button flex flex-row items-center gap-4 px-12 py-3 mt-12 text-base leading-none text-white bg-black rounded-[1000px] max-md:px-5 max-md:mt-10 hover:bg-[#7811A5] transition-all duration-300">
-                          <h1 className='text-base font-arial'>Learn more about us</h1>
-                          <img ref={buttonImgRef} src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
-                        </button>
+                        <Link to="/our-work">
+                          <button className="button flex flex-row items-center gap-4 px-12 py-3 mt-12 text-base leading-none text-white bg-black rounded-[1000px] max-md:px-5 max-md:mt-10 hover:bg-[#7811A5] transition-all duration-300">
+                            <h1 className='text-base font-arial'>Learn more</h1>
+                            <img ref={buttonImgRef} src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                          </button>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -546,11 +548,12 @@ const Home = () => {
                     ))}
                   </div></div>
               </div>
-              <button className="button self-end flex flex-row justify-between px-12 py-3 my-12 mx-auto lg:mr-8 leading-none bg-black text-white gap-8 rounded-[1000px] max-md:px-5 max-md:mt-10  hover:bg-[#7811A5] transition-all duration-300">
-                <h1 className='text-base mt-1 font-arial'>Why work with us</h1>
-                <img ref={buttonImgRef} src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
-              </button>
-
+              <Link to="/about-us">
+                <button className="button self-end flex flex-row justify-between px-12 py-3 my-12 mx-auto lg:mr-8 leading-none bg-black text-white gap-8 rounded-[1000px] max-md:px-5 max-md:mt-10  hover:bg-[#7811A5] transition-all duration-300">
+                  <h1 className='text-base mt-1 font-arial'>Why work with us</h1>
+                  <img ref={buttonImgRef} src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                </button>
+              </Link>
             </div>
 
 
@@ -566,15 +569,17 @@ const Home = () => {
                 </div>
                 <h3
                   ref={fadeInRef}
-                  className=" mt-20 px-6 w-[70%] text-4xl font-arial tracking-normal text-center text-white leading-[50px] max-md:mt-10 max-md:text-4xl max-md:leading-10 opacity-0"
+                  className=" mt-20 px-6 w-[70%] text-[25px] font-arial tracking-normal text-center text-white leading-[50px] max-md:mt-10 max-md:text-4xl max-md:leading-10 opacity-0"
                 >
                   We drive your business success value through tailor-made digital marketing solutions.
                 </h3>
 
-                <button className="button self-end flex flex-row justify-between px-16 py-4 mt-24 mx-auto leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-all duration-300">
-                  <h1 className='text-xl mt-1 font-arial'>Visit Coltfox</h1>
-                  <img ref={buttonImgRef} src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
-                </button>
+                <Link to="https://coltfox.com/" target='blank'>
+                  <button className="button self-end flex flex-row justify-between px-16 py-4 mt-24 mx-auto leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-all duration-300">
+                    <h1 className='text-xl mt-1 font-arial'>Visit Coltfox</h1>
+                    <img ref={buttonImgRef} src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                  </button>
+                </Link>
 
               </div>
 
@@ -587,16 +592,16 @@ const Home = () => {
                   </div>
                 </div>
                 <h3
-                  className="self-center mt-20 px-6 w-[70%] text-4xl font-arial  tracking-normal text-center text-white leading-[50px] max-md:mt-10 max-md:max-w-full max-md:text-4xl max-md:leading-10"
+                  className="self-center mt-20 px-6 w-[70%] text-[25px] font-arial  tracking-normal text-center text-white leading-[50px] max-md:mt-10 max-md:max-w-full max-md:text-4xl max-md:leading-10"
                 >
                   We drive your product success in the future with our AI, AR & VR development solutions.
                 </h3>
-
-                <button className="button flex flex-row justify-between px-16 py-4 mt-24 mx-auto  leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-all duration-300">
-                  <h1 className='text-xl mt-1 font-arial'>Visit Kalacode</h1>
-                  <img ref={buttonImgRef} src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
-                </button>
-
+                <Link to="https://kalacode.com/" target='blank'>
+                  <button className="button flex flex-row justify-between px-16 py-4 mt-24 mx-auto  leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-all duration-300">
+                    <h1 className='text-xl mt-1 font-arial'>Visit Kalacode</h1>
+                    <img ref={buttonImgRef} src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                  </button>
+                </Link>
               </div>
             </div>
 
@@ -609,16 +614,17 @@ const Home = () => {
               <h2 className="self-start font-arial mt-20 text-[25px]  tracking-wide text-purple-700">What we do</h2>
               <div className='flex flex-col md:flex-row mt-12 md:items-end justify-between max-w-full w-[780px]'>
                 <p className="w-full md:w-2/3 font-arial text-[24px] tracking-wider leading-8 text-neutral-950 max-md:mt-10  max-md:max-w-full">
-                  We engages brands with immersive digital experiences that bring you a return on creativity.We love solving thorny problems with smart, custom software design and development in one place.
+                  We engage brands with immersive digital experiences that brings you a return on creativity. We love solving thorny problems with smart, custom software design and development under one umbrella.
                 </p>
+
                 <p className="w-1/3 mt-auto md:text-end font-arial text-xl tracking-wider text-purple-700 max-md:mt-10  max-md:max-w-full">
-                  Read Now
+                  <Link to="/our-services">Read now</Link>
                 </p>
               </div>
               <div className="mt-12 max-w-full h-px border border-solid border-gray-400 w-full" />
               <div className="flex gap-5 items-start self-start mt-10  leading-loose text-neutral-950">
                 <div className="flex shrink-0 self-stretch my-auto w-3 h-3 bg-purple-700 rounded-[1000px]" />
-                <div className="self-stretch text-[25px] text-purple-700 my-auto">Our Services</div>
+                <div className="self-stretch text-[25px] text-purple-700 my-auto">Our services</div>
               </div>
               <div className="mt-14 max-w-full w-[780px] max-md:mt-10 ">
                 <div className="flex gap-12 max-md:flex-col">
@@ -641,7 +647,7 @@ const Home = () => {
               <div className="shrink-0 mt-12 max-w-full h-px border border-solid border-gray-400 w-full" />
               <div className="flex gap-2 items-start self-start mt-10 leading-none text-neutral-950">
                 <div className="flex shrink-0 self-stretch my-auto w-3 h-3 bg-purple-700 rounded-[1000px]" />
-                <div className="self-stretch ml-[1.5%] text-[25px] text-purple-700 my-auto">Our Blogs</div>
+                <div className="self-stretch ml-[1.5%] text-[25px] text-purple-700 my-auto">Our blogs</div>
               </div>
               {/* <div className="mt-14  max-w-full w-[696px] max-md:mt-10 ">
                         <div className="flex gap-12 max-md:flex-col">
@@ -691,7 +697,7 @@ const Home = () => {
                 </h3>
                 <Link to={'/hudbil-tabloids'}>
                   <button className="button flex flex-row justify-between px-20 py-4 mt-20  mr-6 md:mr-8 leading-none bg-white text-black self-center items-center gap-8 rounded-[1000px] max-md:px-5   hover:bg-[#7811A5] transition-colors duration-300">
-                    <h1 className='text-xl mt-1 font-arial'>Learn More</h1>
+                    <h1 className='text-base mt-1 font-arial'>Learn more</h1>
                     <img ref={buttonImgRef} src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                   </button>
                 </Link>

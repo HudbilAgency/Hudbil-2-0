@@ -270,7 +270,7 @@ const ReachUs = () => {
               <h2 className="font-arial leading-tight uppercase">
                 Hudbil private limited
               </h2>
-              <p className="self-stretch my-6 text-2xl font-arial font-light leading-8 max-md:max-w-full">
+              <p className="self-stretch my-6 text-xl font-arial font-light leading-8 max-md:max-w-full">
                 Hudbil as a brand stands for its innovation in technology and creative to fly high and give freedom to business owners by automating the repetitive and mundane so they can build an empire in their industry.
               </p>
               {contactInfo.map((item, index) => (

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import CarouselBlogPage from '../Components/CarouselBlogPage';
 import ReachUsBlog from '../Components/ReachUsBlog';
 import Navbar from '../Components/Navbar';
@@ -13,43 +13,13 @@ const BlogPage4 = () => {
         });
     };
 
-    const images = [
-        {
-            src: "/BlogPageImg/bp-21.png",
-            alt: "Blog-1",
-            content: "One-time actions to regular routines: A guide to strengthening habits",
-            date: "August 13, 2024",
-            routepath: "#",
-        },
-        {
-            src: "/BlogPageImg/bp-22.png",
-            alt: "Blog-2",
-            content: "Ripple effect: Connecting with the connected",
-            date: "June 19, 2024",
-            routepath: "#",
-        },
-        {
-            src: "/BlogPageImg/bp-23.png",
-            alt: "Blog-3",
-            content: "Podcast: In or out? How brands can look like insiders",
-            date: "June 10, 2024",
-            routepath: "#",
-        },
-        {
-            src: "/BlogPageImg/bp-24.png",
-            alt: "Blog-4",
-            content: "Sustainability - who cares?",
-            date: "November 29, 2023",
-            routepath: "#",
-        },
-        {
-            src: "/BlogPageImg/bp-24.png",
-            alt: "Blog-5",
-            content: "Sustainability - who cares?",
-            date: "November 29, 2023",
-            routepath: "#",
+    const pointsRefs = useRef([]);
+
+    const handleScroll = (index) => {
+        if (pointsRefs.current[index]) {
+            pointsRefs.current[index].scrollIntoView({ behavior: 'smooth' });
         }
-    ];
+    };
 
     return (
         <>
@@ -62,7 +32,7 @@ const BlogPage4 = () => {
                             <path d="M20.4998 6H3.7998" stroke="#838383" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </div>
-                    <div className='font-normal text-sm text-[#838383]'>
+                    <div className='font-normal transition-all hover:text-gray-400 duration-300 text-sm text-[#838383]'>
                     <a href='/blogs'>Return to Insights</a>
                         
                     </div>
@@ -88,7 +58,7 @@ const BlogPage4 = () => {
                                 <div className='leading-7 font-normal text-base'>B2B SaaS startups, in particular, are used to working with a minimum viable product they can ship out quickly and iterate on. It’s natural to extend this approach to every aspect of the business, including the website.</div>
 
                                 <div className='flex flex-col items-start gap-4'>
-                                    <div className='font-normal text-2xl leading-9'>
+                                    <div ref={(el) => (pointsRefs.current[0] = el)} className='font-normal text-2xl leading-9'>
                                         <div>Why and When to Hire a B2B Website Design Agency for Your Business?</div>
                                     </div>
                                     <div className='leading-7 font-normal text-base flex flex-col gap-4'>
@@ -124,7 +94,7 @@ const BlogPage4 = () => {
                                         <div>Even though the CTO takes the call on what platform/technologies to use to build it, it’s you the marketer who uses it to generate leads/sales from it. If the website is down (pencil runs out of lead) it’s the leads/sales that suffers – which by the way is your KRA and not the CTO’s. So you will have to ask the CTO to fix it but still, the website ownership resides with you, the marketer!</div>
                                         
                                     </div>
-                                    <div className='font-normal text-2xl leading-9'>
+                                    <div ref={(el) => (pointsRefs.current[1] = el)} className='font-normal text-2xl leading-9'>
                                         <div>The Comprehensive Solution: A Specialised B2B Website Design Company</div>
                                     </div>
                                     <div className='leading-7 font-normal text-base flex flex-col gap-4'>
@@ -173,7 +143,7 @@ const BlogPage4 = () => {
                                         <div>Finally, after browser tests ensure compatibility across platforms and optimizing speed and responsiveness, we publish the website. We can maintain it or train your marketing team to manage updates.</div>
                                         <div>In short, hiring professionals like Everything Design ensures that as your business grows, your website can too without losing its core message or functionality. A well-built website by a professional team supports an effective sales funnel for growth.</div>
                                     </div>
-                                    <div className='font-normal text-2xl leading-9'>
+                                    <div ref={(el) => (pointsRefs.current[2] = el)} className='font-normal text-2xl leading-9'>
                                         <div>How does professional website agencies help business websites?</div>
                                     </div>
                                     <div className='leading-7 font-normal text-base flex flex-col gap-4'>
@@ -182,7 +152,7 @@ const BlogPage4 = () => {
                                         <div>Everything Design is one of the best because we care a lot about making creative and useful websites that do what each business needs. Our team has designers, writers, and people who know how to make websites that work well and look good. They make sure businesses stand out.</div>
                                         <div>We know a lot about B2B, which means selling things from one business to another. This can take longer and be more complicated than selling to regular people. But we’re good at it! We have clear prices, know how to get your website seen (SEO), can write good content, and support you for a long time. We always work closely with our clients and do more than they expect, which is why they like us so much for web design.</div>
                                     </div>
-                                    <div className='font-normal text-2xl leading-9'>
+                                    <div ref={(el) => (pointsRefs.current[3] = el)} className='font-normal text-2xl leading-9'>
                                         <div>Building a website for your B2B or SaaS startup?</div>
                                     </div>
                                     <div className='leading-7 font-normal text-base flex flex-col gap-4'>
@@ -190,7 +160,7 @@ const BlogPage4 = () => {
                                         <div>There’s nothing wrong with any of these options, as long as you know what you’re getting into. What you want to avoid is cycling through all three options, losing money and time in the process. If you’re setting up your business to scale right from the start, go directly for the best option. If you’re unsure, start with a DIY website until you learn the ropes, and then hire a specialised B2B agency when you understand both what you want and the limitations of your current platform. It will pay for itself in the long run.</div>
                                         <div>Ready to invest in a website that grows with your business? At Everything.Design, we specialise in ideating, designing and developing high quality websites that increase sales for funded startups and medium-sized businesses. Drop us a note if you’d like to build a website that reflects your brands vision and achieves business goals.</div>
                                     </div>
-                                    <div className='font-normal text-2xl leading-9'>
+                                    <div ref={(el) => (pointsRefs.current[4] = el)} className='font-normal text-2xl leading-9'>
                                         <div>Diagnosing website issues</div>
                                     </div>
                                     <div className='leading-7 font-normal text-base flex flex-col gap-4'>
@@ -227,20 +197,20 @@ const BlogPage4 = () => {
                                         <div>Your website is your online hub for lead generation — which makes B2B web design essential to your company’s growth. A company’s website is the first thing we all visit to find out about everything. A functional and attractive website draws people in and convinces them to convert, turning your site into a sales-generating machine. Skyrocket your business
                                         revenue by partnering with the B2B web design agency.</div>
                                     </div>
-                                    <div className='font-normal text-2xl leading-9'>
+                                    <div ref={(el) => (pointsRefs.current[5] = el)} className='font-normal text-2xl leading-9'>
                                         <div>Your one-stop shop for B2B web design</div>
                                     </div>
                                     <div className='leading-7 font-normal text-base flex flex-col gap-4'>
                                         <div>If you’re looking for B2B web design, you may be tempted to hire a general web design agency. While this may seem convenient, it’s not necessarily a good idea. While a general web design agency may be able to provide you with a functional website, they won’t be able to create a specialized B2B website for your business. This may result in a website that fails to capture the attention of your target customers, which could lead to fewer conversions and less revenue. By partnering with a B2B web design agency that specializes in B2B web development, you can rest easy knowing that your website was designed with your specific business needs in mind.</div>
                                     </div>
-                                    <div className='font-normal text-2xl leading-9'>
+                                    <div ref={(el) => (pointsRefs.current[6] = el)} className='font-normal text-2xl leading-9'>
                                         <div>Why partner with a B2B web development company?</div>
                                     </div>
                                     <div className='leading-7 font-normal text-base flex flex-col gap-4'>
                                         <div>A B2B web design agency knows B2B marketing and B2B sales like the back of their hands. They have worked with businesses in a variety of industries and have the expertise to create B2B-specific web designs that convert. This means you can be confident that your B2B website design will be effective at driving business to your company. B2B agencies also know the ins and outs of the B2B buying process.</div>
                                         <div>For example, they know that decision-makers want access to information that helps them make informed purchasing decisions. A B2B web design agency will make sure your website’s content is written and organized in a way that helps buyers learn about your products and services. B2B agencies also know how to optimize your website so that it ranks well in search engines, which means you can drive organic traffic to your site.</div>
                                     </div>
-                                    <div className='font-normal text-2xl leading-9'>
+                                    <div ref={(el) => (pointsRefs.current[7] = el)} className='font-normal text-2xl leading-9'>
                                         <div>How can an expert agency help with your B2B web development?</div>
                                     </div>
                                     <div className='leading-7 font-normal text-base flex flex-col gap-4'>
@@ -303,35 +273,35 @@ const BlogPage4 = () => {
                         <div className='w-full border border-[#B0B0B0] border-opacity-75 rounded-lg'>
                             <div className='font-normal text-2xl leading-9 py-6 px-6'>Contents</div>
                             <div className='flex flex-col gap-4 pb-6 text-[#454343]'>
-                                <div className='flex gap-8 items-start px-6 font-normal text-base leading-7'>
+                                <div onClick={() => handleScroll(0)} className='flex gap-8 cursor-pointer transition-all hover:text-gray-500 duration-300 items-start px-6 font-normal text-base leading-7'>
                                     <div>1.</div>
                                     <div>Design Agency for Your Business?</div>
                                 </div>
-                                <div className='flex gap-8 items-start px-6 font-normal text-base leading-7'>
+                                <div onClick={() => handleScroll(1)} className='flex gap-8 cursor-pointer transition-all hover:text-gray-500 duration-300 items-start px-6 font-normal text-base leading-7'>
                                     <div>2.</div>
                                     <div>The Comprehensive Solution: A Specialised B2B Website Design Company?</div>
                                 </div>
-                                <div className='flex gap-8 items-start px-6 font-normal text-base leading-7'>
+                                <div onClick={() => handleScroll(2)} className='flex gap-8 cursor-pointer transition-all hover:text-gray-500 duration-300 items-start px-6 font-normal text-base leading-7'>
                                     <div>3.</div>
                                     <div>How does professional website agencies help business websites?</div>
                                 </div>
-                                <div className='flex gap-8 items-start px-6 font-normal text-base leading-7'>
+                                <div onClick={() => handleScroll(3)} className='flex gap-8 cursor-pointer transition-all hover:text-gray-500 duration-300 items-start px-6 font-normal text-base leading-7'>
                                     <div>4.</div>
                                     <div>Building a website for your B2B or SaaS startup?</div>
                                 </div>
-                                <div className='flex gap-8 items-start px-6 font-normal text-base leading-7'>
+                                <div onClick={() => handleScroll(4)} className='flex gap-8 cursor-pointer transition-all hover:text-gray-500 duration-300 items-start px-6 font-normal text-base leading-7'>
                                     <div>5.</div>
                                     <div>Diagnosing website issues</div>
                                 </div>
-                                <div className='flex gap-8 items-start px-6 font-normal text-base leading-7'>
+                                <div onClick={() => handleScroll(5)} className='flex gap-8 cursor-pointer transition-all hover:text-gray-500 duration-300 items-start px-6 font-normal text-base leading-7'>
                                     <div>6.</div>
                                     <div>Your one-stop shop for B2B web design</div>
                                 </div>
-                                <div className='flex gap-8 items-start px-6 font-normal text-base leading-7'>
+                                <div onClick={() => handleScroll(6)} className='flex gap-8 cursor-pointer transition-all hover:text-gray-500 duration-300 items-start px-6 font-normal text-base leading-7'>
                                     <div>7.</div>
                                     <div>Why partner with a B2B web development company?</div>
                                 </div>
-                                <div className='flex gap-8 items-start px-6 font-normal text-base leading-7'>
+                                <div onClick={() => handleScroll(7)} className='flex gap-8 cursor-pointer transition-all hover:text-gray-500 duration-300 items-start px-6 font-normal text-base leading-7'>
                                     <div>8.</div>
                                     <div>How can an expert agency help with your B2B web development?</div>
                                 </div>
@@ -359,7 +329,7 @@ const BlogPage4 = () => {
                         More on BEHAVIOUR CHANGE
                     </div>
                     <div className='-mx-6 lg:-mx-16'>
-                        <CarouselBlogPage images={images} />
+                        <CarouselBlogPage />
                     </div>
                 </section>
 

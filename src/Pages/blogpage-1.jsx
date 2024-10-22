@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import CarouselBlogPage from '../Components/CarouselBlogPage';
 import ReachUsBlog from '../Components/ReachUsBlog';
 import Navbar from '../Components/Navbar';
@@ -13,43 +13,13 @@ const BlogPage1 = () => {
         });
     };
 
-    const images = [
-        {
-            src: "/BlogPageImg/bp-21.png",
-            alt: "Blog-1",
-            content: "One-time actions to regular routines: A guide to strengthening habits",
-            date: "August 13, 2024",
-            routepath: "#",
-        },
-        {
-            src: "/BlogPageImg/bp-22.png",
-            alt: "Blog-2",
-            content: "Ripple effect: Connecting with the connected",
-            date: "June 19, 2024",
-            routepath: "#",
-        },
-        {
-            src: "/BlogPageImg/bp-23.png",
-            alt: "Blog-3",
-            content: "Podcast: In or out? How brands can look like insiders",
-            date: "June 10, 2024",
-            routepath: "#",
-        },
-        {
-            src: "/BlogPageImg/bp-24.png",
-            alt: "Blog-4",
-            content: "Sustainability - who cares?",
-            date: "November 29, 2023",
-            routepath: "#",
-        },
-        {
-            src: "/BlogPageImg/bp-24.png",
-            alt: "Blog-5",
-            content: "Sustainability - who cares?",
-            date: "November 29, 2023",
-            routepath: "#",
+    const pointsRefs = useRef([]);
+
+    const handleScroll = (index) => {
+        if (pointsRefs.current[index]) {
+            pointsRefs.current[index].scrollIntoView({ behavior: 'smooth' });
         }
-    ];
+    };
 
     return (
         <>
@@ -62,9 +32,9 @@ const BlogPage1 = () => {
                             <path d="M20.4998 6H3.7998" stroke="#838383" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </div>
-                    <div className='font-normal text-sm text-[#838383]'>
-                    <a href='/blogs'>Return to Insights</a>
-                        
+                    <div className='font-normal transition-all hover:text-gray-400 duration-300 text-sm text-[#838383]'>
+                        <a href='/blogs'>Return to Insights</a>
+
                     </div>
 
                 </div>
@@ -75,7 +45,7 @@ const BlogPage1 = () => {
                     <div className='w-full relative lg:w-2/3 flex items-start h-full gap-0 lg:gap-10 pb-16 lg:pb-0'>
                         <div className='w-full'>
                             <div className='font-normal text-4xl pb-12 hidden lg:block leading-snug'>
-                            The Ultimate Guide for UX Research
+                                The Ultimate Guide for UX Research
                             </div>
                             <div>
                                 <img className='w-full' src="./Blpgpage1Img.png" />
@@ -87,17 +57,17 @@ const BlogPage1 = () => {
                                 <div className='leading-7 font-normal text-base'>With this article, we’ll look at the deeper level to understand UX research and its top benefits to implement for your product or service to get the brand’s full potential. We would also, how to create a solid UX research plan and the top UX research methods.</div>
                                 <div className='leading-7 font-normal text-base'>Let’s understand the whole subject on a deeper level and then we will have the “Ultimate Guide for UX Research” available for download in our courses section on our website.</div>
 
-                                <div className='flex flex-col items-start gap-4'>
+                                <div ref={(el) => (pointsRefs.current[0] = el)} className='flex flex-col items-start gap-4'>
                                     <div className='font-normal text-2xl leading-9'>
                                         <div>What is UX Research?</div>
                                     </div>
                                     <div className='leading-7 font-normal text-base flex flex-col gap-4'>
                                         <div>User Experience Research is the systematic study of user’s behaviours and the content of your product, whether it’s a website or mobile application, to add realistic contexts and insights to design processes. UX researchers adopt various
-                                        methodologies to uncover problems and design opportunities. Doing so, they reveal valuable information that can be fed into the design process to bring a real sense to brand purpose.</div>
+                                            methodologies to uncover problems and design opportunities. Doing so, they reveal valuable information that can be fed into the design process to bring a real sense to brand purpose.</div>
                                         <div>UX researchers adopt various methods to uncover problems and design opportunities. Doing so, reveal valuable information which can be fed into the design process.</div>
                                     </div>
                                 </div>
-                                <div className='flex flex-col items-start gap-4'>
+                                <div ref={(el) => (pointsRefs.current[1] = el)} className='flex flex-col items-start gap-4'>
                                     <div className='font-normal text-2xl leading-9'>
                                         <div>What is the UX Research Process?</div>
                                     </div>
@@ -106,7 +76,7 @@ const BlogPage1 = () => {
                                         <div>To do UX research well, you must take a structured approach when you gather data from your users. It’s vital to use methods that <br /> 1) are right for your research and <br /> 2) will give you the clearest information. Then, you can interpret your findings so you can build valuable insights into your design.</div>
                                     </div>
                                 </div>
-                                <div className='flex flex-col items-start gap-4'>
+                                <div ref={(el) => (pointsRefs.current[2] = el)} className='flex flex-col items-start gap-4'>
                                     <div className='font-normal text-2xl leading-9'>
                                         <div>We can divide UX research into two subsets:</div>
                                     </div>
@@ -114,10 +84,10 @@ const BlogPage1 = () => {
                                         <div className='flex gap-4'>
                                             <p>•</p>
                                             <p>Qualitative Research – Using methods such as interviews and ethnographic field studies, you work to get an in-depth understanding of why users do what they do (e.g., why they missed a call to action, why they feel how they do about a website). For example, you can do user interviews with a small number of users and ask open-ended questions to get personal insights into their exercise habits. Another aspect of qualitative research is usability testing, to monitor (e.g.) users’ stress responses. You should do qualitative research carefully. As it involves collecting non-numerical data (e.g., opinions, motivations), there’s a risk that your personal opinions will influence findings.</p>
-                                            </div>
+                                        </div>
                                         <div className='flex gap-4'>
-                                        <p>•</p>
-                                        <p>Quantitative Research – Using more structured methods (e.g., surveys, analytics), you gather measurable data about what users do and test assumptions you drew from qualitative research. For example, you can give
+                                            <p>•</p>
+                                            <p>Quantitative Research – Using more structured methods (e.g., surveys, analytics), you gather measurable data about what users do and test assumptions you drew from qualitative research. For example, you can give
                                                 users an online survey to answer questions about their exercise habits (e.g., “How many hours do you work out per week?”). With this data, you can discover patterns among a large user group. If you have a large enough
                                                 sample of representative test users, you’ll have a more statistically reliable way of assessing the population of target users. Whatever the method, with careful research design you can gather objective data that’s unbiased by your presence, personality or assumptions. However, quantitative data alone can’t reveal deeper human insights.</p>
                                         </div>
@@ -132,7 +102,7 @@ const BlogPage1 = () => {
                                         <div>Behavioural – you see what users do through observational studies.</div>
                                     </div>
                                 </div>
-                                <div className='flex flex-col items-start gap-4'>
+                                <div ref={(el) => (pointsRefs.current[3] = el)} className='flex flex-col items-start gap-4'>
                                     <div className='font-normal text-2xl leading-9'>
                                         <div>Benefits of UX research</div>
                                     </div>
@@ -140,12 +110,12 @@ const BlogPage1 = () => {
                                         <div className='flex gap-4'>
                                             <p>1.</p>
                                             <p>Achieve product-market fit - When you create a product that is built on user research methods, you are in a
-                                                 position to achieve product-market fit. Why? Because you would have researched already on how your product can adapt to the needs of the market. By talking to prospective customers, observing them, and iterating, you will find the right combination to achieve product-market fit.</p>
+                                                position to achieve product-market fit. Why? Because you would have researched already on how your product can adapt to the needs of the market. By talking to prospective customers, observing them, and iterating, you will find the right combination to achieve product-market fit.</p>
                                         </div>
                                         <div className='flex gap-4'>
                                             <p>2.</p>
                                             <p>Usability & Accessibility - The usability of your product has a direct impact on how users engage with your
-                                            product and the kind of conversions that it can bring about. With the help of UX research methods, you will be able to understand the various limitations that the product might have and put yourself in a position to increase the user experience.</p>
+                                                product and the kind of conversions that it can bring about. With the help of UX research methods, you will be able to understand the various limitations that the product might have and put yourself in a position to increase the user experience.</p>
                                         </div>
                                         <div className='flex gap-4'>
                                             <p>3.</p>
@@ -166,11 +136,11 @@ const BlogPage1 = () => {
                                         <div className='flex gap-4'>
                                             <p>7.</p>
                                             <p>Prioritize features
-                                            -  With the help of UX research methodologies such as prioritizing and story mapping, you will know in advance about the kind of functionalities that you plan to employ during each stage of the development process. All of this will reduce the risk involved as well as reduce the cost of your product development.</p>
+                                                -  With the help of UX research methodologies such as prioritizing and story mapping, you will know in advance about the kind of functionalities that you plan to employ during each stage of the development process. All of this will reduce the risk involved as well as reduce the cost of your product development.</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div className='flex flex-col items-start gap-4'>
+                                <div ref={(el) => (pointsRefs.current[4] = el)} className='flex flex-col items-start gap-4'>
                                     <div className='font-normal text-2xl leading-9'>
                                         <div>How to create a UX research plan</div>
                                     </div>
@@ -181,23 +151,23 @@ const BlogPage1 = () => {
                                                 - In a UX research plan, the first step is to identify what you would like to do with the
                                                 research and identify the areas where there are issues. There are different methods to arrive at the pain point. You can check out the data that already exists and see if there is something that puts off your customers or your team members showing up on the first few pages of search results. To speed up the entire process you can utilize a top SERP scraper API that can provide the most relevant and real-time results. Please note that it’s unnecessary to browse all the competitor’s products.
                                                 <p className='mt-4'>The pain point that you arrive at should provide enough information about what the project is about and pass along any information that will add to understanding it.</p>
-                                                </p>
-                                            
+                                            </p>
+
                                         </div>
                                         <div className='flex gap-4'>
                                             <p>2.</p>
                                             <p>Have clear objectives
-                                            -  Once you have identified the pain points, the next step is to think about the objectives for doing the UX research. You need to know what you are doing, why you plan to do that, and what can be expected from the entire process. You must set clear goals as it will help you define the scope of the entire exercise. When you are doing research, you need to be clear about the quantum of work that is expected of you.
-                                            <p className='mt-5'>Here are a few questions that you could use to streamline the research objectives:</p>
-                                            <p className='mt-5'>Who are the people we are designing the product for?</p>
-                                            <p className='mt-5'>How do these people benefit from the product?</p>
-                                            <p className='mt-5'>What are the pain points they have while using the product?</p>
-                                            <p className='mt-5'>How do you plan to use the results from this exercise?</p>
-                                            <p className='mt-5'>What are the decisions that we are going to make based on the results?</p>
-                                            <p className='mt-5'>By getting answers to the above questions, they will be able to identify the areas that require research and it makes everyone’s job easier.</p>
+                                                -  Once you have identified the pain points, the next step is to think about the objectives for doing the UX research. You need to know what you are doing, why you plan to do that, and what can be expected from the entire process. You must set clear goals as it will help you define the scope of the entire exercise. When you are doing research, you need to be clear about the quantum of work that is expected of you.
+                                                <p className='mt-5'>Here are a few questions that you could use to streamline the research objectives:</p>
+                                                <p className='mt-5'>Who are the people we are designing the product for?</p>
+                                                <p className='mt-5'>How do these people benefit from the product?</p>
+                                                <p className='mt-5'>What are the pain points they have while using the product?</p>
+                                                <p className='mt-5'>How do you plan to use the results from this exercise?</p>
+                                                <p className='mt-5'>What are the decisions that we are going to make based on the results?</p>
+                                                <p className='mt-5'>By getting answers to the above questions, they will be able to identify the areas that require research and it makes everyone’s job easier.</p>
                                             </p>
                                         </div>
-                                        <div className='flex gap-4'>
+                                        <div ref={(el) => (pointsRefs.current[5] = el)} className='flex gap-4'>
                                             <p>3.</p>
                                             <p>Using the right UX research methods - The kind of UX research method that you choose depends on the goals that you have set for yourself, the design stage that you are currently in, the resources that you have set aside for this, the timeline, and other constraints. For example, if you want to see how a new design is performing, you might want to perform usability tests to see the performance. If you want to know the preferences of your customers about certain features, you can use online surveys. No matter what research method you use, make sure that it helps you reach the objectives that you have set for yourself.</p>
                                         </div>
@@ -220,7 +190,7 @@ const BlogPage1 = () => {
                                             <p>Sharing the findings - At this stage, you would have had the findings with you. How do you plan to present the findings to the stakeholders? Do remember that the findings need to be presented to the right people which will help them implement it across the organization.</p>
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                                 <div className='flex flex-col items-start gap-4'>
                                     <div className='font-normal text-2xl leading-9'>
@@ -275,27 +245,27 @@ const BlogPage1 = () => {
                         <div className='w-full border border-[#B0B0B0] border-opacity-75 rounded-lg'>
                             <div className='font-normal text-2xl leading-9 py-6 px-6'>Contents</div>
                             <div className='flex flex-col gap-4 pb-6 text-[#454343]'>
-                                <div className='flex gap-8 items-start px-6 font-normal text-base leading-7'>
+                                <div onClick={() => handleScroll(0)} className='flex gap-8 cursor-pointer transition-all hover:text-gray-500 duration-300 items-start px-6 font-normal text-base leading-7'>
                                     <div>1.</div>
                                     <div>What is UX Research?</div>
                                 </div>
-                                <div className='flex gap-8 items-start px-6 font-normal text-base leading-7'>
+                                <div onClick={() => handleScroll(1)} className='flex gap-8 cursor-pointer transition-all hover:text-gray-500 duration-300 items-start px-6 font-normal text-base leading-7'>
                                     <div>2.</div>
                                     <div>What is the UX Research Process? </div>
                                 </div>
-                                <div className='flex gap-8 items-start px-6 font-normal text-base leading-7'>
+                                <div onClick={() => handleScroll(2)} className='flex gap-8 cursor-pointer transition-all hover:text-gray-500 duration-300 items-start px-6 font-normal text-base leading-7'>
                                     <div>3.</div>
                                     <div>Divide UX research</div>
                                 </div>
-                                <div className='flex gap-8 items-start px-6 font-normal text-base leading-7'>
+                                <div onClick={() => handleScroll(3)} className='flex gap-8 cursor-pointer transition-all hover:text-gray-500 duration-300 items-start px-6 font-normal text-base leading-7'>
                                     <div>4.</div>
                                     <div>Benefits of UX Research</div>
                                 </div>
-                                <div className='flex gap-8 items-start px-6 font-normal text-base leading-7'>
+                                <div onClick={() => handleScroll(4)} className='flex gap-8 cursor-pointer transition-all hover:text-gray-500 duration-300 items-start px-6 font-normal text-base leading-7'>
                                     <div>5.</div>
                                     <div>How to Create a UX Research Plan</div>
                                 </div>
-                                <div className='flex gap-8 items-start px-6 font-normal text-base leading-7'>
+                                <div onClick={() => handleScroll(5)} className='flex gap-8 cursor-pointer transition-all hover:text-gray-500 duration-300 items-start px-6 font-normal text-base leading-7'>
                                     <div>6.</div>
                                     <div>Top UX Research Methods</div>
                                 </div>
@@ -323,7 +293,7 @@ const BlogPage1 = () => {
                         More on BEHAVIOUR CHANGE
                     </div>
                     <div className='-mx-6 lg:-mx-16'>
-                        <CarouselBlogPage images={images} />
+                        <CarouselBlogPage />
                     </div>
                 </section>
 

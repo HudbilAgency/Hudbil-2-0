@@ -36,9 +36,9 @@
 //                   {navigationLinks.map((section, index) => (
 //                     <div key={index} className="w-full">
 //                       <div className="flex flex-col items-start justify-between text-sm tracking-wider leading-none text-white max-md:mt-10">
-//                         <h3 className="font-semibold font-arial">{section.title}</h3>
+//                         <h3 className="font-semibold ">{section.title}</h3>
 //                         {section.items.map((item, itemIndex) => (
-//                           <a href="#" key={itemIndex} className="mt-6 font-arial">{item}</a>
+//                           <a href="#" key={itemIndex} className="mt-6 ">{item}</a>
 //                         ))}
 //                       </div>
 //                     </div>
@@ -52,14 +52,14 @@
 //                   {officeLocations.map((office, index) => (
 //                     <address key={index} className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
 //                       <div className="flex flex-col grow text-base text-white max-md:mt-10">
-//                         <h3 className="font-arial font-semibold tracking-wider leading-none uppercase">
+//                         <h3 className=" font-semibold tracking-wider leading-none uppercase">
 //                           Drop by at {office.city} office
 //                         </h3>
-//                         <p className="font-arial mt-6 text-sm leading-5">{office.address}</p>
-//                         <a  className="font-arial self-start mt-7 tracking-wider leading-loose">
+//                         <p className=" mt-6 text-sm leading-5">{office.address}</p>
+//                         <a  className=" self-start mt-7 tracking-wider leading-loose">
 //                           {office.phone}
 //                         </a>
-//                         <a  className="font-arial self-start mt-5 text-sm tracking-wider">
+//                         <a  className=" self-start mt-5 text-sm tracking-wider">
 //                           Email us here
 //                         </a>
 //                       </div>
@@ -75,10 +75,10 @@
 //           <img loading="lazy" src="./FooterImg/HudbilFooterLogo.png" className="object-contain shrink-0 max-w-full aspect-[1.21] w-[195px]" alt="HudbilFooterlogo" />
 //           </div> 
 //           <div className="mt-3 w-3/4">
-//             <p className="text-sm font-arial max-md:max-w-full text-white">
+//             <p className="text-sm  max-md:max-w-full text-white">
 //               Hudbil Private Limited is a reliable company, with multiple brands under one umbrella. We are here to enable you with top-notch digital solutions & products through a proven cost-saving model. This allows you to scale, optimise, expand, and enhance your business with an individual approach. This is our game style. From turning spreadsheets into custom solutions, integrating multiple platforms or automating manual processes, we can tackle any challenge.
 //             </p>
-//             <p className="text-sm font-arial mt-7 max-md:mr-1 text-white max-md:max-w-full">
+//             <p className="text-sm  mt-7 max-md:mr-1 text-white max-md:max-w-full">
 //               We have vast experience in developing both large projects and small start-ups. Thanks to a large team of experienced professionals, we are ready to solve the most complex tasks, especially in design and web development. Let's work together to watch your business benefit.
 //             </p>
 //           </div>
@@ -163,7 +163,7 @@ const Footer = () => {
       <nav className="flex flex-col md:flex-row items-start justify-between gap-16 lg:gap-20">
           <div className="flex w-full h-full flex-col xl:flex-row gap-16 md:gap-[84px] lg:gap-[70px] xl:gap-0 md:w-1/3 items-start justify-between">
             <div className="flex flex-col">
-              <ul className="flex font-arial flex-col text-sm items-start tracking-wider leading-none text-white">
+              <ul className="flex  flex-col text-sm items-start tracking-wider leading-none text-white">
                 {navigationLinks.slice(0, 6).map((link, index) => (
                   <li key={index} className={index !== 0 ? "mt-6 hover:text-gray-500 transition-all duration-300" : "hover:text-gray-500 transition-all duration-300"}>
                     <a href={link.url}>{link.title}</a>
@@ -172,7 +172,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="flex flex-col">
-              <ul className="flex font-arial flex-col items-start text-sm tracking-wider leading-none text-white">
+              <ul className="flex  flex-col items-start text-sm tracking-wider leading-none text-white">
                 {navigationLinks.slice(6).map((link, index) => (
                   <li key={index} className={index !== 0 ? "mt-6 hover:text-gray-500 transition-all duration-300" : "hover:text-gray-500 transition-all duration-300"}>
                     <a href={link.url}>{link.title}</a>
@@ -182,10 +182,10 @@ const Footer = () => {
             </div>
             <div className="flex flex-col">
               <div className="flex flex-col items-start text-sm tracking-wider leading-none text-white">
-                <h3 className="self-stretch font-arial">Social Media</h3>
+                <h3 className="self-stretch ">Social Media</h3>
                 <ul>
                   {socialMediaLinks.map((link, index) => (
-                    <li key={index} className="font-arial mt-6 hover:text-gray-500 transition-all duration-300">
+                    <li key={index} className=" mt-6 hover:text-gray-500 transition-all duration-300">
                       <a target='blank' href={link.url}>{link.title}</a>
                     </li>
                   ))}
@@ -196,13 +196,13 @@ const Footer = () => {
           <div className="flex flex-col xl:flex-row items-center justify-between gap-16 lg:gap-20 xl:gap-10 w-full md:w-1/2">
             {officeLocations.map((office, index) => (
               <div key={index} className="flex flex-col">
-                <div className="flex flex-col grow font-arial text-lg text-white">
+                <div className="flex flex-col grow  text-lg text-white">
                   <h3 className=" tracking-wider leading-none uppercase text-base">
                     {office.city} office
                   </h3>
-                  <p className="mt-6 font-arial md:h-20 lg:h-auto xl:h-20 leading-6 text-sm">{office.address}</p>
-                  <p className="self-start mt-7 font-arial tracking-wider hover:text-gray-500 transition-all duration-300 leading-loose text-sm">{office.phone}</p>
-                  <a href="mailto:info@hudbil.com" className="self-start text-purple-700 hover:text-gray-500 transition-all duration-300 font-arial mt-5 text-lg">
+                  <p className="mt-6  md:h-20 lg:h-auto xl:h-20 leading-6 text-sm">{office.address}</p>
+                  <p className="self-start mt-7  tracking-wider hover:text-gray-500 transition-all duration-300 leading-loose text-sm">{office.phone}</p>
+                  <a href="mailto:info@hudbil.com" className="self-start text-purple-700 hover:text-gray-500 transition-all duration-300  mt-5 text-lg">
                     Email us here
                   </a>
                 </div>
@@ -213,22 +213,22 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row gap-12 md:gap-0 items-start justify-between mt-20 xl:mt-40 text-sm tracking-wider leading-5 text-zinc-500 w-full">
        <div className='w-full md:w-1/3 flex flex-col items-center md:items-start'>
        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/f4951f80ca1e5237f96f1e87cfd278a72a3d04d15a73cc33588885369364b3ee?placeholderIfAbsent=true&apiKey=7904fd7afaaf4ee2b0837ab86d91b244" className="flex object-contain shrink-0 max-w-full aspect-[1.21] w-[250px]" alt="Hudbil logo" />
-       <h1 className='tracking-tighter text-center w-full md:text-start self-start text-white mx-auto font-arial text-[10px] sm:text-sm md:text-2xl'>Innovation at your fingertips</h1>
+       <h1 className='tracking-tighter text-center w-full md:text-start self-start text-white mx-auto  text-[10px] sm:text-sm md:text-2xl'>Innovation at your fingertips</h1>
        </div>
         <div className="flex flex-col w-full md:w-1/2">
-          <p className="max-md:max-w-full text-base text-gray-300 font-arial">
+          <p className="max-md:max-w-full text-base text-gray-300 ">
             Hudbil Private Limited is a reliable company, with multiple brands under the one umbrella. We are here to enable you with top-notch digital solutions & products through a proven cost-saving model. This allows you to scale, optimise, expand, and enhance your business with an individual approach. This is our game style. From turning spreadsheets into custom solutions, integrating multiple platforms or automating manual processes, we can tackle any challenge.
           </p>
-          <p className="mt-8 max-md:mr-1  text-base text-gray-300 font-arial max-md:max-w-full">
+          <p className="mt-8 max-md:mr-1  text-base text-gray-300  max-md:max-w-full">
             We have vast experience in developing both large projects and small start-ups. Thanks to a large team of experienced professionals, we are ready to solve the most complex tasks, especially in design and web development. Let's work together to watch your business benefit.
           </p>
         </div>
       </div>
       <div className="flex flex-col md:flex-row items-center justify-between flex-wrap gap-6 self-center md:mt-20 max-w-full text-sm tracking-wider leading-none text-zinc-400 max-md:mt-16">
-        <div className="grow font-arial">© hudbil 2024</div>
-        <div className="grow shrink font-arial hover:text-gray-500"><a href="/quick-links">Quick Links</a></div>
-        <div className="grow shrink font-arial hover:text-gray-500"><a href="/cookies-policy">Cookies Policy</a></div>
-        <div className="grow shrink font-arial">© Copyrights Reserved</div>
+        <div className="grow ">© hudbil 2024</div>
+        <div className="grow shrink  hover:text-gray-500 transition-all duration-300"><a href="/quick-links">Quick Links</a></div>
+        <div className="grow shrink  hover:text-gray-500 transition-all duration-300"><a href="/cookies-policy">Cookies Policy</a></div>
+        <div className="grow shrink ">© Copyrights Reserved</div>
       </div>
     </footer>
   );

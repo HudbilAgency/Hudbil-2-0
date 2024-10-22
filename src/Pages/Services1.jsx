@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import ReachUs from '../Components/ReachUs';
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
+import { Link } from 'react-router-dom';
 
 const Services1 = () => {
 
@@ -52,10 +53,10 @@ const Services1 = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="relative my-24 ">
+                    <div className="relative my-24">
                         <div className="relative">
-                            <img className='mx-auto' src="./sp11.png" alt="About Us" />
-                            <div className="absolute w-full inset-0 flex justify-center items-center overflow-hidden">
+                            <img className='mx-auto transition duration-500 grayscale hover:grayscale-0' src="./sp11.png" alt="Creative Designing Services" />
+                            <div className="absolute w-full inset-0 pointer-events-none flex justify-center items-center overflow-hidden">
                                 <div className="marquee-text-container font-normal text-2xl uppercase">
                                     <div className="marquee-text text-white">Together we create belief</div>
                                     <div className="marquee-text text-white">We exist to help brands think differently</div>
@@ -289,10 +290,12 @@ const Services1 = () => {
                             <div className='text-[#917D7D] font-normal text-sm py-12 w-full md:w-5/6'>
                                 Get in touch to find out how our team enjoys tinkering, most importantly empower your organisation.
                             </div>
+                            <Link to="/services2">
                             <button className="button self-end flex flex-row justify-between px-12 py-3 mb-4 leading-none hover:bg-white hover:text-black text-white gap-8 rounded-[1000px] max-md:px-5 bg-[#7811A5] transition-all duration-300">
-                                <h1 className='text-base mt-1 font-arial'>Work With Us</h1>
+                                <h1 className='text-base mt-1 font-arial'>Next service</h1>
                                 <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                             </button>
+                            </Link>
                         </div>
                     </div>
                 </section>
@@ -505,7 +508,7 @@ const Services1 = () => {
                     </div>
 
                     <div className="w-full flex items-start justify-end mt-24 px-6 md:px-16">
-                        <div className='md:w-1/2 flex flex-col gap-12 md:gap-8 text-white'>
+                        <div className='md:w-1/2 xl:text-[20px] flex flex-col gap-12 md:gap-8 text-white'>
                             <div>Among leading brand agencies India, Hudbil has a reputation for creating distinctive and successful brands. Known as brand transformation specialists, Hudbil’s track record justifies a place among these top-tier brand agencies India. Our expertise is in brand strategy, design and management services for the identity and communications of companies and their products. When it comes to brand agencies India, Hudbil is a full service provider, with an aim of improving business for the companies who engage us.</div>
 
                             <button className="button self-end flex flex-row justify-between mt-6 mb-4 px-12 py-3 ml-auto leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-all duration-300">

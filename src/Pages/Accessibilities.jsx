@@ -10,8 +10,8 @@ const Accessibilities = () => {
         <div className='font-normal text-4xl py-20 px-6 md:px-16'>
           Accessibilities
         </div>
-        <div>
-          <img src="./accessibilities.png" />
+        <div className='w-full'>
+          <img className='w-full' src="./accessibilities.png" />
         </div>
         <div className='flex flex-col gap-10 pt-16 pb-20 px-6 md:px-16'>
           <div className='flex flex-col gap-10'>

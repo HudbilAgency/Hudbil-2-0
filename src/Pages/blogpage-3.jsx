@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import CarouselBlogPage from '../Components/CarouselBlogPage';
 import ReachUsBlog from '../Components/ReachUsBlog';
 import Navbar from '../Components/Navbar';
@@ -13,43 +13,13 @@ const BlogPage3 = () => {
         });
     };
 
-    const images = [
-        {
-            src: "/BlogPageImg/bp-21.png",
-            alt: "Blog-1",
-            content: "One-time actions to regular routines: A guide to strengthening habits",
-            date: "August 13, 2024",
-            routepath: "#",
-        },
-        {
-            src: "/BlogPageImg/bp-22.png",
-            alt: "Blog-2",
-            content: "Ripple effect: Connecting with the connected",
-            date: "June 19, 2024",
-            routepath: "#",
-        },
-        {
-            src: "/BlogPageImg/bp-23.png",
-            alt: "Blog-3",
-            content: "Podcast: In or out? How brands can look like insiders",
-            date: "June 10, 2024",
-            routepath: "#",
-        },
-        {
-            src: "/BlogPageImg/bp-24.png",
-            alt: "Blog-4",
-            content: "Sustainability - who cares?",
-            date: "November 29, 2023",
-            routepath: "#",
-        },
-        {
-            src: "/BlogPageImg/bp-24.png",
-            alt: "Blog-5",
-            content: "Sustainability - who cares?",
-            date: "November 29, 2023",
-            routepath: "#",
+    const pointsRefs = useRef([]);
+
+    const handleScroll = (index) => {
+        if (pointsRefs.current[index]) {
+            pointsRefs.current[index].scrollIntoView({ behavior: 'smooth' });
         }
-    ];
+    };
 
     return (
         <>
@@ -62,7 +32,7 @@ const BlogPage3 = () => {
                             <path d="M20.4998 6H3.7998" stroke="#838383" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </div>
-                    <div className='font-normal text-sm text-[#838383]'>
+                    <div className='font-normal transition-all hover:text-gray-400 duration-300 text-sm text-[#838383]'>
                     <a href='/blogs'>Return to Insights</a>
                         
                     </div>
@@ -80,7 +50,7 @@ const BlogPage3 = () => {
                             <div>
                                 <img className='w-full' src="./blogpage3.png" />
                             </div>
-                            <div className='flex flex-col gap-8 pt-12'>
+                            <div ref={(el) => (pointsRefs.current[0] = el)} className='flex flex-col gap-8 pt-12'>
 
                                 <div className='leading-7 font-normal text-base'>Brand identity is the array of elements that an organisation creates to convey the right image to its audience. Brand identity is partially different from brand image and branding. As branding is generally a marketing practice whereas brand refers to the company’s image or perception in the world’s eyes.</div>
                                 <div className='leading-7 font-normal text-base'>Brands’ image is everything, every brand has its characteristics, message and emotional connection with its audience and consumers. The emotional connection is crucial as it develops a connection between both the brand and consumers which somehow contributes to the overall brand experience.</div>
@@ -89,7 +59,7 @@ const BlogPage3 = () => {
                                 <div className='leading-7 font-normal text-base'>Clear purpose and positioning</div>
                                 <div className='leading-7 font-normal text-base'>Every organisation has some purpose so your brand has a simple question in the initial stage of any company: what your product is? Is it better than your competitors? What are your targeted customers? Answers to all these questions can help you to define an overall brands design strategy of choosing a logo, tagline, colours and so on.</div>
 
-                                <div className='flex flex-col items-start gap-4'>
+                                <div ref={(el) => (pointsRefs.current[1] = el)} className='flex flex-col items-start gap-4'>
                                     <div className='font-normal text-2xl leading-9'>
                                         <div>Market research & Surveys</div>
                                     </div>
@@ -98,7 +68,7 @@ const BlogPage3 = () => {
                                         <div>There are multiple organisations, especially working to offer you a wide range of services to understand your brand market and in finding your products appealing to which section of society. This helps in understanding and developing the other major aspects of brand identity.</div>
                                     </div>
                                 </div>
-                                <div className='flex flex-col items-start gap-4'>
+                                <div ref={(el) => (pointsRefs.current[2] = el)} className='flex flex-col items-start gap-4'>
                                     <div className='font-normal text-2xl leading-9'>
                                         <div>Logos & Tagline</div>
                                     </div>
@@ -107,7 +77,7 @@ const BlogPage3 = () => {
                                         <div>The tagline is quite an important factor as it is usually placed below your company logo, and also portrays who you are? and the promise you make to your customers. It helps to highlight your mission, purpose and culture in a few words. Every brand wants to create uniqueness and brand identity designer are well-known persons to design that thoughtful logo.</div>
                                     </div>
                                 </div>
-                                <div className='flex flex-col items-start gap-4'>
+                                <div ref={(el) => (pointsRefs.current[3] = el)} className='flex flex-col items-start gap-4'>
                                     <div className='font-normal text-2xl leading-9'>
                                         <div>Typography</div>
                                     </div>
@@ -116,7 +86,7 @@ const BlogPage3 = () => {
                                         <div>Investing in ‘brand identity designers’ is a good idea as they know what kind of font size, spacing, capitalization and maximum usage of font types and in making the consistency throughout.</div>
                                     </div>
                                 </div>
-                                <div className='flex flex-col items-start gap-4'>
+                                <div ref={(el) => (pointsRefs.current[4] = el)} className='flex flex-col items-start gap-4'>
                                     <div className='font-normal text-2xl leading-9'>
                                         <div>Colour palate</div>
                                     </div>
@@ -143,7 +113,7 @@ const BlogPage3 = () => {
                                         <div>Lots of successful brand identity design services companies suggest having animations and the introduction of characters to promote the brand and products simultaneously.  If animations are not suitable for your company image then good images can add a unique perspective to the brand identity.</div>
                                     </div>
                                 </div>
-                                <div className='flex flex-col items-start gap-4'>
+                                <div ref={(el) => (pointsRefs.current[5] = el)} className='flex flex-col items-start gap-4'>
                                     <div className='font-normal text-2xl leading-9'>
                                         <div>Graphics and iconography</div>
                                     </div>
@@ -205,27 +175,27 @@ const BlogPage3 = () => {
                         <div className='w-full border border-[#B0B0B0] border-opacity-75 rounded-lg'>
                             <div className='font-normal text-2xl leading-9 py-6 px-6'>Contents</div>
                             <div className='flex flex-col gap-4 pb-6 text-[#454343]'>
-                                <div className='flex gap-8 items-start px-6 font-normal text-base leading-7'>
+                                <div onClick={() => handleScroll(0)} className='flex gap-8 cursor-pointer transition-all hover:text-gray-500 duration-300 items-start px-6 font-normal text-base leading-7'>
                                     <div>1.</div>
                                     <div>Brand Identity Brief</div>
                                 </div>
-                                <div className='flex gap-8 items-start px-6 font-normal text-base leading-7'>
+                                <div onClick={() => handleScroll(1)} className='flex gap-8 cursor-pointer transition-all hover:text-gray-500 duration-300 items-start px-6 font-normal text-base leading-7'>
                                     <div>2.</div>
                                     <div>Market research & Surveys</div>
                                 </div>
-                                <div className='flex gap-8 items-start px-6 font-normal text-base leading-7'>
+                                <div onClick={() => handleScroll(2)} className='flex gap-8 cursor-pointer transition-all hover:text-gray-500 duration-300 items-start px-6 font-normal text-base leading-7'>
                                     <div>3.</div>
                                     <div>Logos & Tagline</div>
                                 </div>
-                                <div className='flex gap-8 items-start px-6 font-normal text-base leading-7'>
+                                <div onClick={() => handleScroll(3)} className='flex gap-8 cursor-pointer transition-all hover:text-gray-500 duration-300 items-start px-6 font-normal text-base leading-7'>
                                     <div>4.</div>
                                     <div>Typography</div>
                                 </div>
-                                <div className='flex gap-8 items-start px-6 font-normal text-base leading-7'>
+                                <div onClick={() => handleScroll(4)} className='flex gap-8 cursor-pointer transition-all hover:text-gray-500 duration-300 items-start px-6 font-normal text-base leading-7'>
                                     <div>5.</div>
                                     <div>Colour palate</div>
                                 </div>
-                                <div className='flex gap-8 items-start px-6 font-normal text-base leading-7'>
+                                <div onClick={() => handleScroll(5)} className='flex gap-8 cursor-pointer transition-all hover:text-gray-500 duration-300 items-start px-6 font-normal text-base leading-7'>
                                     <div>6.</div>
                                     <div>Graphics and iconography</div>
                                 </div>
@@ -253,7 +223,7 @@ const BlogPage3 = () => {
                         More on BEHAVIOUR CHANGE
                     </div>
                     <div className='-mx-6 lg:-mx-16'>
-                        <CarouselBlogPage images={images} />
+                        <CarouselBlogPage />
                     </div>
                 </section>
 

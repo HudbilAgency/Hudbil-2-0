@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import CarouselBlogPage from '../Components/CarouselBlogPage';
 import ReachUsBlog from '../Components/ReachUsBlog';
 import Navbar from '../Components/Navbar';
@@ -13,43 +13,13 @@ const BlogPage2 = () => {
         });
     };
 
-    const images = [
-        {
-            src: "/BlogPageImg/bp-21.png",
-            alt: "Blog-1",
-            content: "One-time actions to regular routines: A guide to strengthening habits",
-            date: "August 13, 2024",
-            routepath: "#",
-        },
-        {
-            src: "/BlogPageImg/bp-22.png",
-            alt: "Blog-2",
-            content: "Ripple effect: Connecting with the connected",
-            date: "June 19, 2024",
-            routepath: "#",
-        },
-        {
-            src: "/BlogPageImg/bp-23.png",
-            alt: "Blog-3",
-            content: "Podcast: In or out? How brands can look like insiders",
-            date: "June 10, 2024",
-            routepath: "#",
-        },
-        {
-            src: "/BlogPageImg/bp-24.png",
-            alt: "Blog-4",
-            content: "Sustainability - who cares?",
-            date: "November 29, 2023",
-            routepath: "#",
-        },
-        {
-            src: "/BlogPageImg/bp-24.png",
-            alt: "Blog-5",
-            content: "Sustainability - who cares?",
-            date: "November 29, 2023",
-            routepath: "#",
+    const pointsRefs = useRef([]);
+
+    const handleScroll = (index) => {
+        if (pointsRefs.current[index]) {
+            pointsRefs.current[index].scrollIntoView({ behavior: 'smooth' });
         }
-    ];
+    };
 
     return (
         <>
@@ -62,9 +32,9 @@ const BlogPage2 = () => {
                             <path d="M20.4998 6H3.7998" stroke="#838383" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </div>
-                    <div className='font-normal text-sm text-[#838383]'>
-                    <a href='/blogs'>Return to Insights</a>
-                        
+                    <div className='font-normal transition-all hover:text-gray-400 duration-300 text-sm text-[#838383]'>
+                        <a href='/blogs'>Return to Insights</a>
+
                     </div>
 
                 </div>
@@ -80,18 +50,18 @@ const BlogPage2 = () => {
                             <div>
                                 <img className='w-full' src="./blogpage2.png" />
                             </div>
-                            <div className='flex flex-col gap-8 pt-12'>
+                            <div ref={(el) => (pointsRefs.current[0] = el)} className='flex flex-col gap-8 pt-12'>
 
                                 <div className='leading-7 font-normal text-base'>The graphic design industry is one of the oldest industries this world has witnessed and the nostalgia journey of its evolution makes this industry stands apart from other ones. Want to know why? Come and ride into the blog to have an answer.</div>
                                 <div className='leading-7 font-normal text-base'>Can we imagine this world without the design industry our life revolves around for hundreds of decades? The answer will be NO. Graphic design is everywhere from what we wear to what we see around us, this industry has been chasing us for years. With thousands of years of old history when our early ancestors used to drawn pictures on the cave, walls, and rocks to the current digital techniques of daily implementing the abundant of design concepts, this industry has evolved so much and is still evolving.</div>
-                                <div className='leading-7 font-normal text-base'>William Addison Dwiggins an American type designer, calligrapher, and book designer was the first person to call “Graphic Designer” in 1922 and hence he was the one who created the term “Graphic Design” to describe the art of designing with graphics.</div>
+                                <div ref={(el) => (pointsRefs.current[1] = el)} className='leading-7 font-normal text-base'>William Addison Dwiggins an American type designer, calligrapher, and book designer was the first person to call “Graphic Designer” in 1922 and hence he was the one who created the term “Graphic Design” to describe the art of designing with graphics.</div>
                                 <div className='leading-7 font-normal text-base'>Graphic Design has begun to set its roots in the year 1440 after the invention of the printing press but caveman times brought the visual communication into the big picture. Talking about the era of 90’s it was actually the time for experimenting with art and design with so many inventions expanding their presence.</div>
                                 <div className='leading-7 font-normal text-base'>In this section, we will take a deep throwback journey of the time of the ’90s where the evolution was slowly transforming into what we see today in the world of graphic design. After that, we will discuss the current design
                                     scenario abreasts of what the future is holding for this oldest industry.</div>
-                                <div className='leading-7 font-normal text-base'>Graphic Design in the 19 th  Century: The beginning of technological advancements. The beginning of the modern era we know as the 20 th  century is a complete dynasty of the 19 th century where technologies had been evolving into new
-                                    capabilities. Thanks to the 19 th century as what we watch in today’s date is actually exploitation of these capabilities to have more artistic aims.</div>
+                                <div className='leading-7 font-normal text-base'>Graphic Design in the 19th Century: The beginning of technological advancements. The beginning of the modern era we know as the 20th century is a complete dynasty of the 19th century where technologies had been evolving into new
+                                    capabilities. Thanks to the 19th century as what we watch in today’s date is actually exploitation of these capabilities to have more artistic aims.</div>
 
-                                <div className='flex flex-col items-start gap-4'>
+                                <div ref={(el) => (pointsRefs.current[2] = el)} className='flex flex-col items-start gap-4'>
                                     <div className='font-normal text-2xl leading-9'>
                                         <div>The beginning of Advertising and Branding</div>
                                     </div>
@@ -101,7 +71,7 @@ const BlogPage2 = () => {
                                         <div>This is the time when the offset lithographic printer was invented in 1903 and printing onto almost any surface could now be done. Aloys Senefelder of Bavaria who discovered the lithography process in the 1790s and it’s color version, called chromolithographs, were widely used in the second half of the 19th century and changed the look of the packaging that the goods being advertised were sold in.</div>
                                     </div>
                                 </div>
-                                <div className='flex flex-col items-start gap-4'>
+                                <div ref={(el) => (pointsRefs.current[3] = el)} className='flex flex-col items-start gap-4'>
                                     <div className='font-normal text-2xl leading-9'>
                                         <div>The debut of Digital Design Technology</div>
                                     </div>
@@ -110,7 +80,7 @@ const BlogPage2 = () => {
                                         <div>It was the same time when Tim-Berners Lee developed the concept of the World Wide Web along with HTML and implemented the first successful communication between a Hypertext Transfer Protocol (HTTP) client and server via the internet.</div>
                                     </div>
                                 </div>
-                                <div className='flex flex-col items-start gap-4'>
+                                <div ref={(el) => (pointsRefs.current[4] = el)} className='flex flex-col items-start gap-4'>
                                     <div className='font-normal text-2xl leading-9'>
                                         <div>Future</div>
                                     </div>
@@ -119,7 +89,7 @@ const BlogPage2 = () => {
                                         <div>With thousands of years of history and another thousand years and much more. The graphic design industry has always surprised us with its varying nature of adopting new techniques that come in its way and will remain to surprise us with the new advancement in design techniques in the upcoming future.</div>
                                     </div>
                                 </div>
-                                <div className='flex flex-col items-start gap-4'>
+                                <div ref={(el) => (pointsRefs.current[5] = el)} className='flex flex-col items-start gap-4'>
                                     <div className='font-normal text-2xl leading-9'>
                                         <div>Conclusion</div>
                                     </div>
@@ -172,27 +142,27 @@ const BlogPage2 = () => {
                         <div className='w-full border border-[#B0B0B0] border-opacity-75 rounded-lg'>
                             <div className='font-normal text-2xl leading-9 py-6 px-6'>Contents</div>
                             <div className='flex flex-col gap-4 pb-6 text-[#454343]'>
-                                <div className='flex gap-8 items-start px-6 font-normal text-base leading-7'>
+                                <div onClick={() => handleScroll(0)} className='flex gap-8 cursor-pointer transition-all hover:text-gray-500 duration-300 items-start px-6 font-normal text-base leading-7'>
                                     <div>1.</div>
                                     <div>Graphic Design Industry?</div>
                                 </div>
-                                <div className='flex gap-8 items-start px-6 font-normal text-base leading-7'>
+                                <div onClick={() => handleScroll(1)} className='flex gap-8 cursor-pointer transition-all hover:text-gray-500 duration-300 items-start px-6 font-normal text-base leading-7'>
                                     <div>2.</div>
                                     <div>Important People</div>
                                 </div>
-                                <div className='flex gap-8 items-start px-6 font-normal text-base leading-7'>
+                                <div onClick={() => handleScroll(2)} className='flex gap-8 cursor-pointer transition-all hover:text-gray-500 duration-300 items-start px-6 font-normal text-base leading-7'>
                                     <div>3.</div>
                                     <div>Beginning of Advertising and Branding</div>
                                 </div>
-                                <div className='flex gap-8 items-start px-6 font-normal text-base leading-7'>
+                                <div onClick={() => handleScroll(3)} className='flex gap-8 cursor-pointer transition-all hover:text-gray-500 duration-300 items-start px-6 font-normal text-base leading-7'>
                                     <div>4.</div>
                                     <div>Debut of Digital Design Technology</div>
                                 </div>
-                                <div className='flex gap-8 items-start px-6 font-normal text-base leading-7'>
+                                <div onClick={() => handleScroll(4)} className='flex gap-8 cursor-pointer transition-all hover:text-gray-500 duration-300 items-start px-6 font-normal text-base leading-7'>
                                     <div>5.</div>
                                     <div>Future</div>
                                 </div>
-                                <div className='flex gap-8 items-start px-6 font-normal text-base leading-7'>
+                                <div onClick={() => handleScroll(5)} className='flex gap-8 cursor-pointer transition-all hover:text-gray-500 duration-300 items-start px-6 font-normal text-base leading-7'>
                                     <div>6.</div>
                                     <div>Top UX Research Methods</div>
                                 </div>
@@ -220,7 +190,7 @@ const BlogPage2 = () => {
                         More on BEHAVIOUR CHANGE
                     </div>
                     <div className='-mx-6 lg:-mx-16'>
-                        <CarouselBlogPage images={images} />
+                        <CarouselBlogPage />
                     </div>
                 </section>
 

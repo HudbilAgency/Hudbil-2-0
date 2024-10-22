@@ -207,10 +207,10 @@ const Our_products = () => {
 const ProductCard = ({ imgSrc, title, description, path }) => {
   return (
     <div className='size-[95%] space-y-5 my-10'>
-      <img src={imgSrc} alt={title} className='grayscale hover:grayscale-0' />
+      <img src={imgSrc} alt={title} className='grayscale hover:grayscale-0 transition-all duration-500' />
       <h1 className='text-3xl'>{title}</h1>
       <h2 className='text-xl'>{description}</h2>
-      <Link to={path}><button className='bg-purple-800 text-2xl text-white px-20 mt-5 py-2 self-center rounded-full hover:bg-black'>Download</button></Link>
+      <Link to={path}><button className='bg-purple-800 text-base text-white px-20 mt-5 py-2 self-center rounded-full hover:bg-black'>Download</button></Link>
     </div>
   );
 };
@@ -269,7 +269,7 @@ const ProductSection = () => {
   ];
 
   return (
-    <div className='grid grid-cols-2 gap-x-20'>
+    <div className='grid grid-cols-1 md:grid-cols-2 gap-x-20'>
       {products.map((product, index) => (
         <ProductCard
           key={index}
