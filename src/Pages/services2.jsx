@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import ReachUs from '../Components/ReachUs';
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import { Link } from 'react-router-dom';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Services2 = () => {
 
@@ -19,6 +21,23 @@ const Services2 = () => {
         const updatedStates2 = dropdownStates2.map((state, i) => i === index ? !state : state);
         setDropdownStates2(updatedStates2);
     };
+
+    useEffect(() => {
+
+        gsap.registerPlugin(ScrollTrigger);
+
+        const tl8 = gsap.timeline({
+            scrollTrigger: {
+                trigger: "#moving-img",
+                start: "top 70%",
+                end: "bottom center",
+                once: true
+            },
+        });
+
+        tl8.fromTo(".scale-anm", { scale: 0.6 }, { scale: 1, ease: "linear" });
+
+    }, [])
 
     return (
         <>
@@ -38,13 +57,13 @@ const Services2 = () => {
             </div>
             <main className='relative z-20'>
                 <section className='bg-black py-20'>
-                <div className='md:w-3/5 xl:w-4/5 font-normal text-[2rem] xl:text-[50px] leading-tight text-white px-6 md:px-16'>
-                    We help you translate any kind of design into functional digital products such as websites, mobile apps, or enterprise solutions through our UI UX design and consulting services Company.
+                    <div className='md:w-3/5 xl:w-4/5 font-normal text-[2rem] xl:text-[50px] leading-tight text-white px-6 md:px-16'>
+                        We help you translate any kind of design into functional digital products such as websites, mobile apps, or enterprise solutions through our UI UX design and consulting services Company.
                     </div>
                     <div className="w-full flex items-start justify-end my-16 px-6 md:px-16">
                         <div className='md:w-1/2 flex flex-col items-start gap-8 text-white text-base xl:text-[20px] leading-tight'>
                             <div>We are Hudbil – A creative development agency A hardworking collective with 10 years under our
-                            belt, specialising in brand identity and packaging.</div>
+                                belt, specialising in brand identity and packaging.</div>
                             <div>We develop adaptive and versatile apps that solve your hardest challenges, scale with your business, and maximise your ROI. Using a unique Continuous Discovery / Continuous Delivery approach coupled with cutting-edge technologies, we develop and deliver end to end to ensure you’re consistently meeting user needs and driving business value.</div>
                             <div>
                                 <button className="button self-end flex flex-row justify-between px-12 py-3 mx-auto leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-all duration-300">
@@ -289,19 +308,22 @@ const Services2 = () => {
                                 Get in touch to find out how our team enjoys tinkering, most importantly empower your organisation.
                             </div>
                             <Link to="/services1">
-                            <button className="button self-end flex flex-row justify-between px-12 py-3 mb-4 leading-none hover:bg-white hover:text-black text-white gap-8 rounded-[1000px] max-md:px-5 bg-[#7811A5] transition-all duration-300">
-                                <h1 className='text-base mt-1 font-arial'>Next service</h1>
-                                <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
-                            </button>
+                                <button className="button self-end flex flex-row justify-between px-12 py-3 mb-4 leading-none hover:bg-white hover:text-black text-white gap-8 rounded-[1000px] max-md:px-5 bg-[#7811A5] transition-all duration-300">
+                                    <h1 className='text-base mt-1 font-arial'>Next service</h1>
+                                    <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                                </button>
                             </Link>
                         </div>
                     </div>
                 </section>
-                <div>
-                    <img className="w-full" src="./sp22.png" />
+                <div id="moving-img" className='bg-black'>
+                    <img
+                        src="./sp22.png"
+                        className="scale-anm w-full"
+                    />
                 </div>
                 <section className='bg-black py-20'>
-                <div className='md:w-1/2 xl:w-3/4 font-normal text-[2rem] xl:text-[50px] leading-tight text-white px-6 md:px-16'>
+                    <div className='md:w-1/2 xl:w-3/4 font-normal text-[2rem] xl:text-[50px] leading-tight text-white px-6 md:px-16'>
                         Our Secret Ingredient?
                         We’d be lying if we said we weren’t playful, imaginative, and offbeat. (wink) Fun fact? The
                         best designs come from that same spark of creativity.

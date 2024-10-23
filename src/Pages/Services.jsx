@@ -263,7 +263,7 @@ const Services = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-8 gap-x-6 text-white text-4xl font-normal">
 
                         <div onMouseEnter={() => toggleShowDetails(0, true)}
-                            onMouseLeave={() => toggleShowDetails(0, false)} className="border relative hover:bg-[#7811A5] border-[#D8D8D8] w-full h-72 flex items-center justify-center overflow-hidden p-6 transition-all duration-300">
+                            onMouseLeave={() => toggleShowDetails(0, false)} className="border relative hover:bg-[#7811A5] border-[#D8D8D8] w-full aspect-square flex items-center justify-center overflow-hidden p-6 transition-all duration-300">
                             {showDetails[0] ? (
                                 <div className='text-base text-center leading-7'>
                                     <div>As a client-focused web and mobile app development company, we gain in-depth insights into your digital requirements, consumer behaviours, technology platforms, functionalities, etc., to help you gain a competitive edge.</div>
@@ -274,7 +274,7 @@ const Services = () => {
                         </div>
 
                         <div onMouseEnter={() => toggleShowDetails(1, true)}
-                            onMouseLeave={() => toggleShowDetails(1, false)} className="border relative hover:bg-[#7811A5] border-[#D8D8D8] w-full h-72 flex items-center justify-center overflow-hidden p-6 transition-all duration-300">
+                            onMouseLeave={() => toggleShowDetails(1, false)} className="border relative hover:bg-[#7811A5] border-[#D8D8D8] w-full aspect-square flex items-center justify-center overflow-hidden p-6 transition-all duration-300">
                             {showDetails[1] ? (
                                 <div className='text-base text-center leading-7'>
                                     <div>From elegant designs to a custom-coded website, the radical development phase is driven by our digital mindfulness to translate your digital vision.</div>
@@ -285,7 +285,7 @@ const Services = () => {
                         </div>
 
                         <div onMouseEnter={() => toggleShowDetails(2, true)}
-                            onMouseLeave={() => toggleShowDetails(2, false)} className="border relative hover:bg-[#7811A5] border-[#D8D8D8] w-full h-72 flex items-center justify-center overflow-hidden p-6 transition-all duration-300">
+                            onMouseLeave={() => toggleShowDetails(2, false)} className="border relative hover:bg-[#7811A5] border-[#D8D8D8] w-full aspect-square flex items-center justify-center overflow-hidden p-6 transition-all duration-300">
                             {showDetails[2] ? (
                                 <div className='text-base text-center leading-7'>
                                     <div>When you decide to work with a thriving web and mobile app development company like us, you unlock the best tech-driven solutions that stand the test of time across multiple environments, including staging and production.</div>
@@ -296,7 +296,7 @@ const Services = () => {
                         </div>
 
                         <div onMouseEnter={() => toggleShowDetails(3, true)}
-                            onMouseLeave={() => toggleShowDetails(3, false)} className="border relative hover:bg-[#7811A5] border-[#D8D8D8] w-full h-72 flex items-center justify-center overflow-hidden p-6 transition-all duration-300">
+                            onMouseLeave={() => toggleShowDetails(3, false)} className="border relative hover:bg-[#7811A5] border-[#D8D8D8] w-full aspect-square flex items-center justify-center overflow-hidden p-6 transition-all duration-300">
                             {showDetails[3] ? (
                                 <div className='text-base text-center leading-7'>
                                     <div>Empowered with tech-heavy centricity, our solutions transcend the usual methods of solving problems. We ensure a sophisticated frontend experience and develop a user-friendly backend by considering the bigger picture for tech-focused digital transformation that was once impossible.</div>
@@ -307,7 +307,7 @@ const Services = () => {
                         </div>
 
                         <div onMouseEnter={() => toggleShowDetails(4, true)}
-                            onMouseLeave={() => toggleShowDetails(4, false)} className="border relative hover:bg-[#7811A5] border-[#D8D8D8] w-full h-72 flex items-center justify-center overflow-hidden p-6 transition-all duration-300">
+                            onMouseLeave={() => toggleShowDetails(4, false)} className="border relative hover:bg-[#7811A5] border-[#D8D8D8] w-full aspect-square flex items-center justify-center overflow-hidden p-6 transition-all duration-300">
                             {showDetails[4] ? (
                                 <div className='text-base text-center leading-7'>
                                     <div>With our great knowledge in tech engineering, we employ a rigorous QA testing process that encompasses testing speed, security, user-friendly interface experience, and overall functionality and eliminates flaws before the product goes live.</div>
@@ -318,7 +318,7 @@ const Services = () => {
                         </div>
 
                         <div onMouseEnter={() => toggleShowDetails(5, true)}
-                            onMouseLeave={() => toggleShowDetails(5, false)} className="border relative hover:bg-[#7811A5] border-[#D8D8D8] w-full h-72 flex items-center justify-center overflow-hidden p-6 transition-all duration-300">
+                            onMouseLeave={() => toggleShowDetails(5, false)} className="border relative hover:bg-[#7811A5] border-[#D8D8D8] w-full aspect-square flex items-center justify-center overflow-hidden p-6 transition-all duration-300">
                             {showDetails[5] ? (
                                 <div className='text-base text-center leading-7'>
                                     <div>Our technology experts are conversant with cutting-edge technology and software trends, maintaining a website and ensuring smooth app performance. Moreover, our foolproof AMC support lends best-in-class customer assistance equipped with hassle-free backend integration for our esteemed patrons.</div>

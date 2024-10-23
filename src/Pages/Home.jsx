@@ -446,15 +446,15 @@ const Home = () => {
         <section className='-mt-[30vh] lg:-mt-[0vh] box3 justify-end items-end overflow-hidden w-full lg:w-[50vw] flex-col '>
           <div className="w-full h-screen hidden lg:block">
             <div className="flex flex-col relative h-full justify-center items-center w-full bg-neutral-950">
-              <div className='px-6'>
-                <img loading="lazy" src="./LandingVideos/LandingPageHudbilLogo.png" alt="" className="" />
+              <div className='px-6 overflow-hidden'>
+                <img className='logo-animation' loading="lazy" src="./LandingVideos/LandingPageHudbilLogo.png" alt="Hudbil" />
                 <h1 className='tracking-tighter text-center text-white mx-auto font-arial text-2xl md:text-4xl mt-2'>Innovation at your fingertips</h1></div>
               <button onClick={handleScroll} className='absolute bottom-8'>
                 <img
                   ref={imgRef}
                   loading="lazy"
                   src="./ButtonDownArrowImg.png"
-                  alt=""
+                  alt="Down arrow"
                   className="w-16 rounded-full"
                   onMouseEnter={() => {
                     gsap.fromTo(imgRef.current,

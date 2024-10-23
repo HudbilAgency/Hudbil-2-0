@@ -1,7 +1,9 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import ReachUs from '../Components/ReachUs';
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
+import { gsap } from 'gsap';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from 'react-router-dom';
 
 const AboutUs = () => {
@@ -13,6 +15,22 @@ const AboutUs = () => {
         setDropdownStates(updatedStates);
     };
 
+    useEffect(() => {
+
+        gsap.registerPlugin(ScrollTrigger);
+
+        const tl8 = gsap.timeline({
+            scrollTrigger: {
+                trigger: "#moving-img",
+                start: "top 70%",
+                end: "bottom center",
+                once: true
+            },
+        });
+
+        tl8.fromTo(".scale-anm", { scale: 0.6 }, { scale: 1, ease: "linear" });
+
+    }, [])
 
     const teamMembers = [
         { name: "Ms. Husna Zar", role: "Co-Founder and Managing Director", image: "https://cdn.builder.io/api/v1/image/assets/TEMP/0400ef3defb4412846f96cdbcc6dfad916ad863f212c8bd073c33a6840521557?placeholderIfAbsent=true&apiKey=ec02862acd164f0aad3ceef0d2a999c3" },
@@ -309,9 +327,14 @@ const AboutUs = () => {
                         </div>
                     </div>
                 </section>
-                <div>
-                    <img className="w-full" src="./about-us-main2.png" />
+
+                <div id="moving-img" className='bg-black'>
+                    <img
+                        src="./about-us-main2.png"
+                        className="scale-anm w-full"
+                    />
                 </div>
+
                 <section className='bg-black py-20'>
                     <div className='md:w-1/2 xl:w-3/4 font-normal text-[2rem] xl:text-[50px] leading-tight text-white px-6 md:px-16'>
                         A International team of curious represents a mix of experiences, talents, and skills that enrich our collective creativity.

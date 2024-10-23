@@ -7,8 +7,8 @@ const Loader = ({ onLoadingComplete }) => {
   const birdRef = useRef(null)
 
   useEffect(() => {
-    
-    const animation = gsap.fromTo(birdRef.current, 
+
+    const animation = gsap.fromTo(birdRef.current,
       { rotation: 5 },
       {
         rotation: -5,
@@ -19,27 +19,26 @@ const Loader = ({ onLoadingComplete }) => {
       }
     );
 
-    // Cleanup function to stop the animation if needed
-    
   }, []);
 
   useEffect(() => {
     document.body.style.overflow = 'hidden';
 
-    const words = textRef.current.innerText.split(' ');
-    textRef.current.innerHTML = words.map(word => `<span class="word">${word}</span>`).join(' ');
-    
-    const tl = gsap.timeline();
+    const words = document.querySelectorAll(".main-title");
 
-    tl.from('.word', {
-      opacity: 0,
-      y: 30,
-      duration: 0.8,
-      stagger: 0.2,
-      ease: 'power2.out'
-    }).then(() => {
+    gsap.fromTo(
+      words,
+      { y: 0, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 0.8,
+        stagger: 0.2,
+        ease: "power2.inOut",
+      }
+    ).then(() => {
       moveLoaderUp();
-    });
+    });;
 
     return () => {
       document.body.style.overflow = 'auto';
@@ -49,8 +48,8 @@ const Loader = ({ onLoadingComplete }) => {
   const moveLoaderUp = () => {
     gsap.to(loaderRef.current, {
       opacity: 0,
-      duration: 0.8,
-      display:"none",
+      duration: 1,
+      display: "none",
       ease: 'power2.inOut',
       onComplete: () => {
         onLoadingComplete();
@@ -59,16 +58,27 @@ const Loader = ({ onLoadingComplete }) => {
     });
   };
 
+  const splitSentenceIntoWords = (sentence) => {
+    return sentence.split(" ").map((word, index) => (
+      <React.Fragment key={index}>
+        <span className="inline-block main-title">{word}</span>
+        {index < sentence.split(" ").length - 1 && <span>&nbsp;</span>}
+      </React.Fragment>
+    ));
+  };
+
   return (
     <div ref={loaderRef} className="fixed z-[10000] inset-0 flex flex-col items-center justify-center bg-black">
-      <img 
+      <img
         ref={birdRef}
-        src="./FlippedbirdImg.png" 
-        alt="Loader logo" 
+        src="./FlippedbirdImg.png"
+        alt="Loader logo"
         className="mb-8 w-48 h-48"
       />
       <div className="text-center">
-        <h1 ref={textRef} className="text-white font-arial text-2xl md:text-[60px]">Innovation At Your fingertips</h1>
+        <h1 ref={textRef} className="text-white font-arial text-2xl sm:text-4xl md:text-[50px] lg:text-[50px]">
+          {splitSentenceIntoWords("Innovation At Your Fingertips")}
+        </h1>
       </div>
     </div>
   );

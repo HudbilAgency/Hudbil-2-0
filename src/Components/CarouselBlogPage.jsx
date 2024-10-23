@@ -32,7 +32,7 @@ const images = [
     routepath: "/blogpage-4",
   },
   {
-    src: "/BlogPageImg/bp-24.png",
+    src: "/BlogPageImg/bp-25.png",
     alt: "Blog-5",
     content: "User Experience Design and its Importance ..",
     routepath: "/blogpage-5",

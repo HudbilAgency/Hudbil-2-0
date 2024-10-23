@@ -263,7 +263,8 @@ const Work = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-8 gap-x-6 text-white text-4xl font-normal">
 
                         <div onMouseEnter={() => toggleShowDetails(0, true)}
-                            onMouseLeave={() => toggleShowDetails(0, false)} className="border relative hover:bg-[#7811A5] border-[#D8D8D8] w-full h-72 flex items-center justify-center overflow-hidden p-6 transition-all duration-300">
+                            onMouseLeave={() => toggleShowDetails(0, false)}
+                            className="border relative hover:bg-[#7811A5] border-[#D8D8D8] w-full aspect-square flex items-center justify-center overflow-hidden p-6 transition-all duration-300">
                             {showDetails[0] ? (
                                 <div className='text-lg text-center font-normal leading-7'>
                                     <div>We understand that people communicate best with people.</div>
@@ -274,7 +275,7 @@ const Work = () => {
                         </div>
 
                         <div onMouseEnter={() => toggleShowDetails(1, true)}
-                            onMouseLeave={() => toggleShowDetails(1, false)} className="border relative hover:bg-[#7811A5] border-[#D8D8D8] w-full h-72 flex items-center justify-center overflow-hidden p-6 transition-all duration-300">
+                            onMouseLeave={() => toggleShowDetails(1, false)} className="border relative hover:bg-[#7811A5] border-[#D8D8D8] w-full aspect-square flex items-center justify-center overflow-hidden p-6 transition-all duration-300">
                             {showDetails[1] ? (
                                 <div className='text-lg text-center font-normal leading-7'>
                                     <div>We are focused on three areas of business Strategy, Brand and Digital.</div>
@@ -285,7 +286,7 @@ const Work = () => {
                         </div>
 
                         <div onMouseEnter={() => toggleShowDetails(2, true)}
-                            onMouseLeave={() => toggleShowDetails(2, false)} className="border relative hover:bg-[#7811A5] border-[#D8D8D8] w-full h-72 flex items-center justify-center overflow-hidden p-6 transition-all duration-300">
+                            onMouseLeave={() => toggleShowDetails(2, false)} className="border relative hover:bg-[#7811A5] border-[#D8D8D8] w-full aspect-square flex items-center justify-center overflow-hidden p-6 transition-all duration-300">
                             {showDetails[2] ? (
                                 <div className='text-lg text-center font-normal leading-7'>
                                     <div>We energise brands by unlocking opportunities to deliver real brand performance.</div>
@@ -296,7 +297,7 @@ const Work = () => {
                         </div>
 
                         <div onMouseEnter={() => toggleShowDetails(3, true)}
-                            onMouseLeave={() => toggleShowDetails(3, false)} className="border relative hover:bg-[#7811A5] border-[#D8D8D8] w-full h-72 flex items-center justify-center overflow-hidden p-6 transition-all duration-300">
+                            onMouseLeave={() => toggleShowDetails(3, false)} className="border relative hover:bg-[#7811A5] border-[#D8D8D8] w-full aspect-square flex items-center justify-center overflow-hidden p-6 transition-all duration-300">
                             {showDetails[3] ? (
                                 <div className='text-lg text-center font-normal leading-7'>
                                     <div>We build and develop highly optimised digital experiences </div>
@@ -307,7 +308,7 @@ const Work = () => {
                         </div>
 
                         <div onMouseEnter={() => toggleShowDetails(4, true)}
-                            onMouseLeave={() => toggleShowDetails(4, false)} className="border relative hover:bg-[#7811A5] border-[#D8D8D8] w-full h-72 flex items-center justify-center overflow-hidden p-6 transition-all duration-300">
+                            onMouseLeave={() => toggleShowDetails(4, false)} className="border relative hover:bg-[#7811A5] border-[#D8D8D8] w-full aspect-square flex items-center justify-center overflow-hidden p-6 transition-all duration-300">
                             {showDetails[4] ? (
                                 <div className='text-lg text-center font-normal leading-7'>
                                     <div>Experience of working in the B2B + B2C space allows us to seamlessly work</div>
@@ -318,7 +319,7 @@ const Work = () => {
                         </div>
 
                         <div onMouseEnter={() => toggleShowDetails(5, true)}
-                            onMouseLeave={() => toggleShowDetails(5, false)} className="border relative hover:bg-[#7811A5] border-[#D8D8D8] w-full h-72 flex items-center justify-center overflow-hidden p-6 transition-all duration-300">
+                            onMouseLeave={() => toggleShowDetails(5, false)} className="border relative hover:bg-[#7811A5] border-[#D8D8D8] w-full aspect-square flex items-center justify-center overflow-hidden p-6 transition-all duration-300">
                             {showDetails[5] ? (
                                 <div className='text-lg text-center font-normal leading-7'>
                                     <div>We work with world’s most ambitious, innovative businesses.</div>

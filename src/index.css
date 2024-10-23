@@ -1,7 +1,4 @@
-
-
-@import url('https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,100..800;1,100..800&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,100..800;1,100..800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -24,7 +21,7 @@ body {
 
 .marquee-text-container {
   display: flex;
-  gap: 60px; 
+  gap: 60px;
   animation: marquee 15s linear infinite;
   white-space: nowrap;
 }
@@ -34,8 +31,12 @@ body {
 }
 
 @keyframes marquee {
-  0% {transform: translateX(0%);}
-  100% {transform: translateX(-30%);}
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-30%);
+  }
 }
 
 .path-svg {
@@ -48,22 +49,22 @@ body {
 @keyframes stroke {
   0% {
     fill: rgba(72, 138, 20, 0);
-    stroke: white;
+    stroke: rgb(120, 17, 165);
     stroke-dashoffset: 25%;
     stroke-dasharray: 0 50%;
     stroke-width: 2;
   }
   70% {
     fill: rgba(72, 138, 20, 0);
-    stroke: white;
+    stroke: rgb(120, 17, 165);
   }
   80% {
     fill: rgba(72, 138, 20, 0);
-    stroke: white;
+    stroke: rgb(120, 17, 165);
     stroke-width: 3;
   }
   100% {
-    fill: white;
+    fill: rgb(120, 17, 165);
     stroke: rgba(54, 95, 160, 0);
     stroke-dashoffset: -25%;
     stroke-dasharray: 50% 0;
@@ -72,10 +73,14 @@ body {
 }
 
 .submit-btn {
-  background: linear-gradient(135deg, #7811A5, #2E16BB);
+  background: linear-gradient(135deg, #7811a5, #2e16bb);
 }
 
 .submit-btn:hover {
   background: black;
+}
+
+.main-title {
+  opacity: 0;
 }
 

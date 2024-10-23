@@ -210,13 +210,12 @@ const ProductCard = ({ imgSrc, title, description, path }) => {
       <img src={imgSrc} alt={title} className='grayscale hover:grayscale-0 transition-all duration-500' />
       <h1 className='text-3xl'>{title}</h1>
       <h2 className='text-xl'>{description}</h2>
-      <Link to={path}><button className='bg-purple-800 text-base text-white px-20 mt-5 py-2 self-center rounded-full hover:bg-black'>Download</button></Link>
+      <Link to={path}><button className='bg-purple-800 transition-all duration-300 text-base text-white px-20 mt-5 py-2 self-center rounded-full hover:bg-black'>Download</button></Link>
     </div>
   );
 };
 
 const ProductSection = () => {
-  // Array of product information
   const products = [
     {
       imgSrc: './ProductsImg.jpg',
