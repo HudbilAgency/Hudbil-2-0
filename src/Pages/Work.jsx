@@ -28,11 +28,11 @@ const Work = () => {
             <Navbar />
             <main className='pt-[80px] bg-black'>
                 <section className='pt-20 pb-24'>
-                    <div className='w-full lg:w-3/5 font-normal text-[2rem] xl:text-[50px] xl:w-5/6 leading-tight text-white px-6 md:px-16'>
+                    <div className='w-full lg:w-3/5 font-normal text-[2rem] xl:text-[50px] xl:w-5/6 leading-tight text-white px-6 lg:px-16'>
                         We use industry-leading research, strategic insights and relentless creativity to live our purpose: putting people first.
                     </div>
 
-                    <div className='pl-6 md:pl-16 lg:pl-0 pr-6 md:pr-16 mt-20 flex flex-col lg:flex-row items-start w-full gap-16 lg:gap-12'>
+                    <div className='pl-6 lg:pl-0 pr-6 mt-20 flex flex-col lg:flex-row items-start w-full gap-16 lg:gap-12'>
 
                         <div className='flex items-center justify-center w-full lg:w-1/2 lg:hidden'>
                             <img className='w-full ' src="./our-services.png" />
@@ -253,7 +253,7 @@ const Work = () => {
                     </div>
                 </section>
 
-                <section className='px-6 md:px-16 pb-20'>
+                <section className='px-6 lg:px-16 pb-20'>
 
                     <div className='w-full flex items-start justify-between flex-col lg:flex-row gap-6 mb-20 text-white'>
                         <div className='text-[2.5rem]'>We get results</div>
@@ -331,7 +331,7 @@ const Work = () => {
                     </div>
                 </section>
 
-                <section className='px-6 md:px-16 pb-20'>
+                <section className='px-6 lg:px-16 pb-20'>
 
                     <div className='w-full flex items-start justify-between flex-col lg:flex-row gap-6 pb-20 text-white'>
                         <div className='text-[2.5rem]'>We win awards</div>
@@ -539,7 +539,7 @@ const Work = () => {
                     </div>
                 </section>
 
-                <section className='pb-0 px-6 md:px-16'>
+                <section className='pb-0 px-6 lg:px-16'>
 
                     <div className='w-full flex items-start justify-between flex-col lg:flex-row gap-10 pb-20 text-white'>
                         <div className='text-[2.5rem] lg:w-1/4'>And we partner with the best</div>

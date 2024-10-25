@@ -60,7 +60,7 @@ const Our_products = () => {
     <>
       <Navbar />
       {/* Header */}
-      <section className='pt-36 px-6 md:px-16'>
+      <section className='pt-36 px-6 lg:px-16'>
         <div className='flex flex-col md:flex-row gap-10 items-start justify-between font-normal'>
           <div className='text-4xl xl:text-[50px] leading-10'>OUR PRODUCTS</div>
           <div className='text-2xl md:text-3xl xl:text-[32px] leading-tight md:w-1/2'>Latest thinking from across the world of insights informed by behaviour change, brand, development, customer experience to innovation.</div>
@@ -171,7 +171,7 @@ const Our_products = () => {
         </div>
       </section>
 
-      <section className='w-[90%] mx-auto '>
+      <section className='w-full px-6 lg:px-16'>
 
         {/* images */}
 
@@ -206,7 +206,7 @@ const Our_products = () => {
 
 const ProductCard = ({ imgSrc, title, description, path }) => {
   return (
-    <div className='size-[95%] space-y-5 my-10'>
+    <div className=' space-y-5 my-10'>
       <img src={imgSrc} alt={title} className='grayscale hover:grayscale-0 transition-all duration-500' />
       <h1 className='text-3xl'>{title}</h1>
       <h2 className='text-xl'>{description}</h2>

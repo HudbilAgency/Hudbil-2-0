@@ -1,47 +1,41 @@
-import React , { useState } from 'react'
+import React, { useState } from 'react'
 import Navbar from '../Components/Navbar'
 import ReachUs from '../Components/ReachUs'
 import Footer from '../Components/Footer'
 
 const Our_industry = () => {
 
+    const [dropdownStates, setDropdownStates] = useState(Array(15).fill(false));
 
-   // Manage states for first set of dropdowns (15 cards)
-   const [dropdownStates, setDropdownStates] = useState(Array(15).fill(false));
-    
-   const toggleDropdown = (index) => {
-       const updatedStates = dropdownStates.map((state, i) => i === index ? !state : state);
-       setDropdownStates(updatedStates);
-   };
+    const toggleDropdown = (index) => {
+        const updatedStates = dropdownStates.map((state, i) => i === index ? !state : state);
+        setDropdownStates(updatedStates);
+    };
 
-   // Manage states for second set of dropdowns (15 cards)
-   const [dropdownStates2, setDropdownStates2] = useState(Array(15).fill(false));
+    const [dropdownStates2, setDropdownStates2] = useState(Array(15).fill(false));
 
-   const toggleDropdown2 = (index) => {
-       const updatedStates2 = dropdownStates2.map((state, i) => i === index ? !state : state);
-       setDropdownStates2(updatedStates2);
-   };
+    const toggleDropdown2 = (index) => {
+        const updatedStates2 = dropdownStates2.map((state, i) => i === index ? !state : state);
+        setDropdownStates2(updatedStates2);
+    };
 
-  return (
-    <>
-    < Navbar />
-    {/* Header */}
-    <section className='w-[90%] mx-auto  py-24 space-y-5 lg:py-32 md:flex'>
-        <h1 className='text-3xl md:text-4xl xl:text-[50px] uppercase w-full tracking-wide'>Our industry</h1>
-        <h2 className='text-2xl md:text-3xl xl:text-[32px] leading-tight md:w-3/5'>Our capability and expertise to deliver a range of software design & development solutions is what make us the top software development Agency.</h2>
-    </section>
+    return (
+        <>
+            <Navbar />
+            <section className='w-full px-6 lg:px-16 pb-16 font-normal md:pb-20 lg:pb-28 pt-36 flex flex-col gap-8 justify-between lg:flex-row'>
+                <h1 className='text-4xl xl:text-[50px] uppercase w-full tracking-wide'>Our industry</h1>
+                <h2 className='text-2xl md:text-3xl xl:text-[28px] leading-tight lg:w-3/4'>Our capability and expertise to deliver a range of software design & development solutions is what make us the top software development Agency.</h2>
+            </section>
 
-    <section className='w-[90%] mx-auto mb-20'>
-         < DropdownComponent/>
-    </section>
-   
-    < ReachUs />
-    < Footer />
-    </>
-  )
+            <section className='w-full px-6 lg:px-16 mb-20'>
+                <DropdownComponent />
+            </section>
+
+            <ReachUs />
+            <Footer />
+        </>
+    )
 }
-
-
 
 const DropdownComponent = () => {
     const [dropdownStates2, setDropdownStates2] = useState(Array(15).fill(false));
@@ -54,9 +48,9 @@ const DropdownComponent = () => {
     const dropdownTitles = [
         "Automotive", "BFSI", "Edu Tech", "Energy and Mining", "Fintech",
         "Food & Beverage", "Health Tech", "Insurance", "Manufacturing", "Media and Entertainment",
-        "Travel and Hospitality", "Transportation", "Technology","Retailer", "Real Estate"
+        "Travel and Hospitality", "Transportation", "Technology", "Retailer", "Real Estate"
     ];
-    
+
 
     const dropdownContent = [
         "Advanced Automotive Software Solutions, Website Designing & Development, Mobile App. |The automotive industry is witnessing a sea change. One after the other, technological breakthroughs are causing disruption in the industry. To be the frontrunner, you need to adopt these before your competitors.",
@@ -80,11 +74,11 @@ const DropdownComponent = () => {
         <div>
             {dropdownTitles.map((title, index) => (
                 <div key={index}>
-                    
+
                     <div className="py-4 flex flex-col">
                         <div className="flex items-center  justify-between">
                             <div className="flex items-center text-center justify-between gap-8">
-                                <div className='border rounded-full p-1 w-9 border-gray-400'>{index + 1}</div>
+                                <div className='border rounded-full p-1 w-9 border-[#D8D8D8]'>{index + 1}</div>
                                 <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">{title}</div>
                             </div>
                             <div onClick={() => toggleDropdown2(index)} className="cursor-pointer">
@@ -105,17 +99,17 @@ const DropdownComponent = () => {
                                 </svg>
                             </div>
                         </div>
-                        <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[index] ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                        <div className="text-xl pt-10 w-full lg:w-2/3 ml-auto md:mr-[6%]">
-                            {dropdownContent[index % dropdownContent.length]
-                                .split('|')  // Split the content by the pipe symbol
-                                .map((line, i) => (
-                                    <p key={i} className="whitespace-pre-line mt-5">{line}</p>  // Render each part as a new paragraph
-                                ))
-                            }
+                        <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[index] ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                            <div className="text-xl pt-10 w-full lg:w-2/3 ml-auto md:mr-[6%]">
+                                {dropdownContent[index % dropdownContent.length]
+                                    .split('|') 
+                                    .map((line, i) => (
+                                        <p key={i} className="whitespace-pre-line">{line}</p>
+                                    ))
+                                }
+                            </div>
                         </div>
-                    </div>
-                    <div className="bg-[#6C6C6C] h-[0.5px] w-full mt-6"></div>
+                        <div className="bg-[#D8D8D8] h-[0.5px] w-full mt-6"></div>
                     </div>
                 </div>
             ))}

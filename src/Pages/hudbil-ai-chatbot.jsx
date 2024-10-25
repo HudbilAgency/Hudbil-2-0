@@ -71,20 +71,20 @@ const Hudbil_ai_chatbot = () => {
                     </div>
 
                 </div>
-                <div className='font-normal text-3xl md:text-4xl pt-10 px-6 lg:px-10 lg:hidden leading-snug'>
+                <div className='font-normal text-3xl md:text-4xl pt-10 px-6 lg:px-16 lg:hidden leading-snug'>
                 Hudbil has introduced a AI Chatbot
                 </div>
-                <section className='flex flex-col-reverse lg:flex-row items-start justify-between gap-20 lg:gap-10 py-10 lg:pt-10 lg:pb-20 2xl:pb-28 px-6 lg:px-16'>
+                <section className='flex flex-col-reverse lg:flex-row items-start justify-between gap-10 py-10 lg:pt-10 lg:pb-20 2xl:pb-28 px-6 lg:px-16'>
                     <div className='w-full relative lg:w-2/3 flex items-start h-full gap-0 lg:gap-10 pb-16 lg:pb-0'>
                         <div className='w-full'>
-                            <div className='font-normal xl:text-6xl w-[80%] text-4xl hidden lg:block leading-snug'>
+                        <div className='font-normal xl:text-[3rem] w-[80%] text-4xl hidden lg:block leading-tight'>
                             Hudbil has introduced a AI Chatbot
                             </div>
-                            <div className='flex flex-col gap-8 pt-6 px-2 lg:px-7'>
+                            <div className='flex flex-col gap-8 pt-6'>
 
                                 <div className='leading-5 font-normal text-base'>
                                     <p>Talk to Ella -</p>
-                                    <p>Check us out</p>
+                                    <p><a href="/talk-to-ella" className='hover:text-gray-500 transition-all duration-300'>Check us out</a></p>
                                     </div>
 
                                 <div className='flex flex-col items-start gap-4'>

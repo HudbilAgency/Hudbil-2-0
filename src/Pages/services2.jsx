@@ -57,10 +57,10 @@ const Services2 = () => {
             </div>
             <main className='relative z-20'>
                 <section className='bg-black py-20'>
-                    <div className='md:w-3/5 xl:w-4/5 font-normal text-[2rem] xl:text-[50px] leading-tight text-white px-6 md:px-16'>
+                    <div className='md:w-3/5 xl:w-4/5 font-normal text-[2rem] xl:text-[50px] leading-tight text-white px-6 lg:px-16'>
                         We help you translate any kind of design into functional digital products such as websites, mobile apps, or enterprise solutions through our UI UX design and consulting services Company.
                     </div>
-                    <div className="w-full flex items-start justify-end my-16 px-6 md:px-16">
+                    <div className="w-full flex items-start justify-end my-16 px-6 lg:px-16">
                         <div className='md:w-1/2 flex flex-col items-start gap-8 text-white text-base xl:text-[20px] leading-tight'>
                             <div>We are Hudbil – A creative development agency A hardworking collective with 10 years under our
                                 belt, specialising in brand identity and packaging.</div>
@@ -95,7 +95,7 @@ const Services2 = () => {
                         </div>
                     </div>
 
-                    <div className='px-6 md:px-16 flex flex-col lg:flex-row items-start justify-between w-full gap-12 lg:gap-0'>
+                    <div className='px-6 lg:px-16 flex flex-col lg:flex-row items-start justify-between w-full gap-12 lg:gap-0'>
                         <div className='font-normal text-3xl text-white'>Our Be-Spoken Development Services</div>
 
                         <div className='w-full lg:w-2/3 xl:w-1/2 text-white'>
@@ -323,12 +323,12 @@ const Services2 = () => {
                     />
                 </div>
                 <section className='bg-black py-20'>
-                    <div className='md:w-1/2 xl:w-3/4 font-normal text-[2rem] xl:text-[50px] leading-tight text-white px-6 md:px-16'>
+                    <div className='md:w-1/2 xl:w-3/4 font-normal text-[2rem] xl:text-[50px] leading-tight text-white px-6 lg:px-16'>
                         Our Secret Ingredient?
                         We’d be lying if we said we weren’t playful, imaginative, and offbeat. (wink) Fun fact? The
                         best designs come from that same spark of creativity.
                     </div>
-                    <div className="w-full flex items-start justify-end my-16 px-6 md:px-16">
+                    <div className="w-full flex items-start justify-end my-16 px-6 lg:px-16">
                         <div className='md:w-1/2 flex flex-col items-start gap-8 text-white text-base xl:text-[20px] leading-tight'>
                             <div>Within the creative process, it is essential not to lose sight of the end goal. By keeping the
                                 bigger picture in mind, we can question the purpose and meaning of an idea, asking the
@@ -339,7 +339,7 @@ const Services2 = () => {
                         </div>
                     </div>
 
-                    <div className='px-6 md:px-16 flex flex-col items-start justify-between w-full gap-12 mt-4'>
+                    <div className='px-6 lg:px-16 flex flex-col items-start justify-between w-full gap-12 mt-4'>
                         <div className='font-normal text-2xl text-white'>Our Process</div>
 
                         <div className='w-full text-white'>
@@ -527,7 +527,7 @@ const Services2 = () => {
                         </div>
                     </div>
 
-                    <div className="w-full flex items-start justify-end mt-24 px-6 md:px-16">
+                    <div className="w-full flex items-start justify-end mt-24 px-6 lg:px-16">
                         <div className='md:w-1/2 flex flex-col gap-12 xl:text-[20px] md:gap-8 text-white'>
                             <div>Make your website work your way. We are a Indian web development agency with the technical skill and industry insight to take your website to the next level online. Our passion? Building and developing high-functioning websites which perform perfectly for our clients, their visitors and the search engines too.Speed, usability, behind-the-scenes functionality; better online performance means better business all round. So is your site giving the performance of a lifetime? If it isn’t, it’s time to get serious about intelligent web development. </div>
 
@@ -540,7 +540,7 @@ const Services2 = () => {
                     </div>
                 </section>
                 <section className=' bg-[#2C2C2C] py-20'>
-                    <div className='px-6 md:px-16 flex flex-col lg:flex-row items-start justify-between w-full gap-16 lg:gap-0'>
+                    <div className='px-6 lg:px-16 flex flex-col lg:flex-row items-start justify-between w-full gap-16 lg:gap-0'>
                         <div className='font-normal text-3xl text-white'>The minds behind our success </div>
 
                         <div className='w-full md:w-1/2 text-white flex flex-col items-start gap-20'>

@@ -9,10 +9,10 @@ const Tabloids = () => {
         <>
             <Navbar />
             <main className='pt-[60px]'>
-                <div className='font-normal text-4xl xl:text-[50px] py-16 px-6 md:px-16'>
+                <div className='font-normal text-4xl xl:text-[50px] py-16 px-6 lg:px-16'>
                     Hudbil Tabloids
                 </div>
-                <section className='flex flex-col lg:flex-row items-start gap-16 pl-6 md:pl-16 lg:pl-0 pr-6 md:pr-16 w-full pb-20'>
+                <section className='flex flex-col lg:flex-row items-start gap-16 pl-6 lg:pl-0 pr-6 w-full pb-20'>
                     <div className='flex items-center justify-center w-full lg:w-1/2 lg:hidden'>
                         <img className='w-full ' src="./tabloids.png" />
                     </div>

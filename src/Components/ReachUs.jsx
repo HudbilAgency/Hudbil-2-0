@@ -262,7 +262,7 @@ const ReachUs = () => {
   ];
 
   return (
-    <section className="flex overflow-hidden relative bg-[#7811A5] flex-col justify-center items-center px-6 md:px-16 py-20">
+    <section className="flex overflow-hidden relative bg-[#7811A5] flex-col justify-center items-center px-6 lg:px-16 py-20">
       <div className="w-full max-md:max-w-full">
         <div className="flex max-md:flex-col">
           <div className="flex flex-col w-full md:w-[50vw] max-md:ml-0 max-md:w-full">

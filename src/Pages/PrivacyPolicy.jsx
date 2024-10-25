@@ -319,7 +319,7 @@ const PrivacyPolicy = () => {
                                         <div className='text-2xl'>What categories of personal information do we collect?</div>
                                         <div>We have collected the following categories of personal information in the past twelve (12) months:</div>
                                         <div>
-                                            <div className="border border-black border-opacity-50">
+                                            <div className="border border-b-0 border-black border-opacity-50">
                                                 <div className="flex border-b border-black border-opacity-50">
                                                     <div className="py-2 px-4 md:px-6 text-left border-r border-opacity-50 border-black w-1/2 font-normal text-xl">Category</div>
                                                     <div className="py-2 px-4 md:px-12 text-left w-1/2 font-normal text-xl">Examples</div>

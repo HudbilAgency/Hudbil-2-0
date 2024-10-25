@@ -85,10 +85,10 @@ const AboutUs = () => {
             </div>
             <main className='relative z-20'>
                 <section className='bg-black py-20'>
-                    <div className='md:w-3/5 xl:w-4/5 font-normal text-[2rem] xl:text-[50px] leading-tight text-white px-6 md:px-16'>
+                    <div className='md:w-3/5 xl:w-4/5 font-normal text-[2rem] xl:text-[50px] leading-tight text-white px-6 lg:px-16'>
                         Hudbil is an insights creative design and development agency in India and London, we practice creative ideas that turn heads, draw eyes, distract, disrupt and engage – in short, strategic communication solutions that get attention.
                     </div>
-                    <div className="w-full flex items-start justify-end my-16 px-6 md:px-16">
+                    <div className="w-full flex items-start justify-end my-16 px-6 lg:px-16">
                         <div className='md:w-1/2 flex flex-col items-start gap-8 text-white text-base xl:text-[20px] leading-tight'>
                             <div>We’re not your typical agency guys — and we don’t want to be. We’re here to get the job done: no politics, no suits, no ego. Just results. That said, we’re not robots — we’re a close
                                 knit team of friends and family that love what we do.</div>
@@ -140,7 +140,7 @@ const AboutUs = () => {
                         </div>
                     </div>
 
-                    <div className='px-6 md:px-16 flex flex-col lg:flex-row items-start justify-between w-full gap-12 lg:gap-0'>
+                    <div className='px-6 lg:px-16 flex flex-col lg:flex-row items-start justify-between w-full gap-12 lg:gap-0'>
                         <div className='font-normal text-4xl text-white'>The lenses</div>
 
                         <div className='w-full lg:w-2/3 xl:w-1/2 text-white'>
@@ -336,15 +336,15 @@ const AboutUs = () => {
                 </div>
 
                 <section className='bg-black py-20'>
-                    <div className='md:w-1/2 xl:w-3/4 font-normal text-[2rem] xl:text-[50px] leading-tight text-white px-6 md:px-16'>
+                    <div className='md:w-1/2 xl:w-3/4 font-normal text-[2rem] xl:text-[50px] leading-tight text-white px-6 lg:px-16'>
                         A International team of curious represents a mix of experiences, talents, and skills that enrich our collective creativity.
                     </div>
-                    <div className="w-full flex items-start justify-end my-16 px-6 md:px-16">
+                    <div className="w-full flex items-start justify-end my-16 px-6 lg:px-16">
                         <div className='md:w-1/2 flex flex-col items-start gap-8 text-white text-base xl:text-[20px] leading-tight'>
                             <div>Working hand in hand with our clients, our project are consistently awarded and we are proud of that. This means that we are moving in the right direction Founded in 2012, we have quietly scaled from a one-man band to a powerhouse of exceptional developers and designers, growing solely through the power of word of mouth.</div>
                         </div>
                     </div>
-                    <div className="w-full flex flex-col lg:flex-row gap-12 lg:gap-0 items-start justify-between px-6 md:px-16 mt-20">
+                    <div className="w-full flex flex-col lg:flex-row gap-12 lg:gap-0 items-start justify-between px-6 lg:px-16 mt-20">
                         <div className='text-white font-normal text-2xl'>Our senior team</div>
                         <div className='w-full lg:w-2/3'>
                             <div>

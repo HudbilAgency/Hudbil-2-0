@@ -27,7 +27,7 @@ const ClientSupport = () => {
   return (
     <>
       < Navbar />
-      <main className="flex overflow-hidden flex-col px-16 py-16 bg-white max-md:px-5 max-md:pb-24">
+      <main className="flex overflow-hidden flex-col px-6 lg:px-16 py-16 bg-white max-md:px-5 max-md:pb-24">
         <div className="flex px-10 mt-20 bg-neutral-400 max-md:px-5 max-md:mt-10">
           <div className="flex flex-1 shrink w-full basis-0 min-h-[1px] min-w-[240px] max-md:max-w-full" />
         </div>
@@ -35,7 +35,7 @@ const ClientSupport = () => {
           <div className="flex gap-5 max-md:flex-col">
             <div className="flex flex-col w-[44%] max-md:ml-0 max-md:w-full">
               <div className="flex flex-col text-neutral-950 max-md:mt-10 max-md:max-w-full">
-                <h1 className="self-start text-6xl tracking-wide leading-none max-md:text-4xl">
+                <h1 className="self-start text-4xl md:text-[3rem] xl:text-[4rem] text-[#0B0B0B] leading-tight">
                   Our Teams
                 </h1>
                 <p className="mt-9 text-xl leading-10 max-md:max-w-full">

@@ -159,7 +159,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="flex overflow-hidden flex-col px-6 md:px-16 pt-20 pb-6 bg-neutral-950 relative z-20">
+    <footer className="flex overflow-hidden flex-col px-6 lg:px-16 pt-20 pb-6 bg-[#0B0B0B] relative z-20">
       <nav className="flex flex-col md:flex-row items-start justify-between gap-16 lg:gap-20">
         <div className="flex w-full h-full flex-col xl:flex-row gap-16 md:gap-[84px] lg:gap-[70px] xl:gap-0 md:w-1/3 items-start justify-between">
           <div className="flex flex-col">
@@ -210,10 +210,10 @@ const Footer = () => {
           ))}
         </div>
       </nav>
-      <div className="flex flex-col md:flex-row gap-12 md:gap-0 items-start justify-between mt-20 xl:mt-40 text-sm tracking-wider leading-5 text-zinc-500 w-full">
+      <div className="flex flex-col md:flex-row gap-12 md:gap-0 items-start justify-between mt-12 sm:mt-20 xl:mt-40 text-sm tracking-wider leading-5 text-zinc-500 w-full">
         <div className='w-full md:w-1/3 flex flex-col items-center md:items-start'>
-          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/f4951f80ca1e5237f96f1e87cfd278a72a3d04d15a73cc33588885369364b3ee?placeholderIfAbsent=true&apiKey=7904fd7afaaf4ee2b0837ab86d91b244" className="flex object-contain shrink-0 max-w-full aspect-[1.21] w-[250px]" alt="Hudbil logo" />
-          <h1 className='tracking-tighter text-center w-full md:text-start self-start text-white mx-auto  text-[10px] sm:text-sm md:text-2xl'>Innovation at your fingertips</h1>
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/f4951f80ca1e5237f96f1e87cfd278a72a3d04d15a73cc33588885369364b3ee?placeholderIfAbsent=true&apiKey=7904fd7afaaf4ee2b0837ab86d91b244" className="flex object-contain shrink-0 max-w-full aspect-[1.21] w-[250px] xl:w-[262px]" alt="Hudbil logo" />
+          <h1 className='tracking-tighter text-center w-full lg:text-start self-start text-white mx-auto text-lg md:text-2xl'>Innovation at your fingertips</h1>
         </div>
         <div className="flex flex-col w-full md:w-1/2">
           <p className="max-md:max-w-full text-base text-gray-300 ">

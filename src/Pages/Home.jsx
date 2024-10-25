@@ -477,7 +477,7 @@ const Home = () => {
           </div>
           <section className="w-full lg:w-[50vw] bg-white" ref={sectionRef} >
             <div className="w-full">
-              <div className='mx-6 md:mx-8'>
+              <div className='mx-6 lg:mx-8'>
                 <div className='pt-28 pb-12'>
                   <h1 ref={secondsectionRef} className="text-[48px] font-arial w-full lg:w-[83%] leading-tight text-neutral-950  max-md:text-4xl">
                     We are a DESIGN + BUILD creative agency intent on solving the toughest problems for Brands & organisations face in today's world.
@@ -523,7 +523,7 @@ const Home = () => {
             <div className="flex gap-5 items-center self-center mt-10 ml-52 text-base tracking-wider leading-none text-neutral-950">
             </div>
             <div className="flex flex-col mt-20 w-full max-md:mt-10">
-              <div className="mx-6 md:mx-8">
+              <div className="mx-6 lg:mx-8">
                 <div className="flex  gap-5 max-md:flex-col">
                   {stats.slice(0, 2).map((stat, index) => (
                     <div key={index} className={`flex flex-col ${index === 0 ? 'w-[50%]' : 'w-[45%]'} max-md:ml-0 max-md:w-full`}>
@@ -536,13 +536,13 @@ const Home = () => {
                 </div>
               </div>
               <div className="mt-20 w-full max-md:mt-10">
-                <div className="mx-6 md:mx-8">
+                <div className="mx-6 lg:mx-8">
                   <div className="flex gap-5 max-md:flex-col">
                     {stats.slice(2).map((stat, index) => (
                       <div key={index} className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
-                        <div className="flex flex-col text-center text-neutral-950 max-md:mt-10">
+                        <div className="flex flex-col items-center text-center text-neutral-950 max-md:mt-10">
                           <div className="text-7xl font-arial font-bold tracking-normal leading-none max-md:text-4xl">{stat.value}</div>
-                          <div className="mt-5 font-arial mx-auto w-[50vw] lg:w-[12vw] text-lg tracking-wider leading-6">{stat.description}</div>
+                          <div className="mt-5 w-2/3 font-arial text-lg tracking-wider leading-6 text-center">{stat.description}</div>
                         </div>
                       </div>
                     ))}
@@ -609,7 +609,7 @@ const Home = () => {
 
             {/* What we do section */}
 
-            <section className='mx-6 md:mx-8'>
+            <section className='mx-6 lg:mx-8'>
 
               <h2 className="self-start font-arial mt-20 text-[25px]  tracking-wide text-purple-700">What we do</h2>
               <div className='flex flex-col md:flex-row mt-12 md:items-end justify-between max-w-full w-[780px]'>

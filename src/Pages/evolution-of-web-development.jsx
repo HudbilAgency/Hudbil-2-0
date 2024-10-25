@@ -71,18 +71,18 @@ const Evolution_of_web_development = () => {
                     </div>
 
                 </div>
-                <div className='font-normal text-3xl md:text-4xl pt-10 px-6 lg:px-10 lg:hidden leading-snug'>
+                <div className='font-normal text-3xl md:text-4xl pt-10 px-6 lg:px-16 lg:hidden leading-snug'>
                 The Evolution of Web Development
                 (1995-2000)
                 </div>
-                <section className='flex flex-col-reverse lg:flex-row items-start justify-between gap-20 lg:gap-10 py-10 lg:pt-10 lg:pb-20 2xl:pb-28 px-6 lg:px-16'>
+                <section className='flex flex-col-reverse lg:flex-row items-start justify-between gap-10 py-10 lg:pt-10 lg:pb-20 2xl:pb-28 px-6 lg:px-16'>
                     <div className='w-full relative lg:w-2/3 flex items-start h-full gap-0 lg:gap-10 pb-16 lg:pb-0'>
                         <div className='w-full'>
-                            <div className='font-normal xl:text-5xl w-[80%] text-4xl hidden lg:block leading-snug'>
+                            <div className='font-normal xl:text-[3rem] w-[80%] text-4xl hidden lg:block leading-tight'>
                             The Evolution of Web Development
                             (1995-2000)
                             </div>
-                            <div className='flex flex-col gap-8 pt-6 px-2 lg:px-7'>
+                            <div className='flex flex-col gap-8 pt-6'>
 
                                 <div className='flex flex-col items-start gap-4'>
                                     <div className='leading-7 font-normal text-base flex flex-col gap-4'>
@@ -207,7 +207,7 @@ const Evolution_of_web_development = () => {
                             </div>
                         </div>
 
-                        <div className='w-full border border-[#B0B0B0] border-opacity-75 rounded-lg hidden'>
+                        <div className='w-full border border-[#B0B0B0] border-opacity-75 rounded-lg'>
                             <div className='font-normal text-2xl leading-9 py-6 px-6'>Contents</div>
                             <div className='flex flex-col gap-4 pb-6 text-[#454343]'>
                                 <div className='flex gap-8 items-start px-6 font-normal text-base leading-7'>

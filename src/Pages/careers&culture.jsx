@@ -19,7 +19,7 @@ const Careersculture = () => {
       <Navbar />
       <main className='pt-36 bg-[#BAB5DA]'>
 
-        <section className='px-6 md:px-16'>
+        <section className='px-6 lg:px-16'>
           <div className='text-2xl md:text-4xl xl:text-5xl leading-tight w-full md:w-5/6'>If our story excites you, hop on and let’s craft some sweet experiences together!</div>
           <div className='flex flex-col md:flex-row items-start gap-6 justify-between mt-10'>
             <div className='text-2xl'>Join us</div>
@@ -63,7 +63,7 @@ const Careersculture = () => {
           </div>
         </section>
 
-        <section className='px-6 md:px-16 mb-20'>
+        <section className='px-6 lg:px-16 mb-20'>
           <div className='flex flex-col lg:flex-row items-stretch justify-between gap-16 h-full'>
             <div className='flex flex-col items-start justify-between gap-12 w-full lg:w-auto min-h-full'>
               <div className='text-3xl xl:text-4xl'>What we believe in</div>
@@ -98,7 +98,7 @@ const Careersculture = () => {
 
         <img className='w-full' src="./candc3.png" alt="career & culture" />
 
-        <main className='px-6 md:px-16 py-20 bg-black'>
+        <main className='px-6 lg:px-16 py-20 bg-black'>
 
           <section>
             <div className='flex flex-col gap-6 items-start text-white font-normal'>

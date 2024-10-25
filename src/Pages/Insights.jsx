@@ -60,7 +60,7 @@ const Insights = () => {
 
         <>
             <Navbar />
-            <main className='pt-36 pb-20 px-6 md:px-16'>
+            <main className='pt-36 pb-20 px-6 lg:px-16'>
 
                 <section>
                     <div className='flex flex-col md:flex-row gap-10 items-start justify-between font-normal'>
@@ -179,8 +179,8 @@ const Insights = () => {
 
                         <div className='w-full xl:w-[42%] flex flex-col items-start gap-20'>
 
-                            <div className='flex flex-col items-start gap-5'>
-                                <div><img className="filter grayscale transition duration-500 hover:grayscale-0" src="./mainblogimg1.png" alt="Blog1" /></div>
+                            <div className='flex flex-col items-start gap-5 w-full'>
+                                <div className='w-full'><img className="filter w-full grayscale transition duration-500 hover:grayscale-0" src="./mainblogimg1.png" alt="Blog1" /></div>
                                 <div className='font-medium text-3xl'>Landing pages</div>
                                 <div className='font-medium text-xl'>Increase Conversion Rate From Ad to Landing Page.</div>
                                 <div>
@@ -191,8 +191,8 @@ const Insights = () => {
                                 </div>
                             </div>
 
-                            <div className='flex flex-col items-start gap-5'>
-                                <div><img className="filter grayscale transition duration-500 hover:grayscale-0" src="./mainblogimg2.png" alt="Blog2" /></div>
+                            <div className='flex flex-col items-start gap-5 w-full'>
+                                <div className='w-full'><img className="filter w-full grayscale transition duration-500 hover:grayscale-0" src="./mainblogimg2.png" alt="Blog2" /></div>
                                 <div className='font-medium text-3xl'>Chatbots</div>
                                 <div className='font-medium text-xl'>What Are Chatbots? Everything Business Owners Should Know.</div>
                                 <div>
@@ -203,8 +203,8 @@ const Insights = () => {
                                 </div>
                             </div>
 
-                            <div className='flex flex-col items-start gap-5'>
-                                <div><img className="filter grayscale transition duration-500 hover:grayscale-0" src="./mainblogimg3.jpg" alt="Blog3" /></div>
+                            <div className='flex flex-col items-start gap-5 w-full'>
+                                <div className='w-full'><img className="filter w-full grayscale transition duration-500 hover:grayscale-0" src="./mainblogimg3.jpg" alt="Blog3" /></div>
                                 <div className='font-medium text-3xl'>Business Websites</div>
                                 <div className='font-medium text-xl'>What Are Chatbots? Everything Business Owners Should Know.</div>
                                 <div>
@@ -215,8 +215,8 @@ const Insights = () => {
                                 </div>
                             </div>
 
-                            <div className='flex flex-col items-start gap-5'>
-                                <div><img className="filter grayscale transition duration-500 hover:grayscale-0" src="./mainblogimg4.jpg" alt="Blog4" /></div>
+                            <div className='flex flex-col items-start gap-5 w-full'>
+                                <div className='w-full'><img className="filter w-full grayscale transition duration-500 hover:grayscale-0" src="./mainblogimg4.jpg" alt="Blog4" /></div>
                                 <div className='font-medium text-3xl'>Website Page Speed</div>
                                 <div className='font-medium text-xl'>How to Optimize Your Website for Mobile Page Speed</div>
                                 <div>
@@ -231,7 +231,7 @@ const Insights = () => {
 
                         <div className='w-full xl:w-1/2 flex flex-col items-start gap-20'>
 
-                            <div className='flex flex-col xl:flex-row items-start gap-20 xl:gap-12 justify-between'>
+                            <div className='flex flex-col xl:flex-row items-start gap-20 xl:gap-12 justify-between w-full'>
                                 <div className='bg-[#6813AA] flex flex-col w-full xl:w-1/2 font-normal items-center justify-evenly py-8 px-8 gap-20 text-white'>
                                     <div className='text-3xl'>WEBINAR</div>
                                     <div className='text-lg text-center'>How Important is brand Labels: A better approach to knowing branding and its value.</div>
@@ -240,7 +240,7 @@ const Insights = () => {
 
                                 <Link to="/blogpage-1" className='flex flex-col items-start gap-2 w-full xl:w-1/2'>
                                     <div className='w-full'><img className='w-full' src="./mainblogimg5.png" alt="Blog5" /></div>
-                                    <div className='text-3xl leading-10 mt-3'>The Ultimate Guide for UX Research.</div>
+                                    <div className='text-3xl leading-10 mt-3 w-full'>The Ultimate Guide for UX Research.</div>
                                     <div className='text-[#6A13AA] text-sm'>August 13, 2024</div>
                                 </Link>
                             </div>

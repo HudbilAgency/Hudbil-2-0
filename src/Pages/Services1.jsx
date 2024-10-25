@@ -57,10 +57,10 @@ const Services1 = () => {
             </div>
             <main className='relative z-20'>
                 <section className='bg-black py-20'>
-                    <div className='md:w-3/5 xl:w-4/5 font-normal text-[2rem] xl:text-[50px] leading-tight text-white px-6 md:px-16'>
+                    <div className='md:w-3/5 xl:w-4/5 font-normal text-[2rem] xl:text-[50px] leading-tight text-white px-6 lg:px-16'>
                         We see design as a collaborative endeavour, requiring inputs from all stakeholders in order to create successful and scalable solutions in our UI & UX design and consulting services.
                     </div>
-                    <div className="w-full flex items-start justify-end my-16 px-6 md:px-16">
+                    <div className="w-full flex items-start justify-end my-16 px-6 lg:px-16">
                         <div className='md:w-1/2 flex flex-col items-start gap-8 text-white text-base xl:text-[20px] leading-tight'>
                             <div>We are Hudbil – A creative design agency A hardworking collective with 10 years under our belt, specialising in brand identity and packaging.</div>
                             <div>We’re living in a time when every brand is rethinking who they are and what they stand for; fancy features will only get you so far. We create belief  in the seen and unseen, in the said and unsaid.</div>
@@ -97,7 +97,7 @@ const Services1 = () => {
                         </div>
                     </div>
 
-                    <div className='px-6 md:px-16 flex flex-col lg:flex-row items-start justify-between w-full gap-12 lg:gap-0'>
+                    <div className='px-6 lg:px-16 flex flex-col lg:flex-row items-start justify-between w-full gap-12 lg:gap-0'>
                         <div className='font-normal text-3xl text-white'>Our Creative Designing Services</div>
 
                         <div className='w-full lg:w-2/3 xl:w-1/2 text-white'>
@@ -325,12 +325,12 @@ const Services1 = () => {
                     />
                 </div>
                 <section className='bg-black py-20'>
-                    <div className='md:w-1/2 xl:w-3/4 font-normal text-[2rem] xl:text-[50px] leading-tight text-white px-6 md:px-16'>
+                    <div className='md:w-1/2 xl:w-3/4 font-normal text-[2rem] xl:text-[50px] leading-tight text-white px-6 lg:px-16'>
                         Our Secret Ingredient?
                         We’d be lying if we said we weren’t playful, imaginative, and offbeat. (wink) Fun fact? The
                         best designs come from that same spark of creativity.
                     </div>
-                    <div className="w-full flex items-start justify-end my-16 px-6 md:px-16">
+                    <div className="w-full flex items-start justify-end my-16 px-6 lg:px-16">
                         <div className='md:w-1/2 flex flex-col items-start gap-8 text-white text-base xl:text-[20px] leading-tight'>
                             <div>Within the creative process, it is essential not to lose sight of the end goal. By keeping the
                                 bigger picture in mind, we can question the purpose and meaning of an idea, asking the
@@ -341,7 +341,7 @@ const Services1 = () => {
                         </div>
                     </div>
 
-                    <div className='px-6 md:px-16 flex flex-col items-start justify-between w-full gap-12 mt-4'>
+                    <div className='px-6 lg:px-16 flex flex-col items-start justify-between w-full gap-12 mt-4'>
                         <div className='font-normal text-2xl text-white'>Our Process</div>
 
                         <div className='w-full text-white'>
@@ -529,7 +529,7 @@ const Services1 = () => {
                         </div>
                     </div>
 
-                    <div className="w-full flex items-start justify-end mt-24 px-6 md:px-16">
+                    <div className="w-full flex items-start justify-end mt-24 px-6 lg:px-16">
                         <div className='md:w-1/2 xl:text-[20px] flex flex-col gap-12 md:gap-8 text-white'>
                             <div>Among leading brand agencies India, Hudbil has a reputation for creating distinctive and successful brands. Known as brand transformation specialists, Hudbil’s track record justifies a place among these top-tier brand agencies India. Our expertise is in brand strategy, design and management services for the identity and communications of companies and their products. When it comes to brand agencies India, Hudbil is a full service provider, with an aim of improving business for the companies who engage us.</div>
 
@@ -542,7 +542,7 @@ const Services1 = () => {
                     </div>
                 </section>
                 <section className=' bg-[#2C2C2C] py-20'>
-                    <div className='px-6 md:px-16 flex flex-col lg:flex-row items-start justify-between w-full gap-16 lg:gap-0'>
+                    <div className='px-6 lg:px-16 flex flex-col lg:flex-row items-start justify-between w-full gap-16 lg:gap-0'>
                         <div className='font-normal text-3xl text-white'>The minds behind our success </div>
 
                         <div className='w-full md:w-1/2 text-white flex flex-col items-start gap-20'>

@@ -64,7 +64,7 @@ const TalkToElla = () => {
 
             <div className="-mt-[30vh] lg:-mt-[0vh] min-h-screen box3 bg-black z-20 w-full lg:w-[50vw] px-6 md:px-8 flex flex-col items-center">
 
-              <div className='w-full flex flex-col items-center mt-[6vh] lg:mt-[25vh]'>
+              <div className='w-full flex flex-col items-center mt-[3vh] lg:mt-[25vh]'>
                 <svg
                   className="w-1/2 md:w-2/5 svg-anm"
                   width="340"

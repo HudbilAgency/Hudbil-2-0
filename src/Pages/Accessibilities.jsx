@@ -7,13 +7,13 @@ const Accessibilities = () => {
     <>
       <Navbar />
       <main className='pt-[40px]'>
-        <div className='font-normal text-4xl py-20 px-6 md:px-16'>
+        <div className='font-normal text-4xl py-20 px-6 lg:px-16'>
           Accessibilities
         </div>
         <div className='w-full'>
           <img className='w-full' src="./accessibilities.png" />
         </div>
-        <div className='flex flex-col gap-10 pt-16 pb-20 px-6 md:px-16'>
+        <div className='flex flex-col gap-10 pt-16 pb-20 px-6 lg:px-16'>
           <div className='flex flex-col gap-10'>
             <div className='font-normal text-xl'>WEBSITE DISCLAIMER</div>
             <div className='leading-8 font-normal text-base'>The information provided by Hudbil Private Limited (“we,” “us”, or “our”) on <span>

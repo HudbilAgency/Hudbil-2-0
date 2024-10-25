@@ -269,7 +269,7 @@ const ComingSoon = () => {
     return (
         <>
             <Navbar />
-            <main className='pt-40 pb-20 lg:pb-40 px-6 md:px-16'>
+            <main className='pt-40 pb-20 lg:pb-40 px-6 lg:px-16'>
 
                 <div className="bg-[#6C6C6C] h-[1px] w-full opacity-50 mb-20"></div>
 
