@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 
@@ -7,6 +7,10 @@ const ContactForm = () => {
   const fileInputRef = useRef(null);
   const [fileName, setFileName] = useState("");
   const [file, setFile] = useState(null);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const handleFileInputClick = () => {
     fileInputRef.current.click();
@@ -411,7 +415,7 @@ const ContactForm = () => {
                 </div>
                 <div className='mt-12 flex flex-col gap-12'>
                   <div>Please attach a file if it will support your query</div>
-                  <div className="flex gap-5 items-center">
+                  <div className="flex flex-col sm:flex-row gap-5 items-center">
                     <div onClick={handleFileInputClick} className="px-12 cursor-pointer py-3 my-auto text-center border border-solid border-[#D8D8D8] rounded-full ">
                       Choose File
                     </div>
@@ -435,11 +439,9 @@ const ContactForm = () => {
                       }
                     </div>
                   </div>
-                  <div>
-                    <button className='border rounded-full py-4 px-28 text-white submit-btn mt-4'>
-                      Submit
-                    </button>
-                  </div>
+                  <button className='border w-fit sm:mx-0 mx-auto rounded-full py-4 px-28 text-white submit-btn mt-4'>
+                    Submit
+                  </button>
                 </div>
               </div>
             </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 
@@ -16,6 +16,7 @@ const FormInput = ({ label, type = 'text', placeholder = '' }) => (
 );
 
 const ClientSupport = () => {
+
   const formInputs = [
     { label: "First name*" },
     { label: "Company Name*" },
@@ -24,9 +25,25 @@ const ClientSupport = () => {
     { label: "What is the issue you are facing currently?*" },
   ];
 
+  const fileInputRef = useRef(null);
+  const [fileName, setFileName] = useState("");
+  const [file, setFile] = useState(null);
+
+  const handleFileInputClick = () => {
+    fileInputRef.current.click();
+  };
+
+  const handleFileChange = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      setFileName(file.name);
+      setFile(file);
+    }
+  };
+
   return (
     <>
-      < Navbar />
+      <Navbar />
       <main className="flex overflow-hidden flex-col px-6 lg:px-16 py-16 bg-white max-md:px-5 max-md:pb-24">
         <div className="flex px-10 mt-20 bg-neutral-400 max-md:px-5 max-md:mt-10">
           <div className="flex flex-1 shrink w-full basis-0 min-h-[1px] min-w-[240px] max-md:max-w-full" />
@@ -85,27 +102,36 @@ const ClientSupport = () => {
                       <option>6:30 PM - IST</option>
                     </select>
                   </div>
-                  <label htmlFor="file-upload" className="self-start mt-6 tracking-wider leading-none text-neutral-950">
-                    Please attach a file or screenshot
-                  </label>
-                  <div className="flex gap-2.5 self-start mt-8 text-neutral-950">
-                    <input
-                      type="file"
-                      id="file-upload"
-                      className="sr-only"
-                      aria-label="Choose file to upload"
-                    />
-                    <label
-                      htmlFor="file-upload"
-                      className="overflow-hidden px-11 py-2 text-center border border-solid border-zinc-300 rounded-[2000px] max-md:px-5 cursor-pointer"
-                    >
-                      Choose File
-                    </label>
-                    <span className="my-auto tracking-wider leading-none">No file chosen</span>
+                  <div className='mt-12 flex flex-col gap-12'>
+                    <div>Please attach a file if it will support your query</div>
+                    <div className="flex flex-col sm:flex-row gap-5 items-center">
+                      <div onClick={handleFileInputClick} className="px-12 cursor-pointer py-3 my-auto text-center border border-solid border-[#D8D8D8] rounded-full ">
+                        Choose File
+                      </div>
+                      <input
+                        type="file"
+                        ref={fileInputRef}
+                        onChange={handleFileChange}
+                        style={{ display: "none" }}
+                        accept=".jpg, .jpeg, .png, .pdf, .doc, .svg, .docx, .zip, .rar"
+                      />
+                      <div>
+                        {fileName ? (
+                          <span className="text-base font-normal text-black">
+                            {fileName}
+                          </span>
+                        ) : (
+                          <span className="text-base font-normal text-black">
+                            No file chosen
+                          </span>
+                        )
+                        }
+                      </div>
+                    </div>
+                    <button className='border w-fit sm:mx-0 mx-auto rounded-full py-4 px-28 text-white submit-btn mt-4'>
+                      Submit
+                    </button>
                   </div>
-                  <button className='border rounded-full w-fit py-4 px-28 text-white submit-btn mt-14'>
-                    Submit
-                  </button>
                 </div>
               </form>
             </div>

@@ -342,7 +342,7 @@ const QuickLinks = () => {
                   </label>
                 </div>
                 <div className='mt-12'>
-                  <button className='border rounded-full py-4 px-28 text-white submit-btn mt-4'>
+                  <button className='border rounded-full py-4 px-16 sm:px-28 text-white submit-btn mt-4'>
                     Send to reach us
                   </button>
                 </div>

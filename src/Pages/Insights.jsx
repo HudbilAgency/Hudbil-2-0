@@ -235,7 +235,7 @@ const Insights = () => {
                                 <div className='bg-[#6813AA] flex flex-col w-full xl:w-1/2 font-normal items-center justify-evenly py-8 px-8 gap-20 text-white'>
                                     <div className='text-3xl'>WEBINAR</div>
                                     <div className='text-lg text-center'>How Important is brand Labels: A better approach to knowing branding and its value.</div>
-                                    <div className='w-full text-center border rounded-full py-2 mb-3 border-white'>Coming Soon</div>
+                                    <a href="/coming-soon" className='w-full text-center border rounded-full py-2 mb-3 border-white'>Coming Soon</a>
                                 </div>
 
                                 <Link to="/blogpage-1" className='flex flex-col items-start gap-2 w-full xl:w-1/2'>

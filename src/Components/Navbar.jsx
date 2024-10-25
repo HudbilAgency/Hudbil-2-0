@@ -355,8 +355,6 @@ const Navbar = () => {
       }
     );
 
-    // Cleanup function to stop the animation if needed
-
   }, []);
 
   const buttonImgRef = useRef(null);
@@ -425,6 +423,10 @@ const Navbar = () => {
   }, [location.pathname]);
 
   const pathnameimg = location.pathname;
+
+  useEffect(() => {
+    document.body.style.overflow = menuIcon ? 'auto' : 'hidden';
+  }, [menuIcon]);
 
   return (
     <nav>
@@ -516,18 +518,12 @@ const Navbar = () => {
         <div
           className={`fixed w-[100vw] inset-0 bg-black z-[900] duration-1000 hidden lg:block transition-all ease-in-out ${menuIcon ? "opacity-0 hidden pointer-events-none" : "opacity-50"
             }`}
-          onTransitionEnd={() => {
-            document.body.style.overflow = menuIcon ? 'auto' : 'hidden';
-          }}
         />
       )}
 
       <div
         className={`fixed top-0 left-0 h-dvh z-[999] bg-black transition-transform duration-1000 ease-in-out 
     ${menuIcon ? 'translate-x-[-100%]' : 'translate-x-0'} w-[100vw] lg:w-[50vw]`}
-        onTransitionEnd={() => {
-          document.body.style.overflow = menuIcon ? 'auto' : 'hidden';
-        }}
       >
         <div className={`flex flex-col h-dvh w-[100vw] lg:w-[50vw]`}>
           <nav className="h-dvh flex flex-col items-start justify-between w-full font-bold text-white bg-black pt-[110px] pb-[25px] md:pb-[30px] xl:pb-[20px]">
