@@ -361,72 +361,72 @@ const QuickLinks = () => {
                   <div className=' leading-normal w-full md:w-2/5 2xl:w-1/3 mt-2'>We are creative designing UI/UX Agency based in India. We help our clients with 360 degree designing solutions, from branding, logo designing, website designing, mobile application designing, UI/UX Designing and brochure designing, event designing etc.</div>
                 </div>
                 <div className='px-6 lg:px-16 pb-[6px]'>
-                  <div className='flex items-start justify-between'>
-                    <div className='w-2/5 2xl:w-1/3'>
+                  <div className='flex items-stretch justify-between h-full'>
+                    <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
                       <div className='py-6'>UI/UX Designing Agency in Bangalore</div>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
-                    <div className='w-2/5 2xl:w-1/3'>
+                    <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
                       <div className='py-6'>UI/UX Designing Agency in Pune</div>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
                   </div>
-                  <div className='flex items-start justify-between'>
-                    <div className='w-2/5 2xl:w-1/3'>
+                  <div className='flex items-stretch justify-between h-full'>
+                    <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
                       <div className='py-6'>UI/UX Designing Agency in Hyderabad</div>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
-                    <div className='w-2/5 2xl:w-1/3'>
+                    <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
                       <div className='py-6'>UI/UX Designing Agency in Kolkata</div>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
                   </div>
-                  <div className='flex items-start justify-between'>
-                    <div className='w-2/5 2xl:w-1/3'>
+                  <div className='flex items-stretch justify-between h-full'>
+                    <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
                       <div className='py-6'>UI/UX Designing Agency in Ahmedabad</div>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
-                    <div className='w-2/5 2xl:w-1/3'>
+                    <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
                       <div className='py-6'>UI/UX Designing Agency in Chennai</div>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
                   </div>
-                  <div className='flex items-start justify-between'>
-                    <div className='w-2/5 2xl:w-1/3'>
+                  <div className='flex items-stretch justify-between h-full'>
+                    <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
                       <div className='py-6'>UI/UX Designing Agency in Jaipur</div>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
-                    <div className='w-2/5 2xl:w-1/3'>
+                    <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
                       <div className='py-6'>UI/UX Designing Agency in Surat</div>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
                   </div>
-                  <div className='flex items-start justify-between'>
-                    <div className='w-2/5 2xl:w-1/3'>
+                  <div className='flex items-stretch justify-between h-full'>
+                    <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
                       <div className='py-6'>UI/UX Designing Agency in Bhopal</div>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
-                    <div className='w-2/5 2xl:w-1/3'>
+                    <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
                       <div className='py-6'>UI/UX Designing Agency in Kochi</div>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
                   </div>
-                  <div className='flex items-start justify-between'>
-                    <div className='w-2/5 2xl:w-1/3'>
+                  <div className='flex items-stretch justify-between h-full'>
+                    <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
                       <div className='py-6'>UI/UX Designing Agency in Coimbatore</div>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
-                    <div className='w-2/5 2xl:w-1/3'>
+                    <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
                       <div className='py-6'>UI/UX Designing Agency in Mumbai</div>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
                   </div>
-                  <div className='flex items-start justify-between'>
-                    <div className='w-2/5 2xl:w-1/3'>
+                  <div className='flex items-stretch justify-between h-full'>
+                    <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
                       <div className='py-6'>UI/UX Designing Agency in Patna</div>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
-                    <div className='w-2/5 2xl:w-1/3'>
+                    <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
                       <div className='py-6'>UI/UX Designing Agency in Delhi</div>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
@@ -438,72 +438,72 @@ const QuickLinks = () => {
                   <div className=' leading-normal w-full md:w-2/5 2xl:w-1/3 mt-2'>We are a Creative Website & Mobile Application, Software Development Agency— We are an award-winning global design agency with 10+ years of industry excellence.</div>
                 </div>
                 <div className='px-6 lg:px-16'>
-                  <div className='flex items-start justify-between'>
-                    <div className='w-2/5 2xl:w-1/3'>
+                  <div className='flex items-stretch justify-between h-full'>
+                    <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
                       <div className='py-6'>Website Development Agency in Bangalore</div>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
-                    <div className='w-2/5 2xl:w-1/3'>
+                    <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
                       <div className='py-6'>Website Development Agency in Pune</div>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
                   </div>
-                  <div className='flex items-start justify-between'>
-                    <div className='w-2/5 2xl:w-1/3'>
+                  <div className='flex items-stretch justify-between h-full'>
+                    <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
                       <div className='py-6'>Website Development Agency in Hyderabad</div>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
-                    <div className='w-2/5 2xl:w-1/3'>
+                    <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
                       <div className='py-6'>Website Development Agency in Kolkata</div>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
                   </div>
-                  <div className='flex items-start justify-between'>
-                    <div className='w-2/5 2xl:w-1/3'>
+                  <div className='flex items-stretch justify-between h-full'>
+                    <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
                       <div className='py-6'>Website Development Agency in Ahmedabad</div>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
-                    <div className='w-2/5 2xl:w-1/3'>
+                    <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
                       <div className='py-6'>Website Development Agency in Chennai</div>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
                   </div>
-                  <div className='flex items-start justify-between'>
-                    <div className='w-2/5 2xl:w-1/3'>
+                  <div className='flex items-stretch justify-between h-full'>
+                    <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
                       <div className='py-6'>Website Development Agency in Jaipur</div>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
-                    <div className='w-2/5 2xl:w-1/3'>
+                    <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
                       <div className='py-6'>Website Development Agency in Surat</div>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
                   </div>
-                  <div className='flex items-start justify-between'>
-                    <div className='w-2/5 2xl:w-1/3'>
+                  <div className='flex items-stretch justify-between h-full'>
+                    <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
                       <div className='py-6'>Website Development Agency in Bhopal</div>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
-                    <div className='w-2/5 2xl:w-1/3'>
+                    <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
                       <div className='py-6'>Website Development Agency in Kochi</div>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
                   </div>
-                  <div className='flex items-start justify-between'>
-                    <div className='w-2/5 2xl:w-1/3'>
+                  <div className='flex items-stretch justify-between h-full'>
+                    <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
                       <div className='py-6'>Website Development Agency in Coimbatore</div>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
-                    <div className='w-2/5 2xl:w-1/3'>
+                    <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
                       <div className='py-6'>Website Development Agency in Mumbai</div>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
                   </div>
-                  <div className='flex items-start justify-between'>
-                    <div className='w-2/5 2xl:w-1/3'>
+                  <div className='flex items-stretch justify-between h-full'>
+                    <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
                       <div className='py-6'>Website Development Agency in Patna</div>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
-                    <div className='w-2/5 2xl:w-1/3'>
+                    <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
                       <div className='py-6'>Website Development Agency in Delhi</div>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
