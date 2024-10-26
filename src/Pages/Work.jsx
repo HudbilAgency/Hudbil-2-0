@@ -1,7 +1,11 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import ReachUs from '../Components/ReachUs';
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
+import { gsap } from 'gsap';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Work = () => {
 
@@ -22,6 +26,24 @@ const Work = () => {
             lastHoveredIndex.current = isHovered ? index : null;
         }
     };
+
+    useEffect(() => {
+        gsap.utils.toArray('.toggle-point').forEach((element) => {
+            gsap.fromTo(
+                element,
+                { opacity: 0 },
+                {
+                    opacity: 1,
+                    duration: 1,
+                    scrollTrigger: {
+                        trigger: element,
+                        start: 'top 80%',
+                        toggleActions: 'play none none none',
+                    },
+                }
+            );
+        });
+    }, []);
 
     return (
         <>
@@ -46,7 +68,7 @@ const Work = () => {
                                 Our Work
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
-                            <div className="py-12 flex flex-col">
+                            <div className="py-12 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between">
                                     <div onClick={() => toggleDropdown(0)} className="flex flex-col items-start justify-between cursor-pointer gap-6">
                                         <div className="font-normal text-4xl leading-tight">Developed International Website of Jef Techno</div>
@@ -73,7 +95,7 @@ const Work = () => {
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
-                            <div className="py-12 flex flex-col">
+                            <div className="py-12 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between">
                                     <div onClick={() => toggleDropdown(1)} className="flex flex-col items-start justify-between cursor-pointer gap-6">
                                         <div className="font-normal text-4xl leading-tight">Design & Developed International Website, logo, branding</div>
@@ -108,7 +130,7 @@ const Work = () => {
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
-                            <div className="py-12 flex flex-col">
+                            <div className="py-12 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between">
                                     <div onClick={() => toggleDropdown(2)} className="flex flex-col items-start justify-between cursor-pointer gap-6">
                                         <div className="font-normal text-4xl leading-tight">Campaigns, Internal Communications, Event Design, Bid Design</div>
@@ -145,7 +167,7 @@ const Work = () => {
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
-                            <div className="py-12 flex flex-col">
+                            <div className="py-12 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between">
                                     <div onClick={() => toggleDropdown(3)} className="flex flex-col items-start justify-between cursor-pointer gap-6">
                                         <div className="font-normal text-4xl leading-tight">Brand Identity, Digital Strategy, UX, UI, Web Development, Web Maintenance, Social Media Strategy, Social Media Management, Paid Social Advertising</div>
@@ -171,7 +193,7 @@ const Work = () => {
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
-                            <div className="py-12 flex flex-col">
+                            <div className="py-12 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between">
                                     <div onClick={() => toggleDropdown(4)} className="flex flex-col items-start justify-between cursor-pointer gap-6">
                                         <div className="font-normal text-4xl leading-tight">Brand Strategy, Brand Identity, UX, UI, Web Design, Web Development, Web Maintenance</div>
@@ -199,7 +221,7 @@ const Work = () => {
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
-                            <div className="py-12 flex flex-col">
+                            <div className="py-12 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between">
                                     <div onClick={() => toggleDropdown(5)} className="flex flex-col items-start justify-between cursor-pointer gap-6">
                                         <div className="font-normal text-4xl leading-tight">Design and development of website and mobile app Content Strategy, Video, Social Media Strategy, Content Creation, Social Media Management, Paid Social Advertising</div>
@@ -342,7 +364,7 @@ const Work = () => {
 
                         <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
 
-                        <div className='flex flex-col md:flex-row items-start justify-between gap-8 py-4'>
+                        <div className='flex flex-col md:flex-row items-start justify-between gap-8 py-4 toggle-point'>
                             <div className='text-xl'>2023</div>
                             <div className='w-full md:w-3/4'>
                                 <div className='flex items-start md:items-center justify-between gap-12 w-full '>
@@ -368,7 +390,7 @@ const Work = () => {
                         </div>
                         <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
 
-                        <div className='flex flex-col md:flex-row items-start justify-between gap-8 py-4'>
+                        <div className='flex flex-col md:flex-row items-start justify-between gap-8 py-4 toggle-point'>
                             <div className='text-xl'>2022</div>
                             <div className='w-full md:w-3/4'>
                                 <div className='flex items-start md:items-center justify-between gap-12 w-full '>
@@ -389,7 +411,7 @@ const Work = () => {
                         </div>
                         <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
 
-                        <div className='flex flex-col md:flex-row items-start justify-between gap-8 py-4'>
+                        <div className='flex flex-col md:flex-row items-start justify-between gap-8 py-4 toggle-point'>
                             <div className='text-xl'>2021</div>
                             <div className='w-full md:w-3/4'>
                                 <div className='flex items-start md:items-center justify-between gap-12 w-full '>
@@ -400,7 +422,7 @@ const Work = () => {
                         </div>
                         <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
 
-                        <div className='flex flex-col md:flex-row items-start justify-between gap-8 py-4'>
+                        <div className='flex flex-col md:flex-row items-start justify-between gap-8 py-4 toggle-point'>
                             <div className='text-xl'>2020</div>
                             <div className='w-full md:w-3/4'>
                                 <div className='flex items-start md:items-center justify-between gap-12 w-full '>
@@ -411,7 +433,7 @@ const Work = () => {
                         </div>
                         <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
 
-                        <div className='flex flex-col md:flex-row items-start justify-between gap-8 py-4'>
+                        <div className='flex flex-col md:flex-row items-start justify-between gap-8 py-4 toggle-point'>
                             <div className='text-xl'>2018</div>
                             <div className='w-full md:w-3/4'>
                                 <div className='flex items-start md:items-center justify-between gap-12 w-full '>
@@ -437,7 +459,7 @@ const Work = () => {
                         </div>
                         <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
 
-                        <div className='flex flex-col md:flex-row items-start justify-between gap-8 py-4'>
+                        <div className='flex flex-col md:flex-row items-start justify-between gap-8 py-4 toggle-point'>
                             <div className='text-xl'>2017</div>
                             <div className='w-full md:w-3/4'>
                                 <div className='flex items-start md:items-center justify-between gap-12 w-full '>
@@ -453,7 +475,7 @@ const Work = () => {
                         </div>
                         <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
 
-                        <div className='flex flex-col md:flex-row items-start justify-between gap-8 py-4'>
+                        <div className='flex flex-col md:flex-row items-start justify-between gap-8 py-4 toggle-point'>
                             <div className='text-xl'>2016</div>
                             <div className='w-full md:w-3/4'>
                                 <div className='flex items-start md:items-center justify-between gap-12 w-full '>
@@ -489,7 +511,7 @@ const Work = () => {
                         </div>
                         <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
 
-                        <div className='flex flex-col md:flex-row items-start justify-between gap-8 py-4'>
+                        <div className='flex flex-col md:flex-row items-start justify-between gap-8 py-4 toggle-point'>
                             <div className='text-xl'>2015</div>
                             <div className='w-full md:w-3/4'>
                                 <div className='flex items-start md:items-center justify-between gap-12 w-full '>
@@ -500,7 +522,7 @@ const Work = () => {
                         </div>
                         <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
 
-                        <div className='flex flex-col md:flex-row items-start justify-between gap-8 py-4'>
+                        <div className='flex flex-col md:flex-row items-start justify-between gap-8 py-4 toggle-point'>
                             <div className='text-xl'>2014</div>
                             <div className='w-full md:w-3/4'>
                                 <div className='flex items-start md:items-center justify-between gap-12 w-full '>
@@ -526,7 +548,7 @@ const Work = () => {
                         </div>
                         <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
 
-                        <div className='flex flex-col md:flex-row items-start justify-between gap-8 py-4'>
+                        <div className='flex flex-col md:flex-row items-start justify-between gap-8 py-4 toggle-point'>
                             <div className='text-xl'>2013</div>
                             <div className='w-full md:w-3/4'>
                                 <div className='flex items-start md:items-center justify-between gap-12 w-full '>

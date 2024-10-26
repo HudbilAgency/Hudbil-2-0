@@ -1,7 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import Navbar from '../Components/Navbar'
 import ReachUs from '../Components/ReachUs'
 import Footer from '../Components/Footer'
+import { gsap } from 'gsap';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Our_industry = () => {
 
@@ -18,6 +22,24 @@ const Our_industry = () => {
         const updatedStates2 = dropdownStates2.map((state, i) => i === index ? !state : state);
         setDropdownStates2(updatedStates2);
     };
+
+    useEffect(() => {
+        gsap.utils.toArray('.toggle-point').forEach((element) => {
+            gsap.fromTo(
+                element,
+                { opacity: 0 },
+                {
+                    opacity: 1,
+                    duration: 1,
+                    scrollTrigger: {
+                        trigger: element,
+                        start: 'top 80%',
+                        toggleActions: 'play none none none',
+                    },
+                }
+            );
+        });
+    }, []);
 
     return (
         <>
@@ -75,7 +97,7 @@ const DropdownComponent = () => {
             {dropdownTitles.map((title, index) => (
                 <div key={index}>
 
-                    <div className="py-4 flex flex-col">
+                    <div className="py-4 flex flex-col toggle-point">
                         <div className="flex items-center  justify-between">
                             <div className="flex items-center text-center justify-between gap-8">
                                 <div className='border rounded-full p-1 w-9 border-[#D8D8D8]'>{index + 1}</div>

@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+gsap.registerPlugin(ScrollTrigger);
+
 const Services2 = () => {
 
     const [dropdownStates, setDropdownStates] = useState([false, false, false, false, false, false]);
@@ -24,8 +26,6 @@ const Services2 = () => {
 
     useEffect(() => {
 
-        gsap.registerPlugin(ScrollTrigger);
-
         const tl8 = gsap.timeline({
             scrollTrigger: {
                 trigger: "#moving-img",
@@ -37,7 +37,25 @@ const Services2 = () => {
 
         tl8.fromTo(".scale-anm", { scale: 0.6 }, { scale: 1, ease: "linear" });
 
-    }, [])
+    }, []);
+
+    useEffect(() => {
+        gsap.utils.toArray('.toggle-point').forEach((element) => {
+            gsap.fromTo(
+                element,
+                { opacity: 0 },
+                {
+                    opacity: 1,
+                    duration: 1,
+                    scrollTrigger: {
+                        trigger: element,
+                        start: 'top 80%',
+                        toggleActions: 'play none none none',
+                    },
+                }
+            );
+        });
+    }, []);
 
     return (
         <>
@@ -100,7 +118,7 @@ const Services2 = () => {
 
                         <div className='w-full lg:w-2/3 xl:w-1/2 text-white'>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
-                            <div className="py-10 flex flex-col">
+                            <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center justify-between gap-6">
                                         <div><img src="./point31.png" alt="point" /></div>
@@ -134,7 +152,7 @@ const Services2 = () => {
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
-                            <div className="py-10 flex flex-col">
+                            <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center justify-between gap-6">
                                         <div><img src="./point32.png" alt="point" /></div>
@@ -168,7 +186,7 @@ const Services2 = () => {
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
-                            <div className="py-10 flex flex-col">
+                            <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center justify-between gap-6">
                                         <div><img src="./point33.png" alt="point" /></div>
@@ -202,7 +220,7 @@ const Services2 = () => {
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
-                            <div className="py-10 flex flex-col">
+                            <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center justify-between gap-6">
                                         <div><img src="./point34.png" alt="point" /></div>
@@ -236,7 +254,7 @@ const Services2 = () => {
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
-                            <div className="py-10 flex flex-col">
+                            <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center justify-between gap-6">
                                         <div><img src="./point35.png" alt="point" /></div>
@@ -270,7 +288,7 @@ const Services2 = () => {
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
-                            <div className="py-10 flex flex-col">
+                            <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center justify-between gap-6">
                                         <div><img src="./point36.png" alt="point" /></div>
@@ -344,7 +362,7 @@ const Services2 = () => {
 
                         <div className='w-full text-white'>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
-                            <div className="py-8 flex flex-col">
+                            <div className="py-8 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center justify-between gap-8">
                                         <div className='border border-white rounded-full px-3 py-1'>1</div>
@@ -374,7 +392,7 @@ const Services2 = () => {
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
-                            <div className="py-8 flex flex-col">
+                            <div className="py-8 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center justify-between gap-8">
                                         <div className='border border-white rounded-full px-3 py-1'>2</div>
@@ -404,7 +422,7 @@ const Services2 = () => {
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
-                            <div className="py-8 flex flex-col">
+                            <div className="py-8 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center justify-between gap-8">
                                         <div className='border border-white rounded-full px-3 py-1'>3</div>
@@ -434,7 +452,7 @@ const Services2 = () => {
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
-                            <div className="py-8 flex flex-col">
+                            <div className="py-8 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center justify-between gap-8">
                                         <div className='border border-white rounded-full px-3 py-1'>4</div>
@@ -464,7 +482,7 @@ const Services2 = () => {
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
-                            <div className="py-8 flex flex-col">
+                            <div className="py-8 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center justify-between gap-8">
                                         <div className='border border-white rounded-full px-3 py-1'>5</div>
@@ -494,7 +512,7 @@ const Services2 = () => {
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
-                            <div className="py-8 flex flex-col">
+                            <div className="py-8 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center justify-between gap-8">
                                         <div className='border border-white rounded-full px-3 py-1'>6</div>

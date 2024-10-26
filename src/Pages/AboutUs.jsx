@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import ReachUs from '../Components/ReachUs';
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from 'react-router-dom';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const AboutUs = () => {
 
@@ -17,20 +19,57 @@ const AboutUs = () => {
 
     useEffect(() => {
 
-        gsap.registerPlugin(ScrollTrigger);
-
-        const tl8 = gsap.timeline({
+        const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: "#moving-img",
                 start: "top 70%",
-                end: "bottom center",
                 once: true
             },
         });
 
-        tl8.fromTo(".scale-anm", { scale: 0.6 }, { scale: 1, ease: "linear" });
+        tl.fromTo(".scale-anm", { scale: 0.6 }, { scale: 1, ease: "linear" });
 
-    }, [])
+    }, []);
+
+    const teamRefs = useRef([]);
+
+    useEffect(() => {
+        teamRefs.current.forEach((ref, index) => {
+            if (ref) {
+                gsap.fromTo(
+                    ref,
+                    { opacity: 0 },
+                    {
+                        opacity: 1,
+                        duration: 1,
+                        scrollTrigger: {
+                            trigger: ref,
+                            start: 'top 80%',
+                            toggleActions: 'play none none none',
+                        },
+                    }
+                );
+            }
+        });
+    }, []);
+
+    useEffect(() => {
+        gsap.utils.toArray('.toggle-point').forEach((element) => {
+            gsap.fromTo(
+                element,
+                { opacity: 0 },
+                {
+                    opacity: 1,
+                    duration: 1,
+                    scrollTrigger: {
+                        trigger: element,
+                        start: 'top 80%',
+                        toggleActions: 'play none none none',
+                    },
+                }
+            );
+        });
+    }, []);
 
     const teamMembers = [
         { name: "Ms. Husna Zar", role: "Co-Founder and Managing Director", image: "https://cdn.builder.io/api/v1/image/assets/TEMP/0400ef3defb4412846f96cdbcc6dfad916ad863f212c8bd073c33a6840521557?placeholderIfAbsent=true&apiKey=ec02862acd164f0aad3ceef0d2a999c3" },
@@ -145,7 +184,7 @@ const AboutUs = () => {
 
                         <div className='w-full lg:w-2/3 xl:w-1/2 text-white'>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
-                            <div className="py-10 flex flex-col">
+                            <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center justify-between gap-6">
                                         <div><img src="./point1.png" alt="point" /></div>
@@ -173,7 +212,7 @@ const AboutUs = () => {
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
-                            <div className="py-10 flex flex-col">
+                            <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center justify-between gap-6">
                                         <div><img src="./point2.png" alt="point" /></div>
@@ -203,7 +242,7 @@ const AboutUs = () => {
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
-                            <div className="py-10 flex flex-col">
+                            <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center justify-between gap-6">
                                         <div><img src="./point3.png" alt="point" /></div>
@@ -231,7 +270,7 @@ const AboutUs = () => {
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
-                            <div className="py-10 flex flex-col">
+                            <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center justify-between gap-6">
                                         <div><img src="./point4.png" alt="point" /></div>
@@ -259,7 +298,7 @@ const AboutUs = () => {
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
-                            <div className="py-10 flex flex-col">
+                            <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center justify-between gap-6">
                                         <div><img src="./point5.png" alt="point" /></div>
@@ -287,7 +326,7 @@ const AboutUs = () => {
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
-                            <div className="py-10 flex flex-col">
+                            <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center justify-between gap-6">
                                         <div><img src="./point6.png" alt="point" /></div>
@@ -349,13 +388,17 @@ const AboutUs = () => {
                         <div className='w-full lg:w-2/3'>
                             <div>
                                 {teamMembers.map((member, index) => (
-                                    <div key={index} className='flex items-center gap-7 w-full'>
+                                    <div
+                                        key={index}
+                                        className='flex items-center gap-7 w-full team-member'
+                                        ref={el => (teamRefs.current[index] = el)}
+                                    >
                                         <div className="w-14 h-12">
                                             <img src={member.image} alt={member.name} className="w-full h-full rounded-full object-cover" />
                                         </div>
                                         <div className='w-full'>
                                             {index === 0 && <div className='w-full h-[1px] bg-[#6C6C6C]'></div>}
-                                            <div className='flex items-start gap-5 sm:gap-8 md:gap-28 tracking-wider  text-white py-6'>
+                                            <div className='flex items-start gap-5 sm:gap-8 md:gap-28 tracking-wider text-white py-6'>
                                                 <div className='w-[27vw] lg:w-[15vw]'>{member.name}</div>
                                                 <div>{member.role}</div>
                                             </div>
