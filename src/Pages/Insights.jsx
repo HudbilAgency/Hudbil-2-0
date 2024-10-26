@@ -239,7 +239,7 @@ const Insights = () => {
                                 </div>
 
                                 <Link to="/blogpage-1" className='flex flex-col items-start gap-2 w-full xl:w-1/2'>
-                                    <div className='w-full'><img className='w-full' src="./mainblogimg5.png" alt="Blog5" /></div>
+                                    <div className='w-full'><img className='w-full grayscale transition duration-500 hover:grayscale-0' src="./mainblogimg5.png" alt="Blog1" /></div>
                                     <div className='text-3xl leading-10 mt-3 w-full'>The Ultimate Guide for UX Research.</div>
                                     <div className='text-[#6A13AA] text-sm'>August 13, 2024</div>
                                 </Link>
@@ -247,13 +247,13 @@ const Insights = () => {
 
                             <div className='flex flex-col xl:flex-row items-start gap-20 xl:gap-12 justify-between w-full'>
                                 <Link to="/blogpage-2" className='flex flex-col items-start gap-2 w-full xl:w-1/2'>
-                                    <div className='w-full'><img className='w-full' src="./mainblogimg6.png" alt="Blog6" /></div>
+                                    <div className='w-full'><img className='w-full grayscale transition duration-500 hover:grayscale-0' src="./mainblogimg6.png" alt="Blog2" /></div>
                                     <div className='text-3xl leading-10 mt-3'>The Evolution Of The Graphic Design.</div>
                                     <div className='text-[#6A13AA] text-sm'>August 13, 2024</div>
                                 </Link>
 
                                 <Link to="/blogpage-3" className='flex flex-col items-start gap-2 w-full xl:w-1/2'>
-                                    <div className='w-full'><img className='w-full' src="./mainblogimg7.png" alt="Blog7" /></div>
+                                    <div className='w-full'><img className='w-full grayscale transition duration-500 hover:grayscale-0' src="./mainblogimg7.png" alt="Blog3" /></div>
                                     <div className='text-3xl leading-10 mt-3'>Brand’s identity design aspects in Brief.</div>
                                     <div className='text-[#6A13AA] text-sm'>August 6, 2024</div>
                                 </Link>
@@ -261,13 +261,13 @@ const Insights = () => {
 
                             <div className='flex flex-col xl:flex-row items-start gap-20 xl:gap-12 justify-between'>
                                 <Link to="/blogpage-4" className='flex flex-col items-start gap-2 w-full xl:w-1/2'>
-                                    <div className='w-full'><img className='w-full' src="./mainblogimg8.png" alt="Blog8" /></div>
+                                    <div className='w-full'><img className='w-full grayscale transition duration-500 hover:grayscale-0' src="./mainblogimg8.png" alt="Blog4" /></div>
                                     <div className='text-3xl leading-10 mt-3'>Business Firms Suffer Because of Not Finding right B2B design Agency.</div>
                                     <div className='text-[#6A13AA] text-sm'>July 4, 2024</div>
                                 </Link>
 
                                 <Link to="/blogpage-5" className='flex flex-col items-start gap-2 w-full xl:w-1/2'>
-                                    <div className='w-full'><img className='w-full' src="./mainblogimg9.png" alt="Blog9" /></div>
+                                    <div className='w-full'><img className='w-full grayscale transition duration-500 hover:grayscale-0' src="./mainblogimg9.png" alt="Blog5" /></div>
                                     <div className='text-3xl leading-10 mt-3'>User Experience Design and its Importance for Businesses.</div>
                                     <div className='text-[#6A13AA] text-sm'>June 24, 2024</div>
                                 </Link>

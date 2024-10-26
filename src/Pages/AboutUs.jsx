@@ -44,7 +44,7 @@ const AboutUs = () => {
                         duration: 1,
                         scrollTrigger: {
                             trigger: ref,
-                            start: 'top 80%',
+                            start: 'top 70%',
                             toggleActions: 'play none none none',
                         },
                     }
@@ -63,7 +63,7 @@ const AboutUs = () => {
                     duration: 1,
                     scrollTrigger: {
                         trigger: element,
-                        start: 'top 80%',
+                        start: 'top 70%',
                         toggleActions: 'play none none none',
                     },
                 }
@@ -149,7 +149,7 @@ const AboutUs = () => {
                         <div className="relative">
                             <img className='mx-auto' src="./about-us2.png" alt="About Us" />
                             <div className="absolute w-full inset-0 flex justify-center items-center overflow-hidden">
-                                <div className="marquee-text-container font-normal text-2xl uppercase">
+                                <div className="marquee-text-container font-normal text-[1.7rem] uppercase">
                                     <div className="marquee-text text-white">Innovation at your fingertips</div>
                                     <div className="marquee-text text-white">SPARK IGNITING</div>
                                     <div className="marquee-text text-white">BETWEEN AUDIENCES</div>

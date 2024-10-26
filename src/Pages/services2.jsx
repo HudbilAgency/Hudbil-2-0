@@ -49,7 +49,7 @@ const Services2 = () => {
                     duration: 1,
                     scrollTrigger: {
                         trigger: element,
-                        start: 'top 80%',
+                        start: 'top 70%',
                         toggleActions: 'play none none none',
                     },
                 }
@@ -95,7 +95,7 @@ const Services2 = () => {
                         <div className="relative">
                             <img className='mx-auto transition duration-500 grayscale hover:grayscale-0' src="./sp21.png" alt="Be-Spoken Development Services" />
                             <div className="absolute w-full inset-0 pointer-events-none flex justify-center items-center overflow-hidden">
-                                <div className="marquee-text-container font-normal text-2xl uppercase">
+                                <div className="marquee-text-container font-normal text-[1.7rem] uppercase">
                                     <div className="marquee-text text-white">Deliver your product at pace</div>
                                     <div className="marquee-text text-white">Guarantee value for users</div>
                                     <div className="marquee-text text-white">competition with the latest technology</div>

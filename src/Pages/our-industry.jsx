@@ -33,7 +33,7 @@ const Our_industry = () => {
                     duration: 1,
                     scrollTrigger: {
                         trigger: element,
-                        start: 'top 80%',
+                        start: 'top 70%',
                         toggleActions: 'play none none none',
                     },
                 }

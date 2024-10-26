@@ -49,7 +49,7 @@ const Services1 = () => {
                     duration: 1,
                     scrollTrigger: {
                         trigger: element,
-                        start: 'top 80%',
+                        start: 'top 70%',
                         toggleActions: 'play none none none',
                     },
                 }
@@ -94,7 +94,7 @@ const Services1 = () => {
                         <div className="relative">
                             <img className='mx-auto transition duration-500 grayscale hover:grayscale-0' src="./sp11.png" alt="Creative Designing Services" />
                             <div className="absolute w-full inset-0 pointer-events-none flex justify-center items-center overflow-hidden">
-                                <div className="marquee-text-container font-normal text-2xl uppercase">
+                                <div className="marquee-text-container font-normal text-[1.7rem] uppercase">
                                     <div className="marquee-text text-white">Together we create belief</div>
                                     <div className="marquee-text text-white">We exist to help brands think differently</div>
                                     <div className="marquee-text text-white">Our vision is to build an agency that’s revered</div>

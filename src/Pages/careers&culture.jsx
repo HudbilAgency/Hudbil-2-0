@@ -1,7 +1,11 @@
-import React, {useRef} from 'react';
+import React, {useRef, useEffect} from 'react';
 import Footer from '../Components/Footer';
 import Navbar from '../Components/Navbar';
 import ReachUs from '../Components/ReachUs';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Careersculture = () => {
 
@@ -13,8 +17,25 @@ const Careersculture = () => {
     }
   };
 
-  return (
+  useEffect(() => {
+    gsap.utils.toArray('.toggle-point').forEach((element) => {
+        gsap.fromTo(
+            element,
+            { opacity: 0 },
+            {
+                opacity: 1,
+                duration: 1,
+                scrollTrigger: {
+                    trigger: element,
+                    start: 'top 70%',
+                    toggleActions: 'play none none none',
+                },
+            }
+        );
+    });
+}, []);
 
+  return (
     <>
       <Navbar />
       <main className='pt-36 bg-[#BAB5DA]'>
@@ -41,7 +62,7 @@ const Careersculture = () => {
             <div className="relative">
               <img className='mx-auto' src="./candc1.png" alt="career & culture" />
               <div className="absolute w-full inset-0 flex justify-center items-center overflow-hidden">
-                <div className="marquee-text-container font-normal text-2xl uppercase text-black">
+                <div className="marquee-text-container font-normal text-[1.7rem] uppercase text-black">
                   <div className="marquee-text">We’re a tribe of ARCHITECTS</div>
                   <div className="marquee-text">We’re a tribe of WRITERS</div>
                   <div className="marquee-text">We’re a tribe of ARTISTS</div>
@@ -73,22 +94,22 @@ const Careersculture = () => {
             </div>
             <div className='w-full lg:w-1/2 xl:w-2/5'>
               <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
-              <div className="py-10 flex flex-col items-start gap-6">
+              <div className="py-10 toggle-point flex flex-col items-start gap-6">
                 <div className="font-normal text-2xl md:text-3xl leading-9">Cultural Diversity</div>
                 <div>Our designers come from diverse backgrounds, contributing to the culture in their own unique ways.</div>
               </div>
               <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
-              <div className="py-10 flex flex-col items-start gap-6">
+              <div className="py-10 toggle-point flex flex-col items-start gap-6">
                 <div className="font-normal text-2xl md:text-3xl leading-9">Learning and Growth</div>
                 <div>We believe in multi-dimensional growth & encourage participation in all aspects of the work we do.</div>
               </div>
               <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
-              <div className="py-10 flex flex-col items-start gap-6">
+              <div className="py-10 toggle-point flex flex-col items-start gap-6">
                 <div className="font-normal text-2xl md:text-3xl leading-9">Passion and Respect</div>
                 <div>Our passion for design comes from respecting diverse perspectives and embracing the unexplored.</div>
               </div>
               <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
-              <div className="pt-10 flex flex-col items-start gap-6">
+              <div className="pt-10 toggle-point flex flex-col items-start gap-6">
                 <div className="font-normal text-2xl md:text-3xl leading-9">Here for a Good Time</div>
                 <div>We are just as serious about food, coffee, drinks and enjoying ourselves, as we are about design.</div>
               </div>
@@ -127,7 +148,7 @@ const Careersculture = () => {
             <div className='text-white text-3xl uppercase'>Current Openings</div>
             <div className='mt-10 text-white'>
               <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
-              <div className='py-8 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-20'>
+              <div className='py-8 toggle-point flex flex-col md:flex-row items-center justify-between gap-8 md:gap-20'>
                 <div className='w-full md:w-1/2 lg:w-2/5 xl:w-1/3 flex items-center justify-between'>
                   <div>Design Service</div>
                   <div>Branding Lead</div>
@@ -166,7 +187,7 @@ const Careersculture = () => {
                 </div>
               </div>
               <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
-              <div className='py-8 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-20'>
+              <div className='py-8 toggle-point flex flex-col md:flex-row items-center justify-between gap-8 md:gap-20'>
                 <div className='w-full md:w-1/2 lg:w-2/5 xl:w-1/3 flex items-center justify-between'>
                   <div>Design Service</div>
                   <div>Sr. UX Research</div>
@@ -205,7 +226,7 @@ const Careersculture = () => {
                 </div>
               </div>
               <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
-              <div className='py-8 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-20'>
+              <div className='py-8 toggle-point flex flex-col md:flex-row items-center justify-between gap-8 md:gap-20'>
                 <div className='w-full md:w-1/2 lg:w-2/5 xl:w-1/3 flex items-center justify-between'>
                   <div>Client Service</div>
                   <div>Project Manager</div>
@@ -244,7 +265,7 @@ const Careersculture = () => {
                 </div>
               </div>
               <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
-              <div className='py-8 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-20'>
+              <div className='py-8 toggle-point flex flex-col md:flex-row items-center justify-between gap-8 md:gap-20'>
                 <div className='w-full md:w-1/2 lg:w-2/5 xl:w-1/3 flex items-center justify-between'>
                   <div>Technology</div>
                   <div>iOS Developer</div>
@@ -283,7 +304,7 @@ const Careersculture = () => {
                 </div>
               </div>
               <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
-              <div className='py-8 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-20'>
+              <div className='py-8 toggle-point flex flex-col md:flex-row items-center justify-between gap-8 md:gap-20'>
                 <div className='w-full md:w-1/2 lg:w-2/5 xl:w-1/3 flex items-center justify-between'>
                   <div>Technology</div>
                   <div>Full Stack Developer</div>

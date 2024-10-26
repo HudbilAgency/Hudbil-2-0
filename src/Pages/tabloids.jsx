@@ -1,10 +1,33 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import ReachUs from '../Components/ReachUs'
 import { Link } from 'react-router-dom';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Tabloids = () => {
+
+    useEffect(() => {
+        gsap.utils.toArray('.toggle-point').forEach((element) => {
+            gsap.fromTo(
+                element,
+                { opacity: 0 },
+                {
+                    opacity: 1,
+                    duration: 1,
+                    scrollTrigger: {
+                        trigger: element,
+                        start: 'top 70%',
+                        toggleActions: 'play none none none',
+                    },
+                }
+            );
+        });
+    }, []);
+
     return (
         <>
             <Navbar />
@@ -21,24 +44,24 @@ const Tabloids = () => {
                     </div>
                     <div className='w-full lg:w-1/2'>
                         <div className='w-full bg-[#BDBBBB] h-[1px]'></div>
-                        <div className='flex flex-col items-start gap-4 py-16'>
+                        <div className='flex flex-col items-start gap-4 py-16 toggle-point'>
                             <div className='flex items-center gap-4'>
                                 <div className='bg-black rounded-full p-1'></div>
                                 <div className='text-sm'>June 24, 2024</div>
                             </div>
-                           <Link to={'/hudbil-tabloids/kalacode-investment'}> <div className='text-4xl font-normal leading-10 xl:w-2/3'>Kalacode Nears deal to raise 20 Millions By Pinenest Solutions India.</div></Link>
+                            <Link to={'/hudbil-tabloids/kalacode-investment'}> <div className='text-4xl font-normal leading-10 xl:w-2/3'>Kalacode Nears deal to raise 20 Millions By Pinenest Solutions India.</div></Link>
                         </div>
                         <div className='w-full bg-[#BDBBBB] h-[1px]'></div>
-                        <div className='flex flex-col items-start gap-4 py-16'>
+                        <div className='flex flex-col items-start gap-4 py-16 toggle-point'>
                             <div className='flex items-center gap-4'>
                                 <div className='bg-black rounded-full p-1'></div>
                                 <div className='text-sm'>May 17, 2024</div>
                             </div>
-                           <Link to={'/hudbil-tabloids/hudbil-ai-chatbot'}><div className='text-4xl font-normal leading-10 xl:w-2/3'>Hudbil has introduced a AI Chatbot
-                           Talk to Ella - Check us out </div></Link>
+                            <Link to={'/hudbil-tabloids/hudbil-ai-chatbot'}><div className='text-4xl font-normal leading-10 xl:w-2/3'>Hudbil has introduced a AI Chatbot
+                                Talk to Ella - Check us out </div></Link>
                         </div>
                         <div className='w-full bg-[#BDBBBB] h-[1px]'></div>
-                        <div className='flex flex-col items-start gap-4 py-16'>
+                        <div className='flex flex-col items-start gap-4 py-16 toggle-point'>
                             <div className='flex items-center gap-4'>
                                 <div className='bg-black rounded-full p-1'></div>
                                 <div className='text-sm'>May 2, 2024</div>
@@ -46,15 +69,15 @@ const Tabloids = () => {
                             <Link to={'/hudbil-tabloids/coltfox-digital-marketing-agency'}><div className='text-4xl font-normal leading-10 xl:w-2/3'>Hudbil welcomes Coltfox of new hires; bolstering expertise across marketing segment</div></Link>
                         </div>
                         <div className='w-full bg-[#BDBBBB] h-[1px]'></div>
-                        <div className='flex flex-col items-start gap-4 py-16'>
+                        <div className='flex flex-col items-start gap-4 py-16 toggle-point'>
                             <div className='flex items-center gap-4'>
                                 <div className='bg-black rounded-full p-1'></div>
                                 <div className='text-sm'>December 17, 2017</div>
                             </div>
-                           <Link to={'/hudbil-tabloids/hudbil-start-up-india-awards'}><div className='text-4xl font-normal leading-10 xl:w-2/3'>Hudbil wins Start-up India Award Asia-Pacific Start-up India Awards 2017</div></Link>
+                            <Link to={'/hudbil-tabloids/hudbil-start-up-india-awards'}><div className='text-4xl font-normal leading-10 xl:w-2/3'>Hudbil wins Start-up India Award Asia-Pacific Start-up India Awards 2017</div></Link>
                         </div>
                         <div className='w-full bg-[#BDBBBB] h-[1px]'></div>
-                        <div className='flex flex-col items-start gap-4 py-16'>
+                        <div className='flex flex-col items-start gap-4 py-16 toggle-point'>
                             <div className='flex items-center gap-4'>
                                 <div className='bg-black rounded-full p-1'></div>
                                 <div className='text-sm'>October 15, 2017</div>
@@ -63,13 +86,13 @@ const Tabloids = () => {
                         </div>
                         <div className='w-full bg-[#BDBBBB] h-[1px]'></div>
                         <div className='w-full bg-[#BDBBBB] h-[1px]'></div>
-                        <div className='flex flex-col items-start gap-4 py-16'>
+                        <div className='flex flex-col items-start gap-4 py-16 toggle-point'>
                             <div className='flex items-center gap-4'>
                                 <div className='bg-black rounded-full p-1'></div>
                                 <div className='text-sm'>October 15, 2017</div>
                             </div>
                             <Link to={'/hudbil-tabloids/evolution-of-web-development'}><div className='text-4xl font-normal leading-10 xl:w-2/3'>The Evolution of Web Development
-                            (1995-2000)</div></Link>
+                                (1995-2000)</div></Link>
                         </div>
                         <div className='w-full bg-[#BDBBBB] h-[1px]'></div>
                         <button className="button self-end flex flex-row justify-between px-12 py-3 mt-24 mb-2 mx-auto leading-none bg-black text-white gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-all duration-300">

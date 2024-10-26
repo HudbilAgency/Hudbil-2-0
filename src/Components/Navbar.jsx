@@ -98,19 +98,19 @@ const Navbar = () => {
 
   const footerLinks = [
     {
-      title: { name: 'Portfolio', url: '/our-work' },
+      title: { name: 'Contact Us', url: '/contact-us' },
       items: [
-        { name: 'Hudbil Tabloids', url: '/hudbil-tabloids' },
+        { name: 'Clients Support', url: '/client-support' },
         { name: 'Careers & Culture', url: '/careers-culture' },
-        { name: 'Clients Support', url: '/client-support' }
+        { name: 'Hudbil Tabloids', url: '/hudbil-tabloids' }
       ]
     },
     {
-      title: { name: 'Contact Us', url: '/contact-us' },
+      title: { name: 'Facebook', url: 'https://www.facebook.com/people/Hudbil/61550971184539/?mibextid=LQQJ4d' },
       items: [
-        { name: 'Facebook', url: 'https://www.facebook.com/people/Hudbil/61550971184539/?mibextid=LQQJ4d' },
         { name: 'Linkedin', url: 'https://www.linkedin.com/company/hudbil-private-limited/posts/?feedView=all' },
-        { name: 'Instagram', url: 'https://www.instagram.com/hudbil_com?igsh=aTV3bnMxY3piOHlm' }
+        { name: 'Instagram', url: 'https://www.instagram.com/hudbil_com?igsh=aTV3bnMxY3piOHlm' },
+        { name: 'Behance', url: 'https://www.behance.net/hudbil' },
       ]
     }
   ];
@@ -539,7 +539,8 @@ const Navbar = () => {
             <footer className="w-5/6 md:w-3/5 lg:w-full lg:gap-20 2xl:gap-28 lg:justify-normal flex items-center justify-between px-6 lg:px-16">
               {footerLinks.map((column, index) => (
                 <div key={index} className="flex flex-col items-start text-sm 2xl:text-base font-medium leading-none">
-                  <Link className="hover:text-gray-500 transition-all duration-300" to={column.title.url}>
+                  <Link className="hover:text-gray-500 transition-all duration-300" to={column.title.url} target={['Facebook'].includes(column.title.name) ? '_blank' : '_self'}
+                    rel={['Facebook', 'Linkedin', 'Instagram', 'Behance'].includes(column.title.name) ? 'noopener noreferrer' : undefined}>
                     <h3>{column.title.name}</h3>
                   </Link>
                   <ul className="mt-4">
@@ -547,8 +548,8 @@ const Navbar = () => {
                       <li key={itemIndex} className={itemIndex > 0 ? 'mt-4 hover:text-gray-500 transition-all duration-300' : 'hover:text-gray-500 transition-all duration-300'}>
                         <a
                           href={item.url}
-                          target={['Facebook', 'Linkedin', 'Instagram'].includes(item.name) ? '_blank' : '_self'}
-                          rel={['Facebook', 'Linkedin', 'Instagram'].includes(item.name) ? 'noopener noreferrer' : undefined}
+                          target={['Linkedin', 'Instagram', 'Behance'].includes(item.name) ? '_blank' : '_self'}
+                          rel={['Linkedin', 'Instagram', 'Behance'].includes(item.name) ? 'noopener noreferrer' : undefined}
                         >
                           {item.name}
                         </a>
