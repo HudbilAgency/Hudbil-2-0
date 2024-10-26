@@ -479,7 +479,7 @@ const TalkToElla = () => {
                 </p>
               </button>
               <button
-                className="text-xs box2 sm:text-[10px] text-white border rounded-full font-bold py-2 px-4"
+                className="text-xs box1 sm:text-[10px] text-white border rounded-full font-bold py-2 px-4"
                 onClick={() => {
                   handleButtonClickPreBuilt("I have a Project");
                   respondToUserInput(
