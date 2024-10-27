@@ -5,6 +5,7 @@ import Footer from '../Components/Footer'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -108,6 +109,24 @@ const AboutUs = () => {
 
     return (
         <>
+            <Helmet>
+                <title>About Us | Leading Creative Design & Development Agency</title>
+                <meta name="description" content="Discover the passion behind our creative design and development agency. Our dedicated team combines innovation and expertise to deliver exceptional digital solutions tailored to elevate your brand."></meta>
+                <meta property="og:url" content="https://www.hudbil.com/about-us"></meta>
+                <meta name="keywords" content="UI/UX Designing Company in Bangalore, Website Development Agency in Bangalore,Mobile Application Development Company in Bangalore, UI/UX for mobile application Agency in Bangalore, branding designing Company in Bangalore, website designing Company in Bangalore, UI UX development Company in Bangalore, Web Design Company in Bangalore"></meta>
+                <meta name="og:description" content="About Us - Originated in 2017, Hudbil Private Limited is today an ISO certified UI/UX designing, website, mobile application and software development company."></meta>
+                <meta name="og:site_name" content="UI/UX Designing Company in Bangalore India | Website Development Agency in Bangalore | Top 10 Website Developement Agencies in Bangalore Review | Branding and designing Agency | Software development Agency"></meta>
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-3795MKLFX0"></script>
+                <script>
+                    {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config', 'G-3795MKLFX0');
+                   `}
+                </script>
+            </Helmet>
             <Navbar />
             <div className="w-full h-[70vh] lg:h-[80vh] bg-no-repeat bg-cover bg-center">
                 <video

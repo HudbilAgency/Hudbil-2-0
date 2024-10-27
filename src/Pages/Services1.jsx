@@ -5,6 +5,7 @@ import Footer from '../Components/Footer'
 import { Link } from 'react-router-dom';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Helmet } from 'react-helmet';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -59,6 +60,24 @@ const Services1 = () => {
 
     return (
         <>
+            <Helmet>
+                <title>Creative Design Services in India | Innovative Branding & Digital Solutions</title>
+                <meta name="description" content="Elevate your brand with our creative design services. From unique branding and eye-catching graphics to website design and digital solutions, our expert team brings your vision to life. Contact us for tailored, high-impact design!"></meta>
+                <meta property="og:url" content="www.hudbil.com/services/creative-designing-agency"></meta>
+                <meta name="keywords" content="Creative Design Services,Branding and Identity Design,Graphic Design Solutions,Custom Logo Design,Digital and Print Design,Website and UX/UI Design,Social Media Graphics,Visual Branding Services,Packaging Design Solutions,Innovative,Design Agency,Custom Illustration Services,Marketing Design Services,Creative Content Design,Digital Branding Services,Professional Design Services"></meta>
+                <meta name="og:description" content="Bring your brand to life with our comprehensive creative design services. We provide impactful graphic design, website design, and branding solutions tailored"></meta>
+                <meta name="og:site_name" content="UI/UX Designing Company in Bangalore India | Website Development Agency in Bangalore | Top 10 Website Developement Agencies in Bangalore Review | Branding and designing Agency | Software development Agency"></meta>
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-3795MKLFX0"></script>
+                <script>
+                    {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config', 'G-3795MKLFX0');
+                    `}
+                </script>
+            </Helmet>
             <Navbar />
             <div className="w-full h-[70vh] lg:h-[80vh] bg-no-repeat bg-cover bg-center">
                 <video
@@ -85,14 +104,14 @@ const Services1 = () => {
                             <div>
                                 <button className="button self-end flex flex-row justify-between px-12 py-3 mx-auto leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-all duration-300">
                                     <h1 className='text-base mt-1 font-arial'>Get In Touch</h1>
-                                    <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                                    <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                                 </button>
                             </div>
                         </div>
                     </div>
                     <div className="relative my-24">
                         <div className="relative">
-                            <img className='mx-auto transition duration-500 grayscale hover:grayscale-0' src="./sp11.png" alt="Creative Designing Services" />
+                            <img className='mx-auto transition duration-500 grayscale hover:grayscale-0' src="/sp11.png" alt="Creative Designing Services" />
                             <div className="absolute w-full inset-0 pointer-events-none flex justify-center items-center overflow-hidden">
                                 <div className="marquee-text-container font-normal text-[1.7rem] uppercase">
                                     <div className="marquee-text text-white">Together we create belief</div>
@@ -123,7 +142,7 @@ const Services1 = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div><img src="./point11.png" alt="point" /></div>
+                                        <div><img src="/point11.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Digital Branding</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(0)} className="cursor-pointer">
@@ -148,7 +167,7 @@ const Services1 = () => {
                                     <div>
                                         <button className="button self-end flex flex-row justify-between px-5 py-3 leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px]  hover:bg-[#7811A5] transition-all duration-300">
                                             <h1 className='text-base mt-1 font-arial'>Know More</h1>
-                                            <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                                            <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                                         </button>
                                     </div>
                                 </div>
@@ -157,7 +176,7 @@ const Services1 = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div><img src="./point12.png" alt="point" /></div>
+                                        <div><img src="/point12.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">User Interface Design</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(1)} className="cursor-pointer">
@@ -182,7 +201,7 @@ const Services1 = () => {
                                     <div>
                                         <button className="button self-end flex flex-row justify-between px-5 py-3 leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px]  hover:bg-[#7811A5] transition-all duration-300">
                                             <h1 className='text-base mt-1 font-arial'>Know More</h1>
-                                            <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                                            <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                                         </button>
                                     </div>
                                 </div>
@@ -191,7 +210,7 @@ const Services1 = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div><img src="./point13.png" alt="point" /></div>
+                                        <div><img src="/point13.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">User Experience Design</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(2)} className="cursor-pointer">
@@ -216,7 +235,7 @@ const Services1 = () => {
                                     <div>
                                         <button className="button self-end flex flex-row justify-between px-5 py-3 leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px]  hover:bg-[#7811A5] transition-all duration-300">
                                             <h1 className='text-base mt-1 font-arial'>Know More</h1>
-                                            <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                                            <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                                         </button>
                                     </div>
                                 </div>
@@ -225,7 +244,7 @@ const Services1 = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div><img src="./point14.png" alt="point" /></div>
+                                        <div><img src="/point14.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Interaction Design</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(3)} className="cursor-pointer">
@@ -250,7 +269,7 @@ const Services1 = () => {
                                     <div>
                                         <button className="button self-end flex flex-row justify-between px-5 py-3 leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px]  hover:bg-[#7811A5] transition-all duration-300">
                                             <h1 className='text-base mt-1 font-arial'>Know More</h1>
-                                            <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                                            <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                                         </button>
                                     </div>
                                 </div>
@@ -259,7 +278,7 @@ const Services1 = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div><img src="./point15.png" alt="point" /></div>
+                                        <div><img src="/point15.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Digital Prototyping</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(4)} className="cursor-pointer">
@@ -284,7 +303,7 @@ const Services1 = () => {
                                     <div>
                                         <button className="button self-end flex flex-row justify-between px-5 py-3 leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px]  hover:bg-[#7811A5] transition-all duration-300">
                                             <h1 className='text-base mt-1 font-arial'>Know More</h1>
-                                            <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                                            <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                                         </button>
                                     </div>
                                 </div>
@@ -293,7 +312,7 @@ const Services1 = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div><img src="./point16.png" alt="point" /></div>
+                                        <div><img src="/point16.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Digital Illustrations</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(0)} className="cursor-pointer">
@@ -318,7 +337,7 @@ const Services1 = () => {
                                     <div>
                                         <button className="button self-end flex flex-row justify-between px-5 py-3 leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px]  hover:bg-[#7811A5] transition-all duration-300">
                                             <h1 className='text-base mt-1 font-arial'>Know More</h1>
-                                            <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                                            <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                                         </button>
                                     </div>
                                 </div>
@@ -327,10 +346,10 @@ const Services1 = () => {
                             <div className='text-[#917D7D] font-normal text-sm py-12 w-full md:w-5/6'>
                                 Get in touch to find out how our team enjoys tinkering, most importantly empower your organisation.
                             </div>
-                            <Link to="/services2">
+                            <Link to="/services/development-agency">
                                 <button className="button self-end flex flex-row justify-between px-12 py-3 mb-4 leading-none hover:bg-white hover:text-black text-white gap-8 rounded-[1000px] max-md:px-5 bg-[#7811A5] transition-all duration-300">
                                     <h1 className='text-base mt-1 font-arial'>Next service</h1>
-                                    <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                                    <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                                 </button>
                             </Link>
                         </div>
@@ -338,7 +357,7 @@ const Services1 = () => {
                 </section>
                 <div id="moving-img" className='bg-black'>
                     <img
-                        src="./sp12.png"
+                        src="/sp12.png"
                         className="scale-anm w-full"
                     />
                 </div>
@@ -553,7 +572,7 @@ const Services1 = () => {
 
                             <button className="button self-end flex flex-row justify-between mt-6 mb-4 px-12 py-3 ml-auto leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-all duration-300">
                                 <h1 className='text-base mt-1 font-arial'>Work With hudbil</h1>
-                                <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                                <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                             </button>
 
                         </div>
@@ -567,7 +586,7 @@ const Services1 = () => {
 
                             <div className='flex flex-col items-start gap-8'>
                                 <div className='flex items-center gap-5'>
-                                    <div><img src="./sp2logo1.png" /></div>
+                                    <div><img src="/sp2logo1.png" /></div>
                                     <div className='flex flex-col items-start gap-1'>
                                         <div>Thomas Cook</div>
                                         <div className='text-[#838383] text-sm'>Oinvest</div>
@@ -585,7 +604,7 @@ const Services1 = () => {
 
                             <div className='flex flex-col items-start gap-8'>
                                 <div className='flex items-center gap-5'>
-                                    <div><img src="./sp2logo2.png" /></div>
+                                    <div><img src="/sp2logo2.png" /></div>
                                     <div className='flex flex-col items-start gap-1'>
                                         <div>David Manson</div>
                                         <div className='text-[#838383] text-sm'>Bluemail</div>

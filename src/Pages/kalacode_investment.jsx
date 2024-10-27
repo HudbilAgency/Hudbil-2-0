@@ -4,7 +4,7 @@ import ReachUsBlog from '../Components/ReachUsBlog';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer'
 import ReachUs from '../Components/ReachUs';
-
+import { Helmet } from 'react-helmet';
 
 const Kalacode_investment = () => {
 
@@ -15,46 +15,26 @@ const Kalacode_investment = () => {
         });
     };
 
-    const images = [
-        {
-            src: "/BlogPageImg/bp-21.png",
-            alt: "Blog-1",
-            content: "One-time actions to regular routines: A guide to strengthening habits",
-            date: "August 13, 2024",
-            routepath: "#",
-        },
-        {
-            src: "/BlogPageImg/bp-22.png",
-            alt: "Blog-2",
-            content: "Ripple effect: Connecting with the connected",
-            date: "June 19, 2024",
-            routepath: "#",
-        },
-        {
-            src: "/BlogPageImg/bp-23.png",
-            alt: "Blog-3",
-            content: "Podcast: In or out? How brands can look like insiders",
-            date: "June 10, 2024",
-            routepath: "#",
-        },
-        {
-            src: "/BlogPageImg/bp-24.png",
-            alt: "Blog-4",
-            content: "Sustainability - who cares?",
-            date: "November 29, 2023",
-            routepath: "#",
-        },
-        {
-            src: "/BlogPageImg/bp-24.png",
-            alt: "Blog-5",
-            content: "Sustainability - who cares?",
-            date: "November 29, 2023",
-            routepath: "#",
-        }
-    ];
-
     return (
         <>
+            <Helmet>
+                <title>AR & VR Development Agency | Innovative Solutions Across Industries</title>
+                <meta name="description" content="Discover how our new startup is revolutionizing various industries through cutting-edge AR and VR development solutions tailored to meet unique business needs."></meta>
+                <meta property="og:url" content="www.hudbil.com/tabloids/kalacode-investment"></meta>
+                <meta name="keywords" content=" AR development, VR development, Augmented reality solutions, Virtual reality services, Immersive experiences, Industry-specific AR/VR, Innovative technology, Business transformation, Client engagement, AR/VR industry applications"></meta>
+                <meta name="og:description" content="the impact of AR and VR technologies across various sectors and industries."></meta>
+                <meta name="og:site_name" content="UI/UX Designing Company in Bangalore India | Website Development Agency in Bangalore | Top 10 Website Developement Agencies in Bangalore Review | Branding and designing Agency | Software development Agency"></meta>
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-3795MKLFX0"></script>
+                <script>
+                    {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config', 'G-3795MKLFX0');
+                    `}
+                </script>
+            </Helmet>
             <Navbar />
             <main className='pt-[40px]'>
                 <div className='flex items-center gap-3 pt-20 px-6 lg:px-16'>
@@ -65,23 +45,23 @@ const Kalacode_investment = () => {
                         </svg>
                     </div>
                     <div className='font-normal text-sm text-[#838383]'>
-                    <a href='/hudbil-tabloids'>Return to Tabloids</a>
-                        
+                        <a href='/tabloids'>Return to Tabloids</a>
+
                     </div>
 
                 </div>
                 <div className='font-normal text-3xl md:text-4xl pt-10 px-6 lg:px-16 lg:hidden leading-snug'>
-                Kalacode Nears deal to raise 
-                20 Millions By Pinenest Solutions 
-                India. 
+                    Kalacode Nears deal to raise
+                    20 Millions By Pinenest Solutions
+                    India.
                 </div>
                 <section className='flex flex-col-reverse lg:flex-row items-start justify-between gap-10 py-10 lg:pt-10 lg:pb-20 2xl:pb-28 px-6 lg:px-16'>
                     <div className='w-full relative lg:w-2/3 flex items-start h-full gap-0 lg:gap-10 pb-16 lg:pb-0'>
                         <div className='w-full'>
-                        <div className='font-normal xl:text-[3rem] w-[80%] text-4xl hidden lg:block leading-tight'>
-                            Kalacode Nears deal to raise
-                            20 Millions By Pinenest Solutions 
-                            India. 
+                            <div className='font-normal xl:text-[3rem] w-[80%] text-4xl hidden lg:block leading-tight'>
+                                Kalacode Nears deal to raise
+                                20 Millions By Pinenest Solutions
+                                India.
                             </div>
                             <div className='flex flex-col gap-8 pt-6'>
 
@@ -89,8 +69,8 @@ const Kalacode_investment = () => {
                                     <div className='leading-7 font-normal text-base flex flex-col gap-4'>
                                         <div>The discussions to raise money started sometime last year and the initial plan was just to do a small 5 million secondaries round where some early investors would take an exit. However, Hudbil Private Limited board of directors decided to raise a fresh investment after achieving a full year research and potential interest by its existing and new clients to form a firm with a structure Kalacode Private Limited nearing its peaking with investor pitch.</div>
                                         <div>Kalacode profitability decided to kick off a larger round and close it before flipping its base back to India, along with the Infotik – Informative Application successful launch soon to be also grounded to Investors to raise 50 Million –</div>
-                                            <div>Mr. Satvik Mahajan Director &  Mr. Manu Parashuram Co-founder has pushed its complete segment responsible in the hands of Mr. Malakh Jibril – CEO of Kalacode to upskilling the platform Kalacode in the arena of AI Consulting, AR, VR Development and 3D Designing  solutions to revolutionized industries and redefine user experiences .</div>
-                                            <div>Malakh Jibril will be the CEO and handling the investors over all, as he holds the complete business knowledge in the segment and will upskilling platform Kalacode is in advanced stages to raise 20 million in a fresh round led by Pinenes Business Solutions private Limited, based in Lucknow according to people familiar with the matter.</div>
+                                        <div>Mr. Satvik Mahajan Director &  Mr. Manu Parashuram Co-founder has pushed its complete segment responsible in the hands of Mr. Malakh Jibril – CEO of Kalacode to upskilling the platform Kalacode in the arena of AI Consulting, AR, VR Development and 3D Designing  solutions to revolutionized industries and redefine user experiences .</div>
+                                        <div>Malakh Jibril will be the CEO and handling the investors over all, as he holds the complete business knowledge in the segment and will upskilling platform Kalacode is in advanced stages to raise 20 million in a fresh round led by Pinenes Business Solutions private Limited, based in Lucknow according to people familiar with the matter.</div>
                                     </div>
                                 </div>
                                 <div className='flex flex-col items-start gap-4'>
@@ -99,15 +79,15 @@ const Kalacode_investment = () => {
                                     </div>
                                     <div className='leading-7 font-normal text-base flex flex-col gap-4'>
                                         <div>Power At Your Fingertips, where cutting-edge technology meets limitless imagination. We’re pioneering the fusion of AI, AR, VR, and QR solutions to revolutionize industries and redefine user experiences. From immersive marketing campaigns to ground breaking educational tools, our expertise spans across sectors, delivering unparalleled innovation. We’re not just keeping pace with the future; we’re shaping it. Join us in unlocking the potential of these transformative technologies, and let’s create a world where the
-                                        impossible becomes reality. The future is at your fingertips.</div>
-                                        
+                                            impossible becomes reality. The future is at your fingertips.</div>
+
                                     </div>
                                     <div className='font-normal text-2xl leading-9'>
                                         <div>Our Mission and Vision –</div>
                                     </div>
                                     <div className='leading-7 font-normal text-base flex flex-col gap-4'>
                                         <div>To empower businesses and individuals by leveraging AI, AR, VR, and QR technologies, delivering innovative solutions that enhance experiences, streamline processes, and drive growth across industries, while fostering creativity, accessibility, and technological advancement in an ever-evolving digital landscape. To be the global leader in integrated AI, AR, VR, and QR solutions, pioneering transformative experiences that seamlessly blend digital and physical realities, revolutionizing how people learn, work, and interact, ultimately  shaping a more connected and immersive world.</div>
-                                        
+
                                     </div>
                                     <div className='font-normal text-2xl leading-9'>
                                         <div>Market Size</div>
@@ -131,7 +111,7 @@ const Kalacode_investment = () => {
                                             <p>2026: $39 Billion (India) + $58 Billion (Exports) = $97 Billion</p>
                                             <p>2027: $55 Billion (India) + $82 Billion (Exports) = $137 Billion</p>
                                         </div>
-                                        
+
                                     </div>
                                     <div className='font-normal text-2xl leading-9'>
                                         <div>India Market for AR/VR and AI Services (2024): $20 Billion Projected Growth Rate: 40% CAGR</div>
@@ -152,7 +132,7 @@ const Kalacode_investment = () => {
                                         <div>The company’s operating revenue jumped to Rs 3,343 crore in FY23, up 70 percent from Rs 1.962 crore in FY22. At the same time, its losses reduced 66 percent from Rs 3,094 crore in FY22 to Rs 1,049 crore in FY23.</div>
                                         <div>“FY24 is likely to be the first full year of earnings before interest, taxes, depreciation and amortisation (EBITDA) profitability for Kalacode,” a second person in the know told Money control. To be sure, the company is yet to close its FY24 books of accounts. Erudite’ holding entity is in Singapore and it follows a July-June financial year.</div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                             <div className='mt-16 md:mt-20 w-full flex items-center justify-center'>
@@ -227,7 +207,7 @@ const Kalacode_investment = () => {
                 </section> */}
 
             </main>
-            <ReachUs/>
+            <ReachUs />
             <Footer />
 
         </>

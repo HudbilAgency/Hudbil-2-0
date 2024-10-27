@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer'
+import { Helmet } from 'react-helmet'
 
 const PrivacyPolicy = () => {
 
@@ -20,7 +21,25 @@ const PrivacyPolicy = () => {
 
     return (
         <>
-        <Navbar />
+            <Helmet>
+                <title>Our Privacy Policy: Data Protection and User Rights</title>
+                <meta name="description" content="Our Privacy Policy explains how we handle your data, maintain confidentiality, and comply with privacy laws to safeguard your personal information."></meta>
+                <meta property="og:url" content="www.hudbil.com/privacy-policy"></meta>
+                <meta name="keywords" content="privacy policy, data protection policy, user privacy rights, personal data security, data collection and usage, online privacy policy, privacy policy compliance, data confidentiality"></meta>
+                <meta name="og:description" content="Our Privacy Policy explains how we handle your data, maintain confidentiality, and comply with privacy laws to safeguard your personal information."></meta>
+                <meta name="og:site_name" content="UI/UX Designing Company in Bangalore India | Website Development Agency in Bangalore | Top 10 Website Developement Agencies in Bangalore Review | Branding and designing Agency | Software development Agency"></meta>
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-3795MKLFX0"></script>
+                <script>
+                    {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config', 'G-3795MKLFX0');
+                    `}
+                </script>
+            </Helmet>
+            <Navbar />
             <main className='pt-[40px]'>
                 <div className='font-normal text-4xl pt-20 px-6 lg:px-16 lg:hidden'>
                     Privacy Policy

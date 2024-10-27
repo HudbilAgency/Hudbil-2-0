@@ -122,13 +122,13 @@ const Footer = () => {
     { title: 'About Us', url: '/about-us' },
     { title: 'Services', url: '/our-services' },
     { title: 'Products', url: '/our-products' },
-    { title: 'Insights', url: '/blogs' },
-    { title: 'Talk to Ella', url: '/talk-to-ella' },
-    { title: 'Careers & Culture', url: '/careers-culture' },
+    { title: 'Insights', url: '/our-blogs' },
+    { title: 'Talk to Ella', url: '/ai-ella' },
+    { title: 'Careers & Culture', url: '/about-us/career' },
     { title: 'Contact Us', url: '/contact-us' },
-    { title: 'Hudbil Tabloids', url: '/hudbil-tabloids' },
+    { title: 'Hudbil Tabloids', url: '/tabloids' },
     { title: 'Privacy Policy', url: '/privacy-policy' },
-    { title: 'Terms & Conditions', url: '/terms&conditions' },
+    { title: 'Terms & Conditions', url: '/terms-and-conditions' },
     { title: 'Accessibilities', url: '/accessibilities' }
   ];
 

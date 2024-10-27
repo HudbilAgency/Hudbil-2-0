@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 
 // Sample resources array with 4 cards
 const blogData = [
-  { id: 1, image: './OurBlogsImg/UX-Research-Blog 2.png', title: 'The Ultimate Guide for UX Research', url: "/blogpage-1" },
-  { id: 2, image: './OurBlogsImg/The-Evolution-Of-The Graphic-Design-home 1.png', title: 'The Evolution Of The Graphic Design', url: "/blogpage-2" },
-  { id: 3, image: './OurBlogsImg/Brands-identity-design aspects-in-Brief  1.png', title: 'Brand’s identity design ascepts in brief', url: "/blogpage-3" },
-  { id: 4, image: './OurBlogsImg/Business-firms-suffer-today 1.png', title: 'Business firm suffer because of not finding right B2B Design', url: "/blogpage-4" },
+  { id: 1, image: './OurBlogsImg/UX-Research-Blog 2.png', title: 'The Ultimate Guide for UX Research', url: "/blogs/the-ultimate-guide-for-ux-research" },
+  { id: 2, image: './OurBlogsImg/The-Evolution-Of-The Graphic-Design-home 1.png', title: 'The Evolution Of The Graphic Design', url: "/blogs/the-evolution-of-the-graphic-design" },
+  { id: 3, image: './OurBlogsImg/Brands-identity-design aspects-in-Brief  1.png', title: 'Brand’s identity design ascepts in brief', url: "/blogs/brands-identity-design-aspects-in-brief" },
+  { id: 4, image: './OurBlogsImg/Business-firms-suffer-today 1.png', title: 'Business firm suffer because of not finding right B2B Design', url: "/blogs/business-firms-suffer-to-find-right-design-agency" },
   // { id: 5, image: './OurBlogsImg/User-Experience-Design-and-its-Importance-for Businesses 1.png', title: 'User Experience Design and its Importance for Businesses' },
 ];
 

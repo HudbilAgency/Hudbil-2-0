@@ -3,6 +3,7 @@ import CarouselBlogPage from '../Components/CarouselBlogPage';
 import ReachUsBlog from '../Components/ReachUsBlog';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer'
+import { Helmet } from 'react-helmet';
 
 const BlogPage2 = () => {
 
@@ -23,6 +24,24 @@ const BlogPage2 = () => {
 
     return (
         <>
+            <Helmet>
+                <title>The Evolution of Graphic Design: From Early Art to Modern Digital Trends</title>
+                <meta name="description" content="Explore the history of graphic design and learn how it has transformed from ancient artistic techniques to modern digital and interactive experiences."></meta>
+                <meta property="og:url" content="www.hudbil.com/our-blogs/the-evolution-of-the-graphic-design"></meta>
+                <meta name="keywords" content="graphic design evolution, history of graphic design, graphic design trends, design evolution timeline, digital graphic design, graphic design movements, typography and graphic design, modern graphic design"></meta>
+                <meta name="og:description" content="Are you looking for a most trusted award winning UI/UX Desgining and Website, Mobile application development Company In Bangalore Karnataka,then you are at the right place. We offer affordable UI/UX & Complete Software developement services in Bangalore India for all brands. Our team of consultants in bangalore will help to promote the business, brand, build customer loyalty, and increase online presence. To get free website site analysis call +91 8884409369."></meta>
+                <meta name="og:site_name" content="UI/UX Designing Company in Bangalore India | Website Development Agency in Bangalore | Top 10 Website Developement Agencies in Bangalore Review | Branding and designing Agency | Software development Agency"></meta>
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-3795MKLFX0"></script>
+                <script>
+                    {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config', 'G-3795MKLFX0');
+                    `}
+                </script>
+            </Helmet>
             <Navbar />
             <main className='pt-[40px]'>
                 <div className='flex items-center gap-3 pt-20 px-6 lg:px-16'>
@@ -33,7 +52,7 @@ const BlogPage2 = () => {
                         </svg>
                     </div>
                     <div className='font-normal transition-all hover:text-gray-400 duration-300 text-sm text-[#838383]'>
-                        <a href='/blogs'>Return to Insights</a>
+                        <a href='/our-blogs'>Return to Insights</a>
 
                     </div>
 
@@ -48,7 +67,7 @@ const BlogPage2 = () => {
                                 The Evolution Of The Graphic Design
                             </div>
                             <div>
-                                <img className='w-full' src="./blogpage2.png" />
+                                <img className='w-full' src="/blogpage2.png" />
                             </div>
                             <div ref={(el) => (pointsRefs.current[0] = el)} className='flex flex-col gap-8 pt-12'>
 
@@ -176,7 +195,7 @@ const BlogPage2 = () => {
                         <div className='w-full md:w-1/2 text-3xl leading-6 font-normal'>ABOUT THE AUTHOR</div>
                         <div className='flex flex-col gap-5 w-full md:w-2/5 lg:w-1/3'>
                             <div className='flex items-start gap-5'>
-                                <div><img src="./malakhlogo.png" alt="malakh jibril" /></div>
+                                <div><img src="/malakhlogo.png" alt="malakh jibril" /></div>
                                 <div className='flex flex-col items-start text-lg font-normal leading-7'>
                                     <div>Malakh Jibril</div>
                                     <div className='text-[#838383] text-sm'>Brand Consultant</div>

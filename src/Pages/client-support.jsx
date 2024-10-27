@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
+import { Helmet } from 'react-helmet';
 
 const FormInput = ({ label, type = 'text', placeholder = '' }) => (
   <div className="flex overflow-hidden justify-center items-start py-2 tracking-wider">
@@ -43,6 +44,24 @@ const ClientSupport = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Transformative Design & Development Solutions | Your Trusted Partner</title>
+        <meta name="description" content="At our design and development agency, we believe in putting clients first. Explore our range of services designed to elevate your brand."></meta>
+        <meta property="og:url" content="www.hudbil.com/client-support"></meta>
+        <meta name="keywords" content="Client support, Design development agency, Custom development services, Innovative design solutions, Tailored client services, Comprehensive design support, Digital transformation agency, Client-centric solutions, Web development, UI/UX design"></meta>
+        <meta name="og:description" content="for an agency specializing in client support and customized design and development services."></meta>
+        <meta name="og:site_name" content="UI/UX Designing Company in Bangalore India | Website Development Agency in Bangalore | Top 10 Website Developement Agencies in Bangalore Review | Branding and designing Agency | Software development Agency"></meta>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3795MKLFX0"></script>
+        <script>
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-3795MKLFX0');
+          `}
+        </script>
+      </Helmet>
       <Navbar />
       <main className="flex overflow-hidden flex-col px-6 lg:px-16 py-16 bg-white max-md:px-5 max-md:pb-24">
         <div className="flex px-10 mt-20 bg-neutral-400 max-md:px-5 max-md:mt-10">

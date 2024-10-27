@@ -5,7 +5,7 @@ import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer'
 import { Link } from 'react-router-dom';
 import ReachUs from '../Components/ReachUs';
-
+import { Helmet } from 'react-helmet';
 
 const Hudbil_startup_india_awards = () => {
 
@@ -16,46 +16,26 @@ const Hudbil_startup_india_awards = () => {
         });
     };
 
-    const images = [
-        {
-            src: "/BlogPageImg/bp-21.png",
-            alt: "Blog-1",
-            content: "One-time actions to regular routines: A guide to strengthening habits",
-            date: "August 13, 2024",
-            routepath: "#",
-        },
-        {
-            src: "/BlogPageImg/bp-22.png",
-            alt: "Blog-2",
-            content: "Ripple effect: Connecting with the connected",
-            date: "June 19, 2024",
-            routepath: "#",
-        },
-        {
-            src: "/BlogPageImg/bp-23.png",
-            alt: "Blog-3",
-            content: "Podcast: In or out? How brands can look like insiders",
-            date: "June 10, 2024",
-            routepath: "#",
-        },
-        {
-            src: "/BlogPageImg/bp-24.png",
-            alt: "Blog-4",
-            content: "Sustainability - who cares?",
-            date: "November 29, 2023",
-            routepath: "#",
-        },
-        {
-            src: "/BlogPageImg/bp-24.png",
-            alt: "Blog-5",
-            content: "Sustainability - who cares?",
-            date: "November 29, 2023",
-            routepath: "#",
-        }
-    ];
-
     return (
         <>
+            <Helmet>
+                <title>Our Industries | Award-Winning Design & Development in India</title>
+                <meta name="description" content="Explore the diverse industries served by our award-winning design and development startup in India. We deliver innovative solutions recognized for excellence."></meta>
+                <meta property="og:url" content="www.hudbil.com/tabloids/hudbil-start-up-india-awards"></meta>
+                <meta name="keywords" content="Design and development startup, Award-winning solutions, Industries served, Innovative design services, Development excellence, Quality design and development, Recognized industry expertise, Business growth solutions, Tailored services, User experience enhancement"></meta>
+                <meta name="og:description" content="highlighting the recognition and awards received for excellence in design and development across various industries."></meta>
+                <meta name="og:site_name" content="UI/UX Designing Company in Bangalore India | Website Development Agency in Bangalore | Top 10 Website Developement Agencies in Bangalore Review | Branding and designing Agency | Software development Agency"></meta>
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-3795MKLFX0"></script>
+                <script>
+                    {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config', 'G-3795MKLFX0');
+                    `}
+                </script>
+            </Helmet>
             <Navbar />
             <main className='pt-[40px]'>
                 <div className='flex items-center gap-3 pt-20 px-6 lg:px-16'>
@@ -66,8 +46,8 @@ const Hudbil_startup_india_awards = () => {
                         </svg>
                     </div>
                     <div className='font-normal text-sm text-[#838383]'>
-                    <a href='/hudbil-tabloids'>Return to Tabloids</a>
-                        
+                        <a href='/tabloids'>Return to Tabloids</a>
+
                     </div>
 
                 </div>
@@ -79,10 +59,10 @@ const Hudbil_startup_india_awards = () => {
                 <section className='flex flex-col-reverse lg:flex-row items-start justify-between gap-10 py-10 lg:pt-10 lg:pb-20 2xl:pb-28 px-6 lg:px-16'>
                     <div className='w-full relative lg:w-2/3 flex items-start h-full gap-0 lg:gap-10 pb-16 lg:pb-0'>
                         <div className='w-full'>
-                        <div className='font-normal xl:text-[3rem] w-[80%] text-4xl hidden lg:block leading-tight'>
-                            Hudbil wins Start-up India
-                            Award Asia-Pacific
-                            Start-up India Awards 2017
+                            <div className='font-normal xl:text-[3rem] w-[80%] text-4xl hidden lg:block leading-tight'>
+                                Hudbil wins Start-up India
+                                Award Asia-Pacific
+                                Start-up India Awards 2017
                             </div>
                             <div className='flex flex-col gap-8 pt-6'>
 
@@ -112,31 +92,31 @@ const Hudbil_startup_india_awards = () => {
                                             Agency”.
                                         </div>
                                         <div className='font-normal text-2xl leading-9'>
-                                        <div>QUALITY OFFERINGS, QUANTIFIABLE RESULTS</div>
-                                    </div>
-                                    <div className='leading-7 font-normal text-base flex flex-col gap-4'>
-                                        <div>Fortifying the fact that that there’s no merit in one or two solutions as in ‘One Umbrella-fits-
-                                            all-need for a marketing approach, Hudbil does not refrain itself to one aspect. It rather
-                                            strives to meet the requirement in forms of Content Writing, Web Designing, Digital
-                                            Marketing, SEO to SEM. The company’s creative, innovative digital marketing methods are
-                                            able to apprehend the intent of the customers. Understanding the requirements, objectives
-                                            and final scope of the clients business, the company delivers the best-in-class services and
-                                            aligns them the organisation goals. The major service offerings of Hudbil include; and for
-                                            more visit them online. The company aims to help businesses with generating leads &
-                                            conversions, increase their local & global visibility through campaigns blended with organic
-                                            & paid activities in raising brand awareness, drive traffic and increase sales.
+                                            <div>QUALITY OFFERINGS, QUANTIFIABLE RESULTS</div>
                                         </div>
-                                        <div>For a great brand to resonate, engage and remain in the hearts and minds of its intended
-                                            audience, it needs to be relevant, valuable and constantly evolving. Hudbil facilitates the
-                                            brands with online marketing solutions to create prefect impression to their customers,
-                                            thereby meets the clients, talk to them online & offline, examines how they work and
-                                            interact. It also arranges in-depth interviews with the core team and thus, renders a 360-degree marketing service. Explaining on the unique process, Satvik Mahajan, Director/CFO,
-                                            Hubdil, states, “At the very initial stage we do competitors analyse and search metrics,
-                                            critique their social media presence and audit their website for conversion strategies. Once
-                                            the study is accomplished we present them the findings and discuss the concept that leads
-                                            to achieving 10x brand growth”.
+                                        <div className='leading-7 font-normal text-base flex flex-col gap-4'>
+                                            <div>Fortifying the fact that that there’s no merit in one or two solutions as in ‘One Umbrella-fits-
+                                                all-need for a marketing approach, Hudbil does not refrain itself to one aspect. It rather
+                                                strives to meet the requirement in forms of Content Writing, Web Designing, Digital
+                                                Marketing, SEO to SEM. The company’s creative, innovative digital marketing methods are
+                                                able to apprehend the intent of the customers. Understanding the requirements, objectives
+                                                and final scope of the clients business, the company delivers the best-in-class services and
+                                                aligns them the organisation goals. The major service offerings of Hudbil include; and for
+                                                more visit them online. The company aims to help businesses with generating leads &
+                                                conversions, increase their local & global visibility through campaigns blended with organic
+                                                & paid activities in raising brand awareness, drive traffic and increase sales.
+                                            </div>
+                                            <div>For a great brand to resonate, engage and remain in the hearts and minds of its intended
+                                                audience, it needs to be relevant, valuable and constantly evolving. Hudbil facilitates the
+                                                brands with online marketing solutions to create prefect impression to their customers,
+                                                thereby meets the clients, talk to them online & offline, examines how they work and
+                                                interact. It also arranges in-depth interviews with the core team and thus, renders a 360-degree marketing service. Explaining on the unique process, Satvik Mahajan, Director/CFO,
+                                                Hubdil, states, “At the very initial stage we do competitors analyse and search metrics,
+                                                critique their social media presence and audit their website for conversion strategies. Once
+                                                the study is accomplished we present them the findings and discuss the concept that leads
+                                                to achieving 10x brand growth”.
+                                            </div>
                                         </div>
-                                    </div>
                                     </div>
                                 </div>
                             </div>
@@ -200,7 +180,7 @@ const Hudbil_startup_india_awards = () => {
                 </section> */}
 
             </main>
-            <ReachUs/>
+            <ReachUs />
             <Footer />
 
         </>

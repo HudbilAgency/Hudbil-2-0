@@ -4,6 +4,7 @@ import ReachUs from '../Components/ReachUs'
 import Footer from '../Components/Footer'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Helmet } from 'react-helmet';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -43,6 +44,24 @@ const Our_industry = () => {
 
     return (
         <>
+            <Helmet>
+                <title>Industries We Serve | Tailored Solutions for Every Sector</title>
+                <meta name="description" content="Explore our extensive experience across various industries. Our specialized services are designed to address the specific needs of your sector."></meta>
+                <meta property="og:url" content="www.hudbil.com/our-industry"></meta>
+                <meta name="keywords" content="Industries served, Sector-specific solutions, Customized industry services, Expertise across sectors, Tailored business solutions, Industry expertise, Diverse sectors, Specialized services, Business support, Industry challenges"></meta>
+                <meta name="og:description" content="highlighting industry expertise and customized services provided for various sectors."></meta>
+                <meta name="og:site_name" content="UI/UX Designing Company in Bangalore India | Website Development Agency in Bangalore | Top 10 Website Developement Agencies in Bangalore Review | Branding and designing Agency | Software development Agency"></meta>
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-3795MKLFX0"></script>
+                <script>
+                    {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config', 'G-3795MKLFX0');
+                    `}
+                </script>
+            </Helmet>
             <Navbar />
             <section className='w-full px-6 lg:px-16 pb-16 font-normal md:pb-20 lg:pb-28 pt-36 flex flex-col gap-8 justify-between lg:flex-row'>
                 <h1 className='text-4xl xl:text-[50px] uppercase w-full tracking-wide'>Our industry</h1>
@@ -124,7 +143,7 @@ const DropdownComponent = () => {
                         <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[index] ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0'}`}>
                             <div className="text-xl pt-10 w-full lg:w-2/3 ml-auto md:mr-[6%]">
                                 {dropdownContent[index % dropdownContent.length]
-                                    .split('|') 
+                                    .split('|')
                                     .map((line, i) => (
                                         <p key={i} className="whitespace-pre-line">{line}</p>
                                     ))

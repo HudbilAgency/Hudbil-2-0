@@ -5,7 +5,7 @@ import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer'
 import { Link } from 'react-router-dom';
 import ReachUs from '../Components/ReachUs';
-
+import { Helmet } from 'react-helmet';
 
 const Hudbil_ai_chatbot = () => {
 
@@ -16,46 +16,26 @@ const Hudbil_ai_chatbot = () => {
         });
     };
 
-    const images = [
-        {
-            src: "/BlogPageImg/bp-21.png",
-            alt: "Blog-1",
-            content: "One-time actions to regular routines: A guide to strengthening habits",
-            date: "August 13, 2024",
-            routepath: "#",
-        },
-        {
-            src: "/BlogPageImg/bp-22.png",
-            alt: "Blog-2",
-            content: "Ripple effect: Connecting with the connected",
-            date: "June 19, 2024",
-            routepath: "#",
-        },
-        {
-            src: "/BlogPageImg/bp-23.png",
-            alt: "Blog-3",
-            content: "Podcast: In or out? How brands can look like insiders",
-            date: "June 10, 2024",
-            routepath: "#",
-        },
-        {
-            src: "/BlogPageImg/bp-24.png",
-            alt: "Blog-4",
-            content: "Sustainability - who cares?",
-            date: "November 29, 2023",
-            routepath: "#",
-        },
-        {
-            src: "/BlogPageImg/bp-24.png",
-            alt: "Blog-5",
-            content: "Sustainability - who cares?",
-            date: "November 29, 2023",
-            routepath: "#",
-        }
-    ];
-
     return (
         <>
+            <Helmet>
+                <title>AI Chatbot Solutions | Transforming Client Engagement</title>
+                <meta name="description" content="We are excited to launch our AI chatbot! Explore how it can improve customer engagement and provide intelligent support around the clock."></meta>
+                <meta property="og:url" content="www.hudbil.com/tabloids/hudbil-ai-chatbot"></meta>
+                <meta name="keywords" content="AI chatbot launch, Intelligent customer support, Chatbot solutions, Automated customer service, User experience enhancement, Customer engagement tools, AI technology, Business operations automation, Chatbot features, Client interaction improvement"></meta>
+                <meta name="og:description" content="detailing the features and benefits of the newly launched AI chatbot for businesses."></meta>
+                <meta name="og:site_name" content="UI/UX Designing Company in Bangalore India | Website Development Agency in Bangalore | Top 10 Website Developement Agencies in Bangalore Review | Branding and designing Agency | Software development Agency"></meta>
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-3795MKLFX0"></script>
+                <script>
+                    {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config', 'G-3795MKLFX0');
+                    `}
+                </script>
+            </Helmet>
             <Navbar />
             <main className='pt-[40px]'>
                 <div className='flex items-center gap-3 pt-20 px-6 lg:px-16'>
@@ -66,26 +46,26 @@ const Hudbil_ai_chatbot = () => {
                         </svg>
                     </div>
                     <div className='font-normal text-sm text-[#838383]'>
-                    <a href='/hudbil-tabloids'>Return to Tabloids</a>
-                        
+                        <a href='/tabloids'>Return to Tabloids</a>
+
                     </div>
 
                 </div>
                 <div className='font-normal text-3xl md:text-4xl pt-10 px-6 lg:px-16 lg:hidden leading-snug'>
-                Hudbil has introduced a AI Chatbot
+                    Hudbil has introduced a AI Chatbot
                 </div>
                 <section className='flex flex-col-reverse lg:flex-row items-start justify-between gap-10 py-10 lg:pt-10 lg:pb-20 2xl:pb-28 px-6 lg:px-16'>
                     <div className='w-full relative lg:w-2/3 flex items-start h-full gap-0 lg:gap-10 pb-16 lg:pb-0'>
                         <div className='w-full'>
-                        <div className='font-normal xl:text-[3rem] w-[80%] text-4xl hidden lg:block leading-tight'>
-                            Hudbil has introduced a AI Chatbot
+                            <div className='font-normal xl:text-[3rem] w-[80%] text-4xl hidden lg:block leading-tight'>
+                                Hudbil has introduced a AI Chatbot
                             </div>
                             <div className='flex flex-col gap-8 pt-6'>
 
                                 <div className='leading-5 font-normal text-base'>
                                     <p>Talk to Ella -</p>
-                                    <p><a href="/talk-to-ella" className='hover:text-gray-500 transition-all duration-300'>Check us out</a></p>
-                                    </div>
+                                    <p><a href="/ai-ella" className='hover:text-gray-500 transition-all duration-300'>Check us out</a></p>
+                                </div>
 
                                 <div className='flex flex-col items-start gap-4'>
                                     <div className='font-normal text-2xl leading-9'>
@@ -99,13 +79,13 @@ const Hudbil_ai_chatbot = () => {
                                             interaction with customers through a chat interface. In simple terms, a chatbot can initiate a
                                             conversation with users in the same way a human would do: it asks questions, answers
                                             queries of customers based on already set rules and logic.</div>
-                                            <div>When it comes to the technical side, <Link to={'/talk-to-ella'}><span className='text-blue-800 underline'>Ella – www.hudbil.com/ella</span></Link> to perform certain tasks
+                                        <div>When it comes to the technical side, <Link to={'/ai-ella'}><span className='text-blue-800 underline'>Ella – www.hudbil.com/ella</span></Link> to perform certain tasks
                                             such as interacting with human end-users through text and we will introduce the audio
                                             messaging system in future.</div>
-                                            <div>The performance of an AI-based chatbot is dependent on the knowledge input it has at the
+                                        <div>The performance of an AI-based chatbot is dependent on the knowledge input it has at the
                                             point in time. If a conversation with any user brings a query that they are not programmed
                                             to solve, they will skip that conversation or transfer it to a human operator.</div>
-                                            <div>With this technology in place we are also the agency to design and develop the Artificial
+                                        <div>With this technology in place we are also the agency to design and develop the Artificial
                                             Intelligence Chatbot solutions for companies who are looking to integrate such system
                                             without manpower resource for their marketing management at ease.</div>
                                     </div>
@@ -121,15 +101,15 @@ const Hudbil_ai_chatbot = () => {
                                             conversation, which enables them to become smarter over time. Let us talk about some
                                             major advantages of AI-based chatbots and what makes them better than rule-based
                                             chatbots.</div>
-                                        
+
                                     </div>
                                     <div className='font-normal text-2xl leading-9'>
                                         <div>Sentiment analysis</div>
                                     </div>
                                     <div className='leading-7 font-normal text-base flex flex-col gap-4'>
                                         <div>AI bots can assemble large-scale data sets to recognize the sentiments of your customer’s
-                                        reviews, mentions, and complaints throughout numerous platforms.</div>
-                                        
+                                            reviews, mentions, and complaints throughout numerous platforms.</div>
+
                                     </div>
                                     <div className='font-normal text-2xl leading-9'>
                                         <div>Understanding behavioural patterns</div>
@@ -139,16 +119,16 @@ const Hudbil_ai_chatbot = () => {
                                             chatbots can identify the behaviour patterns of end-users, which you may fail to do
                                             sometimes. These patterns and insights can be examined to improve decision-making in
                                             business.</div>
-                                        
+
                                     </div>
                                     <div className='font-normal text-2xl leading-9'>
                                         <div>Reduced customer waiting period</div>
                                     </div>
                                     <div className='leading-7 font-normal text-base flex flex-col gap-4'>
                                         <div>Minimized waiting time indicates high customer satisfaction. AI chatbots offer an effective
-                                                platform for customers to reach out for assistance without waiting a long time. Customers
-                                                can register their complaints, queries, and reviews with chatbots and they provide an
-                                                immediate solution to their queries most of the time.</div>
+                                            platform for customers to reach out for assistance without waiting a long time. Customers
+                                            can register their complaints, queries, and reviews with chatbots and they provide an
+                                            immediate solution to their queries most of the time.</div>
                                     </div>
                                     <div className='font-normal text-2xl leading-9'>
                                         <div>24/7 support</div>
@@ -238,7 +218,7 @@ const Hudbil_ai_chatbot = () => {
                                             is that these chatbots are never intended to replace human workers from their positions,
                                             instead, they aim to reduce their workload.</div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                             <div className='mt-16 md:mt-20 w-full flex items-center justify-center'>
@@ -349,7 +329,7 @@ const Hudbil_ai_chatbot = () => {
                 </section> */}
 
             </main>
-            < ReachUs/>
+            < ReachUs />
             <Footer />
 
         </>

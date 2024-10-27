@@ -5,7 +5,7 @@ import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer'
 import { Link } from 'react-router-dom';
 import ReachUs from '../Components/ReachUs';
-
+import { Helmet } from 'react-helmet';
 
 const Coltfox_digital_marketing_agency = () => {
 
@@ -16,46 +16,26 @@ const Coltfox_digital_marketing_agency = () => {
         });
     };
 
-    const images = [
-        {
-            src: "/BlogPageImg/bp-21.png",
-            alt: "Blog-1",
-            content: "One-time actions to regular routines: A guide to strengthening habits",
-            date: "August 13, 2024",
-            routepath: "#",
-        },
-        {
-            src: "/BlogPageImg/bp-22.png",
-            alt: "Blog-2",
-            content: "Ripple effect: Connecting with the connected",
-            date: "June 19, 2024",
-            routepath: "#",
-        },
-        {
-            src: "/BlogPageImg/bp-23.png",
-            alt: "Blog-3",
-            content: "Podcast: In or out? How brands can look like insiders",
-            date: "June 10, 2024",
-            routepath: "#",
-        },
-        {
-            src: "/BlogPageImg/bp-24.png",
-            alt: "Blog-4",
-            content: "Sustainability - who cares?",
-            date: "November 29, 2023",
-            routepath: "#",
-        },
-        {
-            src: "/BlogPageImg/bp-24.png",
-            alt: "Blog-5",
-            content: "Sustainability - who cares?",
-            date: "November 29, 2023",
-            routepath: "#",
-        }
-    ];
-
     return (
         <>
+            <Helmet>
+                <title>Digital Marketing & Content Solutions | Industry Expertise</title>
+                <meta name="description" content="Discover how our digital marketing and content marketing agency serves various industries with tailored strategies designed to drive engagement and growth."></meta>
+                <meta property="og:url" content="www.hudbil.com/tabloids/coltfox-digital-marketing-agency"></meta>
+                <meta name="keywords" content="Digital marketing agency, Content marketing services, Industry-specific marketing, Tailored marketing strategies, Brand engagement, Online marketing solutions, Digital strategy development, Content creation and promotion, Sector-focused marketing, Marketing agency for diverse industries"></meta>
+                <meta name="og:description" content="an overview of the digital and content marketing services provided across different industries."></meta>
+                <meta name="og:site_name" content="UI/UX Designing Company in Bangalore India | Website Development Agency in Bangalore | Top 10 Website Developement Agencies in Bangalore Review | Branding and designing Agency | Software development Agency"></meta>
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-3795MKLFX0"></script>
+                <script>
+                    {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config', 'G-3795MKLFX0');
+                    `}
+                </script>
+            </Helmet>
             <Navbar />
             <main className='pt-[40px]'>
                 <div className='flex items-center gap-3 pt-20 px-6 lg:px-16'>
@@ -66,30 +46,30 @@ const Coltfox_digital_marketing_agency = () => {
                         </svg>
                     </div>
                     <div className='font-normal text-sm text-[#838383]'>
-                    <a href='/hudbil-tabloids'>Return to Tabloids</a>
-                        
+                        <a href='/tabloids'>Return to Tabloids</a>
+
                     </div>
 
                 </div>
                 <div className='font-normal text-3xl md:text-4xl pt-10 px-6 lg:px-16 lg:hidden leading-snug'>
-                Hudbil welcomes Coltfox of new
-                hires; bolstering expertise
-                across marketing segment
+                    Hudbil welcomes Coltfox of new
+                    hires; bolstering expertise
+                    across marketing segment
                 </div>
                 <section className='flex flex-col-reverse lg:flex-row items-start justify-between gap-10 py-10 lg:pt-10 lg:pb-20 2xl:pb-28 px-6 lg:px-16'>
                     <div className='w-full relative lg:w-2/3 flex items-start h-full gap-0 lg:gap-10 pb-16 lg:pb-0'>
                         <div className='w-full'>
-                        <div className='font-normal xl:text-[3rem] w-[80%] text-4xl hidden lg:block leading-tight'>
-                            Hudbil welcomes Coltfox of new
-                            hires; bolstering expertise
-                            across marketing segment 
+                            <div className='font-normal xl:text-[3rem] w-[80%] text-4xl hidden lg:block leading-tight'>
+                                Hudbil welcomes Coltfox of new
+                                hires; bolstering expertise
+                                across marketing segment
                             </div>
                             <div className='flex flex-col gap-8 pt-6'>
 
                                 <div className='flex flex-col items-start gap-4'>
-                                <div className='font-normal text-2xl leading-9'>
+                                    <div className='font-normal text-2xl leading-9'>
                                         <div>Turn your customer journey map into optimized customer experiences by Coltfox Digital
-                                        Marketing Agency</div>
+                                            Marketing Agency</div>
                                     </div>
                                     <div className='leading-7 font-normal text-base flex flex-col gap-4'>
                                         <div>Hudbil Private Limited has introduced Coltfox has the only creative digital marketing agency
@@ -98,22 +78,22 @@ const Coltfox_digital_marketing_agency = () => {
                                             sustainable growth for businesses. It involves using various content & marketing tactics,
                                             data analysis, and experimentation to acquire and retain customers, increase revenue, and
                                             expand the customer base.</div>
-                                            <div>With more than two decades of experience, Hudbil has become a leader in branding,
-                                                designing and development agency. We’ve reached here by giving several tests and we’re
-                                                always ready for the next one. We have branched out a Coltfox to take care of the trending
-                                                demand of Content and Digital marketing services for its customer who opt for the
-                                                designing and development solutions by Hudbil, this creates a momentum among the
-                                                customers and experts to handle tasks with goal ordinated system.</div>
-                                            <div>It’s the reason of our existence.</div>
-                                            <div>We love doing what</div>
-                                            <div>we were meant to do.</div>
-                                            <div>We keep working. We keep falling in love with what we have been doing. We keep enjoying
-                                                the process. During this process, we keep adding new skills, we keep evolving and we keep
-                                                taking risks. Sometimes, we get stuck. Sometimes, we move ahead. And sometimes, we feel
-                                                that “Hudbil” is helping us. All through these years, we have learnt so many things and
-                                                unlearnt some too. This is our story. And honestly, we are enjoying it to the fullest.</div>
-                                            <div>Come lets celebrate this journey together and welcome <a href='https://coltfox.com/' className='text-blue-800 underline'>Coltfox – www.coltfox.com</a> to help
-                                            you serve better with content and marketing services worldwide.</div>    
+                                        <div>With more than two decades of experience, Hudbil has become a leader in branding,
+                                            designing and development agency. We’ve reached here by giving several tests and we’re
+                                            always ready for the next one. We have branched out a Coltfox to take care of the trending
+                                            demand of Content and Digital marketing services for its customer who opt for the
+                                            designing and development solutions by Hudbil, this creates a momentum among the
+                                            customers and experts to handle tasks with goal ordinated system.</div>
+                                        <div>It’s the reason of our existence.</div>
+                                        <div>We love doing what</div>
+                                        <div>we were meant to do.</div>
+                                        <div>We keep working. We keep falling in love with what we have been doing. We keep enjoying
+                                            the process. During this process, we keep adding new skills, we keep evolving and we keep
+                                            taking risks. Sometimes, we get stuck. Sometimes, we move ahead. And sometimes, we feel
+                                            that “Hudbil” is helping us. All through these years, we have learnt so many things and
+                                            unlearnt some too. This is our story. And honestly, we are enjoying it to the fullest.</div>
+                                        <div>Come lets celebrate this journey together and welcome <a href='https://coltfox.com/' className='text-blue-800 underline'>Coltfox – www.coltfox.com</a> to help
+                                            you serve better with content and marketing services worldwide.</div>
                                     </div>
                                 </div>
                             </div>
@@ -181,7 +161,7 @@ const Coltfox_digital_marketing_agency = () => {
                 </section> */}
 
             </main>
-            <ReachUs/>
+            <ReachUs />
             <Footer />
 
         </>

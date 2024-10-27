@@ -3,6 +3,7 @@ import CarouselBlogPage from '../Components/CarouselBlogPage';
 import ReachUsBlog from '../Components/ReachUsBlog';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer'
+import { Helmet } from 'react-helmet';
 
 const BlogPage1 = () => {
 
@@ -23,6 +24,24 @@ const BlogPage1 = () => {
 
     return (
         <>
+            <Helmet>
+                <title>The Ultimate Guide to UX Research | Best Practices & Techniques</title>
+                <meta name="description" content="Unlock the secrets to successful user experience with our ultimate guide to UX research. Explore essential methods, best practices, and tools to enhance your design process and create user-centered products."></meta>
+                <meta property="og:url" content="https://www.hudbil.com/our-blogs/the-ultimate-guide-for-ux-research"></meta>
+                <meta name="keywords" content="UX Research, User Experience Research, UX Best Practices, UX Research Techniques, User-Centered Design, Research Methods, Usability Testing, Design Insights, User Feedback"></meta>
+                <meta name="og:description" content="Are you looking for a most trusted award winning UI/UX Desgining and Website, Mobile application development Company In Bangalore Karnataka,then you are at the right place. We offer affordable UI/UX & Complete Software developement services in Bangalore India for all brands. Our team of consultants in bangalore will help to promote the business, brand, build customer loyalty, and increase online presence. To get free website site analysis call +91 8884409369."></meta>
+                <meta name="og:site_name" content="UI/UX Designing Company in Bangalore India | Website Development Agency in Bangalore | Top 10 Website Developement Agencies in Bangalore Review | Branding and designing Agency | Software development Agency"></meta>
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-3795MKLFX0"></script>
+                <script>
+                    {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config', 'G-3795MKLFX0');
+                    `}
+                </script>
+            </Helmet>
             <Navbar />
             <main className='pt-[40px]'>
                 <div className='flex items-center gap-3 pt-20 px-6 lg:px-16'>
@@ -33,7 +52,7 @@ const BlogPage1 = () => {
                         </svg>
                     </div>
                     <div className='font-normal transition-all hover:text-gray-400 duration-300 text-sm text-[#838383]'>
-                        <a href='/blogs'>Return to Insights</a>
+                        <a href='/our-blogs'>Return to Insights</a>
 
                     </div>
 
@@ -48,7 +67,7 @@ const BlogPage1 = () => {
                                 The Ultimate Guide for UX Research
                             </div>
                             <div>
-                                <img className='w-full' src="./Blpgpage1Img.png" />
+                                <img className='w-full' src="/Blpgpage1Img.png" />
                             </div>
                             <div className='flex flex-col gap-8 pt-12'>
 
@@ -279,7 +298,7 @@ const BlogPage1 = () => {
                         <div className='w-full md:w-1/2 text-3xl leading-6 font-normal'>ABOUT THE AUTHOR</div>
                         <div className='flex flex-col gap-5 w-full md:w-2/5 lg:w-1/3'>
                             <div className='flex items-start gap-5'>
-                                <div><img src="./malakhlogo.png" alt="malakh jibril" /></div>
+                                <div><img src="/malakhlogo.png" alt="malakh jibril" /></div>
                                 <div className='flex flex-col items-start text-lg font-normal leading-7'>
                                     <div>Malakh Jibril</div>
                                     <div className='text-[#838383] text-sm'>Brand Consultant</div>

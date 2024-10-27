@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
+import { Helmet } from 'react-helmet';
 
 const ContactForm = () => {
 
@@ -271,8 +272,25 @@ const ContactForm = () => {
   ];
 
   return (
-
     <>
+      <Helmet>
+        <title>Contact Us | Get in Touch with Our Design & Development Team</title>
+        <meta name="description" content="Have questions or need a quote? Contact our design and development agency today! Our expert team is ready to discuss your project and provide tailored solutions to meet your needs."></meta>
+        <meta property="og:url" content="https://www.hudbil.com/contact-us"></meta>
+        <meta name="keywords" content="Contact Us, Get in Touch, Design Agency Contact, Development Agency Contact, Request a Quote, Customer Support, Inquiry Form, Speak with Our Team"></meta>
+        <meta name="description" content=" Contact Us - Request for a Free Website design and development Quote. Looking forward for an oportunity to discuss your project."></meta>
+        <meta name="og:site_name" content="B2B UI/UX Designing Company in Bangalore India | B2C Website Development Agency in Bangalore | Top 10 B2B Website Developement Agencies in Bangalore Review | B2C Branding and designing Agency | B2C Software development Agency"></meta>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3795MKLFX0"></script>
+        <script>
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-3795MKLFX0');
+          `}
+        </script>
+      </Helmet>
       <Navbar />
       <main className='pt-40 pb-20 lg:pb-40 px-6 lg:px-16'>
 

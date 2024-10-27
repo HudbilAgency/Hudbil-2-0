@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 const Insights = () => {
 
@@ -57,8 +58,25 @@ const Insights = () => {
     };
 
     return (
-
         <>
+            <Helmet>
+                <title>Our Blogs | Insights on Design & Development Trends</title>
+                <meta name="description" content="Stay updated with our blog featuring insights, tips, and trends in design and development. Explore topics on web design, app development, branding, and digital strategies to enhance your knowledge."></meta>
+                <meta property="og:url" content="https://www.hudbil.com/our-blogs"></meta>
+                <meta name="keywords" content="B2B UI/UX Designing Company in Bangalore, B2B Website Development Agency in Bangalore, B2C Mobile Application Development Company in Bangalore, B2C UI/UX for mobile application Agency in Bangalore, B2C branding designing Company in Bangalore, B2C website designing Company in Bangalore, B2C UI UX development Company in Bangalore, B2C Web Design Company in Bangalore"></meta>
+                <meta name="description" content=" Our Blogs - Read our articles and information about custom designing and website development and software development, mobile app development and all other business vertical."></meta>
+                <meta name="og:site_name" content="B2B UI/UX Designing Company in Bangalore India | B2C Website Development Agency in Bangalore | Top 10 B2B Website Developement Agencies in Bangalore Review | B2C Branding and designing Agency | B2C Software development Agency"></meta>
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-3795MKLFX0"></script>
+                <script>
+                    {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config', 'G-3795MKLFX0');
+                    `}
+                </script>
+            </Helmet>
             <Navbar />
             <main className='pt-36 pb-20 px-6 lg:px-16'>
 
@@ -238,7 +256,7 @@ const Insights = () => {
                                     <a href="/coming-soon" className='w-full text-center border rounded-full py-2 mb-3 border-white'>Coming Soon</a>
                                 </div>
 
-                                <Link to="/blogpage-1" className='flex flex-col items-start gap-2 w-full xl:w-1/2'>
+                                <Link to="/blogs/the-ultimate-guide-for-ux-research" className='flex flex-col items-start gap-2 w-full xl:w-1/2'>
                                     <div className='w-full'><img className='w-full grayscale transition duration-500 hover:grayscale-0' src="./mainblogimg5.png" alt="Blog1" /></div>
                                     <div className='text-3xl leading-10 mt-3 w-full'>The Ultimate Guide for UX Research.</div>
                                     <div className='text-[#6A13AA] text-sm'>August 13, 2024</div>
@@ -246,13 +264,13 @@ const Insights = () => {
                             </div>
 
                             <div className='flex flex-col xl:flex-row items-start gap-20 xl:gap-12 justify-between w-full'>
-                                <Link to="/blogpage-2" className='flex flex-col items-start gap-2 w-full xl:w-1/2'>
+                                <Link to="/blogs/the-evolution-of-the-graphic-design" className='flex flex-col items-start gap-2 w-full xl:w-1/2'>
                                     <div className='w-full'><img className='w-full grayscale transition duration-500 hover:grayscale-0' src="./mainblogimg6.png" alt="Blog2" /></div>
                                     <div className='text-3xl leading-10 mt-3'>The Evolution Of The Graphic Design.</div>
                                     <div className='text-[#6A13AA] text-sm'>August 13, 2024</div>
                                 </Link>
 
-                                <Link to="/blogpage-3" className='flex flex-col items-start gap-2 w-full xl:w-1/2'>
+                                <Link to="/blogs/brands-identity-design-aspects-in-brief" className='flex flex-col items-start gap-2 w-full xl:w-1/2'>
                                     <div className='w-full'><img className='w-full grayscale transition duration-500 hover:grayscale-0' src="./mainblogimg7.png" alt="Blog3" /></div>
                                     <div className='text-3xl leading-10 mt-3'>Brand’s identity design aspects in Brief.</div>
                                     <div className='text-[#6A13AA] text-sm'>August 6, 2024</div>
@@ -260,13 +278,13 @@ const Insights = () => {
                             </div>
 
                             <div className='flex flex-col xl:flex-row items-start gap-20 xl:gap-12 justify-between'>
-                                <Link to="/blogpage-4" className='flex flex-col items-start gap-2 w-full xl:w-1/2'>
+                                <Link to="/blogs/business-firms-suffer-to-find-right-design-agency" className='flex flex-col items-start gap-2 w-full xl:w-1/2'>
                                     <div className='w-full'><img className='w-full grayscale transition duration-500 hover:grayscale-0' src="./mainblogimg8.png" alt="Blog4" /></div>
                                     <div className='text-3xl leading-10 mt-3'>Business Firms Suffer Because of Not Finding right B2B design Agency.</div>
                                     <div className='text-[#6A13AA] text-sm'>July 4, 2024</div>
                                 </Link>
 
-                                <Link to="/blogpage-5" className='flex flex-col items-start gap-2 w-full xl:w-1/2'>
+                                <Link to="/blogs/user-experience-design-and-its-importance" className='flex flex-col items-start gap-2 w-full xl:w-1/2'>
                                     <div className='w-full'><img className='w-full grayscale transition duration-500 hover:grayscale-0' src="./mainblogimg9.png" alt="Blog5" /></div>
                                     <div className='text-3xl leading-10 mt-3'>User Experience Design and its Importance for Businesses.</div>
                                     <div className='text-[#6A13AA] text-sm'>June 24, 2024</div>

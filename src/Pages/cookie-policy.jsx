@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer'
+import { Helmet } from 'react-helmet'
 
 const TableDiv = ({ dynamicContent }) => {
 
@@ -1711,6 +1712,24 @@ const CookiePolicy = () => {
 
     return (
         <>
+            <Helmet>
+                <title>Our Cookie Policy: Managing Your Online Experience</title>
+                <meta name="description" content="Our Cookie Policy explains how cookies are used to enhance website functionality, and how you can manage or opt out of cookie usage at any time."></meta>
+                <meta property="og:url" content="www.hudbil.com/cookie-policy"></meta>
+                <meta name="keywords" content="cookie policy, website cookies usage, managing cookies, cookie preferences, online cookies policy, cookies and data privacy, how cookies work, cookie consent policy"></meta>
+                <meta name="og:description" content="Find out why UX design is important for your business and how it can help retain customers and drive growth. Read on!."></meta>
+                <meta name="og:site_name" content="UI/UX Designing Company in Bangalore India | Website Development Agency in Bangalore | Top 10 Website Developement Agencies in Bangalore Review | Branding and designing Agency | Software development Agency"></meta>
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-3795MKLFX0"></script>
+                <script>
+                    {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config', 'G-3795MKLFX0');
+                    `}
+                </script>
+            </Helmet>
             <Navbar />
             <main className='pt-[40px]'>
                 <div className='font-normal text-4xl pt-20 px-6 lg:px-16 lg:hidden'>

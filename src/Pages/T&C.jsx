@@ -1,11 +1,30 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
+import { Helmet } from 'react-helmet'
 
 const TandC = () => {
 
     return (
         <>
+            <Helmet>
+                <title>Our Terms and Conditions: Rules for Using Our Services</title>
+                <meta name="description" content="Our Terms and Conditions outline the legal agreement between users and our platform, including acceptable use, intellectual property, and liability limitations."></meta>
+                <meta property="og:url" content="www.hudbil.com/terms-and-conditions"></meta>
+                <meta name="keywords" content="terms and conditions, website terms of use, legal agreement, user responsibilities, terms of service, user rights and obligations, conditions of use, service terms"></meta>
+                <meta name="og:description" content="Our Terms and Conditions outline the legal agreement between users and our platform, including acceptable use, intellectual property, and liability limitations."></meta>
+                <meta name="og:site_name" content="UI/UX Designing Company in Bangalore India | Website Development Agency in Bangalore | Top 10 Website Developement Agencies in Bangalore Review | Branding and designing Agency | Software development Agency"></meta>
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-3795MKLFX0"></script>
+                <script>
+                    {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config', 'G-3795MKLFX0');
+                    `}
+                </script>
+            </Helmet>
             <Navbar />
             <main className='pt-[40px]'>
                 <div className='font-normal text-4xl pt-20 px-6 lg:px-16 lg:hidden leading-snug'>

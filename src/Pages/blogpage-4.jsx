@@ -1,8 +1,9 @@
-import React, {useRef} from 'react'
+import React, { useRef } from 'react'
 import CarouselBlogPage from '../Components/CarouselBlogPage';
 import ReachUsBlog from '../Components/ReachUsBlog';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer'
+import { Helmet } from 'react-helmet';
 
 const BlogPage4 = () => {
 
@@ -23,6 +24,24 @@ const BlogPage4 = () => {
 
     return (
         <>
+            <Helmet>
+                <title>Challenges Faced by Business Firms in Finding the Right Design Agency</title>
+                <meta name="description" content="Use our free brand identity toolkit to design a beautiful, effective, and flexible brand identity that will grow with your brand."></meta>
+                <meta property="og:url" content="www.hudbil.com/our-blogs/business-firms-suffer-to-find-right-design-agency"></meta>
+                <meta name="keywords" content="business firms design agency, challenges finding design agency, choosing the right design agency, business struggles with design agencies, design agency selection problems, business design partner issues, hiring the right design agency"></meta>
+                <meta name="og:description" content="Are you looking for a most trusted award winning UI/UX Desgining and Website, Mobile application development Company In Bangalore Karnataka,then you are at the right place. We offer affordable UI/UX & Complete Software developement services in Bangalore India for all brands. Our team of consultants in bangalore will help to promote the business, brand, build customer loyalty, and increase online presence. To get free website site analysis call +91 8884409369."></meta>
+                <meta name="og:site_name" content="UI/UX Designing Company in Bangalore India | Website Development Agency in Bangalore | Top 10 Website Developement Agencies in Bangalore Review | Branding and designing Agency | Software development Agency"></meta>
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-3795MKLFX0"></script>
+                <script>
+                    {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config', 'G-3795MKLFX0');
+                    `}
+                </script>
+            </Helmet>
             <Navbar />
             <main className='pt-[40px]'>
                 <div className='flex items-center gap-3 pt-20 px-6 lg:px-16'>
@@ -33,22 +52,22 @@ const BlogPage4 = () => {
                         </svg>
                     </div>
                     <div className='font-normal transition-all hover:text-gray-400 duration-300 text-sm text-[#838383]'>
-                    <a href='/blogs'>Return to Insights</a>
-                        
+                        <a href='/our-blogs'>Return to Insights</a>
+
                     </div>
 
                 </div>
                 <div className='font-normal text-3xl md:text-4xl pt-10 px-6 lg:px-16 lg:hidden leading-snug'>
-                Business Firms Suffer Because of not Finding Right B2B Design Agency.
+                    Business Firms Suffer Because of not Finding Right B2B Design Agency.
                 </div>
                 <section className='flex flex-col-reverse lg:flex-row items-start justify-between gap-20 lg:gap-10 py-10 lg:pt-10 lg:pb-20 2xl:pb-28 px-6 lg:px-16'>
                     <div className='w-full relative lg:w-2/3 flex items-start h-full gap-0 lg:gap-10 pb-16 lg:pb-0'>
                         <div className='w-full'>
                             <div className='font-normal text-4xl pb-12 hidden lg:block leading-snug'>
-                            Business Firms Suffer Because of not Finding Right B2B Design Agency.
+                                Business Firms Suffer Because of not Finding Right B2B Design Agency.
                             </div>
                             <div>
-                                <img className='w-full' src="./Blogpage4.png" />
+                                <img className='w-full' src="/Blogpage4.png" />
                             </div>
                             <div className='flex flex-col gap-8 pt-12'>
 
@@ -76,23 +95,23 @@ const BlogPage4 = () => {
                                         <div>Template-Based Websites: A Step Up, but Not the Final Solution</div>
                                         <div>After outgrowing the DIY website, startups often turn to web development companies that offer reasonably priced websites based on premium templates. Instead of you trying to figure out how to drag and drop and configure everything, you get a developer to do it. The idea is that you save costs by building off an existing template instead of starting from scratch.</div>
                                         <div>However, the relatively low cost of this option can be misleading. You’ll often need customisations that are not possible with the template, or require custom coding. Startups need to pivot everything from their positioning to their business model frequently. It can be unviable if your website can’t reflect those changes quickly. For example, adding a simple
-                                        sub-header could take days and additional costs.</div>
+                                            sub-header could take days and additional costs.</div>
                                         <div>The template-based packages also often lack design support, which you usually discover only once you’re deep into the process. The template might look great at the time of purchase because it has images and visual elements selected specifically for it, but when you need to insert your content, it can be incredibly tough to work backward to fit the template.</div>
-                                        
+
                                     </div>
                                     <div className='font-normal text-2xl leading-9'>
                                         <div>Websites build by Product Development Teams</div>
                                     </div>
                                     <div className='leading-7 font-normal text-base flex flex-col gap-4'>
                                         <div>Most of the tech company’s first website is build by product development teams who don’t necessarily speak the marketing language. This can limit the website’s communication capabilities. Another limitation in this scenario is, most of the websites build by tech team is not scalable. Programming languages like React or Node will be used since they will be familiar with them, but not familiar for the marketing teams. So any change which the marketing team may require will takes weeks to get updated.</div>
-                                        
+
                                     </div>
                                     <div className='font-normal text-2xl leading-9'>
                                         <div>Who Owns Your Website? Tech? Sales? Marketing?</div>
                                     </div>
                                     <div className='leading-7 font-normal text-base flex flex-col gap-4'>
                                         <div>Even though the CTO takes the call on what platform/technologies to use to build it, it’s you the marketer who uses it to generate leads/sales from it. If the website is down (pencil runs out of lead) it’s the leads/sales that suffers – which by the way is your KRA and not the CTO’s. So you will have to ask the CTO to fix it but still, the website ownership resides with you, the marketer!</div>
-                                        
+
                                     </div>
                                     <div ref={(el) => (pointsRefs.current[1] = el)} className='font-normal text-2xl leading-9'>
                                         <div>The Comprehensive Solution: A Specialised B2B Website Design Company</div>
@@ -193,33 +212,33 @@ const BlogPage4 = () => {
                                             <p>Click Maps and Analytics: Easy-to-interpret click maps and form analytics software can pinpoint exactly where visitors click and which form fields cause issues. Live chat and co-browsing options further allow direct interaction with visitors for real-time problem-solving​​.</p>
                                         </div>
                                         <div className='leading-7 font-normal text-base flex flex-col gap-4'>
-                                        <div>Each of these methods used by web design agency provides valuable insights into different aspects of website usability and customer experience, helping diagnose issues effectively.</div>
-                                        <div>Your website is your online hub for lead generation — which makes B2B web design essential to your company’s growth. A company’s website is the first thing we all visit to find out about everything. A functional and attractive website draws people in and convinces them to convert, turning your site into a sales-generating machine. Skyrocket your business
-                                        revenue by partnering with the B2B web design agency.</div>
+                                            <div>Each of these methods used by web design agency provides valuable insights into different aspects of website usability and customer experience, helping diagnose issues effectively.</div>
+                                            <div>Your website is your online hub for lead generation — which makes B2B web design essential to your company’s growth. A company’s website is the first thing we all visit to find out about everything. A functional and attractive website draws people in and convinces them to convert, turning your site into a sales-generating machine. Skyrocket your business
+                                                revenue by partnering with the B2B web design agency.</div>
+                                        </div>
+                                        <div ref={(el) => (pointsRefs.current[5] = el)} className='font-normal text-2xl leading-9'>
+                                            <div>Your one-stop shop for B2B web design</div>
+                                        </div>
+                                        <div className='leading-7 font-normal text-base flex flex-col gap-4'>
+                                            <div>If you’re looking for B2B web design, you may be tempted to hire a general web design agency. While this may seem convenient, it’s not necessarily a good idea. While a general web design agency may be able to provide you with a functional website, they won’t be able to create a specialized B2B website for your business. This may result in a website that fails to capture the attention of your target customers, which could lead to fewer conversions and less revenue. By partnering with a B2B web design agency that specializes in B2B web development, you can rest easy knowing that your website was designed with your specific business needs in mind.</div>
+                                        </div>
+                                        <div ref={(el) => (pointsRefs.current[6] = el)} className='font-normal text-2xl leading-9'>
+                                            <div>Why partner with a B2B web development company?</div>
+                                        </div>
+                                        <div className='leading-7 font-normal text-base flex flex-col gap-4'>
+                                            <div>A B2B web design agency knows B2B marketing and B2B sales like the back of their hands. They have worked with businesses in a variety of industries and have the expertise to create B2B-specific web designs that convert. This means you can be confident that your B2B website design will be effective at driving business to your company. B2B agencies also know the ins and outs of the B2B buying process.</div>
+                                            <div>For example, they know that decision-makers want access to information that helps them make informed purchasing decisions. A B2B web design agency will make sure your website’s content is written and organized in a way that helps buyers learn about your products and services. B2B agencies also know how to optimize your website so that it ranks well in search engines, which means you can drive organic traffic to your site.</div>
+                                        </div>
+                                        <div ref={(el) => (pointsRefs.current[7] = el)} className='font-normal text-2xl leading-9'>
+                                            <div>How can an expert agency help with your B2B web development?</div>
+                                        </div>
+                                        <div className='leading-7 font-normal text-base flex flex-col gap-4'>
+                                            <div>A B2B web design agency will work with you to create a plan for your website. This website design process will help you determine what features you want on your site, what your goals are for the website, and how to measure success.</div>
+                                            <div>Your B2B web design agency will also help you create a content strategy for your website. This means they will help you develop your messaging, decide what content to include on your site, and determine where that content should be placed.</div>
+                                            <div>The B2B web design agency’s B2B-savvy will help you create a website that complements your sales strategy, inspires trust in your customers, and converts leads into sales. B2B web design agencies also have access to a variety of website development tools and technologies, which means they can create a website that’s both functional and user-friendly.</div>
+                                        </div>
                                     </div>
-                                    <div ref={(el) => (pointsRefs.current[5] = el)} className='font-normal text-2xl leading-9'>
-                                        <div>Your one-stop shop for B2B web design</div>
-                                    </div>
-                                    <div className='leading-7 font-normal text-base flex flex-col gap-4'>
-                                        <div>If you’re looking for B2B web design, you may be tempted to hire a general web design agency. While this may seem convenient, it’s not necessarily a good idea. While a general web design agency may be able to provide you with a functional website, they won’t be able to create a specialized B2B website for your business. This may result in a website that fails to capture the attention of your target customers, which could lead to fewer conversions and less revenue. By partnering with a B2B web design agency that specializes in B2B web development, you can rest easy knowing that your website was designed with your specific business needs in mind.</div>
-                                    </div>
-                                    <div ref={(el) => (pointsRefs.current[6] = el)} className='font-normal text-2xl leading-9'>
-                                        <div>Why partner with a B2B web development company?</div>
-                                    </div>
-                                    <div className='leading-7 font-normal text-base flex flex-col gap-4'>
-                                        <div>A B2B web design agency knows B2B marketing and B2B sales like the back of their hands. They have worked with businesses in a variety of industries and have the expertise to create B2B-specific web designs that convert. This means you can be confident that your B2B website design will be effective at driving business to your company. B2B agencies also know the ins and outs of the B2B buying process.</div>
-                                        <div>For example, they know that decision-makers want access to information that helps them make informed purchasing decisions. A B2B web design agency will make sure your website’s content is written and organized in a way that helps buyers learn about your products and services. B2B agencies also know how to optimize your website so that it ranks well in search engines, which means you can drive organic traffic to your site.</div>
-                                    </div>
-                                    <div ref={(el) => (pointsRefs.current[7] = el)} className='font-normal text-2xl leading-9'>
-                                        <div>How can an expert agency help with your B2B web development?</div>
-                                    </div>
-                                    <div className='leading-7 font-normal text-base flex flex-col gap-4'>
-                                        <div>A B2B web design agency will work with you to create a plan for your website. This website design process will help you determine what features you want on your site, what your goals are for the website, and how to measure success.</div>
-                                        <div>Your B2B web design agency will also help you create a content strategy for your website. This means they will help you develop your messaging, decide what content to include on your site, and determine where that content should be placed.</div>
-                                        <div>The B2B web design agency’s B2B-savvy will help you create a website that complements your sales strategy, inspires trust in your customers, and converts leads into sales. B2B web design agencies also have access to a variety of website development tools and technologies, which means they can create a website that’s both functional and user-friendly.</div>
-                                    </div>
-                                    </div>
-                                    
+
                                 </div>
                                 <div className='flex flex-col items-start gap-4'>
                                     <div className='font-normal text-2xl leading-9'>
@@ -315,7 +334,7 @@ const BlogPage4 = () => {
                         <div className='w-full md:w-1/2 text-3xl leading-6 font-normal'>ABOUT THE AUTHOR</div>
                         <div className='flex flex-col gap-5 w-full md:w-2/5 lg:w-1/3'>
                             <div className='flex items-start gap-5'>
-                                <div><img src="./malakhlogo.png" alt="malakh jibril" /></div>
+                                <div><img src="/malakhlogo.png" alt="malakh jibril" /></div>
                                 <div className='flex flex-col items-start text-lg font-normal leading-7'>
                                     <div>Malakh Jibril</div>
                                     <div className='text-[#838383] text-sm'>Brand Consultant</div>

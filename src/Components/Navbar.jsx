@@ -92,8 +92,8 @@ const Navbar = () => {
     { name: 'Our Work', link: '/our-work' },
     { name: 'Services', link: '/our-services' },
     { name: 'Products', link: '/our-products' },
-    { name: 'Insights', link: '/blogs' },
-    { name: 'Talk to Ella', link: '/talk-to-ella' }
+    { name: 'Insights', link: '/our-blogs' },
+    { name: 'Talk to Ella', link: '/ai-ella' }
   ];
 
   const footerLinks = [
@@ -101,8 +101,8 @@ const Navbar = () => {
       title: { name: 'Contact Us', url: '/contact-us' },
       items: [
         { name: 'Clients Support', url: '/client-support' },
-        { name: 'Careers & Culture', url: '/careers-culture' },
-        { name: 'Hudbil Tabloids', url: '/hudbil-tabloids' }
+        { name: 'Careers & Culture', url: '/about-us/career' },
+        { name: 'Hudbil Tabloids', url: '/tabloids' }
       ]
     },
     {
@@ -414,10 +414,10 @@ const Navbar = () => {
     else if (pathname === "/products") {
       setActiveItem("Products");
     }
-    else if (pathname === "/blogs") {
+    else if (pathname === "/our-blogs") {
       setActiveItem("Insights");
     }
-    else if (pathname === "/talk-to-ella") {
+    else if (pathname === "/ai-ella") {
       setActiveItem("Ella");
     }
   }, [location.pathname]);
@@ -499,7 +499,7 @@ const Navbar = () => {
             )}
           </button>
           <div>
-            {pathnameimg === '/' || pathnameimg === "/talk-to-ella" ? (
+            {pathnameimg === '/' || pathnameimg === "/ai-ella" ? (
               <img
                 ref={birdRef}
                 loading="lazy"

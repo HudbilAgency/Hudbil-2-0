@@ -4,6 +4,7 @@ import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Helmet } from 'react-helmet';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -47,6 +48,23 @@ const Work = () => {
 
     return (
         <>
+            <Helmet>
+                <title>Our Work | Showcasing Innovative Design & Development Projects</title>
+                <meta name="description" content="Explore our portfolio of successful design and development projects. From captivating websites to cutting-edge applications, see how we bring ideas to life and drive results for our clients."></meta>
+                <meta property="og:url" content="https://www.hudbil.com/our-work"></meta>
+                <meta name="keywords" content="B2B UI/UX Designing Company in Bangalore, B2B Website Development Agency in Bangalore, B2C Mobile Application Development Company in Bangalore, B2C UI/UX for mobile application Agency in Bangalore, B2C branding designing Company in Bangalore, B2C website designing Company in Bangalore, B2C UI UX development Company in Bangalore, B2C Web Design Company in Bangalore"></meta>
+                <meta name="og:description" content="Our Work - We have designed and developed amazing projects for the various sectors in B2B, B2C, D2C Branding and designing projects worldwide"></meta>
+                <meta name="og:site_name" content="B2B UI/UX Designing Company in Bangalore India | B2C Website Development Agency in Bangalore | Top 10 B2B Website Developement Agencies in Bangalore Review | B2C Branding and designing Agency | B2C Software development Agency"></meta>
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-3795MKLFX0"></script>
+                <script>
+                    {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'G-3795MKLFX0');
+                    `}
+                </script>
+            </Helmet>
             <Navbar />
             <main className='pt-[80px] bg-black'>
                 <section className='pt-20 pb-24'>

@@ -11,31 +11,31 @@ const images = [
     src: "/BlogPageImg/bp-21.png",
     alt: "Blog-1",
     content: "The Ultimate Guide for UX Research",
-    routepath: "/blogpage-1",
+    routepath: "/blogs/the-ultimate-guide-for-ux-research",
   },
   {
     src: "/BlogPageImg/bp-22.png",
     alt: "Blog-2",
     content: "The Evolution Of The Graphic Design",
-    routepath: "/blogpage-2",
+    routepath: "/blogs/the-evolution-of-the-graphic-design",
   },
   {
     src: "/BlogPageImg/bp-23.png",
     alt: "Blog-3",
     content: "Brand’s identity design ascepts in brief",
-    routepath: "/blogpage-3",
+    routepath: "/blogs/brands-identity-design-aspects-in-brief",
   },
   {
     src: "/BlogPageImg/bp-24.png",
     alt: "Blog-4",
     content: "Business firm suffer because of not finding",
-    routepath: "/blogpage-4",
+    routepath: "/blogs/business-firms-suffer-to-find-right-design-agency",
   },
   {
     src: "/BlogPageImg/bp-25.png",
     alt: "Blog-5",
     content: "User Experience Design and its Importance ..",
-    routepath: "/blogpage-5",
+    routepath: "/blogs/user-experience-design-and-its-importance",
   }
 ];
 

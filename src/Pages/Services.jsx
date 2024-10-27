@@ -5,6 +5,7 @@ import Footer from '../Components/Footer'
 import { Link } from 'react-router-dom';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Helmet } from 'react-helmet';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -48,6 +49,24 @@ const Services = () => {
 
     return (
         <>
+            <Helmet>
+                <title>Creative Design & Bespoke Development Services | Custom Solutions for Your Brand</title>
+                <meta name="description" content="Elevate your brand with our creative design and bespoke development services. From custom design and branding to tailored web and software development, we create impactful solutions designed for your business. Contact us for innovative, high-quality design and development!"></meta>
+                <meta property="og:url" content="www.hudbil.com/services"></meta>
+                <meta name="keywords" content="Creative Design and Bespoke Development, Custom Branding and Development Services, Tailored Web and Software Development, Unique Brand Identity Solutions,Custom Website Design and Development,Professional Creative Services, Digital Design and Development Services, Bespoke Development Solutions, Brand Growth Design Services, Personalized Branding and Development"></meta>
+                <meta name="og:description" content="Stand out with our creative design and bespoke development services. We provide custom solutions in branding, web design, and digital development for businesses ready to grow."></meta>
+                <meta name="og:site_name" content="UI/UX Designing Company in Bangalore India | Website Development Agency in Bangalore | Top 10 Website Developement Agencies in Bangalore Review | Branding and designing Agency | Software development Agency"></meta>
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-3795MKLFX0"></script>
+                <script>
+                    {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config', 'G-3795MKLFX0');
+                    `}
+                </script>
+            </Helmet>
             <Navbar />
             <main className='pt-[80px] bg-black'>
                 <section className='py-20'>

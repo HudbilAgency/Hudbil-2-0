@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
+import { Helmet } from 'react-helmet';
 
 const ComingSoon = () => {
 
@@ -268,6 +269,24 @@ const ComingSoon = () => {
 
     return (
         <>
+            <Helmet>
+                <title>Coming Soon | Exciting New Design & Development Agency</title>
+                <meta name="description" content="We're excited to announce that our design and development agency is launching soon! Stay tuned for innovative solutions, creative designs, and cutting-edge development services that will elevate your brand."></meta>
+                <meta property="og:url" content="https://www.hudbil.com/coming-soon"></meta>
+                <meta name="keywords" content="Coming Soon, Design Agency Launch, Development Agency Launch, Exciting New Services, Innovative Solutions, Creative Design, Web Development, Stay Tuned"></meta>
+                <meta name="description" content=" Coming Soon - We are working on our website we are coming soon."></meta>
+                <meta name="og:site_name" content="B2B UI/UX Designing Company in Bangalore India | B2C Website Development Agency in Bangalore | Top 10 B2B Website Developement Agencies in Bangalore Review | B2C Branding and designing Agency | B2C Software development Agency"></meta>
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-3795MKLFX0"></script>
+                <script>
+                    {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config', 'G-3795MKLFX0');
+                    `}
+                </script>
+            </Helmet>
             <Navbar />
             <main className='pt-40 pb-20 lg:pb-40 px-6 lg:px-16'>
 

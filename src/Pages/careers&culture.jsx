@@ -1,9 +1,10 @@
-import React, {useRef, useEffect} from 'react';
+import React, { useRef, useEffect } from 'react';
 import Footer from '../Components/Footer';
 import Navbar from '../Components/Navbar';
 import ReachUs from '../Components/ReachUs';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Helmet } from 'react-helmet';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -19,24 +20,42 @@ const Careersculture = () => {
 
   useEffect(() => {
     gsap.utils.toArray('.toggle-point').forEach((element) => {
-        gsap.fromTo(
-            element,
-            { opacity: 0 },
-            {
-                opacity: 1,
-                duration: 1,
-                scrollTrigger: {
-                    trigger: element,
-                    start: 'top 70%',
-                    toggleActions: 'play none none none',
-                },
-            }
-        );
+      gsap.fromTo(
+        element,
+        { opacity: 0 },
+        {
+          opacity: 1,
+          duration: 1,
+          scrollTrigger: {
+            trigger: element,
+            start: 'top 70%',
+            toggleActions: 'play none none none',
+          },
+        }
+      );
     });
-}, []);
+  }, []);
 
   return (
     <>
+      <Helmet>
+        <title>Career Opportunities | Join Our Team and Grow Your Career</title>
+        <meta name="description" content="Explore exciting career opportunities with us. Discover roles across various departments, enjoy professional growth, and be part of a supportive, innovative team. Start your career journey today!"></meta>
+        <meta property="og:url" content="www.hudbil.com/blogs/user-experience-design-and-its-importance"></meta>
+        <meta name="keywords" content="Career Opportunities, Job Openings, Careers and Employment, Join Our Team, Professional Growth Opportunities, Career Development, Apply for Jobs, Work With Us, Careers in [Industry or Field], Career Advancement and Growth"></meta>
+        <meta name="og:description" content="Kickstart your career with us! Discover job openings across departments, enjoy career advancement, and make an impact as part of our innovative team."></meta>
+        <meta name="og:site_name" content="UI/UX Designing Company in Bangalore India | Website Development Agency in Bangalore | Top 10 Website Developement Agencies in Bangalore Review | Branding and designing Agency | Software development Agency"></meta>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3795MKLFX0"></script>
+        <script>
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-3795MKLFX0');
+          `}
+        </script>
+      </Helmet>
       <Navbar />
       <main className='pt-36 bg-[#BAB5DA]'>
 
@@ -50,7 +69,7 @@ const Careersculture = () => {
               <div>
                 <button onClick={handleScroll} className="button self-end flex flex-row justify-between mt-3 px-10 py-3 mx-auto leading-none bg-white hover:text-white text-black gap-8 rounded-[1000px] max-md:px-5 hover:bg-[#7811A5] transition-colors duration-300">
                   <h1 className='text-base mt-1 font-arial'>See Current Opening</h1>
-                  <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                  <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                 </button>
               </div>
             </div>
@@ -60,7 +79,7 @@ const Careersculture = () => {
         <section>
           <div className="relative my-24 ">
             <div className="relative">
-              <img className='mx-auto' src="./candc1.png" alt="career & culture" />
+              <img className='mx-auto' src="/candc1.png" alt="career & culture" />
               <div className="absolute w-full inset-0 flex justify-center items-center overflow-hidden">
                 <div className="marquee-text-container font-normal text-[1.7rem] uppercase text-black">
                   <div className="marquee-text">We’re a tribe of ARCHITECTS</div>
@@ -89,7 +108,7 @@ const Careersculture = () => {
             <div className='flex flex-col items-start justify-between gap-12 w-full lg:w-auto min-h-full'>
               <div className='text-3xl xl:text-4xl'>What we believe in</div>
               <div className='w-full'>
-                <img className='w-full' src="./candc2.png" alt="career & culture" />
+                <img className='w-full' src="/candc2.png" alt="career & culture" />
               </div>
             </div>
             <div className='w-full lg:w-1/2 xl:w-2/5'>
@@ -117,7 +136,7 @@ const Careersculture = () => {
           </div>
         </section>
 
-        <img className='w-full' src="./candc3.png" alt="career & culture" />
+        <img className='w-full' src="/candc3.png" alt="career & culture" />
 
         <main className='px-6 lg:px-16 py-20 bg-black'>
 

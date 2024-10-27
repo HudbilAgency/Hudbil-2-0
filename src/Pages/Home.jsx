@@ -5,7 +5,7 @@ import { useState, useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import ReachUs from '../Components/ReachUs';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import Loader from './Loader';
+import Loader from '../Components/Loader';
 import CarousalImgBlogs from '../Components/CarousalImgBlogs'
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
@@ -72,13 +72,13 @@ const Home = () => {
       image: "./OurServicesImg/Creative Designing-inside.jpg",
       title: "Creative Designing",
       description: "Our scientifically proven UX design process means you can simultaneously release products users love and check off business goals.",
-      url: "/services1"
+      url: "/services/creative-designing-agency"
     },
     {
       image: "./OurServicesImg/Development-inside.jpg",
       title: "Be-Spoken Development",
       description: "We understanding your unique business challenge, creating flexible software roadmaps, and developing secure, scalable solutions that deliver ROI.",
-      url: "/services2"
+      url: "/services/development-agency"
     }
   ];
 
@@ -99,7 +99,7 @@ const Home = () => {
     { name: 'Our Work', link: '/our-work' },
     { name: 'Services', link: '/services' },
     { name: 'Products', link: '/products' },
-    { name: 'Insights', link: '/blogs' },
+    { name: 'Insights', link: '/our-blogs' },
     { name: 'Talk to Ella', link: '/TalkToElla' }
   ];
 
@@ -411,11 +411,12 @@ const Home = () => {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
+
           gtag('config', 'G-3795MKLFX0');
           `}
         </script>
       </Helmet>
-      
+
       <div className="bg-black">
         <Loader onLoadingComplete={handleLoadingComplete} />
 
@@ -462,7 +463,7 @@ const Home = () => {
           </div>
 
           <section className='-mt-[30vh] lg:-mt-[0vh] box3 justify-end items-end overflow-hidden w-full lg:w-[50vw] flex-col '>
-            <div className="w-full h-screen hidden lg:block">
+            <div className="w-full h-screen hidden lg:block overflow-hidden">
               <div className="flex flex-col relative h-full justify-center items-center w-full">
                 <div className='w-full'>
                   <div className="w-full">
@@ -596,7 +597,7 @@ const Home = () => {
                   <div className="flex overflow-hidden relative flex-col mt-14 max-w-full text-xs font-extralight tracking-wider text-center aspect-[0.866] text-teal-950 w-[304px] max-md:mt-10">
                     <div className="flex overflow-hidden relative flex-col px-11 py-40 bg-white max-md:px-5 max-md:py-24 ">
                       <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/7281482c86da59f833039df7a3ec6c277db84f6759a3e18d14449941f4081705?placeholderIfAbsent=true&apiKey=7904fd7afaaf4ee2b0837ab86d91b244" alt="Brand logo" className="filter grayscale hover:grayscale-0 transition-all duration-300 object-contain lg:-mt-12 aspect-[2.87] w-[284px]" />
-                      <h1 className='self-center mt-5 mb-0  max-md:mb-2.5 text-black font-semibold'>Innovation At Your Fingertips</h1>
+                      <h1 className='self-center mt-5 mb-0  max-md:mb-2.5 text-black font-semibold'>Impression At Your Fingertips</h1>
                     </div>
                   </div>
                   <h3
@@ -713,7 +714,7 @@ const Home = () => {
 
               </section>
               <CarousalImgBlogs />
-              <Link to="/blogs">
+              <Link to="/our-blogs">
                 <button className="button self-end flex flex-row justify-between px-12 py-3 my-12 mx-auto lg:mr-8 leading-none bg-black text-white gap-8 rounded-[1000px] max-md:px-5 max-md:mt-10  hover:bg-[#7811A5] transition-all duration-300">
                   <h1 className='text-base mt-1 font-arial'>View all insight</h1>
                   <img ref={buttonImgRef} src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
@@ -727,7 +728,7 @@ const Home = () => {
                   <h3 className="self-stretch mt-16 text-4xl font-arial text-center text-white leading-[50px] max-md:mt-10 max-md:max-w-full max-md:text-4xl max-md:leading-[54px]" ref={fadeInRef2}>
                     Big idea, Kalacode is <br /> beating heart of <br /> Hudbil's, a new venture <br /> agency like no other in India.
                   </h3>
-                  <Link to={'/hudbil-tabloids'}>
+                  <Link to={'/tabloids'}>
                     <button className="button flex flex-row justify-between px-20 py-4 mt-20  mr-6 md:mr-8 leading-none bg-white text-black self-center items-center gap-8 rounded-[1000px] max-md:px-5   hover:bg-[#7811A5] transition-colors duration-300">
                       <h1 className='text-base mt-1 font-arial'>Learn more</h1>
                       <img ref={buttonImgRef} src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />

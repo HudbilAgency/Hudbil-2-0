@@ -3,6 +3,7 @@ import CarouselBlogPage from '../Components/CarouselBlogPage';
 import ReachUsBlog from '../Components/ReachUsBlog';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer'
+import { Helmet } from 'react-helmet';
 
 const BlogPage5 = () => {
 
@@ -23,6 +24,24 @@ const BlogPage5 = () => {
 
     return (
         <>
+            <Helmet>
+                <title>The Importance of User Experience (UX) Design in Modern Digital Products</title>
+                <meta name="description" content="Explore how user experience (UX) design impacts product success, focusing on usability, user engagement, and the overall digital interaction journey."></meta>
+                <meta property="og:url" content="www.hudbil.com/our-blogs/user-experience-design-and-its-importance"></meta>
+                <meta name="keywords" content="user experience design, importance of UX design, UX design benefits, role of UX in product development, user-centered design, UX design impact, usability and user experience, digital product UX design"></meta>
+                <meta name="og:description" content="Explore how user experience (UX) design impacts product success, focusing on usability, user engagement, and the overall digital interaction journey."></meta>
+                <meta name="og:site_name" content="UI/UX Designing Company in Bangalore India | Website Development Agency in Bangalore | Top 10 Website Developement Agencies in Bangalore Review | Branding and designing Agency | Software development Agency"></meta>
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-3795MKLFX0"></script>
+                <script>
+                    {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config', 'G-3795MKLFX0');
+                    `}
+                </script>
+            </Helmet>
             <Navbar />
             <main className='pt-[40px]'>
                 <div className='flex items-center gap-3 pt-20 px-6 lg:px-16'>
@@ -33,7 +52,7 @@ const BlogPage5 = () => {
                         </svg>
                     </div>
                     <div className='font-normal transition-all hover:text-gray-400 duration-300 text-sm text-[#838383]'>
-                        <a href='/blogs'>Return to Insights</a>
+                        <a href='/our-blogs'>Return to Insights</a>
 
                     </div>
 
@@ -48,7 +67,7 @@ const BlogPage5 = () => {
                                 User Experience Design and its Importance for Businesses
                             </div>
                             <div>
-                                <img className='w-full' src="./Blogpage-5.png" />
+                                <img className='w-full' src="/Blogpage-5.png" />
                             </div>
                             <div className='flex flex-col gap-8 pt-12'>
 
@@ -197,7 +216,7 @@ const BlogPage5 = () => {
                         <div className='w-full md:w-1/2 text-3xl leading-6 font-normal'>ABOUT THE AUTHOR</div>
                         <div className='flex flex-col gap-5 w-full md:w-2/5 lg:w-1/3'>
                             <div className='flex items-start gap-5'>
-                                <div><img src="./malakhlogo.png" alt="malakh jibril" /></div>
+                                <div><img src="/malakhlogo.png" alt="malakh jibril" /></div>
                                 <div className='flex flex-col items-start text-lg font-normal leading-7'>
                                     <div>Malakh Jibril</div>
                                     <div className='text-[#838383] text-sm'>Brand Consultant</div>

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 const Our_products = () => {
 
@@ -58,6 +59,24 @@ const Our_products = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Our IT Development Products | Innovative Software Solutions for Your Business</title>
+        <meta name="description" content="Explore our range of IT development products designed to optimize, streamline, and scale your business operations. Discover innovative software, tools, and platforms tailored to meet industry-specific needs."></meta>
+        <meta property="og:url" content="www.hudbil.com/our-products"></meta>
+        <meta name="keywords" content="IT Development Products, Business Software Solutions, Custom IT Development, Innovative Software Products, Business Optimization Tools, Tailored IT Solutions, Scalable IT Development, Industry-Specific Software, Business Efficiency Tools, Customizable IT Platforms"></meta>
+        <meta name="og:description" content="Explore cutting-edge IT development products tailored for your business. From custom software to specialized platforms, we create solutions to enhance productivity and innovation."></meta>
+        <meta name="og:site_name" content="UI/UX Designing Company in Bangalore India | Website Development Agency in Bangalore | Top 10 Website Developement Agencies in Bangalore Review | Branding and designing Agency | Software development Agency"></meta>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3795MKLFX0"></script>
+        <script>
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-3795MKLFX0');
+          `}
+        </script>
+      </Helmet>
       <Navbar />
       {/* Header */}
       <section className='pt-36 px-6 lg:px-16'>

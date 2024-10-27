@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
+import { Helmet } from 'react-helmet';
 
 const QuickLinks = () => {
 
@@ -263,9 +264,26 @@ const QuickLinks = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Quick Links for Clients | Streamlined Navigation</title>
+        <meta name="description" content="Discover our Quick Links section for easy navigation to essential services and resources. Access everything you need in one convenient place!"></meta>
+        <meta property="og:url" content="www.hudbil.com/quick-links"></meta>
+        <meta name="keywords" content="Quick links, Easy navigation, Essential resources, Client support links, Streamlined access, Services hub, Fast access, User-friendly navigation, Important links, Website shortcuts"></meta>
+        <meta name="og:description" content="for a Quick Links hub, simplifying access to services and important information."></meta>
+        <meta name="og:site_name" content="UI/UX Designing Company in Bangalore India | Website Development Agency in Bangalore | Top 10 Website Developement Agencies in Bangalore Review | Branding and designing Agency | Software development Agency"></meta>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3795MKLFX0"></script>
+        <script>
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-3795MKLFX0');
+          `}
+        </script>
+      </Helmet>
       <Navbar />
       <main>
-
         <section>
           <div className={`flex flex-col lg:flex-row justify-between ${isScreenTall ? 'h-screen' : 'h-full'}`}>
             <div className='w-full lg:w-1/2 min-h-full bg-black lg:border-b-[1px] border-opacity-50 border-white flex flex-col pt-36 md:pt-40 pb-20 lg:pt-48 lg:pb-40 items-center justify-center text-white px-6 lg:px-16'>

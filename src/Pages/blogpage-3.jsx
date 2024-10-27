@@ -1,8 +1,9 @@
-import React, {useRef} from 'react'
+import React, { useRef } from 'react'
 import CarouselBlogPage from '../Components/CarouselBlogPage';
 import ReachUsBlog from '../Components/ReachUsBlog';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer'
+import { Helmet } from 'react-helmet';
 
 const BlogPage3 = () => {
 
@@ -23,6 +24,24 @@ const BlogPage3 = () => {
 
     return (
         <>
+            <Helmet>
+                <title>Understanding Brand Identity Design: Aspects and Key Elements</title>
+                <meta name="description" content="Explore the critical aspects of brand identity design and how they influence the perception and consistency of a brand across different platforms."></meta>
+                <meta property="og:url" content="www.hudbil.com/our-blogs/brands-identity-design-aspects-in-brief"></meta>
+                <meta name="keywords" content="finding the right design agency, challenges in choosing design agencies, business firms and design agencies, design agency selection struggles, hiring a design agency, design agency challenges for businesses, right design partner for business"></meta>
+                <meta name="og:description" content="Are you looking for a most trusted award winning UI/UX Desgining and Website, Mobile application development Company In Bangalore Karnataka,then you are at the right place. We offer affordable UI/UX & Complete Software developement services in Bangalore India for all brands. Our team of consultants in bangalore will help to promote the business, brand, build customer loyalty, and increase online presence. To get free website site analysis call +91 8884409369."></meta>
+                <meta name="og:site_name" content="UI/UX Designing Company in Bangalore India | Website Development Agency in Bangalore | Top 10 Website Developement Agencies in Bangalore Review | Branding and designing Agency | Software development Agency"></meta>
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-3795MKLFX0"></script>
+                <script>
+                    {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config', 'G-3795MKLFX0');
+                    `}
+                </script>
+            </Helmet>
             <Navbar />
             <main className='pt-[40px]'>
                 <div className='flex items-center gap-3 pt-20 px-6 lg:px-16'>
@@ -33,22 +52,22 @@ const BlogPage3 = () => {
                         </svg>
                     </div>
                     <div className='font-normal transition-all hover:text-gray-400 duration-300 text-sm text-[#838383]'>
-                    <a href='/blogs'>Return to Insights</a>
-                        
+                        <a href='/our-blogs'>Return to Insights</a>
+
                     </div>
 
                 </div>
                 <div className='font-normal text-3xl md:text-4xl pt-10 px-6 lg:px-16 lg:hidden leading-snug'>
-                Brand’s identity design aspects in Brief
+                    Brand’s identity design aspects in Brief
                 </div>
                 <section className='flex flex-col-reverse lg:flex-row items-start justify-between gap-20 lg:gap-10 py-10 lg:pt-10 lg:pb-20 2xl:pb-28 px-6 lg:px-16'>
                     <div className='w-full relative lg:w-2/3 flex items-start h-full gap-0 lg:gap-10 pb-16 lg:pb-0'>
                         <div className='w-full'>
                             <div className='font-normal text-4xl pb-12 hidden lg:block leading-snug'>
-                            Brand’s identity design aspects in Brief
+                                Brand’s identity design aspects in Brief
                             </div>
                             <div>
-                                <img className='w-full' src="./blogpage3.png" />
+                                <img className='w-full' src="/blogpage3.png" />
                             </div>
                             <div ref={(el) => (pointsRefs.current[0] = el)} className='flex flex-col gap-8 pt-12'>
 
@@ -209,7 +228,7 @@ const BlogPage3 = () => {
                         <div className='w-full md:w-1/2 text-3xl leading-6 font-normal'>ABOUT THE AUTHOR</div>
                         <div className='flex flex-col gap-5 w-full md:w-2/5 lg:w-1/3'>
                             <div className='flex items-start gap-5'>
-                                <div><img src="./malakhlogo.png" alt="malakh jibril" /></div>
+                                <div><img src="/malakhlogo.png" alt="malakh jibril" /></div>
                                 <div className='flex flex-col items-start text-lg font-normal leading-7'>
                                     <div>Malakh Jibril</div>
                                     <div className='text-[#838383] text-sm'>Brand Consultant</div>

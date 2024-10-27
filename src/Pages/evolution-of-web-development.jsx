@@ -5,7 +5,7 @@ import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer'
 import { Link } from 'react-router-dom';
 import ReachUs from '../Components/ReachUs';
-
+import { Helmet } from 'react-helmet';
 
 const Evolution_of_web_development = () => {
 
@@ -16,46 +16,26 @@ const Evolution_of_web_development = () => {
         });
     };
 
-    const images = [
-        {
-            src: "/BlogPageImg/bp-21.png",
-            alt: "Blog-1",
-            content: "One-time actions to regular routines: A guide to strengthening habits",
-            date: "August 13, 2024",
-            routepath: "#",
-        },
-        {
-            src: "/BlogPageImg/bp-22.png",
-            alt: "Blog-2",
-            content: "Ripple effect: Connecting with the connected",
-            date: "June 19, 2024",
-            routepath: "#",
-        },
-        {
-            src: "/BlogPageImg/bp-23.png",
-            alt: "Blog-3",
-            content: "Podcast: In or out? How brands can look like insiders",
-            date: "June 10, 2024",
-            routepath: "#",
-        },
-        {
-            src: "/BlogPageImg/bp-24.png",
-            alt: "Blog-4",
-            content: "Sustainability - who cares?",
-            date: "November 29, 2023",
-            routepath: "#",
-        },
-        {
-            src: "/BlogPageImg/bp-24.png",
-            alt: "Blog-5",
-            content: "Sustainability - who cares?",
-            date: "November 29, 2023",
-            routepath: "#",
-        }
-    ];
-
     return (
         <>
+            <Helmet>
+                <title>The Global Web Evolution | Industries Shaped by Change</title>
+                <meta name="description" content="Discover how the evolution of the web has shaped various industries worldwide. Explore our insights into the transformative impact of digital technologies."></meta>
+                <meta property="og:url" content="www.hudbil.com/tabloids/evolution-of-web"></meta>
+                <meta name="keywords" content="Evolution of the web, Global web development, Digital transformation, Web technology advancements, Industry impact of the web, Online business evolution, Digital landscape changes, Internet history, Web innovations, Transformative technologies"></meta>
+                <meta name="og:description" content="highlighting the historical milestones in web development and their significance for different sectors."></meta>
+                <meta name="og:site_name" content="UI/UX Designing Company in Bangalore India | Website Development Agency in Bangalore | Top 10 Website Developement Agencies in Bangalore Review | Branding and designing Agency | Software development Agency"></meta>
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-3795MKLFX0"></script>
+                <script>
+                    {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config', 'G-3795MKLFX0');
+                    `}
+                </script>
+            </Helmet>
             <Navbar />
             <main className='pt-[40px]'>
                 <div className='flex items-center gap-3 pt-20 px-6 lg:px-16'>
@@ -66,21 +46,21 @@ const Evolution_of_web_development = () => {
                         </svg>
                     </div>
                     <div className='font-normal text-sm text-[#838383]'>
-                    <a href='/hudbil-tabloids'>Return to Tabloids</a>
-                        
+                        <a href='/tabloids'>Return to Tabloids</a>
+
                     </div>
 
                 </div>
                 <div className='font-normal text-3xl md:text-4xl pt-10 px-6 lg:px-16 lg:hidden leading-snug'>
-                The Evolution of Web Development
-                (1995-2000)
+                    The Evolution of Web Development
+                    (1995-2000)
                 </div>
                 <section className='flex flex-col-reverse lg:flex-row items-start justify-between gap-10 py-10 lg:pt-10 lg:pb-20 2xl:pb-28 px-6 lg:px-16'>
                     <div className='w-full relative lg:w-2/3 flex items-start h-full gap-0 lg:gap-10 pb-16 lg:pb-0'>
                         <div className='w-full'>
                             <div className='font-normal xl:text-[3rem] w-[80%] text-4xl hidden lg:block leading-tight'>
-                            The Evolution of Web Development
-                            (1995-2000)
+                                The Evolution of Web Development
+                                (1995-2000)
                             </div>
                             <div className='flex flex-col gap-8 pt-6'>
 
@@ -141,45 +121,45 @@ const Evolution_of_web_development = () => {
                                         </div>
                                         <div>Online shopping anyone?</div>
                                         <div className='flex gap-5 sm:gap-10 lg:gap-28'>
-                                            <img src="../HudbilTabloidsImg/htmlImg.png" alt="htmlImg" className='h-9 sm:h-10 md:h-14'/>
-                                            <img src="../HudbilTabloidsImg/CssImg.png" alt="CssImg" className='h-9 sm:h-10 md:h-14'/>
-                                            <img src="../HudbilTabloidsImg/FImg.png" alt="Fimg" className='h-9 sm:h-10 md:h-14'/>
+                                            <img src="../HudbilTabloidsImg/htmlImg.png" alt="htmlImg" className='h-9 sm:h-10 md:h-14' />
+                                            <img src="../HudbilTabloidsImg/CssImg.png" alt="CssImg" className='h-9 sm:h-10 md:h-14' />
+                                            <img src="../HudbilTabloidsImg/FImg.png" alt="Fimg" className='h-9 sm:h-10 md:h-14' />
                                         </div>
                                         <div className='font-normal mt-2 text-2xl leading-9'>
-                                        <div>(2000 – 2006)</div>
-                                    </div>
-                                    <div className='leading-7 font-normal text-base flex flex-col gap-4'>
-                                        <div>Up until the new millennium, websites had been created for desktop browser windows only.
-                                            “Responsive web design” as we know it was still a ways out, but ideas were stirring. In 2000
-                                            web design, developers started creating multiple versions of websites to be viewed on
-                                            different browsers and devices. While this technically worked, it was time consuming and
-                                            impractical. Devices and browsers were constantly evolving and having multiple versions
-                                            meant that updates had to be made separately – desktop, tablet, and mobile. Triple the
-                                            effort, triple the time.
+                                            <div>(2000 – 2006)</div>
                                         </div>
-                                        <div>As time went on, more and more people created websites for business purposes,
-                                            information distribution, and a growing trend – blogging. The need for content management
-                                            systems (CMS) grew as it enabled dynamic design and smooth updates to content. And
-                                            although various CMS’ had been around in the 1990s, the heavy hitter launched in 2003.
-                                            WordPress was originally launched as an open source blogging platform, but steadily grew
-                                            and evolved until it became the most popular content management system (CMS) in the
-                                            world. In fact, WordPress now powers 35.9% of the internet.
+                                        <div className='leading-7 font-normal text-base flex flex-col gap-4'>
+                                            <div>Up until the new millennium, websites had been created for desktop browser windows only.
+                                                “Responsive web design” as we know it was still a ways out, but ideas were stirring. In 2000
+                                                web design, developers started creating multiple versions of websites to be viewed on
+                                                different browsers and devices. While this technically worked, it was time consuming and
+                                                impractical. Devices and browsers were constantly evolving and having multiple versions
+                                                meant that updates had to be made separately – desktop, tablet, and mobile. Triple the
+                                                effort, triple the time.
+                                            </div>
+                                            <div>As time went on, more and more people created websites for business purposes,
+                                                information distribution, and a growing trend – blogging. The need for content management
+                                                systems (CMS) grew as it enabled dynamic design and smooth updates to content. And
+                                                although various CMS’ had been around in the 1990s, the heavy hitter launched in 2003.
+                                                WordPress was originally launched as an open source blogging platform, but steadily grew
+                                                and evolved until it became the most popular content management system (CMS) in the
+                                                world. In fact, WordPress now powers 35.9% of the internet.
+                                            </div>
+                                            <div>
+                                                This timeline would be remiss if it didn’t acknowledge the entrance of Myspace (2003) and
+                                                Facebook (2004). Tom Anderson and Chris DeWolf created Myspace to promote self-
+                                                expression through online profile pages and allow users to connect with each other online.
+                                                Facebook was founded by Mark Zuckerberg and co. at Harvard University as a campus social
+                                                networking site and exploded in popularity worldwide when it went public in 2006. But you
+                                                already knew that.
+                                            </div>
+                                            <div>
+                                                The dawn of social media, self-expression, and online connection had arrived, whether we
+                                                were ready for it or not, and Myspace and Facebook set the stage for a new level of
+                                                interaction. This kicked web design into high gear as there was now a market for designing
+                                                ads, widgets for websites, and graphics and images for social profiles.
+                                            </div>
                                         </div>
-                                        <div>
-                                            This timeline would be remiss if it didn’t acknowledge the entrance of Myspace (2003) and
-                                            Facebook (2004). Tom Anderson and Chris DeWolf created Myspace to promote self-
-                                            expression through online profile pages and allow users to connect with each other online.
-                                            Facebook was founded by Mark Zuckerberg and co. at Harvard University as a campus social
-                                            networking site and exploded in popularity worldwide when it went public in 2006. But you
-                                            already knew that.
-                                        </div>
-                                        <div>
-                                            The dawn of social media, self-expression, and online connection had arrived, whether we
-                                            were ready for it or not, and Myspace and Facebook set the stage for a new level of
-                                            interaction. This kicked web design into high gear as there was now a market for designing
-                                            ads, widgets for websites, and graphics and images for social profiles.
-                                        </div>
-                                    </div>
                                     </div>
                                 </div>
                             </div>
@@ -247,7 +227,7 @@ const Evolution_of_web_development = () => {
                 </section> */}
 
             </main>
-            <ReachUs/>
+            <ReachUs />
             <Footer />
 
         </>
