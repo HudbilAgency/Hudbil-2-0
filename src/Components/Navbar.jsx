@@ -431,7 +431,7 @@ const Navbar = () => {
   return (
     <nav>
       <section className="absolute z-[1000] bg-transparent w-full h-[100px]">
-        <div className={`flex items-start justify-between mx-6 lg:mx-16 my-2`}>
+        <div className={`flex items-start justify-between ml-6 lg:ml-16 my-2`}>
           <button>
             {menuIcon ? (
               <div onClick={handleMenuslide} className='flex fixed items-center mt-5 gap-4 border-[#B9B9B97D] rounded-full bg-[#B9B9B97D] bg-opacity-50 py-2 pl-3 pr-6'>
@@ -505,10 +505,13 @@ const Navbar = () => {
                 loading="lazy"
                 src="./MainBirdImg.png"
                 alt="hudbil-logo"
-                className="w-[5rem] lg:w-[7rem]"
+                className="w-[5rem] lg:w-[7rem] mr-6 lg:mr-16"
               />
             ) : (
-              <img className="w-[5rem] md:w-[8rem] mt-6 md:mt-5" src="../hudbil-logo.png" alt="logo" />
+              <div className="h-20 md:mt-2 flex lg:mr-8 items-center justify-center overflow-hidden bg-no-repeat bg-cover bg-center">
+                <img className="w-[12rem] pl-16 md:pl-12 lg:pl-0" src="./hudbil-logo-nav.gif" alt="hudbil-logo" />
+              </div>
+
             )}
           </div>
         </div>

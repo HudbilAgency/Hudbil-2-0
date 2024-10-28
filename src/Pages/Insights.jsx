@@ -6,6 +6,14 @@ import { Helmet } from 'react-helmet';
 
 const Insights = () => {
 
+    const [isVisible, setIsVisible] = useState(false);
+
+    const handleButtonClick = () => {
+        if (!isVisible) {
+            setIsVisible(true);
+        }
+    };
+
     const [isOpen, setIsOpen] = useState(false);
     const [selectedLocation, setSelectedLocation] = useState('');
     const locations = [
@@ -198,50 +206,58 @@ const Insights = () => {
                         <div className='w-full xl:w-[42%] flex flex-col items-start gap-20'>
 
                             <div className='flex flex-col items-start gap-5 w-full'>
-                                <div className='w-full'><img className="filter w-full grayscale transition duration-500 hover:grayscale-0" src="./mainblogimg1.png" alt="Blog1" /></div>
+                                <div className='w-full'><img className="filter w-full grayscale transition duration-500 hover:grayscale-0" src="./mainblogimg1.png" alt="Blog6" /></div>
                                 <div className='font-medium text-3xl'>Landing pages</div>
                                 <div className='font-medium text-xl'>Increase Conversion Rate From Ad to Landing Page.</div>
                                 <div>
-                                    <button className="button self-end mt-5 flex flex-row justify-between px-12 py-2 bg-black leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px] hover:bg-[#7811A5] transition-all duration-300">
-                                        <h1 className='text-base mt-1 font-arial'>Read More</h1>
-                                        <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
-                                    </button>
+                                    <a href="/blogs/increase-conversion-rate">
+                                        <button className="button self-end mt-5 flex flex-row justify-between px-12 py-2 bg-black leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px] hover:bg-[#7811A5] transition-all duration-300">
+                                            <h1 className='text-base mt-1 font-arial'>Read More</h1>
+                                            <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                                        </button>
+                                    </a>
                                 </div>
                             </div>
 
                             <div className='flex flex-col items-start gap-5 w-full'>
-                                <div className='w-full'><img className="filter w-full grayscale transition duration-500 hover:grayscale-0" src="./mainblogimg2.png" alt="Blog2" /></div>
+                                <div className='w-full'><img className="filter w-full grayscale transition duration-500 hover:grayscale-0" src="./mainblogimg2.png" alt="Blog7" /></div>
                                 <div className='font-medium text-3xl'>Chatbots</div>
                                 <div className='font-medium text-xl'>What Are Chatbots? Everything Business Owners Should Know.</div>
                                 <div>
-                                    <button className="button self-end mt-5 flex flex-row justify-between px-12 py-2 bg-black leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px] hover:bg-[#7811A5] transition-all duration-300">
-                                        <h1 className='text-base mt-1 font-arial'>Read More</h1>
-                                        <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
-                                    </button>
+                                    <a href="/blogs/what-are-chatbots">
+                                        <button className="button self-end mt-5 flex flex-row justify-between px-12 py-2 bg-black leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px] hover:bg-[#7811A5] transition-all duration-300">
+                                            <h1 className='text-base mt-1 font-arial'>Read More</h1>
+                                            <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                                        </button>
+                                    </a>
                                 </div>
                             </div>
 
                             <div className='flex flex-col items-start gap-5 w-full'>
-                                <div className='w-full'><img className="filter w-full grayscale transition duration-500 hover:grayscale-0" src="./mainblogimg3.jpg" alt="Blog3" /></div>
+                                <div className='w-full'><img className="filter w-full grayscale transition duration-500 hover:grayscale-0" src="./mainblogimg3.jpg" alt="Blog8" /></div>
                                 <div className='font-medium text-3xl'>Business Websites</div>
                                 <div className='font-medium text-xl'>What Are Chatbots? Everything Business Owners Should Know.</div>
                                 <div>
-                                    <button className="button self-end mt-5 flex flex-row justify-between px-12 py-2 bg-black leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px] hover:bg-[#7811A5] transition-all duration-300">
-                                        <h1 className='text-base mt-1 font-arial'>Read More</h1>
-                                        <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
-                                    </button>
+                                    <a href="/blogs/how-to-create-a-service-website">
+                                        <button className="button self-end mt-5 flex flex-row justify-between px-12 py-2 bg-black leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px] hover:bg-[#7811A5] transition-all duration-300">
+                                            <h1 className='text-base mt-1 font-arial'>Read More</h1>
+                                            <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                                        </button>
+                                    </a>
                                 </div>
                             </div>
 
                             <div className='flex flex-col items-start gap-5 w-full'>
-                                <div className='w-full'><img className="filter w-full grayscale transition duration-500 hover:grayscale-0" src="./mainblogimg4.jpg" alt="Blog4" /></div>
+                                <div className='w-full'><img className="filter w-full grayscale transition duration-500 hover:grayscale-0" src="./mainblogimg4.jpg" alt="Blog9" /></div>
                                 <div className='font-medium text-3xl'>Website Page Speed</div>
                                 <div className='font-medium text-xl'>How to Optimize Your Website for Mobile Page Speed</div>
                                 <div>
-                                    <button className="button self-end mt-5 flex flex-row justify-between px-12 py-2 bg-black leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px] hover:bg-[#7811A5] transition-all duration-300">
-                                        <h1 className='text-base mt-1 font-arial'>Read More</h1>
-                                        <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
-                                    </button>
+                                    <a href="/blogs/how-to-optimize-your-website">
+                                        <button className="button self-end mt-5 flex flex-row justify-between px-12 py-2 bg-black leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px] hover:bg-[#7811A5] transition-all duration-300">
+                                            <h1 className='text-base mt-1 font-arial'>Read More</h1>
+                                            <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                                        </button>
+                                    </a>
                                 </div>
                             </div>
 
@@ -256,45 +272,62 @@ const Insights = () => {
                                     <a href="/coming-soon" className='w-full text-center border rounded-full py-2 mb-3 border-white'>Coming Soon</a>
                                 </div>
 
-                                <Link to="/blogs/the-ultimate-guide-for-ux-research" className='flex flex-col items-start gap-2 w-full xl:w-1/2'>
-                                    <div className='w-full'><img className='w-full grayscale transition duration-500 hover:grayscale-0' src="./mainblogimg5.png" alt="Blog1" /></div>
+                                <Link to="/blogs/the-ultimate-guide-for-ux-research" className='flex group flex-col items-start gap-2 w-full xl:w-1/2'>
+                                    <div className='w-full'><img className='w-full grayscale transition duration-500 group-hover:grayscale-0' src="./mainblogimg5.png" alt="Blog1" /></div>
                                     <div className='text-3xl leading-10 mt-3 w-full'>The Ultimate Guide for UX Research.</div>
                                     <div className='text-[#6A13AA] text-sm'>August 13, 2024</div>
                                 </Link>
                             </div>
 
                             <div className='flex flex-col xl:flex-row items-start gap-20 xl:gap-12 justify-between w-full'>
-                                <Link to="/blogs/the-evolution-of-the-graphic-design" className='flex flex-col items-start gap-2 w-full xl:w-1/2'>
-                                    <div className='w-full'><img className='w-full grayscale transition duration-500 hover:grayscale-0' src="./mainblogimg6.png" alt="Blog2" /></div>
+                                <Link to="/blogs/the-evolution-of-the-graphic-design" className='flex group flex-col items-start gap-2 w-full xl:w-1/2'>
+                                    <div className='w-full'><img className='w-full grayscale transition duration-500 group-hover:grayscale-0' src="./mainblogimg6.png" alt="Blog2" /></div>
                                     <div className='text-3xl leading-10 mt-3'>The Evolution Of The Graphic Design.</div>
                                     <div className='text-[#6A13AA] text-sm'>August 13, 2024</div>
                                 </Link>
 
-                                <Link to="/blogs/brands-identity-design-aspects-in-brief" className='flex flex-col items-start gap-2 w-full xl:w-1/2'>
-                                    <div className='w-full'><img className='w-full grayscale transition duration-500 hover:grayscale-0' src="./mainblogimg7.png" alt="Blog3" /></div>
+                                <Link to="/blogs/brands-identity-design-aspects-in-brief" className='flex group flex-col items-start gap-2 w-full xl:w-1/2'>
+                                    <div className='w-full'><img className='w-full grayscale transition duration-500 group-hover:grayscale-0' src="./mainblogimg7.png" alt="Blog3" /></div>
                                     <div className='text-3xl leading-10 mt-3'>Brand’s identity design aspects in Brief.</div>
                                     <div className='text-[#6A13AA] text-sm'>August 6, 2024</div>
                                 </Link>
                             </div>
 
                             <div className='flex flex-col xl:flex-row items-start gap-20 xl:gap-12 justify-between'>
-                                <Link to="/blogs/business-firms-suffer-to-find-right-design-agency" className='flex flex-col items-start gap-2 w-full xl:w-1/2'>
-                                    <div className='w-full'><img className='w-full grayscale transition duration-500 hover:grayscale-0' src="./mainblogimg8.png" alt="Blog4" /></div>
+                                <Link to="/blogs/business-firms-suffer-to-find-right-design-agency" className='flex group flex-col items-start gap-2 w-full xl:w-1/2'>
+                                    <div className='w-full'><img className='w-full grayscale transition duration-500 group-hover:grayscale-0' src="./mainblogimg8.png" alt="Blog4" /></div>
                                     <div className='text-3xl leading-10 mt-3'>Business Firms Suffer Because of Not Finding right B2B design Agency.</div>
                                     <div className='text-[#6A13AA] text-sm'>July 4, 2024</div>
                                 </Link>
 
-                                <Link to="/blogs/user-experience-design-and-its-importance" className='flex flex-col items-start gap-2 w-full xl:w-1/2'>
-                                    <div className='w-full'><img className='w-full grayscale transition duration-500 hover:grayscale-0' src="./mainblogimg9.png" alt="Blog5" /></div>
+                                <Link to="/blogs/user-experience-design-and-its-importance" className='flex flex-col group items-start gap-2 w-full xl:w-1/2'>
+                                    <div className='w-full'><img className='w-full grayscale transition duration-500 group-hover:grayscale-0' src="./mainblogimg9.png" alt="Blog5" /></div>
                                     <div className='text-3xl leading-10 mt-3'>User Experience Design and its Importance for Businesses.</div>
                                     <div className='text-[#6A13AA] text-sm'>June 24, 2024</div>
                                 </Link>
                             </div>
 
-                            <button className="button self-end mx-auto flex flex-row justify-between px-12 py-2 bg-black leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px] hover:bg-[#7811A5] transition-all duration-300">
-                                <h1 className='text-base mt-1 font-arial'>Learn more</h1>
-                                <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
-                            </button>
+                            {isVisible && (
+                                <div className='flex flex-col xl:flex-row items-start gap-20 xl:gap-12 justify-between w-full'>
+                                    <Link to="/blogs/the-importance-of-accessible-design" className='flex group flex-col items-start gap-2 w-full xl:w-1/2'>
+                                        <div className='w-full'><img className='w-full grayscale transition duration-500 group-hover:grayscale-0' src="./mainblogimg10.png" alt="Blog10" /></div>
+                                        <div className='text-3xl leading-10 mt-3'>The Importance of Accessible Design</div>
+                                        <div className='text-[#6A13AA] text-sm'>June 24, 2024</div>
+                                    </Link>
+                                    <div className='hidden xl:flex group flex-col items-start opacity-0 gap-2 w-full xl:w-1/2'>
+                                        <div className='w-full'><img className='w-full grayscale transition duration-500 group-hover:grayscale-0' src="./mainblogimg10.png" alt="Blog10" /></div>
+                                        <div className='text-3xl leading-10 mt-3'>The Importance of Accessible Design</div>
+                                        <div className='text-[#6A13AA] text-sm'>June 24, 2024</div>
+                                    </div>
+                                </div>
+                            )}
+
+                            {!isVisible && (
+                                <button onClick={handleButtonClick} className="button self-end mx-auto flex flex-row justify-between px-12 py-2 bg-black leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px] hover:bg-[#7811A5] transition-all duration-300">
+                                    <h1 className='text-base mt-1 font-arial'>Learn more</h1>
+                                    <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                                </button>
+                            )}
 
                         </div>
 

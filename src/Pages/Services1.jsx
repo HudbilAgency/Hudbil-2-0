@@ -102,10 +102,12 @@ const Services1 = () => {
                             <div>We are Hudbil – A creative design agency A hardworking collective with 10 years under our belt, specialising in brand identity and packaging.</div>
                             <div>We’re living in a time when every brand is rethinking who they are and what they stand for; fancy features will only get you so far. We create belief  in the seen and unseen, in the said and unsaid.</div>
                             <div>
-                                <button className="button self-end flex flex-row justify-between px-12 py-3 mx-auto leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-all duration-300">
-                                    <h1 className='text-base mt-1 font-arial'>Get In Touch</h1>
-                                    <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
-                                </button>
+                                <a href="/faq">
+                                    <button className="button self-end flex flex-row justify-between px-12 py-3 mx-auto leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-all duration-300">
+                                        <h1 className='text-lg mt-[2px]'>Faqs</h1>
+                                        <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </div>

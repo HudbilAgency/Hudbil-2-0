@@ -158,7 +158,4 @@ const DropdownComponent = () => {
     );
 };
 
-
-
-
 export default Our_industry

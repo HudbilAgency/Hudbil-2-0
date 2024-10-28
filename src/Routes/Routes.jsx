@@ -20,6 +20,11 @@ import BlogPage2 from '../Pages/blogpage-2';
 import BlogPage3 from '../Pages/blogpage-3';
 import BlogPage4 from '../Pages/blogpage-4';
 import BlogPage5 from '../Pages/blogpage-5';
+import BlogPage6 from '../Pages/blogpage-6';
+import BlogPage7 from '../Pages/blogpage-7';
+import BlogPage8 from '../Pages/blogpage-8';
+import BlogPage9 from '../Pages/blogpage-9';
+import BlogPage10 from '../Pages/blogpage-10';
 import Kalacode_investment from '../Pages/kalacode_investment';
 import Coltfox_digital_marketing_agency from '../Pages/coltfox_digital_marketing_agency';
 import Hudbil_startup_india_awards from '../Pages/hudbil_start-up_india_awards';
@@ -47,7 +52,12 @@ const Routers = () => {
         <Route path="/blogs/the-evolution-of-the-graphic-design" element={<BlogPage2 />} />
         <Route path="/blogs/brands-identity-design-aspects-in-brief" element={<BlogPage3 />} />
         <Route path="/blogs/business-firms-suffer-to-find-right-design-agency" element={<BlogPage4 />} />
-        <Route path="blogs/user-experience-design-and-its-importance" element={<BlogPage5 />} />
+        <Route path="/blogs/user-experience-design-and-its-importance" element={<BlogPage5 />} />
+        <Route path="/blogs/increase-conversion-rate" element={<BlogPage6 />} />
+        <Route path="/blogs/what-are-chatbots" element={<BlogPage7 />} />
+        <Route path="/blogs/how-to-create-a-service-website" element={<BlogPage8 />} />
+        <Route path="/blogs/how-to-optimize-your-website" element={<BlogPage9 />} />
+        <Route path="/blogs/the-importance-of-accessible-design" element={<BlogPage10 />} />
         <Route path="/terms-and-conditions" element={<TandC />} />
         <Route path="/tabloids" element={<Tabloids />} />
         <Route path="/tabloids/hudbil-ai-chatbot" element={< Hudbil_ai_chatbot />} />

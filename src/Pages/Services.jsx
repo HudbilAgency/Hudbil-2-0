@@ -89,13 +89,29 @@ const Services = () => {
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-12 toggle-point flex flex-col">
-                                <div className="flex items-center justify-between">
+                                <div className="flex items-start justify-between">
                                     <div onClick={() => toggleDropdown(0)} className="flex flex-col items-start justify-between cursor-pointer gap-6">
                                         <div className="font-normal text-4xl leading-9">Research</div>
                                         <div className='flex items-center gap-4'>
                                             <div className='bg-white rounded-full p-1'></div>
                                             <div className='text-base'>What do we serve?</div>
                                         </div>
+                                    </div>
+                                    <div className='mt-[10px]'>
+                                        <a href="/coming-soon">
+                                            <svg
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                className='button'
+                                            >
+                                                <rect width="24" height="24" rx="12" fill="#7811A5" />
+                                                <rect x="7" y="11" width="10" height="2" fill="white" />
+                                                <rect x="11" y="7" width="2" height="10" fill="white" />
+                                            </svg>
+                                        </a>
                                     </div>
                                 </div>
                                 <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[0] ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
@@ -130,13 +146,29 @@ const Services = () => {
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-12 toggle-point flex flex-col">
-                                <div className="flex items-center justify-between">
+                                <div className="flex items-start justify-between">
                                     <div onClick={() => toggleDropdown(1)} className="flex flex-col items-start justify-between cursor-pointer gap-6">
                                         <div className="font-normal text-4xl leading-9">Strategy</div>
                                         <div className='flex items-center gap-4'>
                                             <div className='bg-white rounded-full p-1'></div>
                                             <div className='text-base'>What do we serve?</div>
                                         </div>
+                                    </div>
+                                    <div className='mt-[10px]'>
+                                        <a href="/coming-soon">
+                                            <svg
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                className='button'
+                                            >
+                                                <rect width="24" height="24" rx="12" fill="#7811A5" />
+                                                <rect x="7" y="11" width="10" height="2" fill="white" />
+                                                <rect x="11" y="7" width="2" height="10" fill="white" />
+                                            </svg>
+                                        </a>
                                     </div>
                                 </div>
                                 <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[1] ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
@@ -171,13 +203,29 @@ const Services = () => {
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-12 toggle-point flex flex-col">
-                                <div className="flex items-center justify-between">
+                                <div className="flex items-start justify-between">
                                     <div onClick={() => toggleDropdown(2)} className="flex flex-col items-start justify-between cursor-pointer gap-6">
                                         <div className="font-normal text-4xl leading-9">Design</div>
                                         <div className='flex items-center gap-4'>
                                             <div className='bg-white rounded-full p-1'></div>
                                             <div className='text-base'>What do we serve?</div>
                                         </div>
+                                    </div>
+                                    <div className='mt-[10px]'>
+                                        <a href="/services/creative-designing-agency">
+                                            <svg
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                className='button'
+                                            >
+                                                <rect width="24" height="24" rx="12" fill="#7811A5" />
+                                                <rect x="7" y="11" width="10" height="2" fill="white" />
+                                                <rect x="11" y="7" width="2" height="10" fill="white" />
+                                            </svg>
+                                        </a>
                                     </div>
                                 </div>
                                 <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[2] ? 'max-h-[700px] opacity-100' : 'max-h-0 opacity-0'}`}>
@@ -232,13 +280,29 @@ const Services = () => {
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-12 toggle-point flex flex-col">
-                                <div className="flex items-center justify-between">
+                                <div className="flex items-start justify-between">
                                     <div onClick={() => toggleDropdown(3)} className="flex flex-col items-start justify-between cursor-pointer gap-6">
                                         <div className="font-normal text-4xl leading-9">Development</div>
                                         <div className='flex items-center gap-4'>
                                             <div className='bg-white rounded-full p-1'></div>
                                             <div className='text-base'>What do we serve?</div>
                                         </div>
+                                    </div>
+                                    <div className='mt-[10px]'>
+                                        <a href="/services/development-agency">
+                                            <svg
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                className='button'
+                                            >
+                                                <rect width="24" height="24" rx="12" fill="#7811A5" />
+                                                <rect x="7" y="11" width="10" height="2" fill="white" />
+                                                <rect x="11" y="7" width="2" height="10" fill="white" />
+                                            </svg>
+                                        </a>
                                     </div>
                                 </div>
                                 <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[3] ? 'max-h-[700px] opacity-100' : 'max-h-0 opacity-0'}`}>

@@ -20,25 +20,21 @@ const Home = () => {
     "/LandingVideos/video6.mp4",
   ];
 
-  const [currentVideo, setCurrentVideo] = useState(randomVideos[0]);
-  const [previousIndex, setPreviousIndex] = useState(null);
+  const initialIndex = parseInt(localStorage.getItem("currentVideoIndex"), 10) || 0;
 
+  const [currentIndex, setCurrentIndex] = useState(initialIndex);
+  const [currentVideo, setCurrentVideo] = useState(randomVideos[initialIndex]);
 
-  const pickRandomVideo = () => {
-    let randomIndex;
-    do {
-      randomIndex = Math.floor(Math.random() * randomVideos.length);
-    } while (randomIndex === previousIndex);
-
-    setCurrentVideo(randomVideos[randomIndex]);
-    setPreviousIndex(randomIndex);
+  const playNextVideo = () => {
+    const nextIndex = (currentIndex + 1) % randomVideos.length;
+    setCurrentVideo(randomVideos[nextIndex]);
+    setCurrentIndex(nextIndex);
+    localStorage.setItem("currentVideoIndex", nextIndex);
   };
 
   useEffect(() => {
-    pickRandomVideo();
-    console.error();
+    playNextVideo();
   }, []);
-
 
   const [loading, setLoading] = useState(true);
 

@@ -103,10 +103,12 @@ const Services2 = () => {
                                 belt, specialising in brand identity and packaging.</div>
                             <div>We develop adaptive and versatile apps that solve your hardest challenges, scale with your business, and maximise your ROI. Using a unique Continuous Discovery / Continuous Delivery approach coupled with cutting-edge technologies, we develop and deliver end to end to ensure you’re consistently meeting user needs and driving business value.</div>
                             <div>
-                                <button className="button self-end flex flex-row justify-between px-12 py-3 mx-auto leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-all duration-300">
-                                    <h1 className='text-base mt-1 font-arial'>Get In Touch</h1>
-                                    <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
-                                </button>
+                                <a href="/faq">
+                                    <button className="button self-end flex flex-row justify-between px-12 py-3 mx-auto leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-all duration-300">
+                                        <h1 className='text-lg mt-[2px]'>Faqs</h1>
+                                        <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </div>
