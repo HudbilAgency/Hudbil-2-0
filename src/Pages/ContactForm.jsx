@@ -292,9 +292,20 @@ const ContactForm = () => {
         </script>
       </Helmet>
       <Navbar />
-      <main className='pt-40 pb-20 lg:pb-40 px-6 lg:px-16'>
-
-        <div className="bg-[#6C6C6C] h-[1px] w-full opacity-50 mb-20"></div>
+      <div className="w-full h-[70vh] lg:h-[80vh] bg-no-repeat bg-cover bg-center">
+        <video
+          src="/contact-video.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="object-cover h-[70vh] lg:h-[80vh] w-full fixed z-0"
+        >
+          <source src="/contact-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <main className='py-28 px-6 lg:px-16 relative z-20 bg-white'>
 
         <section>
           <div className='flex flex-col lg:flex-row items-stretch justify-between h-full gap-16 lg:gap-20 xl:gap-24 2xl:gap-36'>

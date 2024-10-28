@@ -77,10 +77,30 @@ const Services = () => {
                     <div className='pl-6 lg:pl-0 pr-6 mt-20 flex flex-col lg:flex-row items-start w-full gap-16 lg:gap-12'>
 
                         <div className='flex items-center justify-center w-full lg:w-1/2 lg:hidden'>
-                            <img className='w-full ' src="./our-services.png" />
+                            <video
+                                src="/services-video.mp4"
+                                autoPlay
+                                loop
+                                muted
+                                playsInline
+                                className="object-cover w-full"
+                            >
+                                <source src="/services-video.mp4" type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
                         <div className='lg:flex hidden items-center justify-center w-full lg:w-1/2 bg-no-repeat bg-cover bg-center sticky top-0'>
-                            <img className='w-full h-screen object-cover' src="./our-services.png" />
+                            <video
+                                src="/services-video.mp4"
+                                autoPlay
+                                loop
+                                muted
+                                playsInline
+                                className="object-cover w-full h-screen"
+                            >
+                                <source src="/services-video.mp4" type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
 
                         <div className='w-full lg:w-2/3 xl:w-1/2 text-white'>
