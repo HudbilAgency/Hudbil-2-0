@@ -236,7 +236,7 @@ const Insights = () => {
                             <div className='flex flex-col items-start gap-5 w-full'>
                                 <div className='w-full'><img className="filter w-full grayscale transition duration-500 hover:grayscale-0" src="./mainblogimg3.jpg" alt="Blog8" /></div>
                                 <div className='font-medium text-3xl'>Business Websites</div>
-                                <div className='font-medium text-xl'>What Are Chatbots? Everything Business Owners Should Know.</div>
+                                <div className='font-medium text-xl'>How to create a service website in 10 steps</div>
                                 <div>
                                     <a href="/blogs/how-to-create-a-service-website">
                                         <button className="button self-end mt-5 flex flex-row justify-between px-12 py-2 bg-black leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px] hover:bg-[#7811A5] transition-all duration-300">
@@ -250,7 +250,7 @@ const Insights = () => {
                             <div className='flex flex-col items-start gap-5 w-full'>
                                 <div className='w-full'><img className="filter w-full grayscale transition duration-500 hover:grayscale-0" src="./mainblogimg4.jpg" alt="Blog9" /></div>
                                 <div className='font-medium text-3xl'>Website Page Speed</div>
-                                <div className='font-medium text-xl'>How to Optimize Your Website for Mobile Page Speed</div>
+                                <div className='font-medium text-xl'>7 website optimization techniques you need to be using</div>
                                 <div>
                                     <a href="/blogs/how-to-optimize-your-website">
                                         <button className="button self-end mt-5 flex flex-row justify-between px-12 py-2 bg-black leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px] hover:bg-[#7811A5] transition-all duration-300">

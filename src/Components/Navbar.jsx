@@ -508,8 +508,8 @@ const Navbar = () => {
                 className="w-[5rem] lg:w-[7rem] mr-6 lg:mr-16"
               />
             ) : (
-              <div className="h-20 md:mt-2 flex lg:mr-8 items-center justify-center overflow-hidden bg-no-repeat bg-cover bg-center">
-                <img className="w-[12rem] pl-16 md:pl-12 lg:pl-0" src="./hudbil-logo-nav.gif" alt="hudbil-logo" />
+              <div className="h-20 md:mt-1 flex mr-3 lg:mr-[50px] items-center justify-center overflow-hidden bg-no-repeat bg-cover bg-center">
+                <img className="w-[6rem] sm:w-[8rem] md:w-[10rem]" src="./hudbil-logo-nav.gif" alt="hudbil-logo" />
               </div>
 
             )}
