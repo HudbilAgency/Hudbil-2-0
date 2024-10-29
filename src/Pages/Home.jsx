@@ -130,8 +130,7 @@ const Home = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: animationRef.current,
-        start: "40% center",
-        end: "bottom center",
+        start: "bottom bottom",
         toggleActions: "play none none reverse",
 
       },
@@ -139,12 +138,12 @@ const Home = () => {
 
     tl.to(
       carouselItem2.current,
-      { x: "-100%", ease: "power3.inOut" }, "slide"
+      { x: "-100%", ease: "linear" }, "slide"
     );
 
     tl.to(
       carouselItem1.current,
-      { x: "-100%", ease: "power3.inOut" }, "slide"
+      { x: "-100%", ease: "linear" }, "slide"
     );
 
   }, []);
@@ -591,8 +590,8 @@ const Home = () => {
                 <div className="flex flex-col items-center w-1/2" ref={carouselItem1}>
                   <h2 className="text-6xl  leading-none text-center text-purple-700 max-md:text-4xl">Our Brands</h2>
                   <div className="flex overflow-hidden relative flex-col mt-14 max-w-full text-xs font-extralight tracking-wider text-center aspect-[0.866] text-teal-950 w-[304px] max-md:mt-10">
-                    <div className="flex overflow-hidden relative flex-col px-11 py-40 bg-white max-md:px-5 max-md:py-24 ">
-                      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/7281482c86da59f833039df7a3ec6c277db84f6759a3e18d14449941f4081705?placeholderIfAbsent=true&apiKey=7904fd7afaaf4ee2b0837ab86d91b244" alt="Brand logo" className="filter grayscale hover:grayscale-0 transition-all duration-300 object-contain lg:-mt-12 aspect-[2.87] w-[284px]" />
+                    <div className="flex overflow-hidden relative flex-col group px-11 py-40 bg-white max-md:px-5 max-md:py-24 ">
+                      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/7281482c86da59f833039df7a3ec6c277db84f6759a3e18d14449941f4081705?placeholderIfAbsent=true&apiKey=7904fd7afaaf4ee2b0837ab86d91b244" alt="Brand logo" className="filter grayscale group-hover:grayscale-0 transition-all duration-300 object-contain lg:-mt-12 aspect-[2.87] w-[284px]" />
                       <h1 className='self-center mt-5 mb-0  max-md:mb-2.5 text-black font-semibold'>Impression At Your Fingertips</h1>
                     </div>
                   </div>
@@ -615,8 +614,8 @@ const Home = () => {
                 <div className="flex flex-col items-center w-1/2" ref={carouselItem2}>
                   <h2 className="text-6xl  leading-none text-center text-purple-700 max-md:text-4xl">Our Brands</h2>
                   <div className="flex overflow-hidden relative flex-col mt-14 max-w-full text-xs font-extralight tracking-wider text-center aspect-[0.866] text-teal-950 w-[304px] max-md:mt-10">
-                    <div className="flex overflow-hidden relative flex-col px-11 py-40 bg-white max-md:px-5 max-md:py-24 ">
-                      <img loading="lazy" src="./OurBrandsImg/KalacodeBrandLogoImg.png" alt="Brand logo" className="filter grayscale hover:grayscale-0 transition-all duration-300 object-contain lg:-mt-12 aspect-[2.87] w-[284px]" />
+                    <div className="flex group overflow-hidden relative flex-col px-11 py-40 bg-white max-md:px-5 max-md:py-24 ">
+                      <img loading="lazy" src="./OurBrandsImg/KalacodeBrandLogoImg.png" alt="Brand logo" className="filter grayscale group-hover:grayscale-0 transition-all duration-300 object-contain lg:-mt-12 aspect-[2.87] w-[284px]" />
                       <h1 className='self-center mt-5 font-xl mb-0  max-md:mb-2.5 text-black font-semibold'>Power At Your Fingertips</h1>
                     </div>
                   </div>
@@ -678,36 +677,6 @@ const Home = () => {
                   <div className="flex shrink-0 self-stretch my-auto w-3 h-3 bg-purple-700 rounded-[1000px]" />
                   <div className="self-stretch ml-[1.5%] text-[25px] text-purple-700 my-auto">Our blogs</div>
                 </div>
-                {/* <div className="mt-14  max-w-full w-[696px] max-md:mt-10 ">
-                        <div className="flex gap-12 max-md:flex-col">
-                          {blogs.map((blog, index) => (
-                            <div key={index} className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
-                              <div className="flex flex-col grow text-2xl tracking-wider leading-8 text-neutral-950 max-md:mt-10">
-                                <img loading="lazy" src={blog.image} alt={blog.title} className="filter grayscale hover:grayscale-0 transition-all duration-300 object-cover w-full aspect-[0.97]" />
-                                <h3 className="self-start mt-8">{blog.title}</h3>
-                              </div>
-                              <div className="flex gap-5 justify-between  mt-8  max-w-full text-base tracking-wider leading-none text-zinc-500 w-[450px] ">
-                                  <button>Read now</button>
-                                </div>
-                            </div>
-                          ))}
-                        </div>
-                      </div> */}
-                {/* <div className="flex gap-5 justify-between  mt-8  max-w-full text-base tracking-wider leading-none text-zinc-500 w-[450px] ">
-                        <button>Read now</button>
-                        <button>Read now</button>
-                      </div> */}
-                {/* <div className="flex gap-5 justify-center items-center mt-20  max-sm:ml-0">
-                        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/547a3a65de8aafe8a7fea86029f7cd5dd14fb1a5eee40cbdf2705aecd868dd95?placeholderIfAbsent=true&apiKey=7904fd7afaaf4ee2b0837ab86d91b244" alt="" className="object-contain shrink-0 self-stretch my-auto w-4 aspect-square" />
-                        {[...Array(4)].map((_, index) => (
-                          <div key={index} className="flex shrink-0 self-stretch my-auto w-2.5 h-2.5 bg-violet-800 rounded-full" />
-                        ))}
-                      </div>
-                      */}
-                {/* <button className="px-16 ml-52 py-4 mt-10 w-80 max-w-full text-base tracking-wider  bg-black leading-none text-white rounded-[1000px]  hover:bg-[#7811A5]  transition-all duration-300">
-                        View all insight →
-                      </button> */}
-
               </section>
               <CarousalImgBlogs />
               <Link to="/our-blogs">
