@@ -4,6 +4,7 @@ import Footer from '../Components/Footer';
 import { Helmet } from 'react-helmet';
 import { FaCheckCircle } from "react-icons/fa";
 import axios from "axios";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const ContactForm = () => {
 
@@ -18,6 +19,9 @@ const ContactForm = () => {
   const [fileName, setFileName] = useState("");
   const [file, setFile] = useState(null);
   const [showConfirmation, setShowConfirmation] = useState(false);
+  const [showVerification, setShowVerification] = useState(false);
+  const recaptchaRef = useRef(null);
+  const [recaptchaToken, setRecaptchaToken] = useState(null);
 
   const toggleConfirmation = () => {
     setShowConfirmation(!showConfirmation);
@@ -45,6 +49,11 @@ const ContactForm = () => {
 
   const handleSubmitForm = async () => {
 
+    if (!recaptchaToken) {
+      setShowVerification(true);
+      return;
+    }
+
     let fileBase64 = file ? await toBase64(file) : null;
 
     const contactformData = {
@@ -57,9 +66,25 @@ const ContactForm = () => {
       message,
       fileName,
       attachment: fileBase64,
+      recaptchaToken,
     };
 
+    setShowVerification(false);
     toggleConfirmation();
+
+    setFirstName("");
+    setLastName("");
+    setEmail("");
+    setJobTitle("");
+    setCompany("");
+    setCountry("");
+    setMessage("");
+    setFileName("");
+    setFile(null);
+    setRecaptchaToken(null);
+    if (fileInputRef.current) {
+      fileInputRef.current.value = "";
+    }
 
     try {
       const response = await axios.post(
@@ -72,9 +97,14 @@ const ContactForm = () => {
         }
       );
       console.log("Server response:", response.data);
+
     } catch (error) {
       console.error("Error sending data to server:", error);
     }
+  };
+
+  const onRecaptchaChange = (token) => {
+    setRecaptchaToken(token);
   };
 
   const countries = [
@@ -498,7 +528,7 @@ const ContactForm = () => {
                   >
                     <option value="" className="text-[#C4C4C4]">Please Select</option>
                     {countries.map((country) => (
-                      <option key={country.code} value={country.code} className="">
+                      <option key={country.code} value={country.name} className="">
                         {country.name.split(',')[0]}
                       </option>
                     ))}
@@ -540,7 +570,19 @@ const ContactForm = () => {
                       }
                     </div>
                   </div>
-                  <button form="userDetailsForm" type="submit" className='border w-fit sm:mx-0 mx-auto rounded-full py-4 px-28 text-white submit-btn mt-4'>
+                  <div>
+                    <ReCAPTCHA
+                      sitekey="6LfWPG8qAAAAAFBRLkUr505LpNEDOL_6p5dd8SLF"
+                      onChange={onRecaptchaChange}
+                      ref={recaptchaRef}
+                    />
+                    {showVerification && (
+                      <div className='mt-2 text-[#7811A5]'>
+                        Please verify yourself first!
+                      </div>
+                    )}
+                  </div>
+                  <button form="userDetailsForm" type="submit" className='border w-fit rounded-full py-4 px-28 text-white submit-btn'>
                     Submit
                   </button>
                 </div>

@@ -4,6 +4,7 @@ import Footer from '../Components/Footer'
 import { Helmet } from 'react-helmet';
 import { FaCheckCircle } from "react-icons/fa";
 import axios from "axios";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const ClientSupport = () => {
 
@@ -18,6 +19,9 @@ const ClientSupport = () => {
   const [fileName, setFileName] = useState("");
   const [file, setFile] = useState(null);
   const [showConfirmation, setShowConfirmation] = useState(false);
+  const [showVerification, setShowVerification] = useState(false);
+  const recaptchaRef = useRef(null);
+  const [recaptchaToken, setRecaptchaToken] = useState(null);
 
   const toggleConfirmation = () => {
     setShowConfirmation(!showConfirmation);
@@ -45,6 +49,11 @@ const ClientSupport = () => {
 
   const handleSubmitForm = async () => {
 
+    if (!recaptchaToken) {
+      setShowVerification(true);
+      return;
+    }
+
     let fileBase64 = file ? await toBase64(file) : null;
 
     const clientsupportData = {
@@ -57,9 +66,25 @@ const ClientSupport = () => {
       time,
       fileName,
       attachment: fileBase64,
+      recaptchaToken,
     };
 
+    setShowVerification(false);
     toggleConfirmation();
+
+    setProject("");
+    setFirstName("");
+    setCompany("");
+    setEmail("");
+    setRole("");
+    setIssue("");
+    setTime("");
+    setFileName("");
+    setFile(null);
+    setRecaptchaToken(null);
+    if (fileInputRef.current) {
+      fileInputRef.current.value = "";
+    }
 
     try {
       const response = await axios.post(
@@ -72,9 +97,14 @@ const ClientSupport = () => {
         }
       );
       console.log("Server response:", response.data);
+
     } catch (error) {
       console.error("Error sending data to server:", error);
     }
+  };
+
+  const onRecaptchaChange = (token) => {
+    setRecaptchaToken(token);
   };
 
   return (
@@ -103,8 +133,8 @@ const ClientSupport = () => {
           <div className="flex flex-1 shrink w-full basis-0 min-h-[1px] min-w-[240px] max-md:max-w-full" />
         </div>
         <section className="mt-20 w-full max-md:mt-10 max-md:max-w-full">
-          <div className="flex gap-5 max-md:flex-col">
-            <div className="flex flex-col w-[44%] max-md:ml-0 max-md:w-full">
+          <div className="flex gap-6 sm:gap-16 flex-col lg:flex-row">
+            <div className="flex flex-col lg:w-[44%] max-md:ml-0 w-full">
               <div className="flex flex-col text-neutral-950 max-md:mt-10 max-md:max-w-full">
                 <h1 className="self-start text-4xl md:text-[3rem] xl:text-[4rem] text-[#0B0B0B] leading-tight">
                   Our Teams
@@ -114,9 +144,10 @@ const ClientSupport = () => {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col ml-5 w-[56%] max-md:ml-0 max-md:w-full">
-              <form className="flex flex-wrap grow gap-10 text-base text-zinc-500 mt-12 md:mt-0 max-md:max-w-full">
-                <div className="flex shrink-0 w-px border border-solid border-zinc-300  max-md:hidden max-sm:hidden" />
+            <div className="flex flex-col lg:ml-5 lg:w-[56%] ml-0 w-full">
+              <div className="flex flex-wrap grow gap-10 text-base text-zinc-500 mt-12 md:mt-0 max-md:max-w-full">
+                <div className="lg:flex shrink-0 w-[1px] bg-[#D8D8D8] hidden" />
+                <div className="bg-[#D8D8D8] h-[1px] w-full lg:hidden block"></div>
                 <div className="flex flex-col grow shrink-0 basis-0 w-fit max-md:max-w-full">
                   <h2 className="self-start text-3xl text-neutral-950">Choose your project</h2>
                   <form id="userDetailsForm"
@@ -243,13 +274,25 @@ const ClientSupport = () => {
                           }
                         </div>
                       </div>
-                      <button form="userDetailsForm" type="submit" className='border w-fit sm:mx-0 mx-auto rounded-full py-4 px-28 text-white submit-btn mt-4'>
+                      <div>
+                        <ReCAPTCHA
+                          sitekey="6LfWPG8qAAAAAFBRLkUr505LpNEDOL_6p5dd8SLF"
+                          onChange={onRecaptchaChange}
+                          ref={recaptchaRef}
+                        />
+                        {showVerification && (
+                          <div className='mt-2 text-[#7811A5]'>
+                            Please verify yourself first!
+                          </div>
+                        )}
+                      </div>
+                      <button form="userDetailsForm" type="submit" className='border w-fit rounded-full py-4 px-28 text-white submit-btn'>
                         Submit
                       </button>
                     </div>
                   </form>
                 </div>
-              </form>
+              </div>
             </div>
           </div>
         </section>
