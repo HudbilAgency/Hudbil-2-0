@@ -76,7 +76,7 @@ const Loader = ({ onLoadingComplete }) => {
         className="mb-8 w-48 h-48"
       />
       <div className="text-center">
-        <h1 ref={textRef} className="text-white font-arial text-2xl sm:text-4xl md:text-[50px] lg:text-[50px]">
+        <h1 ref={textRef} className="text-white  text-2xl sm:text-4xl md:text-[50px] lg:text-[50px]">
           {splitSentenceIntoWords("Innovation At Your Fingertips")}
         </h1>
       </div>

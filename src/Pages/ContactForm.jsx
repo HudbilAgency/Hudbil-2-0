@@ -1,17 +1,27 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 import { Helmet } from 'react-helmet';
+import { FaCheckCircle } from "react-icons/fa";
+import axios from "axios";
 
 const ContactForm = () => {
 
+  const [firstname, setFirstName] = useState("");
+  const [lastname, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [jobtitle, setJobTitle] = useState("");
+  const [company, setCompany] = useState("");
+  const [country, setCountry] = useState("");
+  const [message, setMessage] = useState("");
   const fileInputRef = useRef(null);
   const [fileName, setFileName] = useState("");
   const [file, setFile] = useState(null);
+  const [showConfirmation, setShowConfirmation] = useState(false);
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  const toggleConfirmation = () => {
+    setShowConfirmation(!showConfirmation);
+  };
 
   const handleFileInputClick = () => {
     fileInputRef.current.click();
@@ -22,6 +32,48 @@ const ContactForm = () => {
     if (file) {
       setFileName(file.name);
       setFile(file);
+    }
+  };
+
+  const toBase64 = (file) =>
+    new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onload = () => resolve(reader.result);
+      reader.onerror = (error) => reject(error);
+    });
+
+  const handleSubmitForm = async () => {
+
+    let fileBase64 = file ? await toBase64(file) : null;
+
+    const contactformData = {
+      firstname,
+      lastname,
+      email,
+      jobtitle,
+      company,
+      country,
+      message,
+      fileName,
+      attachment: fileBase64,
+    };
+
+    toggleConfirmation();
+
+    try {
+      const response = await axios.post(
+        "https://hudbil-server.onrender.com/contact-form",
+        JSON.stringify(contactformData),
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      console.log("Server response:", response.data);
+    } catch (error) {
+      console.error("Error sending data to server:", error);
     }
   };
 
@@ -376,9 +428,17 @@ const ContactForm = () => {
             <div className='w-full lg:w-1/2 min-h-full flex flex-col lg:flex-row items-start gap-12 xl:gap-16'>
               <div className="bg-[#D8D8D8] h-[1px] w-full lg:hidden block"></div>
               <div className="bg-[#D8D8D8] w-[1px] h-full hidden lg:block"></div>
-              <div className='w-full'>
+              <form id="userDetailsForm"
+                className="w-full"
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  handleSubmitForm();
+                }}
+              >
                 <div className='w-full'>
                   <input
+                    value={firstname}
+                    onChange={(e) => setFirstName(e.target.value)}
                     type="text"
                     name="firstName"
                     placeholder="First name*"
@@ -387,6 +447,8 @@ const ContactForm = () => {
                   />
                   <div className="bg-[#D8D8D8] h-[1px] w-full "></div>
                   <input
+                    value={lastname}
+                    onChange={(e) => setLastName(e.target.value)}
                     type="text"
                     name="lastName"
                     placeholder="Last name*"
@@ -395,6 +457,8 @@ const ContactForm = () => {
                   />
                   <div className="bg-[#D8D8D8] h-[1px] w-full "></div>
                   <input
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     type="email"
                     name="email"
                     placeholder="Email*"
@@ -403,6 +467,8 @@ const ContactForm = () => {
                   />
                   <div className="bg-[#D8D8D8] h-[1px] w-full "></div>
                   <input
+                    value={jobtitle}
+                    onChange={(e) => setJobTitle(e.target.value)}
                     type="text"
                     name="jobTitle"
                     placeholder="Job title"
@@ -410,6 +476,8 @@ const ContactForm = () => {
                   />
                   <div className="bg-[#D8D8D8] h-[1px] w-full "></div>
                   <input
+                    value={company}
+                    onChange={(e) => setCompany(e.target.value)}
                     type="text"
                     name="companyName"
                     placeholder="Company name*"
@@ -421,6 +489,8 @@ const ContactForm = () => {
                 <div className='mt-10 flex flex-col gap-2'>
                   <label htmlFor="country">Country*</label>
                   <select
+                    value={country}
+                    onChange={(e) => setCountry(e.target.value)}
                     id="country"
                     name="country"
                     className="py-5 border-b border-[#D8D8D8] focus:outline-none"
@@ -440,6 +510,8 @@ const ContactForm = () => {
                     name="message"
                     className="flex mt-6 p-4 w-full border border-[#D8D8D8]"
                     required
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                   />
                 </div>
                 <div className='mt-12 flex flex-col gap-12'>
@@ -468,16 +540,40 @@ const ContactForm = () => {
                       }
                     </div>
                   </div>
-                  <button className='border w-fit sm:mx-0 mx-auto rounded-full py-4 px-28 text-white submit-btn mt-4'>
+                  <button form="userDetailsForm" type="submit" className='border w-fit sm:mx-0 mx-auto rounded-full py-4 px-28 text-white submit-btn mt-4'>
                     Submit
                   </button>
                 </div>
-              </div>
+              </form>
             </div>
-
           </div>
         </section>
       </main>
+      {showConfirmation && (
+        <div className="fixed z-30 inset-0 w-auto flex items-center justify-center">
+          <div style={{
+            background: 'linear-gradient(135deg, #7811A5, #2E16BB)',
+          }} className="px-2 py-6 sm:px-6 sm:py-6 rounded-lg shadow-lg">
+            <div className="flex items-center justify-center text-green-700">
+              <FaCheckCircle className="mr-2 text-white" />
+              <span className="font-medium text-sm sm:text-base text-white">
+                Your details have been sent.
+              </span>
+            </div>
+            <p className="text-center text-sm sm:text-base mt-4 text-white">
+              Please check your email for the confirmation.
+            </p>
+            <div className='flex items-end justify-end mt-6'>
+              <button
+                className="text-xs transition-all duration-300 sm:text-base text-black bg-white hover:bg-black shadow-none hover:text-white focus:outline-none py-1 px-2 sm:py-2 sm:px-4 rounded-full"
+                onClick={toggleConfirmation}
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
       <Footer />
     </>
   );

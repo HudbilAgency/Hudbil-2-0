@@ -2,33 +2,26 @@ import React, { useState, useRef } from 'react';
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import { Helmet } from 'react-helmet';
-
-const FormInput = ({ label, type = 'text', placeholder = '' }) => (
-  <div className="flex overflow-hidden justify-center items-start py-2 tracking-wider">
-    <label className="sr-only" htmlFor={label.toLowerCase().replace(/\s/g, '-')}>{label}</label>
-    <input
-      type={type}
-      id={label.toLowerCase().replace(/\s/g, '-')}
-      placeholder={placeholder || label}
-      className="overflow-hidden flex-1 py-4 px-1 outline-none border-b shrink w-full min-w-[240px] max-md:max-w-full"
-      aria-label={label}
-    />
-  </div>
-);
+import { FaCheckCircle } from "react-icons/fa";
+import axios from "axios";
 
 const ClientSupport = () => {
 
-  const formInputs = [
-    { label: "First name*" },
-    { label: "Company Name*" },
-    { label: "Email*", type: "email" },
-    { label: "What's your role towards the project?*" },
-    { label: "What is the issue you are facing currently?*" },
-  ];
-
+  const [project, setProject] = useState("");
+  const [firstname, setFirstName] = useState("");
+  const [company, setCompany] = useState("");
+  const [email, setEmail] = useState("");
+  const [role, setRole] = useState("");
+  const [issue, setIssue] = useState("");
+  const [time, setTime] = useState("");
   const fileInputRef = useRef(null);
   const [fileName, setFileName] = useState("");
   const [file, setFile] = useState(null);
+  const [showConfirmation, setShowConfirmation] = useState(false);
+
+  const toggleConfirmation = () => {
+    setShowConfirmation(!showConfirmation);
+  };
 
   const handleFileInputClick = () => {
     fileInputRef.current.click();
@@ -39,6 +32,48 @@ const ClientSupport = () => {
     if (file) {
       setFileName(file.name);
       setFile(file);
+    }
+  };
+
+  const toBase64 = (file) =>
+    new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onload = () => resolve(reader.result);
+      reader.onerror = (error) => reject(error);
+    });
+
+  const handleSubmitForm = async () => {
+
+    let fileBase64 = file ? await toBase64(file) : null;
+
+    const clientsupportData = {
+      project,
+      firstname,
+      company,
+      email,
+      role,
+      issue,
+      time,
+      fileName,
+      attachment: fileBase64,
+    };
+
+    toggleConfirmation();
+
+    try {
+      const response = await axios.post(
+        "https://hudbil-server.onrender.com/client-support",
+        JSON.stringify(clientsupportData),
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      console.log("Server response:", response.data);
+    } catch (error) {
+      console.error("Error sending data to server:", error);
     }
   };
 
@@ -63,7 +98,7 @@ const ClientSupport = () => {
         </script>
       </Helmet>
       <Navbar />
-      <main className="flex overflow-hidden flex-col px-6 lg:px-16 py-16 bg-white max-md:px-5 max-md:pb-24">
+      <main className="flex overflow-hidden flex-col px-6 lg:px-16 py-20 bg-white max-md:px-5 max-md:pb-20">
         <div className="flex px-10 mt-20 bg-neutral-400 max-md:px-5 max-md:mt-10">
           <div className="flex flex-1 shrink w-full basis-0 min-h-[1px] min-w-[240px] max-md:max-w-full" />
         </div>
@@ -80,84 +115,171 @@ const ClientSupport = () => {
               </div>
             </div>
             <div className="flex flex-col ml-5 w-[56%] max-md:ml-0 max-md:w-full">
-              <form className="flex flex-wrap grow gap-10 text-base text-zinc-500 max-md:mt-10 max-md:max-w-full">
+              <form className="flex flex-wrap grow gap-10 text-base text-zinc-500 mt-12 md:mt-0 max-md:max-w-full">
                 <div className="flex shrink-0 w-px border border-solid border-zinc-300  max-md:hidden max-sm:hidden" />
                 <div className="flex flex-col grow shrink-0 basis-0 w-fit max-md:max-w-full">
                   <h2 className="self-start text-3xl text-neutral-950">Choose your project</h2>
-                  <div className="flex overflow-hiddens mt-10 tracking-wider">
-                    <label htmlFor="project-select" className="sr-only bg-transparent">Select Your on-going project with us</label>
-                    <select
-                      id="project-select"
-                      className="overflow-hidden grow my-auto py-5 bg-transparent border-b outline-none max-md:max-w-full"
-                      aria-label="Select Your on-going project with us"
-                    >
-                      <option>Select Your on-going project with us*</option>
-                      <option>UI/UX design</option>
-                      <option>Website development</option>
-                      <option>Application development</option>
-                      <option>Design Strategy</option>
-                      <option>Chat-bot development</option>
-                      <option>Branding design</option>
-                    </select>
-                  </div>
-                  {formInputs.map((input, index) => (
-                    <FormInput key={index} {...input} />
-                  ))}
-                  <div className="flex overflow-hiddens tracking-wider">
-                    <label htmlFor="project-select" className="sr-only bg-transparent">Select Your on-going project with us</label>
-                    <select
-                      id="project-select"
-                      className="overflow-hidde grow h-fit py-5 bg-transparent border-b outline-none"
-                      aria-label="Select Your on-going project with us"
-                    >
-                      <option>Select Your on-going project with us*</option>
-                      <option>3:00 PM - IST</option>
-                      <option>3:30 PM - IST </option>
-                      <option>4:00 PM - IST</option>
-                      <option>4:30 PM - IST</option>
-                      <option>5:00 PM - IST</option>
-                      <option>5:30 PM - IST</option>
-                      <option>6:00 PM - IST</option>
-                      <option>6:30 PM - IST</option>
-                    </select>
-                  </div>
-                  <div className='mt-12 flex flex-col gap-12'>
-                    <div>Please attach a file if it will support your query</div>
-                    <div className="flex flex-col sm:flex-row gap-5 items-center">
-                      <div onClick={handleFileInputClick} className="px-12 cursor-pointer py-3 my-auto text-center border border-solid border-[#D8D8D8] rounded-full ">
-                        Choose File
-                      </div>
-                      <input
-                        type="file"
-                        ref={fileInputRef}
-                        onChange={handleFileChange}
-                        style={{ display: "none" }}
-                        accept=".jpg, .jpeg, .png, .pdf, .doc, .svg, .docx, .zip, .rar"
-                      />
-                      <div>
-                        {fileName ? (
-                          <span className="text-base font-normal text-black">
-                            {fileName}
-                          </span>
-                        ) : (
-                          <span className="text-base font-normal text-black">
-                            No file chosen
-                          </span>
-                        )
-                        }
-                      </div>
+                  <form id="userDetailsForm"
+                    className="w-full"
+                    onSubmit={(e) => {
+                      e.preventDefault();
+                      handleSubmitForm();
+                    }}>
+                    <div className="flex overflow-hiddens mt-10 tracking-wider">
+                      <label htmlFor="project-select" className="sr-only bg-transparent">Select Your on-going project with us</label>
+                      <select
+                        value={project}
+                        onChange={(e) => setProject(e.target.value)}
+                        id="project-select"
+                        className="overflow-hidden grow my-auto pt-8 pb-4 bg-transparent placeholder:text-[#D8D8D8] border-b outline-none max-md:max-w-full"
+                        placeholder="Select Your on-going project with us*"
+                        required
+                      >
+                        <option className='text-[#D8D8D8]'>Select Your on-going project with us*</option>
+                        <option>UI/UX design</option>
+                        <option>Website development</option>
+                        <option>Application development</option>
+                        <option>Design Strategy</option>
+                        <option>Chat-bot development</option>
+                        <option>Branding design</option>
+                      </select>
                     </div>
-                    <button className='border w-fit sm:mx-0 mx-auto rounded-full py-4 px-28 text-white submit-btn mt-4'>
-                      Submit
-                    </button>
-                  </div>
+                    <div className="flex flex-col overflow-hidden justify-center items-start pb-2 tracking-wider">
+                      <label className="sr-only" htmlFor="name">First name*</label>
+                      <input
+                        value={firstname}
+                        onChange={(e) => setFirstName(e.target.value)}
+                        type="text"
+                        name="firstName"
+                        placeholder="First name*"
+                        required
+                        className="overflow-hidden flex-1 pt-8 pb-4 px-1 outline-none border-b shrink w-full min-w-[240px] max-md:max-w-full"
+                      />
+                      <label className="sr-only" htmlFor="name">Company Name*</label>
+                      <input
+                        value={company}
+                        onChange={(e) => setCompany(e.target.value)}
+                        type="text"
+                        name="companyName"
+                        placeholder="Company Name*"
+                        required
+                        className="overflow-hidden flex-1 pt-8 pb-4 px-1 outline-none border-b shrink w-full min-w-[240px] max-md:max-w-full"
+                      />
+                      <label className="sr-only" htmlFor="email">Email*</label>
+                      <input
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        type="email"
+                        name="email"
+                        placeholder="Email*"
+                        required
+                        className="overflow-hidden flex-1 pt-8 pb-4 px-1 outline-none border-b shrink w-full min-w-[240px] max-md:max-w-full"
+                      />
+                      <label className="sr-only" htmlFor="text">What's your role towards the project?*</label>
+                      <input
+                        value={role}
+                        onChange={(e) => setRole(e.target.value)}
+                        type="text"
+                        name="role"
+                        placeholder="What's your role towards the project?*"
+                        required
+                        className="overflow-hidden flex-1 pt-8 pb-4 px-1 outline-none border-b shrink w-full min-w-[240px] max-md:max-w-full"
+                      />
+                      <label className="sr-only" htmlFor="text">What is the issue you are facing currently?*</label>
+                      <input
+                        value={issue}
+                        onChange={(e) => setIssue(e.target.value)}
+                        type="text"
+                        name="issue"
+                        placeholder="What is the issue you are facing currently?*"
+                        required
+                        className="overflow-hidden flex-1 pt-8 pb-4 px-1 outline-none border-b shrink w-full min-w-[240px] max-md:max-w-full"
+                      />
+                    </div>
+                    <div className="flex overflow-hiddens">
+                      <label htmlFor="project-select" className="sr-only bg-transparent">What’s the good time to connect with you ?*</label>
+                      <select
+                        value={time}
+                        onChange={(e) => setTime(e.target.value)}
+                        id="project-select"
+                        required
+                        className="overflow-hidde grow h-fit pt-8 pb-4 bg-transparent placeholder:text-[#7D7D7D] border-b outline-none"
+                        placeholder="What’s the good time to connect with you ?*"
+                      >
+                        <option className='text-[#7D7D7D]'>What’s the good time to connect with you ?*</option>
+                        <option>3:00 PM - IST</option>
+                        <option>3:30 PM - IST </option>
+                        <option>4:00 PM - IST</option>
+                        <option>4:30 PM - IST</option>
+                        <option>5:00 PM - IST</option>
+                        <option>5:30 PM - IST</option>
+                        <option>6:00 PM - IST</option>
+                        <option>6:30 PM - IST</option>
+                      </select>
+                    </div>
+                    <div className='mt-12 flex flex-col gap-12'>
+                      <div>Please attach a file if it will support your query</div>
+                      <div className="flex flex-col sm:flex-row gap-5 items-center">
+                        <div onClick={handleFileInputClick} className="px-12 cursor-pointer py-3 my-auto text-center border border-solid border-[#D8D8D8] rounded-full text-black ">
+                          Choose File
+                        </div>
+                        <input
+                          type="file"
+                          ref={fileInputRef}
+                          onChange={handleFileChange}
+                          style={{ display: "none" }}
+                          accept=".jpg, .jpeg, .png, .pdf, .doc, .svg, .docx, .zip, .rar"
+                        />
+                        <div>
+                          {fileName ? (
+                            <span className="text-base font-normal text-black">
+                              {fileName}
+                            </span>
+                          ) : (
+                            <span className="text-base font-normal text-black">
+                              No file chosen
+                            </span>
+                          )
+                          }
+                        </div>
+                      </div>
+                      <button form="userDetailsForm" type="submit" className='border w-fit sm:mx-0 mx-auto rounded-full py-4 px-28 text-white submit-btn mt-4'>
+                        Submit
+                      </button>
+                    </div>
+                  </form>
                 </div>
               </form>
             </div>
           </div>
         </section>
       </main>
-      < Footer />
+      {showConfirmation && (
+        <div className="fixed z-30 inset-0 w-auto flex items-center justify-center">
+          <div style={{
+            background: 'linear-gradient(135deg, #7811A5, #2E16BB)',
+          }} className="px-2 py-6 sm:px-6 sm:py-6 rounded-lg shadow-lg">
+            <div className="flex items-center justify-center text-green-700">
+              <FaCheckCircle className="mr-2 text-white" />
+              <span className="font-medium text-sm sm:text-base text-white">
+                Your details have been sent.
+              </span>
+            </div>
+            <p className="text-center text-sm sm:text-base mt-4 text-white">
+              Please check your email for the confirmation.
+            </p>
+            <div className='flex items-end justify-end mt-6'>
+              <button
+                className="text-xs transition-all duration-300 sm:text-base text-black bg-white hover:bg-black shadow-none hover:text-white focus:outline-none py-1 px-2 sm:py-2 sm:px-4 rounded-full"
+                onClick={toggleConfirmation}
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+      <Footer />
     </>
   );
 };

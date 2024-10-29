@@ -212,7 +212,7 @@ const Insights = () => {
                                 <div>
                                     <a href="/blogs/increase-conversion-rate">
                                         <button className="button self-end mt-5 flex flex-row justify-between px-12 py-2 bg-black leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px] hover:bg-[#7811A5] transition-all duration-300">
-                                            <h1 className='text-base mt-1 font-arial'>Read More</h1>
+                                            <h1 className='text-base mt-1 '>Read More</h1>
                                             <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                                         </button>
                                     </a>
@@ -226,7 +226,7 @@ const Insights = () => {
                                 <div>
                                     <a href="/blogs/what-are-chatbots">
                                         <button className="button self-end mt-5 flex flex-row justify-between px-12 py-2 bg-black leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px] hover:bg-[#7811A5] transition-all duration-300">
-                                            <h1 className='text-base mt-1 font-arial'>Read More</h1>
+                                            <h1 className='text-base mt-1 '>Read More</h1>
                                             <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                                         </button>
                                     </a>
@@ -240,7 +240,7 @@ const Insights = () => {
                                 <div>
                                     <a href="/blogs/how-to-create-a-service-website">
                                         <button className="button self-end mt-5 flex flex-row justify-between px-12 py-2 bg-black leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px] hover:bg-[#7811A5] transition-all duration-300">
-                                            <h1 className='text-base mt-1 font-arial'>Read More</h1>
+                                            <h1 className='text-base mt-1 '>Read More</h1>
                                             <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                                         </button>
                                     </a>
@@ -254,7 +254,7 @@ const Insights = () => {
                                 <div>
                                     <a href="/blogs/how-to-optimize-your-website">
                                         <button className="button self-end mt-5 flex flex-row justify-between px-12 py-2 bg-black leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px] hover:bg-[#7811A5] transition-all duration-300">
-                                            <h1 className='text-base mt-1 font-arial'>Read More</h1>
+                                            <h1 className='text-base mt-1 '>Read More</h1>
                                             <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                                         </button>
                                     </a>
@@ -324,7 +324,7 @@ const Insights = () => {
 
                             {!isVisible && (
                                 <button onClick={handleButtonClick} className="button self-end mx-auto flex flex-row justify-between px-12 py-2 bg-black leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px] hover:bg-[#7811A5] transition-all duration-300">
-                                    <h1 className='text-base mt-1 font-arial'>Learn more</h1>
+                                    <h1 className='text-base mt-1 '>Learn more</h1>
                                     <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                                 </button>
                             )}

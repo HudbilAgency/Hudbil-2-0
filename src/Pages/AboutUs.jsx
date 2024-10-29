@@ -157,7 +157,7 @@ const AboutUs = () => {
                             <div>
                                 <Link to="/contact-us">
                                     <button className="button self-end flex flex-row justify-between px-12 py-3 mx-auto leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-all duration-300">
-                                        <h1 className='text-base mt-1 font-arial'>Get In Touch</h1>
+                                        <h1 className='text-base mt-1 '>Get In Touch</h1>
                                         <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                                     </button>
                                 </Link>
@@ -378,7 +378,7 @@ const AboutUs = () => {
                             </div>
                             <Link to="/contact-us">
                                 <button className="button self-end flex flex-row justify-between px-12 py-3 mb-4 leading-none hover:bg-white hover:text-black text-white gap-8 rounded-[1000px] max-md:px-5 bg-[#7811A5] transition-all duration-300">
-                                    <h1 className='text-base mt-1 font-arial'>Work With Us</h1>
+                                    <h1 className='text-base mt-1 '>Work With Us</h1>
                                     <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                                 </button>
                             </Link>
@@ -431,7 +431,7 @@ const AboutUs = () => {
 
                     <Link to="/contact-us">
                         <button className="button self-end flex flex-row justify-between px-12 py-3 mt-20 leading-none hover:bg-white hover:text-black ml-auto mr-6 md:mr-16 text-white gap-8 rounded-[1000px] max-md:px-5 bg-[#7811A5] transition-all duration-300">
-                            <h1 className='text-base mt-1 font-arial'>Get In Touch</h1>
+                            <h1 className='text-base mt-1 '>Get In Touch</h1>
                             <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                         </button>
                     </Link>

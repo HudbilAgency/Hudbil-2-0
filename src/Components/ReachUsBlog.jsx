@@ -282,12 +282,12 @@ const ReachUsBlog = () => {
                     id={field.name}
                     name={field.name}
                     placeholder={field.label}
-                    className="w-full bg-transparent font-arial outline-none placeholder-gray-300"
+                    className="w-full bg-transparent  outline-none placeholder-gray-300"
                     required
                   />
                 </div>
               ))}
-              <label htmlFor="country" className="self-start font-arial mt-12 text-base tracking-wider leading-loose max-md:mt-10">
+              <label htmlFor="country" className="self-start  mt-12 text-base tracking-wider leading-loose max-md:mt-10">
                 Country/Region*
               </label>
               <select
@@ -309,13 +309,13 @@ const ReachUsBlog = () => {
                   id="subscribe"
                   className="shrink-0 self-stretch  my-auto w-4 h-4 bg-white border border-white border-solid"
                 />
-                <label htmlFor="subscribe" className="self-stretch font-arial text-lg 2xl:text-xl my-auto max-lg:max-w-full">
+                <label htmlFor="subscribe" className="self-stretch  text-lg 2xl:text-xl my-auto max-lg:max-w-full">
                   Subscribe to Hud to receive our latest thinking every month.
                 </label>
               </div>
               <button
                 type="submit"
-                className="px-16 py-5 mt-20 font-arial transition-all duration-500 w-80 max-w-full text-lg font-medium tracking-wider leading-none bg-white rounded-[1000px] text-neutral-950 hover:bg-black hover:text-white max-lg:px-5 max-lg:mt-10 "
+                className="px-16 py-5 mt-20  transition-all duration-500 w-80 max-w-full text-lg font-medium tracking-wider leading-none bg-white rounded-[1000px] text-neutral-950 hover:bg-black hover:text-white max-lg:px-5 max-lg:mt-10 "
               >
                 Send to reach us
               </button>

@@ -168,7 +168,7 @@ const Services1 = () => {
                                     <div>A strategic process to help your brand establish a platform-agnostic identity and presence. A design firm that can stand time with new verticals and scaling. Bold, memorable designs that define your brand at first glance.</div>
                                     <div>
                                         <button className="button self-end flex flex-row justify-between px-5 py-3 leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px]  hover:bg-[#7811A5] transition-all duration-300">
-                                            <h1 className='text-base mt-1 font-arial'>Know More</h1>
+                                            <h1 className='text-base mt-1 '>Know More</h1>
                                             <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                                         </button>
                                     </div>
@@ -202,7 +202,7 @@ const Services1 = () => {
                                     <div>Designing aesthetic, delightful and visually appealing products that are functional and enjoyable to use. Creating the look, feel, and functionality of a product’s interface to make it easy and enjoyable for users.</div>
                                     <div>
                                         <button className="button self-end flex flex-row justify-between px-5 py-3 leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px]  hover:bg-[#7811A5] transition-all duration-300">
-                                            <h1 className='text-base mt-1 font-arial'>Know More</h1>
+                                            <h1 className='text-base mt-1 '>Know More</h1>
                                             <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                                         </button>
                                     </div>
@@ -236,7 +236,7 @@ const Services1 = () => {
                                     <div>Creating holistic, usable and well-structured digital experiences that incorporate best design practices and standards. Consider how users feel when interacting with a product, and how to make the experience seamless.</div>
                                     <div>
                                         <button className="button self-end flex flex-row justify-between px-5 py-3 leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px]  hover:bg-[#7811A5] transition-all duration-300">
-                                            <h1 className='text-base mt-1 font-arial'>Know More</h1>
+                                            <h1 className='text-base mt-1 '>Know More</h1>
                                             <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                                         </button>
                                     </div>
@@ -270,7 +270,7 @@ const Services1 = () => {
                                     <div>While interaction design has an interest in form (similar to other design fields), its main area of focus rests on behaviour. Rather than analysing how things are, interaction design synthesizes and imagines things as they could be.</div>
                                     <div>
                                         <button className="button self-end flex flex-row justify-between px-5 py-3 leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px]  hover:bg-[#7811A5] transition-all duration-300">
-                                            <h1 className='text-base mt-1 font-arial'>Know More</h1>
+                                            <h1 className='text-base mt-1 '>Know More</h1>
                                             <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                                         </button>
                                     </div>
@@ -304,7 +304,7 @@ const Services1 = () => {
                                     <div>Making a prototype of the final product and testing it in real time to get inputs and reliable user feedback. It’s a key tool for designers and engineers to conceptualize and test product ideas before moving into production.</div>
                                     <div>
                                         <button className="button self-end flex flex-row justify-between px-5 py-3 leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px]  hover:bg-[#7811A5] transition-all duration-300">
-                                            <h1 className='text-base mt-1 font-arial'>Know More</h1>
+                                            <h1 className='text-base mt-1 '>Know More</h1>
                                             <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                                         </button>
                                     </div>
@@ -338,7 +338,7 @@ const Services1 = () => {
                                     <div>Crafting stunning, visually consistent sets of icon styles and illustrations, in line with all relevant brand guidelines. This comprehensive guide will help you fully master the art of digital illustration.</div>
                                     <div>
                                         <button className="button self-end flex flex-row justify-between px-5 py-3 leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px]  hover:bg-[#7811A5] transition-all duration-300">
-                                            <h1 className='text-base mt-1 font-arial'>Know More</h1>
+                                            <h1 className='text-base mt-1 '>Know More</h1>
                                             <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                                         </button>
                                     </div>
@@ -350,7 +350,7 @@ const Services1 = () => {
                             </div>
                             <Link to="/services/development-agency">
                                 <button className="button self-end flex flex-row justify-between px-12 py-3 mb-4 leading-none hover:bg-white hover:text-black text-white gap-8 rounded-[1000px] max-md:px-5 bg-[#7811A5] transition-all duration-300">
-                                    <h1 className='text-base mt-1 font-arial'>Next service</h1>
+                                    <h1 className='text-base mt-1 '>Next service</h1>
                                     <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                                 </button>
                             </Link>
@@ -573,7 +573,7 @@ const Services1 = () => {
                             <div>Among leading brand agencies India, Hudbil has a reputation for creating distinctive and successful brands. Known as brand transformation specialists, Hudbil’s track record justifies a place among these top-tier brand agencies India. Our expertise is in brand strategy, design and management services for the identity and communications of companies and their products. When it comes to brand agencies India, Hudbil is a full service provider, with an aim of improving business for the companies who engage us.</div>
 
                             <button className="button self-end flex flex-row justify-between mt-6 mb-4 px-12 py-3 ml-auto leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-all duration-300">
-                                <h1 className='text-base mt-1 font-arial'>Work With hudbil</h1>
+                                <h1 className='text-base mt-1 '>Work With hudbil</h1>
                                 <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                             </button>
 
@@ -599,7 +599,7 @@ const Services1 = () => {
                                     them, they are very creative in terms of the design and clean development skills.”</div>
                                 <div>
                                     <button className="button self-end  flex flex-row justify-between px-20 py-3 leading-none bg-[#505050] text-white hover:text-[#505050] gap-8 rounded-[1000px] max-md:px-5  hover:bg-white transition-all duration-300">
-                                        <h1 className='text-base font-arial'>Contact Us</h1>
+                                        <h1 className='text-base '>Contact Us</h1>
                                     </button>
                                 </div>
                             </div>
@@ -615,7 +615,7 @@ const Services1 = () => {
                                 <div>The team at Hudbil are enthusiastic, friendly and great to work with. They really listened to our needs and came up with a design which encapsulates exactly the spirit and personality of the organisation, whilst still remaining practical and user-friendly.</div>
                                 <div>
                                     <button className="button self-end  flex flex-row justify-between px-20 py-3 leading-none bg-[#505050] text-white hover:text-[#505050] gap-8 rounded-[1000px] max-md:px-5  hover:bg-white transition-all duration-300">
-                                        <h1 className='text-base font-arial'>Contact Us</h1>
+                                        <h1 className='text-base '>Contact Us</h1>
                                     </button>
                                 </div>
                             </div>

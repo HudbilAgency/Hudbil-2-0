@@ -166,7 +166,7 @@ const Services2 = () => {
                                     <div>Front-end development is the process of building the parts of a website that users see and interact with. Implementing the best combination of technologies (full-stack, mean stack, flutter, native-OS, react JS) for your project.</div>
                                     <div>
                                         <button className="button self-end flex flex-row justify-between px-5 py-3 leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px]  hover:bg-[#7811A5] transition-all duration-300">
-                                            <h1 className='text-base mt-1 font-arial'>Know More</h1>
+                                            <h1 className='text-base mt-1 '>Know More</h1>
                                             <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                                         </button>
                                     </div>
@@ -200,7 +200,7 @@ const Services2 = () => {
                                     <div>Mobile application development is the process of creating software applications that run on a mobile device, and a typical mobile application utilizes a network connection to work with remote computing resources. Leveraging the latest technologies to develop robust and scalable hybrid and native mobile applications.</div>
                                     <div>
                                         <button className="button self-end flex flex-row justify-between px-5 py-3 leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px]  hover:bg-[#7811A5] transition-all duration-300">
-                                            <h1 className='text-base mt-1 font-arial'>Know More</h1>
+                                            <h1 className='text-base mt-1 '>Know More</h1>
                                             <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                                         </button>
                                     </div>
@@ -234,7 +234,7 @@ const Services2 = () => {
                                     <div>SaaS implementation is the process of integrating a Software-as-a-Service (SaaS) application into a business’s workflow. Using a cloud-first approach to create anytime-anywhere access based scalable SAAS applications.</div>
                                     <div>
                                         <button className="button self-end flex flex-row justify-between px-5 py-3 leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px]  hover:bg-[#7811A5] transition-all duration-300">
-                                            <h1 className='text-base mt-1 font-arial'>Know More</h1>
+                                            <h1 className='text-base mt-1 '>Know More</h1>
                                             <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                                         </button>
                                     </div>
@@ -268,7 +268,7 @@ const Services2 = () => {
                                     <div>A web application (web app) is an application program that is stored on a remote server and delivered over the internet through a browser interface. Implementing the perfect blend of agile development to create dynamic and responsive web applications.</div>
                                     <div>
                                         <button className="button self-end flex flex-row justify-between px-5 py-3 leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px]  hover:bg-[#7811A5] transition-all duration-300">
-                                            <h1 className='text-base mt-1 font-arial'>Know More</h1>
+                                            <h1 className='text-base mt-1 '>Know More</h1>
                                             <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                                         </button>
                                     </div>
@@ -302,7 +302,7 @@ const Services2 = () => {
                                     <div>Custom application development is the process of designing, developing, and deploying software applications for specific users or use cases. Implementing the best combination of technologies to develop interfaces for wearables, dashboards and AI-Chatbots.</div>
                                     <div>
                                         <button className="button self-end flex flex-row justify-between px-5 py-3 leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px]  hover:bg-[#7811A5] transition-all duration-300">
-                                            <h1 className='text-base mt-1 font-arial'>Know More</h1>
+                                            <h1 className='text-base mt-1 '>Know More</h1>
                                             <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                                         </button>
                                     </div>
@@ -336,7 +336,7 @@ const Services2 = () => {
                                     <div>CMS integration is simply taking your existing website/web app and integrating a Content Management System. Building a platform that is accessible and can be managed by the customers in order to create, manage and modify digital content on their website easily.</div>
                                     <div>
                                         <button className="button self-end flex flex-row justify-between px-5 py-3 leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px]  hover:bg-[#7811A5] transition-all duration-300">
-                                            <h1 className='text-base mt-1 font-arial'>Know More</h1>
+                                            <h1 className='text-base mt-1 '>Know More</h1>
                                             <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                                         </button>
                                     </div>
@@ -348,7 +348,7 @@ const Services2 = () => {
                             </div>
                             <Link to="/services/creative-designing-agency">
                                 <button className="button self-end flex flex-row justify-between px-12 py-3 mb-4 leading-none hover:bg-white hover:text-black text-white gap-8 rounded-[1000px] max-md:px-5 bg-[#7811A5] transition-all duration-300">
-                                    <h1 className='text-base mt-1 font-arial'>Next service</h1>
+                                    <h1 className='text-base mt-1 '>Next service</h1>
                                     <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                                 </button>
                             </Link>
@@ -571,7 +571,7 @@ const Services2 = () => {
                             <div>Make your website work your way. We are a Indian web development agency with the technical skill and industry insight to take your website to the next level online. Our passion? Building and developing high-functioning websites which perform perfectly for our clients, their visitors and the search engines too.Speed, usability, behind-the-scenes functionality; better online performance means better business all round. So is your site giving the performance of a lifetime? If it isn’t, it’s time to get serious about intelligent web development. </div>
 
                             <button className="button self-end flex flex-row justify-between px-12 py-3 mt-6 mb-4 ml-auto leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-all duration-300">
-                                <h1 className='text-base mt-1 font-arial'>Work With hudbil</h1>
+                                <h1 className='text-base mt-1 '>Work With hudbil</h1>
                                 <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                             </button>
 
@@ -597,7 +597,7 @@ const Services2 = () => {
                                     them, they are very creative in terms of the design and clean development skills.”</div>
                                 <div>
                                     <button className="button self-end  flex flex-row justify-between px-20 py-3 leading-none bg-[#505050] text-white hover:text-[#505050] gap-8 rounded-[1000px] max-md:px-5  hover:bg-white transition-all duration-300">
-                                        <h1 className='text-base font-arial'>Contact Us</h1>
+                                        <h1 className='text-base '>Contact Us</h1>
                                     </button>
                                 </div>
                             </div>
@@ -613,7 +613,7 @@ const Services2 = () => {
                                 <div>The team at Hudbil are enthusiastic, friendly and great to work with. They really listened to our needs and came up with a design which encapsulates exactly the spirit and personality of the organisation, whilst still remaining practical and user-friendly.</div>
                                 <div>
                                     <button className="button self-end  flex flex-row justify-between px-20 py-3 leading-none bg-[#505050] text-white hover:text-[#505050] gap-8 rounded-[1000px] max-md:px-5  hover:bg-white transition-all duration-300">
-                                        <h1 className='text-base font-arial'>Contact Us</h1>
+                                        <h1 className='text-base '>Contact Us</h1>
                                     </button>
                                 </div>
                             </div>

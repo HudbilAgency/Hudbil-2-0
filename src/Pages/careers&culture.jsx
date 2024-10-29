@@ -68,7 +68,7 @@ const Careersculture = () => {
               <div>Things that are important to us <br /> Diversity, culture, respect, passion, learning, music, travel and lots of food.</div>
               <div>
                 <button onClick={handleScroll} className="button self-end flex flex-row justify-between mt-3 px-10 py-3 mx-auto leading-none bg-white hover:text-white text-black gap-8 rounded-[1000px] max-md:px-5 hover:bg-[#7811A5] transition-colors duration-300">
-                  <h1 className='text-base mt-1 font-arial'>See Current Opening</h1>
+                  <h1 className='text-base mt-1 '>See Current Opening</h1>
                   <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                 </button>
               </div>
