@@ -1,18 +1,81 @@
-import React from 'react'
+import React, { useState, useRef } from 'react';
+import { FaCheckCircle } from "react-icons/fa";
+import axios from "axios";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const ReachUs = () => {
+
+  const [email, setEmail] = useState("");
+  const [firstname, setFirstName] = useState("");
+  const [lastname, setLastName] = useState("");
+  const [company, setCompany] = useState("");
+  const [jobtitle, setJobTitle] = useState("");
+  const [country, setCountry] = useState("");
+  const [subscribe, setSubscribe] = useState("not subscribed");
+  const [showConfirmation, setShowConfirmation] = useState(false);
+  const [showVerification, setShowVerification] = useState(false);
+  const recaptchaRef = useRef(null);
+  const [recaptchaToken, setRecaptchaToken] = useState(null);
+
+  const toggleConfirmation = () => {
+    setShowConfirmation(!showConfirmation);
+  };
+
+  const handleSubmitForm = async () => {
+
+    if (!recaptchaToken) {
+      setShowVerification(true);
+      return;
+    }
+
+    const ReachUs = {
+      email,
+      firstname,
+      lastname,
+      jobtitle,
+      company,
+      country,
+      subscribe,
+      recaptchaToken,
+    };
+
+    setShowVerification(false);
+    toggleConfirmation();
+
+    setFirstName("");
+    setLastName("");
+    setEmail("");
+    setJobTitle("");
+    setCompany("");
+    setCountry("");
+    setSubscribe("");
+    setRecaptchaToken(null);
+
+    try {
+      const response = await axios.post(
+        // "https://hudbil-server.onrender.com/reach-us",
+        "http://localhost:3000/reach-us",
+        JSON.stringify(ReachUs),
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      console.log("Server response:", response.data);
+
+    } catch (error) {
+      console.error("Error sending data to server:", error);
+    }
+  };
+
+  const onRecaptchaChange = (token) => {
+    setRecaptchaToken(token);
+  };
 
   const contactInfo = [
     { label: 'Email us at', value: 'info@hudbil.com' },
     { label: 'Call us on', value: '+91 88-84-40-9369' }
-  ];
-
-  const formFields = [
-    { name: 'email', label: 'Email*', type: 'email' },
-    { name: 'firstName', label: 'First name*', type: 'text' },
-    { name: 'lastName', label: 'Last name*', type: 'text' },
-    { name: 'companyName', label: 'Company name*', type: 'text' },
-    { name: 'jobTitle', label: 'Job title*', type: 'text' }
   ];
 
   const countries = [
@@ -262,81 +325,178 @@ const ReachUs = () => {
   ];
 
   return (
-    <section className="flex overflow-hidden relative bg-[#7811A5] flex-col justify-center items-center px-6 lg:px-16 py-20">
-      <div className="w-full max-md:max-w-full">
-        <div className="flex max-md:flex-col">
-          <div className="flex flex-col w-full md:w-[50vw] max-md:ml-0 max-md:w-full">
-            <div className="flex flex-col w-full md:w-3/4 lg:w-2/3 items-start text-2xl sm:text-3xl text-white max-md:max-w-full">
-              <h2 className=" leading-tight uppercase">
-                Hudbil private limited
-              </h2>
-              <p className="self-stretch my-6 text-xl  font-light leading-8 max-md:max-w-full">
-                Hudbil as a brand stands for its innovation in technology and creative to fly high and give freedom to business owners by automating the repetitive and mundane so they can build an empire in their industry.
-              </p>
-              {contactInfo.map((item, index) => (
-                <div key={index} className="flex flex-col my-4 text-xl">
-                  <div className="py-0.5 w-full  leading-none uppercase max-md:pr-5">
-                    {item.label}
+    <>
+      <section className="flex overflow-hidden relative bg-[#7811A5] flex-col justify-center items-center px-6 lg:px-16 py-20">
+        <div className="w-full max-md:max-w-full">
+          <div className="flex max-md:flex-col">
+            <div className="flex flex-col w-full md:w-[50vw] max-md:ml-0 max-md:w-full">
+              <div className="flex flex-col w-full md:w-3/4 lg:w-2/3 items-start text-2xl sm:text-3xl text-white max-md:max-w-full">
+                <h2 className=" leading-tight uppercase">
+                  Hudbil private limited
+                </h2>
+                <p className="self-stretch my-6 text-xl  font-light leading-8 max-md:max-w-full">
+                  Hudbil as a brand stands for its innovation in technology and creative to fly high and give freedom to business owners by automating the repetitive and mundane so they can build an empire in their industry.
+                </p>
+                {contactInfo.map((item, index) => (
+                  <div key={index} className="flex flex-col my-4 text-xl">
+                    <div className="py-0.5 w-full  leading-none uppercase max-md:pr-5">
+                      {item.label}
+                    </div>
+                    <div className="w-full  leading-loose whitespace-nowrap">
+                      {item.value}
+                    </div>
                   </div>
-                  <div className="w-full  leading-loose whitespace-nowrap">
-                    {item.value}
-                  </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
-          </div>
-          <div className="flex flex-col ml-5 w-[50vw] max-md:ml-0 max-md:w-full">
-            <form className="flex flex-col w-full text-sm text-white max-md:mt-10 max-md:max-w-full">
-              {formFields.map((field, index) => (
-                <div key={index} className="py-5 text-base tracking-wider whitespace-nowrap border-b border-zinc-300 max-md:pr-5 max-md:max-w-full">
-                  <label htmlFor={field.name} className="text-white sr-only">{field.label}</label>
+            <div className="flex flex-col ml-5 w-[50vw] max-md:ml-0 max-md:w-full">
+              <form id="userDetailsForm"
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  handleSubmitForm();
+                }} className="flex flex-col w-full text-sm text-white max-md:mt-10 max-md:max-w-full">
+                <div className="text-base tracking-wider whitespace-nowrap border-b border-zinc-300 max-lg:pr-5 max-lg:max-w-full">
+                  <label htmlFor="email" className="text-white sr-only">Email*</label>
                   <input
-                    type={field.type}
-                    id={field.name}
-                    name={field.name}
-                    placeholder={field.label}
-                    className="w-full bg-transparent  outline-none placeholder-gray-300"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    type="email"
+                    name="email"
+                    placeholder="Email*"
+                    className="py-5 w-full bg-transparent  outline-none placeholder-gray-300"
                     required
                   />
                 </div>
-              ))}
-              <label htmlFor="country" className="self-start  mt-12 text-base tracking-wider leading-loose max-md:mt-10">
-                Country/Region*
-              </label>
-              <select
-                id="country"
-                name="country"
-                className="pt-1.5 pb-5 mt-7 focus:outline-none text-base tracking-wider leading-loose border-b border-zinc-300 max-md:pr-5 max-md:max-w-full bg-transparent text-white"
-                required
-              >
-                <option value="" className="text-black">Please Select</option>
-                {countries.map((country) => (
-                  <option key={country.code} value={country.code} className="text-black">
-                    {country.name.split(',')[0]}
-                  </option>
-                ))}
-              </select>
-              <div className="flex gap-5 items-center self-start mt-5  leading-none text-white">
-                <input
-                  type="radio"
-                  id="subscribe"
-                  className="shrink-0 self-stretch  my-auto w-4 h-4 bg-white border border-white border-solid"
-                />
-                <label htmlFor="subscribe" className="self-stretch  text-xl my-auto max-md:max-w-full">
-                  Subscribe to Hud to receive our latest thinking every month.
+                <div className="text-base tracking-wider whitespace-nowrap border-b border-zinc-300 max-lg:pr-5 max-lg:max-w-full">
+                  <label htmlFor="name" className="text-white sr-only">First Name*</label>
+                  <input
+                    value={firstname}
+                    onChange={(e) => setFirstName(e.target.value)}
+                    type="text"
+                    name="firstName"
+                    placeholder="First name*"
+                    className="py-5 w-full bg-transparent  outline-none placeholder-gray-300"
+                    required
+                  />
+                </div>
+                <div className="text-base tracking-wider whitespace-nowrap border-b border-zinc-300 max-lg:pr-5 max-lg:max-w-full">
+                  <label htmlFor="name" className="text-white sr-only">Last Name*</label>
+                  <input
+                    value={lastname}
+                    onChange={(e) => setLastName(e.target.value)}
+                    type="text"
+                    name="lastName"
+                    placeholder="Last name*"
+                    className="py-5 w-full bg-transparent  outline-none placeholder-gray-300"
+                    required
+                  />
+                </div>
+                <div className="text-base tracking-wider whitespace-nowrap border-b border-zinc-300 max-lg:pr-5 max-lg:max-w-full">
+                  <label htmlFor="company" className="text-white sr-only">Company Name*</label>
+                  <input
+                    value={company}
+                    onChange={(e) => setCompany(e.target.value)}
+                    type="text"
+                    name="companyName"
+                    placeholder="Company Name*"
+                    className="py-5 w-full bg-transparent  outline-none placeholder-gray-300"
+                    required
+                  />
+                </div>
+                <div className="text-base tracking-wider whitespace-nowrap border-b border-zinc-300 max-lg:pr-5 max-lg:max-w-full">
+                  <label htmlFor="job" className="text-white sr-only">Job title*</label>
+                  <input
+                    value={jobtitle}
+                    onChange={(e) => setJobTitle(e.target.value)}
+                    type="text"
+                    name="jobTitle"
+                    placeholder="Job title"
+                    className="py-5 w-full bg-transparent  outline-none placeholder-gray-300"
+                  />
+                </div>
+                <label htmlFor="country" className="self-start mt-12 text-base tracking-wider leading-loose">
+                  Country/Region*
                 </label>
-              </div>
-              <button
-                type="submit"
-                className="px-16 py-5 mt-20 transition-all duration-500 w-80 max-w-full text-lg font-medium tracking-wider leading-none bg-white rounded-[1000px] text-neutral-950 hover:bg-black hover:text-white max-md:px-5 max-md:mt-10 "
-              >
-                Send to reach us
-              </button>
-            </form>
+                <select
+                  value={country}
+                  onChange={(e) => setCountry(e.target.value)}
+                  id="country"
+                  name="country"
+                  className="py-5 mt-2 focus:outline-none text-base tracking-wider leading-loose border-b border-zinc-300 max-md:pr-5 max-md:max-w-full bg-transparent text-white"
+                  required
+                >
+                  <option value="" className="text-black">Please Select</option>
+                  {countries.map((country) => (
+                    <option key={country.code} value={country.name} className="text-black">
+                      {country.name.split(',')[0]}
+                    </option>
+                  ))}
+                </select>
+                <div className="flex gap-5 items-center self-start mt-5  leading-none text-white">
+                  <input
+                    checked={subscribe === "subscribed"}
+                    onChange={(e) => setSubscribe(e.target.checked ? "subscribed" : "not subscribed")}
+                    onBlur={() => {
+                      if (!subscribe) setSubscribe("not subscribed");
+                    }}
+                    type="radio"
+                    id="subscribe"
+                    className="shrink-0 self-stretch  my-auto w-4 h-4 bg-white border border-white border-solid"
+                  />
+                  <label htmlFor="subscribe" className="self-stretch  text-xl my-auto max-md:max-w-full">
+                    Subscribe to Hud to receive our latest thinking every month.
+                  </label>
+                </div>
+                <div className='mt-16 w-fit'>
+                  <ReCAPTCHA
+                    sitekey="6LfWPG8qAAAAAFBRLkUr505LpNEDOL_6p5dd8SLF"
+                    onChange={onRecaptchaChange}
+                    ref={recaptchaRef}
+                  />
+                  {showVerification && (
+                    <div className='mt-2 text-white'>
+                      Please verify yourself first!
+                    </div>
+                  )}
+                </div>
+                <button
+                  form="userDetailsForm" type="submit"
+                  className="px-16 py-5 mt-16 transition-all duration-500 w-80 max-w-full text-lg font-medium tracking-wider leading-none bg-white rounded-[1000px] text-neutral-950 hover:bg-black hover:text-white max-md:px-5"
+                >
+                  Send to reach us
+                </button>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      {showConfirmation && (
+        <div className="fixed z-30 inset-0 w-auto flex items-center justify-center">
+          <div style={{
+            background: 'linear-gradient(135deg, #7811A5, #2E16BB)',
+          }} className="px-2 py-6 sm:px-6 sm:py-6 rounded-lg shadow-lg">
+            <div className="flex items-center justify-center text-green-700">
+              <FaCheckCircle className="mr-2 text-white" />
+              <span className="font-medium text-sm sm:text-base text-white">
+                Your details have been sent.
+              </span>
+            </div>
+            <p className="text-center text-sm sm:text-base mt-4 text-white">
+              Please check your email for the confirmation.
+            </p>
+            <div className='flex items-end justify-end mt-6'>
+              <button
+                className="text-xs transition-all duration-300 sm:text-base text-black bg-white hover:bg-black shadow-none hover:text-white focus:outline-none py-1 px-2 sm:py-2 sm:px-4 rounded-full"
+                onClick={toggleConfirmation}
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+    </>
   )
 }
 
