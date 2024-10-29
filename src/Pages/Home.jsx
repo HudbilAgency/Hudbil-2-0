@@ -507,7 +507,7 @@ const Home = () => {
               <div className="w-full">
                 <div className='mx-6 lg:mx-8'>
                   <div className='pt-28 pb-12'>
-                    <h1 ref={secondsectionRef} className="text-[48px]  w-full lg:w-[83%] leading-tight text-neutral-950  max-md:text-4xl">
+                    <h1 ref={secondsectionRef} className="text-[48px] w-full lg:w-[83%] leading-tight text-neutral-950  max-md:text-[2.25rem]">
                       We are a DESIGN + BUILD creative agency intent on solving the toughest problems for Brands & organisations face in today's world.
                     </h1>
                   </div>
@@ -597,7 +597,7 @@ const Home = () => {
                   </div>
                   <h3
                     ref={fadeInRef}
-                    className=" mt-20 px-6 w-[70%] text-[25px]  tracking-normal text-center text-white leading-[50px] max-md:mt-10 max-md:text-4xl max-md:leading-10 opacity-0"
+                    className="self-center mt-20 px-6 w-full md:w-[70%] text-[25px]   tracking-normal text-center text-white leading-[50px] max-md:mt-10 max-md:max-w-full max-md:text-3xl max-md:leading-snug"
                   >
                     We drive your business success value through tailor-made digital marketing solutions.
                   </h3>
@@ -620,7 +620,7 @@ const Home = () => {
                     </div>
                   </div>
                   <h3
-                    className="self-center mt-20 px-6 w-[70%] text-[25px]   tracking-normal text-center text-white leading-[50px] max-md:mt-10 max-md:max-w-full max-md:text-4xl max-md:leading-10"
+                    className="self-center mt-20 px-6 w-full md:w-[70%] text-[25px] tracking-normal text-center text-white leading-[50px] max-md:mt-10 max-md:max-w-full max-md:text-3xl max-md:leading-snug"
                   >
                     We drive your product success in the future with our AI, AR & VR development solutions.
                   </h3>
@@ -690,7 +690,7 @@ const Home = () => {
                 <div className="flex flex-col items-center max-w-full w-[534px]">
                   <h2 className="text-5xl  leading-none text-center text-white max-md:text-4xl">hudbil Tabloids</h2>
                   <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/febb23b80aaedca3ecd1e75ad17e8156c707e8212bf67654390601ebe28c8047?placeholderIfAbsent=true&apiKey=7904fd7afaaf4ee2b0837ab86d91b244" alt="Hudbil Tabloids" className="filter grayscale hover:grayscale-0 transition-all duration-300 object-contain mt-16 max-w-full aspect-[0.88] w-[379px] max-md:mt-10 " />
-                  <h3 className="self-stretch mt-16 text-4xl  text-center text-white leading-[50px] max-md:mt-10 max-md:max-w-full max-md:text-4xl max-md:leading-[54px]" ref={fadeInRef2}>
+                  <h3 className="self-stretch mt-16 text-4xl  text-center text-white leading-[50px] max-md:mt-10 max-md:max-w-full max-sm:text-3xl max-md:leading-[54px]" ref={fadeInRef2}>
                     Big idea, Kalacode is <br /> beating heart of <br /> Hudbil's, a new venture <br /> agency like no other in India.
                   </h3>
                   <Link to={'/tabloids'}>

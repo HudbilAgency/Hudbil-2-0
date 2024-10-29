@@ -54,7 +54,7 @@ function BlogCard({ image, title, url }) {
   return (
     <div className="w-[18%]">
       <div className="flex flex-col w-full">
-        <div className="flex flex-col text-2xl tracking-wider leading-8 text-neutral-950 max-md:mt-10">
+        <div className="flex flex-col text-2xl tracking-wider leading-8 text-neutral-950 max-md:mt-4">
           <img loading="lazy" src={image} alt={title} className="filter grayscale hover:grayscale-0 mr-auto transition-all duration-300 object-cover w-full" />
           <h3 className="self-start font-arial w-[80%] mt-8">{title}</h3>
         </div>
