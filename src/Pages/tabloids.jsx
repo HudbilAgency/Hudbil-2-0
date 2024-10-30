@@ -54,11 +54,31 @@ const Tabloids = () => {
                     Hudbil Tabloids
                 </div>
                 <section className='flex flex-col lg:flex-row items-start gap-16 pl-6 lg:pl-0 pr-6 w-full pb-20'>
-                    <div className='flex items-center justify-center w-full lg:w-1/2 lg:hidden'>
-                        <img className='w-full ' src="./tabloids.png" />
+                    <div className='flex items-center justify-center w-full lg:w-1/2 lg:hidden bg-no-repeat bg-cover bg-center'>
+                        <video
+                            src="/tabloids-video.mp4"
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            className="object-cover w-full"
+                        >
+                            <source src="/tabloids-video.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
-                    <div className='lg:flex hidden items-center justify-center w-full lg:w-1/2 bg-no-repeat bg-cover bg-bottom sticky top-0'>
-                        <img className='w-full h-screen object-cover' src="./tabloids.png" />
+                    <div className='lg:flex hidden items-center justify-center w-full lg:w-1/2 bg-no-repeat bg-center sticky top-0'>
+                        <video
+                            src="/tabloids-video.mp4"
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            className="object-cover w-full h-screen"
+                        >
+                            <source src="/tabloids-video.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
                     <div className='w-full lg:w-1/2'>
                         <div className='w-full bg-[#BDBBBB] h-[1px]'></div>

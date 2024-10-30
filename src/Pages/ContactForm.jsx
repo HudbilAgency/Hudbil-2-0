@@ -2,7 +2,6 @@ import React, { useState, useRef } from 'react';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 import { Helmet } from 'react-helmet';
-import { FaCheckCircle } from "react-icons/fa";
 import axios from "axios";
 import ReCAPTCHA from "react-google-recaptcha";
 
@@ -48,7 +47,6 @@ const ContactForm = () => {
     });
 
   const handleSubmitForm = async () => {
-
     if (!recaptchaToken) {
       setShowVerification(true);
       return;
@@ -72,6 +70,18 @@ const ContactForm = () => {
     setShowVerification(false);
     toggleConfirmation();
 
+    setTimeout(() => {
+      const element = document.querySelector('.thank-you');
+      const elementRect = element.getBoundingClientRect();
+      const elementTop = elementRect.top + window.scrollY;
+      const centerPosition = elementTop - (window.innerHeight / 2) + (elementRect.height / 2);
+
+      window.scrollTo({
+        top: centerPosition,
+        behavior: 'smooth'
+      });
+    }, 0);
+
     setFirstName("");
     setLastName("");
     setEmail("");
@@ -82,6 +92,7 @@ const ContactForm = () => {
     setFileName("");
     setFile(null);
     setRecaptchaToken(null);
+
     if (fileInputRef.current) {
       fileInputRef.current.value = "";
     }
@@ -97,7 +108,6 @@ const ContactForm = () => {
         }
       );
       console.log("Server response:", response.data);
-
     } catch (error) {
       console.error("Error sending data to server:", error);
     }
@@ -393,7 +403,7 @@ const ContactForm = () => {
           <div className='flex flex-col lg:flex-row items-stretch justify-between h-full gap-16 lg:gap-20 xl:gap-24 2xl:gap-36'>
 
             <div className='w-full lg:w-1/2'>
-              <div className='text-4xl md:text-[3rem] text-[#0B0B0B] leading-tight xl:w-5/6 2xl:w-4/5'>Get in touch with our teams in India, London or Dubai. We look forward to hearing from you.</div>
+              <div className='text-4xl md:text-[3rem] text-[#0B0B0B] leading-tight w-full 2xl:w-4/5'>Get in touch with our teams in India, London or Dubai. We look forward to hearing from you.</div>
 
               <div className='mt-20 flex flex-col items-start gap-14'>
 
@@ -455,167 +465,153 @@ const ContactForm = () => {
               </div>
             </div>
 
-            <div className='w-full lg:w-1/2 min-h-full flex flex-col lg:flex-row items-start gap-12 xl:gap-16'>
-              <div className="bg-[#D8D8D8] h-[1px] w-full lg:hidden block"></div>
-              <div className="bg-[#D8D8D8] w-[1px] h-full hidden lg:block"></div>
-              <form id="userDetailsForm"
-                className="w-full"
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  handleSubmitForm();
-                }}
-              >
-                <div className='w-full'>
-                  <input
-                    value={firstname}
-                    onChange={(e) => setFirstName(e.target.value)}
-                    type="text"
-                    name="firstName"
-                    placeholder="First name*"
-                    className="outline-none text-black placeholder:text-[#C4C4C4] w-full py-4"
-                    required
-                  />
-                  <div className="bg-[#D8D8D8] h-[1px] w-full "></div>
-                  <input
-                    value={lastname}
-                    onChange={(e) => setLastName(e.target.value)}
-                    type="text"
-                    name="lastName"
-                    placeholder="Last name*"
-                    className="outline-none text-black placeholder:text-[#C4C4C4] w-full py-4"
-                    required
-                  />
-                  <div className="bg-[#D8D8D8] h-[1px] w-full "></div>
-                  <input
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    type="email"
-                    name="email"
-                    placeholder="Email*"
-                    className="outline-none text-black placeholder:text-[#C4C4C4] w-full py-4"
-                    required
-                  />
-                  <div className="bg-[#D8D8D8] h-[1px] w-full "></div>
-                  <input
-                    value={jobtitle}
-                    onChange={(e) => setJobTitle(e.target.value)}
-                    type="text"
-                    name="jobTitle"
-                    placeholder="Job title"
-                    className="outline-none text-black placeholder:text-[#C4C4C4] w-full py-4"
-                  />
-                  <div className="bg-[#D8D8D8] h-[1px] w-full "></div>
-                  <input
-                    value={company}
-                    onChange={(e) => setCompany(e.target.value)}
-                    type="text"
-                    name="companyName"
-                    placeholder="Company name*"
-                    className="outline-none text-black placeholder:text-[#C4C4C4] w-full py-4"
-                    required
-                  />
-                  <div className="bg-[#D8D8D8] h-[1px] w-full "></div>
+            {showConfirmation ? (
+              <div className='w-full lg:w-1/2 min-h-full flex flex-col lg:flex-row items-center gap-16'>
+                <div className="bg-[#D8D8D8] h-[1px] w-full lg:hidden block"></div>
+                <div className="bg-[#D8D8D8] w-[1px] h-full hidden lg:block"></div>
+                <div className='w-full flex flex-col items-start gap-12 thank-you'>
+                  <div className='text-3xl md:text-[2.7rem] 2xl:text-[3rem] text-[#0B0B0B] leading-tight w-full 2xl:w-4/5'>Thank You…!! </div>
+                  <div className='text-3xl md:text-[2.7rem] 2xl:text-[3rem] text-[#0B0B0B] leading-tight w-full 2xl:w-4/5'>Our team has received your information, will get in touch with you within the next 24 hours to discuss how we can help bring your vision to life.</div>
                 </div>
-                <div className='mt-10 flex flex-col gap-2'>
-                  <label htmlFor="country">Country*</label>
-                  <select
-                    value={country}
-                    onChange={(e) => setCountry(e.target.value)}
-                    id="country"
-                    name="country"
-                    className="py-5 border-b border-[#D8D8D8] focus:outline-none"
-                    required
-                  >
-                    <option value="" className="text-[#C4C4C4]">Please Select</option>
-                    {countries.map((country) => (
-                      <option key={country.code} value={country.name} className="">
-                        {country.name.split(',')[0]}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-                <div className='mt-12 flex flex-col gap-2'>
-                  <label htmlFor="country">Message*</label>
-                  <textarea
-                    name="message"
-                    className="flex mt-6 p-4 w-full border border-[#D8D8D8]"
-                    required
-                    value={message}
-                    onChange={(e) => setMessage(e.target.value)}
-                  />
-                </div>
-                <div className='mt-12 flex flex-col gap-12'>
-                  <div>Please attach a file if it will support your query</div>
-                  <div className="flex flex-col sm:flex-row gap-5 items-center">
-                    <div onClick={handleFileInputClick} className="px-12 cursor-pointer py-3 my-auto text-center border border-solid border-[#D8D8D8] rounded-full ">
-                      Choose File
-                    </div>
+              </div>
+            ) : (
+              <div className='w-full lg:w-1/2 min-h-full flex flex-col lg:flex-row items-start gap-12 xl:gap-16'>
+                <div className="bg-[#D8D8D8] h-[1px] w-full lg:hidden block"></div>
+                <div className="bg-[#D8D8D8] w-[1px] h-full hidden lg:block"></div>
+                <form id="userDetailsForm"
+                  className="w-full"
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                    handleSubmitForm();
+                  }}
+                >
+                  <div className='w-full'>
                     <input
-                      type="file"
-                      ref={fileInputRef}
-                      onChange={handleFileChange}
-                      style={{ display: "none" }}
-                      accept=".jpg, .jpeg, .png, .pdf, .doc, .svg, .docx, .zip, .rar"
+                      value={firstname}
+                      onChange={(e) => setFirstName(e.target.value)}
+                      type="text"
+                      name="firstName"
+                      placeholder="First name*"
+                      className="outline-none text-black placeholder:text-[#C4C4C4] w-full py-4"
+                      required
                     />
-                    <div>
-                      {fileName ? (
-                        <span className="text-base font-normal text-black">
-                          {fileName}
-                        </span>
-                      ) : (
-                        <span className="text-base font-normal text-black">
-                          No file chosen
-                        </span>
-                      )
-                      }
-                    </div>
+                    <div className="bg-[#D8D8D8] h-[1px] w-full "></div>
+                    <input
+                      value={lastname}
+                      onChange={(e) => setLastName(e.target.value)}
+                      type="text"
+                      name="lastName"
+                      placeholder="Last name*"
+                      className="outline-none text-black placeholder:text-[#C4C4C4] w-full py-4"
+                      required
+                    />
+                    <div className="bg-[#D8D8D8] h-[1px] w-full "></div>
+                    <input
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      type="email"
+                      name="email"
+                      placeholder="Email*"
+                      className="outline-none text-black placeholder:text-[#C4C4C4] w-full py-4"
+                      required
+                    />
+                    <div className="bg-[#D8D8D8] h-[1px] w-full "></div>
+                    <input
+                      value={jobtitle}
+                      onChange={(e) => setJobTitle(e.target.value)}
+                      type="text"
+                      name="jobTitle"
+                      placeholder="Job title"
+                      className="outline-none text-black placeholder:text-[#C4C4C4] w-full py-4"
+                    />
+                    <div className="bg-[#D8D8D8] h-[1px] w-full "></div>
+                    <input
+                      value={company}
+                      onChange={(e) => setCompany(e.target.value)}
+                      type="text"
+                      name="companyName"
+                      placeholder="Company name*"
+                      className="outline-none text-black placeholder:text-[#C4C4C4] w-full py-4"
+                      required
+                    />
+                    <div className="bg-[#D8D8D8] h-[1px] w-full "></div>
                   </div>
-                  <div>
-                    <ReCAPTCHA
-                      sitekey="6LfWPG8qAAAAAFBRLkUr505LpNEDOL_6p5dd8SLF"
-                      onChange={onRecaptchaChange}
-                      ref={recaptchaRef}
+                  <div className='mt-10 flex flex-col gap-2'>
+                    <label htmlFor="country">Country*</label>
+                    <select
+                      value={country}
+                      onChange={(e) => setCountry(e.target.value)}
+                      id="country"
+                      name="country"
+                      className="py-5 border-b border-[#D8D8D8] focus:outline-none"
+                      required
+                    >
+                      <option value="" className="text-[#C4C4C4]">Please Select</option>
+                      {countries.map((country) => (
+                        <option key={country.code} value={country.name} className="">
+                          {country.name.split(',')[0]}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                  <div className='mt-12 flex flex-col gap-2'>
+                    <label htmlFor="country">Message*</label>
+                    <textarea
+                      name="message"
+                      className="flex mt-6 p-4 w-full border border-[#D8D8D8]"
+                      required
+                      value={message}
+                      onChange={(e) => setMessage(e.target.value)}
                     />
-                    {showVerification && (
-                      <div className='mt-2 text-[#7811A5]'>
-                        Please verify yourself first!
+                  </div>
+                  <div className='mt-12 flex flex-col gap-12'>
+                    <div>Please attach a file if it will support your query</div>
+                    <div className="flex flex-col sm:flex-row gap-5 items-center">
+                      <div onClick={handleFileInputClick} className="px-12 cursor-pointer py-3 my-auto text-center border border-solid border-[#D8D8D8] rounded-full ">
+                        Choose File
                       </div>
-                    )}
+                      <input
+                        type="file"
+                        ref={fileInputRef}
+                        onChange={handleFileChange}
+                        style={{ display: "none" }}
+                        accept=".jpg, .jpeg, .png, .pdf, .doc, .svg, .docx, .zip, .rar"
+                      />
+                      <div>
+                        {fileName ? (
+                          <span className="text-base font-normal text-black">
+                            {fileName}
+                          </span>
+                        ) : (
+                          <span className="text-base font-normal text-black">
+                            No file chosen
+                          </span>
+                        )
+                        }
+                      </div>
+                    </div>
+                    <div>
+                      <ReCAPTCHA
+                        sitekey="6LfWPG8qAAAAAFBRLkUr505LpNEDOL_6p5dd8SLF"
+                        onChange={onRecaptchaChange}
+                        ref={recaptchaRef}
+                      />
+                      {showVerification && (
+                        <div className='mt-2 text-[#7811A5]'>
+                          Please verify yourself first!
+                        </div>
+                      )}
+                    </div>
+                    <button form="userDetailsForm" type="submit" className='border w-fit rounded-full py-4 px-28 text-white submit-btn'>
+                      Submit
+                    </button>
                   </div>
-                  <button form="userDetailsForm" type="submit" className='border w-fit rounded-full py-4 px-28 text-white submit-btn'>
-                    Submit
-                  </button>
-                </div>
-              </form>
-            </div>
+                </form>
+              </div>
+            )}
           </div>
         </section>
       </main>
-      {showConfirmation && (
-        <div className="fixed z-30 inset-0 w-auto flex items-center justify-center">
-          <div style={{
-            background: 'linear-gradient(135deg, #7811A5, #2E16BB)',
-          }} className="px-2 py-6 sm:px-6 sm:py-6 rounded-lg shadow-lg">
-            <div className="flex items-center justify-center text-green-700">
-              <FaCheckCircle className="mr-2 text-white" />
-              <span className="font-medium text-sm sm:text-base text-white">
-                Your details have been sent.
-              </span>
-            </div>
-            <p className="text-center text-sm sm:text-base mt-4 text-white">
-              Please check your email for the confirmation.
-            </p>
-            <div className='flex items-end justify-end mt-6'>
-              <button
-                className="text-xs transition-all duration-300 sm:text-base text-black bg-white hover:bg-black shadow-none hover:text-white focus:outline-none py-1 px-2 sm:py-2 sm:px-4 rounded-full"
-                onClick={toggleConfirmation}
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
       <Footer />
     </>
   );

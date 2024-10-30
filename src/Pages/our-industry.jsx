@@ -10,20 +10,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Our_industry = () => {
 
-    const [dropdownStates, setDropdownStates] = useState(Array(15).fill(false));
-
-    const toggleDropdown = (index) => {
-        const updatedStates = dropdownStates.map((state, i) => i === index ? !state : state);
-        setDropdownStates(updatedStates);
-    };
-
-    const [dropdownStates2, setDropdownStates2] = useState(Array(15).fill(false));
-
-    const toggleDropdown2 = (index) => {
-        const updatedStates2 = dropdownStates2.map((state, i) => i === index ? !state : state);
-        setDropdownStates2(updatedStates2);
-    };
-
     useEffect(() => {
         gsap.utils.toArray('.toggle-point').forEach((element) => {
             gsap.fromTo(
@@ -92,7 +78,6 @@ const DropdownComponent = () => {
         "Travel and Hospitality", "Transportation", "Technology", "Retailer", "Real Estate"
     ];
 
-
     const dropdownContent = [
         "Advanced Automotive Software Solutions, Website Designing & Development, Mobile App. |The automotive industry is witnessing a sea change. One after the other, technological breakthroughs are causing disruption in the industry. To be the frontrunner, you need to adopt these before your competitors.",
         "Advanced Banking Software Solutions, Website Designing & Development, Mobile App.|Banking and financial software solutions play a major role in streamlining financial services. It personalises to create smart user-centric solutions. And manages to assist in reducing costs, boosting loyalty, finances, business image, and more. So, integrating the BFSI solutions can help to enhance transparency among users which increases satisfaction.",
@@ -117,26 +102,24 @@ const DropdownComponent = () => {
                 <div key={index}>
 
                     <div className="py-4 flex flex-col toggle-point">
-                        <div className="flex items-center  justify-between">
-                            <div className="flex items-center text-center justify-between gap-8">
-                                <div className='border rounded-full p-1 w-9 border-[#D8D8D8]'>{index + 1}</div>
+                        <div className="flex items-center justify-between">
+                            <div className="flex items-center justify-between gap-8">
+                                <div className='border rounded-full text-center p-1 w-9 border-[#D8D8D8]'>{index + 1}</div>
                                 <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">{title}</div>
                             </div>
-                            <div onClick={() => toggleDropdown2(index)} className="cursor-pointer">
-                                <svg className={`transition-transform duration-300 ${dropdownStates2[index] ? 'rotate-[-180deg]' : 'rotate-[0deg]'}`} width="30" height="25" viewBox="0 0 46 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clipPath="url(#clip0_7690_1453)">
-                                        <g clipPath="url(#clip1_7690_1453)">
-                                            <path d="M45.2769 1.46875L22.9998 23.7459L0.722656 1.46875" stroke="#4A4A4A" strokeWidth="0.657143" />
-                                        </g>
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_7690_1453">
-                                            <rect width="46" height="23.66" fill="white" transform="translate(0 0.8125)" />
-                                        </clipPath>
-                                        <clipPath id="clip1_7690_1453">
-                                            <rect width="46" height="23.6571" fill="white" transform="translate(0 0.8125)" />
-                                        </clipPath>
-                                    </defs>
+                            <div onClick={() => toggleDropdown2(index)} className="cursor-pointer ">
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    className={`transition-transform duration-300 ${dropdownStates2[index] ? 'rotate-[-180deg]' : 'rotate-[0deg]'
+                                        }`}
+                                >
+                                    <rect width="24" height="24" rx="12" fill="#7811A5" />
+                                    <rect x="7" y="11" width="10" height="2" fill="white" />
+                                    {!dropdownStates2[index] && <rect x="11" y="7" width="2" height="10" fill="white" />}
                                 </svg>
                             </div>
                         </div>

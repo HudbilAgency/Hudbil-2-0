@@ -608,7 +608,7 @@ const Work = () => {
                             <div className='flex flex-col items-start gap-2'>
                                 <div>SILICON INDIA</div>
                                 <div>CLUTCH</div>
-                                <div>ABB</div>
+                                <div>ACA</div>
                                 <div>BBC WORLD</div>
                                 <div>JUST DAIL</div>
                                 <div>SUPERIU AWARDS</div>

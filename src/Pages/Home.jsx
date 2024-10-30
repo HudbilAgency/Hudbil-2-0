@@ -508,7 +508,7 @@ const Home = () => {
                 <div className='mx-6 lg:mx-8'>
                   <div className='pt-28 pb-12'>
                     <h1 ref={secondsectionRef} className="text-[48px] w-full lg:w-[83%] leading-tight text-neutral-950  max-md:text-[2.25rem]">
-                      We are a DESIGN + BUILD creative agency intent on solving the toughest problems for Brands & organisations face in today's world.
+                      We are a DESIGN + BUILD creative agency intent on solving the toughest problems for brands & organisations face in today's world.
                     </h1>
                   </div>
                   <hr className="w-full h-px border border-gray-400 border-solid" />
