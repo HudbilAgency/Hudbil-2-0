@@ -142,7 +142,7 @@ const Services1 = () => {
                         <div className='w-full lg:w-2/3 xl:w-1/2 text-white'>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-10 toggle-point flex flex-col">
-                                <div className="flex items-center justify-between">
+                                <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
                                         <div><img src="/point11.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Digital Branding</div>
@@ -163,7 +163,7 @@ const Services1 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[0] ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[0] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="text-xl pt-10">Digital Transformation</div>
                                     <div>A strategic process to help your brand establish a platform-agnostic identity and presence. A design firm that can stand time with new verticals and scaling. Bold, memorable designs that define your brand at first glance.</div>
                                     <div>
@@ -176,7 +176,7 @@ const Services1 = () => {
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-10 toggle-point flex flex-col">
-                                <div className="flex items-center justify-between">
+                                <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
                                         <div><img src="/point12.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">User Interface Design</div>
@@ -197,7 +197,7 @@ const Services1 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[1] ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[1] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="text-xl pt-10">UI is the power</div>
                                     <div>Designing aesthetic, delightful and visually appealing products that are functional and enjoyable to use. Creating the look, feel, and functionality of a product’s interface to make it easy and enjoyable for users.</div>
                                     <div>
@@ -210,7 +210,7 @@ const Services1 = () => {
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-10 toggle-point flex flex-col">
-                                <div className="flex items-center justify-between">
+                                <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
                                         <div><img src="/point13.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">User Experience Design</div>
@@ -231,7 +231,7 @@ const Services1 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[2] ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[2] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="text-xl pt-10">UX is the experience</div>
                                     <div>Creating holistic, usable and well-structured digital experiences that incorporate best design practices and standards. Consider how users feel when interacting with a product, and how to make the experience seamless.</div>
                                     <div>
@@ -244,7 +244,7 @@ const Services1 = () => {
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-10 toggle-point flex flex-col">
-                                <div className="flex items-center justify-between">
+                                <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
                                         <div><img src="/point14.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Interaction Design</div>
@@ -265,7 +265,7 @@ const Services1 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[3] ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[3] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="text-xl pt-10">Goal of design creativity</div>
                                     <div>While interaction design has an interest in form (similar to other design fields), its main area of focus rests on behaviour. Rather than analysing how things are, interaction design synthesizes and imagines things as they could be.</div>
                                     <div>
@@ -278,7 +278,7 @@ const Services1 = () => {
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-10 toggle-point flex flex-col">
-                                <div className="flex items-center justify-between">
+                                <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
                                         <div><img src="/point15.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Digital Prototyping</div>
@@ -299,7 +299,7 @@ const Services1 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[4] ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[4] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="text-xl pt-10">Experience the best</div>
                                     <div>Making a prototype of the final product and testing it in real time to get inputs and reliable user feedback. It’s a key tool for designers and engineers to conceptualize and test product ideas before moving into production.</div>
                                     <div>
@@ -312,7 +312,7 @@ const Services1 = () => {
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-10 toggle-point flex flex-col">
-                                <div className="flex items-center justify-between">
+                                <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
                                         <div><img src="/point16.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Digital Illustrations</div>
@@ -333,7 +333,7 @@ const Services1 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[0] ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[0] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="text-xl pt-10">Solid brand face</div>
                                     <div>Crafting stunning, visually consistent sets of icon styles and illustrations, in line with all relevant brand guidelines. This comprehensive guide will help you fully master the art of digital illustration.</div>
                                     <div>
@@ -386,7 +386,7 @@ const Services1 = () => {
                         <div className='w-full text-white'>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-8 toggle-point flex flex-col">
-                                <div className="flex items-center justify-between">
+                                <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-8">
                                         <div className='border border-white rounded-full px-3 py-1'>1</div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Conversation</div>
@@ -410,13 +410,13 @@ const Services1 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[0] ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[0] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="text-xl pt-10 w-full lg:w-2/3 ml-auto md:mr-[6%]">Conversation sparks imagination, facilitates creativity and ignites insights. This is about the joy of discovery and the love of exploration, to not sit back and wait for inspiration but actively search for meaning.</div>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-8 toggle-point flex flex-col">
-                                <div className="flex items-center justify-between">
+                                <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-8">
                                         <div className='border border-white rounded-full px-3 py-1'>2</div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Discovery & Research</div>
@@ -440,13 +440,13 @@ const Services1 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[1] ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[1] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="text-xl pt-10 w-full lg:w-2/3 ml-auto md:mr-[6%]">This is where the fun begins!  We start with researching deep into your brand, industry, and audience—like detectives on a caffeine high. We meticulously uncover your brand’s true potential, ensuring we’re aligned with the best branding agencies. It’s like a treasure hunt, but instead of gold, we find your brand’s true potential.</div>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-8 toggle-point flex flex-col">
-                                <div className="flex items-center justify-between">
+                                <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-8">
                                         <div className='border border-white rounded-full px-3 py-1'>3</div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Collaboration</div>
@@ -470,13 +470,13 @@ const Services1 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[2] ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[2] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="text-xl pt-10 w-full lg:w-2/3 ml-auto md:mr-[6%]">We embrace the power of collaboration, working together seamlessly to address challenges and overcome obstacles, delivering impactful solutions that are both commercially viable and meaningful.</div>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-8 toggle-point flex flex-col">
-                                <div className="flex items-center justify-between">
+                                <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-8">
                                         <div className='border border-white rounded-full px-3 py-1'>4</div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Craft</div>
@@ -500,13 +500,13 @@ const Services1 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[3] ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[3] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="text-xl pt-10 w-full lg:w-2/3 ml-auto md:mr-[6%]">It’s about elevating design from ordinary to extraordinary, striking the perfect balance between beauty and quality. It entails a deep appreciation for finer details while keeping the ‘bigger picture’ in mind, ensuring that the work is unmistakable and unforgettable.</div>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-8 toggle-point flex flex-col">
-                                <div className="flex items-center justify-between">
+                                <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-8">
                                         <div className='border border-white rounded-full px-3 py-1'>5</div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Design & Refinement</div>
@@ -530,13 +530,13 @@ const Services1 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[4] ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[4] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="text-xl pt-10 w-full lg:w-2/3 ml-auto md:mr-[6%]">Here’s where your ideas get dressed up for the show! We pour our creative energy into crafting designs that feel fresh. Then, we tweak, refine, and polish. It’s like giving your brand a stylish makeover that makes heads turn—again and again.</div>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-8 toggle-point flex flex-col">
-                                <div className="flex items-center justify-between">
+                                <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-8">
                                         <div className='border border-white rounded-full px-3 py-1'>6</div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Launch & Support</div>
@@ -560,7 +560,7 @@ const Services1 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[5] ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[5] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="text-xl pt-10 w-full lg:w-2/3 ml-auto md:mr-[6%]">But we don’t just set it and forget it. We’re right there with you for the launch, making sure everything runs smoothly. Need ongoing support? Our branding agency services have got your back.</div>
                                 </div>
                             </div>

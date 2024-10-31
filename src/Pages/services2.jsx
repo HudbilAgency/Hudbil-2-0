@@ -140,7 +140,7 @@ const Services2 = () => {
                         <div className='w-full lg:w-2/3 xl:w-1/2 text-white'>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-10 toggle-point flex flex-col">
-                                <div className="flex items-center justify-between">
+                                <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
                                         <div><img src="/point31.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Website Development</div>
@@ -161,7 +161,7 @@ const Services2 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[0] ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[0] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="text-xl pt-10">Front-End and Back-End</div>
                                     <div>Front-end development is the process of building the parts of a website that users see and interact with. Implementing the best combination of technologies (full-stack, mean stack, flutter, native-OS, react JS) for your project.</div>
                                     <div>
@@ -174,7 +174,7 @@ const Services2 = () => {
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-10 toggle-point flex flex-col">
-                                <div className="flex items-center justify-between">
+                                <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
                                         <div><img src="/point32.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Mobile Applications</div>
@@ -195,7 +195,7 @@ const Services2 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[1] ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[1] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="text-xl pt-10">Native and Hybrid</div>
                                     <div>Mobile application development is the process of creating software applications that run on a mobile device, and a typical mobile application utilizes a network connection to work with remote computing resources. Leveraging the latest technologies to develop robust and scalable hybrid and native mobile applications.</div>
                                     <div>
@@ -208,7 +208,7 @@ const Services2 = () => {
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-10 toggle-point flex flex-col">
-                                <div className="flex items-center justify-between">
+                                <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
                                         <div><img src="/point33.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">SAAS Implementation</div>
@@ -229,7 +229,7 @@ const Services2 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[2] ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[2] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="text-xl pt-10">Reduce costs, and Increase flexibility</div>
                                     <div>SaaS implementation is the process of integrating a Software-as-a-Service (SaaS) application into a business’s workflow. Using a cloud-first approach to create anytime-anywhere access based scalable SAAS applications.</div>
                                     <div>
@@ -242,7 +242,7 @@ const Services2 = () => {
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-10 toggle-point flex flex-col">
-                                <div className="flex items-center justify-between">
+                                <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
                                         <div><img src="/point34.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Web Applications</div>
@@ -263,7 +263,7 @@ const Services2 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[3] ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[3] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="text-xl pt-10">Functionality without installing</div>
                                     <div>A web application (web app) is an application program that is stored on a remote server and delivered over the internet through a browser interface. Implementing the perfect blend of agile development to create dynamic and responsive web applications.</div>
                                     <div>
@@ -276,7 +276,7 @@ const Services2 = () => {
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-10 toggle-point flex flex-col">
-                                <div className="flex items-center justify-between">
+                                <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
                                         <div><img src="/point35.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Custom Applications</div>
@@ -297,7 +297,7 @@ const Services2 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[4] ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[4] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="text-xl pt-10">Responsibility of building</div>
                                     <div>Custom application development is the process of designing, developing, and deploying software applications for specific users or use cases. Implementing the best combination of technologies to develop interfaces for wearables, dashboards and AI-Chatbots.</div>
                                     <div>
@@ -310,7 +310,7 @@ const Services2 = () => {
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-10 toggle-point flex flex-col">
-                                <div className="flex items-center justify-between">
+                                <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
                                         <div><img src="/point36.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">CMS Integration</div>
@@ -331,7 +331,7 @@ const Services2 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[0] ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[0] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="text-xl pt-10">Build and utilize integration apps</div>
                                     <div>CMS integration is simply taking your existing website/web app and integrating a Content Management System. Building a platform that is accessible and can be managed by the customers in order to create, manage and modify digital content on their website easily.</div>
                                     <div>
@@ -384,7 +384,7 @@ const Services2 = () => {
                         <div className='w-full text-white'>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-8 toggle-point flex flex-col">
-                                <div className="flex items-center justify-between">
+                                <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-8">
                                         <div className='border border-white rounded-full px-3 py-1'>1</div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Conversation</div>
@@ -408,13 +408,13 @@ const Services2 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[0] ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[0] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="text-xl pt-10 w-full lg:w-2/3 ml-auto md:mr-[6%]">Conversation sparks imagination, facilitates creativity and ignites insights. This is about the joy of discovery and the love of exploration, to not sit back and wait for inspiration but actively search for meaning.</div>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-8 toggle-point flex flex-col">
-                                <div className="flex items-center justify-between">
+                                <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-8">
                                         <div className='border border-white rounded-full px-3 py-1'>2</div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Discovery & Research</div>
@@ -438,13 +438,13 @@ const Services2 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[1] ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[1] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="text-xl pt-10 w-full lg:w-2/3 ml-auto md:mr-[6%]">This is where the fun begins!  We start with researching deep into your brand, industry, and audience—like detectives on a caffeine high. We meticulously uncover your brand’s true potential, ensuring we’re aligned with the best branding agencies. It’s like a treasure hunt, but instead of gold, we find your brand’s true potential.</div>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-8 toggle-point flex flex-col">
-                                <div className="flex items-center justify-between">
+                                <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-8">
                                         <div className='border border-white rounded-full px-3 py-1'>3</div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Collaboration</div>
@@ -468,13 +468,13 @@ const Services2 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[2] ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[2] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="text-xl pt-10 w-full lg:w-2/3 ml-auto md:mr-[6%]">We embrace the power of collaboration, working together seamlessly to address challenges and overcome obstacles, delivering impactful solutions that are both commercially viable and meaningful.</div>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-8 toggle-point flex flex-col">
-                                <div className="flex items-center justify-between">
+                                <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-8">
                                         <div className='border border-white rounded-full px-3 py-1'>4</div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Craft</div>
@@ -498,13 +498,13 @@ const Services2 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[3] ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[3] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="text-xl pt-10 w-full lg:w-2/3 ml-auto md:mr-[6%]">It’s about elevating design from ordinary to extraordinary, striking the perfect balance between beauty and quality. It entails a deep appreciation for finer details while keeping the ‘bigger picture’ in mind, ensuring that the work is unmistakable and unforgettable.</div>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-8 toggle-point flex flex-col">
-                                <div className="flex items-center justify-between">
+                                <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-8">
                                         <div className='border border-white rounded-full px-3 py-1'>5</div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Design & Refinement</div>
@@ -528,13 +528,13 @@ const Services2 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[4] ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[4] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="text-xl pt-10 w-full lg:w-2/3 ml-auto md:mr-[6%]">Here’s where your ideas get dressed up for the show! We pour our creative energy into crafting designs that feel fresh. Then, we tweak, refine, and polish. It’s like giving your brand a stylish makeover that makes heads turn—again and again.</div>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-8 toggle-point flex flex-col">
-                                <div className="flex items-center justify-between">
+                                <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-8">
                                         <div className='border border-white rounded-full px-3 py-1'>6</div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Launch & Support</div>
@@ -558,7 +558,7 @@ const Services2 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[5] ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[5] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="text-xl pt-10 w-full lg:w-2/3 ml-auto md:mr-[6%]">But we don’t just set it and forget it. We’re right there with you for the launch, making sure everything runs smoothly. Need ongoing support? Our branding agency services have got your back.</div>
                                 </div>
                             </div>

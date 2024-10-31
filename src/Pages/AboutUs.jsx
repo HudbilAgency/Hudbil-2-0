@@ -204,7 +204,7 @@ const AboutUs = () => {
                         <div className='w-full lg:w-2/3 xl:w-1/2 text-white'>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-10 toggle-point flex flex-col">
-                                <div className="flex items-center justify-between">
+                                <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
                                         <div><img src="./point1.png" alt="point" /></div>
                                         <div className="font-normal text-2xl md:text-4xl leading-9">Innovation</div>
@@ -225,14 +225,14 @@ const AboutUs = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[0] ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[0] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="text-xl pt-10">A force for change</div>
                                     <div>It’s easy for innovation programmes to underestimate the potential of innovation as a force for change. Innovation isn’t just a new product or service – it’s an instigator of change. Sparking a chain reaction towards a different future state.</div>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-10 toggle-point flex flex-col">
-                                <div className="flex items-center justify-between">
+                                <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
                                         <div><img src="./point2.png" alt="point" /></div>
                                         <div className="font-normal text-2xl md:text-4xl leading-9">Communication</div>
@@ -253,7 +253,7 @@ const AboutUs = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[1] ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[1] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="text-xl pt-10">Be remembered, Be remarkable</div>
                                     <div>Communications are a pillar of great marketing. They create demand through long-term
                                         brand building and convert existing demand through short-term sales activation. Effective
@@ -262,7 +262,7 @@ const AboutUs = () => {
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-10 toggle-point flex flex-col">
-                                <div className="flex items-center justify-between">
+                                <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
                                         <div><img src="./point3.png" alt="point" /></div>
                                         <div className="font-normal text-2xl md:text-4xl leading-9">Culture</div>
@@ -283,14 +283,14 @@ const AboutUs = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[2] ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[2] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="text-xl pt-10">World is changing. Culture tells us how.</div>
                                     <div>Culture is shared meaning. It’s how we see the world and live our lives. Brands don’t exist outside of culture and neither do their customers or target audiences – it’s table stakes for organisations.</div>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-10 toggle-point flex flex-col">
-                                <div className="flex items-center justify-between">
+                                <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
                                         <div><img src="./point4.png" alt="point" /></div>
                                         <div className="font-normal text-2xl md:text-4xl leading-9">Creativity</div>
@@ -311,14 +311,14 @@ const AboutUs = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[3] ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[3] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="text-xl pt-10">A task of reaching a goal.</div>
                                     <div>Creativity is the ability to form novel and valuable ideas or works using the imagination. Products of creativity may be intangible or a physical object. Creativity may also describe the ability to find new solutions to problems, or new methods of performing.</div>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-10 toggle-point flex flex-col">
-                                <div className="flex items-center justify-between">
+                                <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
                                         <div><img src="./point5.png" alt="point" /></div>
                                         <div className="font-normal text-2xl md:text-4xl leading-9">Development</div>
@@ -339,14 +339,14 @@ const AboutUs = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[4] ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[4] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="text-xl pt-10">Brand building is a big job.</div>
                                     <div>Building a brand from start to finish is a demanding task. Whether you’re creating a new brand for a new business, designing a new brand after a merge, or rebranding an existing company, the process takes time, money, and lots of research.</div>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-10 toggle-point flex flex-col">
-                                <div className="flex items-center justify-between">
+                                <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
                                         <div><img src="./point6.png" alt="point" /></div>
                                         <div className="font-normal text-2xl md:text-4xl leading-9">Customer Experience (CX)</div>
@@ -367,7 +367,7 @@ const AboutUs = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[0] ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[0] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="text-xl pt-10">A point of their buying journey.</div>
                                     <div>Customer experience, sometimes abbreviated to CX, is the totality of cognitive, affective, sensory, and behavioural customer responses during all stages of the consumption process including pre-purchase, consumption, and post-purchase stages.</div>
                                 </div>
@@ -412,13 +412,13 @@ const AboutUs = () => {
                                         className='flex items-center gap-7 w-full team-member'
                                         ref={el => (teamRefs.current[index] = el)}
                                     >
-                                        <div className="w-14 h-12">
+                                        <div className="w-16 sm:w-14 h-12">
                                             <img src={member.image} alt={member.name} className="w-full h-full rounded-full object-cover" />
                                         </div>
                                         <div className='w-full'>
                                             {index === 0 && <div className='w-full h-[1px] bg-[#6C6C6C]'></div>}
-                                            <div className='flex items-start gap-5 sm:gap-8 md:gap-28 tracking-wider text-white py-6'>
-                                                <div className='w-[27vw] lg:w-[15vw]'>{member.name}</div>
+                                            <div className='flex flex-col sm:flex-row items-start gap-5 sm:gap-8 md:gap-28 tracking-wider text-white py-6'>
+                                                <div className='w-full sm:w-[27vw] lg:w-[15vw]'>{member.name}</div>
                                                 <div>{member.role}</div>
                                             </div>
                                             <div className='w-full h-[1px] bg-[#6C6C6C]'></div>

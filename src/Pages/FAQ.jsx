@@ -145,7 +145,7 @@ const DropdownComponent = () => {
                                 </svg>
                             </div>
                         </div>
-                        <div className={`flex items-end justify-end gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[index] ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                        <div className={`flex items-end justify-end gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[index] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                             <div className="text-base md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 pl-auto md:pr-[8.5%] md:pl-[8.5%] xl:pl-[0%] 2xl:pr-[20%] xl:pr-[8.5%]">
                                 {dropdownContent[index % dropdownContent.length]
                                     .split('|')

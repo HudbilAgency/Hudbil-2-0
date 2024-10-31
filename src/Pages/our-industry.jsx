@@ -123,7 +123,7 @@ const DropdownComponent = () => {
                                 </svg>
                             </div>
                         </div>
-                        <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[index] ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                        <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[index] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                             <div className="text-xl pt-10 w-full lg:w-2/3 ml-auto md:mr-[6%]">
                                 {dropdownContent[index % dropdownContent.length]
                                     .split('|')
