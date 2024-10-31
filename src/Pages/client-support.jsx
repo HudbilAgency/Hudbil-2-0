@@ -150,8 +150,11 @@ const ClientSupport = () => {
                 <h1 className="self-start text-4xl md:text-[3rem] text-[#0B0B0B] leading-tight">
                   Your Team
                 </h1>
-                <p className="mt-9 text-xl leading-10 max-md:max-w-full">
-                  If you are dealing with any issue's in your on going project, request a call we are available to help 24/7
+                <p className="mt-9 text-xl leading-9 max-md:max-w-full">
+                  This page is only for our on-going clients.
+                </p>
+                <p className="mt-4 text-xl leading-9 max-md:max-w-full">
+                  If you are dealing with any issue's in your on going project, request a call, your project team manager will get in touch with you as per the time scheduled.
                 </p>
               </div>
             </div>
