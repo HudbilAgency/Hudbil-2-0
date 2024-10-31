@@ -503,13 +503,13 @@ const Navbar = () => {
               <img
                 ref={birdRef}
                 loading="lazy"
-                src="./MainBirdImg.png"
+                src="/MainBirdImg.png"
                 alt="hudbil-logo"
                 className="w-[5rem] lg:w-[7rem] mr-6 lg:mr-16"
               />
             ) : (
               <div className="h-20 md:mt-1 flex mr-3 lg:mr-[50px] items-center justify-center overflow-hidden bg-no-repeat bg-cover bg-center">
-                <img className="w-[6rem] sm:w-[8rem] md:w-[10rem]" src="./hudbil-logo-nav.gif" alt="hudbil-logo" />
+                <img className="w-[6rem] sm:w-[8rem] md:w-[10rem]" src="/hudbil-logo-nav.gif" alt="hudbil-logo" />
               </div>
 
             )}
