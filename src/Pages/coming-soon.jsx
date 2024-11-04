@@ -2,12 +2,29 @@ import React, { useState, useRef } from 'react';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 import { Helmet } from 'react-helmet';
+import axios from "axios";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const ComingSoon = () => {
 
+    const [firstname, setFirstName] = useState("");
+    const [lastname, setLastName] = useState("");
+    const [email, setEmail] = useState("");
+    const [jobtitle, setJobTitle] = useState("");
+    const [company, setCompany] = useState("");
+    const [country, setCountry] = useState("");
+    const [message, setMessage] = useState("");
     const fileInputRef = useRef(null);
     const [fileName, setFileName] = useState("");
     const [file, setFile] = useState(null);
+    const [showConfirmation, setShowConfirmation] = useState(false);
+    const [showVerification, setShowVerification] = useState(false);
+    const recaptchaRef = useRef(null);
+    const [recaptchaToken, setRecaptchaToken] = useState(null);
+
+    const toggleConfirmation = () => {
+        setShowConfirmation(!showConfirmation);
+    };
 
     const handleFileInputClick = () => {
         fileInputRef.current.click();
@@ -19,6 +36,85 @@ const ComingSoon = () => {
             setFileName(file.name);
             setFile(file);
         }
+    };
+
+    const toBase64 = (file) =>
+        new Promise((resolve, reject) => {
+            const reader = new FileReader();
+            reader.readAsDataURL(file);
+            reader.onload = () => resolve(reader.result);
+            reader.onerror = (error) => reject(error);
+        });
+
+    const handleSubmitForm = async () => {
+        if (!recaptchaToken) {
+            setShowVerification(true);
+            return;
+        }
+
+        let fileBase64 = file ? await toBase64(file) : null;
+
+        const contactformData = {
+            firstname,
+            lastname,
+            email,
+            jobtitle,
+            company,
+            country,
+            message,
+            fileName,
+            attachment: fileBase64,
+            recaptchaToken,
+        };
+
+        setShowVerification(false);
+        toggleConfirmation();
+
+        setTimeout(() => {
+            const element = document.querySelector('.thank-you');
+            const elementRect = element.getBoundingClientRect();
+            const elementTop = elementRect.top + window.scrollY;
+            const centerPosition = elementTop - (window.innerHeight / 2) + (elementRect.height / 2);
+
+            window.scrollTo({
+                top: centerPosition,
+                behavior: 'smooth'
+            });
+        }, 0);
+
+        setFirstName("");
+        setLastName("");
+        setEmail("");
+        setJobTitle("");
+        setCompany("");
+        setCountry("");
+        setMessage("");
+        setFileName("");
+        setFile(null);
+        setRecaptchaToken(null);
+
+        if (fileInputRef.current) {
+            fileInputRef.current.value = "";
+        }
+
+        try {
+            const response = await axios.post(
+                "https://hudbil-server.onrender.com/contact-form",
+                JSON.stringify(contactformData),
+                {
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                }
+            );
+            console.log("Server response:", response.data);
+        } catch (error) {
+            console.error("Error sending data to server:", error);
+        }
+    };
+
+    const onRecaptchaChange = (token) => {
+        setRecaptchaToken(token);
     };
 
     const countries = [
@@ -299,107 +395,150 @@ const ComingSoon = () => {
                             <img className='w-full' src="./coming-soon.png" alt="Coming Soon" />
                         </div>
 
-                        <div className='w-full lg:w-1/2 flex flex-col lg:flex-row items-start gap-12 lg:gap-16'>
-                            <div className="bg-[#D8D8D8] h-[1px] w-full lg:hidden block"></div>
-                            <div className="bg-[#D8D8D8] w-[1px] h-full hidden lg:block"></div>
-                            <div className='w-full'>
-                                <div className='w-full'>
-                                    <input
-                                        type="text"
-                                        name="firstName"
-                                        placeholder="First name*"
-                                        className="outline-none text-black placeholder:text-[#C4C4C4] w-full py-4"
-                                        required
-                                    />
-                                    <div className="bg-[#D8D8D8] h-[1px] w-full "></div>
-                                    <input
-                                        type="text"
-                                        name="lastName"
-                                        placeholder="Last name*"
-                                        className="outline-none text-black placeholder:text-[#C4C4C4] w-full py-4"
-                                        required
-                                    />
-                                    <div className="bg-[#D8D8D8] h-[1px] w-full "></div>
-                                    <input
-                                        type="email"
-                                        name="email"
-                                        placeholder="Email*"
-                                        className="outline-none text-black placeholder:text-[#C4C4C4] w-full py-4"
-                                        required
-                                    />
-                                    <div className="bg-[#D8D8D8] h-[1px] w-full "></div>
-                                    <input
-                                        type="text"
-                                        name="jobTitle"
-                                        placeholder="Job title"
-                                        className="outline-none text-black placeholder:text-[#C4C4C4] w-full py-4"
-                                    />
-                                    <div className="bg-[#D8D8D8] h-[1px] w-full "></div>
-                                    <input
-                                        type="text"
-                                        name="companyName"
-                                        placeholder="Company name*"
-                                        className="outline-none text-black placeholder:text-[#C4C4C4] w-full py-4"
-                                        required
-                                    />
-                                    <div className="bg-[#D8D8D8] h-[1px] w-full "></div>
-                                </div>
-                                <div className='mt-10 flex flex-col gap-2'>
-                                    <label htmlFor="country">Country*</label>
-                                    <select
-                                        id="country"
-                                        name="country"
-                                        className="py-5 border-b border-[#D8D8D8] focus:outline-none"
-                                        required
-                                    >
-                                        <option value="" className="text-[#C4C4C4]">Please Select</option>
-                                        {countries.map((country) => (
-                                            <option key={country.code} value={country.code} className="">
-                                                {country.name.split(',')[0]}
-                                            </option>
-                                        ))}
-                                    </select>
-                                </div>
-                                <div className='mt-12 flex flex-col gap-2'>
-                                    <label htmlFor="country">Message*</label>
-                                    <textarea
-                                        name="message"
-                                        className="flex mt-6 p-4 w-full border border-[#D8D8D8]"
-                                        required
-                                    />
-                                </div>
-                                <div className='mt-12 flex flex-col gap-12'>
-                                    <div>Please attach a file if it will support your query</div>
-                                    <div className="flex flex-col sm:flex-row gap-5 items-center">
-                                        <div onClick={handleFileInputClick} className="px-12 cursor-pointer py-3 my-auto text-center border border-solid border-[#D8D8D8] rounded-full ">
-                                            Choose File
-                                        </div>
-                                        <input
-                                            type="file"
-                                            ref={fileInputRef}
-                                            onChange={handleFileChange}
-                                            style={{ display: "none" }}
-                                            accept=".jpg, .jpeg, .png, .pdf, .doc, .svg, .docx, .zip, .rar"
-                                        />
-                                        <div>
-                                            {fileName ? (
-                                                <span className="text-base font-normal text-black">
-                                                    {fileName}
-                                                </span>
-                                            ) : (
-                                                <span className="text-base font-normal text-black">
-                                                    No file chosen
-                                                </span>
-                                            )
-                                            }
-                                        </div>
-                                    </div>
-                                    <button className='border w-fit sm:mx-0 mx-auto rounded-full py-4 px-28 text-white submit-btn mt-4'>
-                                        Submit
-                                    </button>
+                        {showConfirmation ? (
+                            <div className='w-full lg:w-1/2 min-h-full flex flex-col lg:flex-row items-center gap-16'>
+                                <div className="bg-[#D8D8D8] h-[1px] w-full lg:hidden block"></div>
+                                <div className="bg-[#D8D8D8] w-[1px] h-full hidden lg:block"></div>
+                                <div className='w-full flex flex-col items-start gap-12 thank-you'>
+                                    <div className='text-3xl md:text-[2.7rem] 2xl:text-[3rem] text-[#0B0B0B] leading-tight w-full 2xl:w-4/5'>Thank You…!! </div>
+                                    <div className='text-3xl md:text-[2.7rem] 2xl:text-[3rem] text-[#0B0B0B] leading-tight w-full 2xl:w-4/5'>Our team has received your information, will get in touch with you within the next 24 hours to discuss how we can help bring your vision to life.</div>
                                 </div>
                             </div>
-                        </div>
+                        ) : (
+                            <div className='w-full lg:w-1/2 min-h-full flex flex-col lg:flex-row items-start gap-12 xl:gap-16'>
+                                <div className="bg-[#D8D8D8] h-[1px] w-full lg:hidden block"></div>
+                                <div className="bg-[#D8D8D8] w-[1px] h-full hidden lg:block"></div>
+                                <form id="userDetailsForm"
+                                    className="w-full"
+                                    onSubmit={(e) => {
+                                        e.preventDefault();
+                                        handleSubmitForm();
+                                    }}
+                                >
+                                    <div className='w-full'>
+                                        <input
+                                            value={firstname}
+                                            onChange={(e) => setFirstName(e.target.value)}
+                                            type="text"
+                                            name="firstName"
+                                            placeholder="First name*"
+                                            className="outline-none text-black placeholder:text-[#C4C4C4] w-full py-4"
+                                            required
+                                        />
+                                        <div className="bg-[#D8D8D8] h-[1px] w-full "></div>
+                                        <input
+                                            value={lastname}
+                                            onChange={(e) => setLastName(e.target.value)}
+                                            type="text"
+                                            name="lastName"
+                                            placeholder="Last name*"
+                                            className="outline-none text-black placeholder:text-[#C4C4C4] w-full py-4"
+                                            required
+                                        />
+                                        <div className="bg-[#D8D8D8] h-[1px] w-full "></div>
+                                        <input
+                                            value={email}
+                                            onChange={(e) => setEmail(e.target.value)}
+                                            type="email"
+                                            name="email"
+                                            placeholder="Email*"
+                                            className="outline-none text-black placeholder:text-[#C4C4C4] w-full py-4"
+                                            required
+                                        />
+                                        <div className="bg-[#D8D8D8] h-[1px] w-full "></div>
+                                        <input
+                                            value={jobtitle}
+                                            onChange={(e) => setJobTitle(e.target.value)}
+                                            type="text"
+                                            name="jobTitle"
+                                            placeholder="Job title"
+                                            className="outline-none text-black placeholder:text-[#C4C4C4] w-full py-4"
+                                        />
+                                        <div className="bg-[#D8D8D8] h-[1px] w-full "></div>
+                                        <input
+                                            value={company}
+                                            onChange={(e) => setCompany(e.target.value)}
+                                            type="text"
+                                            name="companyName"
+                                            placeholder="Company name*"
+                                            className="outline-none text-black placeholder:text-[#C4C4C4] w-full py-4"
+                                            required
+                                        />
+                                        <div className="bg-[#D8D8D8] h-[1px] w-full "></div>
+                                    </div>
+                                    <div className='mt-10 flex flex-col gap-2'>
+                                        <label htmlFor="country">Country*</label>
+                                        <select
+                                            value={country}
+                                            onChange={(e) => setCountry(e.target.value)}
+                                            id="country"
+                                            name="country"
+                                            className="py-5 border-b border-[#D8D8D8] focus:outline-none"
+                                            required
+                                        >
+                                            <option value="" className="text-[#C4C4C4]">Please Select</option>
+                                            {countries.map((country) => (
+                                                <option key={country.code} value={country.name} className="">
+                                                    {country.name.split(',')[0]}
+                                                </option>
+                                            ))}
+                                        </select>
+                                    </div>
+                                    <div className='mt-12 flex flex-col gap-2'>
+                                        <label htmlFor="country">Message*</label>
+                                        <textarea
+                                            name="message"
+                                            className="flex mt-6 p-4 w-full border border-[#D8D8D8]"
+                                            required
+                                            value={message}
+                                            onChange={(e) => setMessage(e.target.value)}
+                                        />
+                                    </div>
+                                    <div className='mt-12 flex flex-col gap-12'>
+                                        <div>Please attach a file if it will support your query</div>
+                                        <div className="flex flex-col sm:flex-row gap-5 items-center">
+                                            <div onClick={handleFileInputClick} className="px-12 cursor-pointer py-3 my-auto text-center border border-solid border-[#D8D8D8] rounded-full ">
+                                                Choose File
+                                            </div>
+                                            <input
+                                                type="file"
+                                                ref={fileInputRef}
+                                                onChange={handleFileChange}
+                                                style={{ display: "none" }}
+                                                accept=".jpg, .jpeg, .png, .pdf, .doc, .svg, .docx, .zip, .rar"
+                                            />
+                                            <div>
+                                                {fileName ? (
+                                                    <span className="text-base font-normal text-black">
+                                                        {fileName}
+                                                    </span>
+                                                ) : (
+                                                    <span className="text-base font-normal text-black">
+                                                        No file chosen
+                                                    </span>
+                                                )
+                                                }
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <ReCAPTCHA
+                                                sitekey="6LfWPG8qAAAAAFBRLkUr505LpNEDOL_6p5dd8SLF"
+                                                onChange={onRecaptchaChange}
+                                                ref={recaptchaRef}
+                                            />
+                                            {showVerification && (
+                                                <div className='mt-2 text-[#7811A5]'>
+                                                    Please verify yourself first!
+                                                </div>
+                                            )}
+                                        </div>
+                                        <button form="userDetailsForm" type="submit" className='border w-fit rounded-full py-4 px-28 text-white submit-btn'>
+                                            Submit
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        )}
 
                     </div>
                 </section>
