@@ -1,9 +1,89 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 import { Helmet } from 'react-helmet';
+import axios from "axios";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const QuickLinks = () => {
+
+  const [email, setEmail] = useState("");
+  const [firstname, setFirstName] = useState("");
+  const [lastname, setLastName] = useState("");
+  const [company, setCompany] = useState("");
+  const [jobtitle, setJobTitle] = useState("");
+  const [country, setCountry] = useState("");
+  const [subscribe, setSubscribe] = useState("not subscribed");
+  const [showConfirmation, setShowConfirmation] = useState(false);
+  const [showVerification, setShowVerification] = useState(false);
+  const recaptchaRef = useRef(null);
+  const [recaptchaToken, setRecaptchaToken] = useState(null);
+
+  const toggleConfirmation = () => {
+    setShowConfirmation(!showConfirmation);
+  };
+
+  const handleSubmitForm = async () => {
+
+    if (!recaptchaToken) {
+      setShowVerification(true);
+      return;
+    }
+
+    const ReachUs = {
+      email,
+      firstname,
+      lastname,
+      jobtitle,
+      company,
+      country,
+      subscribe,
+      recaptchaToken,
+    };
+
+    setShowVerification(false);
+    toggleConfirmation();
+    setTimeout(() => {
+      const element = document.querySelector('.thank-you');
+      const elementRect = element.getBoundingClientRect();
+      const elementTop = elementRect.top + window.scrollY;
+      const centerPosition = elementTop - (window.innerHeight / 2) + (elementRect.height / 2);
+
+      window.scrollTo({
+        top: centerPosition,
+        behavior: 'smooth'
+      });
+    }, 0);
+
+    setFirstName("");
+    setLastName("");
+    setEmail("");
+    setJobTitle("");
+    setCompany("");
+    setCountry("");
+    setSubscribe("");
+    setRecaptchaToken(null);
+
+    try {
+      const response = await axios.post(
+        "https://hudbil-server.onrender.com/reach-us",
+        JSON.stringify(ReachUs),
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      console.log("Server response:", response.data);
+
+    } catch (error) {
+      console.error("Error sending data to server:", error);
+    }
+  };
+
+  const onRecaptchaChange = (token) => {
+    setRecaptchaToken(token);
+  };
 
   const countries = [
     { name: 'Afghanistan', code: 'AF' },
@@ -290,81 +370,122 @@ const QuickLinks = () => {
               <div className='text-4xl md:text-[3rem] leading-tight'>UI/UX Designing & Development Company In India.</div>
               <div className='mt-10 leading-7'>We are a creative UI/UX Designing, and Website Development company based in Bangalore, Karnataka, India. Call us at +91 88844-09-369.</div>
             </div>
-            <div className='w-full lg:w-1/2 h-full bg-white pt-20 pb-20 lg:border-b border-white lg:pt-48 lg:pb-40 flex flex-col items-center justify-center px-6 lg:px-16'>
-              <div className='w-full'>
-                <div className='w-full'>
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Email*"
-                    className="outline-none text-black placeholder:text-[#7D7D7D] w-full pb-4"
-                    required
-                  />
-                  <div className="bg-[#D8D8D8] h-[1px] w-full "></div>
-                  <input
-                    type="text"
-                    name="firstName"
-                    placeholder="First name*"
-                    className="outline-none text-black placeholder:text-[#7D7D7D] w-full py-4"
-                    required
-                  />
-                  <div className="bg-[#D8D8D8] h-[1px] w-full "></div>
-                  <input
-                    type="text"
-                    name="lastName"
-                    placeholder="Last name*"
-                    className="outline-none text-black placeholder:text-[#7D7D7D] w-full py-4"
-                    required
-                  />
-                  <div className="bg-[#D8D8D8] h-[1px] w-full "></div>
-                  <input
-                    type="text"
-                    name="companyName"
-                    placeholder="Company name*"
-                    className="outline-none text-black placeholder:text-[#7D7D7D] w-full py-4"
-                    required
-                  />
-                  <div className="bg-[#D8D8D8] h-[1px] w-full "></div>
-                  <input
-                    type="text"
-                    name="jobTitle"
-                    placeholder="Job title*"
-                    className="outline-none text-black placeholder:text-[#7D7D7D] w-full py-4"
-                    required
-                  />
-                  <div className="bg-[#D8D8D8] h-[1px] w-full "></div>
+            <div className='w-full lg:w-1/2 h-full bg-white pt-20 pb-20 lg:border-b border-white lg:pt-56 lg:pb-48 flex flex-col items-center justify-center px-6 lg:px-16'>
+              {showConfirmation ? (
+                <div className='w-full h-full flex flex-col items-start justify-center gap-12 thank-you'>
+                  <div className='text-3xl md:text-[2.5rem] leading-tight w-full 2xl:w-4/5'>Thank You…!! </div>
+                  <div className='text-3xl md:text-[2.5rem] leading-tight w-full 2xl:w-4/5'>Our team has received your information, will get in touch with you within the next 24 hours to discuss how we can help bring your vision to life.
+                  </div>
                 </div>
-                <div className=' flex flex-col gap-2'>
-                  <select
-                    id="country"
-                    name="country"
-                    className="py-5 border-b border-[#D8D8D8] focus:outline-none text-[#7D7D7D]"
-                    required
-                  >
-                    <option value="" className="text-[#7D7D7D]">Select Country*</option>
-                    {countries.map((country) => (
-                      <option key={country.code} value={country.code} className="text-black">
-                        {country.name.split(',')[0]}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-                <div className="flex gap-5 items-center self-start mt-10 leading-none text-white">
-                  <input
-                    type="radio"
-                    id="subscribe"
-                    className="shrink-0 self-stretch  my-auto w-4 h-4 bg-white border border-white border-solid"
-                  />
-                  <label htmlFor="subscribe" className="text-[#7D7D7D] leading-6">
-                    Subscribe to Hud to receive our latest thinking every month.
-                  </label>
-                </div>
-                <div className='mt-12'>
-                  <button className='border rounded-full py-4 px-16 sm:px-28 text-white submit-btn mt-4'>
-                    Send to reach us
-                  </button>
-                </div>
-              </div>
+              ) : (
+                <form id="userDetailsForm"
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                    handleSubmitForm();
+                  }} className='w-full'>
+                  <div className='w-full'>
+                    <input
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      type="email"
+                      name="email"
+                      placeholder="Email*"
+                      className="outline-none text-black placeholder:text-[#7D7D7D] w-full py-4"
+                      required
+                    />
+                    <div className="bg-[#D8D8D8] h-[1px] w-full "></div>
+                    <input
+                      value={firstname}
+                      onChange={(e) => setFirstName(e.target.value)}
+                      type="text"
+                      name="firstName"
+                      placeholder="First name*"
+                      className="outline-none text-black placeholder:text-[#7D7D7D] w-full py-4"
+                      required
+                    />
+                    <div className="bg-[#D8D8D8] h-[1px] w-full "></div>
+                    <input
+                      value={lastname}
+                      onChange={(e) => setLastName(e.target.value)}
+                      type="text"
+                      name="lastName"
+                      placeholder="Last name*"
+                      className="outline-none text-black placeholder:text-[#7D7D7D] w-full py-4"
+                      required
+                    />
+                    <div className="bg-[#D8D8D8] h-[1px] w-full "></div>
+                    <input
+                      value={company}
+                      onChange={(e) => setCompany(e.target.value)}
+                      type="text"
+                      name="companyName"
+                      placeholder="Company name*"
+                      className="outline-none text-black placeholder:text-[#7D7D7D] w-full py-4"
+                      required
+                    />
+                    <div className="bg-[#D8D8D8] h-[1px] w-full "></div>
+                    <input
+                      value={jobtitle}
+                      onChange={(e) => setJobTitle(e.target.value)}
+                      type="text"
+                      name="jobTitle"
+                      placeholder="Job title*"
+                      className="outline-none text-black placeholder:text-[#7D7D7D] w-full py-4"
+                      required
+                    />
+                    <div className="bg-[#D8D8D8] h-[1px] w-full "></div>
+                  </div>
+                  <div className=' flex flex-col gap-2'>
+                    <select
+                      value={country}
+                      onChange={(e) => setCountry(e.target.value)}
+                      id="country"
+                      name="country"
+                      className="py-5 border-b border-[#D8D8D8] focus:outline-none text-[#7D7D7D]"
+                      required
+                    >
+                      <option value="" className="text-[#7D7D7D]">Select Country*</option>
+                      {countries.map((country) => (
+                        <option key={country.code} value={country.name} className="text-black">
+                          {country.name.split(',')[0]}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                  <div className="flex gap-5 items-center self-start mt-10 leading-none text-white">
+                    <input
+                      checked={subscribe === "subscribed"}
+                      onChange={(e) => setSubscribe(e.target.checked ? "subscribed" : "not subscribed")}
+                      onBlur={() => {
+                        if (!subscribe) setSubscribe("not subscribed");
+                      }}
+                      type="radio"
+                      id="subscribe"
+                      className="shrink-0 self-stretch  my-auto w-4 h-4 bg-white border border-white border-solid"
+                    />
+                    <label htmlFor="subscribe" className="text-[#7D7D7D] leading-6">
+                      Subscribe to Hud to receive our latest thinking every month.
+                    </label>
+                  </div>
+                  <div className='mt-16 w-fit'>
+                    <ReCAPTCHA
+                      sitekey="6LfWPG8qAAAAAFBRLkUr505LpNEDOL_6p5dd8SLF"
+                      onChange={onRecaptchaChange}
+                      ref={recaptchaRef}
+                    />
+                    {showVerification && (
+                      <div className='mt-2 text-[#7811A5]'>
+                        Please verify yourself first!
+                      </div>
+                    )}
+                  </div>
+                  <div className='mt-12'>
+                    <button form="userDetailsForm" type="submit" className='border rounded-full py-4 px-16 sm:px-28 text-white submit-btn mt-4'>
+                      Send to reach us
+                    </button>
+                  </div>
+                </form>
+              )}
             </div>
           </div>
         </section>

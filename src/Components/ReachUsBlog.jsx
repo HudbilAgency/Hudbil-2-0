@@ -1,5 +1,4 @@
 import React, { useState, useRef } from 'react';
-import { FaCheckCircle } from "react-icons/fa";
 import axios from "axios";
 import ReCAPTCHA from "react-google-recaptcha";
 
