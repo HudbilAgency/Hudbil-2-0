@@ -127,3 +127,7 @@ body {
     opacity: 1;
   }
 }
+
+.toggle-point{
+  opacity: 0;
+}

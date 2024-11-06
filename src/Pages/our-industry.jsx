@@ -128,7 +128,7 @@ const DropdownComponent = () => {
                                 {dropdownContent[index % dropdownContent.length]
                                     .split('|')
                                     .map((line, i) => (
-                                        <p key={i} className="whitespace-pre-line">{line}</p>
+                                        <p key={i} className="whitespace-pre-line pt-8">{line}</p>
                                     ))
                                 }
                             </div>

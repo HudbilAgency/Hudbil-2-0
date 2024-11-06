@@ -7,6 +7,8 @@ import ReachUs from '../Components/ReachUs';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import Loader from '../Components/Loader';
 import CarousalImgBlogs from '../Components/CarousalImgBlogs'
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useMediaQuery } from 'react-responsive';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
@@ -124,29 +126,43 @@ const Home = () => {
   const birdRef = useRef(null)
   const carouselItem1 = useRef(null);
   const carouselItem2 = useRef(null);
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+  const carouselItem3 = useRef(null);
 
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: animationRef.current,
-        start: "bottom bottom",
-        toggleActions: "play none none reverse",
+  const isSmallScreen = useMediaQuery({ minWidth: 320, maxWidth: 620 });
 
-      },
-    });
+  const { scrollYProgress } = useScroll({
+    target: animationRef,
+    offset: isSmallScreen ? ["start start", "end center"] : ["start start", "end end"]
+  });
 
-    tl.to(
-      carouselItem2.current,
-      { x: "-100%", ease: "linear" }, "slide"
-    );
+  const xTransform = useTransform(
+    scrollYProgress,
+    [0, 1], ["0%","-66.5%"]
+  );
 
-    tl.to(
-      carouselItem1.current,
-      { x: "-100%", ease: "linear" }, "slide"
-    );
+  // useEffect(() => {
+  //   gsap.registerPlugin(ScrollTrigger);
 
-  }, []);
+  //   const tl = gsap.timeline({
+  //     scrollTrigger: {
+  //       trigger: animationRef.current,
+  //       start: "bottom bottom",
+  //       toggleActions: "play none none reverse",
+
+  //     },
+  //   });
+
+  //   tl.to(
+  //     carouselItem2.current,
+  //     { x: "-100%", ease: "linear" }, "slide"
+  //   );
+
+  //   tl.to(
+  //     carouselItem1.current,
+  //     { x: "-100%", ease: "linear" }, "slide"
+  //   );
+
+  // }, []);
   useEffect(() => {
     gsap.fromTo(
       stickRef.current,
@@ -585,12 +601,17 @@ const Home = () => {
               </div>
 
 
-              <div className="flex justify-between items-center w-[200vw] lg:w-[100vw] py-12 bg-black" ref={animationRef} >
+              <motion.div
+                style={{ x: xTransform }}
+                transition={{
+                  duration: 2,
+                  ease: [0.42, 0, 0.58, 1],
+                }} className="flex justify-between items-center w-[300vw] lg:w-[150vw] py-12 bg-black" ref={animationRef} >
 
-                <div className="flex flex-col items-center w-1/2" ref={carouselItem1}>
+                <div className="flex flex-col items-center w-1/3" ref={carouselItem1}>
                   <h2 className="text-6xl  leading-none text-center text-purple-700 max-md:text-4xl">Our Brands</h2>
                   <div className="flex overflow-hidden relative flex-col mt-14 max-w-full text-xs font-extralight tracking-wider text-center aspect-[0.866] text-teal-950 w-[304px] max-md:mt-10">
-                    <div className="flex overflow-hidden relative flex-col group px-11 py-40 bg-white max-md:px-5 max-md:py-24 ">
+                    <div className="flex overflow-hidden relative items-center justify-center flex-col group px-11 py-40 bg-white max-md:px-5 max-md:py-24 ">
                       <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/7281482c86da59f833039df7a3ec6c277db84f6759a3e18d14449941f4081705?placeholderIfAbsent=true&apiKey=7904fd7afaaf4ee2b0837ab86d91b244" alt="Brand logo" className="filter grayscale group-hover:grayscale-0 transition-all duration-300 object-contain lg:-mt-12 aspect-[2.87] w-[284px]" />
                       <h1 className='self-center mt-5 mb-0  max-md:mb-2.5 text-black font-semibold'>Impression At Your Fingertips</h1>
                     </div>
@@ -608,13 +629,12 @@ const Home = () => {
                       <img ref={buttonImgRef} src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                     </button>
                   </Link>
-
                 </div>
 
-                <div className="flex flex-col items-center w-1/2" ref={carouselItem2}>
+                <div className="flex flex-col items-center w-1/3" ref={carouselItem2}>
                   <h2 className="text-6xl  leading-none text-center text-purple-700 max-md:text-4xl">Our Brands</h2>
                   <div className="flex overflow-hidden relative flex-col mt-14 max-w-full text-xs font-extralight tracking-wider text-center aspect-[0.866] text-teal-950 w-[304px] max-md:mt-10">
-                    <div className="flex group overflow-hidden relative flex-col px-11 py-40 bg-white max-md:px-5 max-md:py-24 ">
+                    <div className="flex group overflow-hidden relative items-center justify-center flex-col px-11 py-40 bg-white max-md:px-5 max-md:py-24 ">
                       <img loading="lazy" src="./OurBrandsImg/KalacodeBrandLogoImg.png" alt="Brand logo" className="filter grayscale group-hover:grayscale-0 transition-all duration-300 object-contain lg:-mt-12 aspect-[2.87] w-[284px]" />
                       <h1 className='self-center mt-5 font-xl mb-0  max-md:mb-2.5 text-black font-semibold'>Power At Your Fingertips</h1>
                     </div>
@@ -631,7 +651,29 @@ const Home = () => {
                     </button>
                   </Link>
                 </div>
-              </div>
+
+                <div className="flex flex-col items-center w-1/3" ref={carouselItem3}>
+                  <h2 className="text-6xl  leading-none text-center text-[#FCAB63] max-md:text-4xl">Our Brands</h2>
+                  <div className="flex overflow-hidden relative flex-col mt-14 max-w-full text-xs font-extralight tracking-wider text-center aspect-[0.866] text-teal-950 w-[304px] max-md:mt-10">
+                    <div className="flex group overflow-hidden relative items-center justify-center flex-col px-11 py-40 bg-white max-md:px-5 max-md:py-24 ">
+                      <img loading="lazy" src="./OurBrandsImg/InfotekBrandLogoImg.png" alt="Brand logo" className="filter grayscale group-hover:grayscale-0 transition-all duration-300 object-contain lg:-mt-12 aspect-[2.87] w-[284px]" />
+                      <h1 className='self-center mt-5 font-xl mb-0  max-md:mb-2.5 text-black font-semibold'>Information At Your Fingertips</h1>
+                    </div>
+                  </div>
+                  <h3
+                    className="self-center mt-20 px-6 w-full md:w-[70%] text-[25px] tracking-normal text-center text-white leading-[50px] max-md:mt-10 max-md:max-w-full max-md:text-3xl max-md:leading-snug"
+                  >
+                    At InfoTik we are committed to helps users learn and grown meaningful ways.
+                  </h3>
+                  <Link to="https://info-tik-redirect.vercel.app/" target='blank'>
+                    <button className="button flex flex-row justify-between px-16 py-4 mt-24 mx-auto  leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#FCAB63] transition-all duration-300">
+                      <h1 className='text-xl mt-1 '>Download app</h1>
+                      <img ref={buttonImgRef} src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                    </button>
+                  </Link>
+                </div>
+
+              </motion.div>
 
 
 
