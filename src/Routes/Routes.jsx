@@ -1,7 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom';
 import Home from '../Pages/Home';
-import Animation from '../Animation/Animation'
 import Accessibilities from '../Pages/Accessibilities';
 import PrivacyPolicy from '../Pages/PrivacyPolicy';
 import TalkToElla from '../Pages/TalkToElla';
@@ -38,6 +37,7 @@ import Careersculture from '../Pages/careers&culture';
 import CookiePolicy from '../Pages/cookie-policy';
 import QuickLinks from '../Pages/quick-links';
 import Faq from '../Pages/FAQ';
+import Locations from '../Pages/location-page';
 
 const Routers = () => {
   return (
@@ -75,12 +75,12 @@ const Routers = () => {
         <Route path='/services/development-agency' element={<Services2 />} />
         <Route path='/our-industry' element={<Our_industry />} />
         <Route path='/our-products' element={<Our_products />} />
-        <Route path="/Animation" element={<Animation />} />
         <Route path="/ai-ella" element={<TalkToElla />} />
         <Route path="/contact-us" element={<ContactForm />} />
         <Route path="/coming-soon" element={<ComingSoon />} />
         <Route path="/client-support" element={<ClientSupport />} />
         <Route path="/quick-links" element={<QuickLinks />} />
+        <Route path="/lo" element={<Locations />} />
       </Routes>
     </>
   )

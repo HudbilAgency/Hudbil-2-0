@@ -663,7 +663,7 @@ const Home = () => {
                   <h3
                     className="self-center mt-20 px-6 w-full md:w-[70%] text-[25px] tracking-normal text-center text-white leading-[50px] max-md:mt-10 max-md:max-w-full max-md:text-3xl max-md:leading-snug"
                   >
-                    At InfoTik we are committed to helps users learn and grown meaningful ways.
+                    At InfoTik we are committed to helps users learn and grow in meaningful ways.
                   </h3>
                   <Link to="https://info-tik-redirect.vercel.app/" target='blank'>
                     <button className="button flex flex-row justify-between px-16 py-4 mt-24 mx-auto  leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5 hover:bg-[#7811A5] transition-all duration-300">
