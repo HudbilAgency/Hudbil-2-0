@@ -317,23 +317,23 @@ const Services1 = () => {
                                         <div><img src="/point16.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Digital Illustrations</div>
                                     </div>
-                                    <div onClick={() => toggleDropdown(0)} className="cursor-pointer">
+                                    <div onClick={() => toggleDropdown(5)} className="cursor-pointer">
                                         <svg
                                             width="24"
                                             height="24"
                                             viewBox="0 0 24 24"
                                             fill="none"
                                             xmlns="http://www.w3.org/2000/svg"
-                                            className={`transition-transform duration-300 ${dropdownStates[0] ? 'rotate-[-180deg]' : 'rotate-[0deg]'
+                                            className={`transition-transform duration-300 ${dropdownStates[5] ? 'rotate-[-180deg]' : 'rotate-[0deg]'
                                                 }`}
                                         >
                                             <rect width="24" height="24" rx="12" fill="#7811A5" />
                                             <rect x="7" y="11" width="10" height="2" fill="white" />
-                                            {!dropdownStates[0] && <rect x="11" y="7" width="2" height="10" fill="white" />}
+                                            {!dropdownStates[5] && <rect x="11" y="7" width="2" height="10" fill="white" />}
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[0] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[5] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="text-xl pt-10">Solid brand face</div>
                                     <div>Crafting stunning, visually consistent sets of icon styles and illustrations, in line with all relevant brand guidelines. This comprehensive guide will help you fully master the art of digital illustration.</div>
                                     <div>

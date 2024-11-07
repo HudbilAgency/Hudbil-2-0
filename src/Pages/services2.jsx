@@ -315,23 +315,23 @@ const Services2 = () => {
                                         <div><img src="/point36.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">CMS Integration</div>
                                     </div>
-                                    <div onClick={() => toggleDropdown(0)} className="cursor-pointer">
+                                    <div onClick={() => toggleDropdown(5)} className="cursor-pointer">
                                         <svg
                                             width="24"
                                             height="24"
                                             viewBox="0 0 24 24"
                                             fill="none"
                                             xmlns="http://www.w3.org/2000/svg"
-                                            className={`transition-transform duration-300 ${dropdownStates[0] ? 'rotate-[-180deg]' : 'rotate-[0deg]'
+                                            className={`transition-transform duration-300 ${dropdownStates[5] ? 'rotate-[-180deg]' : 'rotate-[0deg]'
                                                 }`}
                                         >
                                             <rect width="24" height="24" rx="12" fill="#7811A5" />
                                             <rect x="7" y="11" width="10" height="2" fill="white" />
-                                            {!dropdownStates[0] && <rect x="11" y="7" width="2" height="10" fill="white" />}
+                                            {!dropdownStates[5] && <rect x="11" y="7" width="2" height="10" fill="white" />}
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[0] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[5] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="text-xl pt-10">Build and utilize integration apps</div>
                                     <div>CMS integration is simply taking your existing website/web app and integrating a Content Management System. Building a platform that is accessible and can be managed by the customers in order to create, manage and modify digital content on their website easily.</div>
                                     <div>

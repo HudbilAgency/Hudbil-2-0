@@ -666,7 +666,7 @@ const Home = () => {
                     At InfoTik we are committed to helps users learn and grown meaningful ways.
                   </h3>
                   <Link to="https://info-tik-redirect.vercel.app/" target='blank'>
-                    <button className="button flex flex-row justify-between px-16 py-4 mt-24 mx-auto  leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#FCAB63] transition-all duration-300">
+                    <button className="button flex flex-row justify-between px-16 py-4 mt-24 mx-auto  leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5 hover:bg-[#7811A5] transition-all duration-300">
                       <h1 className='text-xl mt-1 '>Download app</h1>
                       <img ref={buttonImgRef} src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                     </button>
