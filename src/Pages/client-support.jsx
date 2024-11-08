@@ -99,7 +99,7 @@ const ClientSupport = () => {
 
     try {
       const response = await axios.post(
-        "https://hudbil-server.onrender.com/client-support",
+        "https://hudbil-server.onrender.com/client-support-hudbil",
         JSON.stringify(clientsupportData),
         {
           headers: {

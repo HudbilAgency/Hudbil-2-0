@@ -99,7 +99,7 @@ const ContactForm = () => {
 
     try {
       const response = await axios.post(
-        "https://hudbil-server.onrender.com/contact-form",
+        "https://hudbil-server.onrender.com/contact-form-hudbil",
         JSON.stringify(contactformData),
         {
           headers: {
