@@ -120,6 +120,7 @@ const TalkToElla = () => {
                 muted
                 playsInline
                 className="object-cover w-[50vw] h-[100vh]"
+                onContextMenu={(e) => e.preventDefault()}
               >
                 <source src="./ella-video.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
@@ -136,6 +137,7 @@ const TalkToElla = () => {
                 muted
                 playsInline
                 className="object-cover w-full h-[100vh]"
+                onContextMenu={(e) => e.preventDefault()}
               >
                 <source src="./ella-video.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
@@ -234,7 +236,7 @@ const TalkToElla = () => {
                   <div onClick={() => {
                     handleButtonClickPreBuilt("Inspire me");
                     respondToUserInput("Inspire me with one best quote");
-                  }} className='border border-white cursor-pointer rounded-full px-8 py-3 flex flex-col items-start gap-2'>
+                  }} className='border border-white cursor-pointer hover:bg-[#7811A5] transition-all duration-300 rounded-full px-8 py-3 flex flex-col items-start gap-2'>
                     <div>Inspire me</div>
                     <div className='text-sm'>Tell me about an exciting design trend 2030</div>
                   </div>
@@ -243,7 +245,7 @@ const TalkToElla = () => {
                     respondToUserInput(
                       "I have a Project. How do you ensure a high quality outcome?"
                     );
-                  }} className='border border-white cursor-pointer rounded-full px-8 py-3 flex flex-col items-start gap-2'>
+                  }} className='border border-white hover:bg-[#7811A5] transition-all duration-300 cursor-pointer rounded-full px-8 py-3 flex flex-col items-start gap-2'>
                     <div>I have a Project</div>
                     <div className='text-sm'>How do you ensure a high quality outcome?</div>
                   </div>

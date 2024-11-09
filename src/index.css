@@ -4,11 +4,19 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 body {
   font-family: "Arial Th", Arial, sans-serif;
   overflow: hidden;
   width: 100%;
   height: 100%;
+  -webkit-touch-callout: none;
 }
 
 @media (max-width: 1023px) {
@@ -87,7 +95,6 @@ body {
   opacity: 0;
 }
 
-
 /* Path Animation for AI Chat */
 .path1 {
   opacity: 0;
@@ -128,6 +135,6 @@ body {
   }
 }
 
-.toggle-point{
+.toggle-point {
   opacity: 0;
 }

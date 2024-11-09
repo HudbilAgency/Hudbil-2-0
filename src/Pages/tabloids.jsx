@@ -62,6 +62,7 @@ const Tabloids = () => {
                             muted
                             playsInline
                             className="object-cover w-full"
+                            onContextMenu={(e) => e.preventDefault()}
                         >
                             <source src="/tabloids-video.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
@@ -75,6 +76,7 @@ const Tabloids = () => {
                             muted
                             playsInline
                             className="object-cover w-full h-screen"
+                            onContextMenu={(e) => e.preventDefault()}
                         >
                             <source src="/tabloids-video.mp4" type="video/mp4" />
                             Your browser does not support the video tag.

@@ -79,8 +79,8 @@ const Careersculture = () => {
         <section>
           <div className="relative my-24 ">
             <div className="relative">
-              <img className='mx-auto' src="/candc1.png" alt="career & culture" />
-              <div className="absolute w-full inset-0 flex justify-center items-center overflow-hidden">
+              <img className='mx-auto transition duration-500 grayscale hover:grayscale-0' src="/candc1.png" alt="career & culture" />
+              <div className="absolute w-full inset-0 pointer-events-none flex justify-center items-center overflow-hidden">
                 <div className="marquee-text-container font-normal text-[1.7rem] uppercase text-black">
                   <div className="marquee-text">We’re a tribe of ARCHITECTS</div>
                   <div className="marquee-text">We’re a tribe of WRITERS</div>

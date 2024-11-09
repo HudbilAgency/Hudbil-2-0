@@ -35,6 +35,7 @@ const Locations = () => {
                             muted
                             playsInline
                             className="object-cover w-full h-[70vh] lg:h-[100vh] fixed lg:static z-0"
+                            onContextMenu={(e) => e.preventDefault()}
                         >
                             <source src="/locations-video.mp4" type="video/mp4" />
                             Your browser does not support the video tag.

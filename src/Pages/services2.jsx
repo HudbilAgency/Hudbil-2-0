@@ -87,6 +87,7 @@ const Services2 = () => {
                     muted
                     playsInline
                     className="object-cover h-[70vh] lg:h-[80vh] w-full fixed z-0"
+                    onContextMenu={(e) => e.preventDefault()}
                 >
                     <source src="/LandingVideos/video5.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
@@ -104,7 +105,7 @@ const Services2 = () => {
                             <div>We develop adaptive and versatile apps that solve your hardest challenges, scale with your business, and maximise your ROI. Using a unique Continuous Discovery / Continuous Delivery approach coupled with cutting-edge technologies, we develop and deliver end to end to ensure you’re consistently meeting user needs and driving business value.</div>
                             <div>
                                 <a href="/faq">
-                                    <button className="button self-end flex flex-row justify-between px-12 py-3 mx-auto leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-all duration-300">
+                                    <button className="button self-end hover:text-white flex flex-row justify-between px-12 py-3 mx-auto leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-all duration-300">
                                         <h1 className='text-lg mt-[2px]'>Faqs</h1>
                                         <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                                     </button>
@@ -390,21 +391,18 @@ const Services2 = () => {
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Conversation</div>
                                     </div>
                                     <div onClick={() => toggleDropdown2(0)} className="cursor-pointer">
-                                        <svg className={`transition-transform duration-300 ${dropdownStates2[0] ? 'rotate-[-180deg]' : 'rotate-[0deg]'
-                                            }`} width="46" height="25" viewBox="0 0 46 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip0_7690_1453)">
-                                                <g clip-path="url(#clip1_7690_1453)">
-                                                    <path d="M45.2769 1.46875L22.9998 23.7459L0.722656 1.46875" stroke="#C0C2C4" stroke-width="0.657143" />
-                                                </g>
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_7690_1453">
-                                                    <rect width="46" height="23.66" fill="white" transform="translate(0 0.8125)" />
-                                                </clipPath>
-                                                <clipPath id="clip1_7690_1453">
-                                                    <rect width="46" height="23.6571" fill="white" transform="translate(0 0.8125)" />
-                                                </clipPath>
-                                            </defs>
+                                        <svg
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className={`transition-transform duration-300 ${dropdownStates2[0] ? 'rotate-[-180deg]' : 'rotate-[0deg]'
+                                                }`}
+                                        >
+                                            <rect width="24" height="24" rx="12" fill="#7811A5" />
+                                            <rect x="7" y="11" width="10" height="2" fill="white" />
+                                            {!dropdownStates2[0] && <rect x="11" y="7" width="2" height="10" fill="white" />}
                                         </svg>
                                     </div>
                                 </div>
@@ -420,21 +418,18 @@ const Services2 = () => {
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Discovery & Research</div>
                                     </div>
                                     <div onClick={() => toggleDropdown2(1)} className="cursor-pointer">
-                                        <svg className={`transition-transform duration-300 ${dropdownStates2[1] ? 'rotate-[-180deg]' : 'rotate-[0deg]'
-                                            }`} width="46" height="25" viewBox="0 0 46 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip0_7690_1453)">
-                                                <g clip-path="url(#clip1_7690_1453)">
-                                                    <path d="M45.2769 1.46875L22.9998 23.7459L0.722656 1.46875" stroke="#C0C2C4" stroke-width="0.657143" />
-                                                </g>
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_7690_1453">
-                                                    <rect width="46" height="23.66" fill="white" transform="translate(0 0.8125)" />
-                                                </clipPath>
-                                                <clipPath id="clip1_7690_1453">
-                                                    <rect width="46" height="23.6571" fill="white" transform="translate(0 0.8125)" />
-                                                </clipPath>
-                                            </defs>
+                                        <svg
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className={`transition-transform duration-300 ${dropdownStates2[1] ? 'rotate-[-180deg]' : 'rotate-[0deg]'
+                                                }`}
+                                        >
+                                            <rect width="24" height="24" rx="12" fill="#7811A5" />
+                                            <rect x="7" y="11" width="10" height="2" fill="white" />
+                                            {!dropdownStates2[1] && <rect x="11" y="7" width="2" height="10" fill="white" />}
                                         </svg>
                                     </div>
                                 </div>
@@ -450,21 +445,18 @@ const Services2 = () => {
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Collaboration</div>
                                     </div>
                                     <div onClick={() => toggleDropdown2(2)} className="cursor-pointer">
-                                        <svg className={`transition-transform duration-300 ${dropdownStates2[2] ? 'rotate-[-180deg]' : 'rotate-[0deg]'
-                                            }`} width="46" height="25" viewBox="0 0 46 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip0_7690_1453)">
-                                                <g clip-path="url(#clip1_7690_1453)">
-                                                    <path d="M45.2769 1.46875L22.9998 23.7459L0.722656 1.46875" stroke="#C0C2C4" stroke-width="0.657143" />
-                                                </g>
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_7690_1453">
-                                                    <rect width="46" height="23.66" fill="white" transform="translate(0 0.8125)" />
-                                                </clipPath>
-                                                <clipPath id="clip1_7690_1453">
-                                                    <rect width="46" height="23.6571" fill="white" transform="translate(0 0.8125)" />
-                                                </clipPath>
-                                            </defs>
+                                        <svg
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className={`transition-transform duration-300 ${dropdownStates2[2] ? 'rotate-[-180deg]' : 'rotate-[0deg]'
+                                                }`}
+                                        >
+                                            <rect width="24" height="24" rx="12" fill="#7811A5" />
+                                            <rect x="7" y="11" width="10" height="2" fill="white" />
+                                            {!dropdownStates2[2] && <rect x="11" y="7" width="2" height="10" fill="white" />}
                                         </svg>
                                     </div>
                                 </div>
@@ -480,21 +472,18 @@ const Services2 = () => {
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Craft</div>
                                     </div>
                                     <div onClick={() => toggleDropdown2(3)} className="cursor-pointer">
-                                        <svg className={`transition-transform duration-300 ${dropdownStates2[3] ? 'rotate-[-180deg]' : 'rotate-[0deg]'
-                                            }`} width="46" height="25" viewBox="0 0 46 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip0_7690_1453)">
-                                                <g clip-path="url(#clip1_7690_1453)">
-                                                    <path d="M45.2769 1.46875L22.9998 23.7459L0.722656 1.46875" stroke="#C0C2C4" stroke-width="0.657143" />
-                                                </g>
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_7690_1453">
-                                                    <rect width="46" height="23.66" fill="white" transform="translate(0 0.8125)" />
-                                                </clipPath>
-                                                <clipPath id="clip1_7690_1453">
-                                                    <rect width="46" height="23.6571" fill="white" transform="translate(0 0.8125)" />
-                                                </clipPath>
-                                            </defs>
+                                        <svg
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className={`transition-transform duration-300 ${dropdownStates2[3] ? 'rotate-[-180deg]' : 'rotate-[0deg]'
+                                                }`}
+                                        >
+                                            <rect width="24" height="24" rx="12" fill="#7811A5" />
+                                            <rect x="7" y="11" width="10" height="2" fill="white" />
+                                            {!dropdownStates2[3] && <rect x="11" y="7" width="2" height="10" fill="white" />}
                                         </svg>
                                     </div>
                                 </div>
@@ -510,21 +499,18 @@ const Services2 = () => {
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Design & Refinement</div>
                                     </div>
                                     <div onClick={() => toggleDropdown2(4)} className="cursor-pointer">
-                                        <svg className={`transition-transform duration-300 ${dropdownStates2[4] ? 'rotate-[-180deg]' : 'rotate-[0deg]'
-                                            }`} width="46" height="25" viewBox="0 0 46 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip0_7690_1453)">
-                                                <g clip-path="url(#clip1_7690_1453)">
-                                                    <path d="M45.2769 1.46875L22.9998 23.7459L0.722656 1.46875" stroke="#C0C2C4" stroke-width="0.657143" />
-                                                </g>
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_7690_1453">
-                                                    <rect width="46" height="23.66" fill="white" transform="translate(0 0.8125)" />
-                                                </clipPath>
-                                                <clipPath id="clip1_7690_1453">
-                                                    <rect width="46" height="23.6571" fill="white" transform="translate(0 0.8125)" />
-                                                </clipPath>
-                                            </defs>
+                                        <svg
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className={`transition-transform duration-300 ${dropdownStates2[4] ? 'rotate-[-180deg]' : 'rotate-[0deg]'
+                                                }`}
+                                        >
+                                            <rect width="24" height="24" rx="12" fill="#7811A5" />
+                                            <rect x="7" y="11" width="10" height="2" fill="white" />
+                                            {!dropdownStates2[4] && <rect x="11" y="7" width="2" height="10" fill="white" />}
                                         </svg>
                                     </div>
                                 </div>
@@ -540,21 +526,18 @@ const Services2 = () => {
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Launch & Support</div>
                                     </div>
                                     <div onClick={() => toggleDropdown2(5)} className="cursor-pointer">
-                                        <svg className={`transition-transform duration-300 ${dropdownStates2[5] ? 'rotate-[-180deg]' : 'rotate-[0deg]'
-                                            }`} width="46" height="25" viewBox="0 0 46 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip0_7690_1453)">
-                                                <g clip-path="url(#clip1_7690_1453)">
-                                                    <path d="M45.2769 1.46875L22.9998 23.7459L0.722656 1.46875" stroke="#C0C2C4" stroke-width="0.657143" />
-                                                </g>
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_7690_1453">
-                                                    <rect width="46" height="23.66" fill="white" transform="translate(0 0.8125)" />
-                                                </clipPath>
-                                                <clipPath id="clip1_7690_1453">
-                                                    <rect width="46" height="23.6571" fill="white" transform="translate(0 0.8125)" />
-                                                </clipPath>
-                                            </defs>
+                                        <svg
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className={`transition-transform duration-300 ${dropdownStates2[5] ? 'rotate-[-180deg]' : 'rotate-[0deg]'
+                                                }`}
+                                        >
+                                            <rect width="24" height="24" rx="12" fill="#7811A5" />
+                                            <rect x="7" y="11" width="10" height="2" fill="white" />
+                                            {!dropdownStates2[5] && <rect x="11" y="7" width="2" height="10" fill="white" />}
                                         </svg>
                                     </div>
                                 </div>
@@ -570,7 +553,7 @@ const Services2 = () => {
                         <div className='md:w-1/2 flex flex-col gap-12 xl:text-[20px] md:gap-8 text-white'>
                             <div>Make your website work your way. We are a Indian web development agency with the technical skill and industry insight to take your website to the next level online. Our passion? Building and developing high-functioning websites which perform perfectly for our clients, their visitors and the search engines too.Speed, usability, behind-the-scenes functionality; better online performance means better business all round. So is your site giving the performance of a lifetime? If it isn’t, it’s time to get serious about intelligent web development. </div>
 
-                            <button className="button self-end flex flex-row justify-between px-12 py-3 mt-6 mb-4 ml-auto leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-all duration-300">
+                            <button className="button self-end hover:text-white flex flex-row justify-between px-12 py-3 mt-6 mb-4 ml-auto leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-all duration-300">
                                 <h1 className='text-base mt-1 '>Work With hudbil</h1>
                                 <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                             </button>

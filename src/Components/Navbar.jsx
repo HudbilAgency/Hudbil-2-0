@@ -438,7 +438,7 @@ const Navbar = () => {
                 <div
                   className="p-1 md:p-2 rounded-full flex justify-center items-center cursor-pointer"
                   style={{
-                    background: 'linear-gradient(135deg, #7811A5, #2E16BB)',
+                    background: 'linear-gradient(180deg, #7811A5, #2E16BB)',
                   }}
                 >
                   <svg width="18" height="18" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -469,7 +469,7 @@ const Navbar = () => {
                 <div
                   className="p-1 md:p-2 rounded-full flex justify-center items-center cursor-pointer"
                   style={{
-                    background: 'linear-gradient(135deg, #7811A5, #2E16BB)',
+                    background: 'linear-gradient(180deg, #7811A5, #2E16BB)',
                   }}
                 >
                   <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -22,20 +22,14 @@ const Home = () => {
     "/LandingVideos/video6.mp4",
   ];
 
-  const initialIndex = parseInt(localStorage.getItem("currentVideoIndex"), 10) || 0;
+  const initialIndex = parseInt(localStorage.getItem("currentVideoIndexHudbil"), 10) || 0;
 
-  const [currentIndex, setCurrentIndex] = useState(initialIndex);
   const [currentVideo, setCurrentVideo] = useState(randomVideos[initialIndex]);
 
-  const playNextVideo = () => {
-    const nextIndex = (currentIndex + 1) % randomVideos.length;
-    setCurrentVideo(randomVideos[nextIndex]);
-    setCurrentIndex(nextIndex);
-    localStorage.setItem("currentVideoIndex", nextIndex);
-  };
-
   useEffect(() => {
-    playNextVideo();
+    const nextIndex = (initialIndex + 1) % randomVideos.length;
+    setCurrentVideo(randomVideos[initialIndex]);
+    localStorage.setItem("currentVideoIndexHudbil", nextIndex);
   }, []);
 
   const [loading, setLoading] = useState(true);
@@ -450,6 +444,7 @@ const Home = () => {
               muted
               playsInline
               className="object-cover w-[50vw] h-[100vh]"
+              onContextMenu={(e) => e.preventDefault()}
             >
               <source src={currentVideo} type="video/mp4" />
               Your browser does not support the video tag.
@@ -466,6 +461,7 @@ const Home = () => {
               muted
               playsInline
               className="object-cover w-full h-[100vh]"
+              onContextMenu={(e) => e.preventDefault()}
             >
               <source src={currentVideo} type="video/mp4" />
               Your browser does not support the video tag.
@@ -486,6 +482,7 @@ const Home = () => {
                       muted
                       playsInline
                       className="w-full"
+                      onContextMenu={(e) => e.preventDefault()}
                     >
                       <source src="./hudbil-mainlogo.mp4" type="video/mp4" />
                       Your browser does not support the video tag.
@@ -624,7 +621,7 @@ const Home = () => {
                   </h3>
 
                   <Link to="https://coltfox.com/" target='blank'>
-                    <button className="button self-end flex flex-row justify-between px-16 py-4 mt-24 mx-auto leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-all duration-300">
+                    <button className="button self-end flex flex-row justify-between hover:text-white px-16 py-4 mt-24 mx-auto leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-all duration-300">
                       <h1 className='text-xl mt-1 '>Visit Coltfox</h1>
                       <img ref={buttonImgRef} src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                     </button>
@@ -645,7 +642,7 @@ const Home = () => {
                     We drive your product success in the future with our AI, AR & VR development solutions.
                   </h3>
                   <Link to="https://kalacode.com/" target='blank'>
-                    <button className="button flex flex-row justify-between px-16 py-4 mt-24 mx-auto  leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-all duration-300">
+                    <button className="button flex flex-row justify-between hover:text-white px-16 py-4 mt-24 mx-auto  leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-all duration-300">
                       <h1 className='text-xl mt-1 '>Visit Kalacode</h1>
                       <img ref={buttonImgRef} src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                     </button>
@@ -666,7 +663,7 @@ const Home = () => {
                     At InfoTik we are committed to helps users learn and grow in meaningful ways.
                   </h3>
                   <Link to="https://info-tik-redirect.vercel.app/" target='blank'>
-                    <button className="button flex flex-row justify-between px-16 py-4 mt-24 mx-auto  leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5 hover:bg-[#7811A5] transition-all duration-300">
+                    <button className="button flex flex-row justify-between hover:text-white px-16 py-4 mt-24 mx-auto  leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5 hover:bg-[#7811A5] transition-all duration-300">
                       <h1 className='text-xl mt-1 '>Download app</h1>
                       <img ref={buttonImgRef} src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                     </button>
@@ -736,7 +733,7 @@ const Home = () => {
                     Big idea, Kalacode is <br /> beating heart of <br /> Hudbil's, a new venture <br /> agency like no other in India.
                   </h3>
                   <Link to={'/tabloids'}>
-                    <button className="button flex flex-row justify-between px-20 py-4 mt-20  mr-6 md:mr-8 leading-none bg-white text-black self-center items-center gap-8 rounded-[1000px] max-md:px-5   hover:bg-[#7811A5] transition-colors duration-300">
+                    <button className="button flex flex-row hover:text-white justify-between px-20 py-4 mt-20  mr-6 md:mr-8 leading-none bg-white text-black self-center items-center gap-8 rounded-[1000px] max-md:px-5   hover:bg-[#7811A5] transition-colors duration-300">
                       <h1 className='text-base mt-1 '>Learn more</h1>
                       <img ref={buttonImgRef} src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                     </button>

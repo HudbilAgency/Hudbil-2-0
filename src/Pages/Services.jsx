@@ -84,6 +84,7 @@ const Services = () => {
                                 muted
                                 playsInline
                                 className="object-cover w-full"
+                                onContextMenu={(e) => e.preventDefault()}
                             >
                                 <source src="/services-video.mp4" type="video/mp4" />
                                 Your browser does not support the video tag.
@@ -97,6 +98,7 @@ const Services = () => {
                                 muted
                                 playsInline
                                 className="object-cover w-full h-screen"
+                                onContextMenu={(e) => e.preventDefault()}
                             >
                                 <source src="/services-video.mp4" type="video/mp4" />
                                 Your browser does not support the video tag.
