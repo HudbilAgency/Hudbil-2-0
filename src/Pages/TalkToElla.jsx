@@ -184,8 +184,8 @@ const TalkToElla = () => {
                       y2="325"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop offset="0.0495707" stop-color="#F94343" />
-                      <stop offset="0.830267" stop-color="#FF7373" />
+                      <stop offset="0.0495707" stop-color="#7811A5" />
+                      <stop offset="0.830267" stop-color="#2E16BB" />
                     </linearGradient>
                     <linearGradient
                       id="paint1_linear_4613_436"
@@ -195,8 +195,8 @@ const TalkToElla = () => {
                       y2="333"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop offset="0.0495707" stop-color="#F94343" />
-                      <stop offset="0.830267" stop-color="#FF7373" />
+                      <stop offset="0.0495707" stop-color="#7811A5" />
+                      <stop offset="0.830267" stop-color="#2E16BB" />
                     </linearGradient>
                     <linearGradient
                       id="paint2_linear_4613_436"
@@ -206,8 +206,8 @@ const TalkToElla = () => {
                       y2="273"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop offset="0.0495707" stop-color="#F94343" />
-                      <stop offset="0.830267" stop-color="#FF7373" />
+                      <stop offset="0.0495707" stop-color="#7811A5" />
+                      <stop offset="0.830267" stop-color="#2E16BB" />
                     </linearGradient>
                     <linearGradient
                       id="paint3_linear_4613_436"
@@ -217,8 +217,8 @@ const TalkToElla = () => {
                       y2="325"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop offset="0.0495707" stop-color="#F94343" />
-                      <stop offset="0.830267" stop-color="#FF7373" />
+                      <stop offset="0.0495707" stop-color="#7811A5" />
+                      <stop offset="0.830267" stop-color="#2E16BB" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -257,7 +257,10 @@ const TalkToElla = () => {
                   onChange={handleInputChange}
                   onKeyPress={handleKeyPress}
                   placeholder="Ask Anything...."
-                  className="w-full p-6 border border-[#AFAFAF] bg-[#7811A5] mb-10 rounded-full text-white placeholder-white focus:outline-none focus:ring-none"
+                  className="w-full p-6 border border-[#AFAFAF] mb-10 rounded-full text-white placeholder-white focus:outline-none focus:ring-none"
+                  style={{
+                    background: 'linear-gradient(180deg, #7811A5, #2E16BB)',
+                  }}
                 />
 
                 <div className='flex lg:flex-col md:flex-row flex-col xl:flex-row items-center gap-4 md:gap-16 lg:gap-4 xl:gap-16 mb-6 text-[#838383] font-normal'>
@@ -319,8 +322,8 @@ const TalkToElla = () => {
                                         y2="325"
                                         gradientUnits="userSpaceOnUse"
                                       >
-                                        <stop offset="0.0495707" stop-color="#6B21A8" />
-                                        <stop offset="0.830267" stop-color="#9D4EDD" />
+                                        <stop offset="0.0495707" stop-color="#7811A5" />
+                                        <stop offset="0.830267" stop-color="#2E16BB" />
                                       </linearGradient>
                                       <linearGradient
                                         id="paint1_linear_4613_435"
@@ -330,8 +333,8 @@ const TalkToElla = () => {
                                         y2="333"
                                         gradientUnits="userSpaceOnUse"
                                       >
-                                        <stop offset="0.0495707" stop-color="#6B21A8" />
-                                        <stop offset="0.830267" stop-color="#9D4EDD" />
+                                        <stop offset="0.0495707" stop-color="#7811A5" />
+                                        <stop offset="0.830267" stop-color="#2E16BB" />
                                       </linearGradient>
                                       <linearGradient
                                         id="paint2_linear_4613_435"
@@ -341,8 +344,8 @@ const TalkToElla = () => {
                                         y2="273"
                                         gradientUnits="userSpaceOnUse"
                                       >
-                                        <stop offset="0.0495707" stop-color="#6B21A8" />
-                                        <stop offset="0.830267" stop-color="#9D4EDD" />
+                                        <stop offset="0.0495707" stop-color="#7811A5" />
+                                        <stop offset="0.830267" stop-color="#2E16BB" />
                                       </linearGradient>
                                       <linearGradient
                                         id="paint3_linear_4613_435"
@@ -352,8 +355,8 @@ const TalkToElla = () => {
                                         y2="325"
                                         gradientUnits="userSpaceOnUse"
                                       >
-                                        <stop offset="0.0495707" stop-color="#6B21A8" />
-                                        <stop offset="0.830267" stop-color="#9D4EDD" />
+                                        <stop offset="0.0495707" stop-color="#7811A5" />
+                                        <stop offset="0.830267" stop-color="#2E16BB" />
                                       </linearGradient>
                                     </defs>
                                   </svg>
@@ -377,7 +380,10 @@ const TalkToElla = () => {
                     onChange={handleInputChange}
                     onKeyPress={handleKeyPress}
                     placeholder="Ask Anything...."
-                    className=" p-6 border my-12 w-full border-[#AFAFAF] bg-[#7811A5] rounded-full text-white placeholder-white focus:outline-none focus:ring-none"
+                    className=" p-6 border my-12 w-full border-[#AFAFAF] rounded-full text-white placeholder-white focus:outline-none focus:ring-none"
+                    style={{
+                    background: 'linear-gradient(180deg, #7811A5, #2E16BB)',
+                  }}
                   />
                 </div>
 
