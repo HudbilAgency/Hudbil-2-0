@@ -241,7 +241,7 @@ const ContactForm = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/contact-form-hudbil",
+        "https://hudbil-server.onrender.com/contact-form-hudbil",
         JSON.stringify(contactformData),
         {
           headers: {
