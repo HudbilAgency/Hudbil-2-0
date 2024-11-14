@@ -193,7 +193,7 @@ const ClientSupport = () => {
                           placeholder="Select Your on-going project with us*"
                           required
                         >
-                          <option disabled selected className='text-[#7D7D7D]'>Select Your on-going project with us*</option>
+                          <option value="" disabled selected className='text-[#7D7D7D]'>Select Your on-going project with us*</option>
                           <option>UI/UX design</option>
                           <option>Website development</option>
                           <option>Application development</option>
@@ -264,7 +264,7 @@ const ClientSupport = () => {
                           className="overflow-hidde grow h-fit pt-8 pb-4 bg-transparent placeholder:text-[#7D7D7D] border-b outline-none"
                           placeholder="What’s the good time to connect with you ?*"
                         >
-                          <option disabled selected className='text-[#7D7D7D]'>What’s the good time to connect with you ?*</option>
+                          <option value="" disabled selected className='text-[#7D7D7D]'>What’s the good time to connect with you ?*</option>
                           <option>3:00 PM - IST</option>
                           <option>3:30 PM - IST </option>
                           <option>4:00 PM - IST</option>
