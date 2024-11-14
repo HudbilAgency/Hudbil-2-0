@@ -210,10 +210,9 @@ const Footer = () => {
           ))}
         </div>
       </nav>
-      <div className="flex flex-col md:flex-row gap-12 md:gap-0 items-start justify-between mt-12 sm:mt-20 xl:mt-40 text-sm tracking-wider leading-5 text-zinc-500 w-full">
-        <div className='w-full md:w-1/3 flex flex-col items-center md:items-start'>
-          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/f4951f80ca1e5237f96f1e87cfd278a72a3d04d15a73cc33588885369364b3ee?placeholderIfAbsent=true&apiKey=7904fd7afaaf4ee2b0837ab86d91b244" className="flex object-contain shrink-0 max-w-full aspect-[1.21] w-[250px] xl:w-[262px]" alt="Hudbil logo" />
-          <h1 className='tracking-tighter text-center w-full lg:text-start self-start text-white mx-auto text-lg md:text-2xl'>Innovation at your fingertips</h1>
+      <div className="flex flex-col md:flex-row gap-12 md:gap-0 items-stretch h-full justify-between mt-12 sm:mt-20 xl:mt-40 text-sm tracking-wider leading-5 text-zinc-500 w-full">
+        <div className='w-full md:w-1/3 flex flex-col items-center md:items-start justify-center xl:justify-end min-h-full'>
+          <img loading="lazy" src="/hudbil-logo-footer.png" className="flex object-contain shrink-0 max-w-full w-[250px] xl:w-[262px]" alt="Hudbil-logo" />
         </div>
         <div className="flex flex-col w-full md:w-1/2">
           <p className="max-md:max-w-full text-base text-gray-300 ">

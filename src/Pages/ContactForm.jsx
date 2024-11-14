@@ -12,6 +12,9 @@ const ContactForm = () => {
   const [email, setEmail] = useState("");
   const [jobtitle, setJobTitle] = useState("");
   const [company, setCompany] = useState("");
+  const [services, setServices] = useState("");
+  const [budget, setBudget] = useState("");
+  const [duration, setDuration] = useState("");
   const [country, setCountry] = useState("");
   const [message, setMessage] = useState("");
   const fileInputRef = useRef(null);
@@ -21,6 +24,26 @@ const ContactForm = () => {
   const [showVerification, setShowVerification] = useState(false);
   const recaptchaRef = useRef(null);
   const [recaptchaToken, setRecaptchaToken] = useState(null);
+
+  const Services = [
+    { name: 'Research' },
+    { name: 'Strategy' },
+    { name: 'Design' },
+    { name: 'Development' }
+  ];
+
+  const Budget = [
+    { name: '4 Lakh to 5 Lakh' },
+    { name: '6 Lakh to 10 Lakh' },
+    { name: '15 Lakh to 20 Lakh' }
+  ];
+
+  const Duration = [
+    { name: '15 days to 20 days' },
+    { name: '1 month to 2 month' },
+    { name: '3 month to 6 months' },
+    { name: '6 month to 1 year' }
+  ];
 
   const toggleConfirmation = () => {
     setShowConfirmation(!showConfirmation);
@@ -60,6 +83,9 @@ const ContactForm = () => {
       email,
       jobtitle,
       company,
+      services,
+      budget,
+      duration,
       country,
       message,
       fileName,
@@ -87,6 +113,9 @@ const ContactForm = () => {
     setEmail("");
     setJobTitle("");
     setCompany("");
+    setServices("");
+    setBudget("");
+    setDuration("");
     setCountry("");
     setMessage("");
     setFileName("");
@@ -536,6 +565,57 @@ const ContactForm = () => {
                       required
                     />
                     <div className="bg-[#D8D8D8] h-[1px] w-full "></div>
+                  </div>
+                  <div className='mt-10 flex flex-col gap-2'>
+                    <label htmlFor="services">Select the services you are looking for</label>
+                    <select
+                      value={services}
+                      onChange={(e) => setServices(e.target.value)}
+                      id="services"
+                      name="services"
+                      className="py-5 border-b border-[#D8D8D8] focus:outline-none"
+                    >
+                      <option value="" className="text-[#C4C4C4]">Please Select</option>
+                      {Services.map((Services) => (
+                        <option key={Services.name} value={Services.name} className="">
+                          {Services.name.split(',')[0]}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                  <div className='mt-10 flex flex-col gap-2'>
+                    <label htmlFor="budget">Select the services budget for</label>
+                    <select
+                      value={budget}
+                      onChange={(e) => setBudget(e.target.value)}
+                      id="budget"
+                      name="budget"
+                      className="py-5 border-b border-[#D8D8D8] focus:outline-none"
+                    >
+                      <option value="" className="text-[#C4C4C4]">Please Select</option>
+                      {Budget.map((Budget) => (
+                        <option key={Budget.name} value={Budget.name} className="">
+                          {Budget.name.split(',')[0]}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                  <div className='mt-10 flex flex-col gap-2'>
+                    <label htmlFor="duration">Select how soon you want to start the project</label>
+                    <select
+                      value={duration}
+                      onChange={(e) => setDuration(e.target.value)}
+                      id="duration"
+                      name="duration"
+                      className="py-5 border-b border-[#D8D8D8] focus:outline-none"
+                    >
+                      <option value="" className="text-[#C4C4C4]">Please Select</option>
+                      {Duration.map((Duration) => (
+                        <option key={Duration.name} value={Duration.name} className="">
+                          {Duration.name.split(',')[0]}
+                        </option>
+                      ))}
+                    </select>
                   </div>
                   <div className='mt-10 flex flex-col gap-2'>
                     <label htmlFor="country">Country*</label>
