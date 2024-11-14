@@ -7,6 +7,55 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 const ContactForm = () => {
 
+  const [dropdown, setDropdown] = useState(false);
+
+  const handleSelectChange = (e) => {
+
+    const selectedValue = e.target.value;
+    setLooking(selectedValue);
+
+    if (selectedValue === "Services") {
+      setDropdown(true);
+    } else {
+      setDropdown(false);
+    }
+  };
+
+  const [dropdown2, setDropdown2] = useState(false);
+  const [dropdown3, setDropdown3] = useState(false);
+  const [dropdown4, setDropdown4] = useState(false);
+  const [dropdown5, setDropdown5] = useState(false);
+
+  const handleSelectChange2 = (e) => {
+
+    const selectedValue2 = e.target.value;
+    setServices(selectedValue2);
+
+    if (selectedValue2 === "Research") {
+      setDropdown2(true);
+    } else {
+      setDropdown2(false);
+    }
+
+    if (selectedValue2 === "Strategy") {
+      setDropdown3(true);
+    } else {
+      setDropdown3(false);
+    }
+
+    if (selectedValue2 === "Design") {
+      setDropdown4(true);
+    } else {
+      setDropdown4(false);
+    }
+
+    if (selectedValue2 === "Development") {
+      setDropdown5(true);
+    } else {
+      setDropdown5(false);
+    }
+  };
+
   const [firstname, setFirstName] = useState("");
   const [lastname, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -634,7 +683,7 @@ const ContactForm = () => {
                     <label htmlFor="looking">Select what you are looking for*</label>
                     <select
                       value={looking}
-                      onChange={(e) => setLooking(e.target.value)}
+                      onChange={handleSelectChange}
                       id="looking"
                       name="looking"
                       className="py-5 border-b border-[#D8D8D8] focus:outline-none"
@@ -648,144 +697,142 @@ const ContactForm = () => {
                       ))}
                     </select>
                   </div>
-                  {looking === "Services" && (
-                    <>
+                  <div className={`flex flex-col overflow-hidden transition-all duration-700 ease-in-out ${dropdown ? 'max-h-[2000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                    <div className='mt-10 flex flex-col gap-2'>
+                      <label htmlFor="services">Select a service you are looking for*</label>
+                      <select
+                        value={services}
+                        onChange={handleSelectChange2}
+                        id="services"
+                        name="services"
+                        className="py-5 decorated border-b border-[#D8D8D8] focus:outline-none"
+                        required
+                      >
+                        <option value="" disabled selected className="text-[#595959]">Select your service</option>
+                        {Services.map((Services) => (
+                          <option key={Services.name} value={Services.name} className="text-[#595959]">
+                            {Services.name.split(',')[0]}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+                    <div className={`flex flex-col overflow-hidden transition-all duration-700 ease-in-out ${dropdown2 ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
                       <div className='mt-10 flex flex-col gap-2'>
-                        <label htmlFor="services">Select a service you are looking for*</label>
+                        <label htmlFor="research">Research*</label>
                         <select
-                          value={services}
-                          onChange={(e) => setServices(e.target.value)}
-                          id="services"
-                          name="services"
-                          className="py-5 decorated border-b border-[#D8D8D8] focus:outline-none"
-                          required
-                        >
-                          <option value="" disabled selected className="text-[#595959]">Please Select</option>
-                          {Services.map((Services) => (
-                            <option key={Services.name} value={Services.name} className="text-[#595959]">
-                              {Services.name.split(',')[0]}
-                            </option>
-                          ))}
-                        </select>
-                      </div>
-                      {services === "Research" && (
-                        <div className='mt-10 flex flex-col gap-2'>
-                          <label htmlFor="research">Research*</label>
-                          <select
-                            value={research}
-                            onChange={(e) => setResearch(e.target.value)}
-                            id="research"
-                            name="research"
-                            className="py-5 border-b border-[#D8D8D8] focus:outline-none"
-                            required
-                          >
-                            <option value="" disabled selected className="text-[#595959]">Please Select</option>
-                            {Research.map((Research) => (
-                              <option key={Research.name} value={Research.name} className="text-[#595959]">
-                                {Research.name.split(',')[0]}
-                              </option>
-                            ))}
-                          </select>
-                        </div>
-                      )}
-                      {services === "Strategy" && (
-                        <div className='mt-10 flex flex-col gap-2'>
-                          <label htmlFor="strategy">Strategy*</label>
-                          <select
-                            value={strategy}
-                            onChange={(e) => setStrategy(e.target.value)}
-                            id="strategy"
-                            name="strategy"
-                            className="py-5 border-b border-[#D8D8D8] focus:outline-none"
-                            required
-                          >
-                            <option value="" disabled selected className="text-[#595959]">Please Select</option>
-                            {Strategy.map((Strategy) => (
-                              <option key={Strategy.name} value={Strategy.name} className="text-[#595959]">
-                                {Strategy.name.split(',')[0]}
-                              </option>
-                            ))}
-                          </select>
-                        </div>
-                      )}
-                      {services === "Design" && (
-                        <div className='mt-10 flex flex-col gap-2'>
-                          <label htmlFor="design">Design*</label>
-                          <select
-                            value={design}
-                            onChange={(e) => setDesign(e.target.value)}
-                            id="design"
-                            name="design"
-                            className="py-5 border-b border-[#D8D8D8] focus:outline-none"
-                            required
-                          >
-                            <option value="" disabled selected className="text-[#595959]">Please Select</option>
-                            {Design.map((Design) => (
-                              <option key={Design.name} value={Design.name} className="text-[#595959]">
-                                {Design.name.split(',')[0]}
-                              </option>
-                            ))}
-                          </select>
-                        </div>
-                      )}
-                      {services === "Development" && (
-                        <div className='mt-10 flex flex-col gap-2'>
-                          <label htmlFor="development">Development*</label>
-                          <select
-                            value={development}
-                            onChange={(e) => setDevelopment(e.target.value)}
-                            id="development"
-                            name="development"
-                            className="py-5 border-b border-[#D8D8D8] focus:outline-none"
-                            required
-                          >
-                            <option value="" disabled selected className="text-[#595959]">Please Select</option>
-                            {Development.map((Development) => (
-                              <option key={Development.name} value={Development.name} className="text-[#595959]">
-                                {Development.name.split(',')[0]}
-                              </option>
-                            ))}
-                          </select>
-                        </div>
-                      )}
-                      <div className='mt-10 flex flex-col gap-2'>
-                        <label htmlFor="budget">Select a service budget for*</label>
-                        <select
-                          value={budget}
-                          onChange={(e) => setBudget(e.target.value)}
-                          id="budget"
-                          name="budget"
+                          value={research}
+                          onChange={(e) => setResearch(e.target.value)}
+                          id="research"
+                          name="research"
                           className="py-5 border-b border-[#D8D8D8] focus:outline-none"
                           required
                         >
                           <option value="" disabled selected className="text-[#595959]">Please Select</option>
-                          {Budget.map((Budget) => (
-                            <option key={Budget.name} value={Budget.name} className="text-[#595959]">
-                              {Budget.name.split(',')[0]}
+                          {Research.map((Research) => (
+                            <option key={Research.name} value={Research.name} className="text-[#595959]">
+                              {Research.name.split(',')[0]}
                             </option>
                           ))}
                         </select>
                       </div>
+                    </div>
+                    <div className={`flex flex-col overflow-hidden transition-all duration-700 ease-in-out ${dropdown3 ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
                       <div className='mt-10 flex flex-col gap-2'>
-                        <label htmlFor="duration">Select how soon you want to start the project*</label>
+                        <label htmlFor="strategy">Strategy*</label>
                         <select
-                          value={duration}
-                          onChange={(e) => setDuration(e.target.value)}
-                          id="duration"
-                          name="duration"
+                          value={strategy}
+                          onChange={(e) => setStrategy(e.target.value)}
+                          id="strategy"
+                          name="strategy"
                           className="py-5 border-b border-[#D8D8D8] focus:outline-none"
                           required
                         >
                           <option value="" disabled selected className="text-[#595959]">Please Select</option>
-                          {Duration.map((Duration) => (
-                            <option key={Duration.name} value={Duration.name} className="text-[#595959]">
-                              {Duration.name.split(',')[0]}
+                          {Strategy.map((Strategy) => (
+                            <option key={Strategy.name} value={Strategy.name} className="text-[#595959]">
+                              {Strategy.name.split(',')[0]}
                             </option>
                           ))}
                         </select>
                       </div>
-                    </>
-                  )}
+                    </div>
+                    <div className={`flex flex-col overflow-hidden transition-all duration-700 ease-in-out ${dropdown4 ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                      <div className='mt-10 flex flex-col gap-2'>
+                        <label htmlFor="design">Design*</label>
+                        <select
+                          value={design}
+                          onChange={(e) => setDesign(e.target.value)}
+                          id="design"
+                          name="design"
+                          className="py-5 border-b border-[#D8D8D8] focus:outline-none"
+                          required
+                        >
+                          <option value="" disabled selected className="text-[#595959]">Please Select</option>
+                          {Design.map((Design) => (
+                            <option key={Design.name} value={Design.name} className="text-[#595959]">
+                              {Design.name.split(',')[0]}
+                            </option>
+                          ))}
+                        </select>
+                      </div>
+                    </div>
+                    <div className={`flex flex-col overflow-hidden transition-all duration-700 ease-in-out ${dropdown5 ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                      <div className='mt-10 flex flex-col gap-2'>
+                        <label htmlFor="development">Development*</label>
+                        <select
+                          value={development}
+                          onChange={(e) => setDevelopment(e.target.value)}
+                          id="development"
+                          name="development"
+                          className="py-5 border-b border-[#D8D8D8] focus:outline-none"
+                          required
+                        >
+                          <option value="" disabled selected className="text-[#595959]">Please Select</option>
+                          {Development.map((Development) => (
+                            <option key={Development.name} value={Development.name} className="text-[#595959]">
+                              {Development.name.split(',')[0]}
+                            </option>
+                          ))}
+                        </select>
+                      </div>
+                    </div>
+                    <div className='mt-10 flex flex-col gap-2'>
+                      <label htmlFor="budget">Select a service budget for*</label>
+                      <select
+                        value={budget}
+                        onChange={(e) => setBudget(e.target.value)}
+                        id="budget"
+                        name="budget"
+                        className="py-5 border-b border-[#D8D8D8] focus:outline-none"
+                        required
+                      >
+                        <option value="" disabled selected className="text-[#595959]">Please Select</option>
+                        {Budget.map((Budget) => (
+                          <option key={Budget.name} value={Budget.name} className="text-[#595959]">
+                            {Budget.name.split(',')[0]}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+                    <div className='mt-10 flex flex-col gap-2'>
+                      <label htmlFor="duration">Select how soon you want to start the project*</label>
+                      <select
+                        value={duration}
+                        onChange={(e) => setDuration(e.target.value)}
+                        id="duration"
+                        name="duration"
+                        className="py-5 border-b border-[#D8D8D8] focus:outline-none"
+                        required
+                      >
+                        <option value="" disabled selected className="text-[#595959]">Please Select</option>
+                        {Duration.map((Duration) => (
+                          <option key={Duration.name} value={Duration.name} className="text-[#595959]">
+                            {Duration.name.split(',')[0]}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+                  </div>
                   <div className='mt-10 flex flex-col gap-2'>
                     <label htmlFor="country">Country*</label>
                     <select
@@ -815,29 +862,31 @@ const ContactForm = () => {
                     />
                   </div>
                   <div className='mt-12 flex flex-col gap-12'>
-                    <div>Please attach your project brief</div>
-                    <div className="flex flex-col sm:flex-row gap-5 items-center">
-                      <div onClick={handleFileInputClick} className="px-12 cursor-pointer py-3 my-auto text-center border border-solid border-[#D8D8D8] rounded-full ">
-                        Choose File
-                      </div>
-                      <input
-                        type="file"
-                        ref={fileInputRef}
-                        onChange={handleFileChange}
-                        style={{ display: "none" }}
-                        accept=".jpg, .jpeg, .png, .pdf, .doc, .svg, .docx, .zip, .rar"
-                      />
-                      <div>
-                        {fileName ? (
-                          <span className="text-base font-normal text-black">
-                            {fileName}
-                          </span>
-                        ) : (
-                          <span className="text-base font-normal text-black">
-                            No file chosen
-                          </span>
-                        )
-                        }
+                    <div className='flex flex-col gap-8'>
+                      <div>Please attach your project brief</div>
+                      <div className="flex flex-col sm:flex-row gap-5 items-center">
+                        <div onClick={handleFileInputClick} className="px-12 hover:bg-[#7811A5] transition-all duration-300 hover:text-white cursor-pointer py-3 my-auto text-center border border-solid border-[#D8D8D8] rounded-full ">
+                          Choose File
+                        </div>
+                        <input
+                          type="file"
+                          ref={fileInputRef}
+                          onChange={handleFileChange}
+                          style={{ display: "none" }}
+                          accept=".jpg, .jpeg, .png, .pdf, .doc, .svg, .docx, .zip, .rar"
+                        />
+                        <div>
+                          {fileName ? (
+                            <span className="text-base font-normal text-black">
+                              {fileName}
+                            </span>
+                          ) : (
+                            <span className="text-base font-normal text-black">
+                              No file chosen
+                            </span>
+                          )
+                          }
+                        </div>
                       </div>
                     </div>
                     <div>

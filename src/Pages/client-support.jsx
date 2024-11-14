@@ -278,7 +278,7 @@ const ClientSupport = () => {
                       <div className='mt-12 flex flex-col gap-12'>
                         <div>Please attach your project brief</div>
                         <div className="flex flex-col sm:flex-row gap-5 items-center">
-                          <div onClick={handleFileInputClick} className="px-12 cursor-pointer py-3 my-auto text-center border border-solid border-[#D8D8D8] rounded-full text-black ">
+                          <div onClick={handleFileInputClick} className="px-12 hover:bg-[#7811A5] transition-all duration-300 hover:text-white cursor-pointer py-3 my-auto text-center border border-solid border-[#D8D8D8] rounded-full text-black ">
                             Choose File
                           </div>
                           <input
