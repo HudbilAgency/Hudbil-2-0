@@ -444,7 +444,7 @@ const QuickLinks = () => {
                       className="py-5 border-b border-[#D8D8D8] focus:outline-none text-[#7D7D7D]"
                       required
                     >
-                      <option value="" className="text-[#7D7D7D]">Select Country*</option>
+                      <option value="" disabled selected className="text-[#7D7D7D]">Select Country*</option>
                       {countries.map((country) => (
                         <option key={country.code} value={country.name} className="text-black">
                           {country.name.split(',')[0]}

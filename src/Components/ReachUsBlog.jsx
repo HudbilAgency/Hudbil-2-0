@@ -425,7 +425,7 @@ const ReachUsBlog = () => {
                     className="py-5 mt-2 focus:outline-none text-base justify-center tracking-wider leading-loose border-b border-zinc-300 max-md:pr-5 max-md:max-w-full bg-transparent text-white"
                     required
                   >
-                    <option value="" className="text-black">Please Select</option>
+                    <option value="" disabled selected className="text-black">Please Select</option>
                     {countries.map((country) => (
                       <option key={country.code} value={country.name} className="text-black">
                         {country.name.split(',')[0]}

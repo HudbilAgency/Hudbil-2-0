@@ -12,7 +12,12 @@ const ContactForm = () => {
   const [email, setEmail] = useState("");
   const [jobtitle, setJobTitle] = useState("");
   const [company, setCompany] = useState("");
+  const [looking, setLooking] = useState("");
   const [services, setServices] = useState("");
+  const [research, setResearch] = useState("");
+  const [strategy, setStrategy] = useState("");
+  const [design, setDesign] = useState("");
+  const [development, setDevelopment] = useState("");
   const [budget, setBudget] = useState("");
   const [duration, setDuration] = useState("");
   const [country, setCountry] = useState("");
@@ -25,11 +30,60 @@ const ContactForm = () => {
   const recaptchaRef = useRef(null);
   const [recaptchaToken, setRecaptchaToken] = useState(null);
 
+  const Lookingfor = [
+    { name: 'Services' },
+    { name: 'Products' }
+  ];
+
   const Services = [
     { name: 'Research' },
     { name: 'Strategy' },
     { name: 'Design' },
     { name: 'Development' }
+  ];
+
+  const Research = [
+    { name: 'UX Research' },
+    { name: 'Ethnographic Research ' },
+    { name: 'Design Audit' },
+    { name: 'Matunity Audit' },
+    { name: 'Competitor Analysis' },
+    { name: 'Emerging Trends' }
+  ];
+
+  const Strategy = [
+    { name: 'Brand Strategy' },
+    { name: 'Product Strategy ' },
+    { name: 'UX Strategy' },
+    { name: 'Scale - up Strategy' },
+    { name: 'Digital transformation' },
+    { name: 'User Acquisition startegy' }
+  ];
+
+  const Design = [
+    { name: 'UI Design' },
+    { name: 'UI Development ' },
+    { name: 'UI Guidelines' },
+    { name: 'Design system' },
+    { name: 'UX Design' },
+    { name: 'User Research' },
+    { name: 'UX Consultancy' },
+    { name: 'UX writing' },
+    { name: 'Animations' },
+    { name: 'Iconography' },
+    { name: 'Illustrations' }
+  ];
+
+  const Development = [
+    { name: 'Web design ' },
+    { name: 'Software Development' },
+    { name: 'Front - end' },
+    { name: 'Backend' },
+    { name: 'E - Commerce' },
+    { name: 'Mobile App Development' },
+    { name: 'Native' },
+    { name: 'Hybrid' },
+    { name: 'Android' }
   ];
 
   const Budget = [
@@ -83,7 +137,12 @@ const ContactForm = () => {
       email,
       jobtitle,
       company,
+      looking,
       services,
+      research,
+      strategy,
+      design,
+      development,
       budget,
       duration,
       country,
@@ -113,7 +172,12 @@ const ContactForm = () => {
     setEmail("");
     setJobTitle("");
     setCompany("");
+    setLooking("");
     setServices("");
+    setResearch("");
+    setStrategy("");
+    setDesign("");
+    setDevelopment("");
     setBudget("");
     setDuration("");
     setCountry("");
@@ -128,7 +192,7 @@ const ContactForm = () => {
 
     try {
       const response = await axios.post(
-        "https://hudbil-server.onrender.com/contact-form-hudbil",
+        "http://localhost:3000/contact-form-hudbil",
         JSON.stringify(contactformData),
         {
           headers: {
@@ -567,56 +631,161 @@ const ContactForm = () => {
                     <div className="bg-[#D8D8D8] h-[1px] w-full "></div>
                   </div>
                   <div className='mt-10 flex flex-col gap-2'>
-                    <label htmlFor="services">Select the services you are looking for</label>
+                    <label htmlFor="looking">Select what you are looking for*</label>
                     <select
-                      value={services}
-                      onChange={(e) => setServices(e.target.value)}
-                      id="services"
-                      name="services"
+                      value={looking}
+                      onChange={(e) => setLooking(e.target.value)}
+                      id="looking"
+                      name="looking"
                       className="py-5 border-b border-[#D8D8D8] focus:outline-none"
+                      required
                     >
-                      <option value="" className="text-[#C4C4C4]">Please Select</option>
-                      {Services.map((Services) => (
-                        <option key={Services.name} value={Services.name} className="">
-                          {Services.name.split(',')[0]}
+                      <option value="" disabled selected className="text-[#595959]">You are looking for</option>
+                      {Lookingfor.map((Lookingfor) => (
+                        <option key={Lookingfor.name} value={Lookingfor.name} className="text-[#595959]">
+                          {Lookingfor.name.split(',')[0]}
                         </option>
                       ))}
                     </select>
                   </div>
-                  <div className='mt-10 flex flex-col gap-2'>
-                    <label htmlFor="budget">Select the services budget for</label>
-                    <select
-                      value={budget}
-                      onChange={(e) => setBudget(e.target.value)}
-                      id="budget"
-                      name="budget"
-                      className="py-5 border-b border-[#D8D8D8] focus:outline-none"
-                    >
-                      <option value="" className="text-[#C4C4C4]">Please Select</option>
-                      {Budget.map((Budget) => (
-                        <option key={Budget.name} value={Budget.name} className="">
-                          {Budget.name.split(',')[0]}
-                        </option>
-                      ))}
-                    </select>
-                  </div>
-                  <div className='mt-10 flex flex-col gap-2'>
-                    <label htmlFor="duration">Select how soon you want to start the project</label>
-                    <select
-                      value={duration}
-                      onChange={(e) => setDuration(e.target.value)}
-                      id="duration"
-                      name="duration"
-                      className="py-5 border-b border-[#D8D8D8] focus:outline-none"
-                    >
-                      <option value="" className="text-[#C4C4C4]">Please Select</option>
-                      {Duration.map((Duration) => (
-                        <option key={Duration.name} value={Duration.name} className="">
-                          {Duration.name.split(',')[0]}
-                        </option>
-                      ))}
-                    </select>
-                  </div>
+                  {looking === "Services" && (
+                    <>
+                      <div className='mt-10 flex flex-col gap-2'>
+                        <label htmlFor="services">Select a service you are looking for*</label>
+                        <select
+                          value={services}
+                          onChange={(e) => setServices(e.target.value)}
+                          id="services"
+                          name="services"
+                          className="py-5 decorated border-b border-[#D8D8D8] focus:outline-none"
+                          required
+                        >
+                          <option value="" disabled selected className="text-[#595959]">Please Select</option>
+                          {Services.map((Services) => (
+                            <option key={Services.name} value={Services.name} className="text-[#595959]">
+                              {Services.name.split(',')[0]}
+                            </option>
+                          ))}
+                        </select>
+                      </div>
+                      {services === "Research" && (
+                        <div className='mt-10 flex flex-col gap-2'>
+                          <label htmlFor="research">Research*</label>
+                          <select
+                            value={research}
+                            onChange={(e) => setResearch(e.target.value)}
+                            id="research"
+                            name="research"
+                            className="py-5 border-b border-[#D8D8D8] focus:outline-none"
+                            required
+                          >
+                            <option value="" disabled selected className="text-[#595959]">Please Select</option>
+                            {Research.map((Research) => (
+                              <option key={Research.name} value={Research.name} className="text-[#595959]">
+                                {Research.name.split(',')[0]}
+                              </option>
+                            ))}
+                          </select>
+                        </div>
+                      )}
+                      {services === "Strategy" && (
+                        <div className='mt-10 flex flex-col gap-2'>
+                          <label htmlFor="strategy">Strategy*</label>
+                          <select
+                            value={strategy}
+                            onChange={(e) => setStrategy(e.target.value)}
+                            id="strategy"
+                            name="strategy"
+                            className="py-5 border-b border-[#D8D8D8] focus:outline-none"
+                            required
+                          >
+                            <option value="" disabled selected className="text-[#595959]">Please Select</option>
+                            {Strategy.map((Strategy) => (
+                              <option key={Strategy.name} value={Strategy.name} className="text-[#595959]">
+                                {Strategy.name.split(',')[0]}
+                              </option>
+                            ))}
+                          </select>
+                        </div>
+                      )}
+                      {services === "Design" && (
+                        <div className='mt-10 flex flex-col gap-2'>
+                          <label htmlFor="design">Design*</label>
+                          <select
+                            value={design}
+                            onChange={(e) => setDesign(e.target.value)}
+                            id="design"
+                            name="design"
+                            className="py-5 border-b border-[#D8D8D8] focus:outline-none"
+                            required
+                          >
+                            <option value="" disabled selected className="text-[#595959]">Please Select</option>
+                            {Design.map((Design) => (
+                              <option key={Design.name} value={Design.name} className="text-[#595959]">
+                                {Design.name.split(',')[0]}
+                              </option>
+                            ))}
+                          </select>
+                        </div>
+                      )}
+                      {services === "Development" && (
+                        <div className='mt-10 flex flex-col gap-2'>
+                          <label htmlFor="development">Development*</label>
+                          <select
+                            value={development}
+                            onChange={(e) => setDevelopment(e.target.value)}
+                            id="development"
+                            name="development"
+                            className="py-5 border-b border-[#D8D8D8] focus:outline-none"
+                            required
+                          >
+                            <option value="" disabled selected className="text-[#595959]">Please Select</option>
+                            {Development.map((Development) => (
+                              <option key={Development.name} value={Development.name} className="text-[#595959]">
+                                {Development.name.split(',')[0]}
+                              </option>
+                            ))}
+                          </select>
+                        </div>
+                      )}
+                      <div className='mt-10 flex flex-col gap-2'>
+                        <label htmlFor="budget">Select a service budget for*</label>
+                        <select
+                          value={budget}
+                          onChange={(e) => setBudget(e.target.value)}
+                          id="budget"
+                          name="budget"
+                          className="py-5 border-b border-[#D8D8D8] focus:outline-none"
+                          required
+                        >
+                          <option value="" disabled selected className="text-[#595959]">Please Select</option>
+                          {Budget.map((Budget) => (
+                            <option key={Budget.name} value={Budget.name} className="text-[#595959]">
+                              {Budget.name.split(',')[0]}
+                            </option>
+                          ))}
+                        </select>
+                      </div>
+                      <div className='mt-10 flex flex-col gap-2'>
+                        <label htmlFor="duration">Select how soon you want to start the project*</label>
+                        <select
+                          value={duration}
+                          onChange={(e) => setDuration(e.target.value)}
+                          id="duration"
+                          name="duration"
+                          className="py-5 border-b border-[#D8D8D8] focus:outline-none"
+                          required
+                        >
+                          <option value="" disabled selected className="text-[#595959]">Please Select</option>
+                          {Duration.map((Duration) => (
+                            <option key={Duration.name} value={Duration.name} className="text-[#595959]">
+                              {Duration.name.split(',')[0]}
+                            </option>
+                          ))}
+                        </select>
+                      </div>
+                    </>
+                  )}
                   <div className='mt-10 flex flex-col gap-2'>
                     <label htmlFor="country">Country*</label>
                     <select
@@ -627,9 +796,9 @@ const ContactForm = () => {
                       className="py-5 border-b border-[#D8D8D8] focus:outline-none"
                       required
                     >
-                      <option value="" className="text-[#C4C4C4]">Please Select</option>
+                      <option value="" disabled selected className="text-[#595959]">Please Select</option>
                       {countries.map((country) => (
-                        <option key={country.code} value={country.name} className="">
+                        <option key={country.code} value={country.name} className="text-[#595959]">
                           {country.name.split(',')[0]}
                         </option>
                       ))}
@@ -646,7 +815,7 @@ const ContactForm = () => {
                     />
                   </div>
                   <div className='mt-12 flex flex-col gap-12'>
-                    <div>Please attach a file if it will support your query</div>
+                    <div>Please attach your project brief</div>
                     <div className="flex flex-col sm:flex-row gap-5 items-center">
                       <div onClick={handleFileInputClick} className="px-12 cursor-pointer py-3 my-auto text-center border border-solid border-[#D8D8D8] rounded-full ">
                         Choose File

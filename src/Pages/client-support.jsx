@@ -193,7 +193,7 @@ const ClientSupport = () => {
                           placeholder="Select Your on-going project with us*"
                           required
                         >
-                          <option className='text-[#D8D8D8]'>Select Your on-going project with us*</option>
+                          <option disabled selected className='text-[#7D7D7D]'>Select Your on-going project with us*</option>
                           <option>UI/UX design</option>
                           <option>Website development</option>
                           <option>Application development</option>
@@ -264,7 +264,7 @@ const ClientSupport = () => {
                           className="overflow-hidde grow h-fit pt-8 pb-4 bg-transparent placeholder:text-[#7D7D7D] border-b outline-none"
                           placeholder="What’s the good time to connect with you ?*"
                         >
-                          <option className='text-[#7D7D7D]'>What’s the good time to connect with you ?*</option>
+                          <option disabled selected className='text-[#7D7D7D]'>What’s the good time to connect with you ?*</option>
                           <option>3:00 PM - IST</option>
                           <option>3:30 PM - IST </option>
                           <option>4:00 PM - IST</option>
@@ -276,7 +276,7 @@ const ClientSupport = () => {
                         </select>
                       </div>
                       <div className='mt-12 flex flex-col gap-12'>
-                        <div>Please attach a file if it will support your query</div>
+                        <div>Please attach your project brief</div>
                         <div className="flex flex-col sm:flex-row gap-5 items-center">
                           <div onClick={handleFileInputClick} className="px-12 cursor-pointer py-3 my-auto text-center border border-solid border-[#D8D8D8] rounded-full text-black ">
                             Choose File

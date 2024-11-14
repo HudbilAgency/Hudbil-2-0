@@ -476,7 +476,7 @@ const ComingSoon = () => {
                                             className="py-5 border-b border-[#D8D8D8] focus:outline-none"
                                             required
                                         >
-                                            <option value="" className="text-[#C4C4C4]">Please Select</option>
+                                            <option value="" disabled selected className="text-[#C4C4C4]">Please Select</option>
                                             {countries.map((country) => (
                                                 <option key={country.code} value={country.name} className="">
                                                     {country.name.split(',')[0]}
@@ -495,7 +495,7 @@ const ComingSoon = () => {
                                         />
                                     </div>
                                     <div className='mt-12 flex flex-col gap-12'>
-                                        <div>Please attach a file if it will support your query</div>
+                                        <div>Please attach your project brief</div>
                                         <div className="flex flex-col sm:flex-row gap-5 items-center">
                                             <div onClick={handleFileInputClick} className="px-12 cursor-pointer py-3 my-auto text-center border border-solid border-[#D8D8D8] rounded-full ">
                                                 Choose File
