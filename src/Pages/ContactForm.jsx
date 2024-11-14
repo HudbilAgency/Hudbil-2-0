@@ -544,9 +544,8 @@ const ContactForm = () => {
 
         <section>
           <div className='flex flex-col lg:flex-row items-stretch justify-between h-full gap-16 lg:gap-20 xl:gap-24 2xl:gap-36'>
-
             <div className='w-full lg:w-1/2'>
-              <div className='text-4xl md:text-[3rem] text-[#0B0B0B] leading-tight w-full 2xl:w-4/5'>Get in touch with our teams in India, London or Dubai. We look forward to hearing from you.</div>
+              <div className='text-4xl md:text-[3rem] text-[#7811A5] leading-tight w-full 2xl:w-4/5'>Get in touch with our teams in India, London or Dubai. We look forward to hearing from you.</div>
 
               <div className='mt-20 flex flex-col items-start gap-14'>
 
@@ -555,7 +554,7 @@ const ContactForm = () => {
                   <div className='w-full xl:w-1/3 leading-7'>No 235, 2nd & 3rd Floor, 13th Cross Road 2nd Stage, Indiranagar Hoysala Nagar, Bangalore - 560038,</div>
                   <div className='flex flex-col items-start gap-[6px] w-full xl:w-[26%] 2xl:w-[22%]'>
                     <div>+91 88-84-40-9369</div>
-                    <div><a href="mailto:info@hudbil.com" className="hover:text-purple-700 transition-all duration-300 mt-5">
+                    <div><a href="mailto:info@hudbil.com" className="hover:text-[#7811A5] transition-all duration-300 mt-5">
                       Email us here
                     </a></div>
                   </div>
@@ -566,7 +565,7 @@ const ContactForm = () => {
                   <div className='w-full xl:w-1/3 leading-7'>74/II, “C” Cross Road, Opp Gate No 2, MIDC - 400093, Seepz, Andheri East, Mumbai, Maharashtra.</div>
                   <div className='flex flex-col items-start gap-[6px] w-full xl:w-[26%] 2xl:w-[22%]'>
                     <div>+91 88-84-40-9369</div>
-                    <div><a href="mailto:info@hudbil.com" className="hover:text-purple-700 transition-all duration-300 mt-5">
+                    <div><a href="mailto:info@hudbil.com" className="hover:text-[#7811A5] transition-all duration-300 mt-5">
                       Email us here
                     </a></div>
                   </div>
@@ -577,7 +576,7 @@ const ContactForm = () => {
                   <div className='w-full xl:w-1/3 leading-7'>90B, Delhi - Jaipur Expy, Udyog Vihar, Sector 18, Gurugram, Sarhol, Haryana - 122008.</div>
                   <div className='flex flex-col items-start gap-[6px] w-full xl:w-[26%] 2xl:w-[22%]'>
                     <div>+91 88-84-40-9369</div>
-                    <div><a href="mailto:info@hudbil.com" className="hover:text-purple-700 transition-all duration-300 mt-5">
+                    <div><a href="mailto:info@hudbil.com" className="hover:text-[#7811A5] transition-all duration-300 mt-5">
                       Email us here
                     </a></div>
                   </div>
@@ -588,7 +587,7 @@ const ContactForm = () => {
                   <div className='w-full xl:w-1/3 leading-7'>Boulevard Plaza Level 23, Boulevard Plaza Tower 2, Dubai. UAE</div>
                   <div className='flex flex-col items-start gap-[6px] w-full xl:w-[26%] 2xl:w-[22%]'>
                     <div>+91 88-84-40-9369</div>
-                    <div><a href="mailto:info@hudbil.com" className="hover:text-purple-700 transition-all duration-300 mt-5">
+                    <div><a href="mailto:info@hudbil.com" className="hover:text-[#7811A5] transition-all duration-300 mt-5">
                       Email us here
                     </a></div>
                   </div>
@@ -599,7 +598,7 @@ const ContactForm = () => {
                   <div className='w-full xl:w-1/3 leading-7'>Level 30, The Leaden hall Building Z2 Lacunal Street City of London, EC3V 4AB, UK.</div>
                   <div className='flex flex-col items-start gap-[6px] w-full xl:w-[26%] 2xl:w-[22%]'>
                     <div>+91 88-84-40-9369</div>
-                    <div><a href="mailto:info@hudbil.com" className="hover:text-purple-700 transition-all duration-300 mt-5">
+                    <div><a href="mailto:info@hudbil.com" className="hover:text-[#7811A5] transition-all duration-300 mt-5">
                       Email us here
                     </a></div>
                   </div>
@@ -613,8 +612,8 @@ const ContactForm = () => {
                 <div className="bg-[#D8D8D8] h-[1px] w-full lg:hidden block"></div>
                 <div className="bg-[#D8D8D8] w-[1px] h-full hidden lg:block"></div>
                 <div className='w-full flex flex-col items-start gap-12 thank-you'>
-                  <div className='text-3xl md:text-[2.7rem] 2xl:text-[3rem] text-[#0B0B0B] leading-tight w-full 2xl:w-4/5'>Thank You…!! </div>
-                  <div className='text-3xl md:text-[2.7rem] 2xl:text-[3rem] text-[#0B0B0B] leading-tight w-full 2xl:w-4/5'>Our team has received your information, will get in touch with you within the next 24 hours to discuss how we can help bring your vision to life.</div>
+                  <div className='text-3xl md:text-[2.7rem] 2xl:text-[3rem] text-[#7811A5] leading-tight w-full 2xl:w-4/5'>Thank You…!! </div>
+                  <div className='text-3xl md:text-[2.7rem] 2xl:text-[3rem] text-[#7811A5] leading-tight w-full 2xl:w-4/5'>Our team has received your information, will get in touch with you within the next 24 hours to discuss how we can help bring your vision to life.</div>
                 </div>
               </div>
             ) : (
@@ -697,7 +696,7 @@ const ContactForm = () => {
                       ))}
                     </select>
                   </div>
-                  <div className={`flex flex-col overflow-hidden transition-all duration-700 ease-in-out ${dropdown ? 'max-h-[2000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                  <div className={`flex flex-col overflow-hidden transition-all duration-700 ease-in-out ${dropdown ? 'max-h-[2500px] opacity-100' : 'max-h-0 opacity-0'}`}>
                     <div className='mt-10 flex flex-col gap-2'>
                       <label htmlFor="services">Select a service you are looking for*</label>
                       <select
@@ -861,7 +860,7 @@ const ContactForm = () => {
                       onChange={(e) => setMessage(e.target.value)}
                     />
                   </div>
-                  <div className='mt-12 flex flex-col gap-12'>
+                  <div className='mt-12 flex flex-col gap-[54px]'>
                     <div className='flex flex-col gap-8'>
                       <div>Please attach your project brief</div>
                       <div className="flex flex-col sm:flex-row gap-5 items-center">

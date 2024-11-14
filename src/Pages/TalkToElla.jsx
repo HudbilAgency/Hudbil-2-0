@@ -280,7 +280,7 @@ const TalkToElla = () => {
                         const botMessage = messages[index + 1];
                         return (
                           <div key={index} className="mb-12">
-                            <div className="text-purple-700 text-base lg:text-lg font-semibold pb-3">
+                            <div className="text-[#7811A5] text-base lg:text-lg font-semibold pb-3">
                               {message.text}
                             </div>
                             {botMessage && (

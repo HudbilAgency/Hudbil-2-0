@@ -58,7 +58,7 @@ function BlogCard({ image, title, url }) {
           <img loading="lazy" src={image} alt={title} className="filter grayscale hover:grayscale-0 mr-auto transition-all duration-300 object-cover w-full" />
           <h3 className="self-start font-arial w-[80%] mt-8">{title}</h3>
         </div>
-        <div className="flex gap-5 justify-between mt-4 max-w-full text-xl leading-none text-purple-700 w-[450px]">
+        <div className="flex gap-5 justify-between mt-4 max-w-full text-xl leading-none text-[#7811A5] w-[450px]">
           <Link to={url}>
             <button>Read now</button>
           </Link>

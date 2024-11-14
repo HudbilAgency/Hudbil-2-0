@@ -202,7 +202,7 @@ const Footer = () => {
                 </h3>
                 <p className="mt-6  md:h-20 lg:h-auto xl:h-20 leading-6 text-sm">{office.address}</p>
                 <p className="self-start mt-7  tracking-wider hover:text-gray-500 transition-all duration-300 leading-loose text-sm">{office.phone}</p>
-                <a href="mailto:info@hudbil.com" className="self-start text-purple-700 hover:text-gray-500 transition-all duration-300  mt-5 text-lg">
+                <a href="mailto:info@hudbil.com" className="self-start text-[#7811A5] hover:text-gray-500 transition-all duration-300  mt-5 text-lg">
                   Email us here
                 </a>
               </div>

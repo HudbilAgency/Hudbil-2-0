@@ -606,7 +606,7 @@ const Home = () => {
                 }} className="flex justify-between items-center w-[300vw] lg:w-[150vw] py-12 bg-black" ref={animationRef} >
 
                 <div className="flex flex-col items-center w-1/3" ref={carouselItem1}>
-                  <h2 className="text-6xl  leading-none text-center text-purple-700 max-md:text-4xl">Our Brands</h2>
+                  <h2 className="text-6xl  leading-none text-center text-[#7811A5] max-md:text-4xl">Our Brands</h2>
                   <div className="flex overflow-hidden relative flex-col mt-14 max-w-full text-xs font-extralight tracking-wider text-center aspect-[0.866] text-teal-950 w-[304px] max-md:mt-10">
                     <div className="flex overflow-hidden relative items-center justify-center flex-col group px-11 py-40 bg-white max-md:px-5 max-md:py-24 ">
                       <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/7281482c86da59f833039df7a3ec6c277db84f6759a3e18d14449941f4081705?placeholderIfAbsent=true&apiKey=7904fd7afaaf4ee2b0837ab86d91b244" alt="Brand logo" className="filter grayscale group-hover:grayscale-0 transition-all duration-300 object-contain lg:-mt-12 aspect-[2.87] w-[284px]" />
@@ -629,7 +629,7 @@ const Home = () => {
                 </div>
 
                 <div className="flex flex-col items-center w-1/3" ref={carouselItem2}>
-                  <h2 className="text-6xl  leading-none text-center text-purple-700 max-md:text-4xl">Our Brands</h2>
+                  <h2 className="text-6xl  leading-none text-center text-[#7811A5] max-md:text-4xl">Our Brands</h2>
                   <div className="flex overflow-hidden relative flex-col mt-14 max-w-full text-xs font-extralight tracking-wider text-center aspect-[0.866] text-teal-950 w-[304px] max-md:mt-10">
                     <div className="flex group overflow-hidden relative items-center justify-center flex-col px-11 py-40 bg-white max-md:px-5 max-md:py-24 ">
                       <img loading="lazy" src="./OurBrandsImg/KalacodeBrandLogoImg.png" alt="Brand logo" className="filter grayscale group-hover:grayscale-0 transition-all duration-300 object-contain lg:-mt-12 aspect-[2.87] w-[284px]" />
@@ -678,20 +678,20 @@ const Home = () => {
 
               <section className='mx-6 lg:mx-8'>
 
-                <h2 className="self-start  mt-20 text-[25px]  tracking-wide text-purple-700">What we do</h2>
+                <h2 className="self-start  mt-20 text-[25px]  tracking-wide text-[#7811A5]">What we do</h2>
                 <div className='flex flex-col md:flex-row mt-12 md:items-end justify-between max-w-full w-[780px]'>
                   <p className="w-full md:w-2/3  text-[24px] tracking-wider leading-8 text-neutral-950 max-md:mt-10  max-md:max-w-full">
                     We engage brands with immersive digital experiences that brings you a return on creativity. We love solving thorny problems with smart, custom software design and development under one umbrella.
                   </p>
 
-                  <p className="w-1/3 mt-auto md:text-end  text-xl tracking-wider text-purple-700 max-md:mt-10  max-md:max-w-full">
+                  <p className="w-1/3 mt-auto md:text-end  text-xl tracking-wider text-[#7811A5] max-md:mt-10  max-md:max-w-full">
                     <Link to="/our-services">Read now</Link>
                   </p>
                 </div>
                 <div className="mt-12 max-w-full h-px border border-solid border-gray-400 w-full" />
                 <div className="flex gap-5 items-start self-start mt-10  leading-loose text-neutral-950">
-                  <div className="flex shrink-0 self-stretch my-auto w-3 h-3 bg-purple-700 rounded-[1000px]" />
-                  <div className="self-stretch text-[25px] text-purple-700 my-auto">Our services</div>
+                  <div className="flex shrink-0 self-stretch my-auto w-3 h-3 bg-[#7811A5] rounded-[1000px]" />
+                  <div className="self-stretch text-[25px] text-[#7811A5] my-auto">Our services</div>
                 </div>
                 <div className="mt-14 max-w-full w-[780px] max-md:mt-10 ">
                   <div className="flex gap-12 max-md:flex-col">
@@ -705,7 +705,7 @@ const Home = () => {
                           <p className="mt-7  text-lg tracking-wide leading-8 text-neutral-950 ">{service.description}</p>
                         </div>
                         <Link to={service.url}>
-                          <button className='mt-5 text-purple-700 text-xl self-start'>Read now</button>
+                          <button className='mt-5 text-[#7811A5] text-xl self-start'>Read now</button>
                         </Link>
                       </div>
                     ))}
@@ -713,8 +713,8 @@ const Home = () => {
                 </div>
                 <div className="shrink-0 mt-12 max-w-full h-px border border-solid border-gray-400 w-full" />
                 <div className="flex gap-2 items-start self-start mt-10 leading-none text-neutral-950">
-                  <div className="flex shrink-0 self-stretch my-auto w-3 h-3 bg-purple-700 rounded-[1000px]" />
-                  <div className="self-stretch ml-[1.5%] text-[25px] text-purple-700 my-auto">Our blogs</div>
+                  <div className="flex shrink-0 self-stretch my-auto w-3 h-3 bg-[#7811A5] rounded-[1000px]" />
+                  <div className="self-stretch ml-[1.5%] text-[25px] text-[#7811A5] my-auto">Our blogs</div>
                 </div>
               </section>
               <CarousalImgBlogs />

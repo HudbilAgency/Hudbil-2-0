@@ -275,30 +275,32 @@ const ClientSupport = () => {
                           <option>6:30 PM - IST</option>
                         </select>
                       </div>
-                      <div className='mt-12 flex flex-col gap-12'>
-                        <div>Please attach your project brief</div>
-                        <div className="flex flex-col sm:flex-row gap-5 items-center">
-                          <div onClick={handleFileInputClick} className="px-12 hover:bg-[#7811A5] transition-all duration-300 hover:text-white cursor-pointer py-3 my-auto text-center border border-solid border-[#D8D8D8] rounded-full text-black ">
-                            Choose File
-                          </div>
-                          <input
-                            type="file"
-                            ref={fileInputRef}
-                            onChange={handleFileChange}
-                            style={{ display: "none" }}
-                            accept=".jpg, .jpeg, .png, .pdf, .doc, .svg, .docx, .zip, .rar"
-                          />
-                          <div>
-                            {fileName ? (
-                              <span className="text-base font-normal text-black">
-                                {fileName}
-                              </span>
-                            ) : (
-                              <span className="text-base font-normal text-black">
-                                No file chosen
-                              </span>
-                            )
-                            }
+                      <div className='mt-12 flex flex-col gap-[54px]'>
+                        <div className='flex flex-col gap-8'>
+                          <div>Please attach your project brief</div>
+                          <div className="flex flex-col sm:flex-row gap-5 items-center">
+                            <div onClick={handleFileInputClick} className="px-12 hover:bg-[#7811A5] transition-all duration-300 hover:text-white cursor-pointer py-3 my-auto text-center border border-solid border-[#D8D8D8] rounded-full text-black ">
+                              Choose File
+                            </div>
+                            <input
+                              type="file"
+                              ref={fileInputRef}
+                              onChange={handleFileChange}
+                              style={{ display: "none" }}
+                              accept=".jpg, .jpeg, .png, .pdf, .doc, .svg, .docx, .zip, .rar"
+                            />
+                            <div>
+                              {fileName ? (
+                                <span className="text-base font-normal text-black">
+                                  {fileName}
+                                </span>
+                              ) : (
+                                <span className="text-base font-normal text-black">
+                                  No file chosen
+                                </span>
+                              )
+                              }
+                            </div>
                           </div>
                         </div>
                         <div>

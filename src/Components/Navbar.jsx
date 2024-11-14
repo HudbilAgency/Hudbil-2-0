@@ -533,7 +533,7 @@ const Navbar = () => {
             <ul className="mx-6 lg:mx-16 flex flex-col items-start gap-4 md:gap-6 lg:gap-2 2xl:gap-6">
               {menuItems.map((item, index) => (
                 <li key={index}>
-                  <a href={item.link} className="text-4xl 2xl:text-7xl hover:text-purple-700 transition-all duration-300 font-normal">
+                  <a href={item.link} className="text-4xl 2xl:text-7xl hover:text-[#7811A5] transition-all duration-300 font-normal">
                     {item.name}
                   </a>
                 </li>
