@@ -705,7 +705,7 @@ const ContactForm = () => {
                         id="services"
                         name="services"
                         className="py-5 decorated border-b border-[#D8D8D8] focus:outline-none"
-                        required
+                        required={dropdown}
                       >
                         <option value="" disabled selected className="text-[#595959]">Select your service</option>
                         {Services.map((Services) => (
@@ -724,7 +724,7 @@ const ContactForm = () => {
                           id="research"
                           name="research"
                           className="py-5 border-b border-[#D8D8D8] focus:outline-none"
-                          required
+                          required={dropdown2}
                         >
                           <option value="" disabled selected className="text-[#595959]">Please Select</option>
                           {Research.map((Research) => (
@@ -744,7 +744,7 @@ const ContactForm = () => {
                           id="strategy"
                           name="strategy"
                           className="py-5 border-b border-[#D8D8D8] focus:outline-none"
-                          required
+                          required={dropdown3}
                         >
                           <option value="" disabled selected className="text-[#595959]">Please Select</option>
                           {Strategy.map((Strategy) => (
@@ -764,7 +764,7 @@ const ContactForm = () => {
                           id="design"
                           name="design"
                           className="py-5 border-b border-[#D8D8D8] focus:outline-none"
-                          required
+                          required={dropdown4}
                         >
                           <option value="" disabled selected className="text-[#595959]">Please Select</option>
                           {Design.map((Design) => (
@@ -784,7 +784,7 @@ const ContactForm = () => {
                           id="development"
                           name="development"
                           className="py-5 border-b border-[#D8D8D8] focus:outline-none"
-                          required
+                          required={dropdown5}
                         >
                           <option value="" disabled selected className="text-[#595959]">Please Select</option>
                           {Development.map((Development) => (
@@ -803,7 +803,7 @@ const ContactForm = () => {
                         id="budget"
                         name="budget"
                         className="py-5 border-b border-[#D8D8D8] focus:outline-none"
-                        required
+                        required={dropdown}
                       >
                         <option value="" disabled selected className="text-[#595959]">Please Select</option>
                         {Budget.map((Budget) => (
@@ -821,7 +821,7 @@ const ContactForm = () => {
                         id="duration"
                         name="duration"
                         className="py-5 border-b border-[#D8D8D8] focus:outline-none"
-                        required
+                        required={dropdown}
                       >
                         <option value="" disabled selected className="text-[#595959]">Please Select</option>
                         {Duration.map((Duration) => (
