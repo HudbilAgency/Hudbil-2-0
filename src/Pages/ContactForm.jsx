@@ -136,6 +136,7 @@ const ContactForm = () => {
   ];
 
   const Budget = [
+    { name: '1 Lakh to 3 Lakh' },
     { name: '4 Lakh to 5 Lakh' },
     { name: '6 Lakh to 10 Lakh' },
     { name: '15 Lakh to 20 Lakh' }

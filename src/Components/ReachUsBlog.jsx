@@ -63,7 +63,7 @@ const ReachUsBlog = () => {
 
     try {
       const response = await axios.post(
-        "https://hudbil-server.onrender.com/reach-us-hudbil",
+        "https://hudbil-server.onrender.com/contact-form-hudbil",
         JSON.stringify(ReachUs),
         {
           headers: {
