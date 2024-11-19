@@ -72,7 +72,7 @@ const Work = () => {
                         We use industry-leading research, strategic insights and relentless creativity to live our purpose: putting people first.
                     </div>
 
-                    <div className='pl-6 lg:pl-0 pr-6 mt-20 flex flex-col lg:flex-row items-start w-full gap-16 lg:gap-12'>
+                    <div className='pl-6 lg:pl-0 pr-6 lg:pr-16 mt-20 flex flex-col lg:flex-row items-start w-full gap-16 lg:gap-12'>
 
                         <div className='flex items-center bg-no-repeat bg-cover bg-center justify-center w-full lg:w-1/2 lg:hidden'>
                             <video
