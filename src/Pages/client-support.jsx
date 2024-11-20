@@ -8,6 +8,61 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 const ClientSupport = () => {
 
+  const [dropdown, setDropdown] = useState(false);
+
+  const handleSelectChange = (e) => {
+
+    const selectedValue = e.target.value;
+    setLooking(selectedValue);
+
+    if (selectedValue === "Services") {
+      setDropdown(true);
+    } else {
+      setDropdown(false);
+    }
+  };
+
+  const [dropdown2, setDropdown2] = useState(false);
+  const [dropdown3, setDropdown3] = useState(false);
+  const [dropdown4, setDropdown4] = useState(false);
+  const [dropdown5, setDropdown5] = useState(false);
+
+  const handleSelectChange2 = (e) => {
+
+    const selectedValue2 = e.target.value;
+    setServices(selectedValue2);
+
+    if (selectedValue2 === "Research") {
+      setDropdown2(true);
+    } else {
+      setDropdown2(false);
+    }
+
+    if (selectedValue2 === "Strategy") {
+      setDropdown3(true);
+    } else {
+      setDropdown3(false);
+    }
+
+    if (selectedValue2 === "Design") {
+      setDropdown4(true);
+    } else {
+      setDropdown4(false);
+    }
+
+    if (selectedValue2 === "Development") {
+      setDropdown5(true);
+    } else {
+      setDropdown5(false);
+    }
+  };
+
+  const [looking, setLooking] = useState("");
+  const [services, setServices] = useState("");
+  const [research, setResearch] = useState("");
+  const [strategy, setStrategy] = useState("");
+  const [design, setDesign] = useState("");
+  const [development, setDevelopment] = useState("");
   const [project, setProject] = useState("");
   const [firstname, setFirstName] = useState("");
   const [company, setCompany] = useState("");
@@ -22,6 +77,62 @@ const ClientSupport = () => {
   const [showVerification, setShowVerification] = useState(false);
   const recaptchaRef = useRef(null);
   const [recaptchaToken, setRecaptchaToken] = useState(null);
+
+  const Lookingfor = [
+    { name: 'Services' },
+    { name: 'Products' }
+  ];
+
+  const Services = [
+    { name: 'Research' },
+    { name: 'Strategy' },
+    { name: 'Design' },
+    { name: 'Development' }
+  ];
+
+  const Research = [
+    { name: 'UX Research' },
+    { name: 'Ethnographic Research ' },
+    { name: 'Design Audit' },
+    { name: 'Matunity Audit' },
+    { name: 'Competitor Analysis' },
+    { name: 'Emerging Trends' }
+  ];
+
+  const Strategy = [
+    { name: 'Brand Strategy' },
+    { name: 'Product Strategy ' },
+    { name: 'UX Strategy' },
+    { name: 'Scale - up Strategy' },
+    { name: 'Digital transformation' },
+    { name: 'User Acquisition startegy' }
+  ];
+
+  const Design = [
+    { name: 'UI Design' },
+    { name: 'UI Development ' },
+    { name: 'UI Guidelines' },
+    { name: 'Design system' },
+    { name: 'UX Design' },
+    { name: 'User Research' },
+    { name: 'UX Consultancy' },
+    { name: 'UX writing' },
+    { name: 'Animations' },
+    { name: 'Iconography' },
+    { name: 'Illustrations' }
+  ];
+
+  const Development = [
+    { name: 'Web design ' },
+    { name: 'Software Development' },
+    { name: 'Front - end' },
+    { name: 'Backend' },
+    { name: 'E - Commerce' },
+    { name: 'Mobile App Development' },
+    { name: 'Native' },
+    { name: 'Hybrid' },
+    { name: 'Android' }
+  ];
 
   const toggleConfirmation = () => {
     setShowConfirmation(!showConfirmation);
@@ -57,6 +168,12 @@ const ClientSupport = () => {
     let fileBase64 = file ? await toBase64(file) : null;
 
     const clientsupportData = {
+      looking,
+      services,
+      research,
+      strategy,
+      design,
+      development,
       project,
       firstname,
       company,
@@ -83,6 +200,12 @@ const ClientSupport = () => {
       });
     }, 0);
 
+    setLooking("");
+    setServices("");
+    setResearch("");
+    setStrategy("");
+    setDesign("");
+    setDevelopment("");
     setProject("");
     setFirstName("");
     setCompany("");
@@ -183,13 +306,131 @@ const ClientSupport = () => {
                         e.preventDefault();
                         handleSubmitForm();
                       }}>
-                      <div className="flex overflow-hiddens mt-10 tracking-wider">
+                      <div className='mt-10 flex flex-col gap-2'>
+                        <label htmlFor="looking">Select what you are looking for*</label>
+                        <select
+                          value={looking}
+                          onChange={handleSelectChange}
+                          id="looking"
+                          name="looking"
+                          className="py-5 border-b border-[#D8D8D8] focus:outline-none"
+                          required
+                        >
+                          <option value="" disabled selected className="text-[#595959]">You are looking for</option>
+                          {Lookingfor.map((Lookingfor) => (
+                            <option key={Lookingfor.name} value={Lookingfor.name} className="text-[#595959]">
+                              {Lookingfor.name.split(',')[0]}
+                            </option>
+                          ))}
+                        </select>
+                      </div>
+                      <div className={`flex flex-col overflow-hidden transition-all duration-700 ease-in-out ${dropdown ? 'max-h-[2500px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                        <div className='mt-10 flex flex-col gap-2'>
+                          <label htmlFor="services">Select a service you are looking for*</label>
+                          <select
+                            value={services}
+                            onChange={handleSelectChange2}
+                            id="services"
+                            name="services"
+                            className="py-5 decorated border-b border-[#D8D8D8] focus:outline-none"
+                            required={dropdown}
+                          >
+                            <option value="" disabled selected className="text-[#595959]">Select your service</option>
+                            {Services.map((Services) => (
+                              <option key={Services.name} value={Services.name} className="text-[#595959]">
+                                {Services.name.split(',')[0]}
+                              </option>
+                            ))}
+                          </select>
+                        </div>
+                        <div className={`flex flex-col overflow-hidden transition-all duration-700 ease-in-out ${dropdown2 ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                          <div className='mt-10 flex flex-col gap-2'>
+                            <label htmlFor="research">Research*</label>
+                            <select
+                              value={research}
+                              onChange={(e) => setResearch(e.target.value)}
+                              id="research"
+                              name="research"
+                              className="py-5 border-b border-[#D8D8D8] focus:outline-none"
+                              required={dropdown2}
+                            >
+                              <option value="" disabled selected className="text-[#595959]">Please Select</option>
+                              {Research.map((Research) => (
+                                <option key={Research.name} value={Research.name} className="text-[#595959]">
+                                  {Research.name.split(',')[0]}
+                                </option>
+                              ))}
+                            </select>
+                          </div>
+                        </div>
+                        <div className={`flex flex-col overflow-hidden transition-all duration-700 ease-in-out ${dropdown3 ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                          <div className='mt-10 flex flex-col gap-2'>
+                            <label htmlFor="strategy">Strategy*</label>
+                            <select
+                              value={strategy}
+                              onChange={(e) => setStrategy(e.target.value)}
+                              id="strategy"
+                              name="strategy"
+                              className="py-5 border-b border-[#D8D8D8] focus:outline-none"
+                              required={dropdown3}
+                            >
+                              <option value="" disabled selected className="text-[#595959]">Please Select</option>
+                              {Strategy.map((Strategy) => (
+                                <option key={Strategy.name} value={Strategy.name} className="text-[#595959]">
+                                  {Strategy.name.split(',')[0]}
+                                </option>
+                              ))}
+                            </select>
+                          </div>
+                        </div>
+                        <div className={`flex flex-col overflow-hidden transition-all duration-700 ease-in-out ${dropdown4 ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                          <div className='mt-10 flex flex-col gap-2'>
+                            <label htmlFor="design">Design*</label>
+                            <select
+                              value={design}
+                              onChange={(e) => setDesign(e.target.value)}
+                              id="design"
+                              name="design"
+                              className="py-5 border-b border-[#D8D8D8] focus:outline-none"
+                              required={dropdown4}
+                            >
+                              <option value="" disabled selected className="text-[#595959]">Please Select</option>
+                              {Design.map((Design) => (
+                                <option key={Design.name} value={Design.name} className="text-[#595959]">
+                                  {Design.name.split(',')[0]}
+                                </option>
+                              ))}
+                            </select>
+                          </div>
+                        </div>
+                        <div className={`flex flex-col overflow-hidden transition-all duration-700 ease-in-out ${dropdown5 ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                          <div className='mt-10 flex flex-col gap-2'>
+                            <label htmlFor="development">Development*</label>
+                            <select
+                              value={development}
+                              onChange={(e) => setDevelopment(e.target.value)}
+                              id="development"
+                              name="development"
+                              className="py-5 border-b border-[#D8D8D8] focus:outline-none"
+                              required={dropdown5}
+                            >
+                              <option value="" disabled selected className="text-[#595959]">Please Select</option>
+                              {Development.map((Development) => (
+                                <option key={Development.name} value={Development.name} className="text-[#595959]">
+                                  {Development.name.split(',')[0]}
+                                </option>
+                              ))}
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="flex overflow-hiddens mt-5 tracking-wider">
                         <label htmlFor="project-select" className="sr-only bg-transparent">Select Your on-going project with us</label>
                         <select
                           value={project}
                           onChange={(e) => setProject(e.target.value)}
                           id="project-select"
-                          className="overflow-hidden grow my-auto pt-8 pb-4 bg-transparent placeholder:text-[#D8D8D8] border-b outline-none max-md:max-w-full"
+                          className="overflow-hidden grow my-auto py-5 bg-transparent placeholder:text-[#D8D8D8] border-b outline-none max-md:max-w-full"
                           placeholder="Select Your on-going project with us*"
                           required
                         >
@@ -261,7 +502,7 @@ const ClientSupport = () => {
                           onChange={(e) => setTime(e.target.value)}
                           id="project-select"
                           required
-                          className="overflow-hidde grow h-fit pt-8 pb-4 bg-transparent placeholder:text-[#7D7D7D] border-b outline-none"
+                          className="overflow-hidde grow h-fit pt-8 pb-5 bg-transparent placeholder:text-[#7D7D7D] border-b outline-none"
                           placeholder="What’s the good time to connect with you ?*"
                         >
                           <option value="" disabled selected className='text-[#7D7D7D]'>What’s the good time to connect with you ?*</option>
