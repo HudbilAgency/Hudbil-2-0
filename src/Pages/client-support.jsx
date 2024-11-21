@@ -63,7 +63,6 @@ const ClientSupport = () => {
   const [strategy, setStrategy] = useState("");
   const [design, setDesign] = useState("");
   const [development, setDevelopment] = useState("");
-  const [project, setProject] = useState("");
   const [firstname, setFirstName] = useState("");
   const [company, setCompany] = useState("");
   const [email, setEmail] = useState("");
@@ -174,7 +173,6 @@ const ClientSupport = () => {
       strategy,
       design,
       development,
-      project,
       firstname,
       company,
       email,
@@ -206,7 +204,6 @@ const ClientSupport = () => {
     setStrategy("");
     setDesign("");
     setDevelopment("");
-    setProject("");
     setFirstName("");
     setCompany("");
     setEmail("");
@@ -307,7 +304,7 @@ const ClientSupport = () => {
                         handleSubmitForm();
                       }}>
                       <div className='mt-10 flex flex-col gap-2'>
-                        <label htmlFor="looking">Select what you are looking for*</label>
+                        <label htmlFor="looking">Select your on-going project with us*</label>
                         <select
                           value={looking}
                           onChange={handleSelectChange}
@@ -316,7 +313,7 @@ const ClientSupport = () => {
                           className="py-5 border-b border-[#D8D8D8] focus:outline-none"
                           required
                         >
-                          <option value="" disabled selected className="text-[#595959]">You are looking for</option>
+                          <option value="" disabled selected className="text-[#595959]">Please Select</option>
                           {Lookingfor.map((Lookingfor) => (
                             <option key={Lookingfor.name} value={Lookingfor.name} className="text-[#595959]">
                               {Lookingfor.name.split(',')[0]}
@@ -423,25 +420,6 @@ const ClientSupport = () => {
                             </select>
                           </div>
                         </div>
-                      </div>
-                      <div className="flex overflow-hiddens mt-5 tracking-wider">
-                        <label htmlFor="project-select" className="sr-only bg-transparent">Select Your on-going project with us</label>
-                        <select
-                          value={project}
-                          onChange={(e) => setProject(e.target.value)}
-                          id="project-select"
-                          className="overflow-hidden grow my-auto py-5 bg-transparent placeholder:text-[#D8D8D8] border-b outline-none max-md:max-w-full"
-                          placeholder="Select Your on-going project with us*"
-                          required
-                        >
-                          <option value="" disabled selected className='text-[#7D7D7D]'>Select Your on-going project with us*</option>
-                          <option>UI/UX design</option>
-                          <option>Website development</option>
-                          <option>Application development</option>
-                          <option>Design Strategy</option>
-                          <option>Chat-bot development</option>
-                          <option>Branding design</option>
-                        </select>
                       </div>
                       <div className="flex flex-col overflow-hidden justify-center items-start pb-2 tracking-wider">
                         <label className="sr-only" htmlFor="name">First name*</label>

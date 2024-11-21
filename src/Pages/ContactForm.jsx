@@ -689,7 +689,7 @@ const ContactForm = () => {
                       className="py-5 border-b border-[#D8D8D8] focus:outline-none"
                       required
                     >
-                      <option value="" disabled selected className="text-[#595959]">You are looking for</option>
+                      <option value="" disabled selected className="text-[#595959]">Please Select</option>
                       {Lookingfor.map((Lookingfor) => (
                         <option key={Lookingfor.name} value={Lookingfor.name} className="text-[#595959]">
                           {Lookingfor.name.split(',')[0]}
