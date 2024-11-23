@@ -11,6 +11,8 @@ import Hudbil_ai_chatbot from '../Pages/hudbil-ai-chatbot'
 import AboutUs from '../Pages/AboutUs';
 import Services1 from '../Pages/Services1';
 import Services2 from '../Pages/services2';
+import Services3 from '../Pages/Services3';
+import Services4 from '../Pages/Services4';
 import Insights from '../Pages/Insights';
 import Services from '../Pages/Services';
 import Work from '../Pages/Work';
@@ -73,6 +75,8 @@ const Routers = () => {
         <Route path='/about-us/career' element={<Careersculture />} />
         <Route path='/services/creative-designing-agency' element={<Services1 />} />
         <Route path='/services/development-agency' element={<Services2 />} />
+        <Route path='/services/research-agency' element={<Services3 />} />
+        <Route path='/services/strategy-agency' element={<Services4 />} />
         <Route path='/our-industry' element={<Our_industry />} />
         <Route path='/our-products' element={<Our_products />} />
         <Route path="/ai-ella" element={<TalkToElla />} />

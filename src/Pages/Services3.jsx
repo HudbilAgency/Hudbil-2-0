@@ -9,7 +9,7 @@ import { Helmet } from 'react-helmet';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const Services2 = () => {
+const Services3 = () => {
 
     const [dropdownStates, setDropdownStates] = useState([false, false, false, false, false, false]);
 
@@ -61,11 +61,11 @@ const Services2 = () => {
     return (
         <>
             <Helmet>
-                <title>Bespoke Development Services in India | Custom Software & Web Solutions</title>
-                <meta name="description" content="Transform your business with bespoke development services. From custom software to tailored web solutions, we deliver high-quality, scalable development to meet your unique needs. Discover personalized solutions for impactful growth."></meta>
-                <meta property="og:url" content="www.hudbil.com/services/development-agency"></meta>
-                <meta name="keywords" content="Bespoke Development Services, Custom Software Development, Tailored Web Development Solutions, Personalized Application Development, Scalable Development Solutions, Custom Web and Mobile Development, Digital Transformation Services, Tailored IT Development, Business-Specific Software Solutions, Custom Development for Businesses"></meta>
-                <meta name="og:description" content="Empower your business with bespoke development. Our team delivers custom web, mobile, and software solutions designed to meet your unique requirements and drive success."></meta>
+                <title>Creative Design Services in India | Innovative Branding & Digital Solutions</title>
+                <meta name="description" content="Elevate your brand with our creative design services. From unique branding and eye-catching graphics to website design and digital solutions, our expert team brings your vision to life. Contact us for tailored, high-impact design!"></meta>
+                <meta property="og:url" content="www.hudbil.com/services/creative-designing-agency"></meta>
+                <meta name="keywords" content="Creative Design Services,Branding and Identity Design,Graphic Design Solutions,Custom Logo Design,Digital and Print Design,Website and UX/UI Design,Social Media Graphics,Visual Branding Services,Packaging Design Solutions,Innovative,Design Agency,Custom Illustration Services,Marketing Design Services,Creative Content Design,Digital Branding Services,Professional Design Services"></meta>
+                <meta name="og:description" content="Bring your brand to life with our comprehensive creative design services. We provide impactful graphic design, website design, and branding solutions tailored"></meta>
                 <meta name="og:site_name" content="UI/UX Designing Company in Bangalore India | Website Development Agency in Bangalore | Top 10 Website Developement Agencies in Bangalore Review | Branding and designing Agency | Software development Agency"></meta>
                 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3795MKLFX0"></script>
                 <script>
@@ -81,7 +81,7 @@ const Services2 = () => {
             <Navbar />
             <div className="w-full h-[70vh] lg:h-[80vh] bg-no-repeat bg-cover bg-center">
                 <video
-                    src="/LandingVideos/video5.mp4"
+                    src="/LandingVideos/video3.mp4"
                     autoPlay
                     loop
                     muted
@@ -89,23 +89,22 @@ const Services2 = () => {
                     className="object-cover h-[70vh] lg:h-[80vh] w-full fixed z-0"
                     onContextMenu={(e) => e.preventDefault()}
                 >
-                    <source src="/LandingVideos/video5.mp4" type="video/mp4" />
+                    <source src="/LandingVideos/video3.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
             </div>
             <main className='relative z-20'>
                 <section className='bg-black py-20'>
                     <div className='md:w-3/5 xl:w-4/5 font-normal text-[2rem] xl:text-[50px] leading-tight text-white px-6 lg:px-16'>
-                        We help you translate any kind of design into functional digital products such as websites, mobile apps, or enterprise solutions through our UI UX design and consulting services Company.
+                        We don’t just design and develop products; we create experiences backed by thorough research and a deep understanding of your users. Whether you're building a new product or optimising an existing one.
                     </div>
                     <div className="w-full flex items-start justify-end my-16 px-6 lg:px-16">
                         <div className='md:w-1/2 flex flex-col items-start gap-8 text-white text-base xl:text-[20px] leading-tight'>
-                            <div>We are Hudbil – A creative development agency A hardworking collective with 10 years under our
-                                belt, specialising in brand identity and packaging.</div>
-                            <div>We develop adaptive and versatile apps that solve your hardest challenges, scale with your business, and maximise your ROI. Using a unique Continuous Discovery / Continuous Delivery approach coupled with cutting-edge technologies, we develop and deliver end to end to ensure you’re consistently meeting user needs and driving business value.</div>
+                            <div>We are Hudbil – Our UI/UX and Development Research Services ensure your project is primed for success.</div>
+                            <div>Our UI/UX and Development Research Services ensure that your project is rooted in data, innovation, and user insights, enabling you to create experiences that resonate with your audience and deliver measurable results.</div>
                             <div>
                                 <a href="/faq">
-                                    <button className="button self-end hover:text-white flex flex-row justify-between px-12 py-3 mx-auto leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-all duration-300">
+                                    <button className="button hover:text-white self-end flex flex-row justify-between px-12 py-3 mx-auto leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-all duration-300">
                                         <h1 className='text-lg mt-[2px]'>Faqs</h1>
                                         <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                                     </button>
@@ -113,38 +112,47 @@ const Services2 = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="relative my-24 ">
+                    <div className="relative my-24">
                         <div className="relative">
-                            <img className='mx-auto transition duration-500 grayscale hover:grayscale-0' src="/sp21.png" alt="Be-Spoken Development Services" />
+                            <img className='mx-auto transition duration-500 grayscale hover:grayscale-0' src="/sp11.png" alt="Creative Designing Services" />
                             <div className="absolute w-full inset-0 pointer-events-none flex justify-center items-center overflow-hidden">
                                 <div className="marquee-text-container font-normal text-[1.7rem] uppercase">
-                                    <div className="marquee-text text-white">Deliver your product at pace</div>
-                                    <div className="marquee-text text-white">Guarantee value for users</div>
-                                    <div className="marquee-text text-white">competition with the latest technology</div>
-                                    <div className="marquee-text text-white">Guarantee value for users</div>
-                                    <div className="marquee-text text-white">Deliver your product at pace</div>
-                                    <div className="marquee-text text-white">Guarantee value for users</div>
-                                    <div className="marquee-text text-white">competition with the latest technology</div>
-                                    <div className="marquee-text text-white">Guarantee value for users</div>
-                                    <div className="marquee-text text-white">Deliver your product at pace</div>
-                                    <div className="marquee-text text-white">Guarantee value for users</div>
-                                    <div className="marquee-text text-white">competition with the latest technology</div>
-                                    <div className="marquee-text text-white">Guarantee value for users</div>
+                                    <div className="marquee-text text-white">Understand Your Users</div>
+                                    <div className="marquee-text text-white">Reduce Risks</div>
+                                    <div className="marquee-text text-white">Drive Success</div>
+                                    <div className="marquee-text text-white">Enhance Usability</div>
+                                    <div className="marquee-text text-white">Stay Ahead</div>
+                                    <div className="marquee-text text-white">Understand Your Users</div>
+                                    <div className="marquee-text text-white">Reduce Risks</div>
+                                    <div className="marquee-text text-white">Drive Success</div>
+                                    <div className="marquee-text text-white">Enhance Usability</div>
+                                    <div className="marquee-text text-white">Stay Ahead</div>
+                                    <div className="marquee-text text-white">Understand Your Users</div>
+                                    <div className="marquee-text text-white">Reduce Risks</div>
+                                    <div className="marquee-text text-white">Drive Success</div>
+                                    <div className="marquee-text text-white">Enhance Usability</div>
+                                    <div className="marquee-text text-white">Stay Ahead</div>
+                                    <div className="marquee-text text-white">Understand Your Users</div>
+                                    <div className="marquee-text text-white">Reduce Risks</div>
+                                    <div className="marquee-text text-white">Drive Success</div>
+                                    <div className="marquee-text text-white">Enhance Usability</div>
+                                    <div className="marquee-text text-white">Stay Ahead</div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div className='px-6 lg:px-16 flex flex-col lg:flex-row items-start justify-between w-full gap-12 xl:gap-0'>
-                        <div className='font-normal text-3xl text-white'>Our Be-Spoken Development Services</div>
+                        <div className='font-normal text-3xl text-white'>Our UI/UX & Development Research
+                            <br className='hidden xl:block' /> Services</div>
 
                         <div className='w-full lg:w-2/3 xl:w-1/2 text-white'>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div><img src="/point31.png" alt="point" /></div>
-                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Website Development</div>
+                                        <div><img src="/point11.png" alt="point" /></div>
+                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">User Research</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(0)} className="cursor-pointer">
                                         <svg
@@ -163,8 +171,8 @@ const Services2 = () => {
                                     </div>
                                 </div>
                                 <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[0] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="text-xl pt-10">Front-End and Back-End</div>
-                                    <div>Front-end development is the process of building the parts of a website that users see and interact with. Implementing the best combination of technologies (full-stack, mean stack, flutter, native-OS, react JS) for your project.</div>
+                                    <div className="text-xl pt-10">Personas to guide</div>
+                                    <div>We understand that the foundation of every successful product lies in understanding the people who use it. Our User Research Services are designed to uncover the motivations, behaviours, and needs of your target audience, enabling you to create intuitive, engaging, and impactful experiences. By putting the user at the enter of the design process, we help businesses build solutions that truly resonate.</div>
                                     <div>
                                         <button className="button self-end flex flex-row justify-between px-5 py-3 leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px]  hover:bg-[#7811A5] transition-all duration-300">
                                             <h1 className='text-base mt-1 '>Know More</h1>
@@ -177,8 +185,8 @@ const Services2 = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div><img src="/point32.png" alt="point" /></div>
-                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Mobile Applications</div>
+                                        <div><img src="/point12.png" alt="point" /></div>
+                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Ethnographic Research</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(1)} className="cursor-pointer">
                                         <svg
@@ -197,8 +205,8 @@ const Services2 = () => {
                                     </div>
                                 </div>
                                 <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[1] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="text-xl pt-10">Native and Hybrid</div>
-                                    <div>Mobile application development is the process of creating software applications that run on a mobile device, and a typical mobile application utilizes a network connection to work with remote computing resources. Leveraging the latest technologies to develop robust and scalable hybrid and native mobile applications.</div>
+                                    <div className="text-xl pt-10">Deep User Understanding</div>
+                                    <div>Ethnographic research is a qualitative research method that involves observing and interacting with users in their natural settings. This approach goes beyond surface-level understanding to uncover the "why" behind user actions and decisions, helping you create products and services that truly resonate.</div>
                                     <div>
                                         <button className="button self-end flex flex-row justify-between px-5 py-3 leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px]  hover:bg-[#7811A5] transition-all duration-300">
                                             <h1 className='text-base mt-1 '>Know More</h1>
@@ -211,8 +219,8 @@ const Services2 = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div><img src="/point33.png" alt="point" /></div>
-                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">SAAS Implementation</div>
+                                        <div><img src="/point13.png" alt="point" /></div>
+                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Design Audit</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(2)} className="cursor-pointer">
                                         <svg
@@ -231,8 +239,8 @@ const Services2 = () => {
                                     </div>
                                 </div>
                                 <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[2] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="text-xl pt-10">Reduce costs, and Increase flexibility</div>
-                                    <div>SaaS implementation is the process of integrating a Software-as-a-Service (SaaS) application into a business’s workflow. Using a cloud-first approach to create anytime-anywhere access based scalable SAAS applications.</div>
+                                    <div className="text-xl pt-10">Identify Friction Points</div>
+                                    <div>A design audit is a comprehensive review of your product’s design elements, usability, and overall user experience. It identifies inconsistencies, inefficiencies, and areas for enhancement, ensuring your design not only looks great but functions effectively and meets user expectations.</div>
                                     <div>
                                         <button className="button self-end flex flex-row justify-between px-5 py-3 leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px]  hover:bg-[#7811A5] transition-all duration-300">
                                             <h1 className='text-base mt-1 '>Know More</h1>
@@ -245,8 +253,8 @@ const Services2 = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div><img src="/point34.png" alt="point" /></div>
-                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Web Applications</div>
+                                        <div><img src="/point14.png" alt="point" /></div>
+                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Maturity Audit</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(3)} className="cursor-pointer">
                                         <svg
@@ -265,8 +273,8 @@ const Services2 = () => {
                                     </div>
                                 </div>
                                 <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[3] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="text-xl pt-10">Functionality without installing</div>
-                                    <div>A web application (web app) is an application program that is stored on a remote server and delivered over the internet through a browser interface. Implementing the perfect blend of agile development to create dynamic and responsive web applications.</div>
+                                    <div className="text-xl pt-10">Identify Gaps</div>
+                                    <div>Whether you’re scaling your operations, implementing new technologies, or improving workflows, our audits provide a clear understanding of where you stand and how to advance. By identifying strengths, weaknesses, and growth opportunities, we empower you to reach new levels of operational and strategic excellence.</div>
                                     <div>
                                         <button className="button self-end flex flex-row justify-between px-5 py-3 leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px]  hover:bg-[#7811A5] transition-all duration-300">
                                             <h1 className='text-base mt-1 '>Know More</h1>
@@ -279,8 +287,8 @@ const Services2 = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div><img src="/point35.png" alt="point" /></div>
-                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Custom Applications</div>
+                                        <div><img src="/point15.png" alt="point" /></div>
+                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Competitor Analysis</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(4)} className="cursor-pointer">
                                         <svg
@@ -299,8 +307,8 @@ const Services2 = () => {
                                     </div>
                                 </div>
                                 <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[4] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="text-xl pt-10">Responsibility of building</div>
-                                    <div>Custom application development is the process of designing, developing, and deploying software applications for specific users or use cases. Implementing the best combination of technologies to develop interfaces for wearables, dashboards and AI-Chatbots.</div>
+                                    <div className="text-xl pt-10">Identify Market Trends</div>
+                                    <div>Our Competitor Analysis Services provide you with the insights you need to outpace your rivals. We go beyond basic comparisons to uncover their strengths, weaknesses, strategies, and opportunities, helping you position your business for growth and differentiation.</div>
                                     <div>
                                         <button className="button self-end flex flex-row justify-between px-5 py-3 leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px]  hover:bg-[#7811A5] transition-all duration-300">
                                             <h1 className='text-base mt-1 '>Know More</h1>
@@ -313,8 +321,8 @@ const Services2 = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div><img src="/point36.png" alt="point" /></div>
-                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">CMS Integration</div>
+                                        <div><img src="/point16.png" alt="point" /></div>
+                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Emerging Trends</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(5)} className="cursor-pointer">
                                         <svg
@@ -333,8 +341,8 @@ const Services2 = () => {
                                     </div>
                                 </div>
                                 <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[5] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="text-xl pt-10">Build and utilize integration apps</div>
-                                    <div>CMS integration is simply taking your existing website/web app and integrating a Content Management System. Building a platform that is accessible and can be managed by the customers in order to create, manage and modify digital content on their website easily.</div>
+                                    <div className="text-xl pt-10">Drive Innovation</div>
+                                    <div>We help businesses stay ahead of the curve by identifying and capitalising on the latest Emerging Trends. In today’s dynamic landscape, recognising new technologies, behaviours, and market shifts is critical to staying relevant and competitive. Our team dives deep into industry data, consumer insights, and global developments to provide actionable strategies that position your business for future success.</div>
                                     <div>
                                         <button className="button self-end flex flex-row justify-between px-5 py-3 leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px]  hover:bg-[#7811A5] transition-all duration-300">
                                             <h1 className='text-base mt-1 '>Know More</h1>
@@ -348,7 +356,7 @@ const Services2 = () => {
                                 Get in touch to find out how our team enjoys tinkering, most importantly empower your organisation.
                             </div>
                             <div className='w-fit'>
-                                <Link to="/services/research-agency">
+                                <Link to="/services/strategy-agency">
                                     <button className="button self-end flex flex-row justify-between px-12 py-3 mb-4 leading-none hover:bg-white hover:text-black text-white gap-8 rounded-[1000px] max-md:px-5 bg-[#7811A5] transition-all duration-300">
                                         <h1 className='text-base mt-1 '>Next service</h1>
                                         <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
@@ -360,24 +368,18 @@ const Services2 = () => {
                 </section>
                 <div id="moving-img" className='bg-black'>
                     <img
-                        src="/sp22.png"
+                        src="/sp12.png"
                         className="scale-anm w-full"
                     />
                 </div>
                 <section className='bg-black py-20'>
                     <div className='md:w-1/2 xl:w-3/4 font-normal text-[2rem] xl:text-[50px] leading-tight text-white px-6 lg:px-16'>
-                        Our Secret Ingredient ? <br className='hidden xl:block' />
-                        We’d be lying if we said we weren’t playful, imaginative, and offbeat. (wink) Fun fact? The
-                        best designs come from that same spark of creativity.
+                        Research is the foundation of everything we do. It’s what allows us to deliver solutions that are not only functional but also strategically aligned with your business objectives. Here’s why research is our secret sauce:
                     </div>
                     <div className="w-full flex items-start justify-end my-16 px-6 lg:px-16">
                         <div className='md:w-1/2 flex flex-col items-start gap-8 text-white text-base xl:text-[20px] leading-tight'>
-                            <div>Within the creative process, it is essential not to lose sight of the end goal. By keeping the
-                                bigger picture in mind, we can question the purpose and meaning of an idea, asking the
-                                right questions to define a clearer and better vision for the brand.</div>
-                            <div>Following our heart isn’t about disregarding insight and purpose; it’s about momentarily
-                                setting aside ‘science,’ listening to our emotions, and embracing what feels right. It’s about
-                                forging a genuine yet memorable connection.</div>
+                            <div>We believe that the key to creating exceptional websites and digital solutions lies in thorough, data-backed research. Our approach to design and development is grounded in understanding user behaviour, industry trends, and business goals. We don’t just build websites; we build insight-driven digital experiences that captivate and convert.</div>
+                            <div>From the first consultation to post-launch optimisation, our research-driven approach ensures that every decision we make is backed by data, insights, and a deep understanding of your business.</div>
                         </div>
                     </div>
 
@@ -390,7 +392,7 @@ const Services2 = () => {
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-8">
                                         <div className='border border-white rounded-full px-3 py-1'>1</div>
-                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Conversation</div>
+                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Discovery & Research</div>
                                     </div>
                                     <div onClick={() => toggleDropdown2(0)} className="cursor-pointer">
                                         <svg
@@ -409,7 +411,11 @@ const Services2 = () => {
                                     </div>
                                 </div>
                                 <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[0] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="text-xl pt-10 w-full lg:w-2/3 ml-auto md:mr-[6%]">Conversation sparks imagination, facilitates creativity and ignites insights. This is about the joy of discovery and the love of exploration, to not sit back and wait for inspiration but actively search for meaning.</div>
+                                    <div className="text-xl pt-10 w-full lg:w-2/3 ml-auto md:mr-[6%]">The first phase of our process is all about understanding your goals, target audience, and project requirements. This critical step sets the foundation for everything that follows.
+                                        <li className='pt-6 pb-1'>Client Consultation: We begin by getting to know your business, objectives, and vision for the project.</li>
+                                        <li>User Research: We gather data about your target audience’s needs, behaviours, and preferences to inform the design and development process.</li>
+
+                                    </div>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
@@ -417,7 +423,7 @@ const Services2 = () => {
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-8">
                                         <div className='border border-white rounded-full px-3 py-1'>2</div>
-                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Discovery & Research</div>
+                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Strategy & Planning</div>
                                     </div>
                                     <div onClick={() => toggleDropdown2(1)} className="cursor-pointer">
                                         <svg
@@ -436,7 +442,10 @@ const Services2 = () => {
                                     </div>
                                 </div>
                                 <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[1] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="text-xl pt-10 w-full lg:w-2/3 ml-auto md:mr-[6%]">This is where the fun begins!  We start with researching deep into your brand, industry, and audience—like detectives on a caffeine high. We meticulously uncover your brand’s true potential, ensuring we’re aligned with the best branding agencies. It’s like a treasure hunt, but instead of gold, we find your brand’s true potential.</div>
+                                    <div className="text-xl pt-10 w-full lg:w-2/3 ml-auto md:mr-[6%]">With a deep understanding of your brand and target users, we move into the planning phase to set clear goals and define the roadmap for success.
+                                        <li className='pt-6 pb-1'>UX Strategy: We define the user journey, mapping out how users will interact with your product, and prioritize key actions to optimize engagement and conversions.</li>
+                                        <li>Wireframing & Prototyping: We create wireframes and low-fidelity prototypes to visualize layout and flow, allowing us to test ideas early on.</li>
+                                    </div>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
@@ -444,7 +453,7 @@ const Services2 = () => {
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-8">
                                         <div className='border border-white rounded-full px-3 py-1'>3</div>
-                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Collaboration</div>
+                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">UI/UX Design</div>
                                     </div>
                                     <div onClick={() => toggleDropdown2(2)} className="cursor-pointer">
                                         <svg
@@ -463,7 +472,10 @@ const Services2 = () => {
                                     </div>
                                 </div>
                                 <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[2] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="text-xl pt-10 w-full lg:w-2/3 ml-auto md:mr-[6%]">We embrace the power of collaboration, working together seamlessly to address challenges and overcome obstacles, delivering impactful solutions that are both commercially viable and meaningful.</div>
+                                    <div className="text-xl pt-10 w-full lg:w-2/3 ml-auto md:mr-[6%]">The design phase is where creativity meets user-centered thinking. We focus on crafting intuitive interfaces and delightful experiences that reflect your brand identity.
+                                        <li className='pt-6 pb-1'>UI Design: We create high-fidelity mockups that bring your vision to life with visually appealing design elements, color schemes, typography, and imagery.</li>
+                                        <li>Responsive Design: We ensure the design is mobile-first, optimizing for various screen sizes and devices.</li>
+                                    </div>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
@@ -471,7 +483,7 @@ const Services2 = () => {
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-8">
                                         <div className='border border-white rounded-full px-3 py-1'>4</div>
-                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Craft</div>
+                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Development & Testing</div>
                                     </div>
                                     <div onClick={() => toggleDropdown2(3)} className="cursor-pointer">
                                         <svg
@@ -490,7 +502,10 @@ const Services2 = () => {
                                     </div>
                                 </div>
                                 <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[3] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="text-xl pt-10 w-full lg:w-2/3 ml-auto md:mr-[6%]">It’s about elevating design from ordinary to extraordinary, striking the perfect balance between beauty and quality. It entails a deep appreciation for finer details while keeping the ‘bigger picture’ in mind, ensuring that the work is unmistakable and unforgettable.</div>
+                                    <div className="text-xl pt-10 w-full lg:w-2/3 ml-auto md:mr-[6%]">Once the design is finalized, we move into development, where our team works to turn your vision into a fully functional website or app. We follow best practices in coding, testing, and quality assurance.
+                                        <li className='pt-6 pb-1'>Front-End Development: We build the interactive elements of your website or application, focusing on user experience, responsiveness, and smooth performance.</li>
+                                        <li>Back-End Development: We develop the server-side logic, databases, and APIs that power the front-end experience, ensuring stability and security.</li>
+                                    </div>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
@@ -498,7 +513,7 @@ const Services2 = () => {
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-8">
                                         <div className='border border-white rounded-full px-3 py-1'>5</div>
-                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Design & Refinement</div>
+                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Launch & Development</div>
                                     </div>
                                     <div onClick={() => toggleDropdown2(4)} className="cursor-pointer">
                                         <svg
@@ -517,7 +532,11 @@ const Services2 = () => {
                                     </div>
                                 </div>
                                 <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[4] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="text-xl pt-10 w-full lg:w-2/3 ml-auto md:mr-[6%]">Here’s where your ideas get dressed up for the show! We pour our creative energy into crafting designs that feel fresh. Then, we tweak, refine, and polish. It’s like giving your brand a stylish makeover that makes heads turn—again and again.</div>
+                                    <div className="text-xl pt-10 w-full lg:w-2/3 ml-auto md:mr-[6%]">
+                                        With everything tested and optimized, we prepare for launch. We ensure a smooth transition from development to live deployment.
+                                        <li className='pt-6 pb-1'>Pre-Launch Review: We conduct a final review and ensure all performance and security aspects are addressed.</li>
+                                        <li>Deployment: We deploy the website or application to the live server, ensuring minimal downtime and a smooth transition.</li>
+                                    </div>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
@@ -525,7 +544,7 @@ const Services2 = () => {
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-8">
                                         <div className='border border-white rounded-full px-3 py-1'>6</div>
-                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Launch & Support</div>
+                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Post - Launch Support</div>
                                     </div>
                                     <div onClick={() => toggleDropdown2(5)} className="cursor-pointer">
                                         <svg
@@ -544,7 +563,10 @@ const Services2 = () => {
                                     </div>
                                 </div>
                                 <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[5] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="text-xl pt-10 w-full lg:w-2/3 ml-auto md:mr-[6%]">But we don’t just set it and forget it. We’re right there with you for the launch, making sure everything runs smoothly. Need ongoing support? Our branding agency services have got your back.</div>
+                                    <div className="text-xl pt-10 w-full lg:w-2/3 ml-auto md:mr-[6%]">Our work doesn’t end at launch. We provide ongoing support to ensure the continued success of your digital solution.
+                                        <li className='pt-6 pb-1'>Performance Monitoring: We monitor your website’s performance, checking for speed, uptime, and security issues.</li>
+                                        <li>User Feedback Collection: We continue to collect feedback from users to improve functionality and address any usability concerns.</li>
+                                    </div>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
@@ -552,10 +574,11 @@ const Services2 = () => {
                     </div>
 
                     <div className="w-full flex items-start justify-end mt-24 px-6 lg:px-16">
-                        <div className='md:w-1/2 flex flex-col gap-12 xl:text-[20px] md:gap-8 text-white'>
-                            <div>Make your website work your way. We are a Indian web development agency with the technical skill and industry insight to take your website to the next level online. Our passion? Building and developing high-functioning websites which perform perfectly for our clients, their visitors and the search engines too.Speed, usability, behind-the-scenes functionality; better online performance means better business all round. So is your site giving the performance of a lifetime? If it isn’t, it’s time to get serious about intelligent web development. </div>
-
-                            <button className="button self-end hover:text-white flex flex-row justify-between px-12 py-3 mt-6 mb-4 ml-auto leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-all duration-300">
+                        <div className='md:w-1/2 xl:text-[20px] flex flex-col gap-12 md:gap-8 text-white'>
+                            <div>Among leading brand agencies India, Hudbil has a reputation for creating distinctive and
+                                successful brands. Known as brand transformation specialists, Hudbil’s track record justifies
+                                a place among these top-tier brand agencies India. Our process is designed to ensure that every project is executed with precision, creativity, and user-centric thinking. From initial research to post-launch optimisation, we work closely with you at every step to deliver an outstanding digital experience that exceeds your expectations.</div>
+                            <button className="button self-end flex hover:text-white flex-row justify-between mt-6 mb-4 px-12 py-3 ml-auto leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-all duration-300">
                                 <h1 className='text-base mt-1 '>Work With hudbil</h1>
                                 <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                             </button>
@@ -613,4 +636,4 @@ const Services2 = () => {
     )
 }
 
-export default Services2
+export default Services3

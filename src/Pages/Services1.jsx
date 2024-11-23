@@ -137,7 +137,7 @@ const Services1 = () => {
                         </div>
                     </div>
 
-                    <div className='px-6 lg:px-16 flex flex-col lg:flex-row items-start justify-between w-full gap-12 lg:gap-0'>
+                    <div className='px-6 lg:px-16 flex flex-col lg:flex-row items-start justify-between w-full gap-12 xl:gap-0'>
                         <div className='font-normal text-3xl text-white'>Our Creative Designing Services</div>
 
                         <div className='w-full lg:w-2/3 xl:w-1/2 text-white'>
@@ -349,12 +349,14 @@ const Services1 = () => {
                             <div className='text-[#917D7D] font-normal text-sm py-12 w-full md:w-5/6'>
                                 Get in touch to find out how our team enjoys tinkering, most importantly empower your organisation.
                             </div>
-                            <Link to="/services/development-agency">
-                                <button className="button self-end flex flex-row justify-between px-12 py-3 mb-4 leading-none hover:bg-white hover:text-black text-white gap-8 rounded-[1000px] max-md:px-5 bg-[#7811A5] transition-all duration-300">
-                                    <h1 className='text-base mt-1 '>Next service</h1>
-                                    <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
-                                </button>
-                            </Link>
+                            <div className='w-fit'>
+                                <Link to="/services/development-agency">
+                                    <button className="button self-end flex flex-row justify-between px-12 py-3 mb-4 leading-none hover:bg-white hover:text-black text-white gap-8 rounded-[1000px] max-md:px-5 bg-[#7811A5] transition-all duration-300">
+                                        <h1 className='text-base mt-1 '>Next service</h1>
+                                        <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                                    </button>
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -366,7 +368,7 @@ const Services1 = () => {
                 </div>
                 <section className='bg-black py-20'>
                     <div className='md:w-1/2 xl:w-3/4 font-normal text-[2rem] xl:text-[50px] leading-tight text-white px-6 lg:px-16'>
-                        Our Secret Ingredient?
+                        Our Secret Ingredient ? <br className='hidden xl:block' />
                         We’d be lying if we said we weren’t playful, imaginative, and offbeat. (wink) Fun fact? The
                         best designs come from that same spark of creativity.
                     </div>

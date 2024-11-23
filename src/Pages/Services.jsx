@@ -120,7 +120,7 @@ const Services = () => {
                                         </div>
                                     </div>
                                     <div className='mt-[10px]'>
-                                        <a href="/coming-soon">
+                                        <a href="/services/research-agency">
                                             <svg
                                                 width="24"
                                                 height="24"
@@ -177,7 +177,7 @@ const Services = () => {
                                         </div>
                                     </div>
                                     <div className='mt-[10px]'>
-                                        <a href="/coming-soon">
+                                        <a href="/services/strategy-agency">
                                             <svg
                                                 width="24"
                                                 height="24"
