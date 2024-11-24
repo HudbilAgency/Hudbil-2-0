@@ -547,7 +547,7 @@ const QuickLinksInside1 = () => {
                 <section>
                     <div className={`flex flex-col lg:flex-row justify-between ${isScreenTall ? 'h-screen' : 'h-full'}`}>
                         <div className='w-full lg:w-1/2 min-h-full bg-black lg:border-b-[1px] border-opacity-50 border-white flex flex-col pt-36 md:pt-40 pb-20 lg:pt-48 lg:pb-40 items-start justify-center text-white px-6 lg:px-16'>
-                            <div className='text-4xl md:text-[3rem] leading-tight'>Website Designing Agency in Bangalore.</div>
+                            <div className='text-4xl md:text-[3rem] leading-tight'>UI/UX Designing Agency in Bangalore.</div>
                             <div className='mt-10 leading-7'>Our brains opt for emotionally driven habitual or intuitive
                                 decisions over rational deliberation. Strong brands hold sway
                                 over this emotional autopilot. They have persuasive power.</div>
@@ -683,7 +683,7 @@ const QuickLinksInside1 = () => {
                             <div className="bg-white opacity-50 w-[1px] min-h-full self-stretch hidden lg:block"></div>
                             <div>
                                 <div className='flex flex-col md:flex-row gap-10 pt-20 pb-8 items-start justify-between font-normal px-6 lg:px-16'>
-                                    <div className='text-4xl leading-tight w-full md:w-2/5 2xl:w-1/3'>Best Website Designing Agency In Bangalore.</div>
+                                    <div className='text-4xl leading-tight w-full md:w-2/5 2xl:w-1/3'>Best UI/UX Designing Agency In Bangalore.</div>
                                     <div className=' leading-normal w-full md:w-2/5 2xl:w-1/3 mt-2'>As the top-rated website designing agency in Bangalore, we bring together a team of skilled designers, developers, and strategists with a mission to create stunning, functional, and user-friendly websites. From small businesses to enterprises, we build sites that align with our clients' goals and vision.</div>
                                 </div>
                                 <div className='px-6 lg:px-16 pb-[6px]'>
@@ -692,7 +692,7 @@ const QuickLinksInside1 = () => {
 
                                         </div>
                                         <div className='w-full sm:w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
-                                            <div className='text-2xl'>"Our Website Design Services"</div>
+                                            <div className='text-2xl'>"Our Website Designing Services"</div>
                                         </div>
                                     </div>
                                     <div className='flex items-stretch justify-between h-full'>
@@ -761,7 +761,7 @@ const QuickLinksInside1 = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='w-5/6 h-[1px] bg-white mt-20 mb-20 ml-auto'></div>
+                                <div className='2xl:w-[95%] w-[94%] h-[1px] bg-white mt-20 mb-20 ml-auto'></div>
                                 <div className='flex flex-col md:flex-row gap-10 pb-12 items-start justify-between font-normal px-6 lg:px-16'>
                                     <div className='text-4xl leading-tight w-full md:w-2/5 2xl:w-1/3'>Here are a few reasons why choose Hudbil !</div>
                                     <div className=' leading-normal w-full md:w-2/5 2xl:w-1/3 mt-2'>
@@ -800,7 +800,7 @@ const QuickLinksInside1 = () => {
 
                                     </div>
                                 </div>
-                                <div className='w-5/6 h-[1px] bg-white ml-auto'></div>
+                                <div className='2xl:w-[95%] w-[94%] h-[1px] bg-white mt-20  ml-auto'></div>
                                 <div className='flex flex-col md:flex-row gap-10 pt-20 pb-8 items-start justify-between font-normal px-6 lg:px-16'>
                                     <div className='text-4xl leading-tight w-full md:w-2/5 2xl:w-1/3'>Our exclusive other services</div>
                                     <div className=' leading-normal w-full md:w-2/5 2xl:w-1/3 mt-2'>Our toolkit identifies the brand advantage our clients are building vs competitors. We call this Brand Edge.</div>
