@@ -61,11 +61,11 @@ const Services4 = () => {
     return (
         <>
             <Helmet>
-                <title>Creative Design Services in India | Innovative Branding & Digital Solutions</title>
-                <meta name="description" content="Elevate your brand with our creative design services. From unique branding and eye-catching graphics to website design and digital solutions, our expert team brings your vision to life. Contact us for tailored, high-impact design!"></meta>
-                <meta property="og:url" content="www.hudbil.com/services/creative-designing-agency"></meta>
-                <meta name="keywords" content="Creative Design Services,Branding and Identity Design,Graphic Design Solutions,Custom Logo Design,Digital and Print Design,Website and UX/UI Design,Social Media Graphics,Visual Branding Services,Packaging Design Solutions,Innovative,Design Agency,Custom Illustration Services,Marketing Design Services,Creative Content Design,Digital Branding Services,Professional Design Services"></meta>
-                <meta name="og:description" content="Bring your brand to life with our comprehensive creative design services. We provide impactful graphic design, website design, and branding solutions tailored"></meta>
+                <title>Strategy Agency | Transforming Ideas into Actionable Success</title>
+                <meta name="description" content="Partner with [Your Agency Name] for innovative strategy solutions tailored to your business goals. From brand strategy to digital transformation, we craft data-driven plans for sustainable growth and market leadership."></meta>
+                <meta property="og:url" content="www.hudbil.com/services/strategy-agency"></meta>
+                <meta name="keywords" content="Strategy agency, business strategy solutions, brand strategy, digital transformation strategy, UX strategy, product strategy, user acquisition strategy, growth consulting, scalable strategies, strategic planning."></meta>
+                <meta name="og:description" content="Tailored strategy solutions designed to empower businesses with innovation, scalability, and growth. Our expertise in brand, product, digital, and UX strategies delivers measurable results and market impact.."></meta>
                 <meta name="og:site_name" content="UI/UX Designing Company in Bangalore India | Website Development Agency in Bangalore | Top 10 Website Developement Agencies in Bangalore Review | Branding and designing Agency | Software development Agency"></meta>
                 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3795MKLFX0"></script>
                 <script>
@@ -81,7 +81,7 @@ const Services4 = () => {
             <Navbar />
             <div className="w-full h-[70vh] lg:h-[80vh] bg-no-repeat bg-cover bg-center">
                 <video
-                    src="/LandingVideos/video3.mp4"
+                    src="/LandingVideos/video8.mp4"
                     autoPlay
                     loop
                     muted
@@ -89,7 +89,7 @@ const Services4 = () => {
                     className="object-cover h-[70vh] lg:h-[80vh] w-full fixed z-0"
                     onContextMenu={(e) => e.preventDefault()}
                 >
-                    <source src="/LandingVideos/video3.mp4" type="video/mp4" />
+                    <source src="/LandingVideos/video8.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
             </div>
@@ -105,7 +105,7 @@ const Services4 = () => {
                             <div>
                                 <a href="/faq">
                                     <button className="button hover:text-white self-end flex flex-row justify-between px-12 py-3 mx-auto leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-all duration-300">
-                                        <h1 className='text-lg mt-[2px]'>Faqs</h1>
+                                        <h1 className='text-lg mt-[2px]'>Faq's</h1>
                                         <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                                     </button>
                                 </a>
@@ -114,7 +114,7 @@ const Services4 = () => {
                     </div>
                     <div className="relative my-24">
                         <div className="relative">
-                            <img className='mx-auto transition duration-500 grayscale hover:grayscale-0' src="/sp11.png" alt="Creative Designing Services" />
+                            <img className='mx-auto transition duration-500 grayscale hover:grayscale-0' src="/strategy-img1.png" alt="Creative Designing Services" />
                             <div className="absolute w-full inset-0 pointer-events-none flex justify-center items-center overflow-hidden">
                                 <div className="marquee-text-container font-normal text-[1.7rem] uppercase">
                                     <div className="marquee-text text-white">Seamless User Experiences</div>
@@ -363,7 +363,7 @@ const Services4 = () => {
                 </section>
                 <div id="moving-img" className='bg-black'>
                     <img
-                        src="/sp12.png"
+                        src="/strategy-img2.png"
                         className="scale-anm w-full"
                     />
                 </div>

@@ -105,7 +105,7 @@ const Services1 = () => {
                             <div>
                                 <a href="/faq">
                                     <button className="button hover:text-white self-end flex flex-row justify-between px-12 py-3 mx-auto leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-all duration-300">
-                                        <h1 className='text-lg mt-[2px]'>Faqs</h1>
+                                        <h1 className='text-lg mt-[2px]'>Faq's</h1>
                                         <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                                     </button>
                                 </a>

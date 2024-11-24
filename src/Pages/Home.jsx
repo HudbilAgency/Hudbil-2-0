@@ -114,6 +114,8 @@ const Home = () => {
     "/LandingVideos/video4.mp4",
     "/LandingVideos/video5.mp4",
     "/LandingVideos/video6.mp4",
+    "/LandingVideos/video7.mp4",
+    "/LandingVideos/video8.mp4",
   ];
 
   const initialIndex = parseInt(localStorage.getItem("currentVideoIndexHudbil"), 10) || 0;
