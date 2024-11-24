@@ -12,28 +12,123 @@ const Careersculture = () => {
 
   const contentData = [
     {
-      service: 'Design Service',
-      role: 'Branding Lead',
+      service: 'Project Manager',
+      role: 'Operations Manager',
       location: 'Bangalore, India',
     },
     {
-      service: 'Design Service',
-      role: 'Sr. UX Research',
+      service: 'Project Manager',
+      role: 'Finance Manager',
       location: 'Bangalore, India',
     },
     {
-      service: 'Client Service',
-      role: 'Project Manager',
+      service: 'Project Manager',
+      role: 'Marketing Manager',
       location: 'Bangalore, India',
     },
     {
-      service: 'Technology',
+      service: 'Branding & Graphic Design',
+      role: 'Creative Director',
+      location: 'Bangalore, India',
+    },
+    {
+      service: 'Branding & Graphic Design',
+      role: 'Brand Strategist',
+      location: 'Bangalore, India',
+    },
+    {
+      service: 'Branding & Graphic Design',
+      role: 'Graphic Designer',
+      location: 'Bangalore, India',
+    },
+    {
+      service: 'Branding & Graphic Design',
+      role: 'UI/UX Designer',
+      location: 'Bangalore, India',
+    },
+    {
+      service: 'Branding & Graphic Design',
+      role: 'Motion Graphics Designer',
+      location: 'Bangalore, India',
+    },
+    {
+      service: 'Branding & Graphic Design',
+      role: 'App UI/UX Designer',
+      location: 'Bangalore, India',
+    },
+    {
+      service: 'Web Design & Development',
+      role: 'Lead Web Developer',
+      location: 'Bangalore, India',
+    },
+    {
+      service: 'Web Design & Development',
+      role: 'Front-End Developer',
+      location: 'Bangalore, India',
+    },
+    {
+      service: 'Web Design & Development',
+      role: 'Back-End Developer',
+      location: 'Bangalore, India',
+    },
+    {
+      service: 'Web Design & Development',
+      role: 'Full-Stack Developer',
+      location: 'Bangalore, India',
+    },
+    {
+      service: 'Web Design & Development',
+      role: 'Web Designer',
+      location: 'Bangalore, India',
+    },
+    {
+      service: 'Web Design & Development',
+      role: 'Quality Assurance (QA) Tester',
+      location: 'Bangalore, India',
+    },
+    {
+      service: 'Mobile Application Development',
+      role: 'Mobile App Development Lead',
+      location: 'Bangalore, India',
+    },
+    {
+      service: 'Mobile Application Development',
+      role: 'Android Developer',
+      location: 'Bangalore, India',
+    },
+    {
+      service: 'Mobile Application Development',
       role: 'iOS Developer',
       location: 'Bangalore, India',
     },
     {
-      service: 'Technology',
-      role: 'Full Stack Developer',
+      service: 'Mobile Application Development',
+      role: 'Cross-Platform Developer',
+      location: 'Bangalore, India',
+    },
+    {
+      service: 'Mobile Application Development',
+      role: 'Mobile App QA Tester',
+      location: 'Bangalore, India',
+    },
+    {
+      service: 'Support & Customer Service',
+      role: 'Client Account Manager',
+      location: 'Bangalore, India',
+    },
+    {
+      service: 'Support & Customer Service',
+      role: 'Customer Support Specialist',
+      location: 'Bangalore, India',
+    },
+    {
+      service: 'Support & Customer Service',
+      role: 'Sales Representative',
+      location: 'Bangalore, India',
+    },
+    {
+      service: 'Support & Customer Service',
+      role: 'Social Media Manager',
       location: 'Bangalore, India',
     },
   ]
@@ -200,7 +295,7 @@ const Careersculture = () => {
                   <div className="py-8 toggle-point flex flex-col md:flex-row items-center justify-between gap-8 md:gap-20">
                     <div className="w-full md:w-1/2 flex items-start justify-between">
                       <div className='w-2/5'>{item.service}</div>
-                      <div className='w-1/2 lg:w-2/5 text-right md:text-left'>{item.role}</div>
+                      <div className='w-2/5 text-right md:text-left'>{item.role}</div>
                     </div>
                     <div className="w-full md:w-1/3 xl:w-1/3 flex items-center justify-between">
                       <div>{item.location}</div>
