@@ -10,6 +10,14 @@ import { Link } from 'react-router-dom';
 
 const QuickLinksInside1 = () => {
 
+    const [isVisible, setIsVisible] = useState(false);
+
+    const handleButtonClick = () => {
+        if (!isVisible) {
+            setIsVisible(true);
+        }
+    };
+
     const clients = [
         "Jef Techno", "Infotik", "Bluemail", "Finesoft", "Valleycovers",
         "Capixai", "Shimmer", "Nettango", "Monstrack", "Sky",
@@ -1147,7 +1155,7 @@ const QuickLinksInside1 = () => {
                     </div>
                     <div className=' w-full flex my-20 flex-col items-center gap-20'>
 
-                            <div className='flex flex-col xl:flex-row items-start gap-20 justify-between w-full'>
+                            <div className='flex flex-col xl:flex-row items-start gap-20 xl:gap-12 justify-between w-full'>
                                 {/* <div className='bg-[#6813AA] flex flex-col w-full xl:w-1/2 font-normal items-center justify-evenly py-8 px-8 gap-20 text-white'>
                                     <div className='text-3xl'>WEBINAR</div>
                                     <div className='text-lg text-center'>How Important is brand Labels: A better approach to knowing branding and its value.</div>
@@ -1181,11 +1189,27 @@ const QuickLinksInside1 = () => {
                                 </Link>
                             </div>
 
-                            <div className='flex flex-col xl:flex-row items-start gap-20 xl:gap-12 justify-between'>
-                              
+                            {isVisible && (
+                                <div className='flex flex-col xl:flex-row items-start gap-20 xl:gap-12 justify-between w-full'>
+                                    <Link to="/blogs/the-importance-of-accessible-design" className='flex group flex-col items-start gap-2 w-full xl:w-1/2'>
+                                        <div className='w-full'><img className='w-full grayscale transition duration-500 group-hover:grayscale-0' src="./mainblogimg10.png" alt="Blog10" /></div>
+                                        <div className='text-3xl leading-10 mt-3'>The Importance of Accessible Design</div>
+                                        <div className='text-[#6A13AA] text-sm'>June 24, 2024</div>
+                                    </Link>
+                                    <div className='hidden xl:flex group flex-col items-start opacity-0 gap-2 w-full xl:w-1/2'>
+                                        <div className='w-full'><img className='w-full grayscale transition duration-500 group-hover:grayscale-0' src="./mainblogimg10.png" alt="Blog10" /></div>
+                                        <div className='text-3xl leading-10 mt-3'>The Importance of Accessible Design</div>
+                                        <div className='text-[#6A13AA] text-sm'>June 24, 2024</div>
+                                    </div>
+                                </div>
+                            )}
 
-                            </div>
-
+                            {!isVisible && (
+                                <button onClick={handleButtonClick} className="button self-end mx-auto flex flex-row justify-between px-12 py-2 bg-black leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px] hover:bg-[#7811A5] transition-all duration-300">
+                                    <h1 className='text-base mt-1 '>Learn more</h1>
+                                    <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                                </button>
+                            )}
 
                            
                         </div>
