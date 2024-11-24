@@ -4,6 +4,7 @@ import Footer from '../Components/Footer';
 import { Helmet } from 'react-helmet';
 import axios from "axios";
 import ReCAPTCHA from "react-google-recaptcha";
+import { Link } from 'react-router-dom';
 
 const QuickLinks = () => {
 
@@ -502,8 +503,10 @@ const QuickLinks = () => {
                 <div className='px-6 lg:px-16 pb-[6px]'>
                   <div className='flex items-stretch justify-between h-full'>
                     <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
-                      <div className='py-6'>UI/UX Designing Agency in Bangalore</div>
-                      <div className='w-full h-[1px] opacity-50 bg-white'></div>
+                     <Link to={'/website-designing-agency-in-bangalore'}>
+                     <div className='py-6'>UI/UX Designing Agency in Bangalore</div>
+                     <div className='w-full h-[1px] opacity-50 bg-white'></div>
+                     </Link>
                     </div>
                     <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
                       <div className='py-6'>UI/UX Designing Agency in Pune</div>
@@ -571,7 +574,7 @@ const QuickLinks = () => {
                     </div>
                   </div>
                 </div>
-                <div className='w-5/6 h-[1px] bg-white mt-20 mb-20 ml-auto'></div>
+                <div className='2xl:w-[95%] w-[94%] h-[1px] bg-white mt-20 mb-20 ml-auto'></div>
                 <div className='flex flex-col md:flex-row gap-10 pb-12 items-start justify-between font-normal px-6 lg:px-16'>
                   <div className='text-4xl leading-tight w-full md:w-2/5 2xl:w-1/3'>Website Development Agency in India</div>
                   <div className=' leading-normal w-full md:w-2/5 2xl:w-1/3 mt-2'>We are a Creative Website & Mobile Application, Software Development Agency— We are an award-winning global design agency with 10+ years of industry excellence.</div>
@@ -579,8 +582,10 @@ const QuickLinks = () => {
                 <div className='px-6 lg:px-16'>
                   <div className='flex items-stretch justify-between h-full'>
                     <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
+                      <Link to={'/website-development-agency-in-bangalore'}>
                       <div className='py-6'>Website Development Agency in Bangalore</div>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
+                      </Link>
                     </div>
                     <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
                       <div className='py-6'>Website Development Agency in Pune</div>

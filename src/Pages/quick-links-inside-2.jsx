@@ -684,7 +684,7 @@ const QuickLinksInside2 = () => {
                             <div className="bg-white opacity-50 w-[1px] min-h-full self-stretch hidden lg:block"></div>
                             <div>
                                 <div className='flex flex-col md:flex-row gap-10 pt-20 pb-8 items-start justify-between font-normal px-6 lg:px-16'>
-                                    <div className='text-4xl leading-tight w-full md:w-2/5 2xl:w-1/3'>Best Website Designing Agency In Bangalore. </div>
+                                    <div className='text-4xl leading-tight w-full md:w-2/5 2xl:w-1/3'>Best Website Development Agency In Bangalore. </div>
                                     <div className=' leading-normal w-full md:w-2/5 2xl:w-1/3 mt-2'>Where innovation meets functionality. As a leading website development agency in Bangalore, we specialise in creating custom, scalable, and high-performance websites that help businesses grow and thrive in the digital age.</div>
                                 </div>
                                 <div className='px-6 lg:px-16 pb-[6px]'>
@@ -753,7 +753,7 @@ const QuickLinksInside2 = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='w-5/6 h-[1px] bg-white mt-20 mb-20 ml-auto'></div>
+                                <div className='2xl:w-[95%] w-[94%] h-[1px] bg-white mt-20 mb-20 ml-auto'></div>
                                 <div className='flex flex-col md:flex-row gap-10 pb-12 items-start justify-between font-normal px-6 lg:px-16'>
                                     <div className='text-4xl leading-tight w-full md:w-2/5 2xl:w-1/3'>Here are a few reasons why choose Hudbil !</div>
                                     <div className=' leading-normal w-full md:w-2/5 2xl:w-1/3 mt-2'>
@@ -802,7 +802,7 @@ const QuickLinksInside2 = () => {
 
                                     </div>
                                 </div>
-                                <div className='w-5/6 h-[1px] bg-white ml-auto'></div>
+                                <div className='2xl:w-[95%] w-[94%] h-[1px] bg-white mt-20 ml-auto'></div>
                                 <div className='flex flex-col md:flex-row gap-10 pt-20 pb-8 items-start justify-between font-normal px-6 lg:px-16'>
                                     <div className='text-4xl leading-tight w-full md:w-2/5 2xl:w-1/3'>Our exclusive other services</div>
                                     <div className=' leading-normal w-full md:w-2/5 2xl:w-1/3 mt-2'>Our expert team specializes in custom development that scales with your business, ensuring you stay ahead in the digital world.</div>
