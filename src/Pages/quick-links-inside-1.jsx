@@ -1172,13 +1172,15 @@ const QuickLinksInside1 = () => {
                 </section>
 
 
-                <section className='bg-white px-6 lg:px-16 overflow-hidden w-full lg:w-4/5 2xl:w-[70%] lg:ml-auto items-start py-20'>
+                <section className='bg-white px-6 lg:px-16 overflow-hidden w-full lg:w-4/5 2xl:w-[70%] lg:ml-auto items-start'>
+                  <div className='border-t  py-10'></div>
                     <div className='flex flex-col md:flex-row gap-10 items-start justify-between font-normal'>
                         <div className='text-4xl 2xl:text-5xl'>INSIGHTS</div>
                         <div className='text-2xl leading-tight md:w-1/2'>There’s no point keeping our smarts locked away. Our content
                             hub ‘Insights’ shares the ideas, frameworks and tools that we
                             utilise in our work.</div>
                     </div>
+                    <div className='border-b py-10'></div>
                     <div className=' w-full flex my-20 flex-col items-center gap-20'>
 
                             <div className='flex flex-col xl:flex-row items-start gap-20 xl:gap-12 justify-between w-full'>
