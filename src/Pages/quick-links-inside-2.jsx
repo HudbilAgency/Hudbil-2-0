@@ -8,7 +8,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 import Slider from "react-slick";
 import { Link } from 'react-router-dom';
 
-const QuickLinksInside1 = () => {
+const QuickLinksInside2 = () => {
 
     const [isVisible, setIsVisible] = useState(false);
 
@@ -547,12 +547,13 @@ const QuickLinksInside1 = () => {
                 <section>
                     <div className={`flex flex-col lg:flex-row justify-between ${isScreenTall ? 'h-screen' : 'h-full'}`}>
                         <div className='w-full lg:w-1/2 min-h-full bg-black lg:border-b-[1px] border-opacity-50 border-white flex flex-col pt-36 md:pt-40 pb-20 lg:pt-48 lg:pb-40 items-start justify-center text-white px-6 lg:px-16'>
-                            <div className='text-4xl md:text-[3rem] leading-tight'>Website Designing Agency in Bangalore.</div>
+                            <div className='text-4xl md:text-[3rem] leading-tight'>Website Development
+                                Agency in Bangalore.</div>
                             <div className='mt-10 leading-7'>Our brains opt for emotionally driven habitual or intuitive
                                 decisions over rational deliberation. Strong brands hold sway
                                 over this emotional autopilot. They have persuasive power.</div>
                             <div className='mt-12'>
-                                <button className='border rounded-full py-4 px-16 sm:px-20 text-white bg-purple-800 submit-btn hover:bg-white hover:text-black mt-4'>
+                                <button className='border rounded-full py-4 px-16 sm:px-20 text-white bg-purple-800 hover:bg-white submit-btn hover:text-black mt-4'>
                                     Know More
                                 </button>
                             </div>
@@ -683,8 +684,8 @@ const QuickLinksInside1 = () => {
                             <div className="bg-white opacity-50 w-[1px] min-h-full self-stretch hidden lg:block"></div>
                             <div>
                                 <div className='flex flex-col md:flex-row gap-10 pt-20 pb-8 items-start justify-between font-normal px-6 lg:px-16'>
-                                    <div className='text-4xl leading-tight w-full md:w-2/5 2xl:w-1/3'>Best Website Designing Agency In Bangalore.</div>
-                                    <div className=' leading-normal w-full md:w-2/5 2xl:w-1/3 mt-2'>As the top-rated website designing agency in Bangalore, we bring together a team of skilled designers, developers, and strategists with a mission to create stunning, functional, and user-friendly websites. From small businesses to enterprises, we build sites that align with our clients' goals and vision.</div>
+                                    <div className='text-4xl leading-tight w-full md:w-2/5 2xl:w-1/3'>Best Website Designing Agency In Bangalore. </div>
+                                    <div className=' leading-normal w-full md:w-2/5 2xl:w-1/3 mt-2'>Where innovation meets functionality. As a leading website development agency in Bangalore, we specialise in creating custom, scalable, and high-performance websites that help businesses grow and thrive in the digital age.</div>
                                 </div>
                                 <div className='px-6 lg:px-16 pb-[6px]'>
                                     <div className='flex items-stretch justify-between h-full'>
@@ -692,7 +693,7 @@ const QuickLinksInside1 = () => {
 
                                         </div>
                                         <div className='w-full sm:w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
-                                            <div className='text-2xl'>"Our Website Design Services"</div>
+                                            <div className='text-2xl'>"Our Website Development Services"</div>
                                         </div>
                                     </div>
                                     <div className='flex items-stretch justify-between h-full'>
@@ -700,10 +701,14 @@ const QuickLinksInside1 = () => {
 
                                         </div>
                                         <div className='w-full sm:w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
-                                            <div className='py-4 text-2xl'>1. Custom Website Design</div>
+                                            <div className='py-4 text-2xl'>1. Custom Website Development</div>
                                             <div className='flex gap-3 ml-[5%] text-gray-400'>
                                                 <span>•</span>
-                                                <div>Tailored designs that reflect your brand’s unique identity.</div>
+                                                <div>Tailored solutions to meet your specific business needs and goals.</div>
+                                            </div>
+                                            <div className='flex gap-3 ml-[5%] text-gray-400'>
+                                                <span>•</span>
+                                                <div>Responsive Web Design: Websites that look great and function seamlessly on all devices.</div>
                                             </div>
 
                                         </div>
@@ -717,7 +722,7 @@ const QuickLinksInside1 = () => {
                                             <div className='py-4 text-2xl'>2. E - Commerce Development</div>
                                             <div className='flex gap-3 ml-[5%] text-gray-400'>
                                                 <span>•</span>
-                                                <div>Dynamic and secure online stores to boost your sales.</div>
+                                                <div>Build a powerful online store with robust features to drive sales and conversions.</div>
                                             </div>
                                         </div>
                                     </div>
@@ -727,10 +732,10 @@ const QuickLinksInside1 = () => {
                                             <div className='w-full h-[1px] opacity-50 bg-white'></div> */}
                                         </div>
                                         <div className='w-full sm:w-2/5  2xl:w-1/3 min-h-full flex flex-col justify-between'>
-                                            <div className='py-4 text-2xl'>3. Responsive Web Design</div>
+                                            <div className='py-4 text-2xl'>3. Content Management Systems (CMS)</div>
                                             <div className='flex gap-3 ml-[5%] text-gray-400'>
                                                 <span>•</span>
-                                                <div>Ensuring flawless experiences on mobile , tablet, and desktop</div>
+                                                <div>Easy - to - manage websites with user friendly interfaces and powerful back-end systems.</div>
                                             </div>
                                         </div>
                                     </div>
@@ -740,23 +745,10 @@ const QuickLinksInside1 = () => {
                                             <div className='w-full h-[1px] opacity-50 bg-white'></div> */}
                                         </div>
                                         <div className='w-full sm:w-2/5  2xl:w-1/3 min-h-full flex flex-col justify-between'>
-                                            <div className='py-4 text-2xl'>4. UI/UX Design</div>
+                                            <div className='py-4 text-2xl'>4. Web Application Development</div>
                                             <div className='flex gap-3 ml-[5%] text-gray-400'>
                                                 <span>•</span>
-                                                <div>Focused on providing seamless, user-friendly experiences.</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className='flex items-stretch justify-between h-full'>
-                                        <div className='sm:w-2/5  2xl:w-1/3 min-h-full flex flex-col justify-between'>
-                                            {/* <div className='py-6'>UI/UX Designing Agency in Coimbatore</div>
-                                            <div className='w-full h-[1px] opacity-50 bg-white'></div> */}
-                                        </div>
-                                        <div className='w-full sm:w-2/5  2xl:w-1/3 min-h-full flex flex-col justify-between'>
-                                            <div className='py-4 text-2xl'>5. Web Redesign Services</div>
-                                            <div className='flex gap-3 ml-[5%] text-gray-400'>
-                                                <span>•</span>
-                                                <div>Upgrade outdated websites for a modern and fresh look.</div>
+                                                <div>Build dynamic web apps that improve customer engagement and streamline business processes.</div>
                                             </div>
                                         </div>
                                     </div>
@@ -770,20 +762,30 @@ const QuickLinksInside1 = () => {
 
                                         </div>
                                         <div className=''>
-                                            <div className='pb-4 text-2xl'>Expertise & Experience</div>
+                                            <div className='pb-4 text-2xl'>Expert Team</div>
                                             <div className='flex gap-3 ml-[5%] text-gray-400'>
                                                 <span>•</span>
-                                                <div>Over a decade of success in crafting websites for various industries.</div>
+                                                <div>Skilled developers with extensive experience in building websites for various industries.</div>
                                             </div>
                                             <div className='py-4 text-2xl'>Customer-Centric Approach</div>
                                             <div className='flex gap-3 ml-[5%] text-gray-400'>
                                                 <span>•</span>
-                                                <div>Each project begins by understanding your goals to ensure 100% satisfaction.</div>
+                                                <div>We work closely with you to ensure your vision is brought to life.</div>
                                             </div>
-                                            <div className='py-4 text-2xl'>Proven Track Record</div>
+                                            <div className='py-4 text-2xl'>Timely Delivery</div>
                                             <div className='flex gap-3 ml-[5%] text-gray-400'>
                                                 <span>•</span>
-                                                <div>Hundreds of successful projects and delighted clients.</div>
+                                                <div>We value deadlines and strive to deliver high - quality websites on time.</div>
+                                            </div>
+                                            <div className='py-4 text-2xl'>Scalable Solutions</div>
+                                            <div className='flex gap-3 ml-[5%] text-gray-400'>
+                                                <span>•</span>
+                                                <div>From small business websites to large-scale platforms, our solutions grow with you.</div>
+                                            </div>
+                                            <div className='py-4 text-2xl'>Cutting - Edge</div>
+                                            <div className='flex gap-3 ml-[5%] text-gray-400'>
+                                                <span>•</span>
+                                                <div>We stay ahead of the curve, using the latest web technologies and trends.</div>
                                             </div>
                                             <div className='py-4 text-2xl'>Full-Service Solutions</div>
                                             <div className='flex gap-3 ml-[5%] text-gray-400'>
@@ -803,7 +805,7 @@ const QuickLinksInside1 = () => {
                                 <div className='w-5/6 h-[1px] bg-white ml-auto'></div>
                                 <div className='flex flex-col md:flex-row gap-10 pt-20 pb-8 items-start justify-between font-normal px-6 lg:px-16'>
                                     <div className='text-4xl leading-tight w-full md:w-2/5 2xl:w-1/3'>Our exclusive other services</div>
-                                    <div className=' leading-normal w-full md:w-2/5 2xl:w-1/3 mt-2'>Our toolkit identifies the brand advantage our clients are building vs competitors. We call this Brand Edge.</div>
+                                    <div className=' leading-normal w-full md:w-2/5 2xl:w-1/3 mt-2'>Our expert team specializes in custom development that scales with your business, ensuring you stay ahead in the digital world.</div>
                                 </div>
                                 <div className='px-6 lg:px-14 flex flex-col lg:flex-row items-start justify-between w-full gap-12 lg:gap-0'>
                                     <div className=''></div>
@@ -813,7 +815,7 @@ const QuickLinksInside1 = () => {
                                         <div className="py-10 toggle-point flex flex-col">
                                             <div className="flex items-center justify-between">
                                                 <div className="flex items-center justify-between gap-6">
-                                                    <div className="font-normal text-xl sm:text-3xl  leading-9">Mobile Application Development</div>
+                                                    <div className="font-normal text-xl sm:text-3xl  leading-9">Custom Website Development</div>
                                                 </div>
                                                 <div onClick={() => toggleDropdown(0)} className="cursor-pointer">
                                                     <svg
@@ -832,14 +834,27 @@ const QuickLinksInside1 = () => {
                                                 </div>
                                             </div>
                                             <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[0] ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                                <div className="lg:text-lg pt-10">Based in Bangalore, we specialize in creating visually appealing and user-centered mobile application interfaces that boost engagement and user retention. Our team of designers and UX strategists combines creativity with analytics to deliver exceptional app experiences for iOS and Android.</div>
+                                                <div className="lg:text-lg pt-10">
+                                                    <div className='flex gap-2'>
+                                                        <span>•</span>
+                                                        <h1>Tailored Solutions: Build a website that meets your specific business needs with custom features and designs.</h1>
+                                                    </div>
+                                                    <div className='flex gap-2'>
+                                                        <span>•</span>
+                                                        <h1>Scalable Architecture: Create a website that grows with your business, ensuring long-term success.</h1>
+                                                    </div>
+                                                    <div className='flex gap-2'>
+                                                        <span>•</span>
+                                                        <h1>Cross-Platform Compatibility: Ensure seamless user experiences across all devices and platforms.</h1>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                                         <div className="py-10 toggle-point flex flex-col">
                                             <div className="flex items-center justify-between">
                                                 <div className="flex items-center justify-between gap-6">
-                                                    <div className="font-normal text-xl sm:text-3xl leading-9">Logo Design</div>
+                                                    <div className="font-normal text-xl sm:text-3xl leading-9">E-commerce Development</div>
                                                 </div>
                                                 <div onClick={() => toggleDropdown(1)} className="cursor-pointer">
                                                     <svg
@@ -858,14 +873,27 @@ const QuickLinksInside1 = () => {
                                                 </div>
                                             </div>
                                             <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[1] ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                                <div className="lg:text-lg pt-10">Based in Bangalore, we specialise in crafting memorable logos that embody a brand's identity and values. With a team of experienced designers, we work with businesses of all sizes to create logos that leave a lasting impression, whether for startups, established brands, or personal projects.</div>
+                                                <div className="lg:text-lg pt-10">
+                                                    <div className='flex gap-2'>
+                                                        <span>•</span>
+                                                        <h1>Custom Online Stores: Develop fully functional, secure e-commerce platforms with integrated payment gateways</h1>
+                                                    </div>
+                                                    <div className='flex gap-2'>
+                                                        <span>•</span>
+                                                        <h1>Product Management: Easy-to-manage product catalogs, inventory systems, and pricing models.</h1>
+                                                    </div>
+                                                    <div className='flex gap-2'>
+                                                        <span>•</span>
+                                                        <h1>Advanced E-Commerce Features: Custom functionalities like subscriptions, product recommendations, and customer reviews.</h1>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                                         <div className="py-10 toggle-point flex flex-col">
                                             <div className="flex items-center justify-between">
                                                 <div className="flex items-center justify-between gap-6">
-                                                    <div className="font-normal text-xl sm:text-3xl leading-9">Brochure Design</div>
+                                                    <div className="font-normal text-xl sm:text-3xl leading-9">Web Application Development </div>
                                                 </div>
                                                 <div onClick={() => toggleDropdown(2)} className="cursor-pointer">
                                                     <svg
@@ -884,14 +912,27 @@ const QuickLinksInside1 = () => {
                                                 </div>
                                             </div>
                                             <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[2] ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                                <div className="lg:text-lg pt-10">We specialise in creating impactful brochure designs that help businesses communicate their message effectively. Located in Bangalore, our team combines creativity with strategic design to produce brochures that are not only visually appealing but also align with your brand's goals. Whether for corporate events, marketing materials, or product catalogs, our brochures leave a lasting impression.</div>
+                                                <div className="lg:text-lg pt-10">
+                                                    <div className='flex gap-2'>
+                                                        <span>•</span>
+                                                        <h1>Custom Web Apps: Design and develop dynamic, high-performance web applications that enhance business operations.</h1>
+                                                    </div>
+                                                    <div className='flex gap-2'>
+                                                        <span>•</span>
+                                                        <h1>Enterprise Solutions: Build large-scale, enterprise-level applications to manage workflows, data, and communication.</h1>
+                                                    </div>
+                                                    <div className='flex gap-2'>
+                                                        <span>•</span>
+                                                        <h1>API Integration: Seamlessly integrate third-party services and data sources into your application.</h1>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                                         <div className="py-10 toggle-point flex flex-col">
                                             <div className="flex items-center justify-between">
                                                 <div className="flex items-center justify-between gap-6">
-                                                    <div className="font-normal text-xl sm:text-3xl leading-9">Web Application Design</div>
+                                                    <div className="font-normal text-xl sm:text-3xl leading-9">Content Management System</div>
                                                 </div>
                                                 <div onClick={() => toggleDropdown(3)} className="cursor-pointer">
                                                     <svg
@@ -910,14 +951,26 @@ const QuickLinksInside1 = () => {
                                                 </div>
                                             </div>
                                             <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[3] ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                                <div className="text-xl pt-10">Located in Bangalore, we specialize in designing high-quality web applications that combine functionality with an exceptional user experience. Our team of UI/UX experts, designers, and strategists work collaboratively to develop web apps that are not only visually appealing but also align with your business goals and deliver an engaging user experience.</div>
-                                            </div>
+                                                <div className="lg:text-lg pt-10">
+                                                    <div className='flex gap-2'>
+                                                        <span>•</span>
+                                                        <h1>User-Friendly CMS: Build websites with flexible and intuitive content management systems (WordPress, Joomla, Drupal, etc.).</h1>
+                                                    </div>
+                                                    <div className='flex gap-2'>
+                                                        <span>•</span>
+                                                        <h1>Customizable Features: Tailor the CMS to meet your business requirements for content publishing and user management.</h1>
+                                                    </div>
+                                                    <div className='flex gap-2'>
+                                                        <span>•</span>
+                                                        <h1>Content Migration: Migrate your existing content into new, secure platforms with minimal downtime.</h1>
+                                                    </div>
+                                                </div>                                            </div>
                                         </div>
                                         <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                                         <div className="py-10 toggle-point flex flex-col">
                                             <div className="flex items-center justify-between">
                                                 <div className="flex items-center justify-between gap-6">
-                                                    <div className="font-normal text-xl sm:text-3xl leading-9">Website Development</div>
+                                                    <div className="font-normal text-xl sm:text-3xl leading-9">Mobile App Development</div>
                                                 </div>
                                                 <div onClick={() => toggleDropdown(4)} className="cursor-pointer">
                                                     <svg
@@ -936,14 +989,27 @@ const QuickLinksInside1 = () => {
                                                 </div>
                                             </div>
                                             <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[4] ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                                <div className="text-xl pt-10">Based in Bangalore, we specialise in crafting professional, high-performance websites that engage users and achieve your business objectives. Our team of developers and designers are dedicated to delivering websites that are both visually stunning and highly functional, ensuring a seamless experience for users on any device.</div>
+                                                <div className="lg:text-lg pt-10">
+                                                    <div className='flex gap-2'>
+                                                        <span>•</span>
+                                                        <h1>Native & Cross-Platform Apps: Develop high-performance mobile apps for iOS and Android, or opt for a cross-platform approach to reach a broader audience.</h1>
+                                                    </div>
+                                                    <div className='flex gap-2'>
+                                                        <span>•</span>
+                                                        <h1>App Integration: Integrate mobile apps with your website, CRM, and other tools for seamless functionality.</h1>
+                                                    </div>
+                                                    <div className='flex gap-2'>
+                                                        <span>•</span>
+                                                        <h1>App Maintenance & Updates: Ongoing support for bug fixes, updates, and feature enhancements.</h1>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                                         <div className="py-10 toggle-point flex flex-col">
                                             <div className="flex items-center justify-between">
                                                 <div className="flex items-center justify-between gap-6">
-                                                    <div className="font-normal text-xl sm:text-3xl leading-9">Mobile Application Development</div>
+                                                    <div className="font-normal text-xl sm:text-3xl leading-9">Website Redesign & Rebranding</div>
                                                 </div>
                                                 <div onClick={() => toggleDropdown(5)} className="cursor-pointer">
                                                     <svg
@@ -962,8 +1028,20 @@ const QuickLinksInside1 = () => {
                                                 </div>
                                             </div>
                                             <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[5] ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                                <div className="text-xl pt-10">Based in Bangalore, we specialize in end-to-end mobile application development that transforms your ideas into feature-rich, high-performance apps. Our team of developers, designers, and strategists create apps tailored to your business needs, whether for startups or established brands, across both iOS and Android platforms.</div>
-                                            </div>
+                                                <div className="lg:text-lg pt-10">
+                                                    <div className='flex gap-2'>
+                                                        <span>•</span>
+                                                        <h1>UX/UI Overhaul: Revamp your website’s design and functionality to improve user engagement and conversion rates.</h1>
+                                                    </div>
+                                                    <div className='flex gap-2'>
+                                                        <span>•</span>
+                                                        <h1>Branding Alignment: Ensure your website reflects your brand identity with a modern, cohesive design.</h1>
+                                                    </div>
+                                                    <div className='flex gap-2'>
+                                                        <span>•</span>
+                                                        <h1>SEO Recovery: Improve your site’s SEO performance while enhancing user experience.</h1>
+                                                    </div>
+                                                </div>                                            </div>
                                         </div>
                                         <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                                         <div className="py-10 toggle-point flex flex-col">
@@ -1015,15 +1093,14 @@ const QuickLinksInside1 = () => {
                                         className="self-center px-6 w-full md:w-[70%] text-[25px]  mt-10 tracking-normal text-center text-white leading-[50px] max-md:mt-10 max-md:max-w-full max-md:text-3xl max-md:leading-snug"
                                     >
                                         <h1 className='text-3xl'>
-                                            Priya M
+                                            Anita R
                                         </h1>
-                                        <span className='text-2xl'>“Transformative Design and Seamless Experience”</span>
+                                        <span className='text-2xl'>“Founder of GreenLeaf Organics”</span>
                                     </div>
                                     <div
                                         ref={fadeInRef}
                                         className='text-base 2xl:text-xl self-center px-6 w-full md:w-[65%] 2xl:w-[60%]  mt-10 text-center text-white max-md:mt-10 max-md:max-w-full'>
-                                        "We approached Hudbil Private Limited to revamp our outdated website, and they delivered beyond expectations. The design is modern, intuitive, and perfectly represents our brand. Our customers love the new interface, and we’ve seen a noticeable boost in engagement. Highly recommend their services!"
-                                    </div>
+                                        "Working with Hudbil Private Limited was an absolute pleasure! They listened to our needs and delivered a beautifully designed website that not only looks amazing but is also easy to navigate. The team’s expertise in web development made the entire process smooth, and we’ve seen a significant improvement in user engagement."                                    </div>
                                     <Link to="/contact-us" className="mt-24">
                                         <button className="button self-end flex flex-row justify-between hover:text-black px-14 py-2 border mx-auto leading-none  text-white gap-8 rounded-[1000px] max-md:px-5  hover:bg-white transition-all duration-300">
                                             <h1 className='text-xl mt-1 '>Contact Us</h1>
@@ -1181,64 +1258,64 @@ const QuickLinksInside1 = () => {
                     </div>
                     <div className=' w-full flex my-20 flex-col items-center gap-20'>
 
-                            <div className='flex flex-col xl:flex-row items-start gap-20 xl:gap-12 justify-between w-full'>
-                                {/* <div className='bg-[#6813AA] flex flex-col w-full xl:w-1/2 font-normal items-center justify-evenly py-8 px-8 gap-20 text-white'>
+                        <div className='flex flex-col xl:flex-row items-start gap-20 xl:gap-12 justify-between w-full'>
+                            {/* <div className='bg-[#6813AA] flex flex-col w-full xl:w-1/2 font-normal items-center justify-evenly py-8 px-8 gap-20 text-white'>
                                     <div className='text-3xl'>WEBINAR</div>
                                     <div className='text-lg text-center'>How Important is brand Labels: A better approach to knowing branding and its value.</div>
                                     <a href="/coming-soon" className='w-full text-center border rounded-full py-2 mb-3 border-white'>Coming Soon</a>
                                 </div> */}
 
-                                <Link to="/blogs/the-ultimate-guide-for-ux-research" className='flex group flex-col items-start gap-2 w-full xl:w-1/2'>
-                                    <div className='w-full'><img className='w-full grayscale transition duration-500 group-hover:grayscale-0' src="./mainblogimg5.png" alt="Blog1" /></div>
-                                    <div className='text-3xl leading-10 mt-3 w-full'>The Ultimate Guide for UX Research.</div>
-                                    <div className='text-[#6A13AA] text-sm'>August 13, 2024</div>
-                                </Link>
-                                <Link to="/blogs/the-evolution-of-the-graphic-design" className='flex group flex-col items-start gap-2 w-full xl:w-1/2'>
-                                    <div className='w-full'><img className='w-full grayscale transition duration-500 group-hover:grayscale-0' src="./mainblogimg6.png" alt="Blog2" /></div>
-                                    <div className='text-3xl leading-10 mt-3'>The Evolution Of The Graphic Design.</div>
-                                    <div className='text-[#6A13AA] text-sm'>August 13, 2024</div>
-                                </Link>
-                            </div>
-
-                            <div className='flex flex-col xl:flex-row items-start gap-20 xl:gap-12 justify-between w-full'>
-                               
-
-                                <Link to="/blogs/brands-identity-design-aspects-in-brief" className='flex group flex-col items-start gap-2 w-full xl:w-1/2'>
-                                    <div className='w-full'><img className='w-full grayscale transition duration-500 group-hover:grayscale-0' src="./mainblogimg7.png" alt="Blog3" /></div>
-                                    <div className='text-3xl leading-10 mt-3'>Brand’s identity design aspects in Brief.</div>
-                                    <div className='text-[#6A13AA] text-sm'>August 6, 2024</div>
-                                </Link>
-                                <Link to="/blogs/business-firms-suffer-to-find-right-design-agency" className='flex group flex-col items-start gap-2 w-full xl:w-1/2'>
-                                    <div className='w-full'><img className='w-full grayscale transition duration-500 group-hover:grayscale-0' src="./mainblogimg8.png" alt="Blog4" /></div>
-                                    <div className='text-3xl leading-10 mt-3'>Business Firms Suffer Because of Not Finding right B2B design Agency.</div>
-                                    <div className='text-[#6A13AA] text-sm'>July 4, 2024</div>
-                                </Link>
-                            </div>
-
-                            {isVisible && (
-                                <div className='flex flex-col xl:flex-row items-start gap-20 xl:gap-12 justify-between w-full'>
-                                    <Link to="/blogs/the-importance-of-accessible-design" className='flex group flex-col items-start gap-2 w-full xl:w-1/2'>
-                                        <div className='w-full'><img className='w-full grayscale transition duration-500 group-hover:grayscale-0' src="./mainblogimg10.png" alt="Blog10" /></div>
-                                        <div className='text-3xl leading-10 mt-3'>The Importance of Accessible Design</div>
-                                        <div className='text-[#6A13AA] text-sm'>June 24, 2024</div>
-                                    </Link>
-                                    <div className='hidden xl:flex group flex-col items-start opacity-0 gap-2 w-full xl:w-1/2'>
-                                        <div className='w-full'><img className='w-full grayscale transition duration-500 group-hover:grayscale-0' src="./mainblogimg10.png" alt="Blog10" /></div>
-                                        <div className='text-3xl leading-10 mt-3'>The Importance of Accessible Design</div>
-                                        <div className='text-[#6A13AA] text-sm'>June 24, 2024</div>
-                                    </div>
-                                </div>
-                            )}
-
-                            {!isVisible && (
-                                <button onClick={handleButtonClick} className="button self-end mx-auto flex flex-row justify-between px-12 py-2 bg-black leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px] hover:bg-[#7811A5] transition-all duration-300">
-                                    <h1 className='text-base mt-1 '>Learn more</h1>
-                                    <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
-                                </button>
-                            )}
-
-                           
+                            <Link to="/blogs/the-ultimate-guide-for-ux-research" className='flex group flex-col items-start gap-2 w-full xl:w-1/2'>
+                                <div className='w-full'><img className='w-full grayscale transition duration-500 group-hover:grayscale-0' src="./mainblogimg5.png" alt="Blog1" /></div>
+                                <div className='text-3xl leading-10 mt-3 w-full'>The Ultimate Guide for UX Research.</div>
+                                <div className='text-[#6A13AA] text-sm'>August 13, 2024</div>
+                            </Link>
+                            <Link to="/blogs/the-evolution-of-the-graphic-design" className='flex group flex-col items-start gap-2 w-full xl:w-1/2'>
+                                <div className='w-full'><img className='w-full grayscale transition duration-500 group-hover:grayscale-0' src="./mainblogimg6.png" alt="Blog2" /></div>
+                                <div className='text-3xl leading-10 mt-3'>The Evolution Of The Graphic Design.</div>
+                                <div className='text-[#6A13AA] text-sm'>August 13, 2024</div>
+                            </Link>
                         </div>
+
+                        <div className='flex flex-col xl:flex-row items-start gap-20 xl:gap-12 justify-between w-full'>
+
+
+                            <Link to="/blogs/brands-identity-design-aspects-in-brief" className='flex group flex-col items-start gap-2 w-full xl:w-1/2'>
+                                <div className='w-full'><img className='w-full grayscale transition duration-500 group-hover:grayscale-0' src="./mainblogimg7.png" alt="Blog3" /></div>
+                                <div className='text-3xl leading-10 mt-3'>Brand’s identity design aspects in Brief.</div>
+                                <div className='text-[#6A13AA] text-sm'>August 6, 2024</div>
+                            </Link>
+                            <Link to="/blogs/business-firms-suffer-to-find-right-design-agency" className='flex group flex-col items-start gap-2 w-full xl:w-1/2'>
+                                <div className='w-full'><img className='w-full grayscale transition duration-500 group-hover:grayscale-0' src="./mainblogimg8.png" alt="Blog4" /></div>
+                                <div className='text-3xl leading-10 mt-3'>Business Firms Suffer Because of Not Finding right B2B design Agency.</div>
+                                <div className='text-[#6A13AA] text-sm'>July 4, 2024</div>
+                            </Link>
+                        </div>
+
+                        {isVisible && (
+                            <div className='flex flex-col xl:flex-row items-start gap-20 xl:gap-12 justify-between w-full'>
+                                <Link to="/blogs/the-importance-of-accessible-design" className='flex group flex-col items-start gap-2 w-full xl:w-1/2'>
+                                    <div className='w-full'><img className='w-full grayscale transition duration-500 group-hover:grayscale-0' src="./mainblogimg10.png" alt="Blog10" /></div>
+                                    <div className='text-3xl leading-10 mt-3'>The Importance of Accessible Design</div>
+                                    <div className='text-[#6A13AA] text-sm'>June 24, 2024</div>
+                                </Link>
+                                <div className='hidden xl:flex group flex-col items-start opacity-0 gap-2 w-full xl:w-1/2'>
+                                    <div className='w-full'><img className='w-full grayscale transition duration-500 group-hover:grayscale-0' src="./mainblogimg10.png" alt="Blog10" /></div>
+                                    <div className='text-3xl leading-10 mt-3'>The Importance of Accessible Design</div>
+                                    <div className='text-[#6A13AA] text-sm'>June 24, 2024</div>
+                                </div>
+                            </div>
+                        )}
+
+                        {!isVisible && (
+                            <button onClick={handleButtonClick} className="button self-end mx-auto flex flex-row justify-between px-12 py-2 bg-black leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px] hover:bg-[#7811A5] transition-all duration-300">
+                                <h1 className='text-base mt-1 '>Learn more</h1>
+                                <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                            </button>
+                        )}
+
+
+                    </div>
                 </section>
             </main>
             <Footer />
@@ -1246,4 +1323,4 @@ const QuickLinksInside1 = () => {
     );
 };
 
-export default QuickLinksInside1;
+export default QuickLinksInside2;
