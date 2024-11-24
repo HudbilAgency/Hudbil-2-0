@@ -40,6 +40,8 @@ import CookiePolicy from '../Pages/cookie-policy';
 import QuickLinks from '../Pages/quick-links';
 import Faq from '../Pages/FAQ';
 import Locations from '../Pages/location-page';
+import QuickLinksInside1 from '../Pages/quick-links-inside-1';
+import QuickLinksInside2 from '../Pages/quick-links-inside-2';
 
 const Routers = () => {
   return (
@@ -84,6 +86,8 @@ const Routers = () => {
         <Route path="/coming-soon" element={<ComingSoon />} />
         <Route path="/client-support" element={<ClientSupport />} />
         <Route path="/quick-links" element={<QuickLinks />} />
+        <Route path="/website-designing-agency-in-bangalore" element={<QuickLinksInside1 />} />
+        <Route path="/website-development-agency-in-bangalore" element={<QuickLinksInside2 />} />
         <Route path="/lo" element={<Locations />} />
       </Routes>
     </>
