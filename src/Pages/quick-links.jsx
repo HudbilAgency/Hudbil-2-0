@@ -468,7 +468,7 @@ const QuickLinks = () => {
                       Subscribe to Hud to receive our latest thinking every month.
                     </label>
                   </div>
-                  <div className='mt-16 w-fit'>
+                  <div className='mt-12 w-fit'>
                     <ReCAPTCHA
                       sitekey="6LfWPG8qAAAAAFBRLkUr505LpNEDOL_6p5dd8SLF"
                       onChange={onRecaptchaChange}
@@ -503,73 +503,71 @@ const QuickLinks = () => {
                 <div className='px-6 lg:px-16 pb-[6px]'>
                   <div className='flex items-stretch justify-between h-full'>
                     <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
-                     <Link to={'/website-designing-agency-in-bangalore'}>
-                     <div className='py-6'>UI/UX Designing Agency in Bangalore</div>
-                     <div className='w-full h-[1px] opacity-50 bg-white'></div>
-                     </Link>
+                      <a href="/quick-links/website-designing-agency-in-bangalore" className='my-6 hover:text-gray-500 transition-all duration-300 w-fit'>UI/UX Designing Agency in Bangalore</a>
+                      <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
                     <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
-                      <div className='py-6'>UI/UX Designing Agency in Pune</div>
+                      <a href="/quick-links/website-designing-agency-in-pune" className='my-6 hover:text-gray-500 transition-all duration-300 w-fit'>UI/UX Designing Agency in Pune</a>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
                   </div>
                   <div className='flex items-stretch justify-between h-full'>
                     <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
-                      <div className='py-6'>UI/UX Designing Agency in Hyderabad</div>
+                      <a href="/quick-links/website-designing-agency-in-hyderabad" className='my-6 hover:text-gray-500 transition-all duration-300 w-fit'>UI/UX Designing Agency in Hyderabad</a>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
                     <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
-                      <div className='py-6'>UI/UX Designing Agency in Kolkata</div>
-                      <div className='w-full h-[1px] opacity-50 bg-white'></div>
-                    </div>
-                  </div>
-                  <div className='flex items-stretch justify-between h-full'>
-                    <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
-                      <div className='py-6'>UI/UX Designing Agency in Ahmedabad</div>
-                      <div className='w-full h-[1px] opacity-50 bg-white'></div>
-                    </div>
-                    <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
-                      <div className='py-6'>UI/UX Designing Agency in Chennai</div>
+                      <a href="/quick-links/website-designing-agency-in-kolkata" className='my-6 hover:text-gray-500 transition-all duration-300 w-fit'>UI/UX Designing Agency in Kolkata</a>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
                   </div>
                   <div className='flex items-stretch justify-between h-full'>
                     <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
-                      <div className='py-6'>UI/UX Designing Agency in Jaipur</div>
+                      <a href="/quick-links/website-designing-agency-in-ahmedabad" className='my-6 hover:text-gray-500 transition-all duration-300 w-fit'>UI/UX Designing Agency in Ahmedabad</a>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
                     <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
-                      <div className='py-6'>UI/UX Designing Agency in Surat</div>
-                      <div className='w-full h-[1px] opacity-50 bg-white'></div>
-                    </div>
-                  </div>
-                  <div className='flex items-stretch justify-between h-full'>
-                    <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
-                      <div className='py-6'>UI/UX Designing Agency in Bhopal</div>
-                      <div className='w-full h-[1px] opacity-50 bg-white'></div>
-                    </div>
-                    <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
-                      <div className='py-6'>UI/UX Designing Agency in Kochi</div>
+                      <a href="/quick-links/website-designing-agency-in-chennai" className='my-6 hover:text-gray-500 transition-all duration-300 w-fit'>UI/UX Designing Agency in Chennai</a>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
                   </div>
                   <div className='flex items-stretch justify-between h-full'>
                     <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
-                      <div className='py-6'>UI/UX Designing Agency in Coimbatore</div>
+                      <a href="/quick-links/website-designing-agency-in-jaipur" className='my-6 hover:text-gray-500 transition-all duration-300 w-fit'>UI/UX Designing Agency in Jaipur</a>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
                     <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
-                      <div className='py-6'>UI/UX Designing Agency in Mumbai</div>
+                      <a href="/quick-links/website-designing-agency-in-surat" className='my-6 hover:text-gray-500 transition-all duration-300 w-fit'>UI/UX Designing Agency in Surat</a>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
                   </div>
                   <div className='flex items-stretch justify-between h-full'>
                     <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
-                      <div className='py-6'>UI/UX Designing Agency in Patna</div>
+                      <a href="/quick-links/website-designing-agency-in-bhopal" className='my-6 hover:text-gray-500 transition-all duration-300 w-fit'>UI/UX Designing Agency in Bhopal</a>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
                     <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
-                      <div className='py-6'>UI/UX Designing Agency in Delhi</div>
+                      <a href="/quick-links/website-designing-agency-in-kochi" className='my-6 hover:text-gray-500 transition-all duration-300 w-fit'>UI/UX Designing Agency in Kochi</a>
+                      <div className='w-full h-[1px] opacity-50 bg-white'></div>
+                    </div>
+                  </div>
+                  <div className='flex items-stretch justify-between h-full'>
+                    <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
+                      <a href="/quick-links/website-designing-agency-in-coimbatore" className='my-6 hover:text-gray-500 transition-all duration-300 w-fit'>UI/UX Designing Agency in Coimbatore</a>
+                      <div className='w-full h-[1px] opacity-50 bg-white'></div>
+                    </div>
+                    <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
+                      <a href="/quick-links/website-designing-agency-in-mumbai" className='my-6 hover:text-gray-500 transition-all duration-300 w-fit'>UI/UX Designing Agency in Mumbai</a>
+                      <div className='w-full h-[1px] opacity-50 bg-white'></div>
+                    </div>
+                  </div>
+                  <div className='flex items-stretch justify-between h-full'>
+                    <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
+                      <a href="/quick-links/website-designing-agency-in-patna" className='my-6 hover:text-gray-500 transition-all duration-300 w-fit'>UI/UX Designing Agency in Patna</a>
+                      <div className='w-full h-[1px] opacity-50 bg-white'></div>
+                    </div>
+                    <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
+                      <a href="/quick-links/website-designing-agency-in-delhi" className='my-6 hover:text-gray-500 transition-all duration-300 w-fit'>UI/UX Designing Agency in Delhi</a>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
                   </div>
@@ -582,73 +580,71 @@ const QuickLinks = () => {
                 <div className='px-6 lg:px-16'>
                   <div className='flex items-stretch justify-between h-full'>
                     <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
-                      <Link to={'/website-development-agency-in-bangalore'}>
-                      <div className='py-6'>Website Development Agency in Bangalore</div>
+                      <a href="/quick-links/website-development-agency-in-bangalore" className='my-6 hover:text-gray-500 transition-all duration-300 w-fit'>Website Development Agency in Bangalore</a>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
-                      </Link>
                     </div>
                     <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
-                      <div className='py-6'>Website Development Agency in Pune</div>
+                      <a href="/quick-links/website-development-agency-in-pune" className='my-6 hover:text-gray-500 transition-all duration-300 w-fit'>Website Development Agency in Pune</a>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
                   </div>
                   <div className='flex items-stretch justify-between h-full'>
                     <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
-                      <div className='py-6'>Website Development Agency in Hyderabad</div>
+                      <a href="/quick-links/website-development-agency-in-hyderabad" className='my-6 hover:text-gray-500 transition-all duration-300 w-fit'>Website Development Agency in Hyderabad</a>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
                     <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
-                      <div className='py-6'>Website Development Agency in Kolkata</div>
-                      <div className='w-full h-[1px] opacity-50 bg-white'></div>
-                    </div>
-                  </div>
-                  <div className='flex items-stretch justify-between h-full'>
-                    <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
-                      <div className='py-6'>Website Development Agency in Ahmedabad</div>
-                      <div className='w-full h-[1px] opacity-50 bg-white'></div>
-                    </div>
-                    <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
-                      <div className='py-6'>Website Development Agency in Chennai</div>
+                      <a href="/quick-links/website-development-agency-in-kolkata" className='my-6 hover:text-gray-500 transition-all duration-300 w-fit'>Website Development Agency in Kolkata</a>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
                   </div>
                   <div className='flex items-stretch justify-between h-full'>
                     <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
-                      <div className='py-6'>Website Development Agency in Jaipur</div>
+                      <a href="/quick-links/website-development-agency-in-ahmedabad" className='my-6 hover:text-gray-500 transition-all duration-300 w-fit'>Website Development Agency in Ahmedabad</a>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
                     <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
-                      <div className='py-6'>Website Development Agency in Surat</div>
-                      <div className='w-full h-[1px] opacity-50 bg-white'></div>
-                    </div>
-                  </div>
-                  <div className='flex items-stretch justify-between h-full'>
-                    <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
-                      <div className='py-6'>Website Development Agency in Bhopal</div>
-                      <div className='w-full h-[1px] opacity-50 bg-white'></div>
-                    </div>
-                    <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
-                      <div className='py-6'>Website Development Agency in Kochi</div>
+                      <a href="/quick-links/website-development-agency-in-chennai" className='my-6 hover:text-gray-500 transition-all duration-300 w-fit'>Website Development Agency in Chennai</a>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
                   </div>
                   <div className='flex items-stretch justify-between h-full'>
                     <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
-                      <div className='py-6'>Website Development Agency in Coimbatore</div>
+                      <a href="/quick-links/website-development-agency-in-jaipur" className='my-6 hover:text-gray-500 transition-all duration-300 w-fit'>Website Development Agency in Jaipur</a>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
                     <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
-                      <div className='py-6'>Website Development Agency in Mumbai</div>
+                      <a href="/quick-links/website-development-agency-in-surat" className='my-6 hover:text-gray-500 transition-all duration-300 w-fit'>Website Development Agency in Surat</a>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
                   </div>
                   <div className='flex items-stretch justify-between h-full'>
                     <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
-                      <div className='py-6'>Website Development Agency in Patna</div>
+                      <a href="/quick-links/website-development-agency-in-bhopal" className='my-6 hover:text-gray-500 transition-all duration-300 w-fit'>Website Development Agency in Bhopal</a>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
                     <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
-                      <div className='py-6'>Website Development Agency in Delhi</div>
+                      <a href="/quick-links/website-development-agency-in-kochi" className='my-6 hover:text-gray-500 transition-all duration-300 w-fit'>Website Development Agency in Kochi</a>
+                      <div className='w-full h-[1px] opacity-50 bg-white'></div>
+                    </div>
+                  </div>
+                  <div className='flex items-stretch justify-between h-full'>
+                    <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
+                      <a href="/quick-links/website-development-agency-in-coimbatore" className='my-6 hover:text-gray-500 transition-all duration-300 w-fit'>Website Development Agency in Coimbatore</a>
+                      <div className='w-full h-[1px] opacity-50 bg-white'></div>
+                    </div>
+                    <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
+                      <a href="/quick-links/website-development-agency-in-mumbai" className='my-6 hover:text-gray-500 transition-all duration-300 w-fit'>Website Development Agency in Mumbai</a>
+                      <div className='w-full h-[1px] opacity-50 bg-white'></div>
+                    </div>
+                  </div>
+                  <div className='flex items-stretch justify-between h-full'>
+                    <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
+                      <a href="/quick-links/website-development-agency-in-patna" className='my-6 hover:text-gray-500 transition-all duration-300 w-fit'>Website Development Agency in Patna</a>
+                      <div className='w-full h-[1px] opacity-50 bg-white'></div>
+                    </div>
+                    <div className='w-2/5 2xl:w-1/3 min-h-full flex flex-col justify-between'>
+                      <a href="/quick-links/website-development-agency-in-delhi" className='my-6 hover:text-gray-500 transition-all duration-300 w-fit'>Website Development Agency in Delhi</a>
                       <div className='w-full h-[1px] opacity-50 bg-white'></div>
                     </div>
                   </div>
@@ -657,7 +653,6 @@ const QuickLinks = () => {
             </div>
           </div>
         </section>
-
       </main>
       <Footer />
     </>
