@@ -773,7 +773,7 @@ const WebDev1 = () => {
                                             <div className="py-10 toggle-point flex flex-col">
                                                 <div className="flex items-center gap-6 justify-between">
                                                     <div className="flex items-center justify-between gap-6">
-                                                        <div className="font-normal text-xl md:text-3xl  leading-9">Custom Website Development</div>
+                                                        <div className="font-normal text-2xl md:text-3xl  leading-9">Custom Website Development</div>
                                                     </div>
                                                     <div onClick={() => toggleDropdown(0)} className="cursor-pointer">
                                                         <svg
@@ -801,7 +801,7 @@ const WebDev1 = () => {
                                             <div className="py-10 toggle-point flex flex-col">
                                                 <div className="flex items-center gap-6 justify-between">
                                                     <div className="flex items-center justify-between gap-6">
-                                                        <div className="font-normal text-xl md:text-3xl leading-9">E-commerce Development</div>
+                                                        <div className="font-normal text-2xl md:text-3xl leading-9">E-commerce Development</div>
                                                     </div>
                                                     <div onClick={() => toggleDropdown(1)} className="cursor-pointer">
                                                         <svg
@@ -829,7 +829,7 @@ const WebDev1 = () => {
                                             <div className="py-10 toggle-point flex flex-col">
                                                 <div className="flex items-center gap-6 justify-between">
                                                     <div className="flex items-center justify-between gap-6">
-                                                        <div className="font-normal text-xl md:text-3xl leading-9">Web Application Development </div>
+                                                        <div className="font-normal text-2xl md:text-3xl leading-9">Web Application Development </div>
                                                     </div>
                                                     <div onClick={() => toggleDropdown(2)} className="cursor-pointer">
                                                         <svg
@@ -857,7 +857,7 @@ const WebDev1 = () => {
                                             <div className="py-10 toggle-point flex flex-col">
                                                 <div className="flex items-center gap-6 justify-between">
                                                     <div className="flex items-center justify-between gap-6">
-                                                        <div className="font-normal text-xl md:text-3xl leading-9">Content Management System </div>
+                                                        <div className="font-normal text-2xl md:text-3xl leading-9">Content Management System </div>
                                                     </div>
                                                     <div onClick={() => toggleDropdown(3)} className="cursor-pointer">
                                                         <svg
@@ -885,7 +885,7 @@ const WebDev1 = () => {
                                             <div className="py-10 toggle-point flex flex-col">
                                                 <div className="flex items-center gap-6 justify-between">
                                                     <div className="flex items-center justify-between gap-6">
-                                                        <div className="font-normal text-xl md:text-3xl leading-9">Mobile App Development  </div>
+                                                        <div className="font-normal text-2xl md:text-3xl leading-9">Mobile App Development  </div>
                                                     </div>
                                                     <div onClick={() => toggleDropdown(4)} className="cursor-pointer">
                                                         <svg
@@ -913,7 +913,7 @@ const WebDev1 = () => {
                                             <div className="py-10 toggle-point flex flex-col">
                                                 <div className="flex items-center gap-6 justify-between">
                                                     <div className="flex items-center justify-between gap-6">
-                                                        <div className="font-normal text-xl md:text-3xl leading-9">Website Redesign & Rebranding</div>
+                                                        <div className="font-normal text-2xl md:text-3xl leading-9">Website Redesign & Rebranding</div>
                                                     </div>
                                                     <div onClick={() => toggleDropdown(5)} className="cursor-pointer">
                                                         <svg
