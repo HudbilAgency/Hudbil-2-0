@@ -8,7 +8,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 import Slider from "react-slick";
 import { Link } from 'react-router-dom';
 
-const WebDev1 = () => {
+const WebDev9 = () => {
 
     const [isVisible, setIsVisible] = useState(false);
 
@@ -499,11 +499,11 @@ const WebDev1 = () => {
     return (
         <>
             <Helmet>
-                <title>Development Agency in Bangalore | Expert Web & App Development Services</title>
-                <meta name="description" content="Looking for a development agency in Bangalore? We provide custom web and app development solutions that enhance your business’s digital presence and drive growth. Let’s build something amazing!"></meta>
-                <meta property="og:url" content="www.hudbil.com/website-development-agency-in-bangalore"></meta>
-                <meta name="keywords" content="development agency Bangalore, web development agency Bangalore, mobile app development Bangalore, software development Bangalore, website design Bangalore, custom development Bangalore, app development services Bangalore"></meta>
-                <meta name="og:description" content="Our development agency in Bangalore offers tailored web and mobile app development services designed to boost your business's digital presence, increase engagement, and deliver measurable success."></meta>
+                <title>Development Agency in Bhopal | Custom Web & App Development Solutions</title>
+                <meta name="description" content="Looking for a development agency in Bhopal? We specialize in web and mobile app development services, offering tailored solutions to enhance your digital presence and accelerate business growth."></meta>
+                <meta property="og:url" content="www.hudbil.com/website-development-agency-in-bhopal"></meta>
+                <meta name="keywords" content="development agency Bhopal, web development agency Bhopal, mobile app development Bhopal, software development Bhopal, website design Bhopal, custom development Bhopal, app development services Bhopal"></meta>
+                <meta name="og:description" content="Our development agency in Bhopal provides custom web and mobile app development solutions to enhance your digital presence, engage your audience, and drive growth for your business."></meta>
                 <meta name="og:site_name" content="UI/UX Designing Company in Bangalore India | Website Development Agency in Bangalore | Top 10 Website Developement Agencies in Bangalore Review | Branding and designing Agency | Software development Agency"></meta>
                 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3795MKLFX0"></script>
                 <script>
@@ -521,7 +521,7 @@ const WebDev1 = () => {
                 <section>
                     <div className={`flex flex-col lg:flex-row justify-between ${isScreenTall ? 'h-screen' : 'h-full'}`}>
                         <div className='w-full lg:w-1/2 min-h-full bg-black lg:border-b-[1px] border-opacity-50 border-white flex flex-col pt-36 md:pt-40 pb-20 lg:pt-48 lg:pb-40 items-start justify-center text-white px-6 lg:px-16'>
-                            <div className='text-4xl md:text-[3rem] leading-tight'>Website Development Agency in Bangalore.</div>
+                            <div className='text-4xl md:text-[3rem] leading-tight'>Website Development Agency in Bhopal.</div>
                             <div className='mt-10 leading-7'>Our brains opt for emotionally driven habitual or intuitive
                                 decisions over rational deliberation. Strong brands hold sway
                                 over this emotional autopilot. They have persuasive power.</div>
@@ -659,10 +659,10 @@ const WebDev1 = () => {
                             <div className="bg-white opacity-50 w-[1px] min-h-full self-stretch hidden lg:block"></div>
                             <div>
                                 <div className='flex flex-col md:flex-row gap-10 pt-20 items-start justify-between font-normal px-6 lg:px-16'>
-                                    <div className='text-4xl leading-tight w-full md:w-2/5 2xl:w-1/3'>Best Website Development Agency In Bangalore.</div>
+                                    <div className='text-4xl leading-tight w-full md:w-2/5 2xl:w-1/3'>Best Website Development Agency In Bhopal.</div>
                                     <div className='w-full md:w-2/5 2xl:w-1/3 mt-2 flex flex-col gap-6'>
                                         <div className="leading-normal">
-                                            Where innovation meets functionality. As a leading website development agency in Bangalore, we specialise in creating custom, scalable, and high-performance websites that help businesses grow and thrive in the digital age.
+                                            Where innovation meets functionality. As a leading website development agency in Bhopal, we specialise in creating custom, scalable, and high-performance websites that help businesses grow and thrive in the digital age.
                                         </div>
                                         <div className='text-xl'>"Our Website Development Services"</div>
                                         <div className="w-full flex flex-col gap-6">
@@ -1195,4 +1195,4 @@ const WebDev1 = () => {
     );
 };
 
-export default WebDev1;
+export default WebDev9;

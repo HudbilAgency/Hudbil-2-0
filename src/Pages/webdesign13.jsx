@@ -8,7 +8,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 import Slider from "react-slick";
 import { Link } from 'react-router-dom';
 
-const WebDev1 = () => {
+const WebDesign13 = () => {
 
     const [isVisible, setIsVisible] = useState(false);
 
@@ -499,11 +499,11 @@ const WebDev1 = () => {
     return (
         <>
             <Helmet>
-                <title>Development Agency in Bangalore | Expert Web & App Development Services</title>
-                <meta name="description" content="Looking for a development agency in Bangalore? We provide custom web and app development solutions that enhance your business’s digital presence and drive growth. Let’s build something amazing!"></meta>
-                <meta property="og:url" content="www.hudbil.com/website-development-agency-in-bangalore"></meta>
-                <meta name="keywords" content="development agency Bangalore, web development agency Bangalore, mobile app development Bangalore, software development Bangalore, website design Bangalore, custom development Bangalore, app development services Bangalore"></meta>
-                <meta name="og:description" content="Our development agency in Bangalore offers tailored web and mobile app development services designed to boost your business's digital presence, increase engagement, and deliver measurable success."></meta>
+                <title>Designing Agency in Patna | Creative Design Solutions for Your Brand</title>
+                <meta name="description" content="Looking for a designing agency in Patna? We offer custom design services, including logos, websites, UI/UX, and branding, to enhance your brand identity and engage your audience effectively."></meta>
+                <meta property="og:url" content="www.hudbil.com/website-designing-agency-in-patna"></meta>
+                <meta name="keywords" content="designing agency Patna, graphic design agency Patna, logo design Patna, web design agency Patna, UI/UX design Patna, branding agency Patna, creative design services Patna"></meta>
+                <meta name="og:description" content="Our designing agency in Patna specializes in innovative and customized design services that help businesses enhance their brand identity. From logo and website design to UI/UX and branding, we create designs that connect with your audience."></meta>
                 <meta name="og:site_name" content="UI/UX Designing Company in Bangalore India | Website Development Agency in Bangalore | Top 10 Website Developement Agencies in Bangalore Review | Branding and designing Agency | Software development Agency"></meta>
                 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3795MKLFX0"></script>
                 <script>
@@ -521,7 +521,7 @@ const WebDev1 = () => {
                 <section>
                     <div className={`flex flex-col lg:flex-row justify-between ${isScreenTall ? 'h-screen' : 'h-full'}`}>
                         <div className='w-full lg:w-1/2 min-h-full bg-black lg:border-b-[1px] border-opacity-50 border-white flex flex-col pt-36 md:pt-40 pb-20 lg:pt-48 lg:pb-40 items-start justify-center text-white px-6 lg:px-16'>
-                            <div className='text-4xl md:text-[3rem] leading-tight'>Website Development Agency in Bangalore.</div>
+                            <div className='text-4xl md:text-[3rem] leading-tight'>Website Designing Agency in Patna.</div>
                             <div className='mt-10 leading-7'>Our brains opt for emotionally driven habitual or intuitive
                                 decisions over rational deliberation. Strong brands hold sway
                                 over this emotional autopilot. They have persuasive power.</div>
@@ -659,50 +659,46 @@ const WebDev1 = () => {
                             <div className="bg-white opacity-50 w-[1px] min-h-full self-stretch hidden lg:block"></div>
                             <div>
                                 <div className='flex flex-col md:flex-row gap-10 pt-20 items-start justify-between font-normal px-6 lg:px-16'>
-                                    <div className='text-4xl leading-tight w-full md:w-2/5 2xl:w-1/3'>Best Website Development Agency In Bangalore.</div>
+                                    <div className='text-4xl leading-tight w-full md:w-2/5 2xl:w-1/3'>Best Website Designing Agency In Patna.</div>
                                     <div className='w-full md:w-2/5 2xl:w-1/3 mt-2 flex flex-col gap-6'>
                                         <div className="leading-normal">
-                                            Where innovation meets functionality. As a leading website development agency in Bangalore, we specialise in creating custom, scalable, and high-performance websites that help businesses grow and thrive in the digital age.
+                                            As the top-rated website designing agency in Patna, we bring together a team of skilled designers, developers, and strategists with a mission to create stunning, functional, and user-friendly websites. From small businesses to enterprises, we build sites that align with our clients' goals and vision.
                                         </div>
-                                        <div className='text-xl'>"Our Website Development Services"</div>
+                                        <div className='text-xl'>"Our Website Designing Services"</div>
                                         <div className="w-full flex flex-col gap-6">
                                             <div className='w-full flex flex-col gap-4'>
-                                                <div className='text-xl'>1. Custom Website Development</div>
+                                                <div className='text-xl'>1. Custom Website Design</div>
                                                 <div className='flex gap-3 ml-7 text-[#BFBFBF]'>
                                                     <span>•</span>
-                                                    <div>Tailored solutions to meet your specific business needs and goals.</div>
-                                                </div>
-                                                <div className='flex gap-3 ml-7 text-[#BFBFBF]'>
-                                                    <span>•</span>
-                                                    <div>Responsive Web Design: Websites that look great and function seamlessly on all devices.</div>
+                                                    <div>Tailored designs that reflect your brand’s unique identity.</div>
                                                 </div>
                                             </div>
                                             <div className='w-full flex flex-col gap-4'>
                                                 <div className='text-xl'>2. E - Commerce Development</div>
                                                 <div className='flex gap-3 ml-7 text-[#BFBFBF]'>
                                                     <span>•</span>
-                                                    <div>Build a powerful online store with robust features to drive sales and conversions.</div>
+                                                    <div>Dynamic and secure online stores to boost your sales.</div>
                                                 </div>
                                             </div>
                                             <div className='w-full flex flex-col gap-4'>
-                                                <div className='text-xl'>3. Content Management Systems (CMS)</div>
+                                                <div className='text-xl'>3. Responsive Web Design</div>
                                                 <div className='flex gap-3 ml-7 text-[#BFBFBF]'>
                                                     <span>•</span>
-                                                    <div>Easy - to - manage websites with user friendly interfaces and powerful back-end systems.</div>
+                                                    <div>Ensuring flawless experiences on mobile , tablet, and desktop</div>
                                                 </div>
                                             </div>
                                             <div className='w-full flex flex-col gap-4'>
-                                                <div className='text-xl'>4. Web Application Development</div>
+                                                <div className='text-xl'>4. UI/UX Design</div>
                                                 <div className='flex gap-3 ml-7 text-[#BFBFBF]'>
                                                     <span>•</span>
-                                                    <div>Build dynamic web apps that improve customer engagement and streamline business processes.</div>
+                                                    <div>Focused on providing seamless, user-friendly experiences.</div>
                                                 </div>
                                             </div>
                                             <div className='w-full flex flex-col gap-4'>
-                                                <div className='text-xl'>5. Mobile Application Development</div>
+                                                <div className='text-xl'>5. Web Redesign Services</div>
                                                 <div className='flex gap-3 ml-7 text-[#BFBFBF]'>
                                                     <span>•</span>
-                                                    <div>Build dynamic mobile apps that improve customer engagement and streamline business processes.</div>
+                                                    <div>Upgrade outdated websites for a modern and fresh look.</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -716,38 +712,24 @@ const WebDev1 = () => {
                                     <div className='w-full md:w-2/5 2xl:w-1/3 mt-2'>
                                         <div className="w-full flex flex-col gap-6">
                                             <div className='w-full flex flex-col gap-4'>
-                                                <div className='text-xl'>Expert Team</div>
+                                                <div className='text-xl'>Expertise & Experience</div>
                                                 <div className='flex gap-3 ml-7 text-[#BFBFBF]'>
                                                     <span>•</span>
-                                                    <div>Skilled developers with extensive experience in building websites for various industries.</div>
+                                                    <div>Over a decade of success in crafting websites for various industries.</div>
                                                 </div>
                                             </div>
                                             <div className='w-full flex flex-col gap-4'>
                                                 <div className='text-xl'>Customer-Centric Approach</div>
                                                 <div className='flex gap-3 ml-7 text-[#BFBFBF]'>
                                                     <span>•</span>
-                                                    <div>We work closely with you to ensure your vision is brought to life.</div>
+                                                    <div>Each project begins by understanding your goals to ensure 100% satisfaction.</div>
                                                 </div>
                                             </div>
                                             <div className='w-full flex flex-col gap-4'>
-                                                <div className='text-xl'>Timely Delivery</div>
+                                                <div className='text-xl'>Proven Track Record</div>
                                                 <div className='flex gap-3 ml-7 text-[#BFBFBF]'>
                                                     <span>•</span>
-                                                    <div>We value deadlines and strive to deliver high - quality websites on time.</div>
-                                                </div>
-                                            </div>
-                                            <div className='w-full flex flex-col gap-4'>
-                                                <div className='text-xl'>Scalable Solutions</div>
-                                                <div className='flex gap-3 ml-7 text-[#BFBFBF]'>
-                                                    <span>•</span>
-                                                    <div>From small business websites to large-scale platforms, our solutions grow with you.</div>
-                                                </div>
-                                            </div>
-                                            <div className='w-full flex flex-col gap-4'>
-                                                <div className='text-xl'>Cutting - Edge</div>
-                                                <div className='flex gap-3 ml-7 text-[#BFBFBF]'>
-                                                    <span>•</span>
-                                                    <div>We stay ahead of the curve, using the latest web technologies and trends.</div>
+                                                    <div>Hundreds of successful projects and delighted clients.</div>
                                                 </div>
                                             </div>
                                             <div className='w-full flex flex-col gap-4'>
@@ -774,14 +756,14 @@ const WebDev1 = () => {
                                     <div className='text-4xl leading-tight w-full md:w-2/5 2xl:w-1/3'>Our exclusive other services</div>
                                     <div className=' w-full md:w-2/5 2xl:w-1/3 mt-2'>
                                         <div className="leading-normal">
-                                            Our expert team specializes in custom development that scales with your business, ensuring you stay ahead in the digital world.
+                                            Our toolkit identifies the brand advantage our clients are building vs competitors. We call this Brand Edge.
                                         </div>
                                         <div className='w-full text-white mt-12'>
                                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                                             <div className="py-10 toggle-point flex flex-col">
                                                 <div className="flex items-center gap-6 justify-between">
                                                     <div className="flex items-center justify-between gap-6">
-                                                        <div className="font-normal text-2xl md:text-3xl  leading-9">Custom Website Development</div>
+                                                        <div className="font-normal text-2xl md:text-3xl  leading-9">Mobile Application UI/UX</div>
                                                     </div>
                                                     <div onClick={() => toggleDropdown(0)} className="cursor-pointer">
                                                         <svg
@@ -799,17 +781,15 @@ const WebDev1 = () => {
                                                         </svg>
                                                     </div>
                                                 </div>
-                                                <div className={`flex flex-col gap-3 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[0] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                                    <li className="pt-10">Tailored Solutions: Build a website that meets your specific business needs with custom features and designs.</li>
-                                                    <li>Scalable Architecture: Create a website that grows with your business, ensuring long-term success.</li>
-                                                    <li>Cross-Platform Compatibility: Ensure seamless user experiences across all devices and platforms.</li>
+                                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[0] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                                    <div className="pt-10">Based in Patna, we specialize in creating visually appealing and user-centered mobile application interfaces that boost engagement and user retention. Our team of designers and UX strategists combines creativity with analytics to deliver exceptional app experiences for iOS and Android.</div>
                                                 </div>
                                             </div>
                                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                                             <div className="py-10 toggle-point flex flex-col">
                                                 <div className="flex items-center gap-6 justify-between">
                                                     <div className="flex items-center justify-between gap-6">
-                                                        <div className="font-normal text-2xl md:text-3xl leading-9">E-commerce Development</div>
+                                                        <div className="font-normal text-2xl md:text-3xl leading-9">Logo Design</div>
                                                     </div>
                                                     <div onClick={() => toggleDropdown(1)} className="cursor-pointer">
                                                         <svg
@@ -827,17 +807,15 @@ const WebDev1 = () => {
                                                         </svg>
                                                     </div>
                                                 </div>
-                                                <div className={`flex flex-col gap-3 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[1] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                                    <li className="pt-10">Custom Online Stores: Develop fully functional, secure e-commerce platforms with integrated payment gateways.</li>
-                                                    <li>Product Management: Easy-to-manage product catalogs, inventory systems, and pricing models.</li>
-                                                    <li>Advanced E-Commerce Features: Custom functionalities like subscriptions, product recommendations, and customer reviews.</li>
+                                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[1] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                                    <div className="pt-10">Based in Patna, we specialise in crafting memorable logos that embody a brand's identity and values. With a team of experienced designers, we work with businesses of all sizes to create logos that leave a lasting impression, whether for startups, established brands, or personal projects.</div>
                                                 </div>
                                             </div>
                                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                                             <div className="py-10 toggle-point flex flex-col">
                                                 <div className="flex items-center gap-6 justify-between">
                                                     <div className="flex items-center justify-between gap-6">
-                                                        <div className="font-normal text-2xl md:text-3xl leading-9">Web Application Development </div>
+                                                        <div className="font-normal text-2xl md:text-3xl leading-9">Brochure Design</div>
                                                     </div>
                                                     <div onClick={() => toggleDropdown(2)} className="cursor-pointer">
                                                         <svg
@@ -855,17 +833,15 @@ const WebDev1 = () => {
                                                         </svg>
                                                     </div>
                                                 </div>
-                                                <div className={`flex flex-col gap-3 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[2] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                                    <li className="pt-10">Custom Web Apps: Design and develop dynamic, high-performance web applications that enhance business operations.</li>
-                                                    <li>Enterprise Solutions: Build large-scale, enterprise-level applications to manage workflows, data, and communication.</li>
-                                                    <li>API Integration: Seamlessly integrate third-party services and data sources into your application.</li>
+                                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[2] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                                    <div className="pt-10">We specialise in creating impactful brochure designs that help businesses communicate their message effectively. Located in Patna, our team combines creativity with strategic design to produce brochures that are not only visually appealing but also align with your brand's goals. Whether for corporate events, marketing materials, or product catalogs, our brochures leave a lasting impression.</div>
                                                 </div>
                                             </div>
                                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                                             <div className="py-10 toggle-point flex flex-col">
                                                 <div className="flex items-center gap-6 justify-between">
                                                     <div className="flex items-center justify-between gap-6">
-                                                        <div className="font-normal text-2xl md:text-3xl leading-9">Content Management System </div>
+                                                        <div className="font-normal text-2xl md:text-3xl leading-9">Web Application Design</div>
                                                     </div>
                                                     <div onClick={() => toggleDropdown(3)} className="cursor-pointer">
                                                         <svg
@@ -883,17 +859,15 @@ const WebDev1 = () => {
                                                         </svg>
                                                     </div>
                                                 </div>
-                                                <div className={`flex flex-col gap-3 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[3] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                                    <li className="pt-10">User-Friendly CMS: Build websites with flexible and intuitive content management systems (WordPress, Joomla, Drupal, etc.).</li>
-                                                    <li>Customizable Features: Tailor the CMS to meet your business requirements for content publishing and user management.</li>
-                                                    <li>Content Migration: Migrate your existing content into new, secure platforms with minimal downtime.</li>
+                                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[3] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                                    <div className="pt-10">Located in Patna, we specialize in designing high-quality web applications that combine functionality with an exceptional user experience. Our team of UI/UX experts, designers, and strategists work collaboratively to develop web apps that are not only visually appealing but also align with your business goals and deliver an engaging user experience.</div>
                                                 </div>
                                             </div>
                                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                                             <div className="py-10 toggle-point flex flex-col">
                                                 <div className="flex items-center gap-6 justify-between">
                                                     <div className="flex items-center justify-between gap-6">
-                                                        <div className="font-normal text-2xl md:text-3xl leading-9">Mobile App Development  </div>
+                                                        <div className="font-normal text-2xl md:text-3xl leading-9">Website Development</div>
                                                     </div>
                                                     <div onClick={() => toggleDropdown(4)} className="cursor-pointer">
                                                         <svg
@@ -911,17 +885,15 @@ const WebDev1 = () => {
                                                         </svg>
                                                     </div>
                                                 </div>
-                                                <div className={`flex flex-col gap-3 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[4] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                                    <li className="pt-10">Native & Cross-Platform Apps: Develop high-performance mobile apps for iOS and Android, or opt for a cross-platform approach to reach a broader audience.</li>
-                                                    <li>App Integration: Integrate mobile apps with your website, CRM, and other tools for seamless functionality.</li>
-                                                    <li>App Maintenance & Updates: Ongoing support for bug fixes, updates, and feature enhancements.</li>
+                                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[4] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                                    <div className="pt-10">Based in Patna, we specialise in crafting professional, high-performance websites that engage users and achieve your business objectives. Our team of developers and designers are dedicated to delivering websites that are both visually stunning and highly functional, ensuring a seamless experience for users on any device.</div>
                                                 </div>
                                             </div>
                                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                                             <div className="py-10 toggle-point flex flex-col">
                                                 <div className="flex items-center gap-6 justify-between">
                                                     <div className="flex items-center justify-between gap-6">
-                                                        <div className="font-normal text-2xl md:text-3xl leading-9">Website Redesign & Rebranding</div>
+                                                        <div className="font-normal text-2xl md:text-3xl leading-9">Mobile Application Development</div>
                                                     </div>
                                                     <div onClick={() => toggleDropdown(5)} className="cursor-pointer">
                                                         <svg
@@ -939,10 +911,8 @@ const WebDev1 = () => {
                                                         </svg>
                                                     </div>
                                                 </div>
-                                                <div className={`flex flex-col gap-3 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[5] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                                    <li className="pt-10">UX/UI Overhaul: Revamp your website’s design and functionality to improve user engagement and conversion rates.</li>
-                                                    <li>Branding Alignment: Ensure your website reflects your brand identity with a modern, cohesive design.</li>
-                                                    <li>SEO Recovery: Improve your site’s SEO performance while enhancing user experience.</li>
+                                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[5] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                                    <div className="pt-10">Based in Patna, we specialize in end-to-end mobile application development that transforms your ideas into feature-rich, high-performance apps. Our team of developers, designers, and strategists create apps tailored to your business needs, whether for startups or established brands, across both iOS and Android platforms.</div>
                                                 </div>
                                             </div>
                                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
@@ -1118,7 +1088,7 @@ const WebDev1 = () => {
                                 partnerships with in this area</div>
                         </div>
                         <div className="w-full md:w-2/5 2xl:w-1/3">
-                            <div className="flex flex-col grow items-start text-2xl  tracking-wider leading-none text-neutral-950 mt-10 md:mt-2">
+                            <div className="flex flex-col grow items-start text-2xl  tracking-wider leading-none text-neutral-950 mt-10 md:mt-0">
                                 {clients.map((client, index) => (
                                     <div key={index} className={index > 0 ? "mt-4" : ""}>{client}</div>
                                 ))}
@@ -1127,14 +1097,11 @@ const WebDev1 = () => {
                     </div>
                 </section>
 
-
                 <section className='bg-white px-6 lg:px-16 w-full lg:w-4/5 2xl:w-[70%] lg:ml-auto items-start'>
                     <div className='border-t pb-16 border-[#D8D8D8]'></div>
                     <div className='flex flex-col md:flex-row gap-10 w-full items-start justify-between font-normal'>
                         <div className='text-3xl 2xl:text-5xl w-full md:w-2/5 2xl:w-1/3'>INSIGHTS</div>
-                        <div className='text-lg leading-normal w-full md:w-2/5 2xl:w-1/3'>There’s no point keeping our smarts locked away. Our content
-                            hub ‘Insights’ shares the ideas, frameworks and tools that we
-                            utilise in our work.</div>
+                        <div className='text-lg leading-normal w-full md:w-2/5 2xl:w-1/3'>There’s no point keeping our smarts locked away. Our content hub ‘Insights’ shares the ideas, frameworks and tools that we utilise in our work.</div>
                     </div>
                     <div className='border-b pt-16 border-[#D8D8D8]'></div>
                     <div className=' w-full flex py-20 flex-col items-center gap-20'>
@@ -1195,4 +1162,4 @@ const WebDev1 = () => {
     );
 };
 
-export default WebDev1;
+export default WebDesign13;

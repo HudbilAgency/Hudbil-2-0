@@ -41,7 +41,33 @@ import QuickLinks from '../Pages/quick-links';
 import Faq from '../Pages/FAQ';
 import Locations from '../Pages/location-page';
 import WebDesign1 from '../Pages/webdesign1';
+import WebDesign2 from '../Pages/webdesign2';
+import WebDesign3 from '../Pages/webdesign3';
+import WebDesign4 from '../Pages/webdesign4';
+import WebDesign5 from '../Pages/webdesign5';
+import WebDesign6 from '../Pages/webdesign6';
+import WebDesign7 from '../Pages/webdesign7';
+import WebDesign8 from '../Pages/webdesign8';
+import WebDesign9 from '../Pages/webdesign9';
+import WebDesign10 from '../Pages/webdesign10';
+import WebDesign11 from '../Pages/webdesign11';
+import WebDesign12 from '../Pages/webdesign12';
+import WebDesign13 from '../Pages/webdesign13';
+import WebDesign14 from '../Pages/webdesign14';
 import WebDev1 from '../Pages/webdev1';
+import WebDev2 from '../Pages/webdev2';
+import WebDev3 from '../Pages/webdev3';
+import WebDev4 from '../Pages/webdev4';
+import WebDev5 from '../Pages/webdev5';
+import WebDev6 from '../Pages/webdev6';
+import WebDev7 from '../Pages/webdev7';
+import WebDev8 from '../Pages/webdev8';
+import WebDev9 from '../Pages/webdev9';
+import WebDev10 from '../Pages/webdev10';
+import WebDev11 from '../Pages/webdev11';
+import WebDev12 from '../Pages/webdev12';
+import WebDev13 from '../Pages/webdev13';
+import WebDev14 from '../Pages/webdev14';
 
 const Routers = () => {
   return (
@@ -88,7 +114,33 @@ const Routers = () => {
         <Route path="/quick-links" element={<QuickLinks />} />
         <Route path="/lo" element={<Locations />} />
         <Route path="/quick-links/website-designing-agency-in-bangalore" element={<WebDesign1 />} />
+        <Route path="/quick-links/website-designing-agency-in-pune" element={<WebDesign2 />} />
+        <Route path="/quick-links/website-designing-agency-in-hyderabad" element={<WebDesign3 />} />
+        <Route path="/quick-links/website-designing-agency-in-kolkata" element={<WebDesign4 />} />
+        <Route path="/quick-links/website-designing-agency-in-ahmedabad" element={<WebDesign5 />} />
+        <Route path="/quick-links/website-designing-agency-in-chennai" element={<WebDesign6 />} />
+        <Route path="/quick-links/website-designing-agency-in-jaipur" element={<WebDesign7 />} />
+        <Route path="/quick-links/website-designing-agency-in-surat" element={<WebDesign8 />} />
+        <Route path="/quick-links/website-designing-agency-in-bhopal" element={<WebDesign9 />} />
+        <Route path="/quick-links/website-designing-agency-in-kochi" element={<WebDesign10 />} />
+        <Route path="/quick-links/website-designing-agency-in-coimbatore" element={<WebDesign11 />} />
+        <Route path="/quick-links/website-designing-agency-in-mumbai" element={<WebDesign12 />} />
+        <Route path="/quick-links/website-designing-agency-in-patna" element={<WebDesign13 />} />
+        <Route path="/quick-links/website-designing-agency-in-delhi" element={<WebDesign14 />} />
         <Route path="/quick-links/website-development-agency-in-bangalore" element={<WebDev1 />} />
+        <Route path="/quick-links/website-development-agency-in-pune" element={<WebDev2 />} />
+        <Route path="/quick-links/website-development-agency-in-hyderabad" element={<WebDev3 />} />
+        <Route path="/quick-links/website-development-agency-in-kolkata" element={<WebDev4 />} />
+        <Route path="/quick-links/website-development-agency-in-ahmedabad" element={<WebDev5 />} />
+        <Route path="/quick-links/website-development-agency-in-chennai" element={<WebDev6 />} />
+        <Route path="/quick-links/website-development-agency-in-jaipur" element={<WebDev7 />} />
+        <Route path="/quick-links/website-development-agency-in-surat" element={<WebDev8 />} />
+        <Route path="/quick-links/website-development-agency-in-bhopal" element={<WebDev9 />} />
+        <Route path="/quick-links/website-development-agency-in-kochi" element={<WebDev10 />} />
+        <Route path="/quick-links/website-development-agency-in-coimbatore" element={<WebDev11 />} />
+        <Route path="/quick-links/website-development-agency-in-mumbai" element={<WebDev12 />} />
+        <Route path="/quick-links/website-development-agency-in-patna" element={<WebDev13 />} />
+        <Route path="/quick-links/website-development-agency-in-delhi" element={<WebDev14 />} />
       </Routes>
     </>
   )

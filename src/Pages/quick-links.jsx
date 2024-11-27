@@ -468,7 +468,7 @@ const QuickLinks = () => {
                       Subscribe to Hud to receive our latest thinking every month.
                     </label>
                   </div>
-                  <div className='mt-12 w-fit'>
+                  <div className='mt-12 w-fit lg:h-[78px]'>
                     <ReCAPTCHA
                       sitekey="6LfWPG8qAAAAAFBRLkUr505LpNEDOL_6p5dd8SLF"
                       onChange={onRecaptchaChange}

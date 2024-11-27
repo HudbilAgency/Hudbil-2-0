@@ -499,6 +499,12 @@ const WebDesign1 = () => {
     return (
         <>
             <Helmet>
+                <title>Designing Agency in Bangalore | Creative and Custom Design Solutions</title>
+                <meta name="description" content="Looking for a designing agency in Bangalore? We specialize in crafting unique designs for logos, websites, apps, and branding to elevate your business and captivate your audience."></meta>
+                <meta property="og:url" content="www.hudbil.com/website-designing-agency-in-bangalore"></meta>
+                <meta name="keywords" content="designing agency Bangalore, graphic design agency Bangalore, logo design Bangalore, web design agency Bangalore, UI/UX design Bangalore, branding agency Bangalore, creative design services Bangalore"></meta>
+                <meta name="og:description" content="Our designing agency in Bangalore provides innovative design solutions that help businesses stand out. From logo creation to web and app design, we deliver custom designs that engage and inspire."></meta>
+                <meta name="og:site_name" content="UI/UX Designing Company in Bangalore India | Website Development Agency in Bangalore | Top 10 Website Developement Agencies in Bangalore Review | Branding and designing Agency | Software development Agency"></meta>
                 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3795MKLFX0"></script>
                 <script>
                     {`
@@ -520,9 +526,11 @@ const WebDesign1 = () => {
                                 decisions over rational deliberation. Strong brands hold sway
                                 over this emotional autopilot. They have persuasive power.</div>
                             <div className='mt-12'>
-                                <button className='rounded-full py-4 px-16 sm:px-20 text-white bg-purple-800 submit-btn hover:bg-white hover:text-black mt-4'>
-                                    Know More
-                                </button>
+                                <a href="/about-us">
+                                    <button className='rounded-full py-4 px-16 sm:px-20 text-white bg-purple-800 submit-btn hover:bg-white hover:text-black mt-4'>
+                                        Know More
+                                    </button>
+                                </a>
                             </div>
                         </div>
                         <div className='w-full lg:w-1/2 h-full bg-white pt-20 pb-20 lg:border-b border-white lg:pt-56 lg:pb-48 flex flex-col items-center justify-center px-6 lg:px-16'>
@@ -622,7 +630,7 @@ const WebDesign1 = () => {
                                             Subscribe to Hud to receive our latest thinking every month.
                                         </label>
                                     </div>
-                                    <div className='mt-12 w-fit'>
+                                    <div className='mt-12 lg:h-[78px] w-fit'>
                                         <ReCAPTCHA
                                             sitekey="6LfWPG8qAAAAAFBRLkUr505LpNEDOL_6p5dd8SLF"
                                             onChange={onRecaptchaChange}
@@ -928,7 +936,7 @@ const WebDesign1 = () => {
                                 <div key={0} className="flex flex-col our-brands-section">
                                     <div className="flex overflow-hidden relative flex-col mt-14 max-w-full text-xs font-extralight tracking-wider text-center  text-teal-950 w-[304px]">
                                         <div className="flex overflow-hidden relative items-center justify-center flex-col ">
-                                            <img loading="lazy" src="/OurClientPhoto.png" alt="Brand logo" className="w-[8rem] lg:w-[10rem] rounded-full" />
+                                            <img loading="lazy" src="/client-1.png" alt="Brand logo" className="w-[8rem] lg:w-[10rem] rounded-full" />
                                         </div>
                                     </div>
                                     <div
@@ -938,14 +946,14 @@ const WebDesign1 = () => {
                                         <h1 className='text-3xl'>
                                             Priya M
                                         </h1>
-                                        <span className='text-2xl'>“Transformative Design and Seamless Experience”</span>
+                                        <div className='text-[1.8rem] leading-7 mt-4'>“Transformative Design and Seamless Experience”</div>
                                     </div>
                                     <div
                                         ref={fadeInRef}
-                                        className='text-base 2xl:text-xl self-center px-6 w-full md:w-[65%] 2xl:w-[60%]  mt-10 text-center text-white max-md:max-w-full'>
+                                        className='text-base leading-7 self-center px-6 w-full md:w-[65%] 2xl:w-[60%] mt-24 text-center text-white max-md:max-w-full'>
                                         "We approached Hudbil Private Limited to revamp our outdated website, and they delivered beyond expectations. The design is modern, intuitive, and perfectly represents our brand. Our customers love the new interface, and we’ve seen a noticeable boost in engagement. Highly recommend their services!"
                                     </div>
-                                    <Link to="/contact-us" className="mt-24">
+                                    <Link to="/contact-us" className="mt-20">
                                         <button className="button self-end text-xl py-[14px] flex flex-row justify-between hover:text-black px-12 border mx-auto leading-none  text-white gap-8 rounded-[1000px]  hover:bg-white transition-all duration-300">
                                             Contact Us
                                         </button>
@@ -955,7 +963,7 @@ const WebDesign1 = () => {
                                 <div key={1} className="flex flex-col our-brands-section">
                                     <div className="flex overflow-hidden relative flex-col mt-14 max-w-full text-xs font-extralight tracking-wider text-center  text-teal-950 w-[304px]">
                                         <div className="flex overflow-hidden relative items-center justify-center flex-col ">
-                                            <img loading="lazy" src="/OurClientPhoto.png" alt="Brand logo" className="w-[8rem] lg:w-[10rem] rounded-full" />
+                                            <img loading="lazy" src="/client-2.png" alt="Brand logo" className="w-[8rem] lg:w-[10rem] rounded-full" />
                                         </div>
                                     </div>
                                     <div
@@ -965,13 +973,13 @@ const WebDesign1 = () => {
                                         <h1 className='text-3xl'>
                                             Rahul K
                                         </h1>
-                                        <span className='text-2xl'>"Exceptional Creativity and Professionalism"</span>
+                                        <div className='text-[1.8rem] leading-7 mt-4'>"Exceptional Creativity and Professionalism"</div>
                                     </div>
                                     <div
                                         ref={fadeInRef}
-                                        className='text-base 2xl:text-xl self-center px-6 w-full md:w-[65%] 2xl:w-[60%]  mt-10 text-center text-white max-md:max-w-full'>
+                                        className='text-base self-center px-6 w-full md:w-[65%] 2xl:w-[60%] mt-24 text-center text-white max-md:max-w-full leading-7'>
                                         "Working with Hudbil Private Limited was an absolute pleasure. Their team took the time to understand our vision and translated it into a stunning, functional website. Their attention to detail and creative approach truly set them apart. We’re thrilled with the results"                                    </div>
-                                    <Link to="/contact-us" className="mt-24">
+                                    <Link to="/contact-us" className="mt-20">
                                         <button className="button self-end text-xl py-[14px] flex flex-row justify-between hover:text-black px-12 border mx-auto leading-none  text-white gap-8 rounded-[1000px]  hover:bg-white transition-all duration-300">
                                             Contact Us
                                         </button>
@@ -981,7 +989,7 @@ const WebDesign1 = () => {
                                 <div key={2} className="flex flex-col our-brands-section">
                                     <div className="flex overflow-hidden relative flex-col mt-14 max-w-full text-xs font-extralight tracking-wider text-center  text-teal-950 w-[304px]">
                                         <div className="flex overflow-hidden relative items-center justify-center flex-col ">
-                                            <img loading="lazy" src="/OurClientPhoto.png" alt="Brand logo" className="w-[8rem] lg:w-[10rem] rounded-full" />
+                                            <img loading="lazy" src="/client-3.png" alt="Brand logo" className="w-[8rem] lg:w-[10rem] rounded-full" />
                                         </div>
                                     </div>
                                     <div
@@ -991,13 +999,13 @@ const WebDesign1 = () => {
                                         <h1 className='text-3xl'>
                                             Anjali S
                                         </h1>
-                                        <span className='text-2xl'>"A Game-Changer for Our Business"</span>
+                                        <div className='text-[1.8rem] leading-7 mt-4'>"A Game-Changer for Our Business"</div>
                                     </div>
                                     <div
                                         ref={fadeInRef}
-                                        className='text-base 2xl:text-xl self-center px-6 w-full md:w-[65%] 2xl:w-[60%]  mt-10 text-center text-white max-md:max-w-full'>
+                                        className='text-base leading-7 self-center px-6 w-full md:w-[65%] 2xl:w-[60%]  mt-24 text-center text-white max-md:max-w-full'>
                                         "Our website is the heart of our business, and Hudbil Private Limited completely transformed it. The user-friendly design and responsive layout have improved our customer experience significantly. We’ve received countless compliments from our clients. Thank you for an incredible job!"                                    </div>
-                                    <Link to="/contact-us" className="mt-24">
+                                    <Link to="/contact-us" className="mt-20">
                                         <button className="button self-end text-xl py-[14px] flex flex-row justify-between hover:text-black px-12 border mx-auto leading-none  text-white gap-8 rounded-[1000px]  hover:bg-white transition-all duration-300">
                                             Contact Us
                                         </button>
@@ -1006,7 +1014,7 @@ const WebDesign1 = () => {
                                 <div key={3} className="flex flex-col our-brands-section">
                                     <div className="flex overflow-hidden relative flex-col mt-14 max-w-full text-xs font-extralight tracking-wider text-center  text-teal-950 w-[304px]">
                                         <div className="flex overflow-hidden relative items-center justify-center flex-col ">
-                                            <img loading="lazy" src="/OurClientPhoto.png" alt="Brand logo" className="w-[8rem] lg:w-[10rem] rounded-full" />
+                                            <img loading="lazy" src="/client-4.png" alt="Brand logo" className="w-[8rem] lg:w-[10rem] rounded-full" />
                                         </div>
                                     </div>
                                     <div
@@ -1016,13 +1024,13 @@ const WebDesign1 = () => {
                                         <h1 className='text-3xl'>
                                             Vikram J.
                                         </h1>
-                                        <span className='text-2xl'>"Fast, Reliable, and Outstanding Service"</span>
+                                        <div className='text-[1.8rem] leading-7 mt-4'>"Fast, Reliable, and Outstanding Service"</div>
                                     </div>
                                     <div
                                         ref={fadeInRef}
-                                        className='text-base 2xl:text-xl self-center px-6 w-full md:w-[65%] 2xl:w-[60%]  mt-10 text-center text-white max-md:max-w-full'>
+                                        className='text-base leading-7 self-center px-6 w-full md:w-[65%] 2xl:w-[60%]  mt-24 text-center text-white max-md:max-w-full'>
                                         "From start to finish, Hudbil Private Limited exceeded our expectations. They delivered a beautiful, professional website on time and within budget. The team was always available for questions and feedback. A fantastic experience overall!"                                     </div>
-                                    <Link to="/contact-us" className="mt-24">
+                                    <Link to="/contact-us" className="mt-20">
                                         <button className="button self-end text-xl py-[14px] flex flex-row justify-between hover:text-black px-12 border mx-auto leading-none  text-white gap-8 rounded-[1000px]  hover:bg-white transition-all duration-300">
                                             Contact Us
                                         </button>
@@ -1031,7 +1039,7 @@ const WebDesign1 = () => {
                                 <div key={4} className="flex flex-col our-brands-section">
                                     <div className="flex overflow-hidden relative flex-col mt-14 max-w-full text-xs font-extralight tracking-wider text-center  text-teal-950 w-[304px]">
                                         <div className="flex overflow-hidden relative items-center justify-center flex-col ">
-                                            <img loading="lazy" src="/OurClientPhoto.png" alt="Brand logo" className="w-[8rem] lg:w-[10rem] rounded-full" />
+                                            <img loading="lazy" src="/client-5.png" alt="Brand logo" className="w-[8rem] lg:w-[10rem] rounded-full" />
                                         </div>
                                     </div>
                                     <div
@@ -1041,13 +1049,13 @@ const WebDesign1 = () => {
                                         <h1 className='text-3xl'>
                                             Sneha Ms
                                         </h1>
-                                        <span className='text-2xl'>"Innovative Design Solutions"</span>
+                                        <div className='text-[1.8rem] leading-7 mt-4'>"Innovative Design Solutions"</div>
                                     </div>
                                     <div
                                         ref={fadeInRef}
-                                        className='text-base 2xl:text-xl self-center px-6 w-full md:w-[65%] 2xl:w-[60%]  mt-10 text-center text-white max-md:max-w-full'>
+                                        className='text-base leading-7 self-center px-6 w-full md:w-[65%] 2xl:w-[60%]  mt-24 text-center text-white max-md:max-w-full'>
                                         "We needed a website that stood out in a competitive market, and Hudbil Private Limited nailed it. Their innovative designs and user-focused approach were exactly what we were looking for. It’s been a game-changer for our online presence!"                                                                       </div>
-                                    <Link to="/contact-us" className="mt-24">
+                                    <Link to="/contact-us" className="mt-20">
                                         <button className="button self-end text-xl py-[14px] flex flex-row justify-between hover:text-black px-12 border mx-auto leading-none  text-white gap-8 rounded-[1000px]  hover:bg-white transition-all duration-300">
                                             Contact Us
                                         </button>
@@ -1055,7 +1063,7 @@ const WebDesign1 = () => {
                                 </div>
                             </Slider>
                         </div>
-                        <div className="pt-20 pb-6">
+                        <div className="pt-24 pb-6">
                             <div className="flex justify-center items-center">
                                 <div className="flex cursor-pointer cursor-effect">
                                     {[0, 1, 2, 3, 4].map((key) => (
@@ -1071,7 +1079,6 @@ const WebDesign1 = () => {
                         </div>
                     </div>
                 </section>
-
 
                 <section className='bg-white px-6 lg:px-16 overflow-hidden w-full lg:w-4/5 2xl:w-[70%] lg:ml-auto items-start py-20'>
                     <div className="flex flex-col gap-8 md:flex-row w-full items-start justify-between">
@@ -1090,14 +1097,11 @@ const WebDesign1 = () => {
                     </div>
                 </section>
 
-
                 <section className='bg-white px-6 lg:px-16 w-full lg:w-4/5 2xl:w-[70%] lg:ml-auto items-start'>
                     <div className='border-t pb-16 border-[#D8D8D8]'></div>
                     <div className='flex flex-col md:flex-row gap-10 w-full items-start justify-between font-normal'>
                         <div className='text-3xl 2xl:text-5xl w-full md:w-2/5 2xl:w-1/3'>INSIGHTS</div>
-                        <div className='text-lg leading-normal w-full md:w-2/5 2xl:w-1/3'>There’s no point keeping our smarts locked away. Our content
-                            hub ‘Insights’ shares the ideas, frameworks and tools that we
-                            utilise in our work.</div>
+                        <div className='text-lg leading-normal w-full md:w-2/5 2xl:w-1/3'>There’s no point keeping our smarts locked away. Our content hub ‘Insights’ shares the ideas, frameworks and tools that we utilise in our work.</div>
                     </div>
                     <div className='border-b pt-16 border-[#D8D8D8]'></div>
                     <div className=' w-full flex py-20 flex-col items-center gap-20'>
