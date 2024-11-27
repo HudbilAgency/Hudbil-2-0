@@ -655,12 +655,12 @@ const WebDesign6 = () => {
 
                 <section className=' bg-black'>
                     <div className="bg-black text-white">
-                        <div className="w-full lg:w-4/5 2xl:w-[70%] lg:ml-auto flex items-start">
+                        <div className="w-full lg:w-4/5 2xl:w-3/4 lg:ml-auto flex items-start">
                             <div className="bg-white opacity-50 w-[1px] min-h-full self-stretch hidden lg:block"></div>
                             <div>
                                 <div className='flex flex-col md:flex-row gap-10 pt-20 items-start justify-between font-normal px-6 lg:px-16'>
                                     <div className='text-4xl leading-tight w-full md:w-2/5 2xl:w-1/3'>Best Website Designing Agency In Chennai.</div>
-                                    <div className='w-full md:w-2/5 2xl:w-1/3 mt-2 flex flex-col gap-6'>
+                                    <div className='w-full md:w-2/5 mt-2 flex flex-col gap-6'>
                                         <div className="leading-normal">
                                             As the top-rated website designing agency in Chennai, we bring together a team of skilled designers, developers, and strategists with a mission to create stunning, functional, and user-friendly websites. From small businesses to enterprises, we build sites that align with our clients' goals and vision.
                                         </div>
@@ -709,7 +709,7 @@ const WebDesign6 = () => {
 
                                 <div className='flex flex-col md:flex-row gap-10 items-start justify-between font-normal px-6 lg:px-16'>
                                     <div className='text-4xl leading-tight w-full md:w-2/5 2xl:w-1/3'>Here are a few reasons why choose Hudbil !</div>
-                                    <div className='w-full md:w-2/5 2xl:w-1/3 mt-2'>
+                                    <div className='w-full md:w-2/5 mt-2'>
                                         <div className="w-full flex flex-col gap-6">
                                             <div className='w-full flex flex-col gap-4'>
                                                 <div className='text-xl'>Expertise & Experience</div>
@@ -754,7 +754,7 @@ const WebDesign6 = () => {
 
                                 <div className='flex flex-col md:flex-row gap-10 pt-20 mb-20 items-start justify-between font-normal px-6 lg:px-16'>
                                     <div className='text-4xl leading-tight w-full md:w-2/5 2xl:w-1/3'>Our exclusive other services</div>
-                                    <div className=' w-full md:w-2/5 2xl:w-1/3 mt-2'>
+                                    <div className=' w-full md:w-2/5 mt-2'>
                                         <div className="leading-normal">
                                             Our toolkit identifies the brand advantage our clients are building vs competitors. We call this Brand Edge.
                                         </div>
@@ -925,7 +925,7 @@ const WebDesign6 = () => {
                 </section>
 
                 <section>
-                    <div className='overflow-hidden w-full lg:w-4/5 2xl:w-[70%] lg:ml-auto flex flex-col items-center'
+                    <div className='overflow-hidden w-full lg:w-4/5 2xl:w-3/4 lg:ml-auto flex flex-col items-center'
                         style={{
                             background: 'linear-gradient(180deg, #7811A5, #2E16BB)',
                         }}>
@@ -1080,14 +1080,14 @@ const WebDesign6 = () => {
                     </div>
                 </section>
 
-                <section className='bg-white px-6 lg:px-16 overflow-hidden w-full lg:w-4/5 2xl:w-[70%] lg:ml-auto items-start py-20'>
+                <section className='bg-white px-6 lg:px-16 overflow-hidden w-full lg:w-4/5 2xl:w-3/4 lg:ml-auto items-start py-20'>
                     <div className="flex flex-col gap-8 md:flex-row w-full items-start justify-between">
                         <div className="flex w-full md:w-2/5 2xl:w-1/3 gap-3 items-center text-base tracking-wider leading-none text-neutral-950">
                             <div className="flex shrink-0 self-start items-start mt-2 w-2 h-2 bg-black rounded-[1000px]" />
                             <div className="my-auto text-black text-2xl">Clients we have successful
                                 partnerships with in this area</div>
                         </div>
-                        <div className="w-full md:w-2/5 2xl:w-1/3">
+                        <div className="w-full md:w-2/5">
                             <div className="flex flex-col grow items-start text-2xl  tracking-wider leading-none text-neutral-950 mt-10 md:mt-2">
                                 {clients.map((client, index) => (
                                     <div key={index} className={index > 0 ? "mt-4" : ""}>{client}</div>
@@ -1097,7 +1097,7 @@ const WebDesign6 = () => {
                     </div>
                 </section>
 
-                <section className='bg-white px-6 lg:px-16 w-full lg:w-4/5 2xl:w-[70%] lg:ml-auto items-start'>
+                <section className='bg-white px-6 lg:px-16 w-full lg:w-4/5 2xl:w-3/4 lg:ml-auto items-start'>
                     <div className='border-t pb-16 border-[#D8D8D8]'></div>
                     <div className='flex flex-col md:flex-row gap-10 w-full items-start justify-between font-normal'>
                         <div className='text-3xl 2xl:text-5xl w-full md:w-2/5 2xl:w-1/3'>INSIGHTS</div>
