@@ -976,7 +976,7 @@ const WebDev11 = () => {
                                         <h1 className='text-3xl'>
                                             Priya M
                                         </h1>
-                                        <div className='text-[1.8rem] leading-7 mt-4'>“Transformative Design and Seamless Experience”</div>
+                                        <div className='text-[1.8rem] leading-tight xl:leading-7 mt-4'>“Transformative Design and Seamless Experience”</div>
                                     </div>
                                     <div
                                         ref={fadeInRef}
@@ -1003,7 +1003,7 @@ const WebDev11 = () => {
                                         <h1 className='text-3xl'>
                                             Rahul K
                                         </h1>
-                                        <div className='text-[1.8rem] leading-7 mt-4'>"Exceptional Creativity and Professionalism"</div>
+                                        <div className='text-[1.8rem] leading-tight xl:leading-7 mt-4'>"Exceptional Creativity and Professionalism"</div>
                                     </div>
                                     <div
                                         ref={fadeInRef}
@@ -1029,7 +1029,7 @@ const WebDev11 = () => {
                                         <h1 className='text-3xl'>
                                             Anjali S
                                         </h1>
-                                        <div className='text-[1.8rem] leading-7 mt-4'>"A Game-Changer for Our Business"</div>
+                                        <div className='text-[1.8rem] leading-tight xl:leading-7 mt-4'>"A Game-Changer for Our Business"</div>
                                     </div>
                                     <div
                                         ref={fadeInRef}
@@ -1054,7 +1054,7 @@ const WebDev11 = () => {
                                         <h1 className='text-3xl'>
                                             Vikram J.
                                         </h1>
-                                        <div className='text-[1.8rem] leading-7 mt-4'>"Fast, Reliable, and Outstanding Service"</div>
+                                        <div className='text-[1.8rem] leading-tight xl:leading-7 mt-4'>"Fast, Reliable, and Outstanding Service"</div>
                                     </div>
                                     <div
                                         ref={fadeInRef}
@@ -1079,7 +1079,7 @@ const WebDev11 = () => {
                                         <h1 className='text-3xl'>
                                             Sneha Ms
                                         </h1>
-                                        <div className='text-[1.8rem] leading-7 mt-4'>"Innovative Design Solutions"</div>
+                                        <div className='text-[1.8rem] leading-tight xl:leading-7 mt-4'>"Innovative Design Solutions"</div>
                                     </div>
                                     <div
                                         ref={fadeInRef}
