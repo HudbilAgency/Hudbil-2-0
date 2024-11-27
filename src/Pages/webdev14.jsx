@@ -966,7 +966,7 @@ const WebDev14 = () => {
                                 <div key={0} className="flex flex-col our-brands-section">
                                     <div className="flex overflow-hidden relative flex-col mt-14 max-w-full text-xs font-extralight tracking-wider text-center  text-teal-950 w-[304px]">
                                         <div className="flex overflow-hidden relative items-center justify-center flex-col ">
-                                            <img loading="lazy" src="/client-1.png" alt="Brand logo" className="w-[8rem] lg:w-[10rem] rounded-full" />
+                                            <img loading="lazy" src="/client-1.png" alt="Brand logo" className="w-[8rem] lg:w-[10rem] rounded-full opacity-0" />
                                         </div>
                                     </div>
                                     <div
@@ -993,7 +993,7 @@ const WebDev14 = () => {
                                 <div key={1} className="flex flex-col our-brands-section">
                                     <div className="flex overflow-hidden relative flex-col mt-14 max-w-full text-xs font-extralight tracking-wider text-center  text-teal-950 w-[304px]">
                                         <div className="flex overflow-hidden relative items-center justify-center flex-col ">
-                                            <img loading="lazy" src="/client-2.png" alt="Brand logo" className="w-[8rem] lg:w-[10rem] rounded-full" />
+                                            <img loading="lazy" src="/client-2.png" alt="Brand logo" className="w-[8rem] lg:w-[10rem] rounded-full opacity-0" />
                                         </div>
                                     </div>
                                     <div
@@ -1019,7 +1019,7 @@ const WebDev14 = () => {
                                 <div key={2} className="flex flex-col our-brands-section">
                                     <div className="flex overflow-hidden relative flex-col mt-14 max-w-full text-xs font-extralight tracking-wider text-center  text-teal-950 w-[304px]">
                                         <div className="flex overflow-hidden relative items-center justify-center flex-col ">
-                                            <img loading="lazy" src="/client-3.png" alt="Brand logo" className="w-[8rem] lg:w-[10rem] rounded-full" />
+                                            <img loading="lazy" src="/client-3.png" alt="Brand logo" className="w-[8rem] lg:w-[10rem] rounded-full opacity-0" />
                                         </div>
                                     </div>
                                     <div
@@ -1044,7 +1044,7 @@ const WebDev14 = () => {
                                 <div key={3} className="flex flex-col our-brands-section">
                                     <div className="flex overflow-hidden relative flex-col mt-14 max-w-full text-xs font-extralight tracking-wider text-center  text-teal-950 w-[304px]">
                                         <div className="flex overflow-hidden relative items-center justify-center flex-col ">
-                                            <img loading="lazy" src="/client-4.png" alt="Brand logo" className="w-[8rem] lg:w-[10rem] rounded-full" />
+                                            <img loading="lazy" src="/client-4.png" alt="Brand logo" className="w-[8rem] lg:w-[10rem] rounded-full opacity-0" />
                                         </div>
                                     </div>
                                     <div
@@ -1069,7 +1069,7 @@ const WebDev14 = () => {
                                 <div key={4} className="flex flex-col our-brands-section">
                                     <div className="flex overflow-hidden relative flex-col mt-14 max-w-full text-xs font-extralight tracking-wider text-center  text-teal-950 w-[304px]">
                                         <div className="flex overflow-hidden relative items-center justify-center flex-col ">
-                                            <img loading="lazy" src="/client-5.png" alt="Brand logo" className="w-[8rem] lg:w-[10rem] rounded-full" />
+                                            <img loading="lazy" src="/client-5.png" alt="Brand logo" className="w-[8rem] lg:w-[10rem] rounded-full opacity-0" />
                                         </div>
                                     </div>
                                     <div
