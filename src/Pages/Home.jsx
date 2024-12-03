@@ -9,10 +9,8 @@ import Loader from '../Components/Loader';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import classNames from "classnames";
 import CarousalImgBlogs from '../Components/CarousalImgBlogs'
-import { motion, useScroll, useTransform } from "framer-motion";
-import { useMediaQuery } from 'react-responsive';
+import Snowfall from '../Components/Snowfall';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
@@ -548,27 +546,24 @@ const Home = () => {
           </div>
 
           <section className='-mt-[30vh] lg:-mt-[0vh] box3 justify-end items-end overflow-hidden w-full lg:w-[50vw] flex-col '>
-            <div className="w-full h-screen hidden lg:block overflow-hidden">
+            <div className="relative w-full h-screen hidden lg:block overflow-hidden">
+              <Snowfall />
               <div className="flex flex-col relative h-full justify-center items-center w-full">
-                <div className='w-full'>
-                  <div className="w-full">
-
-                    <video
-                      src="./hudbil-mainlogo.mp4"
-                      autoPlay
-                      loop
-                      muted
-                      playsInline
-                      className="w-full"
-                      onContextMenu={(e) => e.preventDefault()}
-                    >
-                      <source src="./hudbil-mainlogo.mp4" type="video/mp4" />
-                      Your browser does not support the video tag.
-                    </video>
-
-                  </div>
+                <div className="w-full">
+                  <video
+                    src="./hudbil-mainlogo.mp4"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full"
+                    onContextMenu={(e) => e.preventDefault()}
+                  >
+                    <source src="./hudbil-mainlogo.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
                 </div>
-                <button onClick={handleScroll} className='absolute bottom-8'>
+                <button onClick={handleScroll} className="absolute bottom-8">
                   <img
                     ref={imgRef}
                     loading="lazy"
@@ -576,22 +571,24 @@ const Home = () => {
                     alt="Down arrow"
                     className="w-16 rounded-full"
                     onMouseEnter={() => {
-                      gsap.fromTo(imgRef.current,
+                      gsap.fromTo(
+                        imgRef.current,
                         { rotation: -5 },
                         {
                           rotation: 5,
                           yoyo: true,
                           ease: "power1.inOut",
                           duration: 0.1,
-                          repeat: -1
+                          repeat: -1,
                         }
                       );
                     }}
                     onMouseLeave={() => {
                       gsap.killTweensOf(imgRef.current);
-                      gsap.set(imgRef.current, { rotation: "0", });
+                      gsap.set(imgRef.current, { rotation: "0" });
                     }}
-                  /></button>
+                  />
+                </button>
               </div>
             </div>
             <section className="w-full lg:w-[50vw] bg-white" ref={sectionRef} >
