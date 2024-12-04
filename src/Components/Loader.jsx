@@ -38,7 +38,7 @@ const Loader = ({ onLoadingComplete }) => {
       }
     ).then(() => {
       moveLoaderUp();
-    });;
+    });
 
     return () => {
       document.body.style.overflow = 'auto';
@@ -68,7 +68,7 @@ const Loader = ({ onLoadingComplete }) => {
   };
 
   return (
-    <div ref={loaderRef} className="fixed z-[10000] inset-0 flex flex-col items-center justify-center bg-black">
+    <div ref={loaderRef} className="fixed z-[1100] inset-0 flex flex-col items-center justify-center bg-black">
       <img
         ref={birdRef}
         src="./FlippedbirdImg.png"

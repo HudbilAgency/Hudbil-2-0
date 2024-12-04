@@ -122,7 +122,7 @@ const Our_products = () => {
                   />
                 </div>
                 {isOpen && (
-                  <div className="absolute w-full left-0 right-0 mt-1 bg-white text-base border shadow-lg z-[10000]">
+                  <div className="absolute w-full left-0 right-0 mt-1 bg-white text-base border shadow-lg z-[500]">
                     {locations.map((location) => (
                       <div
                         key={location.name}
@@ -147,7 +147,7 @@ const Our_products = () => {
                   />
                 </div>
                 {isOpen2 && (
-                  <div className="absolute w-full left-0 right-0 mt-1 bg-white text-base border shadow-lg z-[10000]">
+                  <div className="absolute w-full left-0 right-0 mt-1 bg-white text-base border shadow-lg z-[500]">
                     {themes.map((theme) => (
                       <div
                         key={theme.name}
@@ -172,7 +172,7 @@ const Our_products = () => {
                   />
                 </div>
                 {isOpen3 && (
-                  <div className="absolute w-full left-0 right-0 mt-1 bg-white text-base border shadow-lg z-[10000]">
+                  <div className="absolute w-full left-0 right-0 mt-1 bg-white text-base border shadow-lg z-[500]">
                     {contents.map((content) => (
                       <div
                         key={content.name}

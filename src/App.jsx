@@ -1,11 +1,59 @@
-import { BrowserRouter as Router } from "react-router-dom"; 
+import { BrowserRouter as Router } from "react-router-dom";
+import { useEffect } from "react";
 import Routers from "./Routes/Routes";
 import ScrollToTop from "./Components/ScrollToTop";
+import { messaging } from "./firebase";
+import { getToken } from 'firebase/messaging';
+import PopUp from "./Components/popup";
 
 function App() {
+
+  async function requestPermission() {
+    const permission = await Notification.requestPermission();
+
+    if (permission === "granted") {
+      const token = await getToken(messaging, { vapidKey: 'BBwTjx9MN408kbDq1N9xtkgO6VonMhrKgFJuXjSlHfrr3VawLe8Y7rSm7uEgGes_qB9YOc5knmE7KIbPp0jA_sQ' });
+
+      if (token) {
+        console.log("Device token:", token);
+
+        const apiUrl = "http://localhost:5000/api/save-device-token";
+
+        const userData = {
+          deviceToken: token,
+        };
+
+        try {
+          const response = await fetch(apiUrl, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(userData),
+          });
+
+          if (response.ok) {
+            console.log("Device token sent to backend successfully.");
+          } else {
+            console.error("Failed to send device token to backend.");
+          }
+        } catch (error) {
+          console.error("Error sending device token:", error);
+        }
+      }
+    } else if (permission === "denied") {
+      alert("Notification permission denied");
+    }
+  }
+
+  useEffect(() => {
+    requestPermission();
+  }, []);
+
   return (
     <>
       <Router>
+        <PopUp />
         <ScrollToTop />
         <Routers />
       </Router>
