@@ -49,13 +49,26 @@ messaging.onBackgroundMessage((payload) => {
 self.addEventListener('notificationclick', (event) => {
     console.log('Notification click received:', event);
 
+    // Close the notification when clicked
     event.notification.close();
 
-    if (event.action === 'learn_more') {
-        const url = event.notification.data?.url || 'https://www.hudbil.com';
-        event.waitUntil(clients.openWindow(url));
-    } else {
-        const url = event.notification.data?.url || 'https://www.hudbil.com';
-        event.waitUntil(clients.openWindow(url));
-    }
+    // Get the URL from the notification data (or use a fallback URL)
+    const url = event.notification.data?.url || 'https://www.hudbil.com';
+
+    // Try opening the URL in the background or bring the tab to focus
+    event.waitUntil(
+        clients.matchAll({ type: 'window', includeUncontrolled: true }).then((clientList) => {
+            for (const client of clientList) {
+                // If the tab with the URL is already open, focus it
+                if (client.url === url && 'focus' in client) {
+                    return client.focus();
+                }
+            }
+            // If the URL is not open, open it in a new window
+            if (clients.openWindow) {
+                return clients.openWindow(url); // This will open a new tab/window
+            }
+        })
+    );
 });
+
