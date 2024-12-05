@@ -51,7 +51,6 @@ firebase.initializeApp(firebaseConfig);
 const messaging = firebase.messaging();
 
 messaging.onBackgroundMessage((payload) => {
-
     console.log('[firebase-messaging-sw.js] Received background message ', payload);
 
     if (payload.notification) {
@@ -86,9 +85,19 @@ self.addEventListener('notificationclick', (event) => {
     // Check if the action is "open_url"
     if (event.action === 'open_url') {
         event.notification.close(); // Close the notification
-        // Open the URL in a new window
+        
+        // Try opening the link in an existing window or open a new one if possible
         event.waitUntil(
-            clients.openWindow('https://www.hudbil.com/')
+            clients.matchAll({ type: 'window', includeUncontrolled: true }).then((clientList) => {
+                const client = clientList.find((client) => client.url.includes('https://www.hudbil.com/'));
+                if (client) {
+                    // Focus the existing window if it's already open
+                    client.focus();
+                } else {
+                    // Open a new window if no existing client matches
+                    clients.openWindow('https://www.hudbil.com/');
+                }
+            })
         );
     } else {
         // Default action (notification body click)
