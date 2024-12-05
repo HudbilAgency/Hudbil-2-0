@@ -15,7 +15,7 @@ function App() {
       const token = await getToken(messaging, { vapidKey: 'BBwTjx9MN408kbDq1N9xtkgO6VonMhrKgFJuXjSlHfrr3VawLe8Y7rSm7uEgGes_qB9YOc5knmE7KIbPp0jA_sQ' });
 
       if (token) {
-        console.log("Device token:", token);
+        console.log("Device token obtained successfully");
 
         const apiUrl = "https://notification-marketing-hudbil.onrender.com/api/save-device-token";
         // const apiUrl = "http://localhost:5000/api/save-device-token";
@@ -34,16 +34,16 @@ function App() {
           });
 
           if (response.ok) {
-            console.log("Device token sent to backend successfully.");
+            console.log("Device token sent to server successfully.");
           } else {
             console.error("Failed to send device token to backend.");
           }
         } catch (error) {
-          console.error("Error sending device token:", error);
+          console.error("Error sending device token:");
         }
       }
     } else if (permission === "denied") {
-      alert("Notification permission denied");
+      console.log("Notification permission denied");
     }
   }
 
