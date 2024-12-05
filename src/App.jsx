@@ -18,6 +18,7 @@ function App() {
         console.log("Device token:", token);
 
         const apiUrl = "https://notification-marketing-hudbil.onrender.com/api/save-device-token";
+        // const apiUrl = "http://localhost:5000/api/save-device-token";
 
         const userData = {
           deviceToken: token,
