@@ -16,24 +16,12 @@ const messaging = firebase.messaging();
 
 messaging.onBackgroundMessage((payload) => {
     console.log('[firebase-messaging-sw.js] Received background message ', payload);
-
     if (payload.notification) {
         const notificationTitle = payload.notification.title;
         const notificationOptions = {
             body: payload.notification.body,
             icon: payload.notification.icon,
-            actions: [
-                {
-                    action: 'learn_more',
-                    title: 'Learn more about us',
-                    icon: 'https://www.hudbil.com/favicon-logo.png',
-                },
-            ],
-            data: {
-                url: 'https://www.hudbil.com',
-            },
         };
-
         if (self.registration && self.registration.showNotification) {
             self.registration.getNotifications({ tag: payload.notification.tag }).then((existingNotifications) => {
                 if (existingNotifications.length === 0) {
@@ -45,62 +33,3 @@ messaging.onBackgroundMessage((payload) => {
         }
     }
 });
-
-// self.addEventListener('notificationclick', (event) => {
-//     console.log('Notification click received:', event);
-
-//     // Close the notification when clicked
-//     event.notification.close();
-
-//     // Get the URL from the notification data (or use a fallback URL)
-//     const url = event.notification.data?.url || 'https://www.hudbil.com';
-
-//     // Try opening the URL in the background or bring the tab to focus
-//     event.waitUntil(
-//         clients.matchAll({ type: 'window', includeUncontrolled: true }).then((clientList) => {
-//             for (const client of clientList) {
-//                 // If the tab with the URL is already open, focus it
-//                 if (client.url === url && 'focus' in client) {
-//                     return client.focus();
-//                 }
-//             }
-//             // If the URL is not open, open it in a new window
-//             if (clients.openWindow) {
-//                 return clients.openWindow(url); // This will open a new tab/window
-//             }
-//         })
-//     );
-// });
-
-self.addEventListener('notificationclick', (event) => {
-    console.log('Notification click received:', event);
-
-    // Close the notification when clicked
-    event.notification.close();
-
-    // Get the URL from the notification data (or use a fallback URL)
-    const url = event.notification.data?.url || 'https://www.hudbil.com';
-
-    event.waitUntil(
-        clients.matchAll({ type: 'window', includeUncontrolled: true }).then((clientList) => {
-            let matchingClient = null;
-
-            for (const client of clientList) {
-                // If the tab with the URL is already open, focus it
-                if (client.url === url && 'focus' in client) {
-                    matchingClient = client;
-                    break;
-                }
-            }
-
-            if (matchingClient) {
-                return matchingClient.focus();  // Focus on the open tab
-            } else {
-                // Open a new tab or window if not already open
-                return clients.openWindow(url);  // This will open a new tab/window
-            }
-        })
-    );
-});
-
-
