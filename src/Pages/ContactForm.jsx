@@ -624,7 +624,7 @@ const ContactForm = () => {
                 <div className="bg-[#D8D8D8] h-[1px] w-full lg:hidden block"></div>
                 <div className="bg-[#D8D8D8] w-[1px] h-full hidden lg:block"></div>
                 <div className="calendar w-full overflow-hidden">
-                  <InlineWidget url="https://calendly.com/hudbilagency/30min?primary_color=7811A5&hide_gdpr_banner=1" />
+                  <InlineWidget url="https://calendly.com/hudbilprivatelimited/discovery-call?primary_color=7811A5&hide_gdpr_banner=1" />
                 </div>
               </div>
             ) : showConfirmation ? (
