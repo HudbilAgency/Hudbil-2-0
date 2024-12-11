@@ -316,3 +316,7 @@ body {
   border-top-width: 0;
   border-left-width: 0;
 }
+
+.calendly-spinner{
+visibility: hidden !important;
+}
