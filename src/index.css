@@ -83,7 +83,7 @@ body {
 }
 
 .submit-btn {
-  background: linear-gradient(135deg, #7811a5, #2e16bb);
+  background: linear-gradient(180deg, #7811a5, #2e16bb);
 }
 
 .submit-btn:hover {
@@ -91,7 +91,7 @@ body {
 }
 
 .calendar-btn:hover {
-  background: linear-gradient(135deg, #7811a5, #2e16bb);
+  background: linear-gradient(180deg, #7811a5, #2e16bb);
 }
 
 .main-title {
@@ -146,179 +146,6 @@ body {
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
-}
-
-#popup-container {
-  opacity: 1;
-}
-
-#popup-container.fade-out {
-  opacity: 0;
-  transition: opacity 0.5s ease-out;
-}
-
-.notify:before,
-.notify:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  height: 1px;
-  width: 100%;
-  background-color: #eeeeee;
-}
-
-.notify:before {
-  top: 0;
-}
-
-.notify:after {
-  bottom: 0;
-}
-
-.notify:hover > * > *:before,
-.notify:hover > * > *:after {
-  transform: translate3d(0, 0, 0);
-}
-
-.notify:hover > * > * > *:before,
-.notify:hover > * > * > *:after {
-  transform: translate3d(0, 0, 0);
-}
-
-.notify > *:before,
-.notify > *:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 1px;
-  background-color: #fefefe;
-}
-
-.notify > *:before {
-  left: 0;
-}
-
-.notify > *:after {
-  right: 0;
-}
-
-.notify > * > *:before,
-.notify > * > *:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  z-index: 9;
-  height: 1px;
-  width: 100%;
-  background-color: #aeaeae;
-}
-
-.notify > * > *:before {
-  top: 0;
-  transform: translate3d(-105%, 0, 0);
-  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.notify > * > *:after {
-  bottom: 0;
-  transform: translate3d(105%, 0, 0);
-  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.notify > * > * > *:before,
-.notify > * > * > *:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  z-index: 9;
-  height: 100%;
-  width: 1px;
-  background-color: #9c9c9c;
-}
-
-.notify > * > * > *:before {
-  left: 0;
-  transform: translate3d(0, 105%, 0);
-  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.notify > * > * > *:after {
-  right: 0;
-  transform: translate3d(0, -105%, 0);
-  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.corner-button-then {
-  position: absolute;
-  width: 4px;
-  height: 4px;
-  border: 2px solid rgb(255, 254, 254);
-}
-
-.corner-button-then:nth-child(1) {
-  top: -3px;
-  left: -3px;
-  border-bottom-width: 0;
-  border-right-width: 0;
-}
-
-.corner-button-then:nth-child(2) {
-  top: -3px;
-  right: -3px;
-  border-bottom-width: 0;
-  border-left-width: 0;
-}
-
-.corner-button-then:nth-child(3) {
-  bottom: -3px;
-  left: -3px;
-  border-top-width: 0;
-  border-right-width: 0;
-}
-
-.corner-button-then:nth-child(4) {
-  bottom: -3px;
-  right: -3px;
-  border-top-width: 0;
-  border-left-width: 0;
-}
-
-.corner-button-deny {
-  position: absolute;
-  width: 5px;
-  height: 5px;
-  z-index: 99999999;
-
-  border: 2px solid rgb(255, 255, 255);
-}
-
-.corner-button-deny:nth-child(1) {
-  top: 0px;
-  left: 0px;
-  border-bottom-width: 0;
-  border-right-width: 0;
-}
-
-.corner-button-deny:nth-child(2) {
-  top: 0px;
-  right: 0px;
-  border-bottom-width: 0;
-  border-left-width: 0;
-}
-
-.corner-button-deny:nth-child(3) {
-  bottom: 0px;
-  left: 0px;
-  border-top-width: 0;
-  border-right-width: 0;
-}
-
-.corner-button-deny:nth-child(4) {
-  bottom: 0px;
-  right: 0px;
-  border-top-width: 0;
-  border-left-width: 0;
 }
 
 .calendly-spinner{

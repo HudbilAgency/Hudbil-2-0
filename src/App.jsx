@@ -1,11 +1,12 @@
-import { BrowserRouter as Router, useLocation } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import { useEffect } from "react";
 import Routers from "./Routes/Routes";
 import ScrollToTop from "./Components/ScrollToTop";
 import { messaging } from "./firebase";
-import { getToken } from "firebase/messaging";
+import { getToken } from 'firebase/messaging';
 
 function App() {
+
   async function requestPermission() {
     const permission = await Notification.requestPermission();
 
@@ -36,7 +37,7 @@ function App() {
             console.error("Failed to send device token to backend.");
           }
         } catch (error) {
-          console.error("Error sending device token:", error);
+          console.error("Error sending device token:");
         }
       }
     } else if (permission === "denied") {
@@ -44,28 +45,19 @@ function App() {
     }
   }
 
-  function HomePagePermissionRequest() {
-    const location = useLocation();
-
-    useEffect(() => {
-      if (location.pathname === "/") {
-        const timer = setTimeout(() => {
-          requestPermission();
-        }, 2000);
-
-        return () => clearTimeout(timer); 
-      }
-    }, [location.pathname]);
-
-    return null;
-  }
+  useEffect(() => {
+    setTimeout(() => {
+    requestPermission();
+    }, 2000)
+  }, []);
 
   return (
-    <Router>
-      <ScrollToTop />
-      <HomePagePermissionRequest />
-      <Routers />
-    </Router>
+    <>
+      <Router>
+        <ScrollToTop />
+        <Routers />
+      </Router>
+    </>
   );
 }
 
