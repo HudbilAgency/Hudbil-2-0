@@ -68,7 +68,6 @@ import WebDev11 from '../Pages/webdev11';
 import WebDev12 from '../Pages/webdev12';
 import WebDev13 from '../Pages/webdev13';
 import WebDev14 from '../Pages/webdev14';
-import Consultation from '../Pages/Consultation';
 
 const Routers = () => {
   return (
@@ -142,7 +141,6 @@ const Routers = () => {
         <Route path="/quick-links/website-development-agency-in-mumbai" element={<WebDev12 />} />
         <Route path="/quick-links/website-development-agency-in-patna" element={<WebDev13 />} />
         <Route path="/quick-links/website-development-agency-in-delhi" element={<WebDev14 />} />
-        <Route path="/consultation" element={<Consultation />} />
       </Routes>
     </>
   )

@@ -4,6 +4,7 @@ import Footer from '../Components/Footer';
 import { Helmet } from 'react-helmet';
 import axios from "axios";
 import ReCAPTCHA from "react-google-recaptcha";
+import { InlineWidget } from "react-calendly";
 
 const ContactForm = () => {
 
@@ -78,6 +79,7 @@ const ContactForm = () => {
   const [showVerification, setShowVerification] = useState(false);
   const recaptchaRef = useRef(null);
   const [recaptchaToken, setRecaptchaToken] = useState(null);
+  const [showCalendar, setShowCalendar] = useState(false);
 
   const Lookingfor = [
     { name: 'Services' },
@@ -258,6 +260,15 @@ const ContactForm = () => {
 
   const onRecaptchaChange = (token) => {
     setRecaptchaToken(token);
+  };
+
+  const sectionRef = useRef(null);
+
+  const ViewCalendar = () => {
+    setShowCalendar(true);
+    setTimeout(() => {
+      sectionRef.current.scrollIntoView({ behavior: "smooth" });
+    }, 0);
   };
 
   const countries = [
@@ -608,7 +619,15 @@ const ContactForm = () => {
               </div>
             </div>
 
-            {showConfirmation ? (
+            {showCalendar ? (
+              <div ref={sectionRef} className="w-full lg:w-1/2 overflow-hidden min-h-full flex flex-col lg:flex-row items-start gap-12 xl:gap-16">
+                <div className="bg-[#D8D8D8] h-[1px] w-full lg:hidden block"></div>
+                <div className="bg-[#D8D8D8] w-[1px] h-full hidden lg:block"></div>
+                <div className="calendar w-full overflow-hidden">
+                  <InlineWidget url="https://calendly.com/hudbilagency/30min?primary_color=7811A5&hide_gdpr_banner=1" />
+                </div>
+              </div>
+            ) : showConfirmation ? (
               <div className='w-full lg:w-1/2 min-h-full flex flex-col lg:flex-row items-center gap-16'>
                 <div className="bg-[#D8D8D8] h-[1px] w-full lg:hidden block"></div>
                 <div className="bg-[#D8D8D8] w-[1px] h-full hidden lg:block"></div>
@@ -901,9 +920,14 @@ const ContactForm = () => {
                         </div>
                       )}
                     </div>
-                    <button form="userDetailsForm" type="submit" className='border w-fit rounded-full py-4 px-28 text-white submit-btn'>
-                      Submit
-                    </button>
+                    <div className='flex gap-12 flex-col 2xl:flex-row'>
+                      <button form="userDetailsForm" type="submit" className='border w-fit rounded-full py-4 px-28 text-white submit-btn'>
+                        Submit
+                      </button>
+                      <button onClick={ViewCalendar} className='border border-[#7811A5] w-fit rounded-full py-4 px-[66px] text-[#7811A5] hover:text-white calendar-btn'>
+                        Book a Consultation
+                      </button>
+                    </div>
                   </div>
                 </form>
               </div>

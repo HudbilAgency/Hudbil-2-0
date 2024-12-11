@@ -90,6 +90,10 @@ body {
   background: black;
 }
 
+.calendar-btn:hover {
+  background: linear-gradient(135deg, #7811a5, #2e16bb);
+}
+
 .main-title {
   opacity: 0;
 }
@@ -319,4 +323,10 @@ body {
 
 .calendly-spinner{
 visibility: hidden !important;
+}
+
+@media (min-width: 1024px) {
+  .calendly-inline-widget{
+    height: 1200px !important;
+  }
 }
