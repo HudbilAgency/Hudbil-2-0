@@ -531,7 +531,7 @@ const Navbar = () => {
       >
 
         <div className={`flex relative flex-col h-dvh w-[100vw] lg:w-[50vw]`}>
-          <Snowfall />
+          {/* <Snowfall /> */}
           <nav className="h-dvh flex flex-col items-start justify-between w-full font-bold text-white bg-black pt-[110px] pb-[25px] md:pb-[30px] xl:pb-[20px]">
             <ul className="mx-6 lg:mx-16 flex flex-col items-start gap-4 md:gap-6 lg:gap-2 2xl:gap-6">
               {menuItems.map((item, index) => (

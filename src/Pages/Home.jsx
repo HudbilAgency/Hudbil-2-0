@@ -547,7 +547,7 @@ const Home = () => {
 
           <section className='-mt-[30vh] lg:-mt-[0vh] box3 justify-end items-end overflow-hidden w-full lg:w-[50vw] flex-col '>
             <div className="relative w-full h-screen hidden lg:block overflow-hidden">
-              <Snowfall />
+              {/* <Snowfall /> */}
               <div className="flex flex-col relative h-full justify-center items-center w-full">
                 <div className="w-full">
                   <video
