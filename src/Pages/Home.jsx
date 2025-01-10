@@ -765,7 +765,7 @@ const Home = () => {
                     We engage brands with immersive digital experiences that brings you a return on creativity. We love solving thorny problems with smart, custom software design and development under one umbrella.
                   </p>
 
-                  <p className="w-1/3 mt-auto md:text-end  text-xl tracking-wider text-[#7811A5] max-md:mt-10  max-md:max-w-full">
+                  <p className="w-1/3 mt-auto md:text-end hover:text-gray-500 transition-all duration-300 text-xl tracking-wider text-[#7811A5] max-md:mt-10  max-md:max-w-full">
                     <Link to="/our-services">Read now</Link>
                   </p>
                 </div>
@@ -786,7 +786,7 @@ const Home = () => {
                           <p className="mt-7  text-lg tracking-wide leading-8 text-neutral-950 ">{service.description}</p>
                         </div>
                         <Link to={service.url} className="mt-5">
-                          <button className=' text-[#7811A5] text-xl self-start'>Read now</button>
+                          <button className=' text-[#7811A5] hover:text-gray-500 transition-all duration-300 text-xl self-start'>Read now</button>
                         </Link>
                       </div>
                     ))}

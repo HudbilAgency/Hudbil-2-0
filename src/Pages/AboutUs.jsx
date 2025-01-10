@@ -156,9 +156,9 @@ const AboutUs = () => {
                                 business; meaning every client succeeds from the testing, ideas and developments of our
                                 total client pool.</div>
                             <div>
-                                <Link to="/contact-us">
+                                <Link to="/our-partners">
                                     <button className="button self-end hover:text-white flex flex-row justify-between px-12 py-3 mx-auto leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-all duration-300">
-                                        <h1 className='text-base mt-1 '>Get In Touch</h1>
+                                        <h1 className='text-base mt-1 '>Our Partners</h1>
                                         <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                                     </button>
                                 </Link>

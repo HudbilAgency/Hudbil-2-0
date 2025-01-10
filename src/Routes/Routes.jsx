@@ -33,6 +33,7 @@ import Website_design_agency from '../Pages/website-design-agency';
 import Evolution_of_web_development from '../Pages/evolution-of-web-development';
 import Our_industry from '../Pages/our-industry';
 import Our_products from '../Pages/our-products';
+import Partners from '../Pages/Partners';
 import ComingSoon from '../Pages/coming-soon';
 import ClientSupport from '../Pages/client-support';
 import Careersculture from '../Pages/careers&culture';
@@ -107,6 +108,7 @@ const Routers = () => {
         <Route path='/services/strategy-agency' element={<Services4 />} />
         <Route path='/our-industry' element={<Our_industry />} />
         <Route path='/our-products' element={<Our_products />} />
+        <Route path='/our-partners' element={<Partners />} />
         <Route path="/ai-ella" element={<TalkToElla />} />
         <Route path="/contact-us" element={<ContactForm />} />
         <Route path="/coming-soon" element={<ComingSoon />} />
