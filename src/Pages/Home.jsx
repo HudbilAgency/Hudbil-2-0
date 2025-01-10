@@ -160,12 +160,6 @@ const Home = () => {
     beforeChange: (oldIndex, newIndex) => setCurrentIndex(newIndex),
   };
 
-  const clients = [
-    "Jef Techno", "Infotik", "Bluemail", "Finesoft", "Valleycovers",
-    "Capixai", "Shimmer", "Nettango", "Monstrack", "Sky",
-    "Kathmandu", "LMG", "DSG", "Spring", "Collabera", "Ezetap"
-  ];
-
   const stats = [
     { value: "200%", description: "Demand in Designing and Development hunger for brands transformation." },
     { value: "10Y", description: "High in success and collaborating with many brands around world." },
@@ -477,6 +471,21 @@ const Home = () => {
     });
   }, []);
 
+  const gridimages = [
+    '/gridimg1.png',
+    '/gridimg2.png',
+    '/gridimg3.png',
+    '/gridimg4.png',
+    '/gridimg5.png',
+    '/gridimg6.png',
+    '/gridimg7.png',
+    '/gridimg8.png',
+    '/gridimg9.png',
+    '/gridimg10.png',
+    '/gridimg11.png',
+    '/gridimg12.png',
+  ];
+
   return (
     <>
       <Helmet>
@@ -601,25 +610,40 @@ const Home = () => {
                   </div>
                   <hr className="w-full h-px border border-gray-400 border-solid" />
                   <div className="mt-16 mb-12 w-full">
-                    <div className="flex flex-col xl:flex-row w-full items-start justify-between">
+                    <div className="flex flex-col w-full items-start justify-between">
                       <div className="flex w-fit">
                         <div className="flex gap-3 items-center text-base tracking-wider leading-none text-neutral-950 max-md:mt-10">
                           <div className="flex shrink-0 self-stretch my-auto w-3 h-3 bg-purple-800 rounded-[1000px]" />
                           <div className="my-auto  w-fit text-purple-800 text-2xl xl:text-xl 2xl:text-2xl">We work with people like</div>
                         </div>
                       </div>
-                      <div className="w-full md:w-fit">
-                        <div className="flex flex-col grow items-start text-2xl  tracking-wider leading-none text-neutral-950 mt-10 xl:mt-0">
-                          {clients.map((client, index) => (
-                            <div key={index} className={index > 0 ? "mt-4" : ""}>{client}</div>
+
+                      <div className='my-16 mx-auto w-fit'>
+
+                        <div className="grid grid-cols-3 grid-rows-4 gap-[1px] bg-[#D9CEDD] border border-[#D9CEDD]">
+                          {gridimages.map((src, index) => (
+                            <div
+                              key={index}
+                              className="group relative flex items-center justify-center max-md:min-w-[80px] max-md:min-h-[80px] md:w-[200px] md:h-[200px] bg-white transition-all duration-500"
+                            >
+                              <img
+                                src={src}
+                                alt={`Placeholder ${index + 1}`}
+                                className="w-[60%] h-fit grayscale group-hover:grayscale-0 brightness-75 group-hover:brightness-100 transition-all duration-500 z-10"
+                              />
+                              <div className="absolute inset-0 bg-gradient-to-b from-[#7811A5] to-[#2E063F] opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+                            </div>
                           ))}
-                          <Link to="/our-work" className="mt-12">
-                            <button className="button flex flex-row items-center gap-4 px-12 py-3 text-base leading-none text-white bg-black rounded-[1000px] max-md:px-5 max-md:mt-10 hover:bg-[#7811A5] transition-all duration-300">
-                              <h1 className='text-base '>Learn more</h1>
-                              <img ref={buttonImgRef} src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
-                            </button>
-                          </Link>
                         </div>
+                      </div>
+
+                      <div className="w-fit lg:ml-auto">
+                        <Link to="/our-work">
+                          <button className="button flex flex-row items-center gap-4 px-12 py-3 text-base leading-none text-white bg-black rounded-[1000px] max-md:px-5 max-md:mt-10 hover:bg-[#7811A5] transition-all duration-300">
+                            <h1 className='text-base '>Learn more</h1>
+                            <img ref={buttonImgRef} src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                          </button>
+                        </Link>
                       </div>
                     </div>
                   </div>

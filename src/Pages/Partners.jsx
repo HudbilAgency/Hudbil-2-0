@@ -74,6 +74,25 @@ const Partners = () => {
 
     return (
         <>
+        <Helmet>
+                <title>Partner with Us | Expert Website Designing & Development Solutions</title>
+                <meta name="description" content="Join hands with Hudbil, a trusted partner for creative website designing, seamless development, and digital growth. Let's build innovative, results-driven solutions together!"></meta>
+                <meta property="og:url" content="https://www.hudbil.com/our-partners"></meta>
+                <meta name="keywords" content="Website designing partner, web development partner, website development solutions, creative website agency, digital growth partner, professional web design, custom web development, website collaboration"></meta>
+                <meta name="og:title" content="Our Trusted Partners | Website Designing & Development Agency"></meta>
+                <meta name="og:description" content="Explore our partnerships with leading brands and businesses. Together, we deliver cutting-edge website design, development, and digital solutions that inspire growth and success."></meta>
+                <meta name="og:site_name" content="UI/UX Designing Company in Bangalore India | Website Development Agency in Bangalore | Top 10 Website Developement Agencies in Bangalore Review | Branding and designing Agency | Software development Agency"></meta>
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-3795MKLFX0"></script>
+                <script>
+                  {`
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+        
+                  gtag('config', 'G-3795MKLFX0');
+                  `}
+                </script>
+              </Helmet>
             <Navbar />
             <main className='pt-[80px] bg-black'>
                 <section className='pt-20 pb-28'>
