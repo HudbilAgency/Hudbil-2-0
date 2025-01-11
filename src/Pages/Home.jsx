@@ -610,7 +610,7 @@ const Home = () => {
                   </div>
                   <hr className="w-full h-px border border-gray-400 border-solid" />
                   <div className="mt-16 mb-12 w-full">
-                    <div className="flex flex-col w-full items-start justify-between">
+                    <div className="flex flex-col w-full items-start">
                       <div className="flex w-fit">
                         <div className="flex gap-3 items-center text-base tracking-wider leading-none text-neutral-950 max-md:mt-10">
                           <div className="flex shrink-0 self-stretch my-auto w-3 h-3 bg-purple-800 rounded-[1000px]" />
@@ -620,11 +620,11 @@ const Home = () => {
 
                       <div className='my-16 mx-auto w-fit'>
 
-                        <div className="grid grid-cols-3 grid-rows-4 gap-[1px] bg-[#D9CEDD] border border-[#D9CEDD]">
+                        <div className="grid grid-cols-2 grid-rows-6 sm:grid-cols-3 sm:grid-rows-4 lg:grid-cols-2 lg:grid-rows-6 xl:grid-cols-3 xl:grid-rows-4 gap-[1px] bg-[#D9CEDD] border border-[#D9CEDD]">
                           {gridimages.map((src, index) => (
                             <div
                               key={index}
-                              className="group relative flex items-center justify-center max-md:min-w-[80px] max-md:min-h-[80px] md:w-[200px] md:h-[200px] bg-white transition-all duration-500"
+                              className="group relative flex items-center justify-center max-md:w-[140px] max-md:h-[140px] md:w-[220px] md:h-[220px] xl:w-[200px] xl:h-[200px] bg-white transition-all duration-500"
                             >
                               <img
                                 src={src}
@@ -637,9 +637,9 @@ const Home = () => {
                         </div>
                       </div>
 
-                      <div className="w-fit lg:ml-auto">
+                      <div className="w-fit ml-auto">
                         <Link to="/our-work">
-                          <button className="button flex flex-row items-center gap-4 px-12 py-3 text-base leading-none text-white bg-black rounded-[1000px] max-md:px-5 max-md:mt-10 hover:bg-[#7811A5] transition-all duration-300">
+                          <button className="button flex flex-row items-center gap-4 px-12 py-3 text-base leading-none text-white bg-black rounded-[1000px] max-md:px-5 hover:bg-[#7811A5] transition-all duration-300">
                             <h1 className='text-base '>Learn more</h1>
                             <img ref={buttonImgRef} src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                           </button>
