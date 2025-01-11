@@ -613,8 +613,8 @@ const Home = () => {
                     <div className="flex flex-col w-full items-start">
                       <div className="flex w-fit">
                         <div className="flex gap-3 items-center text-base tracking-wider leading-none text-neutral-950 max-md:mt-10">
-                          <div className="flex shrink-0 self-stretch my-auto w-3 h-3 bg-purple-800 rounded-[1000px]" />
-                          <div className="my-auto  w-fit text-purple-800 text-2xl xl:text-xl 2xl:text-2xl">We work with people like</div>
+                          <div className="flex shrink-0 self-stretch my-auto w-3 h-3 bg-[#7811A5] rounded-[1000px]" />
+                          <div className="my-auto  w-fit text-[#7811A5] text-2xl xl:text-xl 2xl:text-2xl">We work with people like</div>
                         </div>
                       </div>
 
@@ -650,7 +650,7 @@ const Home = () => {
                   <hr className="shrink-0 w-full h-px border border-gray-400 border-solid" />
                   <div className="flex gap-5 items-center mt-16 text-base tracking-wider leading-none text-neutral-950">
                     <div className="flex shrink-0 self-stretch my-auto w-3 h-3 bg-[#6A13AA] rounded-[1000px]" />
-                    <div className="self-stretch  text-purple-800 text-2xl  my-auto w-full">What we good at</div>
+                    <div className="self-stretch  text-[#7811A5] text-2xl  my-auto w-full">What we good at</div>
                   </div>
                   <p className="mt-16 text-[24px]  font-thin  leading-8 text-neutral-950 w-full lg:w-4/5">
                     Innovation at your fingertips. We are Hudbil Design + Build Agency to create a change for

@@ -201,13 +201,13 @@ const Our_products = () => {
               <img src="./ProductsImg.jpg" alt="ProductsImg.jpg" />
               <h1 className='text-5xl'>We are developing</h1>
               <h2 className='text-3xl'>We are in process of developing a software solution soon.</h2>
-              <button className='bg-purple-800 text-2xl text-white px-20 py-2 self-center rounded-full hover:bg-black'>Download</button>
+              <button className='bg-[#7811A5] text-2xl text-white px-20 py-2 self-center rounded-full hover:bg-black'>Download</button>
             </div>
             <div className='size-[95%] space-y-5'>
               <img src="./ProductsImg.jpg" alt="ProductsImg.jpg" />
               <h1 className='text-5xl'>We are developing</h1>
               <h2 className='text-3xl'>We are in process of developing a software solution soon.</h2>
-              <button className='bg-purple-800 text-2xl text-white px-20 py-2 self-center rounded-full hover:bg-black'>Download</button>
+              <button className='bg-[#7811A5] text-2xl text-white px-20 py-2 self-center rounded-full hover:bg-black'>Download</button>
             </div>
         </div> */}
 
@@ -229,7 +229,7 @@ const ProductCard = ({ imgSrc, title, description, path }) => {
       <img src={imgSrc} alt={title} className='grayscale hover:grayscale-0 transition-all duration-500' />
       <h1 className='text-3xl'>{title}</h1>
       <h2 className='text-xl'>{description}</h2>
-      <Link to={path}><button className='bg-purple-800 transition-all duration-300 text-base text-white px-20 mt-5 py-2 self-center rounded-full hover:bg-black'>Download</button></Link>
+      <Link to={path}><button className='bg-[#7811A5] transition-all duration-300 text-base text-white px-20 mt-5 py-2 self-center rounded-full hover:bg-black'>Download</button></Link>
     </div>
   );
 };

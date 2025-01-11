@@ -527,7 +527,7 @@ const WebDev14 = () => {
                                 over this emotional autopilot. They have persuasive power.</div>
                             <div className='mt-12'>
                                 <a href="/about-us">
-                                    <button className='rounded-full py-4 px-16 sm:px-20 text-white bg-purple-800 submit-btn hover:bg-white hover:text-black mt-4'>
+                                    <button className='rounded-full py-4 px-16 sm:px-20 text-white bg-[#7811A5] submit-btn hover:bg-white hover:text-black mt-4'>
                                         Know More
                                     </button>
                                 </a>
