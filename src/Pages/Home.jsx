@@ -292,9 +292,8 @@ const Home = () => {
     if (mediaQuery.matches) {
 
       gsap.fromTo(sectionRef.current,
-        { backgroundColor: 'black' },
+        { opacity: 0 },
         {
-          backgroundColor: 'white',
           opacity: 1,
           scrollTrigger: {
             trigger: sectionRef.current,
