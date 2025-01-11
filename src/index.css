@@ -11,6 +11,10 @@
   user-select: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Arial Th", Arial, sans-serif;
   overflow: hidden;

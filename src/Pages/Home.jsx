@@ -295,9 +295,10 @@ const Home = () => {
         { opacity: 0 },
         {
           opacity: 1,
+          ease: "expo.inOut",
           scrollTrigger: {
             trigger: sectionRef.current,
-            start: 'top 40%',
+            start: 'top 80%',
             end: '5% top',
             scrub: true
 
