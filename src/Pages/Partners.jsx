@@ -2,7 +2,6 @@ import React, { useState, useRef, useEffect } from 'react'
 import ReachUs from '../Components/ReachUs';
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
-import { Link } from 'react-router-dom';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Helmet } from 'react-helmet';
@@ -15,42 +14,52 @@ const Partners = () => {
         {
             text: "DesignRush is a B2B Marketplace for businesses to find agencies, select agency partners for your next project based on reviews, clients and agency.",
             image: "/partners-img3.png",
+            path: "https://www.designrush.com/",
         },
         {
             text: "A ratings and reviews platform that helps connect businesses with service providers, including agencies specializing in IT, marketing, and design.",
             image: "/partners-img4.png",
+            path: "https://clutch.co/",
         },
         {
             text: "A popular freelancing platform where businesses can find professional agencies and freelancers across various fields such as design, development, and marketing.",
             image: "/partners-img5.png",
+            path: "https://www.upwork.com/",
         },
         {
             text: "A marketplace that connects businesses with top freelancers and agencies in software development, design, and finance.",
             image: "/partners-img6.png",
+            path: "https://www.toptal.com/",
         },
         {
             text: "A platform where businesses can find a variety of services from freelancers and agencies at different price points ranging from simple tasks to full project solutions.",
             image: "/partners-img7.png",
+            path: "https://www.fiverr.com/",
         },
         {
             text: "A platform that helps businesses find and connect with ad agencies, branding firms, and marketing agencies by providing detailed profiles and client reviews.",
             image: "/partners-img8.png",
+            path: "https://www.sortlist.com/",
         },
         {
             text: "A global freelancing platform that allows businesses to post projects and find agencies or freelancers to undertake their needs.",
             image: "/partners-img9.png",
+            path: "https://www.freelancer.com/",
         },
         {
             text: "Utilize LinkedIn's professional networking capabilities to find agencies, view recommendations, and assess qualifications.",
             image: "/partners-img10.png",
+            path: "https://www.linkedin.com/",
         },
         {
             text: " A marketplace specifically for finding designers and design agencies, ideal for branding, web design, and graphic design projects.",
             image: "/partners-img11.png",
+            path: "https://99designs.com/",
         },
         {
-            text: "GoodFirms is your trusted B2B Reviews & Rating platform, helping you choose the right partner from hand-picked lists of vetted companies using credible agencies.",
+            text: "GoodFirms is your trusted B2B Reviews & Rating platform, helping you choose the right partner from hand-picked lists of vetted companies using credible agencies.",
             image: "/partners-img12.png",
+            path: "https://www.goodfirms.co/",
         },
     ];
 
@@ -149,9 +158,9 @@ const Partners = () => {
                                         <div className="flex items-center justify-between w-full md:w-1/4 gap-[60px] lg:min-h-full">
                                             <div className="bg-[#6C6C6C] w-[1px] h-full hidden md:block"></div>
                                             <div className="bg-[#6C6C6C] h-[1px] w-full md:hidden block opacity-0"></div>
-                                            <div className='w-full'>
+                                            <a href={item.path} target="_blank" className='w-full'>
                                                 <img src={item.image} alt={`Partner ${index + 1}`} className="w-full" />
-                                            </div>
+                                            </a>
                                         </div>
                                     </div>
                                     <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
