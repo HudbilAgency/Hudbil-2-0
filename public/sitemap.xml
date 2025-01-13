@@ -49,6 +49,10 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://hudbil.com/our-partners</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://hudbil.com/faq</loc>
     <priority>0.8</priority>
   </url>
