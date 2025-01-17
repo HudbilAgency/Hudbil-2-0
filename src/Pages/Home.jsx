@@ -486,6 +486,34 @@ const Home = () => {
     '/gridimg12.png',
   ];
 
+  const OurServices = [
+    {
+      title: "Creative Designing",
+      description: "Our scientifically proven UX design process means you can simultaneously release products users love and check off business goals.",
+      path: "/",
+    },
+    {
+      title: "Creative Designing",
+      description: "Our scientifically proven UX design process means you can simultaneously release products users love and check off business goals.",
+      path: "/",
+    },
+    {
+      title: "Creative Designing",
+      description: "Our scientifically proven UX design process means you can simultaneously release products users love and check off business goals.",
+      path: "/",
+    },
+    {
+      title: "Creative Designing",
+      description: "Our scientifically proven UX design process means you can simultaneously release products users love and check off business goals.",
+      path: "/",
+    },
+    {
+      title: "Creative Designing",
+      description: "Our scientifically proven UX design process means you can simultaneously release products users love and check off business goals.",
+      path: "/",
+    },
+  ];
+
   return (
     <>
       <Helmet>
@@ -554,7 +582,7 @@ const Home = () => {
 
           </div>
 
-          <section className='-mt-[30vh] lg:-mt-[0vh] box3 justify-end items-end overflow-hidden w-full lg:w-[50vw] flex-col '>
+          <section className='-mt-[30vh] lg:-mt-[0vh] box3 justify-end items-end w-full lg:w-[50vw] flex-col '>
             <div className="relative w-full h-screen hidden lg:block overflow-hidden">
               {/* <Snowfall /> */}
               <div className="flex flex-col relative h-full justify-center items-center w-full">
@@ -660,9 +688,7 @@ const Home = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex gap-5 items-center self-center mt-10 ml-52 text-base tracking-wider leading-none text-neutral-950">
-              </div>
-              <div className="flex flex-col mt-20 w-full max-md:mt-10">
+              <div className="flex flex-col mt-28 w-full max-md:mt-20">
                 <div className="mx-6 lg:mx-8">
                   <div className="flex  gap-5 max-md:flex-col">
                     {stats.slice(0, 2).map((stat, index) => (
@@ -696,7 +722,33 @@ const Home = () => {
                 </Link>
               </div>
 
-              <div className='py-12 bg-black overflow-hidden w-full'>
+              <div className='py-12 bg-black w-full flex flex-col items-center relative px-6 lg:px-0'>
+                <h2 className="text-6xl font-arial leading-none text-center text-[#7811A5] max-md:text-4xl">Our Services</h2>
+              </div>
+
+              <div className="h-[320px] w-full bg-black">
+
+              </div>
+
+              <div className='card-container bg-black flex flex-col items-center gap-40 w-full'>
+                {OurServices.map((service, index) => (
+                  <div key={index} className='card flex flex-col items-center sticky top-1/2 w-full transform -translate-y-1/2'>
+                    <div className="flex transform -rotate-3 flex-col items-center w-4/5 md:w-3/4 2xl:w-3/5 rounded-[2rem]" style={{ background: 'linear-gradient(180deg, #7811A5, #2E16BB)', transform: `rotate(${-[3, 4, 5, 6, 7][index % 5]}deg)`, }}>
+                      <div className='text-white text-center mt-10 mb-12 md:mt-12 md:mb-16 text-3xl md:text-5xl tracking-[0.86px]'>{service.title}</div>
+                      <div className='flex flex-col items-center bg-[#F8E8FF] rounded-[2rem] text-lg md:text-2xl text-[#7811A5] text-center w-[90%] tracking-[0.86px] pt-12 pb-8 mb-6'>
+                        <div className='w-4/5'>{service.description}</div>
+                        <Link to={service.path} className="mt-12 md:mt-16">
+                          <button className="border px-6 py-2 rounded-[1000px] border-[#7811A5] text-[#7811A5] hover:text-white  hover:bg-gradient-to-b from-[#7811A5] to-[#2E16BB] text-sm md:text-base transition-all duration-300">
+                            Read More
+                          </button>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div className='pb-12 bg-black overflow-hidden w-full'>
                 <h2 className="text-6xl font-arial leading-none text-center text-[#7811A5] max-md:text-4xl">Our Brands</h2>
                 <div className="overflow-hidden w-full">
                   <Slider {...settings}>
@@ -781,6 +833,8 @@ const Home = () => {
 
               {/* What we do section */}
 
+              <div className='overflow-hidden w-full'>
+
               <section className='mx-6 lg:mx-8'>
 
                 <h2 className="self-start  mt-20 text-[25px]  tracking-wide text-[#7811A5]">What we do</h2>
@@ -845,6 +899,7 @@ const Home = () => {
                   </Link>
 
                 </div>
+              </div>
               </div>
             </section>
           </section>
