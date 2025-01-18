@@ -853,14 +853,14 @@ const Home = () => {
                   <div className="self-stretch text-[25px] text-[#7811A5] my-auto">Our services</div>
                 </div>
                 <div className="mt-14 max-w-full w-[780px] max-md:mt-10 ">
-                  <div className="flex gap-12 max-md:flex-col">
+                  <div className="flex gap-12 xl:gap-8 2xl:gap-12 max-md:flex-col">
                     {services.map((service, index) => (
                       <div key={index} className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
                         <div className="flex flex-col grow max-md:mt-10">
                           <div className="flex overflow-hidden flex-col items-center bg-white aspect-square">
                             <img loading="lazy" src={service.image} alt={service.title} className=" object-cover w-full aspect-[0.97] filter grayscale hover:grayscale-0 transition-all duration-300" />
                           </div>
-                          <h3 className="self-start mt-6 text-2xl  tracking-wider leading-8 text-neutral-950">{service.title}</h3>
+                          <h3 className="self-start mt-6 text-2xl tracking-wider leading-8 text-neutral-950">{service.title}</h3>
                           <p className="mt-7  text-lg tracking-wide leading-8 text-neutral-950 ">{service.description}</p>
                         </div>
                         <Link to={service.url} className="mt-5">
