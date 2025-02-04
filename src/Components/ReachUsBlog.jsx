@@ -331,7 +331,9 @@ const ReachUsBlog = () => {
   return (
     <>
       <section className="flex overflow-hidden relative flex-col justify-center items-center py-20">
-        <div className="px-6 lg:px-16 py-20 w-full bg-[#7811A5] rounded-2xl">
+        <div style={{
+          background: 'linear-gradient(180deg, #7811A5, #2E16BB)',
+        }} className="px-6 lg:px-16 py-20 w-full rounded-2xl">
           <div className="flex max-lg:flex-col items-stretch h-full">
             <div className="flex flex-col w-full lg:w-[50vw] max-lg:ml-0 max-lg:w-full">
               <div className="flex flex-col w-full md:w-2/3 items-start text-2xl lg:mt-10 sm:text-3xl text-white max-lg:max-w-full">

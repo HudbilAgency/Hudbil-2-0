@@ -161,10 +161,10 @@ const Home = () => {
   };
 
   const stats = [
-    { value: "200%", description: "Demand in Designing and Development hunger for brands transformation." },
-    { value: "10Y", description: "High in success and collaborating with many brands around world." },
-    { value: "100%", description: "AI & ML Designing and Development through creative coding." },
-    { value: "365D", description: "Smartly, Interaction with customers around the world." }
+    { value: "100%", description: "We build collaborative partnerships that fuel your brand’s growth." },
+    { value: "10Y", description: "High in success and collaborating with many brands across globally." },
+    { value: "100%", description: "Crafting UX-first SaaS interfaces to transform your vertical software." },
+    { value: "365D", description: "Designing and Developing B2B SaaS, AI, ML & software’s interfaces." }
   ];
 
   const services = [
@@ -488,28 +488,33 @@ const Home = () => {
 
   const OurServices = [
     {
-      title: "Creative Designing",
-      description: "Our scientifically proven UX design process means you can simultaneously release products users love and check off business goals.",
+      title: "UI/UX/CX Design",
+      description: "Deliver exceptional UI/UX design services and customer experiences through intuitive interfaces that enhance digital engagement.",
       path: "/",
     },
     {
-      title: "Creative Designing",
-      description: "Our scientifically proven UX design process means you can simultaneously release products users love and check off business goals.",
+      title: "Website Development",
+      description: "Develop scalable web solutions and high-performance websites tailored to your business needs, ensuring robust functionality.",
       path: "/",
     },
     {
-      title: "Creative Designing",
-      description: "Our scientifically proven UX design process means you can simultaneously release products users love and check off business goals.",
+      title: "Mobile App Development",
+      description: "Create custom mobile applications with innovative designs that provide seamless user experiences across all devices and platforms.",
       path: "/",
     },
     {
-      title: "Creative Designing",
-      description: "Our scientifically proven UX design process means you can simultaneously release products users love and check off business goals.",
+      title: "AI & Machine Learning",
+      description: "Leverage AI and machine learning services to drive innovation and optimize business processes with advanced technologies.",
       path: "/",
     },
     {
-      title: "Creative Designing",
-      description: "Our scientifically proven UX design process means you can simultaneously release products users love and check off business goals.",
+      title: "Blockchain",
+      description: "Implement secure blockchain solutions to enhance data integrity and transparency, streamlining operations for your business.",
+      path: "/",
+    },
+    {
+      title: "Cloud Solutions",
+      description: "Adopt scalable cloud solutions to improve operational efficiency, enabling flexible and secure cloud-based business operations.",
       path: "/",
     },
   ];
@@ -633,7 +638,8 @@ const Home = () => {
                 <div className='mx-6 lg:mx-8'>
                   <div className='pt-28 pb-12'>
                     <h1 ref={secondsectionRef} className="text-[48px] w-full lg:w-[83%] leading-tight text-neutral-950  max-md:text-[2.25rem]">
-                      We are a DESIGN + BUILD creative agency intent on solving the toughest problems for brands & organisations face in today's world.
+                    Merging Artistry with Innovation. <br className='hidden 2xl:block' />
+                    DESIGN + DEVELOPMENT company, turning your vision into cutting-edge technology to elevate your brand.
                     </h1>
                   </div>
                   <hr className="w-full h-px border border-gray-400 border-solid" />
@@ -642,7 +648,7 @@ const Home = () => {
                       <div className="flex w-fit">
                         <div className="flex gap-3 items-center text-base tracking-wider leading-none text-neutral-950 max-md:mt-10">
                           <div className="flex shrink-0 self-stretch my-auto w-3 h-3 bg-[#7811A5] rounded-[1000px]" />
-                          <div className="my-auto  w-fit text-[#7811A5] text-2xl xl:text-xl 2xl:text-2xl">We work with people like</div>
+                          <div className="my-auto  w-fit text-[#7811A5] text-2xl xl:text-xl 2xl:text-2xl">We work with B2B & B2C clients worldwide.</div>
                         </div>
                       </div>
 
@@ -678,13 +684,10 @@ const Home = () => {
                   <hr className="shrink-0 w-full h-px border border-gray-400 border-solid" />
                   <div className="flex gap-5 items-center mt-16 text-base tracking-wider leading-none text-neutral-950">
                     <div className="flex shrink-0 self-stretch my-auto w-3 h-3 bg-[#6A13AA] rounded-[1000px]" />
-                    <div className="self-stretch  text-[#7811A5] text-2xl  my-auto w-full">What we good at</div>
+                    <div className="self-stretch  text-[#7811A5] text-2xl  my-auto w-full">We are good at what we do</div>
                   </div>
                   <p className="mt-16 text-[24px]  font-thin  leading-8 text-neutral-950 w-full lg:w-4/5">
-                    Innovation at your fingertips. We are Hudbil Design + Build Agency to create a change for
-                    our clients. We want to showcase something that world has never seen through our
-                    innovative eyes, to see what others don't
-                    The truth of AI World today !
+                  We are your technology partners, committed to helping you create products and services that make a lasting impact on millions of lives. Our pragmatic Design + Development services will transform your brand into lead magnet !
                   </p>
                 </div>
               </div>
@@ -722,23 +725,38 @@ const Home = () => {
                 </Link>
               </div>
 
-              <div className='py-12 bg-black w-full flex flex-col items-center relative px-6 lg:px-0'>
-                <h2 className="text-6xl font-arial leading-none text-center text-[#7811A5] max-md:text-4xl">Our Services</h2>
+              <div className='mx-6 lg:mx-8'>
+              <div className="mb-16 max-w-full h-px border border-solid border-gray-400 w-full" />
+              <h2 className="self-start text-[25px]  tracking-wide text-[#7811A5]">What we do</h2>
+                <div className='flex flex-col md:flex-row mt-12 md:items-end justify-between max-w-full w-[780px]'>
+                  <p className="w-full md:w-2/3  text-[24px] tracking-wider leading-8 text-neutral-950 max-md:mt-10  max-md:max-w-full">
+                  Discover how Hudbil brings your vision to life with cutting-edge solutions. Our approach is designed to fuel growth and innovation at your fingertips – We offer a comprehensive range of services designed to drive your business forward. Allow us to handle the complexities of technology, so you can stay focused on driving your vision forward and achieving your long-term objectives.
+                  </p>
+
+                  <p className="w-1/3 mt-auto md:text-end hover:text-gray-500 transition-all duration-300 text-xl tracking-wider text-[#7811A5] max-md:mt-10  max-md:max-w-full">
+                    <Link to="/our-services">Read now</Link>
+                  </p>
+                </div>
+                <div className="mt-12 mb-8 max-w-full h-px border border-solid border-gray-400 w-full" />
               </div>
 
-              <div className="h-[320px] w-full bg-black">
+              <div className='py-12 bg-white w-full flex flex-col items-center relative px-6 lg:px-0'>
+                <h2 className="text-6xl font-arial leading-none text-center max-md:text-4xl">Our Services</h2>
+              </div>
+
+              <div className="h-[320px] w-full bg-white">
 
               </div>
 
-              <div className='card-container bg-black flex flex-col items-center gap-40 w-full'>
+              <div className='card-container bg-white flex flex-col items-center gap-40 w-full'>
                 {OurServices.map((service, index) => (
                   <div key={index} className='card flex flex-col items-center sticky top-1/2 w-full transform -translate-y-1/2'>
-                    <div className="flex transform -rotate-3 flex-col items-center w-4/5 md:w-3/4 2xl:w-3/5 rounded-[2rem]" style={{ background: 'linear-gradient(180deg, #7811A5, #2E16BB)', transform: `rotate(${-[3, 4, 5, 6, 7][index % 5]}deg)`, }}>
-                      <div className='text-white text-center mt-10 mb-12 md:mt-12 md:mb-16 text-3xl md:text-5xl tracking-[0.86px]'>{service.title}</div>
+                    <div className="flex transform -rotate-3 flex-col items-center w-4/5 md:w-3/4 2xl:w-3/5 rounded-[2rem]" style={{ background: 'linear-gradient(180deg, #7811A5, #2E16BB)', transform: `rotate(${-[3, 4, 5, 6, 7, 8][index % 6]}deg)`, }}>
+                      <div className='text-white text-center mx-6 lg:mx-8 mt-10 mb-12 md:mt-12 md:mb-16 text-3xl md:text-5xl tracking-[0.86px]'>{service.title}</div>
                       <div className='flex flex-col items-center bg-[#F8E8FF] rounded-[2rem] text-lg md:text-2xl text-[#7811A5] text-center w-[90%] tracking-[0.86px] pt-12 pb-8 mb-6'>
                         <div className='w-4/5'>{service.description}</div>
                         <Link to={service.path} className="mt-12 md:mt-16">
-                          <button className="border px-6 py-2 rounded-[1000px] border-[#7811A5] text-[#7811A5] hover:text-white  hover:bg-gradient-to-b from-[#7811A5] to-[#2E16BB] text-sm md:text-base transition-all duration-300">
+                          <button className="border px-6 py-2 rounded-[1000px] border-[#7811A5] hover:border-none text-[#7811A5] hover:text-white  hover:bg-gradient-to-b from-[#7811A5] to-[#2E16BB] text-sm md:text-base transition-all duration-300">
                             Read More
                           </button>
                         </Link>
@@ -748,7 +766,7 @@ const Home = () => {
                 ))}
               </div>
 
-              <div className='pb-12 bg-black overflow-hidden w-full'>
+              <div className='py-12 bg-black overflow-hidden w-full'>
                 <h2 className="text-6xl font-arial leading-none text-center text-[#7811A5] max-md:text-4xl">Our Brands</h2>
                 <div className="overflow-hidden w-full">
                   <Slider {...settings}>
@@ -837,18 +855,7 @@ const Home = () => {
 
               <section className='mx-6 lg:mx-8'>
 
-                <h2 className="self-start  mt-20 text-[25px]  tracking-wide text-[#7811A5]">What we do</h2>
-                <div className='flex flex-col md:flex-row mt-12 md:items-end justify-between max-w-full w-[780px]'>
-                  <p className="w-full md:w-2/3  text-[24px] tracking-wider leading-8 text-neutral-950 max-md:mt-10  max-md:max-w-full">
-                    We engage brands with immersive digital experiences that brings you a return on creativity. We love solving thorny problems with smart, custom software design and development under one umbrella.
-                  </p>
-
-                  <p className="w-1/3 mt-auto md:text-end hover:text-gray-500 transition-all duration-300 text-xl tracking-wider text-[#7811A5] max-md:mt-10  max-md:max-w-full">
-                    <Link to="/our-services">Read now</Link>
-                  </p>
-                </div>
-                <div className="mt-12 max-w-full h-px border border-solid border-gray-400 w-full" />
-                <div className="flex gap-5 items-start self-start mt-10  leading-loose text-neutral-950">
+                {/* <div className="flex gap-5 items-start self-start mt-10  leading-loose text-neutral-950">
                   <div className="flex shrink-0 self-stretch my-auto w-3 h-3 bg-[#7811A5] rounded-[1000px]" />
                   <div className="self-stretch text-[25px] text-[#7811A5] my-auto">Our services</div>
                 </div>
@@ -870,8 +877,8 @@ const Home = () => {
                     ))}
                   </div>
                 </div>
-                <div className="shrink-0 mt-12 max-w-full h-px border border-solid border-gray-400 w-full" />
-                <div className="flex gap-2 items-start self-start mt-10 leading-none text-neutral-950">
+                <div className="shrink-0 mt-12 max-w-full h-px border border-solid border-gray-400 w-full" /> */}
+                <div className="flex gap-2 items-start self-start mt-20 leading-none text-neutral-950">
                   <div className="flex shrink-0 self-stretch my-auto w-3 h-3 bg-[#7811A5] rounded-[1000px]" />
                   <div className="self-stretch ml-[1.5%] text-[25px] text-[#7811A5] my-auto">Our blogs</div>
                 </div>

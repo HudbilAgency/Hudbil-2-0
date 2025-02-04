@@ -9,7 +9,7 @@ import { Helmet } from 'react-helmet';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const AboutUs = () => {
+const OurApproach = () => {
 
     const [dropdownStates, setDropdownStates] = useState([false, false, false, false, false, false]);
 
@@ -145,19 +145,17 @@ const AboutUs = () => {
             <main className='relative z-20'>
                 <section className='bg-black py-20'>
                     <div className='md:w-3/5 xl:w-4/5 font-normal text-[2rem] xl:text-[50px] leading-tight text-white px-6 lg:px-16'>
-                        Hudbil is an insights creative design and development agency in India and London, we practice creative ideas that turn heads, draw eyes, distract, disrupt and engage – in short, strategic communication solutions that get attention.
+                        Crafting Excellence Through Strategic Steps Every project is a journey. We guide you through a well-defined process, ensuring each step brings you closer to success.
                     </div>
                     <div className="w-full flex items-start justify-end my-16 px-6 lg:px-16">
                         <div className='md:w-1/2 flex flex-col items-start gap-8 text-white text-base xl:text-[20px] leading-tight'>
-                            <div>We provide a wide range of services including UI, UX, CX Designing, Website Development, Mobile App Development, Digital Marketing, and IT Consultancy. Enhancing digital solutions for every business.</div>
-                            <div>OUR VISION</div>
-                            <div>We envision a world where technology seamlessly integrates with everyday life, enhancing experiences and enabling possibilities beyond imagination.</div>
-                            <div>OUR MISSION</div>
-                            <div>To make technology easy and accessible for everyone. Delivering solutions that not only promotes business growth but also improve developer experience.</div>
+                            <div>Our approach is simple yet effective. We follow a systematic process to deliver the best results. We are always looking for new opportunities to collaborate with businesses and individuals. If you have a project in mind, let's discuss how we can help you achieve your goals.</div>
+                            <div>At Hudbil, collaboration is key to every successful project. From discovery to delivery, we work closely with you to bring your vision to life, ensuring open communication and adaptability throughout the process.</div>
+                            <div>Our team is dedicated to turning your goals into reality through a thoughtful, client-centered approach. We ensure that every step of the journey is aligned with your objectives, providing results that drive meaningful impact and long-term success</div>
                             <div>
                                 <Link to="/our-partners">
                                     <button className="button self-end hover:text-white flex flex-row justify-between px-12 py-3 mx-auto leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-all duration-300">
-                                        <h1 className='text-base mt-1 '>Our Partners</h1>
+                                        <h1 className='text-base mt-1 '>Book a Call</h1>
                                         <img src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                                     </button>
                                 </Link>
@@ -199,7 +197,7 @@ const AboutUs = () => {
                     </div>
 
                     <div className='px-6 lg:px-16 flex flex-col lg:flex-row items-start justify-between w-full gap-12 lg:gap-0'>
-                        <div className='font-normal text-4xl text-white'>Our Core Values</div>
+                        <div className='font-normal text-4xl text-white'>Our Tech Stack</div>
 
                         <div className='w-full lg:w-2/3 xl:w-1/2 text-white'>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
@@ -207,7 +205,7 @@ const AboutUs = () => {
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
                                         <div><img src="./point2.png" alt="point" /></div>
-                                        <div className="font-normal text-2xl md:text-4xl leading-9 pl-1">Communication</div>
+                                        <div className="font-normal text-2xl md:text-4xl leading-9 pl-1">Design & UI/UX Tools</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(0)} className="cursor-pointer">
                                         <svg
@@ -225,8 +223,10 @@ const AboutUs = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[0] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="pt-10">We believe in fostering open, transparent, and honest dialogues with clients and team members to build strong relationships and align expectations, with Clear, Concise and Confident communication is the key to our success.</div> 
+                                <div className={`flex flex-col gap-8 md:mr-20 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[0] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                    <div className="pt-10">We use the latest design tools to create stunning designs and user interfaces.
+                                        Like – Figma, Adobe Photoshop, Adobe Illustrator, Adobe After Effects.</div>
+                                    <img className='w-fit' src="/approach-1.png" />
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
@@ -234,7 +234,7 @@ const AboutUs = () => {
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
                                         <div><img src="./point1.png" alt="point" /></div>
-                                        <div className="font-normal text-2xl md:text-4xl leading-9 pl-3">Accountability</div>
+                                        <div className="font-normal text-2xl md:text-4xl leading-9 pl-3">Frontend Technologies</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(1)} className="cursor-pointer">
                                         <svg
@@ -252,8 +252,9 @@ const AboutUs = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[1] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="pt-10">We run by young professionals who take full responsibility for their actions and decisions. Taking full ownership of our work and actions is what we take it to the heart.</div> 
+                                <div className={`flex flex-col gap-8 md:mr-20 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[1] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                    <div className="pt-10">We are always up to date with the latest frontend technologies to create user interfaces ready for the future. </div>
+                                    <img className='w-fit' src="/approach-2.png" />
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
@@ -261,7 +262,7 @@ const AboutUs = () => {
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
                                         <div><img src="./point3.png" alt="point" /></div>
-                                        <div className="font-normal text-2xl md:text-4xl leading-9">Culture</div>
+                                        <div className="font-normal text-2xl md:text-4xl leading-9">Backend Technologies</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(2)} className="cursor-pointer">
                                         <svg
@@ -279,8 +280,9 @@ const AboutUs = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[2] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="pt-10">Trust is at the core of everything we do. We always strive to create lasting partnerships by demonstrating reliability, integrity, and unwavering commitment to delivering exceptional results.</div> 
+                                <div className={`flex flex-col gap-8 md:mr-20 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[2] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                    <div className="pt-10">Our backend technologies are robust and scalable to handle any kind of projects. Like – Django, Node.js, Express.js, Gin/Gonic</div>
+                                    <img className='w-fit' src="/approach-3.png" />
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
@@ -288,7 +290,7 @@ const AboutUs = () => {
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
                                         <div><img src="./point4.png" alt="point" /></div>
-                                        <div className="font-normal text-2xl md:text-4xl leading-9">Creativity</div>
+                                        <div className="font-normal text-2xl md:text-4xl leading-9">Database Technologies</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(3)} className="cursor-pointer">
                                         <svg
@@ -306,8 +308,9 @@ const AboutUs = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[3] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="pt-10">We approach every opportunity with humility and appreciation. Recognizing the contributions of our clients, team members, and partners allows us to foster meaningful relationships and positive collaboration.</div> 
+                                <div className={`flex flex-col gap-8 md:mr-20 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[3] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                    <div className="pt-10">Versatility is key when it comes to databases. We are capable of handling all kind of data challenges using upto date database technologies. </div>
+                                    <img className='w-fit' src="/approach-4.png" />
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
@@ -315,7 +318,7 @@ const AboutUs = () => {
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
                                         <div><img src="./point5.png" alt="point" /></div>
-                                        <div className="font-normal text-2xl md:text-4xl leading-9">Development</div>
+                                        <div className="font-normal text-2xl md:text-4xl leading-9">Cloud Technologies</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(4)} className="cursor-pointer">
                                         <svg
@@ -333,8 +336,9 @@ const AboutUs = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[4] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="pt-10">If you pride yourself as an engineer, try to be lazy without compromising the quality of work. We believe in working smarter, not harder.</div> 
+                                <div className={`flex flex-col gap-8 md:mr-20 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[4] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                    <div className="pt-10">Cloud and on-prem solutions are our forte. We understand that every project is unique and requires a unique solution, so we are always ready to adapt.</div>
+                                    <img className='w-fit' src="/approach-5.png" />
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
@@ -342,7 +346,7 @@ const AboutUs = () => {
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
                                         <div><img src="./point6.png" alt="point" /></div>
-                                        <div className="font-normal text-2xl md:text-4xl leading-9">Customer Experience (CX)</div>
+                                        <div className="font-normal text-2xl md:text-4xl leading-9">Web3 Technologies</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(5)} className="cursor-pointer">
                                         <svg
@@ -360,8 +364,9 @@ const AboutUs = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[5] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="pt-10">Customer experience, sometimes abbreviated to CX, is the totality of cognitive, affective, sensory, and behavioural customer responses during all stages of the consumption process including pre-purchase, consumption, and post-purchase stages.</div> 
+                                <div className={`flex flex-col gap-8 md:mr-20 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[5] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                    <div className="pt-10">We are a step ahead in future of the internet and We are ready to help you build your next decentralized application. Like – Solidity, Binance Smart Chain (BSC), Ethereum, Web3.js, Ethers.js</div>
+                                    <img className='w-fit' src="/approach-6.png" />
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
@@ -387,11 +392,15 @@ const AboutUs = () => {
 
                 <section className='bg-black py-20'>
                     <div className='md:w-1/2 xl:w-3/4 font-normal text-[2rem] xl:text-[50px] leading-tight text-white px-6 lg:px-16'>
-                        A International team of curious represents a mix of experiences, talents, and skills that enrich our collective creativity.
+                        A International team of curious represents a mix of experiences, talents, and skills that
+                        enrich our collective creativity.
                     </div>
                     <div className="w-full flex items-start justify-end my-16 px-6 lg:px-16">
                         <div className='md:w-1/2 flex flex-col items-start gap-8 text-white text-base xl:text-[20px] leading-tight'>
-                            <div>Working hand in hand with our clients, our project are consistently awarded and we are proud of that. This means that we are moving in the right direction Founded in 2012, we have quietly scaled from a one-man band to a powerhouse of exceptional developers and designers, growing solely through the power of word of mouth.</div>
+                            <div>Working hand in hand with our clients, our project are consistently awarded and we are
+                                proud of that. This means that we are moving in the right direction Founded in 2012, we
+                                have quietly scaled from a one-man band to a powerhouse of exceptional developers and
+                                designers, growing solely through the power of word of mouth.</div>
                         </div>
                     </div>
                     <div className="w-full flex flex-col lg:flex-row gap-12 lg:gap-0 items-start justify-between px-6 lg:px-16 mt-20">
@@ -435,4 +444,4 @@ const AboutUs = () => {
     )
 }
 
-export default AboutUs
+export default OurApproach

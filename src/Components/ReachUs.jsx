@@ -335,7 +335,9 @@ const ReachUs = () => {
 
   return (
     <>
-      <section className="flex overflow-hidden relative bg-[#7811A5] flex-col justify-center items-center px-6 lg:px-16 pt-20 pb-[86px]">
+      <section style={{
+        background: 'linear-gradient(180deg, #7811A5, #2E16BB)',
+      }} className="flex overflow-hidden relative flex-col justify-center items-center px-6 lg:px-16 pt-20 pb-[86px]">
         <div className="w-full max-md:max-w-full">
           <div className="flex max-md:flex-col items-stretch h-full">
             <div className="flex flex-col w-full md:w-[50vw] max-md:ml-0 max-md:w-full">
@@ -344,7 +346,7 @@ const ReachUs = () => {
                   Hudbil private limited
                 </h2>
                 <p className="self-stretch my-6 text-xl  font-light leading-8 max-md:max-w-full">
-                  Hudbil as a brand stands for its innovation in technology and creative to fly high and give freedom to business owners by automating the repetitive and mundane so they can build an empire in their industry.
+                  We are full-service technology company with an expert team that specializes in Digital Transformation. We provide a wide range of services including UI UX, Website Development, Mobile App Development, Digital Marketing, and IT Consultancy.
                 </p>
                 {contactInfo.map((item, index) => (
                   <div key={index} className="flex flex-col my-4 text-xl">

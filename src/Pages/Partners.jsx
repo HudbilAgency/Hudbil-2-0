@@ -43,13 +43,13 @@ const Partners = () => {
         },
         {
             text: "A global freelancing platform that allows businesses to post projects and find agencies or freelancers to undertake their needs.",
-            image: "/partners-img9.png",
+            image: "/partners-img9.png", 
             path: "https://www.freelancer.com/",
         },
         {
-            text: "Utilize LinkedIn's professional networking capabilities to find agencies, view recommendations, and assess qualifications.",
+            text: "The best B2B companies offering development, marketing, design & IT services. The Manifest is a business news and B2B rating & reviews platform.",
             image: "/partners-img10.png",
-            path: "https://www.linkedin.com/",
+            path: "https://themanifest.com/",
         },
         {
             text: " A marketplace specifically for finding designers and design agencies, ideal for branding, web design, and graphic design projects.",

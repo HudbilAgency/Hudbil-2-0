@@ -8,9 +8,9 @@ import { Helmet } from 'react-helmet';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const Work = () => {
+const OurModules = () => {
 
-    const [dropdownStates, setDropdownStates] = useState([false, false, false, false, false, false]);
+    const [dropdownStates, setDropdownStates] = useState([false, false, false, false, false]);
 
     const toggleDropdown = (index) => {
         const updatedStates = dropdownStates.map((state, i) => i === index ? !state : state);
@@ -77,7 +77,7 @@ const Work = () => {
             <main className='pt-[80px] bg-black'>
                 <section className='pt-20 pb-24'>
                     <div className='w-full lg:w-3/5 font-normal text-[2rem] xl:text-[50px] xl:w-5/6 leading-tight text-white px-6 lg:px-16'>
-                        We use industry-leading research, strategic insights and relentless creativity to live our purpose: putting people first.
+                        We believe that great work comes from great environments. Our modes of working has built a flexible and inclusive approach that allows our teams to thrive. Here’s how we work:
                     </div>
 
                     <div className='pl-6 lg:pl-0 pr-6 lg:pr-16 mt-20 flex flex-col lg:flex-row items-start w-full gap-16 lg:gap-12'>
@@ -112,207 +112,149 @@ const Work = () => {
                         </div>
 
                         <div className='w-full lg:w-2/3 xl:w-1/2 text-white'>
-                            <div className='font-normal text-[2.7rem] leading-tight pb-10'>
-                                Our Work
+                            <div className='font-normal text-[2.8rem] leading-tight pb-12'>
+                                Our Module
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-12 toggle-point flex flex-col">
-                                <div className="flex items-center justify-between">
-                                    <div onClick={() => toggleDropdown(0)} className="flex flex-col items-start justify-between cursor-pointer gap-6">
-                                        <div className="font-normal text-4xl leading-tight">Developed International Website of Jef Techno</div>
-                                        <div className='flex items-center gap-4'>
-                                            <div className='bg-white rounded-full p-1'></div>
-                                            <div className='text-base'>JEF Techno Case Study</div>
-                                        </div>
+                                <div className="flex items-center justify-between gap-6">
+                                    <div className="font-normal text-2xl md:text-4xl leading-9 ">Project Basis</div>
+                                    <div onClick={() => toggleDropdown(0)} className="cursor-pointer">
+                                        <svg
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className={`transition-transform duration-300 ${dropdownStates[0] ? 'rotate-[-180deg]' : 'rotate-[0deg]'
+                                                }`}
+                                        >
+                                            <rect width="24" height="24" rx="12" fill="#7811A5" />
+                                            <rect x="7" y="11" width="10" height="2" fill="white" />
+                                            {!dropdownStates[0] && <rect x="11" y="7" width="2" height="10" fill="white" />}
+                                        </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[0] ? 'max-h-[10000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="text-2xl underline leading-7 pt-8 text-[#7811A5] "><a href="https://www.Jefuae.com" target='blank'>JEF TECHNO SOLUTIONS</a></div>
-                                    <div className='flex flex-col items-start gap-6 leading-7'>
-                                        <div>Hudbil has been developing all their national and international websites front-end and back-end with strategic insights ideas since 2016. During that time, Hudbil has transformed its brand and vision, lifting from organic marketing services in association with our parent brand COLTFOX. Core to our relationship is an ongoing digital marketing and design and development partner for years - Market Monitors that feed into brand and communications planning, optimisation and evaluation.</div>
-                                        <div>We have designed and developed various nice websites for their brand requirements
-                                            time-to-time and tracking and monitors market trends that feed into brand and
-                                            communications planning, optimisation and evolution.</div>
-                                        <div>Beyond this, Hudbil has also leverages the full spectrum of other marketing and
-                                            branding design including brochure, email marketing, logo designs, marketing
-                                            materials. We take a collaborative approach to this partnership, working closely with
-                                            the entire JEF brand portfolio and their supporting.</div>
-                                        <div>“Their collaborative, agile approach helps keep insights relevant an accessible and a
-                                            highly strategic team is valued across our business.”</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
-                            <div className="py-12 toggle-point flex flex-col">
-                                <div className="flex items-center justify-between">
-                                    <div onClick={() => toggleDropdown(1)} className="flex flex-col items-start justify-between cursor-pointer gap-6">
-                                        <div className="font-normal text-4xl leading-tight">Design & Developed International Website, logo, branding</div>
-                                        <div className='flex items-center gap-4'>
-                                            <div className='bg-white rounded-full p-1'></div>
-                                            <div className='text-base'>Mabblyy case study</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[1] ? 'max-h-[10000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="text-2xl underline leading-7 pt-8 text-[#7811A5] "><a href="https://www.mabbly.com" target='blank'>Mabbly Group</a></div>
-                                    <div className='flex flex-col items-start gap-6 leading-7'>
-                                        <div>A human-first brand for the utilities market with empathy built in.</div>
-                                        <div>We invested a whole lot of time at the start of the brand project to really get to know Mabbly – their commercial strategy, the leadership team, the service offer, their culture and the people throughout the company.</div>
-                                        <div>This approach us a true understanding that helps to define and pin point what makes them distinct and how best to celebrate it in their new brand language.</div>
-                                        <div>We ran a number of immersion sessions on this project that included a company
-                                            onboarding, a demo sales pitch, one-to-one interviews with senior management, brand
-                                            personification workshops with employees throughout the business, client interviews,
-                                            competitor analysis and an existing communications audit.</div>
-                                        <div>In response to this out of category behaviour the brand is deliberately design-driven and
-                                            photographic to appear disruptive in the facilities management industry.
-                                            The project included: Brand strategy, visual identity, full channel brand activation, motion
-                                            design, website UX/UI & build and brand guidelines.</div>
-                                        <div>To promote their business strategy and brand proposition the tagline of ‘powered by
-                                            people’ was created and used across all headline communications.</div>
-                                        <div>In addressing Mabbly’s unique challenge, we strategically devised a design-led and visually
-                                            disruptive website that stands out in the facilities management industry. The deliberate
-                                            design-driven and photographic elements not only reflect Mabbly’s out-of-category
-                                            behaviour but also convey their human-centric approach, emphasising the sense of
-                                            community within their team and among customers.</div>
-                                    </div>
+                                <div className={`flex flex-col gap-8 md:mr-20 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[0] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                    <div className="pt-10">The best approach for a one-time project, where the scope is well defined and the deliverables are clear. It is a fixed-price model where the project is delivered within a specific timeline and budget</div>
+                                    <a href='/modules/project-basis' className="button w-fit flex flex-row justify-between px-5 py-3 leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px]  hover:bg-[#7811A5] transition-all duration-300">
+                                        <h1 className='text-base mt-1 '>Know More</h1>
+                                        <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                                    </a>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-12 toggle-point flex flex-col">
-                                <div className="flex items-center justify-between">
-                                    <div onClick={() => toggleDropdown(2)} className="flex flex-col items-start justify-between cursor-pointer gap-6">
-                                        <div className="font-normal text-4xl leading-tight">Campaigns, Internal Communications, Event Design, Bid Design</div>
-                                        <div className='flex items-center gap-4'>
-                                            <div className='bg-white rounded-full p-1'></div>
-                                            <div className='text-base'>Zendesk case study</div>
-                                        </div>
+                                <div className="flex items-center justify-between gap-6">
+                                    <div className="font-normal text-2xl md:text-4xl leading-9 ">Monthly Retainer</div>
+                                    <div onClick={() => toggleDropdown(1)} className="cursor-pointer">
+                                        <svg
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className={`transition-transform duration-300 ${dropdownStates[1] ? 'rotate-[-180deg]' : 'rotate-[0deg]'
+                                                }`}
+                                        >
+                                            <rect width="24" height="24" rx="12" fill="#7811A5" />
+                                            <rect x="7" y="11" width="10" height="2" fill="white" />
+                                            {!dropdownStates[1] && <rect x="11" y="7" width="2" height="10" fill="white" />}
+                                        </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[2] ? 'max-h-[10000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="text-2xl underline leading-7 pt-8 text-[#7811A5] "><a href="https://www.zendesk.com" target='blank'>Zendesk Group</a></div>
-                                    <div className='flex flex-col items-start gap-6 leading-7'>
-                                        <div>Enhancing brand recognition, engagement, and loyalty through impactful, cohesive design,
-                                            leveraging our longstanding partnership with The Ardonagh Group.</div>
-                                        <div>The Backstory</div>
-                                        <div>The Zendesk is one of the worlds leading independent brokers, boasting a vast business
-                                            portfolio that includes Ardonagh Specialty – the largest independent specialty broker in the
-                                            London market with global distribution of highly complex risk products. We have partnered
-                                            with them for several years, collaborating as their creative partner on marketing, branding,
-                                            and digital projects.</div>
-                                        <div>The Problem</div>
-                                        <div>As a global organisation with over 200 offices worldwide, more than 10,000 employees, a
-                                            significant public presence, and an extensive business portfolio, Ardonagh values a reliable
-                                            design partner to create high-impact visuals for both their internal and external media.
-                                            During a period of substantial growth and strategic realignment, they turned to us to
-                                            leverage their brand for effective marketing both within the company and to the public.</div>
-                                        <div>The Solution</div>
-                                        <div>Working on a wide array of digital and print based projects, we craft innovative brand
-                                            experiences, effectively communicating information to enhance customer engagement,
-                                            trust, and loyalty, driving the organisation towards unprecedented success and growth.</div>
-                                        <div>The Result</div>
-                                        <div>A successful partnership that continues to grow and generate beautiful designs.</div>
-                                    </div>
+                                <div className={`flex flex-col gap-8 md:mr-20 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[1] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                    <div className="pt-10">Ideal for ongoing projects that require continuous support and maintenance. It is a flexible model where you can hire our team on a monthly basis to work on your project.</div>
+                                    <a href='/modules/monthly-retainer' className="button w-fit flex flex-row justify-between px-5 py-3 leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px]  hover:bg-[#7811A5] transition-all duration-300">
+                                        <h1 className='text-base mt-1 '>Know More</h1>
+                                        <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                                    </a>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-12 toggle-point flex flex-col">
-                                <div className="flex items-center justify-between">
-                                    <div onClick={() => toggleDropdown(3)} className="flex flex-col items-start justify-between cursor-pointer gap-6">
-                                        <div className="font-normal text-4xl leading-tight">Brand Identity, Digital Strategy, UX, UI, Web Development, Web Maintenance, Social Media Strategy, Social Media Management, Paid Social Advertising</div>
-                                        <div className='flex items-center gap-4'>
-                                            <div className='bg-white rounded-full p-1'></div>
-                                            <div className='text-base'>Harper Lane case study</div>
-                                        </div>
+                                <div className="flex items-center justify-between gap-6">
+                                    <div className="font-normal text-2xl md:text-4xl leading-9">Consultation</div>
+                                    <div onClick={() => toggleDropdown(2)} className="cursor-pointer">
+                                        <svg
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className={`transition-transform duration-300 ${dropdownStates[2] ? 'rotate-[-180deg]' : 'rotate-[0deg]'
+                                                }`}
+                                        >
+                                            <rect width="24" height="24" rx="12" fill="#7811A5" />
+                                            <rect x="7" y="11" width="10" height="2" fill="white" />
+                                            {!dropdownStates[2] && <rect x="11" y="7" width="2" height="10" fill="white" />}
+                                        </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[3] ? 'max-h-[10000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="text-2xl underline leading-7 pt-8 text-[#7811A5] "><a href="https://harperlanedesign.com.au/" target='blank'>Harper Lane Interiors Group</a></div>
-                                    <div className='flex flex-col items-start gap-6 leading-7'>
-                                        <div></div>Building a bold brand system as exclusive as the fine, hand-crafted luxury Italian interiors from HARPER LANE
-                                        <div>The Backstory</div>
-                                        <div>Harper Lane, specialising in high-end residential and commercial interiors, deliver exclusive, Italian-crafted flooring and furniture for the luxury market, worldwide. Since 2018, HARPER has rapidly grown, playing a pivotal role in high-profile projects like Nobu Hotel and The Mandarin hotel. From family homes to penthouses in Mayfair and Knightsbridge, harper’s portfolio spans diverse residential endeavours, showcasing a commitment to excellence and sophistication.</div>
-                                        <div>The Problem</div>
-                                        <div>Initially equipped with only a logo, HARPER approached us with a wealth of industry experience and a desire to establish their distinct identity within the UK market. With a history deeply rooted in the field, they wanted to be recognised in their own right. Our task was to design a website and somewhat of a brand identity, that not only reflected the luxurious and high-end nature of their products and work but also stood out as a unique entity amid competitors. The challenge lay in crafting a digital presence that seamlessly embodied sophistication while also being functional and engaging.</div>
-                                        <div>The Solution</div>
-                                        <div>Firstly, we tackled the colour palette. White space communicates purity, sophistication, and simplicity, providing a neutral canvas that enhanced elements like product imagery. This minimalist style is synonymous with luxury. Deep blue adds richness and depth, symbolising stability and timelessness. Brown tones from wood evoke warmth and organic authenticity, connecting the brand with high-quality craftsmanship. Together, this palette exudes a luxurious and exclusive identity.</div>
-                                        <div>Emphasising large imagery to showcase HARPER’s high-end products was a must, creating a visually stunning online environment that highlighted the exquisite details and craftsmanship. This strategic use of visuals enhances the user experience, effectively conveying the luxury and sophistication synonymous with HARPER’s brand.</div>
-                                        <div>Another significant aspect of this project was the establishment and enhancement of HARPER’s social media presence. The solution strategically leveraged social media channels to drive customer engagement, actively directing users to the brand through compelling content.</div>
-                                    </div>
+                                <div className={`flex flex-col gap-8 md:mr-20 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[2] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                    <div className="pt-10">We provide consultation services to help you make informed decisions about your technology stack, architecture, and development process.</div>
+                                    <a href='/modules/consultation' className="button w-fit flex flex-row justify-between px-5 py-3 leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px]  hover:bg-[#7811A5] transition-all duration-300">
+                                        <h1 className='text-base mt-1 '>Know More</h1>
+                                        <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                                    </a>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-12 toggle-point flex flex-col">
-                                <div className="flex items-center justify-between">
-                                    <div onClick={() => toggleDropdown(4)} className="flex flex-col items-start justify-between cursor-pointer gap-6">
-                                        <div className="font-normal text-4xl leading-tight">Brand Strategy, Brand Identity, UX, UI, Web Design, Web Development, Web Maintenance</div>
-                                        <div className='flex items-center gap-4'>
-                                            <div className='bg-white rounded-full p-1'></div>
-                                            <div className='text-base'>Gen Solution case study</div>
-                                        </div>
+                                <div className="flex items-center justify-between gap-6">
+                                    <div className="font-normal text-2xl md:text-4xl leading-9">White Labelling</div>
+                                    <div onClick={() => toggleDropdown(3)} className="cursor-pointer">
+                                        <svg
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className={`transition-transform duration-300 ${dropdownStates[3] ? 'rotate-[-180deg]' : 'rotate-[0deg]'
+                                                }`}
+                                        >
+                                            <rect width="24" height="24" rx="12" fill="#7811A5" />
+                                            <rect x="7" y="11" width="10" height="2" fill="white" />
+                                            {!dropdownStates[3] && <rect x="11" y="7" width="2" height="10" fill="white" />}
+                                        </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[4] ? 'max-h-[10000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="text-2xl underline leading-7 pt-8 text-[#7811A5] "><a href="https://gensolutionsllc.com" target='blank'>GEN Solutions</a></div>
-                                    <div className='flex flex-col items-start gap-6 leading-7'>
-                                        <div>Rapid growth can be a double-edged sword. When Exact Solutions, a leading IT provider for legal firms, found themselves facing this challenge, they knew it was time to rebrand.</div>
-                                        <div>The Backstory</div>
-                                        <div>Gen Solutions is a successful IT support and services company, with particular emphasis on supporting legal chambers and law firms. With over 20 years of experience, Gen Solutions navigates the ever-evolving technology landscape, ensuring they’re equipped to meet today’s and tomorrow’s demands.</div>
-                                        <div>The Problem</div>
-                                        <div>Rapid growth and a desire to enter new industries necessitated a revaluation of their brand identity. They needed a clear, compelling message to stand out in a crowded marketplace.</div>
-                                        <div>The Solution</div>
-                                        <div>Our collaboration with Gen Solutions began with a brand strategy workshop. By facilitating discussions on their mission, vision, and values, we laid the groundwork for crafting a powerful brand narrative. The core concept of “keeping you connected” emerged, reflecting Exacts expertise and unwavering dedication to client support. We built upon this with a powerful mission statement: “Always on, never off” – a reassuring constant in a world of change. Recognising the generic nature of ‘Solutions’ the decision was made to remove it from the logo, allowing Exact to stand out with a more unique brand identity.</div>
-                                        <div>This strategic positioning became the foundation for defining Exacts overall brand personality: innovative, future-focused, customer-centric, and expert. Our logo design captured this essence, incorporating a forward-looking sense of motion with a subtle reference to a power button. The resulting symbol conveys reliability and strength while hinting at the companys commitment to “always on” service.</div>
-                                        <div>The visual identity extends beyond the logo itself. We created a clean and professional aesthetic that prioritises innovation and expertise while maintaining the dynamic sense of movement.</div>
-                                        <div>The Result</div>
-                                        <div>Through this collaborative branding process, Gen Solutions has a clear and differentiated identity that resonates with its current and future client base. The new brand foundation empowers them to confidently expand into new industries while staying true to their core values and commitment to exceptional service.</div>
-                                    </div>
+                                <div className={`flex flex-col gap-8 md:mr-20 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[3] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                    <div className="pt-10">If you are a marketing company or a design agency, we can work as your technology partner, providing you with the technical expertise you need to deliver high-quality projects to your clients.</div>
+                                    <a href='/modules/white-labelling' className="button w-fit flex flex-row justify-between px-5 py-3 leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px]  hover:bg-[#7811A5] transition-all duration-300">
+                                        <h1 className='text-base mt-1 '>Know More</h1>
+                                        <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                                    </a>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             {isVisible && (
                                 <div>
                                     <div className="py-12 flex flex-col">
-                                        <div className="flex items-center justify-between">
-                                            <div onClick={() => toggleDropdown(5)} className="flex flex-col items-start justify-between cursor-pointer gap-6">
-                                                <div className="font-normal text-4xl leading-tight">Design and development of website and mobile app Content Strategy, Video, Social Media Strategy, Content Creation, Social Media Management, Paid Social Advertising</div>
-                                                <div className='flex items-center gap-4'>
-                                                    <div className='bg-white rounded-full p-1'></div>
-                                                    <div className='text-base'>Deliveroo case study</div>
-                                                </div>
+                                        <div className="flex items-center justify-between gap-6">
+                                            <div className="font-normal text-2xl md:text-4xl leading-9">Offshore Development Centre</div>
+                                            <div onClick={() => toggleDropdown(4)} className="cursor-pointer">
+                                                <svg
+                                                    width="24"
+                                                    height="24"
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    className={`transition-transform duration-300 ${dropdownStates[4] ? 'rotate-[-180deg]' : 'rotate-[0deg]'
+                                                        }`}
+                                                >
+                                                    <rect width="24" height="24" rx="12" fill="#7811A5" />
+                                                    <rect x="7" y="11" width="10" height="2" fill="white" />
+                                                    {!dropdownStates[4] && <rect x="11" y="7" width="2" height="10" fill="white" />}
+                                                </svg>
                                             </div>
                                         </div>
-                                        <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[5] ? 'max-h-[10000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                            <div className="text-2xl underline leading-7 pt-8 text-[#7811A5] "><a href="https://deliveroo.co.uk/" target='blank'>Deliveroo</a></div>
-                                            <div className='flex flex-col items-start gap-6 leading-7'>
-                                                <div>Deliveroo is an exquisite Italian all day dining experience that was looking to enhance its digital presence and boost brand awareness. Located in the heart of London, Deliveroo offers artisanal bakery products crafted with exclusively sourced Italian ingredients.</div>
-                                                <div>The Backstory</div>
-                                                <div>With a commitment to quality and authenticity, Deliveroo was looking to elevate brand visibility and engage a wider audience. Understanding Deliveroo’s vision, we implemented a social media strategy to transform their online presence.</div>
-                                                <div>The Solution</div>
-                                                <div>1. &nbsp;&nbsp; Visual content creation: we crafted visually stunning content tailored for Instagram, Facebook, and TikTok, showcasing Deliveroo’s offerings and the essence of the Sicilian experience.</div>
-                                                <div>2. &nbsp;&nbsp; Copywriting: engaging and compelling copywriting was crafted for each platform.</div>
-                                                <div>3. &nbsp;&nbsp; Content management: our team took charge of content scheduling, ensuring a consistent and appealing presence on social media.</div>
-                                                <div>4. &nbsp;&nbsp; Paid social media management: targeted paid campaigns were strategically designed to amplify Deliveroo’s reach.</div>
-                                                <div>5. &nbsp;&nbsp; Photography and videography: we captured images and videos to highlight Deliveroo’s experience</div>
-                                                <div>6. &nbsp;&nbsp; Image and video editing: we edited every piece of content to ensure it aligned with Deliveroo’s brand aesthetic</div>
-                                                <div>The Result</div>
-                                                <div>The implementation of our social media strategy shows remarkable results for Deliveroo:</div>
-                                                <div className='flex items-center gap-6'>
-                                                    <div className='bg-white rounded-full p-1'></div>
-                                                    <div className='text-base'>Significant increase in engagement</div>
-                                                </div>
-                                                <div className='flex items-center gap-6'>
-                                                    <div className='bg-white rounded-full p-1'></div>
-                                                    <div className='text-base'>Expanded audience reach</div>
-                                                </div>
-                                                <div className='flex items-center gap-6'>
-                                                    <div className='bg-white rounded-full p-1'></div>
-                                                    <div className='text-base'>Elevating brand presence</div>
-                                                </div>
-                                                <div className='flex items-center gap-6'>
-                                                    <div className='bg-white rounded-full p-1'></div>
-                                                    <div className='text-base'>Driving tangible results in business</div>
-                                                </div>
-                                            </div>
+                                        <div className={`flex flex-col gap-8 md:mr-20 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[4] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                            <div className="pt-10">We can set up a dedicated team of developers, designers, and project managers to work on your projects. This model is ideal for companies that require a large team to work on multiple projects.</div>
+                                            <a href='/modules/offshore-development-centre' className="button w-fit flex flex-row justify-between px-5 py-3 leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px]  hover:bg-[#7811A5] transition-all duration-300">
+                                                <h1 className='text-base mt-1 '>Know More</h1>
+                                                <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                                            </a>
                                         </div>
                                     </div>
                                     <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
@@ -328,11 +270,11 @@ const Work = () => {
                     </div>
                 </section>
 
-                <section className='px-6 lg:px-16 pb-20'>
+                <section className='px-6 lg:px-16 pt-10 pb-28'>
 
                     <div className='w-full flex items-start justify-between flex-col lg:flex-row gap-6 mb-20 text-white'>
                         <div className='text-[2.5rem]'>We get results</div>
-                        <div className='w-full lg:w-2/5'>Using a unique Continuous Discovery / Continuous Delivery approach coupled with cutting-edge technologies, we design, develop and deliver your end to end to ensure you’re consistently meeting user needs and driving business value.. See below for just a few examples of the impact we've helped create for clients.</div>
+                        <div className='w-full lg:w-2/5'>Using a unique Continuous Discovery / Continuous Delivery approach coupled with cutting-edge technologies, we design, develop and deliver your  end to end to ensure you’re consistently meeting user needs and driving business value.. See below for just a few examples of the impact we've helped create for clients.</div>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-8 gap-x-6 text-white text-4xl font-normal">
@@ -664,4 +606,4 @@ const Work = () => {
     )
 }
 
-export default Work
+export default OurModules

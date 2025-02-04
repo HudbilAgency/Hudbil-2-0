@@ -1,12 +1,15 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom';
 import Home from '../Pages/Home';
+import OurApproach from '../Pages/OurApproach';
 import Accessibilities from '../Pages/Accessibilities';
 import PrivacyPolicy from '../Pages/PrivacyPolicy';
 import TalkToElla from '../Pages/TalkToElla';
 import ContactForm from '../Pages/ContactForm';
 import TandC from '../Pages/T&C';
 import Tabloids from '../Pages/tabloids';
+import OurModules from '../Pages/Modules';
+import ProjectBasis from '../Pages/project-basis';
 import Hudbil_ai_chatbot from '../Pages/hudbil-ai-chatbot'
 import AboutUs from '../Pages/AboutUs';
 import Services1 from '../Pages/Services1';
@@ -76,9 +79,12 @@ const Routers = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/faq" element={<Faq />} />
+        <Route path="/our-approach" element={<OurApproach />} />
         <Route path="/accessibilities" element={<Accessibilities />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/cookie-policy" element={<CookiePolicy />} />
+        <Route path="/our-modules" element={<OurModules />} />
+        <Route path="/modules/project-basis" element={<ProjectBasis />} />
         <Route path="/blogs/the-ultimate-guide-for-ux-research" element={<BlogPage1 />} />
         <Route path="/blogs/the-evolution-of-the-graphic-design" element={<BlogPage2 />} />
         <Route path="/blogs/brands-identity-design-aspects-in-brief" element={<BlogPage3 />} />
