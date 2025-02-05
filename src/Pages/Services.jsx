@@ -11,7 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Services = () => {
 
-    const [dropdownStates, setDropdownStates] = useState([false, false, false, false]);
+    const [dropdownStates, setDropdownStates] = useState([false, false, false, false, false, false]);
 
     const toggleDropdown = (index) => {
         const updatedStates = dropdownStates.map((state, i) => i === index ? !state : state);
@@ -71,7 +71,7 @@ const Services = () => {
             <main className='pt-[80px] bg-black'>
                 <section className='py-20'>
                     <div className='w-full lg:w-3/5 font-normal text-[2rem] xl:text-[50px] xl:w-5/6 leading-tight text-white px-6 lg:px-16'>
-                        Whether you need to design your first MVP to get development, redesign your product to improve business metrics - our designer’s and developer’s are here to help.
+                    Discover how Hudbil brings your vision to life with cutting-edge solutions. Our approach is designed to fuel growth and innovation—explore what sets us apart and see how we can elevate your business. At your fingertips !
                     </div>
 
                     <div className='pl-6 lg:pl-0 pr-6 lg:pr-16 mt-20 flex flex-col lg:flex-row items-start w-full gap-16 lg:gap-12'>
@@ -113,14 +113,14 @@ const Services = () => {
                             <div className="py-12 toggle-point flex flex-col">
                                 <div className="flex items-start justify-between">
                                     <div onClick={() => toggleDropdown(0)} className="flex flex-col items-start justify-between cursor-pointer gap-6">
-                                        <div className="font-normal text-4xl leading-9">Research</div>
+                                        <div className="font-normal text-4xl leading-9">UI/UX/CX Design</div>
                                         <div className='flex items-center gap-4'>
                                             <div className='bg-white rounded-full p-1'></div>
                                             <div className='text-base'>What do we serve?</div>
                                         </div>
                                     </div>
                                     <div className='mt-[10px]'>
-                                        <a href="/services/research-agency">
+                                        <a href="/services/ui-ux-cx-design">
                                             <svg
                                                 width="24"
                                                 height="24"
@@ -136,48 +136,22 @@ const Services = () => {
                                         </a>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[0] ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="text-base leading-7 pt-6">Our extensive research helps us understand exactly what your audiences are looking for, and our process accountability helps us offer UX Solutions as a core service in the studio.</div>
-                                    <div className='flex flex-col items-start gap-4'>
-                                        <div className='flex items-center gap-4'>
-                                            <div className='bg-white rounded-full p-1'></div>
-                                            <div>UX Research</div>
-                                        </div>
-                                        <div className='flex items-center gap-4'>
-                                            <div className='bg-white rounded-full p-1'></div>
-                                            <div>Ethnographic Research</div>
-                                        </div>
-                                        <div className='flex items-center gap-4'>
-                                            <div className='bg-white rounded-full p-1'></div>
-                                            <div>Design Audit</div>
-                                        </div>
-                                        <div className='flex items-center gap-4'>
-                                            <div className='bg-white rounded-full p-1'></div>
-                                            <div>Maturity Audit</div>
-                                        </div>
-                                        <div className='flex items-center gap-4'>
-                                            <div className='bg-white rounded-full p-1'></div>
-                                            <div>Competitor Analysis</div>
-                                        </div>
-                                        <div className='flex items-center gap-4'>
-                                            <div className='bg-white rounded-full p-1'></div>
-                                            <div>Emerging Trends</div>
-                                        </div>
-                                    </div>
+                                <div className={`flex overflow-hidden transition-all duration-500 md:mr-20 ease-in-out ${dropdownStates[0] ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                    <div className="text-base leading-7 pt-6">Deliver exceptional UI/UX design services and customer experiences through intuitive interfaces that enhance digital engagement.</div>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-12 toggle-point flex flex-col">
                                 <div className="flex items-start justify-between">
                                     <div onClick={() => toggleDropdown(1)} className="flex flex-col items-start justify-between cursor-pointer gap-6">
-                                        <div className="font-normal text-4xl leading-9">Strategy</div>
+                                        <div className="font-normal text-4xl leading-9">Website Development</div>
                                         <div className='flex items-center gap-4'>
                                             <div className='bg-white rounded-full p-1'></div>
                                             <div className='text-base'>What do we serve?</div>
                                         </div>
                                     </div>
                                     <div className='mt-[10px]'>
-                                        <a href="/services/strategy-agency">
+                                        <a href="/services/website-development">
                                             <svg
                                                 width="24"
                                                 height="24"
@@ -193,48 +167,22 @@ const Services = () => {
                                         </a>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[1] ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="text-base leading-7 pt-6">Understanding your brand, identifying your pain points, empathizing with your audience, and strategizing delightful user experiences are some of the things we do as your UX Partners</div>
-                                    <div className='flex flex-col items-start gap-4'>
-                                        <div className='flex items-center gap-4'>
-                                            <div className='bg-white rounded-full p-1'></div>
-                                            <div>Brand Strategy</div>
-                                        </div>
-                                        <div className='flex items-center gap-4'>
-                                            <div className='bg-white rounded-full p-1'></div>
-                                            <div>Product Strategy</div>
-                                        </div>
-                                        <div className='flex items-center gap-4'>
-                                            <div className='bg-white rounded-full p-1'></div>
-                                            <div>UX Strategy</div>
-                                        </div>
-                                        <div className='flex items-center gap-4'>
-                                            <div className='bg-white rounded-full p-1'></div>
-                                            <div>Scale up Strategy</div>
-                                        </div>
-                                        <div className='flex items-center gap-4'>
-                                            <div className='bg-white rounded-full p-1'></div>
-                                            <div>Digital Transformation</div>
-                                        </div>
-                                        <div className='flex items-center gap-4'>
-                                            <div className='bg-white rounded-full p-1'></div>
-                                            <div>User Acquisition Strategy</div>
-                                        </div>
-                                    </div>
+                                <div className={`flex overflow-hidden transition-all duration-500 md:mr-20 ease-in-out ${dropdownStates[1] ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                    <div className="text-base leading-7 pt-6">Develop scalable web solutions and high-performance websites tailored to your business needs, ensuring robust functionality.</div>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-12 toggle-point flex flex-col">
                                 <div className="flex items-start justify-between">
                                     <div onClick={() => toggleDropdown(2)} className="flex flex-col items-start justify-between cursor-pointer gap-6">
-                                        <div className="font-normal text-4xl leading-9">Design</div>
+                                        <div className="font-normal text-4xl leading-9">Mobile App Development</div>
                                         <div className='flex items-center gap-4'>
                                             <div className='bg-white rounded-full p-1'></div>
                                             <div className='text-base'>What do we serve?</div>
                                         </div>
                                     </div>
                                     <div className='mt-[10px]'>
-                                        <a href="/services/creative-designing-agency">
+                                        <a href="/services/mobile-app-development">
                                             <svg
                                                 width="24"
                                                 height="24"
@@ -250,68 +198,22 @@ const Services = () => {
                                         </a>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[2] ? 'max-h-[700px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="text-base leading-7 pt-6">Our scientifically proven UX design process means you can simultaneously release products users love and check off business goals.</div>
-                                    <div className='flex flex-col items-start gap-4'>
-                                        <div className='flex items-center gap-4'>
-                                            <div className='bg-white rounded-full p-1'></div>
-                                            <div>UI Design</div>
-                                        </div>
-                                        <div className='flex items-center gap-4'>
-                                            <div className='bg-white rounded-full p-1'></div>
-                                            <div>UI Development</div>
-                                        </div>
-                                        <div className='flex items-center gap-4'>
-                                            <div className='bg-white rounded-full p-1'></div>
-                                            <div>UI Guidelines</div>
-                                        </div>
-                                        <div className='flex items-center gap-4'>
-                                            <div className='bg-white rounded-full p-1'></div>
-                                            <div>Design System</div>
-                                        </div>
-                                        <div className='flex items-center gap-4'>
-                                            <div className='bg-white rounded-full p-1'></div>
-                                            <div>UX Design</div>
-                                        </div>
-                                        <div className='flex items-center gap-4'>
-                                            <div className='bg-white rounded-full p-1'></div>
-                                            <div>User Research</div>
-                                        </div>
-                                        <div className='flex items-center gap-4'>
-                                            <div className='bg-white rounded-full p-1'></div>
-                                            <div>UX Consultancy</div>
-                                        </div>
-                                        <div className='flex items-center gap-4'>
-                                            <div className='bg-white rounded-full p-1'></div>
-                                            <div>UX Writing</div>
-                                        </div>
-                                        <div className='flex items-center gap-4'>
-                                            <div className='bg-white rounded-full p-1'></div>
-                                            <div>Animations</div>
-                                        </div>
-                                        <div className='flex items-center gap-4'>
-                                            <div className='bg-white rounded-full p-1'></div>
-                                            <div>Iconography</div>
-                                        </div>
-                                        <div className='flex items-center gap-4'>
-                                            <div className='bg-white rounded-full p-1'></div>
-                                            <div>Illustrations</div>
-                                        </div>
-                                    </div>
+                                <div className={`flex overflow-hidden transition-all duration-500 md:mr-20 ease-in-out ${dropdownStates[2] ? 'max-h-[700px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                    <div className="text-base leading-7 pt-6">Create custom mobile applications with innovative designs that provide seamless user experiences across all devices and platforms.</div>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-12 toggle-point flex flex-col">
                                 <div className="flex items-start justify-between">
                                     <div onClick={() => toggleDropdown(3)} className="flex flex-col items-start justify-between cursor-pointer gap-6">
-                                        <div className="font-normal text-4xl leading-9">Development</div>
+                                        <div className="font-normal text-4xl leading-9">Cloud Solutions</div>
                                         <div className='flex items-center gap-4'>
                                             <div className='bg-white rounded-full p-1'></div>
                                             <div className='text-base'>What do we serve?</div>
                                         </div>
                                     </div>
                                     <div className='mt-[10px]'>
-                                        <a href="/services/development-agency">
+                                        <a href="/services/cloud-solutions">
                                             <svg
                                                 width="24"
                                                 height="24"
@@ -327,46 +229,70 @@ const Services = () => {
                                         </a>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[3] ? 'max-h-[700px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="text-base leading-7 pt-6">We spend time understanding your unique business challenge, creating flexible software roadmaps, and developing secure, scalable solutions that deliver ROI.</div>
-                                    <div className='flex flex-col items-start gap-4'>
+                                <div className={`flex overflow-hidden transition-all duration-500 md:mr-20 ease-in-out ${dropdownStates[3] ? 'max-h-[700px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                    <div className="text-base leading-7 pt-6">Adopt scalable cloud solutions to improve operational efficiency, enabling flexible and secure cloud-based business operations.</div>
+                                </div>
+                            </div>
+                            <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
+                            <div className="py-12 toggle-point flex flex-col">
+                                <div className="flex items-start justify-between">
+                                    <div onClick={() => toggleDropdown(4)} className="flex flex-col items-start justify-between cursor-pointer gap-6">
+                                        <div className="font-normal text-4xl leading-9">AI & Machine Learning</div>
                                         <div className='flex items-center gap-4'>
                                             <div className='bg-white rounded-full p-1'></div>
-                                            <div>Web Design</div>
-                                        </div>
-                                        <div className='flex items-center gap-4'>
-                                            <div className='bg-white rounded-full p-1'></div>
-                                            <div>Software Development</div>
-                                        </div>
-                                        <div className='flex items-center gap-4'>
-                                            <div className='bg-white rounded-full p-1'></div>
-                                            <div>Front-End</div>
-                                        </div>
-                                        <div className='flex items-center gap-4'>
-                                            <div className='bg-white rounded-full p-1'></div>
-                                            <div>Back-End</div>
-                                        </div>
-                                        <div className='flex items-center gap-4'>
-                                            <div className='bg-white rounded-full p-1'></div>
-                                            <div>E-Commerce</div>
-                                        </div>
-                                        <div className='flex items-center gap-4'>
-                                            <div className='bg-white rounded-full p-1'></div>
-                                            <div>Mobile App Development</div>
-                                        </div>
-                                        <div className='flex items-center gap-4'>
-                                            <div className='bg-white rounded-full p-1'></div>
-                                            <div>Native</div>
-                                        </div>
-                                        <div className='flex items-center gap-4'>
-                                            <div className='bg-white rounded-full p-1'></div>
-                                            <div>Hybrid</div>
-                                        </div>
-                                        <div className='flex items-center gap-4'>
-                                            <div className='bg-white rounded-full p-1'></div>
-                                            <div>Android</div>
+                                            <div className='text-base'>What do we serve?</div>
                                         </div>
                                     </div>
+                                    <div className='mt-[10px]'>
+                                        <a href="/services/ai-ml">
+                                            <svg
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                className='button'
+                                            >
+                                                <rect width="24" height="24" rx="12" fill="#7811A5" />
+                                                <rect x="7" y="11" width="10" height="2" fill="white" />
+                                                <rect x="11" y="7" width="2" height="10" fill="white" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div className={`flex overflow-hidden transition-all duration-500 md:mr-20 ease-in-out ${dropdownStates[4] ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                    <div className="text-base leading-7 pt-6">Leverage AI and machine learning services to drive innovation and optimize business processes with advanced technologies.</div>
+                                </div>
+                            </div>
+                            <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
+                            <div className="py-12 toggle-point flex flex-col">
+                                <div className="flex items-start justify-between">
+                                    <div onClick={() => toggleDropdown(5)} className="flex flex-col items-start justify-between cursor-pointer gap-6">
+                                        <div className="font-normal text-4xl leading-9">Blockchain</div>
+                                        <div className='flex items-center gap-4'>
+                                            <div className='bg-white rounded-full p-1'></div>
+                                            <div className='text-base'>What do we serve?</div>
+                                        </div>
+                                    </div>
+                                    <div className='mt-[10px]'>
+                                        <a href="/services/blockchain">
+                                            <svg
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                className='button'
+                                            >
+                                                <rect width="24" height="24" rx="12" fill="#7811A5" />
+                                                <rect x="7" y="11" width="10" height="2" fill="white" />
+                                                <rect x="11" y="7" width="2" height="10" fill="white" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div className={`flex overflow-hidden transition-all duration-500 md:mr-20 ease-in-out ${dropdownStates[5] ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                    <div className="text-base leading-7 pt-6">Implement secure blockchain solutions to enhance data integrity and transparency, streamlining operations for your business.</div>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>

@@ -11,7 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const ODC = () => {
 
-    const [dropdownStates, setDropdownStates] = useState([false, false, false, false, false, false]);
+    const [dropdownStates, setDropdownStates] = useState([false, false, false, false]);
 
     const toggleDropdown = (index) => {
         const updatedStates = dropdownStates.map((state, i) => i === index ? !state : state);
