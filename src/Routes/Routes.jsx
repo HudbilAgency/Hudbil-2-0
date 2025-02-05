@@ -9,7 +9,11 @@ import ContactForm from '../Pages/ContactForm';
 import TandC from '../Pages/T&C';
 import Tabloids from '../Pages/tabloids';
 import OurModules from '../Pages/Modules';
-import ProjectBasis from '../Pages/project-basis';
+import ProjectBasis from '../Pages/Module1';
+import MonthlyRetainer from '../Pages/Module2';
+import Consultation from '../Pages/Module3';
+import WhiteLabelling from '../Pages/Module4';
+import ODC from '../Pages/Module5';
 import Hudbil_ai_chatbot from '../Pages/hudbil-ai-chatbot'
 import AboutUs from '../Pages/AboutUs';
 import Services1 from '../Pages/Services1';
@@ -85,6 +89,10 @@ const Routers = () => {
         <Route path="/cookie-policy" element={<CookiePolicy />} />
         <Route path="/our-modules" element={<OurModules />} />
         <Route path="/modules/project-basis" element={<ProjectBasis />} />
+        <Route path="/modules/monthly-retainer" element={<MonthlyRetainer />} />
+        <Route path="/modules/consultation" element={<Consultation />} />
+        <Route path="/modules/white-labelling" element={<WhiteLabelling />} />
+        <Route path="/modules/offshore-development-centre" element={<ODC />} />
         <Route path="/blogs/the-ultimate-guide-for-ux-research" element={<BlogPage1 />} />
         <Route path="/blogs/the-evolution-of-the-graphic-design" element={<BlogPage2 />} />
         <Route path="/blogs/brands-identity-design-aspects-in-brief" element={<BlogPage3 />} />

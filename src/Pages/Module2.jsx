@@ -9,7 +9,7 @@ import { Helmet } from 'react-helmet';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const ProjectBasis = () => {
+const MonthlyRetainer = () => {
 
     const [dropdownStates, setDropdownStates] = useState([false, false, false, false, false, false]);
 
@@ -37,50 +37,49 @@ const ProjectBasis = () => {
     };
 
     const dropdownTitles = [
-        "What is a Project-Based Engagement Model?",
-        "How does the Project-Based Engagement Model differ from a retainer model?",
-        "How do you determine the scope and cost of a project?",
-        "What happens if the project scope changes during the engagement?",
-        "How long does it take to complete a typical project?",
-        "Will I have a dedicated project manager?",
-        "What types of projects do you specialize in?",
-        "How involved will I be in the process?",
-        "Can I make changes or revisions during the project?",
-        "What happens after the project is completed?",
-        "How do you ensure the quality of your work?",
-        "Do you offer support after the project is completed?",
-        "Can you work with my internal team or other third-party vendors?",
-        "How do you handle intellectual property and confidentiality?",
-        "What happens if the project goes over budget or behind schedule?",
-        "Can I see examples of past projects or case studies?",
-        "What do I need to provide to get started on a project?",
-        "What makes your company different from other design and development agencies?",
-        "What types of projects are ideal for a project-based engagement?",
-        "How do you manage changes in project scope?"
+        "What is a Monthly Retainer Engagement Model?",
+        "What services are included in the retainer model?",
+        "How does the retainer model work?",
+        "How is the cost determined?",
+        "How many hours do I get per month?",
+        "What happens if I need more hours than my package allows?",
+        "Can I change the services or hours included in the retainer at any time?",
+        "How often will I receive updates or reports?",
+        "What if I only need design or development work sporadically?",
+        "How do you ensure quality and consistency?",
+        "Can I cancel the retainer at any time?",
+        "How is the retainer billed?",
+        "How do you prioritize my requests?",
+        "Will I have a dedicated point of contact?",
+        "How do you handle urgent requests or emergencies?",
+        "Is the retainer model right for my business?",
+        "Do you offer any guarantees with the retainer model?",
+        "Can I combine a retainer with one-off projects?",
+        "work with my internal team or other contractors?",
+        "How do I get started with a monthly retainer?",
     ];
 
-
     const dropdownContent = [
-        "A project-based engagement model means that we work with you on a defined project with specific goals, timelines, and deliverables. We collaborate closely with you from start to finish, ensuring your vision is realized within an agreed-upon scope and budget.",
-        "Unlike a retainer model, where we work with you on an ongoing basis without a set end date, a project-based model is for a fixed scope with clear deliverables and a set timeline. This allows you to focus on a single project at a time, with defined goals and a predictable cost.",
-        "The scope and cost are determined based on the specifics of your project, such as complexity, resources needed, timeline, and any particular challenges. After an initial consultation, we will provide you with a detailed proposal that outlines project phases, timelines, and associated costs.",
-        "If the scope of the project changes after the initial agreement, we’ll assess the new requirements and provide a revised estimate. Any changes to timelines or costs will be discussed and approved before we proceed. We ensure transparency at every step.",
-        "The timeline depends on the project’s complexity and scope. Smaller projects may take a few weeks, while larger, more intricate designs or development projects may take several months. We work with you to set realistic deadlines and keep you updated throughout the process.",
-        "Yes! Each project is assigned a dedicated project manager who will be your point of contact throughout the engagement. Your project manager will ensure the project stays on track, meet milestones, and address any issues that may arise during development.",
-        "We specialize in a wide range of design and development projects, including but not limited to:|<li>Web and mobile application development</li>|<li>UI/UX design and user experience optimization</li>|<li>Branding and visual design</li>|<li>E-commerce solutions</li>|<li>Custom software development</li>|<li>Digital marketing campaigns</li>",
-        "You’ll be involved every step of the way! We prioritize collaboration and communication. You’ll provide feedback during key stages of the project—such as initial designs, wireframes, and prototypes—to ensure we’re on track to meet your vision.",
-        "Yes! We include feedback rounds in our process to ensure the project meets your expectations. However, extensive changes outside the original scope may result in adjustments to timelines or costs. We work with you to balance quality, scope, and time.",
-        "Once the project is completed, we conduct a final review with you to ensure everything meets your expectations. We also provide documentation and support as needed, and depending on the type of project, we can offer post-launch maintenance or ongoing optimization.",
-        "We employ rigorous quality assurance processes throughout the project. From design review to coding standards and testing, we make sure that the work meets both your requirements and industry best practices. You’ll also have opportunities to review deliverables before finalization.",
-        "Yes! We offer post-launch support to address any issues that arise after the project goes live. Whether it's debugging, performance optimization, or minor revisions, we’ll help ensure everything functions smoothly after handover.",
-        "Absolutely! We’re flexible and can work alongside your internal team or other vendors. Our goal is to integrate seamlessly into your existing workflow and ensure your project is successful, whether we're working independently or in collaboration with other stakeholders.",
-        "We take intellectual property and confidentiality seriously. All materials and ideas created during the project are yours. We are happy to sign non-disclosure agreements (NDAs) to protect your proprietary information and ensure that your data is kept secure throughout the project.",
-        "We take proactive steps to manage timelines and budgets effectively. If any unforeseen challenges arise, we will immediately notify you and discuss how to proceed. We believe in clear communication and will work with you to minimize delays or extra costs.",
-        "Yes! We have a portfolio showcasing our previous projects across various industries. We’d be happy to walk you through relevant case studies to demonstrate how we’ve successfully executed projects similar to yours.",
-        "To get started, we’ll need:| <li>A basic overview of your project’s goals</li>|<li>Any existing designs, branding guidelines, or technical requirements</li>|<li>A rough timeline or key deadlines</li>|<li>A budget range (if applicable)</li>|<li>Once we have this information, we can schedule an initial consultation to discuss the project in more detail and determine next steps.</li>",
-        "We focus on creating custom, high-quality solutions that are tailored specifically to your needs. Our collaborative, transparent, and flexible approach ensures that we work alongside you to bring your vision to life, and we prioritize clear communication and measurable outcomes throughout the project.",
-        "This model suits well-defined projects like website development, app creation, or system upgrades that have clear goals and timelines. ",
-        "Scope changes are handled via a formal change request process, ensuring mutual agreement on adjustments to timelines or budgets",
+        "A Monthly Retainer Engagement Model is a flexible, ongoing partnership where you pay a fixed monthly fee for continuous design, development, and strategic services. Rather than working on one-off projects, we collaborate with you over the long term, providing regular updates, maintenance, and improvements as your needs evolve.",
+        "Our retainer model offers a range of services, including:|<li><strong>Web & Mobile App Development:</strong> Ongoing feature development, updates, and bug fixes.</li>|<li><strong>UI/UX Design:</strong> Continuous design iterations, user interface improvements, and optimization.</li>|<li><strong>Branding & Graphic Design:</strong> Ongoing design work for marketing materials, banners, logos, etc.</li>|<li><strong>Digital Strategy & Marketing:</strong> SEO, social media campaigns, content marketing, and more.</li>|<li><strong>Consulting & Product Strategy:</strong> Regular business and product consulting sessions.</li>|<li><strong>Maintenance & Support:</strong> Regular maintenance, troubleshooting, and technical support.",
+        "We begin by discussing your goals, priorities, and ongoing needs. Based on that, we create a custom retainer agreement with clear deliverables each month. You’ll receive priority support, regular updates, and continuous strategic consultation. Each month, we execute the agreed-upon tasks, track progress, and adjust as necessary.",
+        "The cost of a monthly retainer is based on the scope of services required, the number of hours needed, and the complexity of your ongoing needs. We offer different tiers of retainer packages to fit various budgets and requirements. Once we understand the full scope of work, we provide a clear, fixed monthly price.",
+        "The number of hours you receive depends on the retainer package you select. We can also customize the hours based on your specific needs. Typical packages include:|<li><strong>Basic:</strong> Up to 20 hours/month</li>|<li><strong>Standard:</strong> Up to 40 hours/month</li>|<li><strong>Premium:</strong> 80+ hours/month</li>",
+        "If you need additional hours beyond your monthly package, we’ll notify you beforehand. You can either approve the additional work or adjust priorities for the month. We offer flexible options to ensure you receive the support you need, even if it goes slightly beyond the initial scope.",
+        "Yes! The retainer model is designed to be flexible. If your needs evolve over time, we can adjust the services, hours, or budget accordingly. We’ll review the engagement periodically to ensure it continues to align with your business goals.",
+        "You’ll receive regular updates and monthly reports detailing the work completed, ongoing tasks, and any new goals. We’ll schedule a monthly strategy session to review progress, discuss adjustments, and plan for the next phase. Communication is key, and you’ll always be in the loop.",
+        "The retainer model is ideal for businesses with ongoing needs but it can also work for more sporadic requirements. If you only need occasional updates or fixes, a retainer may still provide value by keeping your design and development team available when needed, reducing wait times.",
+        "We assign a dedicated project manager and a core team to your account, ensuring continuity and consistency across all work. Our team becomes familiar with your brand, goals, and objectives, allowing us to provide high-quality work that aligns with your vision. We also employ thorough review and quality assurance processes to ensure every deliverable meets your standards.",
+        "We understand that business needs can change. While we typically ask for a minimum commitment (e.g., 3-6 months) to ensure stability and effective collaboration, you can cancel or adjust the retainer with proper notice, as defined in our agreement. We’ll work with you to ensure a smooth transition.",
+        "The retainer is typically billed on a monthly basis, and payment is due at the start of each month. We provide detailed invoices that break down the services, hours, and deliverables included, ensuring full transparency.",
+        "As a retainer client, you’ll receive priority access to our team. We prioritize your requests based on urgency, scope, and strategic alignment with your business goals. Regular communication and monthly planning sessions help us stay aligned on what needs to be addressed first.",
+        "Yes! Each retainer client is assigned a dedicated project manager who will act as your main point of contact. Your project manager will coordinate the work, ensure smooth communication, and keep everything on track. You'll also have access to our broader team of experts as needed.",
+        "For urgent requests or emergencies, you’ll receive priority support as part of the retainer. We’ll work with you to resolve critical issues as quickly as possible, ensuring minimal disruption to your operations. Retainer clients receive faster turnaround times and immediate attention for time-sensitive matters.",
+        "If your business requires ongoing design, development, or strategic services, the retainer model could be an ideal fit. It’s particularly beneficial if you’re looking for consistent, long-term collaboration rather than one-off projects. A retainer ensures you have a dedicated team ready to support your needs as they evolve.",
+        "While we cannot guarantee specific outcomes, we do guarantee our commitment to delivering high-quality work that aligns with your goals. Our team’s focus is on providing continuous value, adapting to your changing needs, and helping you achieve measurable success over time.",
+        "Yes! Many of our clients combine their retainer with occasional one-off projects. This approach allows you to have ongoing support while also tackling specific initiatives or larger projects as needed. We’ll work with you to determine how to best allocate resources for both types of work.",
+        "Yes! We can seamlessly collaborate with your internal team or other contractors you may be working with. Whether we’re supporting a larger team or handling specific aspects of a project, we adapt to fit into your workflow and help achieve your goals.",
+        "Getting started is easy! Simply reach out to us for a consultation. We’ll discuss your goals, assess your needs, and create a custom retainer plan tailored to your business. Once we agree on the terms, we’ll set up an initial kick-off meeting and begin working on your ongoing projects.",
     ];
 
     useEffect(() => {
@@ -154,11 +153,11 @@ const ProjectBasis = () => {
             <main className='relative z-20'>
                 <section className='bg-black py-20'>
                     <div className='md:w-3/5 xl:w-4/5 font-normal text-[2rem] xl:text-[50px] leading-tight text-white px-6 lg:px-16'>
-                        We believe that every project is unique and deserves a personalized approach. Our Project-Based Engagement Model provides clients with the flexibility, expertise, and dedicated resources needed to achieve their objectives efficiently and effectively.
+                        A Monthly Retainer Engagement Model provides you with ongoing support and a dedicated team of professionals who are available to meet your design, development, and strategy needs as they arise. Instead of working on isolated projects, our retainer model ensures a consistent, flexible partnership that adapts to your changing business requirements.
                     </div>
 
                     <div className='px-6 lg:px-16 mt-24 flex flex-col lg:flex-row items-start justify-between w-full gap-12 xl:gap-0'>
-                        <div className='font-normal text-3xl text-white'>Project-Based Engagement Model</div>
+                        <div className='font-normal text-3xl text-white'>Monthly Retainer Engagement Model</div>
 
                         <div className='w-full lg:w-2/3 xl:w-1/2 text-white'>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
@@ -166,7 +165,7 @@ const ProjectBasis = () => {
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
                                         <div className="w-8 md:w-12"><img src="/modules-pb-1.png" alt="point" /></div>
-                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Clearly Defined Scope</div>
+                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Ongoing Support</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(0)} className="cursor-pointer">
                                         <svg
@@ -185,7 +184,7 @@ const ProjectBasis = () => {
                                     </div>
                                 </div>
                                 <div className={`flex md:mr-20 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[0] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="pt-10">Precise objectives and deliverables ensure project alignment with your business goals.</div>
+                                    <div className="pt-10">Continuous access to our expertise for long-term success and growth.</div>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
@@ -193,7 +192,7 @@ const ProjectBasis = () => {
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
                                         <div className="w-8 md:w-12"><img className='h-8 md:h-12' src="/modules-pb-2.png" alt="point" /></div>
-                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Fixed Budget</div>
+                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Flexible Resource Allocation</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(1)} className="cursor-pointer">
                                         <svg
@@ -212,7 +211,7 @@ const ProjectBasis = () => {
                                     </div>
                                 </div>
                                 <div className={`flex md:mr-20 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[1] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="pt-10">Pre-agreed costs provide transparency and financial predictability</div>
+                                    <div className="pt-10">Adaptable services to align with your evolving priorities.</div>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
@@ -220,7 +219,7 @@ const ProjectBasis = () => {
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
                                         <div className="w-8 md:w-12"><img src="/modules-pb-3.png" alt="point" /></div>
-                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Time-Bound Delivery</div>
+                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Cost-Effective</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(2)} className="cursor-pointer">
                                         <svg
@@ -239,7 +238,7 @@ const ProjectBasis = () => {
                                     </div>
                                 </div>
                                 <div className={`flex md:mr-20 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[2] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="pt-10">Strict adherence to timelines ensures timely project completion.</div>
+                                    <div className="pt-10">Predictable monthly fees enable efficient budget management.</div>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
@@ -247,7 +246,7 @@ const ProjectBasis = () => {
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
                                         <div className="w-8 md:w-12"><img src="/modules-pb-4.png" alt="point" /></div>
-                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Dedicated Resources</div>
+                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Priority Service</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(3)} className="cursor-pointer">
                                         <svg
@@ -266,15 +265,15 @@ const ProjectBasis = () => {
                                     </div>
                                 </div>
                                 <div className={`flex md:mr-20 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[3] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="pt-10">Focused teams deliver superior results by concentrating solely on your project needs.</div>
+                                    <div className="pt-10">Retainer clients enjoy prioritized attention and expedited response times.</div>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className='text-[#917D7D] font-normal text-sm py-12 w-full md:w-5/6'>
-                                Get in touch to find out how our team enjoys tinkering, most importantly empower your organisation.
+                                Get the flexibility and expertise you need to achieve your project goals, on time and within budget.
                             </div>
                             <div className='w-fit'>
-                                <Link to="/services/development-agency">
+                                <Link to="/contact-us">
                                     <button className="button self-end flex flex-row justify-between px-12 py-3 mb-4 leading-none hover:bg-white hover:text-black text-white gap-8 rounded-[1000px] max-md:px-5 bg-[#7811A5] transition-all duration-300">
                                         <h1 className='text-base mt-1 '>Start Your Project today</h1>
                                         <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
@@ -285,7 +284,7 @@ const ProjectBasis = () => {
                     </div>
                 </section>
 
-                <section className='px-6 lg:px-16 pt-10 pb-24 bg-black'>
+                <section className='px-6 lg:px-16 pt-8 pb-24 bg-black'>
 
                     <div className='w-full flex items-center justify-between flex-col lg:flex-row gap-12 lg:gap-6 mb-20 text-white'>
                         <div className='text-[2.5rem]'>How It Works</div>
@@ -299,10 +298,10 @@ const ProjectBasis = () => {
                             className="border relative hover:bg-[#7811A5] border-[#D8D8D8] w-full aspect-square flex items-center justify-center overflow-hidden p-6 transition-all duration-300">
                             {showDetails[0] ? (
                                 <div className='text-lg text-center font-normal leading-7'>
-                                    <div>Our experts engage with your team to identify business objectives, challenges, and technical requirements. This phase ensures we fully understand the project's scope.</div>
+                                    <div>We collaborate with you to identify your business goals and determine the services required on a monthly basis. This ensures alignment with your strategic priorities.</div>
                                 </div>
                             ) : (
-                                <div className='text-3xl font-bold text-center'>Requirement Gathering</div>
+                                <div className='text-3xl font-bold text-center leading-normal'>Define Scope and Objectives</div>
                             )}
                         </div>
 
@@ -310,10 +309,10 @@ const ProjectBasis = () => {
                             onMouseLeave={() => toggleShowDetails(1, false)} className="border relative hover:bg-[#7811A5] border-[#D8D8D8] w-full aspect-square flex items-center justify-center overflow-hidden p-6 transition-all duration-300">
                             {showDetails[1] ? (
                                 <div className='text-lg text-center font-normal leading-7'>
-                                    <div>We craft a detailed project plan, including timelines, milestones, and cost estimates. This roadmap guarantees clarity and sets expectations from the outset.</div>
+                                    <div>Based on the defined scope, we establish a retainer agreement with clear deliverables, timelines, and budget. A detailed plan ensures seamless execution.</div>
                                 </div>
                             ) : (
-                                <div className='text-3xl font-bold text-center'>Proposal & Planning</div>
+                                <div className='text-3xl font-bold text-center leading-normal'>Agreement and Planning</div>
                             )}
                         </div>
 
@@ -321,10 +320,10 @@ const ProjectBasis = () => {
                             onMouseLeave={() => toggleShowDetails(2, false)} className="border relative hover:bg-[#7811A5] border-[#D8D8D8] w-full aspect-square flex items-center justify-center overflow-hidden p-6 transition-all duration-300">
                             {showDetails[2] ? (
                                 <div className='text-lg text-center font-normal leading-7'>
-                                    <div>Leveraging agile methodologies, our dedicated team brings your vision to life. We maintain regular updates and feedback cycles to ensure alignment with your goals.</div>
+                                    <div>Our team works consistently on the agreed tasks, providing regular updates and progress reports to keep you informed and ensure transparency.</div>
                                 </div>
                             ) : (
-                                <div className='text-3xl font-bold text-center'>Execution & Development</div>
+                                <div className='text-3xl font-bold text-center leading-normal'>Monthly Execution and Reporting</div>
                             )}
                         </div>
 
@@ -332,10 +331,10 @@ const ProjectBasis = () => {
                             onMouseLeave={() => toggleShowDetails(3, false)} className="border relative hover:bg-[#7811A5] border-[#D8D8D8] w-full aspect-square flex items-center justify-center overflow-hidden p-6 transition-all duration-300">
                             {showDetails[3] ? (
                                 <div className='text-lg text-center font-normal leading-7'>
-                                    <div>Upon completion, we deliver the project along with comprehensive documentation. Our team ensures a seamless handover and provides post-delivery support to guarantee success.</div>
+                                    <div>We conduct periodic reviews to assess progress and refine the scope of work, ensuring that our efforts align with your changing business needs.</div>
                                 </div>
                             ) : (
-                                <div className='text-3xl font-bold text-center'>Delivery & Handover</div>
+                                <div className='text-3xl font-bold text-center leading-normal'>Review and Adjust</div>
                             )}
                         </div>
 
@@ -343,10 +342,10 @@ const ProjectBasis = () => {
                             onMouseLeave={() => toggleShowDetails(4, false)} className="border relative hover:bg-[#7811A5] border-[#D8D8D8] w-full aspect-square flex items-center justify-center overflow-hidden p-6 transition-all duration-300">
                             {showDetails[4] ? (
                                 <div className='text-lg text-center font-normal leading-7'>
-                                    <div>Our seasoned professionals deliver high-quality, tailor-made solutions that address your unique business challenges.</div>
+                                    <div>Our skilled professionals are committed to providing top-notch services tailored to your business objectives.</div>
                                 </div>
                             ) : (
-                                <div className='text-3xl font-bold text-center'>Proven Expertise</div>
+                                <div className='text-3xl font-bold text-center leading-normal'>Dedicated Expertise</div>
                             )}
                         </div>
 
@@ -354,10 +353,10 @@ const ProjectBasis = () => {
                             onMouseLeave={() => toggleShowDetails(5, false)} className="border relative hover:bg-[#7811A5] border-[#D8D8D8] w-full aspect-square flex items-center justify-center overflow-hidden p-6 transition-all duration-300">
                             {showDetails[5] ? (
                                 <div className='text-lg text-center font-normal leading-7'>
-                                    <div>From planning to delivery, we maintain open communication channels, keeping you informed at every stage of the project lifecycle.</div>
+                                    <div>With detailed monthly reports and clear communication, we ensure you’re always aware of the progress and impact of our efforts.</div>
                                 </div>
                             ) : (
-                                <div className='text-3xl font-bold text-center'>Transparent Communication</div>
+                                <div className='text-3xl font-bold text-center leading-normal'>Scalable Services</div>
                             )}
                         </div>
                     </div>
@@ -375,8 +374,8 @@ const ProjectBasis = () => {
                         FAQ’S
                     </div>
                     <div className="w-full flex items-start justify-end mt-16 mb-12 px-6 lg:px-16">
-                        <div className='md:w-1/2 lg:w-3/5 flex flex-col items-end text-white text-base xl:text-[20px] leading-tight'>
-                            <div>Here are answers to the most common questions about Project Basis undertaking.</div>
+                        <div className='md:w-1/2 lg:w-2/3 flex flex-col items-end text-white text-base xl:text-[20px] leading-tight'>
+                            <div>Here are answers to the most common questions about Monthly Retainer undertaking.</div>
                         </div>
                     </div>
 
@@ -448,4 +447,4 @@ const ProjectBasis = () => {
     )
 }
 
-export default ProjectBasis
+export default MonthlyRetainer
