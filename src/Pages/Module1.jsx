@@ -274,7 +274,7 @@ const ProjectBasis = () => {
                                 Get in touch to find out how our team enjoys tinkering, most importantly empower your organisation.
                             </div>
                             <div className='w-fit'>
-                                <Link to="/services/development-agency">
+                                <Link to="/contact-us">
                                     <button className="button self-end flex flex-row justify-between px-12 py-3 mb-4 leading-none hover:bg-white hover:text-black text-white gap-8 rounded-[1000px] max-md:px-5 bg-[#7811A5] transition-all duration-300">
                                         <h1 className='text-base mt-1 '>Start Your Project today</h1>
                                         <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
