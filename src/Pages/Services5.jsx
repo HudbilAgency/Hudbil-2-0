@@ -11,7 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Services5 = () => {
 
-    const [dropdownStates, setDropdownStates] = useState([false, false, false, false, false, false]);
+    const [dropdownStates, setDropdownStates] = useState([false, false, false, false, false, false, false]);
 
     const toggleDropdown = (index) => {
         const updatedStates = dropdownStates.map((state, i) => i === index ? !state : state);
@@ -61,11 +61,11 @@ const Services5 = () => {
     return (
         <>
             <Helmet>
-                <title>Strategy Agency | Transforming Ideas into Actionable Success</title>
-                <meta name="description" content="Partner with [Your Agency Name] for innovative strategy solutions tailored to your business goals. From brand strategy to digital transformation, we craft data-driven plans for sustainable growth and market leadership."></meta>
-                <meta property="og:url" content="www.hudbil.com/services/strategy-agency"></meta>
-                <meta name="keywords" content="Strategy agency, business strategy solutions, brand strategy, digital transformation strategy, UX strategy, product strategy, user acquisition strategy, growth consulting, scalable strategies, strategic planning."></meta>
-                <meta name="og:description" content="Tailored strategy solutions designed to empower businesses with innovation, scalability, and growth. Our expertise in brand, product, digital, and UX strategies delivers measurable results and market impact.."></meta>
+                <title>Creative Design Services in India | Innovative Branding & Digital Solutions</title>
+                <meta name="description" content="Elevate your brand with our creative design services. From unique branding and eye-catching graphics to website design and digital solutions, our expert team brings your vision to life. Contact us for tailored, high-impact design!"></meta>
+                <meta property="og:url" content="www.hudbil.com/services/creative-designing-agency"></meta>
+                <meta name="keywords" content="Creative Design Services,Branding and Identity Design,Graphic Design Solutions,Custom Logo Design,Digital and Print Design,Website and UX/UI Design,Social Media Graphics,Visual Branding Services,Packaging Design Solutions,Innovative,Design Agency,Custom Illustration Services,Marketing Design Services,Creative Content Design,Digital Branding Services,Professional Design Services"></meta>
+                <meta name="og:description" content="Bring your brand to life with our comprehensive creative design services. We provide impactful graphic design, website design, and branding solutions tailored"></meta>
                 <meta name="og:site_name" content="UI/UX Designing Company in Bangalore India | Website Development Agency in Bangalore | Top 10 Website Developement Agencies in Bangalore Review | Branding and designing Agency | Software development Agency"></meta>
                 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3795MKLFX0"></script>
                 <script>
@@ -81,7 +81,7 @@ const Services5 = () => {
             <Navbar />
             <div className="w-full h-[70vh] lg:h-[80vh] bg-no-repeat bg-cover bg-center">
                 <video
-                    src="/LandingVideos/video8.mp4"
+                    src="/LandingVideos/video3.mp4"
                     autoPlay
                     loop
                     muted
@@ -89,21 +89,21 @@ const Services5 = () => {
                     className="object-cover h-[70vh] lg:h-[80vh] w-full fixed z-0"
                     onContextMenu={(e) => e.preventDefault()}
                 >
-                    <source src="/LandingVideos/video8.mp4" type="video/mp4" />
+                    <source src="/LandingVideos/video3.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
             </div>
             <main className='relative z-20'>
                 <section className='bg-black py-20'>
                     <div className='md:w-3/5 xl:w-4/5 font-normal text-[2rem] xl:text-[50px] leading-tight text-white px-6 lg:px-16'>
-                        Our UX, Brand, and Development Strategy Services are designed to help businesses build cohesive, meaningful, and scalable digital solutions that resonate with users and achieve business objectives.
+                        At Hudbil, we specialize in creating cutting-edge AI and ML solutions tailored to meet your business needs, harnessing the power of data to drive innovation, automation, and smarter decision-making. In today’s digital world, Artificial Intelligence (AI) and Machine Learning (ML) are transforming businesses by enabling smarter, more efficient operations, and delivering personalized experiences to users.
                     </div>
-                    <div className="w-full flex items-start justify-end my-16 px-6 lg:px-16">
+                    <div className="w-full flex items-start justify-end my-20 px-6 lg:px-16">
                         <div className='md:w-1/2 flex flex-col items-start gap-8 text-white text-base xl:text-[20px] leading-tight'>
-                            <div>We are Hudbil – We craft strategies that bridge the gap between exceptional user experiences, impactful branding, and cutting-edge development.</div>
-                            <div>Whether you’re looking to refine your user experience, elevate your brand, or develop a robust digital platform, our strategic approach ensures that every element works in harmony to deliver measurable results. We believe that great digital products are the result of thoughtful strategy, collaborative design, and seamless execution. Our UX, Brand, and Development Strategy integrates three essential components:</div>
+                            <div>Whether you’re looking to integrate AI into your existing systems or build advanced ML models from the ground up, we provide end-to-end AI/ML development services that help you stay ahead of the competition.</div>
+                            <div>Our AI and ML solutions help you turn data into actionable intelligence, unlocking new revenue streams and efficiency gains.</div>
                             <div>
-                                <a href="/faq">
+                                <a href="/services/ai-ml/faq">
                                     <button className="button hover:text-white self-end flex flex-row justify-between px-12 py-3 mx-auto leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-all duration-300">
                                         <h1 className='text-lg mt-[2px]'>Faq's</h1>
                                         <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
@@ -114,32 +114,49 @@ const Services5 = () => {
                     </div>
                     <div className="relative my-24">
                         <div className="relative">
-                            <img className='mx-auto transition duration-500 grayscale hover:grayscale-0' src="/strategy-img1.png" alt="Creative Designing Services" />
+                            <img className='mx-auto transition duration-500 grayscale hover:grayscale-0' src="/sp11.png" alt="Creative Designing Services" />
                             <div className="absolute w-full inset-0 pointer-events-none flex justify-center items-center overflow-hidden">
                                 <div className="marquee-text-container font-normal text-[1.7rem] uppercase">
-                                    <div className="marquee-text text-white">Seamless User Experiences</div>
-                                    <div className="marquee-text text-white">Stronger Brand Recognition</div>
-                                    <div className="marquee-text text-white">Efficient Development Processes</div>
-                                    <div className="marquee-text text-white">Alignment with Business Goals</div>
-                                    <div className="marquee-text text-white">Seamless User Experiences</div>
-                                    <div className="marquee-text text-white">Stronger Brand Recognition</div>
-                                    <div className="marquee-text text-white">Efficient Development Processes</div>
-                                    <div className="marquee-text text-white">Alignment with Business Goals</div>
-                                    <div className="marquee-text text-white">Seamless User Experiences</div>
-                                    <div className="marquee-text text-white">Stronger Brand Recognition</div>
-                                    <div className="marquee-text text-white">Efficient Development Processes</div>
-                                    <div className="marquee-text text-white">Alignment with Business Goals</div>
-                                    <div className="marquee-text text-white">Seamless User Experiences</div>
-                                    <div className="marquee-text text-white">Stronger Brand Recognition</div>
-                                    <div className="marquee-text text-white">Efficient Development Processes</div>
-                                    <div className="marquee-text text-white">Alignment with Business Goals</div>
+                                    <div className="marquee-text text-white">TENSORFLOW</div>
+                                    <div className="marquee-text text-white">KERAS</div>
+                                    <div className="marquee-text text-white">PYTORCH</div>
+                                    <div className="marquee-text text-white">SCIKIT-LEARN</div>
+                                    <div className="marquee-text text-white">XGBOOST</div>
+                                    <div className="marquee-text text-white">LIGHTGBM</div>
+                                    <div className="marquee-text text-white">THEANO</div>
+                                    <div className="marquee-text text-white">MXNET</div>
+                                    <div className="marquee-text text-white">CAFFE</div>
+                                    <div className="marquee-text text-white">TORCH</div>
+                                    <div className="marquee-text text-white">FAST.AI</div>
+                                    <div className="marquee-text text-white">PADDLEPADDLE</div>
+                                    <div className="marquee-text text-white">ONNX</div>
+                                    <div className="marquee-text text-white">SPACY</div>
+                                    <div className="marquee-text text-white">NLTK </div>
+                                    <div className="marquee-text text-white">GENSIM</div>
+                                    <div className="marquee-text text-white">HUGGING FACE TRANSFORMERS</div>
+                                    <div className="marquee-text text-white">BERT</div>
+                                    <div className="marquee-text text-white">PANDAS</div>
+                                    <div className="marquee-text text-white">NUMPY</div>
+                                    <div className="marquee-text text-white">MATPLOTLIB</div>
+                                    <div className="marquee-text text-white">SEABORN</div>
+                                    <div className="marquee-text text-white">SCIPY</div>
+                                    <div className="marquee-text text-white">AMAZON SAGEMAKER</div>
+                                    <div className="marquee-text text-white">AWS LAMBDA</div>
+                                    <div className="marquee-text text-white">AWS DEEP LEARNING AMIS</div>
+                                    <div className="marquee-text text-white">AI PLATFORM</div>
+                                    <div className="marquee-text text-white">BIGQUERY ML</div>
+                                    <div className="marquee-text text-white">MICROSOFT AZURE</div>
+                                    <div className="marquee-text text-white">AZURE MACHINE LEARNING</div>
+                                    <div className="marquee-text text-white">COGNITIVE SERVICES</div>
+                                    <div className="marquee-text text-white">LABELBOX</div>
+                                    <div className="marquee-text text-white">SUPERANNOTATE</div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div className='px-6 lg:px-16 flex flex-col lg:flex-row items-start justify-between w-full gap-12 xl:gap-0'>
-                        <div className='font-normal text-3xl text-white'>Our Strategy Services</div>
+                        <div className='font-normal text-3xl text-white'>Our AI & Machine Learning Services</div>
 
                         <div className='w-full lg:w-2/3 xl:w-1/2 text-white'>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
@@ -147,7 +164,7 @@ const Services5 = () => {
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
                                         <div><img src="/point11.png" alt="point" /></div>
-                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Brand Strategy</div>
+                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Custom AI Solutions</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(0)} className="cursor-pointer">
                                         <svg
@@ -165,15 +182,8 @@ const Services5 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[0] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="text-xl pt-10">Building Brands</div>
-                                    <div>Our Brand Strategy Services focus on helping businesses define their identity, articulate their values, and communicate their message effectively across every touchpoint. Whether you’re launching a new brand or refreshing an existing one, we’ll help you create a brand that stands out, resonates, and grows with your audience.</div>
-                                    <div>
-                                        <button className="button self-end flex flex-row justify-between px-5 py-3 leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px]  hover:bg-[#7811A5] transition-all duration-300">
-                                            <h1 className='text-base mt-1 '>Know More</h1>
-                                            <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
-                                        </button>
-                                    </div>
+                                <div className={`flex overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[0] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                    <div className="pt-10">We design and develop custom AI models that solve real-world business challenges. Whether it’s predictive analytics, natural language processing (NLP), or computer vision, we create AI solutions tailored to your specific requirements. We work across various industries including healthcare, finance, retail, logistics, and more.</div>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
@@ -181,7 +191,7 @@ const Services5 = () => {
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
                                         <div><img src="/point12.png" alt="point" /></div>
-                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Product Strategy</div>
+                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Machine Learning Development</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(1)} className="cursor-pointer">
                                         <svg
@@ -199,15 +209,8 @@ const Services5 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[1] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="text-xl pt-10">Concept to Execution</div>
-                                    <div>We turn ideas into successful products with a clear and actionable Product Strategy that bridges your business goals and customer needs. Whether you’re launching a new product, refining an existing one, or exploring untapped market opportunities, our strategic approach ensures that your product delivers value, resonates with users, and drives sustainable growth.</div>
-                                    <div>
-                                        <button className="button self-end flex flex-row justify-between px-5 py-3 leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px]  hover:bg-[#7811A5] transition-all duration-300">
-                                            <h1 className='text-base mt-1 '>Know More</h1>
-                                            <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
-                                        </button>
-                                    </div>
+                                <div className={`flex overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[1] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                    <div className="pt-10">Our ML experts design and implement machine learning algorithms to automate processes, improve predictions, and provide insights from large datasets. From supervised learning to unsupervised learning, we ensure that your business can leverage the power of data and improve its operations.</div>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
@@ -215,7 +218,7 @@ const Services5 = () => {
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
                                         <div><img src="/point13.png" alt="point" /></div>
-                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">UX Strategy</div>
+                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Natural Language Processing (NLP)</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(2)} className="cursor-pointer">
                                         <svg
@@ -233,15 +236,8 @@ const Services5 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[2] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="text-xl pt-10">Roadmap for Designing</div>
-                                    <div>Our UX Strategy Services are designed to help businesses deliver intuitive, engaging, and impactful experiences that keep users coming back.Whether you’re launching a new product, improving an existing one, or redefining your digital presence, our strategic approach ensures your users are at the center of every decision.</div>
-                                    <div>
-                                        <button className="button self-end flex flex-row justify-between px-5 py-3 leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px]  hover:bg-[#7811A5] transition-all duration-300">
-                                            <h1 className='text-base mt-1 '>Know More</h1>
-                                            <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
-                                        </button>
-                                    </div>
+                                <div className={`flex overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[2] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                    <div className="pt-10">Our NLP solutions help businesses unlock valuable insights from text-based data. From chatbots to sentiment analysis, we build intelligent systems that understand and process human language, improving customer service, engagement, and operational efficiency.</div>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
@@ -249,7 +245,7 @@ const Services5 = () => {
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
                                         <div><img src="/point14.png" alt="point" /></div>
-                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Scale-up Strategy</div>
+                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">AI Chatbots & Virtual Assistants</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(3)} className="cursor-pointer">
                                         <svg
@@ -267,83 +263,8 @@ const Services5 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[3] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="text-xl pt-10">Growing Bigger</div>
-                                    <div>We specialize in empowering businesses to achieve sustainable growth with a clear and actionable Scale-Up Strategy. Whether you’re preparing to expand operations, enter new markets, or enhance your digital capabilities, our tailored strategies help you navigate the complexities of scaling up while maintaining efficiency, profitability, and customer satisfaction.</div>
-                                    <div>
-                                        <button className="button self-end flex flex-row justify-between px-5 py-3 leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px]  hover:bg-[#7811A5] transition-all duration-300">
-                                            <h1 className='text-base mt-1 '>Know More</h1>
-                                            <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
-                            <div className="py-10 toggle-point flex flex-col">
-                                <div className="flex items-center justify-between gap-6">
-                                    <div className="flex items-center justify-between gap-6">
-                                        <div><img src="/point15.png" alt="point" /></div>
-                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Digital Transformation</div>
-                                    </div>
-                                    <div onClick={() => toggleDropdown(4)} className="cursor-pointer">
-                                        <svg
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            className={`transition-transform duration-300 ${dropdownStates[4] ? 'rotate-[-180deg]' : 'rotate-[0deg]'
-                                                }`}
-                                        >
-                                            <rect width="24" height="24" rx="12" fill="#7811A5" />
-                                            <rect x="7" y="11" width="10" height="2" fill="white" />
-                                            {!dropdownStates[4] && <rect x="11" y="7" width="2" height="10" fill="white" />}
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[4] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="text-xl pt-10">Leveraging Technology</div>
-                                    <div>We empower businesses to embrace innovation, optimize operations, and deliver exceptional customer experiences through Digital Transformation Services. In today’s fast-paced digital world, staying ahead means more than just adopting new technologies—it means rethinking how your business operates, engages, and evolves.</div>
-                                    <div>
-                                        <button className="button self-end flex flex-row justify-between px-5 py-3 leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px]  hover:bg-[#7811A5] transition-all duration-300">
-                                            <h1 className='text-base mt-1 '>Know More</h1>
-                                            <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
-                            <div className="py-10 toggle-point flex flex-col">
-                                <div className="flex items-center justify-between gap-6">
-                                    <div className="flex items-center justify-between gap-6">
-                                        <div><img src="/point16.png" alt="point" /></div>
-                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">User Acquisition Strategy</div>
-                                    </div>
-                                    <div onClick={() => toggleDropdown(5)} className="cursor-pointer">
-                                        <svg
-                                            width="24"
-                                            height="24"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            className={`transition-transform duration-300 ${dropdownStates[5] ? 'rotate-[-180deg]' : 'rotate-[0deg]'
-                                                }`}
-                                        >
-                                            <rect width="24" height="24" rx="12" fill="#7811A5" />
-                                            <rect x="7" y="11" width="10" height="2" fill="white" />
-                                            {!dropdownStates[5] && <rect x="11" y="7" width="2" height="10" fill="white" />}
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[5] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="text-xl pt-10">Maximum Reach</div>
-                                    <div>We help businesses attract, engage, and retain their ideal audience with tailored User Acquisition Strategies designed to maximize growth and ROI. Whether you’re launching a new product, scaling your user base, or entering a new market, our strategic approach ensures you connect with the right users at the right time—through the right channels.</div>
-                                    <div>
-                                        <button className="button self-end flex flex-row justify-between px-5 py-3 leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px]  hover:bg-[#7811A5] transition-all duration-300">
-                                            <h1 className='text-base mt-1 '>Know More</h1>
-                                            <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
-                                        </button>
-                                    </div>
+                                <div className={`flex overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[3] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                    <div className="pt-10">We design and develop AI-powered chatbots and virtual assistants that enhance customer engagement, automate tasks, and provide personalized experiences. From simple FAQs to complex problem-solving, our AI chatbots can be integrated with your website, mobile app, or social media channels.</div>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
@@ -351,7 +272,7 @@ const Services5 = () => {
                                 Get in touch to find out how our team enjoys tinkering, most importantly empower your organisation.
                             </div>
                             <div className='w-fit'>
-                                <Link to="/services/creative-designing-agency">
+                                <Link to="/services/blockchain">
                                     <button className="button self-end flex flex-row justify-between px-12 py-3 mb-4 leading-none hover:bg-white hover:text-black text-white gap-8 rounded-[1000px] max-md:px-5 bg-[#7811A5] transition-all duration-300">
                                         <h1 className='text-base mt-1 '>Next service</h1>
                                         <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
@@ -363,24 +284,24 @@ const Services5 = () => {
                 </section>
                 <div id="moving-img" className='bg-black'>
                     <img
-                        src="/strategy-img2.png"
+                        src="/sp12.png"
                         className="scale-anm w-full"
                     />
                 </div>
                 <section className='bg-black py-20'>
+                    <div className='font-normal text-2xl text-white mb-12 px-6 lg:px-16'>Why Choose Hudbil ?</div>
                     <div className='md:w-1/2 xl:w-3/4 font-normal text-[2rem] xl:text-[50px] leading-tight text-white px-6 lg:px-16'>
-                        Our Secret Ingredient ? <br className='hidden xl:block' />
-                        Is the fusion of human-centric insights with data-driven decision-making, empowering us to craft experiences and brands that resonate deeply with audiences.
+                        With years of experience in AI and ML, Hudbil has a team of seasoned data scientists, AI engineers, and ML experts who possess in-depth knowledge of the latest trends and technologies. We use advanced algorithms and data models to deliver reliable, scalable, and impactful AI solutions.
                     </div>
-                    <div className="w-full flex items-start justify-end my-16 px-6 lg:px-16">
+                    <div className="w-full flex items-start justify-end my-20 px-6 lg:px-16">
                         <div className='md:w-1/2 flex flex-col items-start gap-8 text-white text-base xl:text-[20px] leading-tight'>
-                            <div>We believe every brand has a story worth telling—and we’re here to help you tell yours in a way that inspires, connects, and drives success. With a focus on creativity, authenticity, and innovation, we’ll help you build a brand that stands the test of time.</div>
-                            <div>Let’s work together to create strategies that captivate, engage, and deliver extraordinary results. Reach out today to discover how our secret ingredient can fuel your success.</div>
+                            <div>We understand that every business is unique. That’s why we develop customized AI and ML solutions that are aligned with your goals and challenges. We work closely with you to understand your business processes, enabling us to design the best solution that delivers measurable results.</div>
+                            <div>We help businesses harness the full potential of their data, providing accurate predictions, real-time recommendations, and process automation.</div>
                         </div>
                     </div>
 
                     <div className='px-6 lg:px-16 flex flex-col items-start justify-between w-full gap-12 mt-4'>
-                        <div className='font-normal text-2xl text-white'>Our Process</div>
+                        <div className='font-normal text-2xl text-white'>Why us from the Ocean ?</div>
 
                         <div className='w-full text-white'>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
@@ -388,7 +309,7 @@ const Services5 = () => {
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-8">
                                         <div className='border border-white rounded-full px-3 py-1'>1</div>
-                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Discovery & Research</div>
+                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Cutting-Edge Tools & Technologies</div>
                                     </div>
                                     <div onClick={() => toggleDropdown2(0)} className="cursor-pointer">
                                         <svg
@@ -407,10 +328,16 @@ const Services5 = () => {
                                     </div>
                                 </div>
                                 <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[0] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="text-xl pt-10 w-full lg:w-2/3 ml-auto md:mr-[6%]">Great strategies start with a deep understanding of your business, audience, and market. We gather insights to fuel informed decisions, ensuring that every move is purposeful and aligned with your goals.
-                                        <li className='pt-6 pb-1'>Stakeholder Interviews: Understand business goals, vision, and challenges.</li>
-                                        <li>Audience Research: Dive into user behaviors, preferences, and pain points.</li>
-
+                                    <div className="text-lg pt-10 w-full lg:w-2/3 ml-auto md:mr-[6%]">We use state-of-the-art tools and technologies in the AI/ML space, including:</div>
+                                    <div className="text-lg w-full lg:w-2/3 ml-auto md:mr-[6%] flex flex-col gap-2">
+                                        <li>TensorFlow, Keras, and PyTorch for building and training machine learning models</li>
+                                        <li>OpenCV for computer vision</li>
+                                        <li>NLTK and spaCy for Natural Language Processing (NLP)</li>
+                                        <li>Scikit-learn and XGBoost for predictive analytics</li>
+                                    </div>
+                                    <div className="text-lg w-full lg:w-2/3 ml-auto md:mr-[6%]">
+                                        AWS AI/ML Services, Google AI, and Microsoft Azure AI for cloud-based AI services
+                                        Our team continuously stays updated with the latest innovations in AI and ML, ensuring your solution is both cutting-edge and future-ready.
                                     </div>
                                 </div>
                             </div>
@@ -419,7 +346,7 @@ const Services5 = () => {
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-8">
                                         <div className='border border-white rounded-full px-3 py-1'>2</div>
-                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Strategy Development</div>
+                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Scalable & Robust Solutions</div>
                                     </div>
                                     <div onClick={() => toggleDropdown2(1)} className="cursor-pointer">
                                         <svg
@@ -437,11 +364,8 @@ const Services5 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[1] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="text-xl pt-10 w-full lg:w-2/3 ml-auto md:mr-[6%]">With insights in hand, we develop a custom brand and UX strategy that aligns with your business objectives and audience needs. This strategy lays the foundation for everything that follows.
-                                        <li className='pt-6 pb-1'>Brand Strategy: Define your brand’s purpose, vision, values, and positioning.</li>
-                                        <li>UX Strategy: Craft seamless user journeys, prioritize touchpoints, and map out information architecture.</li>
-                                    </div>
+                                <div className={`flex overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[1] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                    <div className="text-lg pt-10 w-full lg:w-2/3 ml-auto md:mr-[6%]">Whether you’re a startup or an enterprise, our AI and ML solutions are designed to scale with your business. We develop flexible and robust systems that can handle large datasets and evolving business needs. As your business grows, your AI/ML systems will grow with you.</div>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
@@ -449,7 +373,7 @@ const Services5 = () => {
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-8">
                                         <div className='border border-white rounded-full px-3 py-1'>3</div>
-                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Concept Design</div>
+                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">End-to-End Support</div>
                                     </div>
                                     <div onClick={() => toggleDropdown2(2)} className="cursor-pointer">
                                         <svg
@@ -467,11 +391,8 @@ const Services5 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[2] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="text-xl pt-10 w-full lg:w-2/3 ml-auto md:mr-[6%]">Now that the strategy is clear, we move into ideation and creative development. This is where we bring your brand and UX to life with powerful visual elements and design concepts.
-                                        <li className='pt-6 pb-1'>Brand Identity Design: Create logos, color palettes, typography, and visual elements that reflect your core values.</li>
-                                        <li>Wireframing & Prototyping: Develop intuitive layouts and prototypes for your digital touchpoints.</li>
-                                    </div>
+                                <div className={`flex overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[2] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                    <div className="text-lg pt-10 w-full lg:w-2/3 ml-auto md:mr-[6%]">We provide comprehensive support throughout the entire AI/ML development lifecycle, from consultation and strategy to deployment and maintenance. After the solution is live, we offer continuous monitoring, performance optimization, and updates to keep your AI systems working efficiently.</div>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
@@ -479,7 +400,7 @@ const Services5 = () => {
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-8">
                                         <div className='border border-white rounded-full px-3 py-1'>4</div>
-                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">User Testing</div>
+                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Fast and Reliable Delivery</div>
                                     </div>
                                     <div onClick={() => toggleDropdown2(3)} className="cursor-pointer">
                                         <svg
@@ -497,11 +418,8 @@ const Services5 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[3] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="text-xl pt-10 w-full lg:w-2/3 ml-auto md:mr-[6%]">We believe that the best strategies evolve based on real user feedback. This phase ensures that your brand and UX work effectively in the real world and deliver the desired results.
-                                        <li className='pt-6 pb-1'>User Testing: Conduct usability tests to validate design decisions and functionality.</li>
-                                        <li>A/B Testing: Test different design variations and messaging to understand what resonates best with your audience.</li>
-                                    </div>
+                                <div className={`flex overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[3] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                    <div className="text-lg pt-10 w-full lg:w-2/3 ml-auto md:mr-[6%]">We understand the importance of speed in today’s competitive market. At Hudbil, we have optimized our development processes to deliver high-quality AI/ML solutions within agreed timelines, ensuring you get to market faster while maintaining the highest standards of excellence.</div>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
@@ -509,7 +427,7 @@ const Services5 = () => {
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-8">
                                         <div className='border border-white rounded-full px-3 py-1'>5</div>
-                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Implementation & Launch</div>
+                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Testing & Optimization</div>
                                     </div>
                                     <div onClick={() => toggleDropdown2(4)} className="cursor-pointer">
                                         <svg
@@ -527,12 +445,8 @@ const Services5 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[4] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="text-xl pt-10 w-full lg:w-2/3 ml-auto md:mr-[6%]">
-                                        With a polished strategy and validated designs, we move into implementation, ensuring your brand and UX come to life across all touchpoints and platforms.
-                                        <li className='pt-6 pb-1'>Brand Guidelines: Create a comprehensive guide to ensure consistency across all communications.</li>
-                                        <li>Digital Experiences: Implement designs on websites, apps, and other digital platforms.</li>
-                                    </div>
+                                <div className={`flex overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[4] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                    <div className="text-lg pt-10 w-full lg:w-2/3 ml-auto md:mr-[6%]">We rigorously test the models for accuracy, performance, and scalability. We fine-tune the models to improve their efficiency and ensure they deliver actionable insights.</div>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
@@ -540,7 +454,7 @@ const Services5 = () => {
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-8">
                                         <div className='border border-white rounded-full px-3 py-1'>6</div>
-                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Optimization & Support</div>
+                                        <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Deployment & Integration</div>
                                     </div>
                                     <div onClick={() => toggleDropdown2(5)} className="cursor-pointer">
                                         <svg
@@ -558,11 +472,8 @@ const Services5 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[5] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="text-xl pt-10 w-full lg:w-2/3 ml-auto md:mr-[6%]">A successful brand and UX strategy requires continuous refinement. We provide ongoing support to optimize and ensure your brand and user experiences stay relevant and evolve with market changes.
-                                        <li className='pt-6 pb-1'>Continuous Monitoring: Track how users are interacting with your brand and digital experiences.</li>
-                                        <li>User Feedback Integration: Continuously gather user feedback and adapt strategies accordingly.</li>
-                                    </div>
+                                <div className={`flex overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates2[5] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                    <div className="text-lg pt-10 w-full lg:w-2/3 ml-auto md:mr-[6%]">Once the models are optimized, we deploy them into your production environment and seamlessly integrate them with your existing systems.</div>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
@@ -571,19 +482,19 @@ const Services5 = () => {
 
                     <div className="w-full flex items-start justify-end mt-24 px-6 lg:px-16">
                         <div className='md:w-1/2 xl:text-[20px] flex flex-col gap-12 md:gap-8 text-white'>
-                            <div>Make your website work your way. We are a Indian web development agency with the technical skill and industry insight to take your website to the next level online. We’ve perfected a comprehensive, user-centric approach to crafting Brand and UX Strategies that not only build strong identities but also deliver memorable, seamless experiences. Our process ensures every project is rooted in research, creativity, and measurable outcomes, driving long-term success for your business.</div>
+                            <div>If you're ready to harness the power of AI and Machine Learning to drive innovation and growth for your business, Hudbil is here to help. Our team of experts will work closely with you to design and develop AI/ML solutions that unlock the true potential of your data.</div>
 
-                            <button className="button self-end flex hover:text-white flex-row justify-between mt-6 mb-4 px-12 py-3 ml-auto leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-all duration-300">
-                                <h1 className='text-base mt-1 '>Work With hudbil</h1>
+                            <a href='/contact-us' className="button self-end flex hover:text-white flex-row justify-between mt-6 mb-4 px-12 py-3 ml-auto leading-none bg-white text-black gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-all duration-300">
+                                <h1 className='text-base mt-1 '>Call us today</h1>
                                 <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
-                            </button>
+                            </a>
 
                         </div>
                     </div>
                 </section>
                 <section className=' bg-[#2C2C2C] py-20'>
                     <div className='px-6 lg:px-16 flex flex-col lg:flex-row items-start justify-between w-full gap-16 lg:gap-0'>
-                        <div className='font-normal text-3xl text-white'>The minds behind our success </div>
+                        <div className='font-normal text-3xl text-white uppercase'>The minds behind our success </div>
 
                         <div className='w-full md:w-1/2 text-white flex flex-col items-start gap-20'>
 
@@ -599,9 +510,9 @@ const Services5 = () => {
                                     and creative solutions to meet our business challenges and requirements that we threw at
                                     them, they are very creative in terms of the design and clean development skills.”</div>
                                 <div>
-                                    <button className="button self-end  flex flex-row justify-between px-20 py-3 leading-none bg-[#505050] text-white hover:text-[#505050] gap-8 rounded-[1000px] max-md:px-5  hover:bg-white transition-all duration-300">
+                                    <a href='/contact-us' className="button self-end  flex flex-row justify-between px-20 py-3 leading-none bg-[#505050] text-white hover:text-[#505050] gap-8 rounded-[1000px] max-md:px-5  hover:bg-white transition-all duration-300">
                                         <h1 className='text-base '>Contact Us</h1>
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
 
@@ -615,9 +526,9 @@ const Services5 = () => {
                                 </div>
                                 <div>The team at Hudbil are enthusiastic, friendly and great to work with. They really listened to our needs and came up with a design which encapsulates exactly the spirit and personality of the organisation, whilst still remaining practical and user-friendly.</div>
                                 <div>
-                                    <button className="button self-end  flex flex-row justify-between px-20 py-3 leading-none bg-[#505050] text-white hover:text-[#505050] gap-8 rounded-[1000px] max-md:px-5  hover:bg-white transition-all duration-300">
+                                    <a href='/contact-us' className="button self-end  flex flex-row justify-between px-20 py-3 leading-none bg-[#505050] text-white hover:text-[#505050] gap-8 rounded-[1000px] max-md:px-5  hover:bg-white transition-all duration-300">
                                         <h1 className='text-base '>Contact Us</h1>
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
 

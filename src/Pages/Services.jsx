@@ -112,187 +112,205 @@ const Services = () => {
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-12 toggle-point flex flex-col">
                                 <div className="flex items-start justify-between">
-                                    <div onClick={() => toggleDropdown(0)} className="flex flex-col items-start justify-between cursor-pointer gap-6">
+                                    <div className="flex flex-col items-start justify-between gap-6">
                                         <div className="font-normal text-4xl leading-9">UI/UX/CX Design</div>
                                         <div className='flex items-center gap-4'>
                                             <div className='bg-white rounded-full p-1'></div>
                                             <div className='text-base'>What do we serve?</div>
                                         </div>
                                     </div>
-                                    <div className='mt-[10px]'>
-                                        <a href="/services/ui-ux-cx-design">
-                                            <svg
-                                                width="24"
-                                                height="24"
-                                                viewBox="0 0 24 24"
-                                                fill="none"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                className='button'
-                                            >
-                                                <rect width="24" height="24" rx="12" fill="#7811A5" />
-                                                <rect x="7" y="11" width="10" height="2" fill="white" />
-                                                <rect x="11" y="7" width="2" height="10" fill="white" />
-                                            </svg>
-                                        </a>
+                                    <div onClick={() => toggleDropdown(0)} className="cursor-pointer mt-[10px]">
+                                        <svg
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className={`transition-transform duration-300 ${dropdownStates[0] ? 'rotate-[-180deg]' : 'rotate-[0deg]'
+                                                }`}
+                                        >
+                                            <rect width="24" height="24" rx="12" fill="#7811A5" />
+                                            <rect x="7" y="11" width="10" height="2" fill="white" />
+                                            {!dropdownStates[0] && <rect x="11" y="7" width="2" height="10" fill="white" />}
+                                        </svg>
                                     </div>
                                 </div>
-                                <div className={`flex overflow-hidden transition-all duration-500 md:mr-20 ease-in-out ${dropdownStates[0] ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex flex-col gap-8 overflow-hidden transition-all duration-500 md:mr-20 ease-in-out ${dropdownStates[0] ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="text-base leading-7 pt-6">Deliver exceptional UI/UX design services and customer experiences through intuitive interfaces that enhance digital engagement.</div>
+                                    <a href='/services/ui-ux-cx-design' className="button w-fit flex flex-row justify-between px-5 py-3 leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px]  hover:bg-[#7811A5] transition-all duration-300">
+                                        <h1 className='text-base mt-1 '>Know More</h1>
+                                        <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                                    </a>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-12 toggle-point flex flex-col">
                                 <div className="flex items-start justify-between">
-                                    <div onClick={() => toggleDropdown(1)} className="flex flex-col items-start justify-between cursor-pointer gap-6">
+                                    <div className="flex flex-col items-start justify-between gap-6">
                                         <div className="font-normal text-4xl leading-9">Website Development</div>
                                         <div className='flex items-center gap-4'>
                                             <div className='bg-white rounded-full p-1'></div>
                                             <div className='text-base'>What do we serve?</div>
                                         </div>
                                     </div>
-                                    <div className='mt-[10px]'>
-                                        <a href="/services/website-development">
-                                            <svg
-                                                width="24"
-                                                height="24"
-                                                viewBox="0 0 24 24"
-                                                fill="none"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                className='button'
-                                            >
-                                                <rect width="24" height="24" rx="12" fill="#7811A5" />
-                                                <rect x="7" y="11" width="10" height="2" fill="white" />
-                                                <rect x="11" y="7" width="2" height="10" fill="white" />
-                                            </svg>
-                                        </a>
+                                    <div onClick={() => toggleDropdown(1)} className="cursor-pointer mt-[10px]">
+                                        <svg
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className={`transition-transform duration-300 ${dropdownStates[1] ? 'rotate-[-180deg]' : 'rotate-[0deg]'
+                                                }`}
+                                        >
+                                            <rect width="24" height="24" rx="12" fill="#7811A5" />
+                                            <rect x="7" y="11" width="10" height="2" fill="white" />
+                                            {!dropdownStates[1] && <rect x="11" y="7" width="2" height="10" fill="white" />}
+                                        </svg>
                                     </div>
                                 </div>
-                                <div className={`flex overflow-hidden transition-all duration-500 md:mr-20 ease-in-out ${dropdownStates[1] ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex flex-col gap-8 overflow-hidden transition-all duration-500 md:mr-20 ease-in-out ${dropdownStates[1] ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="text-base leading-7 pt-6">Develop scalable web solutions and high-performance websites tailored to your business needs, ensuring robust functionality.</div>
+                                    <a href='/services/website-development' className="button w-fit flex flex-row justify-between px-5 py-3 leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px]  hover:bg-[#7811A5] transition-all duration-300">
+                                        <h1 className='text-base mt-1 '>Know More</h1>
+                                        <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                                    </a>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-12 toggle-point flex flex-col">
                                 <div className="flex items-start justify-between">
-                                    <div onClick={() => toggleDropdown(2)} className="flex flex-col items-start justify-between cursor-pointer gap-6">
+                                    <div className="flex flex-col items-start justify-between gap-6">
                                         <div className="font-normal text-4xl leading-9">Mobile App Development</div>
                                         <div className='flex items-center gap-4'>
                                             <div className='bg-white rounded-full p-1'></div>
                                             <div className='text-base'>What do we serve?</div>
                                         </div>
                                     </div>
-                                    <div className='mt-[10px]'>
-                                        <a href="/services/mobile-app-development">
-                                            <svg
-                                                width="24"
-                                                height="24"
-                                                viewBox="0 0 24 24"
-                                                fill="none"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                className='button'
-                                            >
-                                                <rect width="24" height="24" rx="12" fill="#7811A5" />
-                                                <rect x="7" y="11" width="10" height="2" fill="white" />
-                                                <rect x="11" y="7" width="2" height="10" fill="white" />
-                                            </svg>
-                                        </a>
+                                    <div onClick={() => toggleDropdown(2)} className="cursor-pointer mt-[10px]">
+                                        <svg
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className={`transition-transform duration-300 ${dropdownStates[2] ? 'rotate-[-180deg]' : 'rotate-[0deg]'
+                                                }`}
+                                        >
+                                            <rect width="24" height="24" rx="12" fill="#7811A5" />
+                                            <rect x="7" y="11" width="10" height="2" fill="white" />
+                                            {!dropdownStates[2] && <rect x="11" y="7" width="2" height="10" fill="white" />}
+                                        </svg>
                                     </div>
                                 </div>
-                                <div className={`flex overflow-hidden transition-all duration-500 md:mr-20 ease-in-out ${dropdownStates[2] ? 'max-h-[700px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex flex-col gap-8 overflow-hidden transition-all duration-500 md:mr-20 ease-in-out ${dropdownStates[2] ? 'max-h-[700px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="text-base leading-7 pt-6">Create custom mobile applications with innovative designs that provide seamless user experiences across all devices and platforms.</div>
+                                    <a href='/services/mobile-app-development' className="button w-fit flex flex-row justify-between px-5 py-3 leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px]  hover:bg-[#7811A5] transition-all duration-300">
+                                        <h1 className='text-base mt-1 '>Know More</h1>
+                                        <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                                    </a>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-12 toggle-point flex flex-col">
                                 <div className="flex items-start justify-between">
-                                    <div onClick={() => toggleDropdown(3)} className="flex flex-col items-start justify-between cursor-pointer gap-6">
+                                    <div className="flex flex-col items-start justify-between gap-6">
                                         <div className="font-normal text-4xl leading-9">Cloud Solutions</div>
                                         <div className='flex items-center gap-4'>
                                             <div className='bg-white rounded-full p-1'></div>
                                             <div className='text-base'>What do we serve?</div>
                                         </div>
                                     </div>
-                                    <div className='mt-[10px]'>
-                                        <a href="/services/cloud-solutions">
-                                            <svg
-                                                width="24"
-                                                height="24"
-                                                viewBox="0 0 24 24"
-                                                fill="none"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                className='button'
-                                            >
-                                                <rect width="24" height="24" rx="12" fill="#7811A5" />
-                                                <rect x="7" y="11" width="10" height="2" fill="white" />
-                                                <rect x="11" y="7" width="2" height="10" fill="white" />
-                                            </svg>
-                                        </a>
+                                    <div onClick={() => toggleDropdown(3)} className="cursor-pointer mt-[10px]">
+                                        <svg
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className={`transition-transform duration-300 ${dropdownStates[3] ? 'rotate-[-180deg]' : 'rotate-[0deg]'
+                                                }`}
+                                        >
+                                            <rect width="24" height="24" rx="12" fill="#7811A5" />
+                                            <rect x="7" y="11" width="10" height="2" fill="white" />
+                                            {!dropdownStates[3] && <rect x="11" y="7" width="2" height="10" fill="white" />}
+                                        </svg>
                                     </div>
                                 </div>
-                                <div className={`flex overflow-hidden transition-all duration-500 md:mr-20 ease-in-out ${dropdownStates[3] ? 'max-h-[700px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex flex-col gap-8 overflow-hidden transition-all duration-500 md:mr-20 ease-in-out ${dropdownStates[3] ? 'max-h-[700px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="text-base leading-7 pt-6">Adopt scalable cloud solutions to improve operational efficiency, enabling flexible and secure cloud-based business operations.</div>
+                                    <a href='/services/cloud-solutions' className="button w-fit flex flex-row justify-between px-5 py-3 leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px]  hover:bg-[#7811A5] transition-all duration-300">
+                                        <h1 className='text-base mt-1 '>Know More</h1>
+                                        <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                                    </a>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-12 toggle-point flex flex-col">
                                 <div className="flex items-start justify-between">
-                                    <div onClick={() => toggleDropdown(4)} className="flex flex-col items-start justify-between cursor-pointer gap-6">
+                                    <div className="flex flex-col items-start justify-between gap-6">
                                         <div className="font-normal text-4xl leading-9">AI & Machine Learning</div>
                                         <div className='flex items-center gap-4'>
                                             <div className='bg-white rounded-full p-1'></div>
                                             <div className='text-base'>What do we serve?</div>
                                         </div>
                                     </div>
-                                    <div className='mt-[10px]'>
-                                        <a href="/services/ai-ml">
-                                            <svg
-                                                width="24"
-                                                height="24"
-                                                viewBox="0 0 24 24"
-                                                fill="none"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                className='button'
-                                            >
-                                                <rect width="24" height="24" rx="12" fill="#7811A5" />
-                                                <rect x="7" y="11" width="10" height="2" fill="white" />
-                                                <rect x="11" y="7" width="2" height="10" fill="white" />
-                                            </svg>
-                                        </a>
+                                    <div onClick={() => toggleDropdown(4)} className="cursor-pointer mt-[10px]">
+                                        <svg
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className={`transition-transform duration-300 ${dropdownStates[4] ? 'rotate-[-180deg]' : 'rotate-[0deg]'
+                                                }`}
+                                        >
+                                            <rect width="24" height="24" rx="12" fill="#7811A5" />
+                                            <rect x="7" y="11" width="10" height="2" fill="white" />
+                                            {!dropdownStates[4] && <rect x="11" y="7" width="2" height="10" fill="white" />}
+                                        </svg>
                                     </div>
                                 </div>
-                                <div className={`flex overflow-hidden transition-all duration-500 md:mr-20 ease-in-out ${dropdownStates[4] ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex flex-col gap-8 overflow-hidden transition-all duration-500 md:mr-20 ease-in-out ${dropdownStates[4] ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="text-base leading-7 pt-6">Leverage AI and machine learning services to drive innovation and optimize business processes with advanced technologies.</div>
+                                    <a href='/services/ai-ml' className="button w-fit flex flex-row justify-between px-5 py-3 leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px]  hover:bg-[#7811A5] transition-all duration-300">
+                                        <h1 className='text-base mt-1 '>Know More</h1>
+                                        <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                                    </a>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-12 toggle-point flex flex-col">
                                 <div className="flex items-start justify-between">
-                                    <div onClick={() => toggleDropdown(5)} className="flex flex-col items-start justify-between cursor-pointer gap-6">
+                                    <div className="flex flex-col items-start justify-between gap-6">
                                         <div className="font-normal text-4xl leading-9">Blockchain</div>
                                         <div className='flex items-center gap-4'>
                                             <div className='bg-white rounded-full p-1'></div>
                                             <div className='text-base'>What do we serve?</div>
                                         </div>
                                     </div>
-                                    <div className='mt-[10px]'>
-                                        <a href="/services/blockchain">
-                                            <svg
-                                                width="24"
-                                                height="24"
-                                                viewBox="0 0 24 24"
-                                                fill="none"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                className='button'
-                                            >
-                                                <rect width="24" height="24" rx="12" fill="#7811A5" />
-                                                <rect x="7" y="11" width="10" height="2" fill="white" />
-                                                <rect x="11" y="7" width="2" height="10" fill="white" />
-                                            </svg>
-                                        </a>
+                                    <div onClick={() => toggleDropdown(5)} className="cursor-pointer mt-[10px]">
+                                        <svg
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className={`transition-transform duration-300 ${dropdownStates[5] ? 'rotate-[-180deg]' : 'rotate-[0deg]'
+                                                }`}
+                                        >
+                                            <rect width="24" height="24" rx="12" fill="#7811A5" />
+                                            <rect x="7" y="11" width="10" height="2" fill="white" />
+                                            {!dropdownStates[5] && <rect x="11" y="7" width="2" height="10" fill="white" />}
+                                        </svg>
                                     </div>
                                 </div>
-                                <div className={`flex overflow-hidden transition-all duration-500 md:mr-20 ease-in-out ${dropdownStates[5] ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex flex-col gap-8 overflow-hidden transition-all duration-500 md:mr-20 ease-in-out ${dropdownStates[5] ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="text-base leading-7 pt-6">Implement secure blockchain solutions to enhance data integrity and transparency, streamlining operations for your business.</div>
+                                    <a href='/services/blockchain' className="button w-fit flex flex-row justify-between px-5 py-3 leading-none border border-[#7811A5] text-white gap-8 rounded-[1000px]  hover:bg-[#7811A5] transition-all duration-300">
+                                        <h1 className='text-base mt-1 '>Know More</h1>
+                                        <img src="/ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                                    </a>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
