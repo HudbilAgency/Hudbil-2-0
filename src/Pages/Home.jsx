@@ -663,7 +663,7 @@ const Home = () => {
                               <img
                                 src={src}
                                 alt={`Placeholder ${index + 1}`}
-                                className="w-[60%] max-h-[50%] grayscale group-hover:grayscale-0 brightness-75 group-hover:brightness-100 transition-all duration-500 z-10"
+                                className="max-w-[60%] max-h-[50%] grayscale group-hover:grayscale-0 brightness-75 group-hover:brightness-100 transition-all duration-500 z-10"
                               />
                               <div className="absolute inset-0 bg-gradient-to-b from-[#7811A5] to-[#2E063F] opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
                             </div>
