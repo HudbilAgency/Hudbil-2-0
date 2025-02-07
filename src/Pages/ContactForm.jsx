@@ -562,7 +562,24 @@ const ContactForm = () => {
               <div className='mt-20 flex flex-col items-start gap-14'>
 
                 <div className='flex flex-col xl:flex-row items-start justify-between w-full gap-5'>
-                  <div className='w-full xl:w-[31%] 2xl:w-[28%]'>BANGALORE OFFICE</div>
+                  <div className='w-full xl:w-[31%] 2xl:w-[28%] flex flex-col gap-1'>
+                    <div>LONDON OFFICE</div>
+                    <div className='text-sm'>HEAD OFFICE</div>
+                  </div>
+                  <div className='w-full xl:w-1/3 leading-7'>Level 30, The Leaden hall Building Z2 Lacunal Street City of London, EC3V 4AB, UK.</div>
+                  <div className='flex flex-col items-start gap-[6px] w-full xl:w-[26%] 2xl:w-[22%]'>
+                    <div>+91 88-84-40-9369</div>
+                    <div><a href="mailto:info@hudbil.com" className="hover:text-[#7811A5] transition-all duration-300 mt-5">
+                      Email us here
+                    </a></div>
+                  </div>
+                </div>
+
+                <div className='flex flex-col xl:flex-row items-start justify-between w-full gap-5'>
+                  <div className='w-full xl:w-[31%] 2xl:w-[28%] flex flex-col gap-1'>
+                    <div>BANGALORE OFFICE</div>
+                    <div className='text-sm'>BRANCH OFFICE</div>
+                  </div>
                   <div className='w-full xl:w-1/3 leading-7'>No 235, 2nd & 3rd Floor, 13th Cross Road 2nd Stage, Indiranagar Hoysala Nagar, Bangalore - 560038,</div>
                   <div className='flex flex-col items-start gap-[6px] w-full xl:w-[26%] 2xl:w-[22%]'>
                     <div>+91 88-84-40-9369</div>
@@ -573,29 +590,10 @@ const ContactForm = () => {
                 </div>
 
                 <div className='flex flex-col xl:flex-row items-start justify-between w-full gap-5'>
-                  <div className='w-full xl:w-[31%] 2xl:w-[28%]'>MUMBAI OFFICE</div>
-                  <div className='w-full xl:w-1/3 leading-7'>74/II, “C” Cross Road, Opp Gate No 2, MIDC - 400093, Seepz, Andheri East, Mumbai, Maharashtra.</div>
-                  <div className='flex flex-col items-start gap-[6px] w-full xl:w-[26%] 2xl:w-[22%]'>
-                    <div>+91 88-84-40-9369</div>
-                    <div><a href="mailto:info@hudbil.com" className="hover:text-[#7811A5] transition-all duration-300 mt-5">
-                      Email us here
-                    </a></div>
+                  <div className='w-full xl:w-[31%] 2xl:w-[28%] flex flex-col gap-1'>
+                    <div>DUBAI OFFICE</div>
+                    <div className='text-sm'>BRANCH OFFICE</div>
                   </div>
-                </div>
-
-                <div className='flex flex-col xl:flex-row items-start justify-between w-full gap-5'>
-                  <div className='w-full xl:w-[31%] 2xl:w-[28%]'>DELHI OFFICE</div>
-                  <div className='w-full xl:w-1/3 leading-7'>90B, Delhi - Jaipur Expy, Udyog Vihar, Sector 18, Gurugram, Sarhol, Haryana - 122008.</div>
-                  <div className='flex flex-col items-start gap-[6px] w-full xl:w-[26%] 2xl:w-[22%]'>
-                    <div>+91 88-84-40-9369</div>
-                    <div><a href="mailto:info@hudbil.com" className="hover:text-[#7811A5] transition-all duration-300 mt-5">
-                      Email us here
-                    </a></div>
-                  </div>
-                </div>
-
-                <div className='flex flex-col xl:flex-row items-start justify-between w-full gap-5'>
-                  <div className='w-full xl:w-[31%] 2xl:w-[28%]'>DUBAI OFFICE</div>
                   <div className='w-full xl:w-1/3 leading-7'>Boulevard Plaza Level 23, Boulevard Plaza Tower 2, Dubai. UAE</div>
                   <div className='flex flex-col items-start gap-[6px] w-full xl:w-[26%] 2xl:w-[22%]'>
                     <div>+91 88-84-40-9369</div>
@@ -606,8 +604,25 @@ const ContactForm = () => {
                 </div>
 
                 <div className='flex flex-col xl:flex-row items-start justify-between w-full gap-5'>
-                  <div className='w-full xl:w-[31%] 2xl:w-[28%]'>LONDON OFFICE</div>
-                  <div className='w-full xl:w-1/3 leading-7'>Level 30, The Leaden hall Building Z2 Lacunal Street City of London, EC3V 4AB, UK.</div>
+                  <div className='w-full xl:w-[31%] 2xl:w-[28%] flex flex-col gap-1'>
+                    <div>MUMBAI OFFICE</div>
+                    <div className='text-sm'>BRANCH OFFICE</div>
+                  </div>
+                  <div className='w-full xl:w-1/3 leading-7'>74/II, “C” Cross Road, Opp Gate No 2, MIDC - 400093, Seepz, Andheri East, Mumbai, Maharashtra.</div>
+                  <div className='flex flex-col items-start gap-[6px] w-full xl:w-[26%] 2xl:w-[22%]'>
+                    <div>+91 88-84-40-9369</div>
+                    <div><a href="mailto:info@hudbil.com" className="hover:text-[#7811A5] transition-all duration-300 mt-5">
+                      Email us here
+                    </a></div>
+                  </div>
+                </div>
+
+                <div className='flex flex-col xl:flex-row items-start justify-between w-full gap-5'>
+                  <div className='w-full xl:w-[31%] 2xl:w-[28%] flex flex-col gap-1'>
+                    <div>DELHI OFFICE</div>
+                    <div className='text-sm'>BRANCH OFFICE</div>
+                  </div>
+                  <div className='w-full xl:w-1/3 leading-7'>90B, Delhi - Jaipur Expy, Udyog Vihar, Sector 18, Gurugram, Sarhol, Haryana - 122008.</div>
                   <div className='flex flex-col items-start gap-[6px] w-full xl:w-[26%] 2xl:w-[22%]'>
                     <div>+91 88-84-40-9369</div>
                     <div><a href="mailto:info@hudbil.com" className="hover:text-[#7811A5] transition-all duration-300 mt-5">

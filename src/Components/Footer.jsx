@@ -142,19 +142,22 @@ const Footer = () => {
 
   const officeLocations = [
     {
-      city: 'Bangalore',
+      city: 'London office',
+      address: 'Level 30, The Leaden hall Building Z2 Lacunal Street City of London, EC3V 4AB, UK.',
+      phone: '+91 88-84-40-9369',
+      type: '(HQ)'
+    },
+    {
+      city: 'Bangalore office',
       address: 'No 235, 2nd & 3rd Floor, 13th Cross Road 2nd Stage, Indiranagar Hoysala Nagar, Bangalore - 560038',
-      phone: '+91 88-84-40-9369'
+      phone: '+91 88-84-40-9369',
+      type: '(BO)'
     },
     {
-      city: 'Mumbai',
+      city: 'Mumbai office',
       address: '74/II, "C" Cross Road, Opp Gate No 2, MIDC - 400093, Seepz, Andheri East, Mumbai, Maharashtra.',
-      phone: '+91 88-84-40-9369'
-    },
-    {
-      city: 'Delhi',
-      address: '90B, Delhi - Jaipur Expy, Udyog Vihar, Sector 18, Gurugram, Sarhol, Haryana - 122008.',
-      phone: '+91 88-84-40-9369'
+      phone: '+91 88-84-40-9369',
+      type: '(BO)'
     }
   ];
 
@@ -197,8 +200,9 @@ const Footer = () => {
           {officeLocations.map((office, index) => (
             <div key={index} className="flex flex-col">
               <div className="flex flex-col grow  text-lg text-white">
-                <h3 className=" tracking-wider leading-none uppercase text-base">
-                  {office.city} office
+                <h3 className=" tracking-wider leading-none uppercase text-base flex xl:flex-col 2xl:flex-row gap-1">
+                  <div>{office.city}</div>
+                  <div>{office.type}</div>
                 </h3>
                 <p className="mt-6  md:h-20 lg:h-auto xl:h-20 leading-6 text-sm">{office.address}</p>
                 <p className="self-start mt-7  tracking-wider hover:text-gray-500 transition-all duration-300 leading-loose text-sm">{office.phone}</p>
