@@ -663,7 +663,7 @@ const Home = () => {
                               <img
                                 src={src}
                                 alt={`Placeholder ${index + 1}`}
-                                className="w-[60%] h-auto grayscale group-hover:grayscale-0 brightness-75 group-hover:brightness-100 transition-all duration-500 z-10"
+                                className="w-[60%] max-h-[50%] grayscale group-hover:grayscale-0 brightness-75 group-hover:brightness-100 transition-all duration-500 z-10"
                               />
                               <div className="absolute inset-0 bg-gradient-to-b from-[#7811A5] to-[#2E063F] opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
                             </div>
@@ -854,30 +854,6 @@ const Home = () => {
               <div className='overflow-hidden w-full'>
 
               <section className='mx-6 lg:mx-8'>
-
-                {/* <div className="flex gap-5 items-start self-start mt-10  leading-loose text-neutral-950">
-                  <div className="flex shrink-0 self-stretch my-auto w-3 h-3 bg-[#7811A5] rounded-[1000px]" />
-                  <div className="self-stretch text-[25px] text-[#7811A5] my-auto">Our services</div>
-                </div>
-                <div className="mt-14 max-w-full w-[780px] max-md:mt-10 ">
-                  <div className="flex gap-12 xl:gap-8 2xl:gap-12 max-md:flex-col">
-                    {services.map((service, index) => (
-                      <div key={index} className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
-                        <div className="flex flex-col grow max-md:mt-10">
-                          <div className="flex overflow-hidden flex-col items-center bg-white aspect-square">
-                            <img loading="lazy" src={service.image} alt={service.title} className=" object-cover w-full aspect-[0.97] filter grayscale hover:grayscale-0 transition-all duration-300" />
-                          </div>
-                          <h3 className="self-start mt-6 text-2xl tracking-wider leading-8 text-neutral-950">{service.title}</h3>
-                          <p className="mt-7  text-lg tracking-wide leading-8 text-neutral-950 ">{service.description}</p>
-                        </div>
-                        <Link to={service.url} className="mt-5">
-                          <button className=' text-[#7811A5] hover:text-gray-500 transition-all duration-300 text-xl self-start'>Read now</button>
-                        </Link>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-                <div className="shrink-0 mt-12 max-w-full h-px border border-solid border-gray-400 w-full" /> */}
                 <div className="flex gap-2 items-start self-start mt-20 leading-none text-neutral-950">
                   <div className="flex shrink-0 self-stretch my-auto w-3 h-3 bg-[#7811A5] rounded-[1000px]" />
                   <div className="self-stretch ml-[1.5%] text-[25px] text-[#7811A5] my-auto">Our blogs</div>
