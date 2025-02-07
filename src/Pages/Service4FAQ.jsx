@@ -8,7 +8,7 @@ import { Helmet } from 'react-helmet';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const Service1FAQ = () => {
+const Service4FAQ = () => {
 
     useEffect(() => {
         gsap.utils.toArray('.toggle-point').forEach((element) => {
@@ -65,7 +65,7 @@ const Service1FAQ = () => {
 
 const DropdownComponent = () => {
 
-    const [dropdownStates, setDropdownStates] = useState([false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]);
+    const [dropdownStates, setDropdownStates] = useState([false, false, false, false, false, false, false, false, false, false, false, false]);
 
     const toggleDropdown = (index) => {
         const updatedStates = dropdownStates.map((state, i) => i === index ? !state : state);
@@ -79,7 +79,7 @@ const DropdownComponent = () => {
                 <div className="flex items-start xl:items-center justify-between gap-8">
                     <div className="flex items-start justify-between gap-8 w-full">
                         <div className='border rounded-full text-center w-9 p-1 border-[#D8D8D8]'>1</div>
-                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">What is UI/UX design, and why is it important?</div>
+                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">What are Cloud Solutions?</div>
                     </div>
                     <div onClick={() => toggleDropdown(0)} className="cursor-pointer mt-[8px] xl:mt-[0px]">
                         <svg
@@ -99,9 +99,8 @@ const DropdownComponent = () => {
                 </div>
                 <div className={`flex xl:items-end xl:justify-end overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[0] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                     <div className="text-base flex flex-col gap-6 md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 md:ml-[70px] md:mr-20">
-                        <div>UI (User Interface) design refers to the visual elements of a product, such as buttons, icons, layouts, and typography. It's the interface that users interact with.</div>
-                        <div>UX (User Experience) design focuses on the overall experience a user has when interacting with a product or service. It ensures the product is easy to use, intuitive, and provides a positive experience.</div>
-                        <div>A great UI/UX design enhances usability, builds trust with users, and improves overall customer satisfaction, which leads to better engagement, higher conversion rates, and a more successful product.</div>
+                        <div>Cloud solutions refer to a variety of services and technologies that allow businesses to store data, run applications, and manage IT infrastructure over the internet instead of on-premises. These solutions provide businesses with greater flexibility, scalability, and cost-efficiency by leveraging cloud platforms like Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP).</div>
+                        <div>Our cloud solutions include consulting, migration, infrastructure management, application development, cloud security, data analytics, backup, and disaster recovery services.</div>
                     </div>
                 </div>
             </div>
@@ -110,7 +109,7 @@ const DropdownComponent = () => {
                 <div className="flex items-start xl:items-center justify-between gap-8">
                     <div className="flex items-start justify-between gap-8 w-full">
                         <div className='border rounded-full text-center w-9 p-1 border-[#D8D8D8]'>2</div>
-                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">How does the UI/UX design process work?</div>
+                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">What Types of Cloud Models Do You Offer?</div>
                     </div>
                     <div onClick={() => toggleDropdown(1)} className="cursor-pointer mt-[8px] xl:mt-[0px]">
                         <svg
@@ -130,14 +129,11 @@ const DropdownComponent = () => {
                 </div>
                 <div className={`flex xl:items-end xl:justify-end overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[1] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                     <div className="text-base flex flex-col gap-6 md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 md:ml-[70px] md:mr-20">
-                        <div>Our process typically includes the following steps:</div>
+                        <div>We offer three primary types of cloud deployment models to best fit your business needs:</div>
                         <div className='flex flex-col gap-4'>
-                            <li>Discovery & Research: Understanding your business, target audience, and competitors. We may conduct user surveys, interviews, and analyze analytics.</li>
-                            <li>Wireframing & Prototyping: Creating wireframes and interactive prototypes to establish the website or app's layout, user flows, and functionality.</li>
-                            <li>UI Design: Designing the visual aspects (color schemes, typography, icons, buttons) and ensuring the interface is both aesthetically appealing and functional.</li>
-                            <li>UX Testing & Validation: Conducting usability testing to ensure the design is intuitive and effective. This can include A/B testing, user interviews, and analytics review.
-                            </li>
-                            <li>Final Design & Handoff: Once approved, we provide final design files (such as PSD, Sketch, Figma) and hand them over for development.</li>
+                            <li>Public Cloud: Services and infrastructure are delivered over the internet and shared across multiple organizations. Examples include AWS, Azure, and Google Cloud.</li>
+                            <li>Private Cloud: A cloud infrastructure dedicated exclusively to your business, either hosted on-premises or by a third-party provider. This is ideal for businesses requiring more control over their data and security.</li>
+                            <li>Hybrid Cloud: A combination of both public and private cloud environments, allowing you to move workloads between private and public clouds based on your needs. This provides flexibility and optimization of your existing infrastructure.</li>
                         </div>
                     </div>
                 </div>
@@ -147,7 +143,7 @@ const DropdownComponent = () => {
                 <div className="flex items-start xl:items-center justify-between gap-8">
                     <div className="flex items-start justify-between gap-8 w-full">
                         <div className='border rounded-full text-center w-9 p-1 border-[#D8D8D8]'>3</div>
-                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">How long does the UI/UX design process take?</div>
+                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">What Are the Benefits of Cloud Solutions?</div>
                     </div>
                     <div onClick={() => toggleDropdown(2)} className="cursor-pointer mt-[8px] xl:mt-[0px]">
                         <svg
@@ -167,13 +163,14 @@ const DropdownComponent = () => {
                 </div>
                 <div className={`flex xl:items-end xl:justify-end overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[2] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                     <div className="text-base flex flex-col gap-6 md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 md:ml-[70px] md:mr-20">
-                        <div>The timeline depends on the complexity of the project. Generally, here’s an estimate:</div>
+                        <div>Cloud solutions offer numerous advantages to businesses, including:</div>
                         <div className='flex flex-col gap-4'>
-                            <li>Simple Website: 3–4 weeks</li>
-                            <li>Complex Website or Web Application: 6–8 weeks or more</li>
-                            <li>Mobile Apps: 6–12 weeks (depending on the scope)</li>
+                            <li>Scalability: Easily scale your infrastructure to meet changing business demands, without the need for significant upfront investments.</li>
+                            <li>Cost-Efficiency: Reduce capital expenditures by paying only for the resources you actually use, rather than maintaining expensive on-premise infrastructure.</li>
+                            <li>Flexibility: Access your data and applications from anywhere, enabling better collaboration and remote work capabilities.</li>
+                            <li>Security: Cloud providers invest heavily in robust security measures, ensuring data protection and compliance with regulatory standards.</li>
+                            <li>Business Continuity: Cloud solutions provide backup and disaster recovery, ensuring that your data is safe and recoverable in the event of an issue.</li>
                         </div>
-                        <div>We always provide a detailed timeline at the start of the project based on your needs and scope.</div>
                     </div>
                 </div>
             </div>
@@ -182,7 +179,7 @@ const DropdownComponent = () => {
                 <div className="flex items-start xl:items-center justify-between gap-8">
                     <div className="flex items-start justify-between gap-8 w-full">
                         <div className='border rounded-full text-center w-9 p-1 border-[#D8D8D8]'>4</div>
-                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">How much does UI/UX design cost?</div>
+                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">What Is Cloud Migration and How Does It Work?</div>
                     </div>
                     <div onClick={() => toggleDropdown(3)} className="cursor-pointer mt-[8px] xl:mt-[0px]">
                         <svg
@@ -202,12 +199,13 @@ const DropdownComponent = () => {
                 </div>
                 <div className={`flex xl:items-end xl:justify-end overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[3] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                     <div className="text-base flex flex-col gap-6 md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 md:ml-[70px] md:mr-20">
-                        <div>UI/UX design costs can vary depending on the scope and complexity of the project. Pricing models can include:</div>
+                        <div>Cloud migration refers to the process of moving your applications, data, and IT resources from on-premise servers or other cloud environments to a new cloud platform. The migration process typically includes:</div>
                         <div className='flex flex-col gap-4'>
-                            <li>Hourly Rates: Typically $50–$200 per hour, depending on the designer’s experience and location.</li>
-                            <li>Project-Based Pricing: For websites or apps, prices can range from $5,000 to $50,000+, depending on features, custom designs, and the number of screens involved.</li>
+                            <li>Assessment: We evaluate your current infrastructure, applications, and data to understand how they will migrate to the cloud.</li>
+                            <li>Strategy & Planning: We create a migration roadmap that minimizes downtime and ensures the transition is smooth and secure.</li>
+                            <li>Migration: We execute the migration, transferring data and applications while ensuring compatibility and security.</li>
+                            <li>Optimization: Post-migration, we optimize your cloud environment for cost, performance, and security.</li>
                         </div>
-                        <div>We offer custom quotes based on your specific requirements. Please reach out to us with your project details, and we’ll provide an accurate estimate.</div>
                     </div>
                 </div>
             </div>
@@ -216,7 +214,7 @@ const DropdownComponent = () => {
                 <div className="flex items-start xl:items-center justify-between gap-8">
                     <div className="flex items-start justify-between gap-8 w-full">
                         <div className='border rounded-full text-center w-9 p-1 border-[#D8D8D8]'>5</div>
-                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">Do I need to provide content or images?</div>
+                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">How Do You Ensure Cloud Security?</div>
                     </div>
                     <div onClick={() => toggleDropdown(4)} className="cursor-pointer mt-[8px] xl:mt-[0px]">
                         <svg
@@ -235,8 +233,14 @@ const DropdownComponent = () => {
                     </div>
                 </div>
                 <div className={`flex xl:items-end xl:justify-end overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[4] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                    <div className="text-base flex md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 md:ml-[70px] md:mr-20">
-                        <div>While it's helpful if you can provide text content, images, and branding guidelines (like logos or color schemes), we can also assist in sourcing stock images or creating placeholders for content. If you need help creating content, we offer copywriting services and can suggest strategies for creating the right kind of text for your target audience.</div>
+                    <div className="text-base flex flex-col gap-6 md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 md:ml-[70px] md:mr-20">
+                        <div>At Hudbil, cloud security is a top priority. We implement a multi-layered approach to ensure that your data and applications are protected from external threats and vulnerabilities. Our security measures include:</div>
+                        <div className='flex flex-col gap-4'>
+                            <li>Data Encryption: We use encryption both in transit and at rest to protect sensitive data.</li>
+                            <li>Access Management: We implement Identity and Access Management (IAM) systems to ensure that only authorized users can access specific data and applications.</li>
+                            <li>Regular Audits: We conduct routine security audits to identify and resolve any vulnerabilities.</li>
+                            <li>Compliance: We ensure that your cloud solutions comply with industry standards and regulations like GDPR, HIPAA, and PCI-DSS.</li>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -245,7 +249,7 @@ const DropdownComponent = () => {
                 <div className="flex items-start xl:items-center justify-between gap-8">
                     <div className="flex items-start justify-between gap-8 w-full">
                         <div className='border rounded-full text-center w-9 p-1 border-[#D8D8D8]'>6</div>
-                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">Will the design be responsive for mobile and tablet devices?</div>
+                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">What Is Cloud Backup & Disaster Recovery?</div>
                     </div>
                     <div onClick={() => toggleDropdown(5)} className="cursor-pointer mt-[8px] xl:mt-[0px]">
                         <svg
@@ -264,8 +268,13 @@ const DropdownComponent = () => {
                     </div>
                 </div>
                 <div className={`flex xl:items-end xl:justify-end overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[5] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                    <div className="text-base flex md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 md:ml-[70px] md:mr-20">
-                        <div>Yes, we ensure that all UI/UX designs are responsive, meaning they’ll automatically adjust to fit various screen sizes, from mobile phones and tablets to desktops and large screens. The design is tested for responsiveness to provide a seamless experience across all devices.</div>
+                    <div className="text-base flex flex-col gap-6 md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 md:ml-[70px] md:mr-20">
+                        <div>Cloud backup and disaster recovery solutions are critical to ensure that your data is protected and recoverable in the event of an emergency, system failure, or data loss. These services involve:</div>
+                        <div className='flex flex-col gap-4'>
+                            <li>Automated Backups: We set up regular automated backups of your critical data to ensure it’s always secure.</li>
+                            <li>Disaster Recovery: In the event of a failure, we ensure your business can quickly recover by restoring your data and applications from the cloud with minimal downtime.</li>
+                            <li>Geographic Redundancy: We store backups in multiple locations to prevent data loss in case of hardware failure or natural disasters.</li>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -274,7 +283,7 @@ const DropdownComponent = () => {
                 <div className="flex items-start xl:items-center justify-between gap-8">
                     <div className="flex items-start justify-between gap-8 w-full">
                         <div className='border rounded-full text-center w-9 p-1 border-[#D8D8D8]'>7</div>
-                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">Will my UI/UX design be SEO-friendly?</div>
+                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">What Cloud Platforms Do You Work With?</div>
                     </div>
                     <div onClick={() => toggleDropdown(6)} className="cursor-pointer mt-[8px] xl:mt-[0px]">
                         <svg
@@ -294,14 +303,14 @@ const DropdownComponent = () => {
                 </div>
                 <div className={`flex xl:items-end xl:justify-end overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[6] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                     <div className="text-base flex flex-col gap-6 md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 md:ml-[70px] md:mr-20">
-                        <div>While UI/UX design focuses primarily on usability, aesthetics, and functionality, we ensure that your design also adheres to basic SEO best practices, like:</div>
+                        <div>We work with the leading cloud platforms to deliver tailored solutions based on your business requirements. Our expertise spans across:</div>
                         <div className='flex flex-col gap-4'>
-                            <li>Clean and semantic code.</li>
-                            <li>Fast load times (important for both UX and SEO).</li>
-                            <li>Easy-to-navigate structures (important for both user experience and search engines).</li>
-                            <li>Optimized images for faster page loads.</li>
+                            <li>Amazon Web Services (AWS): Scalable, secure, and widely used cloud services for a variety of industries.</li>
+                            <li>Microsoft Azure: Robust cloud services for enterprises with advanced AI, analytics, and IoT capabilities.</li>
+                            <li>Google Cloud Platform (GCP): Advanced cloud services, including machine learning, big data, and AI.</li>
+                            <li>IBM Cloud: Cloud services with a focus on AI, blockchain, and hybrid cloud infrastructure.</li>
+                            <li>Salesforce: Cloud-based CRM and business solutions that enhance collaboration and customer relationships.</li>
                         </div>
-                        <div>However, SEO specialists may be required for in-depth optimization, such as keyword research, metadata creation, and backlink strategies.</div>
                     </div>
                 </div>
             </div>
@@ -310,7 +319,7 @@ const DropdownComponent = () => {
                 <div className="flex items-start xl:items-center justify-between gap-8">
                     <div className="flex items-start justify-between gap-8 w-full">
                         <div className='border rounded-full text-center w-9 p-1 border-[#D8D8D8]'>8</div>
-                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">Will I be able to make changes to the design once it's finished?</div>
+                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">How Do Cloud Solutions Improve Collaboration?</div>
                     </div>
                     <div onClick={() => toggleDropdown(7)} className="cursor-pointer mt-[8px] xl:mt-[0px]">
                         <svg
@@ -329,10 +338,8 @@ const DropdownComponent = () => {
                     </div>
                 </div>
                 <div className={`flex xl:items-end xl:justify-end overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[7] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                    <div className="text-base flex md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 md:ml-[70px] md:mr-20">
-                        <div>We provide revision rounds throughout the design process, and typically offer 2–3 rounds of revisions after the final design is presented. Once the design is handed off to developers for implementation, any changes will require additional work and may incur extra fees depending on the scope of the changes.
-                            We always work closely with you to ensure you’re satisfied with the final design before moving forward.
-                        </div>
+                    <div className="text-base flex flex-col gap-6 md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 md:ml-[70px] md:mr-20">
+                        <div>Cloud solutions enable teams to collaborate seamlessly, no matter where they are located. With cloud-based tools like document sharing, project management platforms, and real-time communication tools, your team can work together in real time, reducing delays and improving productivity. Additionally, cloud services offer file synchronization, ensuring everyone is working with the latest data, and can securely access resources from any device or location.</div>
                     </div>
                 </div>
             </div>
@@ -341,7 +348,7 @@ const DropdownComponent = () => {
                 <div className="flex items-start xl:items-center justify-between gap-8">
                     <div className="flex items-start justify-between gap-8 w-full">
                         <div className='border rounded-full text-center w-9 p-1 border-[#D8D8D8]'>9</div>
-                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">Can you redesign my existing website or app?</div>
+                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">Will Cloud Solutions Improve My Business Efficiency?</div>
                     </div>
                     <div onClick={() => toggleDropdown(8)} className="cursor-pointer mt-[8px] xl:mt-[0px]">
                         <svg
@@ -360,8 +367,14 @@ const DropdownComponent = () => {
                     </div>
                 </div>
                 <div className={`flex xl:items-end xl:justify-end overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[8] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                    <div className="text-base flex md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 md:ml-[70px] md:mr-20">
-                        <div>Yes, we specialize in UI/UX redesigns. If your current site or app has usability issues, outdated design, or isn’t converting as well as you’d like, we can help. We will conduct an analysis of the existing design, gather feedback from users, and propose improvements based on modern design trends and usability best practices.</div>
+                    <div className="text-base flex flex-col gap-6 md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 md:ml-[70px] md:mr-20">
+                        <div>Yes! Cloud solutions can significantly enhance your business efficiency by:</div>
+                        <div className='flex flex-col gap-4'>
+                            <li>Reducing Downtime: Cloud infrastructure ensures high availability, with automatic failover and backup systems in place.</li>
+                            <li>Boosting Productivity: Cloud-based tools and applications improve collaboration and streamline workflows.</li>
+                            <li>Cost Optimization: You only pay for what you use, reducing the need for large capital expenditures on physical hardware and maintenance.</li>
+                            <li>Agility: Cloud solutions enable your business to quickly adapt to changing market conditions and scale resources as needed.</li>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -370,7 +383,7 @@ const DropdownComponent = () => {
                 <div className="flex items-start xl:items-center justify-between gap-8">
                     <div className="flex items-start justify-between gap-8 w-full">
                         <div className='border rounded-full text-center w-9 p-1 border-[#D8D8D8]'>10</div>
-                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">Will I own the rights to the design?</div>
+                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">What Is the Cost of Cloud Solutions?</div>
                     </div>
                     <div onClick={() => toggleDropdown(9)} className="cursor-pointer mt-[8px] xl:mt-[0px]">
                         <svg
@@ -389,8 +402,9 @@ const DropdownComponent = () => {
                     </div>
                 </div>
                 <div className={`flex xl:items-end xl:justify-end overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[9] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                    <div className="text-base flex md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 md:ml-[70px] md:mr-20">
-                        <div>Yes! Once the project is complete and payment is finalized, you will own the intellectual property and rights to the design, including the layout, graphics, and prototypes. We will provide you with all the necessary files, assets, and documentation needed for implementation.</div>
+                    <div className="text-base flex flex-col gap-6 md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 md:ml-[70px] md:mr-20">
+                        <div>The cost of cloud solutions depends on several factors, including the scope of services, the cloud platform you choose, and your business's specific requirements. With cloud computing, you typically pay for what you use, meaning costs can vary based on the level of storage, compute power, and services you require.</div>
+                        <div>We work with clients to provide cost-effective solutions by optimizing your cloud environment, ensuring that you only pay for the resources you need, and helping you achieve maximum return on investment.</div>
                     </div>
                 </div>
             </div>
@@ -399,7 +413,7 @@ const DropdownComponent = () => {
                 <div className="flex items-start xl:items-center justify-between gap-8">
                     <div className="flex items-start justify-between gap-8 w-full">
                         <div className='border rounded-full text-center w-9 p-1 border-[#D8D8D8]'>11</div>
-                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">Do you provide UI/UX design for mobile apps?</div>
+                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">Do You Provide Ongoing Support for Cloud Solutions?</div>
                     </div>
                     <div onClick={() => toggleDropdown(10)} className="cursor-pointer mt-[8px] xl:mt-[0px]">
                         <svg
@@ -418,8 +432,15 @@ const DropdownComponent = () => {
                     </div>
                 </div>
                 <div className={`flex xl:items-end xl:justify-end overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[10] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                    <div className="text-base flex md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 md:ml-[70px] md:mr-20">
-                        <div>Yes, we provide UI/UX design services for mobile apps (iOS and Android). Our process ensures that the app is not only visually appealing but also intuitive and easy to navigate, keeping the best practices for mobile user experience in mind.</div>
+                    <div className="text-base flex flex-col gap-6 md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 md:ml-[70px] md:mr-20">
+                        <div>Absolutely! We offer ongoing support and maintenance to ensure your cloud environment is running efficiently. Our support services include:</div>
+                        <div className='flex flex-col gap-4'>
+                            <li>Proactive monitoring to detect and resolve issues before they impact your business.</li>
+                            <li>Optimization of cloud resources for better performance and reduced costs.</li>
+                            <li>Security updates and patches to ensure that your cloud environment is secure and compliant.</li>
+                            <li>24/7 technical support to address any concerns or issues.</li>
+                        </div>
+                        <div>We are committed to ensuring that your cloud infrastructure continues to meet your evolving business needs.</div>
                     </div>
                 </div>
             </div>
@@ -428,7 +449,7 @@ const DropdownComponent = () => {
                 <div className="flex items-start xl:items-center justify-between gap-8">
                     <div className="flex items-start justify-between gap-8 w-full">
                         <div className='border rounded-full text-center w-9 p-1 border-[#D8D8D8]'>12</div>
-                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">Do you also handle website development?</div>
+                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">How Do I Get Started with Cloud Solutions?</div>
                     </div>
                     <div onClick={() => toggleDropdown(11)} className="cursor-pointer mt-[8px] xl:mt-[0px]">
                         <svg
@@ -447,102 +468,8 @@ const DropdownComponent = () => {
                     </div>
                 </div>
                 <div className={`flex xl:items-end xl:justify-end overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[11] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                    <div className="text-base flex md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 md:ml-[70px] md:mr-20">
-                        <div>While we specialize in UI/UX design, we can collaborate with your development team or offer full-stack development services through trusted partners. We ensure smooth handoff of design files, design specifications, and prototypes to developers, but if you need end-to-end services, we can arrange to handle the development as well.</div>
-                    </div>
-                </div>
-            </div>
-            <div className="bg-[#D8D8D8] h-[0.5px] w-full"></div>
-            <div className="py-8 flex flex-col toggle-point">
-                <div className="flex items-start xl:items-center justify-between gap-8">
-                    <div className="flex items-start justify-between gap-8 w-full">
-                        <div className='border rounded-full text-center w-9 p-1 border-[#D8D8D8]'>13</div>
-                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">What’s the difference between a UI/UX designer and a web developer?</div>
-                    </div>
-                    <div onClick={() => toggleDropdown(12)} className="cursor-pointer mt-[8px] xl:mt-[0px]">
-                        <svg
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                            className={`transition-transform duration-300 ${dropdownStates[12] ? 'rotate-[-180deg]' : 'rotate-[0deg]'
-                                }`}
-                        >
-                            <rect width="24" height="24" rx="12" fill="#7811A5" />
-                            <rect x="7" y="11" width="10" height="2" fill="white" />
-                            {!dropdownStates[12] && <rect x="11" y="7" width="2" height="10" fill="white" />}
-                        </svg>
-                    </div>
-                </div>
-                <div className={`flex xl:items-end xl:justify-end overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[12] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                     <div className="text-base flex flex-col gap-6 md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 md:ml-[70px] md:mr-20">
-                        <div>A UI/UX designer focuses on creating the visual and interaction design of a website or app, ensuring that it’s user-friendly, engaging, and visually appealing.</div>
-                        <div>A web developer takes the design and turns it into a functional website or app by writing the code (HTML, CSS, JavaScript, etc.) and ensuring the site works as expected.</div>
-                        <div>In short: designers create the look and feel; developers make it work.</div>
-                    </div>
-                </div>
-            </div>
-            <div className="bg-[#D8D8D8] h-[0.5px] w-full"></div>
-            <div className="py-8 flex flex-col toggle-point">
-                <div className="flex items-start xl:items-center justify-between gap-8">
-                    <div className="flex items-start justify-between gap-8 w-full">
-                        <div className='border rounded-full text-center w-9 p-1 border-[#D8D8D8]'>14</div>
-                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">Do you offer user testing as part of your services?</div>
-                    </div>
-                    <div onClick={() => toggleDropdown(13)} className="cursor-pointer mt-[8px] xl:mt-[0px]">
-                        <svg
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                            className={`transition-transform duration-300 ${dropdownStates[13] ? 'rotate-[-180deg]' : 'rotate-[0deg]'
-                                }`}
-                        >
-                            <rect width="24" height="24" rx="12" fill="#7811A5" />
-                            <rect x="7" y="11" width="10" height="2" fill="white" />
-                            {!dropdownStates[13] && <rect x="11" y="7" width="2" height="10" fill="white" />}
-                        </svg>
-                    </div>
-                </div>
-                <div className={`flex xl:items-end xl:justify-end overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[13] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                    <div className="text-base flex flex-col gap-6 md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 md:ml-[70px] md:mr-20">
-                        <div>Yes, user testing is a critical part of our process. We conduct usability testing to evaluate the effectiveness of the design by observing how real users interact with the product. We gather feedback, iterate on the design, and make necessary adjustments to improve the user experience. Testing can include:</div>
-                        <div className='flex flex-col gap-4'>
-                            <li>A/B testing: Comparing two versions of a design to see which performs better.</li>
-                            <li>Usability testing: Observing real users to identify pain points.</li>
-                            <li>Beta testing: Offering early access to users for final feedback.</li>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="bg-[#D8D8D8] h-[0.5px] w-full"></div>
-            <div className="py-8 flex flex-col toggle-point">
-                <div className="flex items-start xl:items-center justify-between gap-8">
-                    <div className="flex items-start justify-between gap-8 w-full">
-                        <div className='border rounded-full text-center w-9 p-1 border-[#D8D8D8]'>15</div>
-                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">Can you help with ongoing design support after the project is completed?</div>
-                    </div>
-                    <div onClick={() => toggleDropdown(14)} className="cursor-pointer mt-[8px] xl:mt-[0px]">
-                        <svg
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                            className={`transition-transform duration-300 ${dropdownStates[14] ? 'rotate-[-180deg]' : 'rotate-[0deg]'
-                                }`}
-                        >
-                            <rect width="24" height="24" rx="12" fill="#7811A5" />
-                            <rect x="7" y="11" width="10" height="2" fill="white" />
-                            {!dropdownStates[14] && <rect x="11" y="7" width="2" height="10" fill="white" />}
-                        </svg>
-                    </div>
-                </div>
-                <div className={`flex xl:items-end xl:justify-end overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[14] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                    <div className="text-base flex md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 md:ml-[70px] md:mr-20">
-                        <div>Yes! We offer ongoing support and maintenance for UI/UX design projects. Whether you need design updates, optimizations, or adjustments to the user interface, we can continue working with you to keep your product or website up-to-date.</div>
+                        <div>Getting started with Hudbil's cloud solutions is easy! Simply contact us to schedule a consultation. Our team will assess your current infrastructure, understand your business goals, and create a tailored cloud strategy that aligns with your needs. From there, we’ll guide you through the process of migration, optimization, and ongoing management.</div>
                     </div>
                 </div>
             </div>
@@ -551,4 +478,4 @@ const DropdownComponent = () => {
     );
 };
 
-export default Service1FAQ
+export default Service4FAQ

@@ -22,6 +22,12 @@ import Services3 from '../Pages/Services3';
 import Services4 from '../Pages/Services4';
 import Services5 from '../Pages/Services5';
 import Services6 from '../Pages/Services6';
+import Service1FAQ from '../Pages/Service1FAQ';
+import Service2FAQ from '../Pages/Service2FAQ';
+import Service3FAQ from '../Pages/Service3FAQ';
+import Service4FAQ from '../Pages/Service4FAQ';
+import Service5FAQ from '../Pages/Service5FAQ';
+import Service6FAQ from '../Pages/Service6FAQ';
 import Insights from '../Pages/Insights';
 import Services from '../Pages/Services';
 import Work from '../Pages/Work';
@@ -124,6 +130,12 @@ const Routers = () => {
         <Route path='/services/cloud-solutions' element={<Services4 />} />
         <Route path='/services/ai-ml' element={<Services5 />} />
         <Route path='/services/blockchain' element={<Services6 />} />
+        <Route path='/services/ui-ux-cx-design/faq' element={<Service1FAQ />} />
+        <Route path='/services/website-development/faq' element={<Service2FAQ />} />
+        <Route path='/services/mobile-app-development/faq' element={<Service3FAQ />} />
+        <Route path='/services/cloud-solutions/faq' element={<Service4FAQ />} />
+        <Route path='/services/ai-ml/faq' element={<Service5FAQ />} />
+        <Route path='/services/blockchain/faq' element={<Service6FAQ />} />
         <Route path='/our-industry' element={<Our_industry />} />
         <Route path='/our-products' element={<Our_products />} />
         <Route path='/our-partners' element={<Partners />} />

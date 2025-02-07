@@ -8,7 +8,7 @@ import { Helmet } from 'react-helmet';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const Service1FAQ = () => {
+const Service2FAQ = () => {
 
     useEffect(() => {
         gsap.utils.toArray('.toggle-point').forEach((element) => {
@@ -79,7 +79,7 @@ const DropdownComponent = () => {
                 <div className="flex items-start xl:items-center justify-between gap-8">
                     <div className="flex items-start justify-between gap-8 w-full">
                         <div className='border rounded-full text-center w-9 p-1 border-[#D8D8D8]'>1</div>
-                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">What is UI/UX design, and why is it important?</div>
+                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">What is website development, and how does it differ from web design?</div>
                     </div>
                     <div onClick={() => toggleDropdown(0)} className="cursor-pointer mt-[8px] xl:mt-[0px]">
                         <svg
@@ -99,9 +99,10 @@ const DropdownComponent = () => {
                 </div>
                 <div className={`flex xl:items-end xl:justify-end overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[0] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                     <div className="text-base flex flex-col gap-6 md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 md:ml-[70px] md:mr-20">
-                        <div>UI (User Interface) design refers to the visual elements of a product, such as buttons, icons, layouts, and typography. It's the interface that users interact with.</div>
-                        <div>UX (User Experience) design focuses on the overall experience a user has when interacting with a product or service. It ensures the product is easy to use, intuitive, and provides a positive experience.</div>
-                        <div>A great UI/UX design enhances usability, builds trust with users, and improves overall customer satisfaction, which leads to better engagement, higher conversion rates, and a more successful product.</div>
+                        <div>Website development refers to the process of creating the functional aspects of a website. It involves programming, coding, and structuring the backend (server-side) and frontend (client-side) elements to make the website interactive, user-friendly, and fully functional.</div>
+                        <div>Web design, on the other hand, is focused on the visual appearance of the website—creating layouts, color schemes, fonts, and overall aesthetics.
+                        </div>
+                        <div>In short, web development builds the functionality of the site, while web design focuses on the user interface (UI) and user experience (UX).</div>
                     </div>
                 </div>
             </div>
@@ -110,7 +111,7 @@ const DropdownComponent = () => {
                 <div className="flex items-start xl:items-center justify-between gap-8">
                     <div className="flex items-start justify-between gap-8 w-full">
                         <div className='border rounded-full text-center w-9 p-1 border-[#D8D8D8]'>2</div>
-                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">How does the UI/UX design process work?</div>
+                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">What types of websites do you build?</div>
                     </div>
                     <div onClick={() => toggleDropdown(1)} className="cursor-pointer mt-[8px] xl:mt-[0px]">
                         <svg
@@ -130,15 +131,23 @@ const DropdownComponent = () => {
                 </div>
                 <div className={`flex xl:items-end xl:justify-end overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[1] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                     <div className="text-base flex flex-col gap-6 md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 md:ml-[70px] md:mr-20">
-                        <div>Our process typically includes the following steps:</div>
+                        <div>We specialize in building a wide variety of websites, including but not limited to:</div>
                         <div className='flex flex-col gap-4'>
-                            <li>Discovery & Research: Understanding your business, target audience, and competitors. We may conduct user surveys, interviews, and analyze analytics.</li>
-                            <li>Wireframing & Prototyping: Creating wireframes and interactive prototypes to establish the website or app's layout, user flows, and functionality.</li>
-                            <li>UI Design: Designing the visual aspects (color schemes, typography, icons, buttons) and ensuring the interface is both aesthetically appealing and functional.</li>
-                            <li>UX Testing & Validation: Conducting usability testing to ensure the design is intuitive and effective. This can include A/B testing, user interviews, and analytics review.
+                            <li>Corporate Websites: Professional sites for businesses to showcase their services or products.</li>
+                            <li>E-commerce Websites: Fully functional online stores with integrated payment gateways, product catalogs, and inventory management.
                             </li>
-                            <li>Final Design & Handoff: Once approved, we provide final design files (such as PSD, Sketch, Figma) and hand them over for development.</li>
+                            <li>Portfolio Websites: Personal websites to showcase work, skills, and achievements (for creatives like designers, photographers, or artists).
+                            </li>
+                            <li>Blogs: Simple, content-driven websites where you can share articles, posts, and media.
+                            </li>
+                            <li>Landing Pages: High-conversion, one-page websites designed for specific campaigns or goals.
+                            </li>
+                            <li>Web Applications: Complex, interactive applications with features like user accounts, databases, and dynamic content.
+                            </li>
+                            <li>Content Management Systems (CMS): Websites built on platforms like WordPress, Joomla, or Drupal that allow easy content management.
+                            </li>
                         </div>
+                        <div></div>
                     </div>
                 </div>
             </div>
@@ -147,7 +156,7 @@ const DropdownComponent = () => {
                 <div className="flex items-start xl:items-center justify-between gap-8">
                     <div className="flex items-start justify-between gap-8 w-full">
                         <div className='border rounded-full text-center w-9 p-1 border-[#D8D8D8]'>3</div>
-                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">How long does the UI/UX design process take?</div>
+                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">What’s the difference between a static and a dynamic website?</div>
                     </div>
                     <div onClick={() => toggleDropdown(2)} className="cursor-pointer mt-[8px] xl:mt-[0px]">
                         <svg
@@ -167,13 +176,9 @@ const DropdownComponent = () => {
                 </div>
                 <div className={`flex xl:items-end xl:justify-end overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[2] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                     <div className="text-base flex flex-col gap-6 md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 md:ml-[70px] md:mr-20">
-                        <div>The timeline depends on the complexity of the project. Generally, here’s an estimate:</div>
-                        <div className='flex flex-col gap-4'>
-                            <li>Simple Website: 3–4 weeks</li>
-                            <li>Complex Website or Web Application: 6–8 weeks or more</li>
-                            <li>Mobile Apps: 6–12 weeks (depending on the scope)</li>
+                        <div>Static websites consist of fixed content (HTML, CSS) and are best suited for simple sites with minimal interaction (like informational websites or portfolios).
+                            Dynamic websites are more complex and interact with databases, allowing content to change based on user input or other factors. These sites can have features like contact forms, search functionality, user login areas, and more. Content management systems (CMS) often power dynamic websites.
                         </div>
-                        <div>We always provide a detailed timeline at the start of the project based on your needs and scope.</div>
                     </div>
                 </div>
             </div>
@@ -182,7 +187,7 @@ const DropdownComponent = () => {
                 <div className="flex items-start xl:items-center justify-between gap-8">
                     <div className="flex items-start justify-between gap-8 w-full">
                         <div className='border rounded-full text-center w-9 p-1 border-[#D8D8D8]'>4</div>
-                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">How much does UI/UX design cost?</div>
+                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">How long will it take to build my website?</div>
                     </div>
                     <div onClick={() => toggleDropdown(3)} className="cursor-pointer mt-[8px] xl:mt-[0px]">
                         <svg
@@ -202,12 +207,20 @@ const DropdownComponent = () => {
                 </div>
                 <div className={`flex xl:items-end xl:justify-end overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[3] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                     <div className="text-base flex flex-col gap-6 md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 md:ml-[70px] md:mr-20">
-                        <div>UI/UX design costs can vary depending on the scope and complexity of the project. Pricing models can include:</div>
+                        <div>The timeline depends on several factors, such as:</div>
                         <div className='flex flex-col gap-4'>
-                            <li>Hourly Rates: Typically $50–$200 per hour, depending on the designer’s experience and location.</li>
-                            <li>Project-Based Pricing: For websites or apps, prices can range from $5,000 to $50,000+, depending on features, custom designs, and the number of screens involved.</li>
+                            <li>Scope of the project: Is it a simple website or a more complex application?</li>
+                            <li>Design and functionality: The more customizations and features, the longer it will take.</li>
+                            <li>Feedback cycles: How quickly you provide feedback and revisions.</li>
+                            <li>Size of the website: A single-page website takes far less time than a large multi-page website or an e-commerce platform.</li>
                         </div>
-                        <div>We offer custom quotes based on your specific requirements. Please reach out to us with your project details, and we’ll provide an accurate estimate.</div>
+                        <div className='flex flex-col gap-4'>
+                            <div>On average:</div>
+                            <li>Simple websites: 2-4 weeks</li>
+                            <li>Medium-sized websites: 4-8 weeks</li>
+                            <li>Complex websites or web apps: 8-12 weeks or more</li>
+                        </div>
+                        <div>We'll provide a more accurate timeline once we understand your project in detail.</div>
                     </div>
                 </div>
             </div>
@@ -216,7 +229,7 @@ const DropdownComponent = () => {
                 <div className="flex items-start xl:items-center justify-between gap-8">
                     <div className="flex items-start justify-between gap-8 w-full">
                         <div className='border rounded-full text-center w-9 p-1 border-[#D8D8D8]'>5</div>
-                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">Do I need to provide content or images?</div>
+                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">How much does website development cost?</div>
                     </div>
                     <div onClick={() => toggleDropdown(4)} className="cursor-pointer mt-[8px] xl:mt-[0px]">
                         <svg
@@ -235,8 +248,24 @@ const DropdownComponent = () => {
                     </div>
                 </div>
                 <div className={`flex xl:items-end xl:justify-end overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[4] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                    <div className="text-base flex md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 md:ml-[70px] md:mr-20">
-                        <div>While it's helpful if you can provide text content, images, and branding guidelines (like logos or color schemes), we can also assist in sourcing stock images or creating placeholders for content. If you need help creating content, we offer copywriting services and can suggest strategies for creating the right kind of text for your target audience.</div>
+                    <div className="text-base flex flex-col gap-6 md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 md:ml-[70px] md:mr-20">
+                        <div>The cost of developing a website can vary widely depending on factors like:</div>
+                        <div className='flex flex-col gap-4'>
+                            <li>The complexity of the website (number of pages, features, integrations)
+                            </li>
+                            <li>The technology stack (e.g., WordPress, React, custom CMS)</li>
+                            <li>Whether the website is e-commerce or a simple informational site</li>
+                            <li>Design and user experience requirements</li>
+                            <li>The development timeline and the number of revisions required</li>
+                        </div>
+                        <div className='flex flex-col gap-4'>
+                            <div>For a rough estimate:</div>
+                            <li>Basic websites: Starting from ₹30,000–₹80,000</li>
+                            <li>E-commerce websites: ₹1,00,000–₹5,00,000+</li>
+                            <li>Custom web applications: ₹5,00,000–₹20,00,000+</li>
+                        </div>
+                        <div>We offer personalized quotes based on your specific needs, so reach out to us for a custom proposal.
+                        </div>
                     </div>
                 </div>
             </div>
@@ -245,7 +274,7 @@ const DropdownComponent = () => {
                 <div className="flex items-start xl:items-center justify-between gap-8">
                     <div className="flex items-start justify-between gap-8 w-full">
                         <div className='border rounded-full text-center w-9 p-1 border-[#D8D8D8]'>6</div>
-                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">Will the design be responsive for mobile and tablet devices?</div>
+                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">Will my website be mobile-friendly (responsive)?</div>
                     </div>
                     <div onClick={() => toggleDropdown(5)} className="cursor-pointer mt-[8px] xl:mt-[0px]">
                         <svg
@@ -264,8 +293,8 @@ const DropdownComponent = () => {
                     </div>
                 </div>
                 <div className={`flex xl:items-end xl:justify-end overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[5] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                    <div className="text-base flex md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 md:ml-[70px] md:mr-20">
-                        <div>Yes, we ensure that all UI/UX designs are responsive, meaning they’ll automatically adjust to fit various screen sizes, from mobile phones and tablets to desktops and large screens. The design is tested for responsiveness to provide a seamless experience across all devices.</div>
+                    <div className="text-base flex flex-col gap-6 md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 md:ml-[70px] md:mr-20">
+                        <div>Yes! All websites we build are mobile-responsive. This means your website will automatically adjust to look great and function smoothly on all screen sizes, from smartphones to desktops. We prioritize mobile-first design, ensuring users have an optimal experience across all devices.</div>
                     </div>
                 </div>
             </div>
@@ -274,7 +303,7 @@ const DropdownComponent = () => {
                 <div className="flex items-start xl:items-center justify-between gap-8">
                     <div className="flex items-start justify-between gap-8 w-full">
                         <div className='border rounded-full text-center w-9 p-1 border-[#D8D8D8]'>7</div>
-                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">Will my UI/UX design be SEO-friendly?</div>
+                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">Will my website be SEO-friendly?</div>
                     </div>
                     <div onClick={() => toggleDropdown(6)} className="cursor-pointer mt-[8px] xl:mt-[0px]">
                         <svg
@@ -294,14 +323,18 @@ const DropdownComponent = () => {
                 </div>
                 <div className={`flex xl:items-end xl:justify-end overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[6] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                     <div className="text-base flex flex-col gap-6 md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 md:ml-[70px] md:mr-20">
-                        <div>While UI/UX design focuses primarily on usability, aesthetics, and functionality, we ensure that your design also adheres to basic SEO best practices, like:</div>
+                        <div>Yes, we build SEO-friendly websites. While SEO is a complex field, we follow best practices during the development process to ensure that your website is set up for search engine optimization. This includes:</div>
                         <div className='flex flex-col gap-4'>
-                            <li>Clean and semantic code.</li>
-                            <li>Fast load times (important for both UX and SEO).</li>
-                            <li>Easy-to-navigate structures (important for both user experience and search engines).</li>
-                            <li>Optimized images for faster page loads.</li>
+                            <li>Proper use of header tags (H1, H2, etc.)</li>
+                            <li>Optimized images for faster loading</li>
+                            <li>SEO-friendly URLs and metadata</li>
+                            <li>Mobile optimization
+                            </li>
+                            <li>Clean, semantic code
+                            </li>
                         </div>
-                        <div>However, SEO specialists may be required for in-depth optimization, such as keyword research, metadata creation, and backlink strategies.</div>
+                        <div>However, full SEO services (keyword research, content optimization, link building, etc.) can be offered separately by an SEO specialist.
+                        </div>
                     </div>
                 </div>
             </div>
@@ -310,7 +343,7 @@ const DropdownComponent = () => {
                 <div className="flex items-start xl:items-center justify-between gap-8">
                     <div className="flex items-start justify-between gap-8 w-full">
                         <div className='border rounded-full text-center w-9 p-1 border-[#D8D8D8]'>8</div>
-                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">Will I be able to make changes to the design once it's finished?</div>
+                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">Will I be able to update my website on my own?</div>
                     </div>
                     <div onClick={() => toggleDropdown(7)} className="cursor-pointer mt-[8px] xl:mt-[0px]">
                         <svg
@@ -329,9 +362,9 @@ const DropdownComponent = () => {
                     </div>
                 </div>
                 <div className={`flex xl:items-end xl:justify-end overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[7] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                    <div className="text-base flex md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 md:ml-[70px] md:mr-20">
-                        <div>We provide revision rounds throughout the design process, and typically offer 2–3 rounds of revisions after the final design is presented. Once the design is handed off to developers for implementation, any changes will require additional work and may incur extra fees depending on the scope of the changes.
-                            We always work closely with you to ensure you’re satisfied with the final design before moving forward.
+                    <div className="text-base flex flex-col gap-6 md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 md:ml-[70px] md:mr-20">
+                        <div>Absolutely! We offer CMS-based websites (like WordPress or Joomla) or custom admin panels, which make it easy for you to manage and update content on your website without needing coding skills. Whether it's updating text, adding new pages, or uploading images, you’ll have the control to make changes.
+                            If you prefer, we also offer training to guide you through the process, or we can handle updates for you as part of our ongoing support package.
                         </div>
                     </div>
                 </div>
@@ -341,7 +374,7 @@ const DropdownComponent = () => {
                 <div className="flex items-start xl:items-center justify-between gap-8">
                     <div className="flex items-start justify-between gap-8 w-full">
                         <div className='border rounded-full text-center w-9 p-1 border-[#D8D8D8]'>9</div>
-                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">Can you redesign my existing website or app?</div>
+                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">Do you provide ongoing website maintenance and support?</div>
                     </div>
                     <div onClick={() => toggleDropdown(8)} className="cursor-pointer mt-[8px] xl:mt-[0px]">
                         <svg
@@ -360,8 +393,16 @@ const DropdownComponent = () => {
                     </div>
                 </div>
                 <div className={`flex xl:items-end xl:justify-end overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[8] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                    <div className="text-base flex md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 md:ml-[70px] md:mr-20">
-                        <div>Yes, we specialize in UI/UX redesigns. If your current site or app has usability issues, outdated design, or isn’t converting as well as you’d like, we can help. We will conduct an analysis of the existing design, gather feedback from users, and propose improvements based on modern design trends and usability best practices.</div>
+                    <div className="text-base flex flex-col gap-6 md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 md:ml-[70px] md:mr-20">
+                        <div>Yes, we offer website maintenance services to ensure your website stays up-to-date, secure, and running smoothly. Our maintenance services include:</div>
+                        <div className='flex flex-col gap-4'>
+                            <li>Regular software updates (CMS, plugins, security patches)</li>
+                            <li>Content updates</li>
+                            <li>Backup services</li>
+                            <li>Bug fixes and troubleshooting</li>
+                            <li>Performance optimization</li>
+                        </div>
+                        <div>We also offer long-term support for any technical issues, new feature additions, or updates that may arise.</div>
                     </div>
                 </div>
             </div>
@@ -370,7 +411,7 @@ const DropdownComponent = () => {
                 <div className="flex items-start xl:items-center justify-between gap-8">
                     <div className="flex items-start justify-between gap-8 w-full">
                         <div className='border rounded-full text-center w-9 p-1 border-[#D8D8D8]'>10</div>
-                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">Will I own the rights to the design?</div>
+                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">Will my website be secure?</div>
                     </div>
                     <div onClick={() => toggleDropdown(9)} className="cursor-pointer mt-[8px] xl:mt-[0px]">
                         <svg
@@ -389,8 +430,17 @@ const DropdownComponent = () => {
                     </div>
                 </div>
                 <div className={`flex xl:items-end xl:justify-end overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[9] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                    <div className="text-base flex md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 md:ml-[70px] md:mr-20">
-                        <div>Yes! Once the project is complete and payment is finalized, you will own the intellectual property and rights to the design, including the layout, graphics, and prototypes. We will provide you with all the necessary files, assets, and documentation needed for implementation.</div>
+                    <div className="text-base flex flex-col gap-6 md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 md:ml-[70px] md:mr-20">
+                        <div>Security is one of our top priorities. We take several steps to protect your website, including:
+                        </div>
+                        <div className='flex flex-col gap-4'>
+                            <li>Installing SSL certificates for secure communication (HTTPS).</li>
+                            <li>Implementing security plugins (for CMS-based websites).</li>
+                            <li>Keeping all software and plugins up-to-date to prevent vulnerabilities.</li>
+                            <li>Using secure authentication methods and strong password policies.</li>
+                            <li>Setting up regular backups to ensure data can be restored in case of an emergency.</li>
+                        </div>
+                        <div>Additionally, we follow best practices for data protection and comply with any legal regulations (like GDPR) if applicable.</div>
                     </div>
                 </div>
             </div>
@@ -399,7 +449,7 @@ const DropdownComponent = () => {
                 <div className="flex items-start xl:items-center justify-between gap-8">
                     <div className="flex items-start justify-between gap-8 w-full">
                         <div className='border rounded-full text-center w-9 p-1 border-[#D8D8D8]'>11</div>
-                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">Do you provide UI/UX design for mobile apps?</div>
+                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">Do you offer custom web application development?</div>
                     </div>
                     <div onClick={() => toggleDropdown(10)} className="cursor-pointer mt-[8px] xl:mt-[0px]">
                         <svg
@@ -418,8 +468,9 @@ const DropdownComponent = () => {
                     </div>
                 </div>
                 <div className={`flex xl:items-end xl:justify-end overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[10] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                    <div className="text-base flex md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 md:ml-[70px] md:mr-20">
-                        <div>Yes, we provide UI/UX design services for mobile apps (iOS and Android). Our process ensures that the app is not only visually appealing but also intuitive and easy to navigate, keeping the best practices for mobile user experience in mind.</div>
+                    <div className="text-base flex flex-col gap-6 md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 md:ml-[70px] md:mr-20">
+                        <div>Yes, we specialize in custom web application development. If you need a web application with complex functionality, such as user login systems, database management, and real-time data processing, we can create a tailored solution for your business needs.</div>
+                        <div>We have experience in building everything from CRM systems, inventory management tools, and social platformsto booking systems and custom dashboards.</div>
                     </div>
                 </div>
             </div>
@@ -428,7 +479,7 @@ const DropdownComponent = () => {
                 <div className="flex items-start xl:items-center justify-between gap-8">
                     <div className="flex items-start justify-between gap-8 w-full">
                         <div className='border rounded-full text-center w-9 p-1 border-[#D8D8D8]'>12</div>
-                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">Do you also handle website development?</div>
+                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">Can you redesign my existing website?</div>
                     </div>
                     <div onClick={() => toggleDropdown(11)} className="cursor-pointer mt-[8px] xl:mt-[0px]">
                         <svg
@@ -447,8 +498,14 @@ const DropdownComponent = () => {
                     </div>
                 </div>
                 <div className={`flex xl:items-end xl:justify-end overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[11] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                    <div className="text-base flex md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 md:ml-[70px] md:mr-20">
-                        <div>While we specialize in UI/UX design, we can collaborate with your development team or offer full-stack development services through trusted partners. We ensure smooth handoff of design files, design specifications, and prototypes to developers, but if you need end-to-end services, we can arrange to handle the development as well.</div>
+                    <div className="text-base flex flex-col gap-6 md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 md:ml-[70px] md:mr-20">
+                        <div>Absolutely! If your current website is outdated, slow, hard to navigate, or not providing the results you want, we can help. Our redesign process involves:</div>
+                        <div className='flex flex-col gap-4'>
+                            <li>Assessing the current website’s design, functionality, and performance.</li>
+                            <li>Understanding your business goals and audience needs.</li>
+                            <li>Creating a more modern, user-friendly design with updated features and better performance.</li>
+                        </div>
+                        <div>We focus on making the redesign process as smooth as possible and ensuring your new website is more effective than the old one.</div>
                     </div>
                 </div>
             </div>
@@ -457,7 +514,7 @@ const DropdownComponent = () => {
                 <div className="flex items-start xl:items-center justify-between gap-8">
                     <div className="flex items-start justify-between gap-8 w-full">
                         <div className='border rounded-full text-center w-9 p-1 border-[#D8D8D8]'>13</div>
-                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">What’s the difference between a UI/UX designer and a web developer?</div>
+                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">Do you provide hosting and domain registration?</div>
                     </div>
                     <div onClick={() => toggleDropdown(12)} className="cursor-pointer mt-[8px] xl:mt-[0px]">
                         <svg
@@ -477,9 +534,7 @@ const DropdownComponent = () => {
                 </div>
                 <div className={`flex xl:items-end xl:justify-end overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[12] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                     <div className="text-base flex flex-col gap-6 md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 md:ml-[70px] md:mr-20">
-                        <div>A UI/UX designer focuses on creating the visual and interaction design of a website or app, ensuring that it’s user-friendly, engaging, and visually appealing.</div>
-                        <div>A web developer takes the design and turns it into a functional website or app by writing the code (HTML, CSS, JavaScript, etc.) and ensuring the site works as expected.</div>
-                        <div>In short: designers create the look and feel; developers make it work.</div>
+                        <div>Yes, we can help with web hosting and domain registration. We partner with reliable hosting providers and offer various hosting plans based on your website's needs. We can also guide you through the process of domain registration and ensure everything is set up properly for your new website.</div>
                     </div>
                 </div>
             </div>
@@ -488,7 +543,7 @@ const DropdownComponent = () => {
                 <div className="flex items-start xl:items-center justify-between gap-8">
                     <div className="flex items-start justify-between gap-8 w-full">
                         <div className='border rounded-full text-center w-9 p-1 border-[#D8D8D8]'>14</div>
-                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">Do you offer user testing as part of your services?</div>
+                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">How do I get started with website development?</div>
                     </div>
                     <div onClick={() => toggleDropdown(13)} className="cursor-pointer mt-[8px] xl:mt-[0px]">
                         <svg
@@ -508,12 +563,14 @@ const DropdownComponent = () => {
                 </div>
                 <div className={`flex xl:items-end xl:justify-end overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[13] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                     <div className="text-base flex flex-col gap-6 md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 md:ml-[70px] md:mr-20">
-                        <div>Yes, user testing is a critical part of our process. We conduct usability testing to evaluate the effectiveness of the design by observing how real users interact with the product. We gather feedback, iterate on the design, and make necessary adjustments to improve the user experience. Testing can include:</div>
+                        <div>Getting started is easy! Just contact us to schedule a consultation. During this call, we’ll discuss:</div>
                         <div className='flex flex-col gap-4'>
-                            <li>A/B testing: Comparing two versions of a design to see which performs better.</li>
-                            <li>Usability testing: Observing real users to identify pain points.</li>
-                            <li>Beta testing: Offering early access to users for final feedback.</li>
+                            <li>Your business goals and objectives</li>
+                            <li>The features and functionality you need</li>
+                            <li>Design preferences and branding</li>
+                            <li>Timeline and budget</li>
                         </div>
+                        <div>After the consultation, we’ll provide you with a detailed proposal and timeline for your project. Once we agree on the details, we’ll begin the development process.</div>
                     </div>
                 </div>
             </div>
@@ -522,7 +579,7 @@ const DropdownComponent = () => {
                 <div className="flex items-start xl:items-center justify-between gap-8">
                     <div className="flex items-start justify-between gap-8 w-full">
                         <div className='border rounded-full text-center w-9 p-1 border-[#D8D8D8]'>15</div>
-                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">Can you help with ongoing design support after the project is completed?</div>
+                        <div className="font-normal text-xl md:text-3xl leading-9 w-5/6 md:w-full">What happens after my website is launched?</div>
                     </div>
                     <div onClick={() => toggleDropdown(14)} className="cursor-pointer mt-[8px] xl:mt-[0px]">
                         <svg
@@ -541,8 +598,15 @@ const DropdownComponent = () => {
                     </div>
                 </div>
                 <div className={`flex xl:items-end xl:justify-end overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[14] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                    <div className="text-base flex md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 md:ml-[70px] md:mr-20">
-                        <div>Yes! We offer ongoing support and maintenance for UI/UX design projects. Whether you need design updates, optimizations, or adjustments to the user interface, we can continue working with you to keep your product or website up-to-date.</div>
+                    <div className="text-base flex flex-col gap-6 md:text-xl pt-10 w-full xl:w-2/3 2xl:w-2/3 md:ml-[70px] md:mr-20">
+                        <div>Once your website is live, we’ll:</div>
+                        <div className='flex flex-col gap-4'>
+                            <li>Monitor performance to ensure everything runs smoothly.</li>
+                            <li>Provide basic training on how to manage your site (if applicable).</li>
+                            <li>Be available for any post-launch support and fixes.</li>
+                            <li>Offer ongoing maintenance services to keep the site secure, updated, and optimized.</li>
+                        </div>
+                        <div>We also offer website optimization services for further performance enhancements and SEO improvements.</div>
                     </div>
                 </div>
             </div>
@@ -551,4 +615,4 @@ const DropdownComponent = () => {
     );
 };
 
-export default Service1FAQ
+export default Service2FAQ
