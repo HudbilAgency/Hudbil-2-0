@@ -164,7 +164,7 @@ const MonthlyRetainer = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div className="w-8 md:w-12"><img src="/modules-pb-1.png" alt="point" /></div>
+                                        <div className="flex-shrink-0"><img src="/module2-mr-1.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Ongoing Support</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(0)} className="cursor-pointer">
@@ -191,7 +191,7 @@ const MonthlyRetainer = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div className="w-8 md:w-12"><img className='h-8 md:h-12' src="/modules-pb-2.png" alt="point" /></div>
+                                        <div className="flex-shrink-0"><img src="/module2-mr-2.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Flexible Resource Allocation</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(1)} className="cursor-pointer">
@@ -218,7 +218,7 @@ const MonthlyRetainer = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div className="w-8 md:w-12"><img src="/modules-pb-3.png" alt="point" /></div>
+                                        <div className="flex-shrink-0"><img src="/module2-mr-3.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Cost-Effective</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(2)} className="cursor-pointer">
@@ -245,7 +245,7 @@ const MonthlyRetainer = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div className="w-8 md:w-12"><img src="/modules-pb-4.png" alt="point" /></div>
+                                        <div className="flex-shrink-0"><img src="/module2-mr-4.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Priority Service</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(3)} className="cursor-pointer">

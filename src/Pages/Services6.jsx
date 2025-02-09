@@ -11,7 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Services6 = () => {
 
-    const [dropdownStates, setDropdownStates] = useState([false, false, false, false, false, false, false]);
+    const [dropdownStates, setDropdownStates] = useState([false, false, false, false, false]);
 
     const toggleDropdown = (index) => {
         const updatedStates = dropdownStates.map((state, i) => i === index ? !state : state);
@@ -142,7 +142,7 @@ const Services6 = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div><img src="/point11.png" alt="point" /></div>
+                                        <div className="flex-shrink-0"><img src="/service6-point1.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Custom Blockchain Development</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(0)} className="cursor-pointer">
@@ -169,7 +169,7 @@ const Services6 = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div><img src="/point12.png" alt="point" /></div>
+                                        <div className="flex-shrink-0"><img src="/service6-point2.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Smart Contract Implementation</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(1)} className="cursor-pointer">
@@ -196,7 +196,7 @@ const Services6 = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div><img src="/point13.png" alt="point" /></div>
+                                        <div className="flex-shrink-0"><img src="/service6-point3.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Decentralized Apps (DApps)</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(2)} className="cursor-pointer">
@@ -223,7 +223,7 @@ const Services6 = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div><img src="/point14.png" alt="point" /></div>
+                                        <div className="flex-shrink-0"><img src="/service6-point4.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Tokenization & NFTs</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(3)} className="cursor-pointer">
@@ -250,7 +250,7 @@ const Services6 = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div><img src="/point15.png" alt="point" /></div>
+                                        <div className="flex-shrink-0"><img src="/service6-point5.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Blockchain Consulting</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(4)} className="cursor-pointer">
@@ -489,7 +489,7 @@ const Services6 = () => {
                     </div>
                 </section>
                 <section className=' bg-[#2C2C2C] py-20'>
-                    <div className='px-6 lg:px-16 flex flex-col lg:flex-row items-start justify-between w-full gap-16 lg:gap-0'>
+                    <div className='px-6 lg:px-16 flex flex-col lg:flex-row items-start justify-between w-full gap-16 xl:gap-0'>
                         <div className='font-normal text-3xl text-white uppercase'>The minds behind our success </div>
 
                         <div className='w-full md:w-1/2 text-white flex flex-col items-start gap-20'>

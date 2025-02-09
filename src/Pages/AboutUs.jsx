@@ -198,7 +198,7 @@ const AboutUs = () => {
                         </div>
                     </div>
 
-                    <div className='px-6 lg:px-16 flex flex-col lg:flex-row items-start justify-between w-full gap-12 lg:gap-0'>
+                    <div className='px-6 lg:px-16 flex flex-col lg:flex-row items-start justify-between w-full gap-12 xl:gap-0'>
                         <div className='font-normal text-4xl text-white'>Our Core Values</div>
 
                         <div className='w-full lg:w-2/3 xl:w-1/2 text-white'>
@@ -206,8 +206,8 @@ const AboutUs = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div><img src="./point2.png" alt="point" /></div>
-                                        <div className="font-normal text-2xl md:text-4xl leading-9 pl-1">Communication</div>
+                                        <div className="flex-shrink-0"><img src="./point1.png" alt="point" /></div>
+                                        <div className="font-normal text-2xl md:text-4xl leading-9">Communication</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(0)} className="cursor-pointer">
                                         <svg
@@ -225,7 +225,7 @@ const AboutUs = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[0] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex md:mr-20 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[0] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="pt-10">We believe in fostering open, transparent, and honest dialogues with clients and team members to build strong relationships and align expectations, with Clear, Concise and Confident communication is the key to our success.</div> 
                                 </div>
                             </div>
@@ -233,8 +233,8 @@ const AboutUs = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div><img src="./point1.png" alt="point" /></div>
-                                        <div className="font-normal text-2xl md:text-4xl leading-9 pl-3">Accountability</div>
+                                        <div className="flex-shrink-0"><img src="./point2.png" alt="point" /></div>
+                                        <div className="font-normal text-2xl md:text-4xl leading-9">Accountability</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(1)} className="cursor-pointer">
                                         <svg
@@ -252,7 +252,7 @@ const AboutUs = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[1] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex md:mr-20 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[1] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="pt-10">We run by young professionals who take full responsibility for their actions and decisions. Taking full ownership of our work and actions is what we take it to the heart.</div> 
                                 </div>
                             </div>
@@ -260,7 +260,7 @@ const AboutUs = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div><img src="./point3.png" alt="point" /></div>
+                                        <div className="flex-shrink-0"><img src="./point3.png" alt="point" /></div>
                                         <div className="font-normal text-2xl md:text-4xl leading-9">Culture</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(2)} className="cursor-pointer">
@@ -279,7 +279,7 @@ const AboutUs = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[2] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex md:mr-20 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[2] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="pt-10">Trust is at the core of everything we do. We always strive to create lasting partnerships by demonstrating reliability, integrity, and unwavering commitment to delivering exceptional results.</div> 
                                 </div>
                             </div>
@@ -287,8 +287,8 @@ const AboutUs = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div><img src="./point4.png" alt="point" /></div>
-                                        <div className="font-normal text-2xl md:text-4xl leading-9">Creativity</div>
+                                        <div className="flex-shrink-0"><img src="./point4.png" alt="point" /></div>
+                                        <div className="font-normal text-2xl md:text-4xl leading-9 pl-[15px]">Creativity</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(3)} className="cursor-pointer">
                                         <svg
@@ -306,7 +306,7 @@ const AboutUs = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[3] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex md:mr-20 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[3] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="pt-10">We approach every opportunity with humility and appreciation. Recognizing the contributions of our clients, team members, and partners allows us to foster meaningful relationships and positive collaboration.</div> 
                                 </div>
                             </div>
@@ -314,7 +314,7 @@ const AboutUs = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div><img src="./point5.png" alt="point" /></div>
+                                        <div className="flex-shrink-0"><img src="./point5.png" alt="point" /></div>
                                         <div className="font-normal text-2xl md:text-4xl leading-9">Development</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(4)} className="cursor-pointer">
@@ -333,7 +333,7 @@ const AboutUs = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[4] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex md:mr-20 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[4] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="pt-10">If you pride yourself as an engineer, try to be lazy without compromising the quality of work. We believe in working smarter, not harder.</div> 
                                 </div>
                             </div>
@@ -341,7 +341,7 @@ const AboutUs = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div><img src="./point6.png" alt="point" /></div>
+                                        <div className="flex-shrink-0"><img src="./point6.png" alt="point" /></div>
                                         <div className="font-normal text-2xl md:text-4xl leading-9">Customer Experience (CX)</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(5)} className="cursor-pointer">
@@ -360,7 +360,7 @@ const AboutUs = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[5] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex md:mr-20 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[5] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="pt-10">Customer experience, sometimes abbreviated to CX, is the totality of cognitive, affective, sensory, and behavioural customer responses during all stages of the consumption process including pre-purchase, consumption, and post-purchase stages.</div> 
                                 </div>
                             </div>

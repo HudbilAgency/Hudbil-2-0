@@ -165,7 +165,7 @@ const ODC = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div className="w-8 md:w-12"><img src="/modules-pb-1.png" alt="point" /></div>
+                                        <div className="flex-shrink-0"><img src="/module5-odc-1.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Cost Efficiency</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(0)} className="cursor-pointer">
@@ -192,7 +192,7 @@ const ODC = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div className="w-8 md:w-12"><img className='h-8 md:h-12' src="/modules-pb-2.png" alt="point" /></div>
+                                        <div className="flex-shrink-0"><img src="/module5-odc-2.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Access to Global Talent</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(1)} className="cursor-pointer">
@@ -219,7 +219,7 @@ const ODC = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div className="w-8 md:w-12"><img src="/modules-pb-3.png" alt="point" /></div>
+                                        <div className="flex-shrink-0"><img src="/module5-odc-3.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Dedicated Team</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(2)} className="cursor-pointer">
@@ -246,7 +246,7 @@ const ODC = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div className="w-8 md:w-12"><img src="/modules-pb-4.png" alt="point" /></div>
+                                        <div className="flex-shrink-0"><img src="/module5-odc-4.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Scalability</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(3)} className="cursor-pointer">

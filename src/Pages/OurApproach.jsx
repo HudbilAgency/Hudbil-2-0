@@ -196,7 +196,7 @@ const OurApproach = () => {
                         </div>
                     </div>
 
-                    <div className='px-6 lg:px-16 flex flex-col lg:flex-row items-start justify-between w-full gap-12 lg:gap-0'>
+                    <div className='px-6 lg:px-16 flex flex-col lg:flex-row items-start justify-between w-full gap-12 xl:gap-0'>
                         <div className='font-normal text-4xl text-white'>Our Tech Stack</div>
 
                         <div className='w-full lg:w-2/3 xl:w-1/2 text-white'>
@@ -204,8 +204,8 @@ const OurApproach = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div><img src="./point2.png" alt="point" /></div>
-                                        <div className="font-normal text-2xl md:text-4xl leading-9 pl-1">Design & UI/UX Tools</div>
+                                        <div className="flex-shrink-0"><img src="./approach-point1.png" alt="point" /></div>
+                                        <div className="font-normal text-2xl md:text-4xl leading-9">Design & UI/UX Tools</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(0)} className="cursor-pointer">
                                         <svg
@@ -233,8 +233,8 @@ const OurApproach = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div><img src="./point1.png" alt="point" /></div>
-                                        <div className="font-normal text-2xl md:text-4xl leading-9 pl-3">Frontend Technologies</div>
+                                        <div className="flex-shrink-0"><img src="./approach-point2.png" alt="point" /></div>
+                                        <div className="font-normal text-2xl md:text-4xl leading-9">Frontend Technologies</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(1)} className="cursor-pointer">
                                         <svg
@@ -261,7 +261,7 @@ const OurApproach = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div><img src="./point3.png" alt="point" /></div>
+                                        <div className="flex-shrink-0"><img src="./approach-point3.png" alt="point" /></div>
                                         <div className="font-normal text-2xl md:text-4xl leading-9">Backend Technologies</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(2)} className="cursor-pointer">
@@ -289,7 +289,7 @@ const OurApproach = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div><img src="./point4.png" alt="point" /></div>
+                                        <div className="flex-shrink-0"><img src="./approach-point4.png" alt="point" /></div>
                                         <div className="font-normal text-2xl md:text-4xl leading-9">Database Technologies</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(3)} className="cursor-pointer">
@@ -317,7 +317,7 @@ const OurApproach = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div><img src="./point5.png" alt="point" /></div>
+                                        <div className="flex-shrink-0"><img src="./approach-point5.png" alt="point" /></div>
                                         <div className="font-normal text-2xl md:text-4xl leading-9">Cloud Technologies</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(4)} className="cursor-pointer">
@@ -345,7 +345,7 @@ const OurApproach = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div><img src="./point6.png" alt="point" /></div>
+                                        <div className="flex-shrink-0"><img src="./approach-point6.png" alt="point" /></div>
                                         <div className="font-normal text-2xl md:text-4xl leading-9">Web3 Technologies</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(5)} className="cursor-pointer">

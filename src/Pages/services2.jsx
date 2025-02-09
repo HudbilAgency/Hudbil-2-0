@@ -166,7 +166,7 @@ const Services2 = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div><img src="/point31.png" alt="point" /></div>
+                                        <div className="flex-shrink-0"><img src="/service2-point1.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Custom Web Development</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(0)} className="cursor-pointer">
@@ -185,7 +185,7 @@ const Services2 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[0] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out md:mr-20 ${dropdownStates[0] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="pt-10">Build Bespoke Websites With Our Custom Web Development Services, Designed To Align With Your Brand Identity And Business Objectives. We Deliver Functionality-Rich Solutions For Diverse Industries.</div>
                                 </div>
                             </div>
@@ -193,7 +193,7 @@ const Services2 = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div><img src="/point32.png" alt="point" /></div>
+                                        <div className="flex-shrink-0"><img src="/service2-point2.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Ecommerce Development</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(1)} className="cursor-pointer">
@@ -212,7 +212,7 @@ const Services2 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[1] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex overflow-hidden transition-all duration-500 ease-in-out md:mr-20 ${dropdownStates[1] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="pt-10">Drive Online Sales With Robust E-Commerce Development Solutions. We Create Secure Platforms Equipped With Payment Gateways, Shopping Carts, And User-Friendly Interfaces To Enhance The Shopping Experience.</div>
                                 </div>
                             </div>
@@ -220,7 +220,7 @@ const Services2 = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div><img src="/point33.png" alt="point" /></div>
+                                        <div className="flex-shrink-0"><img src="/service2-point3.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Content Management Systems(CMS)</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(2)} className="cursor-pointer">
@@ -239,7 +239,7 @@ const Services2 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[2] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex overflow-hidden transition-all duration-500 ease-in-out md:mr-20 ${dropdownStates[2] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="pt-10">Streamline Content Updates And Management With Our Tailored CMS Solutions. Our Platforms Empower Your Team To Maintain Dynamic And Engaging Websites Effortlessly.</div>
                                 </div>
                             </div>
@@ -247,7 +247,7 @@ const Services2 = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div><img src="/point34.png" alt="point" /></div>
+                                        <div className="flex-shrink-0"><img src="/service2-point4.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Software As Service Development(SaaS)</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(3)} className="cursor-pointer">
@@ -266,7 +266,7 @@ const Services2 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[3] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex overflow-hidden transition-all duration-500 ease-in-out md:mr-20 ${dropdownStates[3] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="pt-10">Leverage Our Expertise In SaaS Development To Create Scalable, Cloud-Based Solutions. We Design And Implement User-Friendly SaaS Platforms Tailored To Streamline Operations And Enhance Customer Engagement.</div>
                                 </div>
                             </div>
@@ -274,7 +274,7 @@ const Services2 = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div><img src="/point35.png" alt="point" /></div>
+                                        <div className="flex-shrink-0"><img src="/service2-point5.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Enterprise Resource Planning Development(ERP)</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(4)} className="cursor-pointer">
@@ -293,7 +293,7 @@ const Services2 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[4] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex overflow-hidden transition-all duration-500 ease-in-out md:mr-20 ${dropdownStates[4] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="pt-10">Transform Your Business Processes With Customized ERP Development Solutions. Our Systems Integrate Seamlessly Into Your Operations, Enhancing Efficiency And Decision-Making Capabilities.</div>
                                 </div>
                             </div>
@@ -301,7 +301,7 @@ const Services2 = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div><img src="/point36.png" alt="point" /></div>
+                                        <div className="flex-shrink-0"><img src="/service2-point6.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Front-End Development</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(5)} className="cursor-pointer">
@@ -320,7 +320,7 @@ const Services2 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[5] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex overflow-hidden transition-all duration-500 ease-in-out md:mr-20 ${dropdownStates[5] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="pt-10">Design Responsive, User-Friendly Interfaces With Our Front-End Development Services. We Ensure Your Website Captivates Users And Delivers A Seamless Experience Across All Devices.</div>
                                 </div>
                             </div>
@@ -328,7 +328,7 @@ const Services2 = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div><img src="/point36.png" alt="point" /></div>
+                                        <div className="flex-shrink-0"><img src="/service2-point7.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Back-End Development</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(6)} className="cursor-pointer">
@@ -347,7 +347,7 @@ const Services2 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[6] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out md:mr-20 ${dropdownStates[6] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="pt-10">Develop Secure, Reliable Back-End Infrastructures With Our Back-End Development Solutions. We Focus On Scalability, Ensuring Optimal Performance For Your Website Or Application.</div>
                                 </div>
                             </div>
@@ -593,7 +593,7 @@ const Services2 = () => {
                     </div>
                 </section>
                 <section className=' bg-[#2C2C2C] py-20'>
-                    <div className='px-6 lg:px-16 flex flex-col lg:flex-row items-start justify-between w-full gap-16 lg:gap-0'>
+                    <div className='px-6 lg:px-16 flex flex-col lg:flex-row items-start justify-between w-full gap-16 xl:gap-0'>
                         <div className='font-normal text-3xl text-white uppercase'>The minds behind our success </div>
 
                         <div className='w-full md:w-1/2 text-white flex flex-col items-start gap-20'>

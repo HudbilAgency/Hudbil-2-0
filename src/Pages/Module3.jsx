@@ -158,14 +158,14 @@ const Consultation = () => {
                     </div>
 
                     <div className='px-6 lg:px-16 mt-24 flex flex-col lg:flex-row items-start justify-between w-full gap-12 xl:gap-0'>
-                        <div className='font-normal text-3xl text-white'>Consultation Engagement Model</div>
+                        <div className='font-normal text-3xl text-white'>Consultation Engagement zModel</div>
 
                         <div className='w-full lg:w-2/3 xl:w-1/2 text-white'>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div className="w-8 md:w-12"><img src="/modules-pb-1.png" alt="point" /></div>
+                                        <div className="flex-shrink-0"><img src="/module3-ci-1.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Specialized Expertise</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(0)} className="cursor-pointer">
@@ -192,7 +192,7 @@ const Consultation = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div className="w-8 md:w-12"><img className='h-8 md:h-12' src="/modules-pb-2.png" alt="point" /></div>
+                                        <div className="flex-shrink-0"><img src="/module3-ci-2.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Objective Analysis</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(1)} className="cursor-pointer">
@@ -219,7 +219,7 @@ const Consultation = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div className="w-8 md:w-12"><img src="/modules-pb-3.png" alt="point" /></div>
+                                        <div className="flex-shrink-0"><img src="/module3-ci-3.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Tailored Solutions</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(2)} className="cursor-pointer">
@@ -246,7 +246,7 @@ const Consultation = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div className="w-8 md:w-12"><img src="/modules-pb-4.png" alt="point" /></div>
+                                        <div className="flex-shrink-0"><img src="/module3-ci-4.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Cost-Effective</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(3)} className="cursor-pointer">

@@ -169,7 +169,7 @@ const Services1 = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div><img src="/point11.png" alt="point" /></div>
+                                        <div className="flex-shrink-0"><img src="/service1-point1.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">UI Designing</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(0)} className="cursor-pointer">
@@ -188,7 +188,7 @@ const Services1 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[0] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out md:mr-20 ${dropdownStates[0] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="pt-10">Craft Visually Appealing And User-Friendly Interfaces That Reflect Your Brand Identity And Captivate Your Audience. Our UI Design Services Focus On Creating Intuitive Layouts That Enhance User Interaction And Satisfaction.</div>
                                 </div>
                             </div>
@@ -196,7 +196,7 @@ const Services1 = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div><img src="/point12.png" alt="point" /></div>
+                                        <div className="flex-shrink-0"><img src="/service1-point2.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">User Interviews</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(1)} className="cursor-pointer">
@@ -215,7 +215,7 @@ const Services1 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[1] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex overflow-hidden transition-all duration-500 ease-in-out md:mr-20 ${dropdownStates[1] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="pt-10">Gain Valuable Insights Into User Needs And Preferences Through Structured User Interviews. We Conduct Comprehensive Sessions To Understand Your Target Audience, Informing Design Decisions That Enhance Usability And Engagement.</div>
                                 </div>
                             </div>
@@ -223,7 +223,7 @@ const Services1 = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div><img src="/point13.png" alt="point" /></div>
+                                        <div className="flex-shrink-0"><img src="/service1-point3.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">User Research</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(2)} className="cursor-pointer">
@@ -242,7 +242,7 @@ const Services1 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[2] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex overflow-hidden transition-all duration-500 ease-in-out md:mr-20 ${dropdownStates[2] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="pt-10">Employ Data-Driven User Research Methodologies To Uncover User Behaviours And Motivations. Our Research Informs Design Strategies That Align With User Expectations, Resulting In Intuitive And Effective User Experiences.</div>
                                 </div>
                             </div>
@@ -250,7 +250,7 @@ const Services1 = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div><img src="/point14.png" alt="point" /></div>
+                                        <div className="flex-shrink-0"><img src="/service1-point4.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Usability Testing</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(3)} className="cursor-pointer">
@@ -269,7 +269,7 @@ const Services1 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[3] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex overflow-hidden transition-all duration-500 ease-in-out md:mr-20 ${dropdownStates[3] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="pt-10">Ensure Your Digital Products Are User-Friendly And Efficient Through Rigorous Usability Testing. We Identify And Address Usability Issues, Enhancing Overall User Satisfaction And Product Effectiveness.</div>
                                 </div>
                             </div>
@@ -277,7 +277,7 @@ const Services1 = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div><img src="/point15.png" alt="point" /></div>
+                                        <div className="flex-shrink-0"><img src="/service1-point5.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Omni-Channel Experience Design</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(4)} className="cursor-pointer">
@@ -296,7 +296,7 @@ const Services1 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[4] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex overflow-hidden transition-all duration-500 ease-in-out md:mr-20 ${dropdownStates[4] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="pt-10">Create Cohesive And Seamless User Experiences Across Multiple Platforms And Devices. Our Omni-Channel Design Approach Ensures Consistent Interactions, Enhancing User Engagement And Brand Loyalty.</div>
                                 </div>
                             </div>
@@ -304,7 +304,7 @@ const Services1 = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div><img src="/point16.png" alt="point" /></div>
+                                        <div className="flex-shrink-0"><img src="/service1-point6.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">UI/UX Audit</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(5)} className="cursor-pointer">
@@ -323,7 +323,7 @@ const Services1 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[5] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex overflow-hidden transition-all duration-500 ease-in-out md:mr-20 ${dropdownStates[5] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="pt-10">Identify Areas For Improvement In Your Digital Products With A Comprehensive UI/UX Audit. We Assess Usability, Accessibility, And Design Consistency, Providing Actionable Recommendations To Enhance User Experience.</div>
                                 </div>
                             </div>
@@ -331,7 +331,7 @@ const Services1 = () => {
                             <div className="py-10 toggle-point flex flex-col">
                                 <div className="flex items-center justify-between gap-6">
                                     <div className="flex items-center justify-between gap-6">
-                                        <div><img src="/point16.png" alt="point" /></div>
+                                        <div className="flex-shrink-0"><img src="/service1-point7.png" alt="point" /></div>
                                         <div className="font-normal text-xl sm:text-2xl md:text-4xl leading-9">Motion Graphics & Micro-Interactions</div>
                                     </div>
                                     <div onClick={() => toggleDropdown(6)} className="cursor-pointer">
@@ -350,7 +350,7 @@ const Services1 = () => {
                                         </svg>
                                     </div>
                                 </div>
-                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[6] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                <div className={`flex flex-col gap-6 overflow-hidden transition-all duration-500 ease-in-out md:mr-20 ${dropdownStates[6] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="pt-10">Enhance User Engagement With Dynamic Motion Graphics And Subtle Micro-Interactions. Our Designs Add Interactive Elements That Delight Users, Improving Usability And Creating Memorable Experiences.</div>
                                 </div>
                             </div>
@@ -379,7 +379,7 @@ const Services1 = () => {
                     <div className='font-normal text-2xl text-white mb-12 px-6 lg:px-16'>Why Choose Hudbil ?</div>
                     <div className='md:w-1/2 xl:w-3/4 font-normal text-[2rem] xl:text-[50px] leading-tight text-white px-6 lg:px-16'>
                         Designs that work, not just look good – <br className='hidden xl:block' />
-In the vast ocean of agencies across India, Hudbil stands out not just as another design agency, but as a trusted partner that’s deeply committed to transforming user experiences, elevating interfaces, and creating customer-centric solutions that drive measurable business results. Here's why Hudbil is the ideal choice for your UI/UX and CX design needs:
+                        In the vast ocean of agencies across India, Hudbil stands out not just as another design agency, but as a trusted partner that’s deeply committed to transforming user experiences, elevating interfaces, and creating customer-centric solutions that drive measurable business results. Here's why Hudbil is the ideal choice for your UI/UX and CX design needs:
                     </div>
                     <div className="w-full flex items-start justify-end my-20 px-6 lg:px-16">
                         <div className='md:w-1/2 flex flex-col items-start gap-8 text-white text-base xl:text-[20px] leading-tight'>
@@ -571,7 +571,7 @@ In the vast ocean of agencies across India, Hudbil stands out not just as anothe
                     </div>
                 </section>
                 <section className=' bg-[#2C2C2C] py-20'>
-                    <div className='px-6 lg:px-16 flex flex-col lg:flex-row items-start justify-between w-full gap-16 lg:gap-0'>
+                    <div className='px-6 lg:px-16 flex flex-col lg:flex-row items-start justify-between w-full gap-16 xl:gap-0'>
                         <div className='font-normal text-3xl text-white uppercase'>The minds behind our success </div>
 
                         <div className='w-full md:w-1/2 text-white flex flex-col items-start gap-20'>
@@ -588,7 +588,7 @@ In the vast ocean of agencies across India, Hudbil stands out not just as anothe
                                     and creative solutions to meet our business challenges and requirements that we threw at
                                     them, they are very creative in terms of the design and clean development skills.”</div>
                                 <div>
-<a href='/contact-us' className="button self-end  flex flex-row justify-between px-20 py-3 leading-none bg-[#505050] text-white hover:text-[#505050] gap-8 rounded-[1000px] max-md:px-5  hover:bg-white transition-all duration-300">
+                                    <a href='/contact-us' className="button self-end  flex flex-row justify-between px-20 py-3 leading-none bg-[#505050] text-white hover:text-[#505050] gap-8 rounded-[1000px] max-md:px-5  hover:bg-white transition-all duration-300">
                                         <h1 className='text-base '>Contact Us</h1>
                                     </a>
                                 </div>
@@ -604,7 +604,7 @@ In the vast ocean of agencies across India, Hudbil stands out not just as anothe
                                 </div>
                                 <div>The team at Hudbil are enthusiastic, friendly and great to work with. They really listened to our needs and came up with a design which encapsulates exactly the spirit and personality of the organisation, whilst still remaining practical and user-friendly.</div>
                                 <div>
-<a href='/contact-us' className="button self-end  flex flex-row justify-between px-20 py-3 leading-none bg-[#505050] text-white hover:text-[#505050] gap-8 rounded-[1000px] max-md:px-5  hover:bg-white transition-all duration-300">
+                                    <a href='/contact-us' className="button self-end  flex flex-row justify-between px-20 py-3 leading-none bg-[#505050] text-white hover:text-[#505050] gap-8 rounded-[1000px] max-md:px-5  hover:bg-white transition-all duration-300">
                                         <h1 className='text-base '>Contact Us</h1>
                                     </a>
                                 </div>
