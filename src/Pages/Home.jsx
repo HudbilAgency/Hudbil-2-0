@@ -471,51 +471,51 @@ const Home = () => {
     });
   }, []);
 
-  const gridimages = [
-    '/gridimg1.png',
-    '/gridimg2.png',
-    '/gridimg3.png',
-    '/gridimg4.png',
-    '/gridimg5.png',
-    '/gridimg6.png',
-    '/gridimg7.png',
-    '/gridimg8.png',
-    '/gridimg9.png',
-    '/gridimg10.png',
-    '/gridimg11.png',
-    '/gridimg12.png',
+  const gridImages = [
+    { src: '/gridimg1.png', url: 'https://example.com/page1' },
+    { src: '/gridimg2.png', url: 'https://www.theaid.studio' },
+    { src: '/gridimg3.png', url: 'https://ambiq.com' },
+    { src: '/gridimg4.png', url: 'https://besmoke.com' },
+    { src: '/gridimg5.png', url: 'https://chantelle.com/fr' },
+    { src: '/gridimg6.png', url: 'https://www.thekookieboxco.com' },
+    { src: '/gridimg7.png', url: 'https://the-shirt.bymatthew.com' },
+    { src: '/gridimg8.png', url: 'https://orizon.group' },
+    { src: '/gridimg9.png', url: 'https://www.jefuae.com' },
+    { src: '/gridimg10.png', url: 'https://www.infotik.co/' },
+    { src: '/gridimg11.png', url: 'https://nodcoding.com' },
+    { src: '/gridimg12.png', url: 'https://www.spatialinnovation.co.uk' },
   ];
 
   const OurServices = [
     {
-      title: "UI/UX/CX Design",
-      description: "Deliver exceptional UI/UX design services and customer experiences through intuitive interfaces that enhance digital engagement.",
-      path: "/",
-    },
-    {
-      title: "Website Development",
-      description: "Develop scalable web solutions and high-performance websites tailored to your business needs, ensuring robust functionality.",
-      path: "/",
-    },
-    {
-      title: "Mobile App Development",
-      description: "Create custom mobile applications with innovative designs that provide seamless user experiences across all devices and platforms.",
-      path: "/",
-    },
-    {
-      title: "AI & Machine Learning",
-      description: "Leverage AI and machine learning services to drive innovation and optimize business processes with advanced technologies.",
-      path: "/",
+      title: "Cloud Solutions",
+      description: "Adopt scalable cloud solutions to improve operational efficiency, enabling flexible and secure cloud-based business operations.",
+      path: "/services/cloud-solutions",
     },
     {
       title: "Blockchain",
       description: "Implement secure blockchain solutions to enhance data integrity and transparency, streamlining operations for your business.",
-      path: "/",
+      path: "/services/blockchain",
     },
     {
-      title: "Cloud Solutions",
-      description: "Adopt scalable cloud solutions to improve operational efficiency, enabling flexible and secure cloud-based business operations.",
-      path: "/",
+      title: "AI & Machine Learning",
+      description: "Leverage AI and machine learning services to drive innovation and optimize business processes with advanced technologies.",
+      path: "/services/ai-ml",
+    },
+    {
+      title: "Mobile App Development",
+      description: "Create custom mobile applications with innovative designs that provide seamless user experiences across all devices and platforms.",
+      path: "/services/mobile-app-development",
+    },
+    {
+      title: "Website Development",
+      description: "Develop scalable web solutions and high-performance websites tailored to your business needs, ensuring robust functionality.",
+      path: "/services/website-development",
+    },
+    {
+      title: "UI/UX/CX Design",
+      description: "Deliver exceptional UI/UX design services and customer experiences through intuitive interfaces that enhance digital engagement.",
+      path: "/services/ui-ux-cx-design",
     },
   ];
 
@@ -638,8 +638,8 @@ const Home = () => {
                 <div className='mx-6 lg:mx-8'>
                   <div className='pt-28 pb-12'>
                     <h1 ref={secondsectionRef} className="text-[48px] w-full lg:w-[83%] leading-tight text-neutral-950  max-md:text-[2.25rem]">
-                    Merging Artistry with Innovation. <br className='hidden 2xl:block' />
-                    DESIGN + DEVELOPMENT company, turning your vision into cutting-edge technology to elevate your brand.
+                      Merging Artistry with Innovation. <br className='hidden 2xl:block' />
+                      DESIGN + DEVELOPMENT company, turning your vision into cutting-edge technology to elevate your brand.
                     </h1>
                   </div>
                   <hr className="w-full h-px border border-gray-400 border-solid" />
@@ -655,9 +655,11 @@ const Home = () => {
                       <div className='my-16 mx-auto w-fit'>
 
                         <div className="grid grid-cols-2 grid-rows-6 sm:grid-cols-3 sm:grid-rows-4 lg:grid-cols-2 lg:grid-rows-6 xl:grid-cols-3 xl:grid-rows-4 gap-[1px] bg-[#D9CEDD] border border-[#D9CEDD]">
-                          {gridimages.map((src, index) => (
-                            <div
+                          {gridImages.map(({ src, url }, index) => (
+                            <a
                               key={index}
+                              href={url}
+                              target='_blank'
                               className="group relative flex items-center justify-center max-md:w-[140px] max-md:h-[140px] md:w-[220px] md:h-[220px] xl:w-[200px] xl:h-[200px] bg-white transition-all duration-500"
                             >
                               <img
@@ -666,7 +668,7 @@ const Home = () => {
                                 className="max-w-[60%] max-h-[50%] grayscale group-hover:grayscale-0 brightness-75 group-hover:brightness-100 transition-all duration-500 z-10"
                               />
                               <div className="absolute inset-0 bg-gradient-to-b from-[#7811A5] to-[#2E063F] opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-                            </div>
+                            </a>
                           ))}
                         </div>
                       </div>
@@ -687,7 +689,7 @@ const Home = () => {
                     <div className="self-stretch  text-[#7811A5] text-2xl  my-auto w-full">We are good at what we do</div>
                   </div>
                   <p className="mt-16 text-[24px]  font-thin  leading-8 text-neutral-950 w-full lg:w-4/5">
-                  We are your technology partners, committed to helping you create products and services that make a lasting impact on millions of lives. Our pragmatic Design + Development services will transform your brand into lead magnet !
+                    We are your technology partners, committed to helping you create products and services that make a lasting impact on millions of lives. Our pragmatic Design + Development services will transform your brand into lead magnet !
                   </p>
                 </div>
               </div>
@@ -726,11 +728,11 @@ const Home = () => {
               </div>
 
               <div className='mx-6 lg:mx-8'>
-              <div className="mb-16 max-w-full h-px border border-solid border-gray-400 w-full" />
-              <h2 className="self-start text-[25px]  tracking-wide text-[#7811A5]">What we do</h2>
+                <div className="mb-16 max-w-full h-px border border-solid border-gray-400 w-full" />
+                <h2 className="self-start text-[25px]  tracking-wide text-[#7811A5]">What we do</h2>
                 <div className='flex flex-col md:flex-row mt-12 md:items-end justify-between max-w-full w-[780px]'>
                   <p className="w-full md:w-2/3  text-[24px] tracking-wider leading-8 text-neutral-950 max-md:mt-10  max-md:max-w-full">
-                  Discover how Hudbil brings your vision to life with cutting-edge solutions. Our approach is designed to fuel growth and innovation at your fingertips – We offer a comprehensive range of services designed to drive your business forward. Allow us to handle the complexities of technology, so you can stay focused on driving your vision forward and achieving your long-term objectives.
+                    Discover how Hudbil brings your vision to life with cutting-edge solutions. Our approach is designed to fuel growth and innovation at your fingertips – We offer a comprehensive range of services designed to drive your business forward. Allow us to handle the complexities of technology, so you can stay focused on driving your vision forward and achieving your long-term objectives.
                   </p>
 
                   <p className="w-1/3 mt-auto md:text-end hover:text-gray-500 transition-all duration-300 text-xl tracking-wider text-[#7811A5] max-md:mt-10  max-md:max-w-full">
@@ -756,7 +758,7 @@ const Home = () => {
                       <div className='flex flex-col items-center bg-[#F8E8FF] rounded-[2rem] text-lg md:text-2xl text-[#7811A5] text-center w-[90%] tracking-[0.86px] pt-12 pb-8 mb-6'>
                         <div className='w-4/5'>{service.description}</div>
                         <Link to={service.path} className="mt-12 md:mt-16">
-                          <button className="border px-6 py-2 rounded-[1000px] border-[#7811A5] hover:border-none text-[#7811A5] hover:text-white  hover:bg-gradient-to-b from-[#7811A5] to-[#2E16BB] text-sm md:text-base transition-all duration-300">
+                          <button className="border px-6 py-2 rounded-[1000px] border-[#7811A5] text-[#7811A5] hover:text-white  hover:bg-[#7811A5] text-sm md:text-base transition-all duration-300">
                             Read More
                           </button>
                         </Link>
@@ -853,36 +855,36 @@ const Home = () => {
 
               <div className='overflow-hidden w-full'>
 
-              <section className='mx-6 lg:mx-8'>
-                <div className="flex gap-2 items-start self-start mt-20 leading-none text-neutral-950">
-                  <div className="flex shrink-0 self-stretch my-auto w-3 h-3 bg-[#7811A5] rounded-[1000px]" />
-                  <div className="self-stretch ml-[1.5%] text-[25px] text-[#7811A5] my-auto">Our blogs</div>
-                </div>
-              </section>
-              <CarousalImgBlogs />
-              <Link to="/our-blogs">
-                <button className="button self-end flex flex-row justify-between px-12 py-3 my-12 mx-auto lg:mr-8 leading-none bg-black text-white gap-8 rounded-[1000px] max-md:px-5 max-md:mt-10  hover:bg-[#7811A5] transition-all duration-300">
-                  <h1 className='text-base mt-1 '>View all insight</h1>
-                  <img ref={buttonImgRef} src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
-                </button>
-              </Link>
+                <section className='mx-6 lg:mx-8'>
+                  <div className="flex gap-2 items-start self-start mt-20 leading-none text-neutral-950">
+                    <div className="flex shrink-0 self-stretch my-auto w-3 h-3 bg-[#7811A5] rounded-[1000px]" />
+                    <div className="self-stretch ml-[1.5%] text-[25px] text-[#7811A5] my-auto">Our blogs</div>
+                  </div>
+                </section>
+                <CarousalImgBlogs />
+                <Link to="/our-blogs">
+                  <button className="button self-end flex flex-row justify-between px-12 py-3 my-12 mx-auto lg:mr-8 leading-none bg-black text-white gap-8 rounded-[1000px] max-md:px-5 max-md:mt-10  hover:bg-[#7811A5] transition-all duration-300">
+                    <h1 className='text-base mt-1 '>View all insight</h1>
+                    <img ref={buttonImgRef} src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                  </button>
+                </Link>
 
-              <div ref={tabloidRef} className="flex overflow-hidden flex-col bg-black items-center px-6 md:px-20 py-12 mt-12 max-w-full w-full max-md:mt-10">
-                <div className="flex flex-col items-center max-w-full w-[534px]">
-                  <h2 className="text-5xl  leading-none text-center text-white max-md:text-4xl">hudbil Tabloids</h2>
-                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/febb23b80aaedca3ecd1e75ad17e8156c707e8212bf67654390601ebe28c8047?placeholderIfAbsent=true&apiKey=7904fd7afaaf4ee2b0837ab86d91b244" alt="Hudbil Tabloids" className="filter grayscale hover:grayscale-0 transition-all duration-300 object-contain mt-16 max-w-full aspect-[0.88] w-[379px] max-md:mt-10 " />
-                  <h3 className="self-stretch mt-16 text-4xl  text-center text-white leading-[50px] max-md:mt-10 max-md:max-w-full max-sm:text-3xl max-md:leading-[54px]" ref={fadeInRef2}>
-                    Big idea, Kalacode is <br /> beating heart of <br /> Hudbil's, a new venture <br /> agency like no other in India.
-                  </h3>
-                  <Link to={'/tabloids'} className="mt-20">
-                    <button className="button flex flex-row hover:text-white justify-between px-20 py-4  mr-6 md:mr-8 leading-none bg-white text-black self-center items-center gap-8 rounded-[1000px] max-md:px-5   hover:bg-[#7811A5] transition-colors duration-300">
-                      <h1 className='text-base mt-1 '>Learn more</h1>
-                      <img ref={buttonImgRef} src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
-                    </button>
-                  </Link>
+                <div ref={tabloidRef} className="flex overflow-hidden flex-col bg-black items-center px-6 md:px-20 py-12 mt-12 max-w-full w-full max-md:mt-10">
+                  <div className="flex flex-col items-center max-w-full w-[534px]">
+                    <h2 className="text-5xl  leading-none text-center text-white max-md:text-4xl">hudbil Tabloids</h2>
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/febb23b80aaedca3ecd1e75ad17e8156c707e8212bf67654390601ebe28c8047?placeholderIfAbsent=true&apiKey=7904fd7afaaf4ee2b0837ab86d91b244" alt="Hudbil Tabloids" className="filter grayscale hover:grayscale-0 transition-all duration-300 object-contain mt-16 max-w-full aspect-[0.88] w-[379px] max-md:mt-10 " />
+                    <h3 className="self-stretch mt-16 text-4xl  text-center text-white leading-[50px] max-md:mt-10 max-md:max-w-full max-sm:text-3xl max-md:leading-[54px]" ref={fadeInRef2}>
+                      Big idea, Kalacode is <br /> beating heart of <br /> Hudbil's, a new venture <br /> agency like no other in India.
+                    </h3>
+                    <Link to={'/tabloids'} className="mt-20">
+                      <button className="button flex flex-row hover:text-white justify-between px-20 py-4  mr-6 md:mr-8 leading-none bg-white text-black self-center items-center gap-8 rounded-[1000px] max-md:px-5   hover:bg-[#7811A5] transition-colors duration-300">
+                        <h1 className='text-base mt-1 '>Learn more</h1>
+                        <img ref={buttonImgRef} src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
+                      </button>
+                    </Link>
 
+                  </div>
                 </div>
-              </div>
               </div>
             </section>
           </section>

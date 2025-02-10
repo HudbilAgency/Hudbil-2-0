@@ -803,36 +803,32 @@ const Work = () => {
                         <div className='text-[2.5rem] lg:w-1/4'>And we partner with the best</div>
 
                         <div className='w-full lg:w-1/2 2xl:w-2/5 flex flex-col md:flex-row items-start gap-2 md:gap-28 font-normal'>
-                            <div className='flex flex-col items-start gap-2'>
-                                <div>SILICON INDIA</div>
-                                <div>CLUTCH</div>
-                                <div>ACA</div>
-                                <div>BBC WORLD</div>
-                                <div>JUST DAIL</div>
-                                <div>SUPERIU AWARDS</div>
-                                <div>TOOLS OF INDIA </div>
-                                <div>BEST AGENCY IN INDIA </div>
-                                <div>DESIGN AND DEVELOPMENT</div>
-                                <div>JEF TECHNO </div>
-                                <div>H&M</div>
-                                <div>HDFC BANK</div>
-                                <div>INTERNATIONAL ASSOCIATION</div>
+                            <div className='flex flex-col items-start gap-2 uppercase'>
+                                <div>Bonollo</div>
+                                <div>Casamon</div>
+                                <div>Dal House Iecastle</div>
+                                <div>Enzos Legacy</div>
+                                <div>Fern London</div>
+                                <div>Flash Quad</div>
+                                <div>Forgge Studio</div>
+                                <div>Fxskin</div>
+                                <div>Hypsos</div>
+                                <div>Idyllic</div>
+                                <div>In habit App</div>
                             </div>
 
-                            <div className='flex flex-col items-start gap-2'>
-                                <div>PETVEX INDIA </div>
-                                <div>LOTTOS FITNESS </div>
-                                <div>BMW</div>
-                                <div>KOTAL INTERNATIONAL</div>
-                                <div>H&U</div>
-                                <div>INFOTIK</div>
-                                <div>GANESHA EK SANKIRITI</div>
-                                <div>BLUE MAIL</div>
-                                <div>SPARK INDIA</div>
-                                <div>STARBUCKS INDIA</div>
-                                <div>TATA CAPITAL</div>
-                                <div>ZEPTO</div>
-                                <div>RAPIDO INDIA</div>
+                            <div className='flex flex-col items-start gap-2 uppercase'>
+                                <div>Jef Techno</div>
+                                <div>Landa</div>
+                                <div>Mubien</div>
+                                <div>Noova Life</div>
+                                <div>Orizon</div>
+                                <div>Paref Gestion</div>
+                                <div>Slantis</div>
+                                <div>The Brecon</div>
+                                <div>Theaid Studio</div>
+                                <div>Wearefound</div>
+                                <div>Webflow</div>
                             </div>
                         </div>
 

@@ -53,6 +53,7 @@ import ComingSoon from '../Pages/coming-soon';
 import ClientSupport from '../Pages/client-support';
 import Careersculture from '../Pages/careers&culture';
 import CookiePolicy from '../Pages/cookie-policy';
+import PaymentPolicy from '../Pages/payment-policy';
 import QuickLinks from '../Pages/quick-links';
 import Faq from '../Pages/FAQ';
 import Locations from '../Pages/location-page';
@@ -99,6 +100,7 @@ const Routers = () => {
           <Route path="/accessibilities" element={<Accessibilities />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/cookie-policy" element={<CookiePolicy />} />
+          <Route path="/payment-policy" element={<PaymentPolicy />} />
           <Route path="/our-modules" element={<OurModules />} />
           <Route path="/modules/project-basis" element={<ProjectBasis />} />
           <Route path="/modules/monthly-retainer" element={<MonthlyRetainer />} />

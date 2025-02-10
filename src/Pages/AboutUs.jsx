@@ -150,9 +150,9 @@ const AboutUs = () => {
                     <div className="w-full flex items-start justify-end my-16 px-6 lg:px-16">
                         <div className='md:w-1/2 flex flex-col items-start gap-8 text-white text-base xl:text-[20px] leading-tight'>
                             <div>We provide a wide range of services including UI, UX, CX Designing, Website Development, Mobile App Development, Digital Marketing, and IT Consultancy. Enhancing digital solutions for every business.</div>
-                            <div>OUR VISION</div>
+                            <div className='text-[#7811A5]'>OUR VISION</div>
                             <div>We envision a world where technology seamlessly integrates with everyday life, enhancing experiences and enabling possibilities beyond imagination.</div>
-                            <div>OUR MISSION</div>
+                            <div className='text-[#7811A5]'>OUR MISSION</div>
                             <div>To make technology easy and accessible for everyone. Delivering solutions that not only promotes business growth but also improve developer experience.</div>
                             <div>
                                 <Link to="/our-partners">
@@ -226,7 +226,7 @@ const AboutUs = () => {
                                     </div>
                                 </div>
                                 <div className={`flex md:mr-20 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[0] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="pt-10">We believe in fostering open, transparent, and honest dialogues with clients and team members to build strong relationships and align expectations, with Clear, Concise and Confident communication is the key to our success.</div> 
+                                    <div className="pt-10">We believe in fostering open, transparent, and honest dialogues with clients and team members to build strong relationships and align expectations, with Clear, Concise and Confident communication is the key to our success.</div>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
@@ -253,7 +253,7 @@ const AboutUs = () => {
                                     </div>
                                 </div>
                                 <div className={`flex md:mr-20 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[1] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="pt-10">We run by young professionals who take full responsibility for their actions and decisions. Taking full ownership of our work and actions is what we take it to the heart.</div> 
+                                    <div className="pt-10">We run by young professionals who take full responsibility for their actions and decisions. Taking full ownership of our work and actions is what we take it to the heart.</div>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
@@ -280,7 +280,7 @@ const AboutUs = () => {
                                     </div>
                                 </div>
                                 <div className={`flex md:mr-20 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[2] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="pt-10">Trust is at the core of everything we do. We always strive to create lasting partnerships by demonstrating reliability, integrity, and unwavering commitment to delivering exceptional results.</div> 
+                                    <div className="pt-10">Trust is at the core of everything we do. We always strive to create lasting partnerships by demonstrating reliability, integrity, and unwavering commitment to delivering exceptional results.</div>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
@@ -307,7 +307,7 @@ const AboutUs = () => {
                                     </div>
                                 </div>
                                 <div className={`flex md:mr-20 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[3] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="pt-10">We approach every opportunity with humility and appreciation. Recognizing the contributions of our clients, team members, and partners allows us to foster meaningful relationships and positive collaboration.</div> 
+                                    <div className="pt-10">We approach every opportunity with humility and appreciation. Recognizing the contributions of our clients, team members, and partners allows us to foster meaningful relationships and positive collaboration.</div>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
@@ -334,7 +334,7 @@ const AboutUs = () => {
                                     </div>
                                 </div>
                                 <div className={`flex md:mr-20 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[4] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="pt-10">If you pride yourself as an engineer, try to be lazy without compromising the quality of work. We believe in working smarter, not harder.</div> 
+                                    <div className="pt-10">If you pride yourself as an engineer, try to be lazy without compromising the quality of work. We believe in working smarter, not harder.</div>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
@@ -361,7 +361,7 @@ const AboutUs = () => {
                                     </div>
                                 </div>
                                 <div className={`flex md:mr-20 overflow-hidden transition-all duration-500 ease-in-out ${dropdownStates[5] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                    <div className="pt-10">Customer experience, sometimes abbreviated to CX, is the totality of cognitive, affective, sensory, and behavioural customer responses during all stages of the consumption process including pre-purchase, consumption, and post-purchase stages.</div> 
+                                    <div className="pt-10">Customer experience, sometimes abbreviated to CX, is the totality of cognitive, affective, sensory, and behavioural customer responses during all stages of the consumption process including pre-purchase, consumption, and post-purchase stages.</div>
                                 </div>
                             </div>
                             <div className="bg-[#6C6C6C] h-[1px] w-full"></div>
