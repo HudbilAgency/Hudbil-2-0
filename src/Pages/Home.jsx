@@ -472,7 +472,7 @@ const Home = () => {
   }, []);
 
   const gridImages = [
-    { src: '/gridimg1.png', url: 'https://example.com/page1' },
+    { src: '/gridimg1.png', url: 'https://www.astridmottes.com' },
     { src: '/gridimg2.png', url: 'https://www.theaid.studio' },
     { src: '/gridimg3.png', url: 'https://ambiq.com' },
     { src: '/gridimg4.png', url: 'https://besmoke.com' },
