@@ -84,7 +84,7 @@ const OurModules = () => {
 
                         <div className='flex items-center bg-no-repeat bg-cover bg-center justify-center w-full lg:w-1/2 lg:hidden'>
                             <video
-                                src="/our-modules.mp4"
+                                src="/modules-video.mp4"
                                 autoPlay
                                 loop
                                 muted
@@ -92,13 +92,13 @@ const OurModules = () => {
                                 className="object-cover w-full h-80"
                                 onContextMenu={(e) => e.preventDefault()}
                             >
-                                <source src="/our-modules.mp4" type="video/mp4" />
+                                <source src="/modules-video.mp4" type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
                         </div>
                         <div className='lg:flex hidden items-center justify-center w-full lg:w-1/2 bg-no-repeat bg-cover bg-center sticky top-0'>
                             <video
-                                src="/our-modules.mp4"
+                                src="/modules-video.mp4"
                                 autoPlay
                                 loop
                                 muted
@@ -106,7 +106,7 @@ const OurModules = () => {
                                 className="object-cover w-full h-screen"
                                 onContextMenu={(e) => e.preventDefault()}
                             >
-                                <source src="/our-modules.mp4" type="video/mp4" />
+                                <source src="/modules-video.mp4" type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
                         </div>

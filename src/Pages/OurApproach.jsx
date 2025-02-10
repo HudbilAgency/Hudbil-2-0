@@ -130,7 +130,7 @@ const OurApproach = () => {
             <Navbar />
             <div className="w-full h-[70vh] lg:h-[80vh] bg-no-repeat bg-cover bg-center">
                 <video
-                    src="/LandingVideos/video2.mp4"
+                    src="/approach-video.mp4"
                     autoPlay
                     loop
                     muted
@@ -138,7 +138,7 @@ const OurApproach = () => {
                     className="object-cover h-[70vh] lg:h-[80vh] w-full fixed z-0"
                     onContextMenu={(e) => e.preventDefault()}
                 >
-                    <source src="/LandingVideos/video2.mp4" type="video/mp4" />
+                    <source src="/approach-video.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
             </div>
