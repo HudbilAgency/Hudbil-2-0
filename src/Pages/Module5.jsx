@@ -365,7 +365,7 @@ const ODC = () => {
 
                 <div id="moving-img" className='bg-black'>
                     <img
-                        src="/sp12.png"
+                        src="/modules5-video-ss.png"
                         className="scale-anm w-full"
                     />
                 </div>

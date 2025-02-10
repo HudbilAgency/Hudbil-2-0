@@ -164,7 +164,7 @@ const OurApproach = () => {
                     </div>
                     <div className="relative my-24 ">
                         <div className="relative">
-                            <img className='mx-auto transition duration-500 grayscale hover:grayscale-0' src="./about-us2.png" alt="About Us" />
+                            <img className='mx-auto transition duration-500 grayscale hover:grayscale-0' src="./approach-midimg.png" alt="About Us" />
                             <div className="absolute w-full inset-0 pointer-events-none flex justify-center items-center overflow-hidden">
                                 <div className="marquee-text-container font-normal text-[1.7rem] uppercase">
                                     <div className="marquee-text text-white">Innovation at your fingertips</div>
@@ -385,7 +385,7 @@ const OurApproach = () => {
 
                 <div id="moving-img" className='bg-black'>
                     <img
-                        src="./about-us-main2.png"
+                        src="./approach-video-ss.png"
                         className="scale-anm w-full"
                     />
                 </div>

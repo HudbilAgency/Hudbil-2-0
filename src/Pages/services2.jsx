@@ -116,7 +116,7 @@ const Services2 = () => {
                     </div>
                     <div className="relative my-24">
                         <div className="relative">
-                            <img className='mx-auto transition duration-500 grayscale hover:grayscale-0' src="/sp11.png" alt="Creative Designing Services" />
+                            <img className='mx-auto transition duration-500 grayscale hover:grayscale-0' src="/services2-midimg.png" alt="Creative Designing Services" />
                             <div className="absolute w-full inset-0 pointer-events-none flex justify-center items-center overflow-hidden">
                                 <div className="marquee-text-container font-normal text-[1.7rem] uppercase">
                                     <div className="marquee-text text-white">HTML</div>
@@ -368,7 +368,7 @@ const Services2 = () => {
                 </section>
                 <div id="moving-img" className='bg-black'>
                     <img
-                        src="/sp12.png"
+                        src="/services2-video-ss.png"
                         className="scale-anm w-full"
                     />
                 </div>

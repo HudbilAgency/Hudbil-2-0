@@ -367,7 +367,7 @@ const WhiteLabelling = () => {
 
                 <div id="moving-img" className='bg-black'>
                     <img
-                        src="/sp12.png"
+                        src="/modules4-video-ss.png"
                         className="scale-anm w-full"
                     />
                 </div>
