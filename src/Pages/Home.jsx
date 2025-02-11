@@ -719,8 +719,8 @@ const Home = () => {
                       ))}
                     </div></div>
                 </div>
-                <Link to="/about-us" className="my-12">
-                  <button className="button self-end flex flex-row justify-between px-12 py-3 ml-auto mr-6 lg:mr-8 leading-none bg-black text-white gap-8 rounded-[1000px] max-md:px-5 max-md:mt-10  hover:bg-[#7811A5] transition-all duration-300">
+                <Link to="/about-us" className="my-12 w-fit ml-auto mr-6 lg:mr-8 max-md:mt-10">
+                  <button className="button self-end flex flex-row justify-between px-12 py-3 leading-none bg-black text-white gap-8 rounded-[1000px] max-md:px-5  hover:bg-[#7811A5] transition-all duration-300">
                     <h1 className='text-base mt-1 '>Why work with us</h1>
                     <img ref={buttonImgRef} src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                   </button>
@@ -735,8 +735,8 @@ const Home = () => {
                     Discover how Hudbil brings your vision to life with cutting-edge solutions. Our approach is designed to fuel growth and innovation at your fingertips – We offer a comprehensive range of services designed to drive your business forward. Allow us to handle the complexities of technology, so you can stay focused on driving your vision forward and achieving your long-term objectives.
                   </p>
 
-                  <p className="w-1/3 mt-auto ml-auto md:text-end hover:text-gray-500 transition-all duration-300 text-xl tracking-wider text-[#7811A5] max-md:mt-12 lg:mt-12 2xl:mt-0  max-md:max-w-full">
-                    <Link to="/our-services">Read now</Link>
+                  <p className="w-1/3 mt-auto ml-auto md:text-end text-xl tracking-wider text-[#7811A5] max-md:mt-12 lg:mt-12 2xl:mt-0  max-md:max-w-full">
+                    <Link to="/our-services" className="w-fit hover:text-gray-500 transition-all duration-300">Read now</Link>
                   </p>
                 </div>
                 <div className="mt-12 mb-8 max-w-full h-px border border-solid border-gray-400 w-full" />
@@ -862,12 +862,10 @@ const Home = () => {
                   </div>
                 </section>
                 <CarousalImgBlogs />
-                <Link to="/our-blogs">
-                  <button className="button self-end flex flex-row justify-between px-12 py-3 my-12 ml-auto mr-6 lg:mr-8 leading-none bg-black text-white gap-8 rounded-[1000px] max-md:px-5 max-md:mt-10  hover:bg-[#7811A5] transition-all duration-300">
+                  <a href="/our-blogs" className="button w-fit self-end flex flex-row justify-between px-12 py-3 ml-auto mr-6 lg:mr-8 my-12 max-md:mt-10  leading-none bg-black text-white gap-8 rounded-[1000px] max-md:px-5   hover:bg-[#7811A5] transition-all duration-300">
                     <h1 className='text-base mt-1 '>View all insight</h1>
                     <img ref={buttonImgRef} src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
-                  </button>
-                </Link>
+                  </a>
 
                 <div ref={tabloidRef} className="flex overflow-hidden flex-col bg-black items-center px-6 md:px-20 py-12 mt-12 max-w-full w-full max-md:mt-10">
                   <div className="flex flex-col items-center max-w-full w-[534px]">
@@ -876,8 +874,8 @@ const Home = () => {
                     <h3 className="self-stretch mt-16 text-4xl  text-center text-white leading-[50px] max-md:mt-10 max-md:max-w-full max-sm:text-3xl max-md:leading-[54px]" ref={fadeInRef2}>
                       Big idea, Kalacode is <br /> beating heart of <br /> Hudbil's, a new venture <br /> agency like no other in India.
                     </h3>
-                    <Link to={'/tabloids'} className="mt-20">
-                      <button className="button flex flex-row hover:text-white justify-between px-20 py-4  mr-6 md:mr-8 leading-none bg-white text-black self-center items-center gap-8 rounded-[1000px] max-md:px-5   hover:bg-[#7811A5] transition-colors duration-300">
+                    <Link to={'/tabloids'} className="mt-20 mr-6 md:mr-8">
+                      <button className="button flex flex-row hover:text-white justify-between px-20 py-4 leading-none bg-white text-black self-center items-center gap-8 rounded-[1000px] max-md:px-5   hover:bg-[#7811A5] transition-colors duration-300">
                         <h1 className='text-base mt-1 '>Learn more</h1>
                         <img ref={buttonImgRef} src="./ButtonPlusIconImg.png" alt="button" className='my-auto w-[2rem]' />
                       </button>
