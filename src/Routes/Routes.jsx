@@ -85,7 +85,6 @@ import WebDev11 from '../Pages/webdev11';
 import WebDev12 from '../Pages/webdev12';
 import WebDev13 from '../Pages/webdev13';
 import WebDev14 from '../Pages/webdev14';
-import PageTransition from '../Components/PageTransition';
 import useLenis from "../Components/useLenis";
 
 const Routers = () => {
@@ -93,7 +92,6 @@ const Routers = () => {
     <>
       <useLenis>
         <Routes>
-          <Route path="/page" element={<PageTransition />} />
           <Route path="/" element={<Home />} />
           <Route path="/faq" element={<Faq />} />
           <Route path="/our-approach" element={<OurApproach />} />
