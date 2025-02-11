@@ -477,7 +477,7 @@ const Home = () => {
     { src: '/gridimg3.png', url: 'https://ambiq.com' },
     { src: '/gridimg4.png', url: 'https://besmoke.com' },
     { src: '/gridimg5.png', url: 'https://chantelle.com/fr' },
-    { src: '/gridimg6.png', url: 'https://www.thekookieboxco.com' },
+    { src: '/gridimg6.png', url: 'https://idyllic.co.nz/' },
     { src: '/gridimg7.png', url: 'https://the-shirt.bymatthew.com' },
     { src: '/gridimg8.png', url: 'https://orizon.group' },
     { src: '/gridimg9.png', url: 'https://www.jefuae.com' },
@@ -646,9 +646,9 @@ const Home = () => {
                   <div className="mt-16 mb-12 w-full">
                     <div className="flex flex-col w-full items-start">
                       <div className="flex w-fit">
-                        <div className="flex gap-3 items-center text-base tracking-wider leading-none text-neutral-950 max-md:mt-10">
-                          <div className="flex shrink-0 self-stretch my-auto w-3 h-3 bg-[#7811A5] rounded-[1000px]" />
-                          <div className="my-auto  w-fit text-[#7811A5] text-2xl xl:text-xl 2xl:text-2xl">We work with B2B & B2C clients worldwide.</div>
+                        <div className="flex gap-5 items-start text-base tracking-wider leading-none text-neutral-950 max-md:mt-10">
+                          <div className="flex shrink-0 self-stretch mt-[10px] w-3 h-3 bg-[#7811A5] rounded-[1000px]" />
+                          <div className="my-auto w-fit text-[#7811A5] text-2xl">We work with B2B & B2C clients worldwide.</div>
                         </div>
                       </div>
 
@@ -856,9 +856,9 @@ const Home = () => {
               <div className='overflow-hidden w-full'>
 
                 <section className='mx-6 lg:mx-8'>
-                  <div className="flex gap-2 items-start self-start mt-20 leading-none text-neutral-950">
+                  <div className="flex gap-5 items-start self-start mt-20 leading-none text-neutral-950">
                     <div className="flex shrink-0 self-stretch my-auto w-3 h-3 bg-[#7811A5] rounded-[1000px]" />
-                    <div className="self-stretch ml-[1.5%] text-[25px] text-[#7811A5] my-auto">Our blogs</div>
+                    <div className="self-stretch text-[25px] text-[#7811A5] my-auto">Our blogs</div>
                   </div>
                 </section>
                 <CarousalImgBlogs />
