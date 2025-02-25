@@ -85,97 +85,99 @@ import WebDev11 from '../Pages/webdev11';
 import WebDev12 from '../Pages/webdev12';
 import WebDev13 from '../Pages/webdev13';
 import WebDev14 from '../Pages/webdev14';
+import Survey from '../Pages/Survey';
 
 const Routers = () => {
   return (
     <>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/faq" element={<Faq />} />
-          <Route path="/our-approach" element={<OurApproach />} />
-          <Route path="/accessibilities" element={<Accessibilities />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="/cookie-policy" element={<CookiePolicy />} />
-          <Route path="/payment-policy" element={<PaymentPolicy />} />
-          <Route path="/our-modules" element={<OurModules />} />
-          <Route path="/modules/project-basis" element={<ProjectBasis />} />
-          <Route path="/modules/monthly-retainer" element={<MonthlyRetainer />} />
-          <Route path="/modules/consultation" element={<Consultation />} />
-          <Route path="/modules/white-labelling" element={<WhiteLabelling />} />
-          <Route path="/modules/offshore-development-centre" element={<ODC />} />
-          <Route path="/blogs/the-ultimate-guide-for-ux-research" element={<BlogPage1 />} />
-          <Route path="/blogs/the-evolution-of-the-graphic-design" element={<BlogPage2 />} />
-          <Route path="/blogs/brands-identity-design-aspects-in-brief" element={<BlogPage3 />} />
-          <Route path="/blogs/business-firms-suffer-to-find-right-design-agency" element={<BlogPage4 />} />
-          <Route path="/blogs/user-experience-design-and-its-importance" element={<BlogPage5 />} />
-          <Route path="/blogs/increase-conversion-rate" element={<BlogPage6 />} />
-          <Route path="/blogs/what-are-chatbots" element={<BlogPage7 />} />
-          <Route path="/blogs/how-to-create-a-service-website" element={<BlogPage8 />} />
-          <Route path="/blogs/how-to-optimize-your-website" element={<BlogPage9 />} />
-          <Route path="/blogs/the-importance-of-accessible-design" element={<BlogPage10 />} />
-          <Route path="/terms-and-conditions" element={<TandC />} />
-          <Route path="/tabloids" element={<Tabloids />} />
-          <Route path="/tabloids/hudbil-ai-chatbot" element={< Hudbil_ai_chatbot />} />
-          <Route path="/tabloids/kalacode-investment" element={< Kalacode_investment />} />
-          <Route path="/tabloids/coltfox-digital-marketing-agency" element={< Coltfox_digital_marketing_agency />} />
-          <Route path="/tabloids/hudbil-start-up-india-awards" element={< Hudbil_startup_india_awards />} />
-          <Route path="/tabloids/the-early-web-design-days" element={< Website_design_agency />} />
-          <Route path="/tabloids/evolution-of-web-development" element={< Evolution_of_web_development />} />
-          <Route path="/about-us" element={<AboutUs />} />
-          <Route path='/our-work' element={<Work />} />
-          <Route path='/our-blogs' element={<Insights />} />
-          <Route path='/our-services' element={<Services />} />
-          <Route path='/about-us/career' element={<Careersculture />} />
-          <Route path='/services/ui-ux-cx-design' element={<Services1 />} />
-          <Route path='/services/website-development' element={<Services2 />} />
-          <Route path='/services/mobile-app-development' element={<Services3 />} />
-          <Route path='/services/cloud-solutions' element={<Services4 />} />
-          <Route path='/services/ai-ml' element={<Services5 />} />
-          <Route path='/services/blockchain' element={<Services6 />} />
-          <Route path='/services/ui-ux-cx-design/faq' element={<Service1FAQ />} />
-          <Route path='/services/website-development/faq' element={<Service2FAQ />} />
-          <Route path='/services/mobile-app-development/faq' element={<Service3FAQ />} />
-          <Route path='/services/cloud-solutions/faq' element={<Service4FAQ />} />
-          <Route path='/services/ai-ml/faq' element={<Service5FAQ />} />
-          <Route path='/services/blockchain/faq' element={<Service6FAQ />} />
-          <Route path='/our-industry' element={<Our_industry />} />
-          <Route path='/our-products' element={<Our_products />} />
-          <Route path='/our-partners' element={<Partners />} />
-          <Route path="/ai-ella" element={<TalkToElla />} />
-          <Route path="/contact-us" element={<ContactForm />} />
-          <Route path="/coming-soon" element={<ComingSoon />} />
-          <Route path="/client-support" element={<ClientSupport />} />
-          <Route path="/quick-links" element={<QuickLinks />} />
-          <Route path="/lo" element={<Locations />} />
-          <Route path="/quick-links/website-designing-agency-in-bangalore" element={<WebDesign1 />} />
-          <Route path="/quick-links/website-designing-agency-in-pune" element={<WebDesign2 />} />
-          <Route path="/quick-links/website-designing-agency-in-hyderabad" element={<WebDesign3 />} />
-          <Route path="/quick-links/website-designing-agency-in-kolkata" element={<WebDesign4 />} />
-          <Route path="/quick-links/website-designing-agency-in-ahmedabad" element={<WebDesign5 />} />
-          <Route path="/quick-links/website-designing-agency-in-chennai" element={<WebDesign6 />} />
-          <Route path="/quick-links/website-designing-agency-in-jaipur" element={<WebDesign7 />} />
-          <Route path="/quick-links/website-designing-agency-in-surat" element={<WebDesign8 />} />
-          <Route path="/quick-links/website-designing-agency-in-bhopal" element={<WebDesign9 />} />
-          <Route path="/quick-links/website-designing-agency-in-kochi" element={<WebDesign10 />} />
-          <Route path="/quick-links/website-designing-agency-in-coimbatore" element={<WebDesign11 />} />
-          <Route path="/quick-links/website-designing-agency-in-mumbai" element={<WebDesign12 />} />
-          <Route path="/quick-links/website-designing-agency-in-patna" element={<WebDesign13 />} />
-          <Route path="/quick-links/website-designing-agency-in-delhi" element={<WebDesign14 />} />
-          <Route path="/quick-links/website-development-agency-in-bangalore" element={<WebDev1 />} />
-          <Route path="/quick-links/website-development-agency-in-pune" element={<WebDev2 />} />
-          <Route path="/quick-links/website-development-agency-in-hyderabad" element={<WebDev3 />} />
-          <Route path="/quick-links/website-development-agency-in-kolkata" element={<WebDev4 />} />
-          <Route path="/quick-links/website-development-agency-in-ahmedabad" element={<WebDev5 />} />
-          <Route path="/quick-links/website-development-agency-in-chennai" element={<WebDev6 />} />
-          <Route path="/quick-links/website-development-agency-in-jaipur" element={<WebDev7 />} />
-          <Route path="/quick-links/website-development-agency-in-surat" element={<WebDev8 />} />
-          <Route path="/quick-links/website-development-agency-in-bhopal" element={<WebDev9 />} />
-          <Route path="/quick-links/website-development-agency-in-kochi" element={<WebDev10 />} />
-          <Route path="/quick-links/website-development-agency-in-coimbatore" element={<WebDev11 />} />
-          <Route path="/quick-links/website-development-agency-in-mumbai" element={<WebDev12 />} />
-          <Route path="/quick-links/website-development-agency-in-patna" element={<WebDev13 />} />
-          <Route path="/quick-links/website-development-agency-in-delhi" element={<WebDev14 />} />
-        </Routes>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/faq" element={<Faq />} />
+        <Route path="/survey" element={<Survey />} />
+        <Route path="/our-approach" element={<OurApproach />} />
+        <Route path="/accessibilities" element={<Accessibilities />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/cookie-policy" element={<CookiePolicy />} />
+        <Route path="/payment-policy" element={<PaymentPolicy />} />
+        <Route path="/our-modules" element={<OurModules />} />
+        <Route path="/modules/project-basis" element={<ProjectBasis />} />
+        <Route path="/modules/monthly-retainer" element={<MonthlyRetainer />} />
+        <Route path="/modules/consultation" element={<Consultation />} />
+        <Route path="/modules/white-labelling" element={<WhiteLabelling />} />
+        <Route path="/modules/offshore-development-centre" element={<ODC />} />
+        <Route path="/blogs/the-ultimate-guide-for-ux-research" element={<BlogPage1 />} />
+        <Route path="/blogs/the-evolution-of-the-graphic-design" element={<BlogPage2 />} />
+        <Route path="/blogs/brands-identity-design-aspects-in-brief" element={<BlogPage3 />} />
+        <Route path="/blogs/business-firms-suffer-to-find-right-design-agency" element={<BlogPage4 />} />
+        <Route path="/blogs/user-experience-design-and-its-importance" element={<BlogPage5 />} />
+        <Route path="/blogs/increase-conversion-rate" element={<BlogPage6 />} />
+        <Route path="/blogs/what-are-chatbots" element={<BlogPage7 />} />
+        <Route path="/blogs/how-to-create-a-service-website" element={<BlogPage8 />} />
+        <Route path="/blogs/how-to-optimize-your-website" element={<BlogPage9 />} />
+        <Route path="/blogs/the-importance-of-accessible-design" element={<BlogPage10 />} />
+        <Route path="/terms-and-conditions" element={<TandC />} />
+        <Route path="/tabloids" element={<Tabloids />} />
+        <Route path="/tabloids/hudbil-ai-chatbot" element={< Hudbil_ai_chatbot />} />
+        <Route path="/tabloids/kalacode-investment" element={< Kalacode_investment />} />
+        <Route path="/tabloids/coltfox-digital-marketing-agency" element={< Coltfox_digital_marketing_agency />} />
+        <Route path="/tabloids/hudbil-start-up-india-awards" element={< Hudbil_startup_india_awards />} />
+        <Route path="/tabloids/the-early-web-design-days" element={< Website_design_agency />} />
+        <Route path="/tabloids/evolution-of-web-development" element={< Evolution_of_web_development />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path='/our-work' element={<Work />} />
+        <Route path='/our-blogs' element={<Insights />} />
+        <Route path='/our-services' element={<Services />} />
+        <Route path='/about-us/career' element={<Careersculture />} />
+        <Route path='/services/ui-ux-cx-design' element={<Services1 />} />
+        <Route path='/services/website-development' element={<Services2 />} />
+        <Route path='/services/mobile-app-development' element={<Services3 />} />
+        <Route path='/services/cloud-solutions' element={<Services4 />} />
+        <Route path='/services/ai-ml' element={<Services5 />} />
+        <Route path='/services/blockchain' element={<Services6 />} />
+        <Route path='/services/ui-ux-cx-design/faq' element={<Service1FAQ />} />
+        <Route path='/services/website-development/faq' element={<Service2FAQ />} />
+        <Route path='/services/mobile-app-development/faq' element={<Service3FAQ />} />
+        <Route path='/services/cloud-solutions/faq' element={<Service4FAQ />} />
+        <Route path='/services/ai-ml/faq' element={<Service5FAQ />} />
+        <Route path='/services/blockchain/faq' element={<Service6FAQ />} />
+        <Route path='/our-industry' element={<Our_industry />} />
+        <Route path='/our-products' element={<Our_products />} />
+        <Route path='/our-partners' element={<Partners />} />
+        <Route path="/ai-ella" element={<TalkToElla />} />
+        <Route path="/contact-us" element={<ContactForm />} />
+        <Route path="/coming-soon" element={<ComingSoon />} />
+        <Route path="/client-support" element={<ClientSupport />} />
+        <Route path="/quick-links" element={<QuickLinks />} />
+        <Route path="/lo" element={<Locations />} />
+        <Route path="/quick-links/website-designing-agency-in-bangalore" element={<WebDesign1 />} />
+        <Route path="/quick-links/website-designing-agency-in-pune" element={<WebDesign2 />} />
+        <Route path="/quick-links/website-designing-agency-in-hyderabad" element={<WebDesign3 />} />
+        <Route path="/quick-links/website-designing-agency-in-kolkata" element={<WebDesign4 />} />
+        <Route path="/quick-links/website-designing-agency-in-ahmedabad" element={<WebDesign5 />} />
+        <Route path="/quick-links/website-designing-agency-in-chennai" element={<WebDesign6 />} />
+        <Route path="/quick-links/website-designing-agency-in-jaipur" element={<WebDesign7 />} />
+        <Route path="/quick-links/website-designing-agency-in-surat" element={<WebDesign8 />} />
+        <Route path="/quick-links/website-designing-agency-in-bhopal" element={<WebDesign9 />} />
+        <Route path="/quick-links/website-designing-agency-in-kochi" element={<WebDesign10 />} />
+        <Route path="/quick-links/website-designing-agency-in-coimbatore" element={<WebDesign11 />} />
+        <Route path="/quick-links/website-designing-agency-in-mumbai" element={<WebDesign12 />} />
+        <Route path="/quick-links/website-designing-agency-in-patna" element={<WebDesign13 />} />
+        <Route path="/quick-links/website-designing-agency-in-delhi" element={<WebDesign14 />} />
+        <Route path="/quick-links/website-development-agency-in-bangalore" element={<WebDev1 />} />
+        <Route path="/quick-links/website-development-agency-in-pune" element={<WebDev2 />} />
+        <Route path="/quick-links/website-development-agency-in-hyderabad" element={<WebDev3 />} />
+        <Route path="/quick-links/website-development-agency-in-kolkata" element={<WebDev4 />} />
+        <Route path="/quick-links/website-development-agency-in-ahmedabad" element={<WebDev5 />} />
+        <Route path="/quick-links/website-development-agency-in-chennai" element={<WebDev6 />} />
+        <Route path="/quick-links/website-development-agency-in-jaipur" element={<WebDev7 />} />
+        <Route path="/quick-links/website-development-agency-in-surat" element={<WebDev8 />} />
+        <Route path="/quick-links/website-development-agency-in-bhopal" element={<WebDev9 />} />
+        <Route path="/quick-links/website-development-agency-in-kochi" element={<WebDev10 />} />
+        <Route path="/quick-links/website-development-agency-in-coimbatore" element={<WebDev11 />} />
+        <Route path="/quick-links/website-development-agency-in-mumbai" element={<WebDev12 />} />
+        <Route path="/quick-links/website-development-agency-in-patna" element={<WebDev13 />} />
+        <Route path="/quick-links/website-development-agency-in-delhi" element={<WebDev14 />} />
+      </Routes>
     </>
   )
 }
