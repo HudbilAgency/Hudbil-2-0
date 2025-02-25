@@ -85,12 +85,10 @@ import WebDev11 from '../Pages/webdev11';
 import WebDev12 from '../Pages/webdev12';
 import WebDev13 from '../Pages/webdev13';
 import WebDev14 from '../Pages/webdev14';
-import useLenis from "../Components/useLenis";
 
 const Routers = () => {
   return (
     <>
-      <useLenis>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/faq" element={<Faq />} />
@@ -178,7 +176,6 @@ const Routers = () => {
           <Route path="/quick-links/website-development-agency-in-patna" element={<WebDev13 />} />
           <Route path="/quick-links/website-development-agency-in-delhi" element={<WebDev14 />} />
         </Routes>
-      </useLenis>
     </>
   )
 }
