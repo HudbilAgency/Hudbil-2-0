@@ -216,7 +216,7 @@ const Footer = () => {
       </nav>
       <div className="flex flex-col md:flex-row gap-12 md:gap-0 items-stretch h-full justify-between mt-12 sm:mt-20 xl:mt-40 text-sm tracking-wider leading-5 text-zinc-500 w-full">
         <div className='w-full md:w-1/3 flex flex-col items-center md:items-start justify-center xl:justify-end min-h-full'>
-          <img loading="lazy" src="/hudbil-logo-footer.png" className="flex object-contain shrink-0 max-w-full w-[250px] xl:w-[262px]" alt="Hudbil-logo" />
+          <img loading="lazy" src="/hudbil-logo-new-footer.png" className="flex object-contain shrink-0 max-w-full w-[250px] xl:w-[262px]" alt="Hudbil-logo" />
         </div>
         <div className="flex flex-col w-full md:w-1/2">
           <p className="max-md:max-w-full text-base text-gray-300 ">
