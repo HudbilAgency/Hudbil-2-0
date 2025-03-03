@@ -246,7 +246,7 @@ const Survey = () => {
       <Navbar />
       <div className="w-full h-[70vh] lg:h-[80vh] bg-no-repeat bg-cover bg-center">
         <video
-          src="/contact-video.mp4"
+          src="/survey-video.mp4"
           autoPlay
           loop
           muted
@@ -254,7 +254,7 @@ const Survey = () => {
           className="object-cover h-[70vh] lg:h-[80vh] w-full fixed z-0"
           onContextMenu={(e) => e.preventDefault()}
         >
-          <source src="/contact-video.mp4" type="video/mp4" />
+          <source src="/survey-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
