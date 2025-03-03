@@ -230,6 +230,7 @@ const Footer = () => {
       <div className="flex flex-col lg:flex-row items-center justify-between flex-wrap gap-6 lg:gap-8 self-center md:mt-20 max-w-full text-sm tracking-wider leading-none text-zinc-400 max-md:mt-16">
         <div className="grow ">© hudbil 2024</div>
         <div className="grow shrink  hover:text-gray-500 transition-all duration-300"><a href="/quick-links">Quick Links</a></div>
+        <div className="grow shrink  hover:text-gray-500 transition-all duration-300"><a href="/survey">Survey</a></div>
         <div className="grow shrink  hover:text-gray-500 transition-all duration-300"><a href="/cookie-policy">Cookies Policy</a></div>
         <div className="grow shrink  hover:text-gray-500 transition-all duration-300"><a href="/payment-policy">Payment Policy</a></div>
         <div className="grow shrink  hover:text-gray-500 transition-all duration-300"><a href="/lo">Locations</a></div>
